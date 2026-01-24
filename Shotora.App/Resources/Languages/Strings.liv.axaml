@@ -1,0 +1,255 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <!-- Settings -->
+    <sys:String x:Key="LocSettingsTitle">Seādizt</sys:String>
+    <sys:String x:Key="LocSettingsStorage">Varaistõks</sys:String>
+    <sys:String x:Key="LocSettingsDefaultFolder">Esnõmāztõks kantšõl</sys:String>
+    <sys:String x:Key="LocSettingsBrowse">Vaatõl</sys:String>
+    <sys:String x:Key="LocSettingsDefaultFormat">Esnõmāztõks fòrmat</sys:String>
+    <sys:String x:Key="LocSettingsJpegQuality">JPEG kvaļitāt</sys:String>
+    <sys:String x:Key="LocSettingsFilenamePattern">Fajl nim mual</sys:String>
+    <sys:String x:Key="LocSettingsOcr">OCR</sys:String>
+    <sys:String x:Key="LocSettingsProvider">Andai</sys:String>
+    <sys:String x:Key="LocSettingsLanguages">Kiēlõd</sys:String>
+    <sys:String x:Key="LocSettingsEasyOcrHint">EasyOCR vajag Python + 'pip install easyocr'</sys:String>
+    <sys:String x:Key="LocSettingsTesseractFiles">Tesseract kiēl failõd</sys:String>
+    <sys:String x:Key="LocSettingsSelectLanguage">Valiž kiēl</sys:String>
+    <sys:String x:Key="LocSettingsDownload">Vieratõ</sys:String>
+    <sys:String x:Key="LocSettingsDelete">Eemald</sys:String>
+    <sys:String x:Key="LocSettingsHotkeys">Palatõd klavišõd</sys:String>
+    <sys:String x:Key="LocSettingsRegionHotkey">Reguon võttimi</sys:String>
+    <sys:String x:Key="LocSettingsFullscreenHotkey">Täuz' ekran</sys:String>
+    <sys:String x:Key="LocSettingsActiveWindowHotkey">Aktivne lūg</sys:String>
+    <sys:String x:Key="LocSettingsGeneral">Iļdimi</sys:String>
+    <sys:String x:Key="LocSettingsTheme">Tēma</sys:String>
+    <sys:String x:Key="LocSettingsDisplayLanguage">Ekran kiēl</sys:String>
+    <sys:String x:Key="LocSettingsRunOnStartup">Zapustõ zavodindõs</sys:String>
+    <sys:String x:Key="LocSettingsTabMain">Pāine</sys:String>
+    <sys:String x:Key="LocSettingsTabHotkeys">Klavišõd</sys:String>
+    <sys:String x:Key="LocSettingsTabEditor">Redaktòr</sys:String>
+    <sys:String x:Key="LocSettingsEditorHotkeys">Redaktòr klavišõd</sys:String>
+    <sys:String x:Key="LocSettingsEditorMouse">Redaktòr jeng</sys:String>
+    <sys:String x:Key="LocSettingsCopyCloseMouse">Kopīrõ + sauv</sys:String>
+    <sys:String x:Key="LocSettingsMoveSelectionMouse">Sīrda valižmi</sys:String>
+    <sys:String x:Key="LocSettingsEditorIcons">Redaktòr kuvaist</sys:String>
+    <sys:String x:Key="LocSettingsEditorOptions">Redaktòr valižmi</sys:String>
+    <sys:String x:Key="LocSettingsShowThicknessSlider">Ozutõ sanktõks rēgler</sys:String>
+    <sys:String x:Key="LocSettingsDefaultThickness">Esnõmāztõks sanktõks</sys:String>
+    <sys:String x:Key="LocSettingsShowColorPalette">Ozutõ muju palet</sys:String>
+    <sys:String x:Key="LocSettingsDefaultColor">Esnõmāztõks muju</sys:String>
+    <sys:String x:Key="LocSettingsPickColor">Valiž</sys:String>
+    <sys:String x:Key="LocSettingsDefaultColorHint">Kävutõdõs, ku muju palet um peitõs.</sys:String>
+    <sys:String x:Key="LocSettingsUsePointer">Kasuta osutit</sys:String>
+    <sys:String x:Key="LocSettingsShowUndo">Näita Tühista</sys:String>
+    <sys:String x:Key="LocSettingsShowRedo">Näita Tee uuesti</sys:String>
+    <sys:String x:Key="LocSettingsShowCopy">Näita Kopeeri</sys:String>
+    <sys:String x:Key="LocSettingsShowSave">Näita Salvesta</sys:String>
+    <sys:String x:Key="LocSettingsShowUpload">Näita Üleslaadimist</sys:String>
+    <sys:String x:Key="LocSettingsShowOcr">Näita OCR</sys:String>
+    <sys:String x:Key="LocSettingsShowCancel">Näita Tühista</sys:String>
+    <sys:String x:Key="LocSettingsShowConfirm">Näita Kinnitus</sys:String>
+    <sys:String x:Key="LocSettingsShowClose">Näita Sule</sys:String>
+    <sys:String x:Key="LocSettingsShowSelection">Näita Valik</sys:String>
+    <sys:String x:Key="LocSettingsShowMove">Näita Liiguta</sys:String>
+    <sys:String x:Key="LocSettingsShowPen">Näita Pliiats</sys:String>
+    <sys:String x:Key="LocSettingsShowLine">Näita Joon</sys:String>
+    <sys:String x:Key="LocSettingsShowArrow">Näita Noole</sys:String>
+    <sys:String x:Key="LocSettingsShowRectangle">Näita Ristkülik</sys:String>
+    <sys:String x:Key="LocSettingsShowEllipse">Näita Ellips</sys:String>
+    <sys:String x:Key="LocSettingsShowText">Näita Tekst</sys:String>
+    <sys:String x:Key="LocSettingsShowHighlight">Näita Esiletõstmist</sys:String>
+    <sys:String x:Key="LocSettingsShowBlur">Näita Udu</sys:String>
+    <sys:String x:Key="LocSettingsShowPixelate">Näita Pikseliseerimist</sys:String>
+    <sys:String x:Key="LocSettingsShowThickness">Näita Paksust</sys:String>
+    <sys:String x:Key="LocSettingsShowColors">Näita Värvid</sys:String>
+    <sys:String x:Key="LocSettingsShowCrosshair">Näita Rist-õigust</sys:String>
+    <sys:String x:Key="LocSettingsShowResizeHandles">Näita Suuruse käepidemeid</sys:String>
+    <sys:String x:Key="LocSettingsShowToolbar">Näita Tööriistariba</sys:String>
+    <sys:String x:Key="LocSettingsShowPalette">Näita Paletti</sys:String>
+    <sys:String x:Key="LocSettingsShowPreview">Näita eeldist</sys:String>
+    <sys:String x:Key="LocSettingsShowMiniMap">Näita Väikekaarti</sys:String>
+    <sys:String x:Key="LocSettingsShowSelectionSize">Näita Valiku suurust</sys:String>
+    <sys:String x:Key="LocSettingsShowSelectionPosition">Näita Valiku asukohta</sys:String>
+
+    <!-- Common -->
+    <sys:String x:Key="LocCommonClose">Sauv</sys:String>
+
+    <!-- Tools -->
+    <sys:String x:Key="LocToolSelect">Valiž</sys:String>
+    <sys:String x:Key="LocToolRegion">Valiž reguon</sys:String>
+    <sys:String x:Key="LocToolMove">Sīrda reguon</sys:String>
+    <sys:String x:Key="LocToolPen">Pena</sys:String>
+    <sys:String x:Key="LocToolLine">Jōn</sys:String>
+    <sys:String x:Key="LocToolArrow">Nūol</sys:String>
+    <sys:String x:Key="LocToolRect">Oigedsaubnik</sys:String>
+    <sys:String x:Key="LocToolEllipse">Ellips</sys:String>
+    <sys:String x:Key="LocToolText">Tekst</sys:String>
+    <sys:String x:Key="LocToolHighlight">Valižmi</sys:String>
+    <sys:String x:Key="LocToolBlur">Sumēgõks</sys:String>
+    <sys:String x:Key="LocToolPixelate">Pikselizatsī</sys:String>
+    <sys:String x:Key="LocToolSaveAs">Izglōb ku</sys:String>
+    <sys:String x:Key="LocToolCopy">Kopīrõ</sys:String>
+    <sys:String x:Key="LocToolUpload">Vieratõ üles</sys:String>
+    <sys:String x:Key="LocToolCancel">Katkõst</sys:String>
+    <sys:String x:Key="LocToolColors">Mujud</sys:String>
+    <sys:String x:Key="LocToolThickness">Sanktõks</sys:String>
+    <sys:String x:Key="LocToolUndo">Võta tagas</sys:String>
+    <sys:String x:Key="LocToolRedo">Tie tōšti</sys:String>
+
+    <sys:String x:Key="LocSettingsRegionHotkeyPlaceholder">Vajuta klahve...</sys:String>
+    <sys:String x:Key="LocSettingsFullscreenHotkeyPlaceholder">Vajuta klahve...</sys:String>
+    <sys:String x:Key="LocSettingsActiveWindowHotkeyPlaceholder">Vajuta klahve...</sys:String>
+    <sys:String x:Key="LocSettingsEditorUndoHotkey">Võta tagasi</sys:String>
+    <sys:String x:Key="LocSettingsEditorUndoHotkeyPlaceholder">Ctrl+Z</sys:String>
+    <sys:String x:Key="LocSettingsEditorRedoHotkey">Tee uuesti</sys:String>
+    <sys:String x:Key="LocSettingsEditorRedoHotkeyPlaceholder">Ctrl+Y</sys:String>
+    <sys:String x:Key="LocSettingsEditorCopyHotkey">Kopeeri</sys:String>
+    <sys:String x:Key="LocSettingsEditorCopyHotkeyPlaceholder">Ctrl+C</sys:String>
+    <sys:String x:Key="LocSettingsEditorSaveHotkey">Salvesta</sys:String>
+    <sys:String x:Key="LocSettingsEditorSaveHotkeyPlaceholder">Ctrl+S</sys:String>
+
+    <sys:String x:Key="LocSettingsOcrSettings">OCR seaded</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstall">Paigalda EasyOCR</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemove">Eemalda EasyOCR</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrStatus">Olek</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstalled">Paigaldatud</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrNotInstalled">Pole paigaldatud</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstalling">Paigaldamine...</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemoving">Eemaldamine...</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstallFailed">Paigaldus ebaõnnestus</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemoveFailed">Eemaldus ebaõnnestus</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstallLang">Paigalda</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoveLang">Eemalda</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstalled">Paigaldatud</sys:String>
+    <sys:String x:Key="LocSettingsOcrNotInstalled">Pole paigaldatud</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstalling">Paigaldamine...</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoving">Eemaldamine...</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstallFailed">Paigaldus ebaõnnestus</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoveFailed">Eemaldus ebaõnnestus</sys:String>
+    <sys:String x:Key="LocSettingsOcrDownloadProgress">Laadimise edenemine</sys:String>
+    <sys:String x:Key="LocSettingsOcrBytes">baiti</sys:String>
+    <sys:String x:Key="LocSettingsOcrLicense">Litsents</sys:String>
+    <sys:String x:Key="LocSettingsOcrLicenseLink">https://github.com/JaidedAI/EasyOCR/blob/master/LICENSE</sys:String>
+    <sys:String x:Key="LocSettingsOcrTesseractLangs">Tesseract keeled</sys:String>
+    <sys:String x:Key="LocSettingsOcrTesseractHint">Laadi alla või lisa Tesseract keeled siit.</sys:String>
+
+    <sys:String x:Key="LocSettingsExamplesTitle">Näited</sys:String>
+    <sys:String x:Key="LocSettingsExamplesDescription">Eelvaade näidikikoonidest koos praeguse teemaga.</sys:String>
+    <sys:String x:Key="LocSettingsExamplesFormat">Vorming</sys:String>
+    <sys:String x:Key="LocSettingsExamplesEffects">Efektid</sys:String>
+    <sys:String x:Key="LocSettingsExamplesShape">Kujund</sys:String>
+    <sys:String x:Key="LocSettingsExamplesIcon">Ikoon</sys:String>
+
+    <!-- Tray -->
+    <sys:String x:Key="LocTrayCaptureRegion">Võta reguon</sys:String>
+    <sys:String x:Key="LocTrayCaptureFull">Võta täuz' ekran</sys:String>
+    <sys:String x:Key="LocTraySettings">Seādizt</sys:String>
+    <sys:String x:Key="LocTrayAbout">Polhe</sys:String>
+    <sys:String x:Key="LocTrayExit">Lähtõ</sys:String>
+
+    <!-- Overlay -->
+    <sys:String x:Key="LocOverlayCopy">Kopeeri</sys:String>
+    <sys:String x:Key="LocOverlaySave">Salvesta</sys:String>
+    <sys:String x:Key="LocOverlayUpload">Laadi üles</sys:String>
+    <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
+    <sys:String x:Key="LocOverlayCancel">Tühista</sys:String>
+    <sys:String x:Key="LocOverlayConfirm">Kinnita</sys:String>
+    <sys:String x:Key="LocOverlayClose">Sulge</sys:String>
+    <sys:String x:Key="LocOverlaySelection">Valik</sys:String>
+    <sys:String x:Key="LocOverlayMove">Liiguta</sys:String>
+    <sys:String x:Key="LocOverlayPointer">Osuti</sys:String>
+    <sys:String x:Key="LocOverlayPen">Pliiats</sys:String>
+    <sys:String x:Key="LocOverlayLine">Joon</sys:String>
+    <sys:String x:Key="LocOverlayArrow">Noole</sys:String>
+    <sys:String x:Key="LocOverlayRectangle">Ristkülik</sys:String>
+    <sys:String x:Key="LocOverlayEllipse">Ellips</sys:String>
+    <sys:String x:Key="LocOverlayText">Tekst</sys:String>
+    <sys:String x:Key="LocOverlayHighlight">Esiletõstmine</sys:String>
+    <sys:String x:Key="LocOverlayBlur">Udu</sys:String>
+    <sys:String x:Key="LocOverlayPixelate">Pikseliseerimine</sys:String>
+    <sys:String x:Key="LocOverlayThickness">Paksus</sys:String>
+    <sys:String x:Key="LocOverlayColors">Värvid</sys:String>
+    <sys:String x:Key="LocOverlayPosition">Asend</sys:String>
+    <sys:String x:Key="LocOverlaySize">Suurus</sys:String>
+    <sys:String x:Key="LocOverlayWidth">L</sys:String>
+    <sys:String x:Key="LocOverlayHeight">K</sys:String>
+    <sys:String x:Key="LocOverlayPickColor">Vali värv</sys:String>
+    <sys:String x:Key="LocOverlayHintDraw">Klõpsa ja lohista, et joonistada. Kasuta tööriistariba.</sys:String>
+    <sys:String x:Key="LocOverlayHintMove">Lohista valiku sees, et liikuda. Kasuta käepidemeid suuruse muutmiseks.</sys:String>
+    <sys:String x:Key="LocOverlayHintEdit">Vali tööriistad märkuste tegemiseks. Kasuta undo/redo vajadusel.</sys:String>
+    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Tühista, Enter: Kinnita, Ctrl+Z: Võta tagasi, Ctrl+Y: Tee uuesti</sys:String>
+
+    <!-- Text Input -->
+    <sys:String x:Key="LocTextInputTitle">Lisa tekst</sys:String>
+    <sys:String x:Key="LocTextInputHint">Sisesta tekst, mis asetatakse ekraanipildile</sys:String>
+    <sys:String x:Key="LocTextInputFont">Fond</sys:String>
+    <sys:String x:Key="LocTextInputSize">Suurus</sys:String>
+    <sys:String x:Key="LocTextInputBold">Paks</sys:String>
+    <sys:String x:Key="LocTextInputItalic">Kaldkirjas</sys:String>
+    <sys:String x:Key="LocTextInputColor">Värv</sys:String>
+    <sys:String x:Key="LocTextInputPlace">Paiguta tekst</sys:String>
+    <sys:String x:Key="LocTextInputCancel">Tühista</sys:String>
+
+    <!-- About -->
+    <sys:String x:Key="LocAboutTitle">Shotora polhe</sys:String>
+    <sys:String x:Key="LocAboutVersion">Versi</sys:String>
+    <sys:String x:Key="LocAboutCopyright">Â© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
+    <sys:String x:Key="LocAboutLinks">Linkõd</sys:String>
+    <sys:String x:Key="LocAboutWebsite">Web-sait</sys:String>
+    <sys:String x:Key="LocAboutLinkedIn">LinkedIn</sys:String>
+    <sys:String x:Key="LocAboutEmail">E-post</sys:String>
+
+    <!-- OCR Result -->
+    <sys:String x:Key="LocOcrResultTitle">OCR tulemus</sys:String>
+    <sys:String x:Key="LocOcrResultCopy">Kopeeri</sys:String>
+    <sys:String x:Key="LocOcrResultClose">Sulge</sys:String>
+    <sys:String x:Key="LocOcrResultHint">Tuvastatud tekst</sys:String>
+
+    <!-- Notifications -->
+    <sys:String x:Key="LocNotificationCopySuccess">Kopeeritud lõikelauale</sys:String>
+    <sys:String x:Key="LocNotificationSaveSuccess">Salvestatud</sys:String>
+    <sys:String x:Key="LocNotificationSaveFailed">Salvestamine ebaõnnestus</sys:String>
+    <sys:String x:Key="LocNotificationUploadSuccess">Üles laaditud</sys:String>
+    <sys:String x:Key="LocNotificationUploadFailed">Üleslaadimine ebaõnnestus</sys:String>
+    <sys:String x:Key="LocNotificationOcrSuccess">OCR lõpetatud</sys:String>
+    <sys:String x:Key="LocNotificationOcrFailed">OCR ebaõnnestus</sys:String>
+
+    <!-- Buttons -->
+    <sys:String x:Key="LocButtonSave">Salvesta</sys:String>
+    <sys:String x:Key="LocButtonCancel">Tühista</sys:String>
+    <sys:String x:Key="LocButtonClose">Sulge</sys:String>
+    <sys:String x:Key="LocButtonOK">OK</sys:String>
+
+    <!-- Dialogs -->
+    <sys:String x:Key="LocDialogSaveTitle">Salvesta ekraanikuva</sys:String>
+    <sys:String x:Key="LocDialogSaveFilter">PNG failid|*.png|JPEG failid|*.jpg;*.jpeg|WebP failid|*.webp|Kõik failid|*.*</sys:String>
+    <sys:String x:Key="LocDialogSaveDefaultName">Shotora.png</sys:String>
+    <sys:String x:Key="LocDialogSelectFolder">Vali kaust</sys:String>
+    <sys:String x:Key="LocDialogConfirm">Kinnita</sys:String>
+    <sys:String x:Key="LocDialogDelete">Kustuta</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguage">Eemalda keelefail?</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguageConfirm">Kas oled kindel, et soovid selle keelefaili eemaldada?</sys:String>
+
+    <!-- Errors -->
+    <sys:String x:Key="LocErrorInvalidHotkey">Vigane kiirklahv</sys:String>
+    <sys:String x:Key="LocErrorHotkeyInUse">Kiirklahv on juba kasutusel</sys:String>
+    <sys:String x:Key="LocErrorHotkeyRegisterFailed">Kiirklahvi registreerimine ebaõnnestus</sys:String>
+    <sys:String x:Key="LocErrorSaveFailed">Salvestamine ebaõnnestus</sys:String>
+    <sys:String x:Key="LocErrorOcrFailed">OCR ebaõnnestus</sys:String>
+    <sys:String x:Key="LocErrorInvalidSelection">Vigane valik</sys:String>
+    <sys:String x:Key="LocErrorNoSelection">Valikut pole</sys:String>
+    <sys:String x:Key="LocErrorTextEmpty">Tekst on tühi</sys:String>
+
+    <sys:String x:Key="LocMainTitle">Shotora</sys:String>
+    <sys:String x:Key="LocMainHint1">Kasuta süsteemsalve ikooni või üleilmseid kiirklahve kaadrivõtte tegemiseks.</sys:String>
+    <sys:String x:Key="LocMainHint2">See aken on vabatahtlik; sulge see, et jätta Shotora süsteemsalve tööle.</sys:String>
+
+    <sys:String x:Key="LocAboutSubtitle">Ekrānõptõz ja märkõz</sys:String>
+    <sys:String x:Key="LocAboutDescription">Kierāb ekrānõt, märkõt, OCR ja äigiztõbõd Shotora piertõ.</sys:String>
+    <sys:String x:Key="LocAboutLicense">Litsents</sys:String>
+    <sys:String x:Key="LocAboutAuthor">Autor</sys:String>
+    <sys:String x:Key="LocAboutRole">Rõļ</sys:String>
+    <sys:String x:Key="LocAboutContact">Kontakts</sys:String>
+    <sys:String x:Key="LocAboutContactIntro">Ota yhteyttä taganedõks vai ühtiztõmisõks.</sys:String>
+</ResourceDictionary>

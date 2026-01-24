@@ -1,0 +1,255 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <!-- Settings -->
+    <sys:String x:Key="LocSettingsTitle">Cilësimet</sys:String>
+    <sys:String x:Key="LocSettingsStorage">Ruajtja</sys:String>
+    <sys:String x:Key="LocSettingsDefaultFolder">Dosja e paracaktuar</sys:String>
+    <sys:String x:Key="LocSettingsBrowse">Shfletoni</sys:String>
+    <sys:String x:Key="LocSettingsDefaultFormat">Formati i paracaktuar</sys:String>
+    <sys:String x:Key="LocSettingsJpegQuality">Cilësia JPEG</sys:String>
+    <sys:String x:Key="LocSettingsFilenamePattern">Modeli i emrit të skedarit</sys:String>
+    <sys:String x:Key="LocSettingsOcr">Recunoaștere optică a caracterelor</sys:String>
+    <sys:String x:Key="LocSettingsProvider">Ofruesi</sys:String>
+    <sys:String x:Key="LocSettingsLanguages">Gjuhët</sys:String>
+    <sys:String x:Key="LocSettingsEasyOcrHint">EasyOCR kërkon Python + 'pip install easyocr'</sys:String>
+    <sys:String x:Key="LocSettingsTesseractFiles">Skedarët e gjuhës Tesseract</sys:String>
+    <sys:String x:Key="LocSettingsSelectLanguage">Zgjidhni gjuhën</sys:String>
+    <sys:String x:Key="LocSettingsDownload">Shkarko</sys:String>
+    <sys:String x:Key="LocSettingsDelete">Șterge</sys:String>
+    <sys:String x:Key="LocSettingsHotkeys">Taste të shpejtë</sys:String>
+    <sys:String x:Key="LocSettingsRegionHotkey">Kapja e rajonit</sys:String>
+    <sys:String x:Key="LocSettingsFullscreenHotkey">Ekran i plotë</sys:String>
+    <sys:String x:Key="LocSettingsActiveWindowHotkey">Dritarja aktive</sys:String>
+    <sys:String x:Key="LocSettingsGeneral">Të përgjithshme</sys:String>
+    <sys:String x:Key="LocSettingsTheme">Tema</sys:String>
+    <sys:String x:Key="LocSettingsDisplayLanguage">Gjuha e shfaqjes</sys:String>
+    <sys:String x:Key="LocSettingsRunOnStartup">Ekzekuto në fillim</sys:String>
+    <sys:String x:Key="LocSettingsTabMain">Kryesore</sys:String>
+    <sys:String x:Key="LocSettingsTabHotkeys">Taste të shpejtë</sys:String>
+    <sys:String x:Key="LocSettingsTabEditor">Redaktori</sys:String>
+    <sys:String x:Key="LocSettingsEditorHotkeys">Tastet e shpejtë të redaktorit</sys:String>
+    <sys:String x:Key="LocSettingsEditorMouse">Miu i redaktorit</sys:String>
+    <sys:String x:Key="LocSettingsCopyCloseMouse">Kopjo + mbyll</sys:String>
+    <sys:String x:Key="LocSettingsMoveSelectionMouse">Lëviz përzgjedhjen</sys:String>
+    <sys:String x:Key="LocSettingsEditorIcons">Ikonat e redaktorit</sys:String>
+    <sys:String x:Key="LocSettingsEditorOptions">Opsionet e redaktorit</sys:String>
+    <sys:String x:Key="LocSettingsShowThicknessSlider">Shfaq rrëshqitësin e trashësisë</sys:String>
+    <sys:String x:Key="LocSettingsDefaultThickness">Trashësia e paracaktuar</sys:String>
+    <sys:String x:Key="LocSettingsShowColorPalette">Shfaq paletën e ngjyrave</sys:String>
+    <sys:String x:Key="LocSettingsDefaultColor">Ngjyra e paracaktuar</sys:String>
+    <sys:String x:Key="LocSettingsPickColor">Zgjidhni</sys:String>
+    <sys:String x:Key="LocSettingsDefaultColorHint">Përdoret kur paleta e ngjyrave është e fshehur.</sys:String>
+    <sys:String x:Key="LocSettingsUsePointer">Folosește indicatorul</sys:String>
+    <sys:String x:Key="LocSettingsShowUndo">Afișează Anulare</sys:String>
+    <sys:String x:Key="LocSettingsShowRedo">Afișează Refacere</sys:String>
+    <sys:String x:Key="LocSettingsShowCopy">Afișează Copiere</sys:String>
+    <sys:String x:Key="LocSettingsShowSave">Afișează Salvare</sys:String>
+    <sys:String x:Key="LocSettingsShowUpload">Afișează Încărcare</sys:String>
+    <sys:String x:Key="LocSettingsShowOcr">Afișează OCR</sys:String>
+    <sys:String x:Key="LocSettingsShowCancel">Afișează Anulare</sys:String>
+    <sys:String x:Key="LocSettingsShowConfirm">Afișează Confirmare</sys:String>
+    <sys:String x:Key="LocSettingsShowClose">Afișează Închidere</sys:String>
+    <sys:String x:Key="LocSettingsShowSelection">Afișează Selectare</sys:String>
+    <sys:String x:Key="LocSettingsShowMove">Afișează Mutare</sys:String>
+    <sys:String x:Key="LocSettingsShowPen">Afișează Creion</sys:String>
+    <sys:String x:Key="LocSettingsShowLine">Afișează Linie</sys:String>
+    <sys:String x:Key="LocSettingsShowArrow">Afișează Săgeată</sys:String>
+    <sys:String x:Key="LocSettingsShowRectangle">Afișează Dreptunghi</sys:String>
+    <sys:String x:Key="LocSettingsShowEllipse">Afișează Elipsă</sys:String>
+    <sys:String x:Key="LocSettingsShowText">Afișează Text</sys:String>
+    <sys:String x:Key="LocSettingsShowHighlight">Afișează Evidențiere</sys:String>
+    <sys:String x:Key="LocSettingsShowBlur">Afișează Estompare</sys:String>
+    <sys:String x:Key="LocSettingsShowPixelate">Afișează Pixelare</sys:String>
+    <sys:String x:Key="LocSettingsShowThickness">Afișează Grosime</sys:String>
+    <sys:String x:Key="LocSettingsShowColors">Afișează Culori</sys:String>
+    <sys:String x:Key="LocSettingsShowCrosshair">Afișează Reticulă</sys:String>
+    <sys:String x:Key="LocSettingsShowResizeHandles">Afișează Mânere de redimensionare</sys:String>
+    <sys:String x:Key="LocSettingsShowToolbar">Afișează Bara de instrumente</sys:String>
+    <sys:String x:Key="LocSettingsShowPalette">Afișează Paleta</sys:String>
+    <sys:String x:Key="LocSettingsShowPreview">Afișează Previziune</sys:String>
+    <sys:String x:Key="LocSettingsShowMiniMap">Afișează Mini-hartă</sys:String>
+    <sys:String x:Key="LocSettingsShowSelectionSize">Afișează Dimensiunea selecției</sys:String>
+    <sys:String x:Key="LocSettingsShowSelectionPosition">Afișează Poziția selecției</sys:String>
+
+    <!-- Common -->
+    <sys:String x:Key="LocCommonClose">Mbyll</sys:String>
+
+    <!-- Tools -->
+    <sys:String x:Key="LocToolSelect">Zgjidhni</sys:String>
+    <sys:String x:Key="LocToolRegion">Zgjidhni rajonin</sys:String>
+    <sys:String x:Key="LocToolMove">Lëvizni rajonin</sys:String>
+    <sys:String x:Key="LocToolPen">Lapsi</sys:String>
+    <sys:String x:Key="LocToolLine">Linja</sys:String>
+    <sys:String x:Key="LocToolArrow">Shigjeta</sys:String>
+    <sys:String x:Key="LocToolRect">Drejtkëndësh</sys:String>
+    <sys:String x:Key="LocToolEllipse">Elipsa</sys:String>
+    <sys:String x:Key="LocToolText">Teksti</sys:String>
+    <sys:String x:Key="LocToolHighlight">Theksimi</sys:String>
+    <sys:String x:Key="LocToolBlur">Turbullimi</sys:String>
+    <sys:String x:Key="LocToolPixelate">Pikselizimi</sys:String>
+    <sys:String x:Key="LocToolSaveAs">Ruaje si</sys:String>
+    <sys:String x:Key="LocToolCopy">Kopjo</sys:String>
+    <sys:String x:Key="LocToolUpload">Ngarkoni</sys:String>
+    <sys:String x:Key="LocToolCancel">Anulo</sys:String>
+    <sys:String x:Key="LocToolColors">Ngjyrat</sys:String>
+    <sys:String x:Key="LocToolThickness">Trashësia</sys:String>
+    <sys:String x:Key="LocToolUndo">Zhbëj</sys:String>
+    <sys:String x:Key="LocToolRedo">Ribëj</sys:String>
+
+    <sys:String x:Key="LocSettingsRegionHotkeyPlaceholder">Apasă tastele...</sys:String>
+    <sys:String x:Key="LocSettingsFullscreenHotkeyPlaceholder">Apasă tastele...</sys:String>
+    <sys:String x:Key="LocSettingsActiveWindowHotkeyPlaceholder">Apasă tastele...</sys:String>
+    <sys:String x:Key="LocSettingsEditorUndoHotkey">Anulează</sys:String>
+    <sys:String x:Key="LocSettingsEditorUndoHotkeyPlaceholder">Ctrl+Z</sys:String>
+    <sys:String x:Key="LocSettingsEditorRedoHotkey">Refă</sys:String>
+    <sys:String x:Key="LocSettingsEditorRedoHotkeyPlaceholder">Ctrl+Y</sys:String>
+    <sys:String x:Key="LocSettingsEditorCopyHotkey">Copiază</sys:String>
+    <sys:String x:Key="LocSettingsEditorCopyHotkeyPlaceholder">Ctrl+C</sys:String>
+    <sys:String x:Key="LocSettingsEditorSaveHotkey">Salvează</sys:String>
+    <sys:String x:Key="LocSettingsEditorSaveHotkeyPlaceholder">Ctrl+S</sys:String>
+
+    <sys:String x:Key="LocSettingsOcrSettings">Setări OCR</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstall">Instalează EasyOCR</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemove">Dezinstalează EasyOCR</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrStatus">Stare</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstalled">Instalat</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrNotInstalled">Neinstalat</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstalling">Se instalează...</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemoving">Se dezinstalează...</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstallFailed">Instalarea a eșuat</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemoveFailed">Dezinstalarea a eșuat</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstallLang">Instalează</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoveLang">Șterge</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstalled">Instalat</sys:String>
+    <sys:String x:Key="LocSettingsOcrNotInstalled">Neinstalat</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstalling">Se instalează...</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoving">Se elimină...</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstallFailed">Instalarea a eșuat</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoveFailed">Eliminarea a eșuat</sys:String>
+    <sys:String x:Key="LocSettingsOcrDownloadProgress">Progres descărcare</sys:String>
+    <sys:String x:Key="LocSettingsOcrBytes">bytes</sys:String>
+    <sys:String x:Key="LocSettingsOcrLicense">Licență</sys:String>
+    <sys:String x:Key="LocSettingsOcrLicenseLink">https://github.com/JaidedAI/EasyOCR/blob/master/LICENSE</sys:String>
+    <sys:String x:Key="LocSettingsOcrTesseractLangs">Limbi Tesseract</sys:String>
+    <sys:String x:Key="LocSettingsOcrTesseractHint">Descărcați sau adăugați limbi Tesseract suplimentare aici.</sys:String>
+
+    <sys:String x:Key="LocSettingsExamplesTitle">Exemple</sys:String>
+    <sys:String x:Key="LocSettingsExamplesDescription">Previzualizați pictograme exemplu în tema curentă.</sys:String>
+    <sys:String x:Key="LocSettingsExamplesFormat">Format</sys:String>
+    <sys:String x:Key="LocSettingsExamplesEffects">Efecte</sys:String>
+    <sys:String x:Key="LocSettingsExamplesShape">Formă</sys:String>
+    <sys:String x:Key="LocSettingsExamplesIcon">Pictogramă</sys:String>
+
+    <!-- Tray -->
+    <sys:String x:Key="LocTrayCaptureRegion">Kap Rajonin</sys:String>
+    <sys:String x:Key="LocTrayCaptureFull">Kap Ekranin e Plotë</sys:String>
+    <sys:String x:Key="LocTraySettings">Cilësimet</sys:String>
+    <sys:String x:Key="LocTrayAbout">Rreth</sys:String>
+    <sys:String x:Key="LocTrayExit">Dil</sys:String>
+
+    <!-- Overlay -->
+    <sys:String x:Key="LocOverlayCopy">Copiază</sys:String>
+    <sys:String x:Key="LocOverlaySave">Salvează</sys:String>
+    <sys:String x:Key="LocOverlayUpload">Încărcare</sys:String>
+    <sys:String x:Key="LocOverlayOcr">Recunoaștere optică</sys:String>
+    <sys:String x:Key="LocOverlayCancel">Anulează</sys:String>
+    <sys:String x:Key="LocOverlayConfirm">Confirmă</sys:String>
+    <sys:String x:Key="LocOverlayClose">Închide</sys:String>
+    <sys:String x:Key="LocOverlaySelection">Selectare</sys:String>
+    <sys:String x:Key="LocOverlayMove">Mutare</sys:String>
+    <sys:String x:Key="LocOverlayPointer">Indicator</sys:String>
+    <sys:String x:Key="LocOverlayPen">Creion</sys:String>
+    <sys:String x:Key="LocOverlayLine">Linie</sys:String>
+    <sys:String x:Key="LocOverlayArrow">Săgeată</sys:String>
+    <sys:String x:Key="LocOverlayRectangle">Dreptunghi</sys:String>
+    <sys:String x:Key="LocOverlayEllipse">Elipsă</sys:String>
+    <sys:String x:Key="LocOverlayText">Text</sys:String>
+    <sys:String x:Key="LocOverlayHighlight">Evidențiere</sys:String>
+    <sys:String x:Key="LocOverlayBlur">Estompare</sys:String>
+    <sys:String x:Key="LocOverlayPixelate">Pixelare</sys:String>
+    <sys:String x:Key="LocOverlayThickness">Grosime</sys:String>
+    <sys:String x:Key="LocOverlayColors">Culori</sys:String>
+    <sys:String x:Key="LocOverlayPosition">Poziție</sys:String>
+    <sys:String x:Key="LocOverlaySize">Dimensiune</sys:String>
+    <sys:String x:Key="LocOverlayWidth">L</sys:String>
+    <sys:String x:Key="LocOverlayHeight">Î</sys:String>
+    <sys:String x:Key="LocOverlayPickColor">Alege culoarea</sys:String>
+    <sys:String x:Key="LocOverlayHintDraw">Faceți clic și trageți pentru a desena. Folosiți bara de instrumente pentru unelte.</sys:String>
+    <sys:String x:Key="LocOverlayHintMove">Trageți în interiorul selecției pentru a muta. Folosiți mânerele pentru redimensionare.</sys:String>
+    <sys:String x:Key="LocOverlayHintEdit">Selectați unelte pentru a adnota. Folosiți Anulează/Refă după nevoie.</sys:String>
+    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Anulează, Enter: Confirmă, Ctrl+Z: Anulează, Ctrl+Y: Refă</sys:String>
+
+    <!-- Text Input -->
+    <sys:String x:Key="LocTextInputTitle">Adaugă text</sys:String>
+    <sys:String x:Key="LocTextInputHint">Introduceți textul de plasat pe captura de ecran</sys:String>
+    <sys:String x:Key="LocTextInputFont">Font</sys:String>
+    <sys:String x:Key="LocTextInputSize">Dimensiune</sys:String>
+    <sys:String x:Key="LocTextInputBold">Aldin</sys:String>
+    <sys:String x:Key="LocTextInputItalic">Cursiv</sys:String>
+    <sys:String x:Key="LocTextInputColor">Culoare</sys:String>
+    <sys:String x:Key="LocTextInputPlace">Plasează text</sys:String>
+    <sys:String x:Key="LocTextInputCancel">Anulează</sys:String>
+
+    <!-- About -->
+    <sys:String x:Key="LocAboutTitle">Rreth Shotora</sys:String>
+    <sys:String x:Key="LocAboutVersion">Versioni</sys:String>
+    <sys:String x:Key="LocAboutCopyright">© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
+    <sys:String x:Key="LocAboutLinks">Lidhjet</sys:String>
+    <sys:String x:Key="LocAboutWebsite">Faqja e internetit</sys:String>
+    <sys:String x:Key="LocAboutLinkedIn">LinkedIn</sys:String>
+    <sys:String x:Key="LocAboutEmail">E-mail</sys:String>
+
+    <!-- OCR Result -->
+    <sys:String x:Key="LocOcrResultTitle">Rezultat OCR</sys:String>
+    <sys:String x:Key="LocOcrResultCopy">Copiază</sys:String>
+    <sys:String x:Key="LocOcrResultClose">Închide</sys:String>
+    <sys:String x:Key="LocOcrResultHint">Text recunoscut</sys:String>
+
+    <!-- Notifications -->
+    <sys:String x:Key="LocNotificationCopySuccess">Copiat în clipboard</sys:String>
+    <sys:String x:Key="LocNotificationSaveSuccess">Salvat</sys:String>
+    <sys:String x:Key="LocNotificationSaveFailed">Salvarea a eșuat</sys:String>
+    <sys:String x:Key="LocNotificationUploadSuccess">Încărcat</sys:String>
+    <sys:String x:Key="LocNotificationUploadFailed">Încărcarea a eșuat</sys:String>
+    <sys:String x:Key="LocNotificationOcrSuccess">OCR finalizat</sys:String>
+    <sys:String x:Key="LocNotificationOcrFailed">OCR a eșuat</sys:String>
+
+    <!-- Buttons -->
+    <sys:String x:Key="LocButtonSave">Salvează</sys:String>
+    <sys:String x:Key="LocButtonCancel">Anulează</sys:String>
+    <sys:String x:Key="LocButtonClose">Închide</sys:String>
+    <sys:String x:Key="LocButtonOK">OK</sys:String>
+
+    <!-- Dialogs -->
+    <sys:String x:Key="LocDialogSaveTitle">Salvează captura de ecran</sys:String>
+    <sys:String x:Key="LocDialogSaveFilter">Fișiere PNG|*.png|Fișiere JPEG|*.jpg;*.jpeg|Fișiere WebP|*.webp|Toate fișierele|*.*</sys:String>
+    <sys:String x:Key="LocDialogSaveDefaultName">Shotora.png</sys:String>
+    <sys:String x:Key="LocDialogSelectFolder">Selectați folderul</sys:String>
+    <sys:String x:Key="LocDialogConfirm">Confirmă</sys:String>
+    <sys:String x:Key="LocDialogDelete">Șterge</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguage">Eliminați fișierul de limbă?</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguageConfirm">Sunteți sigur că doriți să eliminați acest fișier de limbă?</sys:String>
+
+    <!-- Errors -->
+    <sys:String x:Key="LocErrorInvalidHotkey">Taste rapidă invalidă</sys:String>
+    <sys:String x:Key="LocErrorHotkeyInUse">Tasta rapidă este deja în uz</sys:String>
+    <sys:String x:Key="LocErrorHotkeyRegisterFailed">Înregistrarea tastei rapide a eșuat</sys:String>
+    <sys:String x:Key="LocErrorSaveFailed">Salvarea a eșuat</sys:String>
+    <sys:String x:Key="LocErrorOcrFailed">OCR a eșuat</sys:String>
+    <sys:String x:Key="LocErrorInvalidSelection">Selecție invalidă</sys:String>
+    <sys:String x:Key="LocErrorNoSelection">Nicio selecție</sys:String>
+    <sys:String x:Key="LocErrorTextEmpty">Textul este gol</sys:String>
+
+    <sys:String x:Key="LocMainTitle">Shotora</sys:String>
+    <sys:String x:Key="LocMainHint1">Folosiți pictograma din bara de sistem sau tastele rapide globale pentru captură.</sys:String>
+    <sys:String x:Key="LocMainHint2">Această fereastră este opțională; închideți-o pentru a lăsa Shotora să ruleze în bara de sistem.</sys:String>
+
+    <sys:String x:Key="LocAboutSubtitle">Kapje ekrani dhe shënime</sys:String>
+    <sys:String x:Key="LocAboutDescription">Pamje të shpejta ekrani, shënime, OCR dhe ngarkime me Shotora.</sys:String>
+    <sys:String x:Key="LocAboutLicense">Licencë</sys:String>
+    <sys:String x:Key="LocAboutAuthor">Autor</sys:String>
+    <sys:String x:Key="LocAboutRole">Rol</sys:String>
+    <sys:String x:Key="LocAboutContact">Kontakt</sys:String>
+    <sys:String x:Key="LocAboutContactIntro">Na kontakto për komente ose bashkëpunim.</sys:String>
+</ResourceDictionary>

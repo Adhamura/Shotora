@@ -1,0 +1,3 @@
+Welcome to Shotora Setup
+
+This wizard installs Shotora and its OCR support. Close other screen capture tools before continuing.

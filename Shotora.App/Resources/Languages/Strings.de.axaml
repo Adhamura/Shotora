@@ -1,0 +1,255 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <!-- Settings -->
+    <sys:String x:Key="LocSettingsTitle">Einstellungen</sys:String>
+    <sys:String x:Key="LocSettingsStorage">Speicher</sys:String>
+    <sys:String x:Key="LocSettingsDefaultFolder">Standardordner</sys:String>
+    <sys:String x:Key="LocSettingsBrowse">Durchsuchen</sys:String>
+    <sys:String x:Key="LocSettingsDefaultFormat">Standardformat</sys:String>
+    <sys:String x:Key="LocSettingsJpegQuality">JPEG-Qualität</sys:String>
+    <sys:String x:Key="LocSettingsFilenamePattern">Dateinamensmuster</sys:String>
+    <sys:String x:Key="LocSettingsOcr">OCR</sys:String>
+    <sys:String x:Key="LocSettingsProvider">Anbieter</sys:String>
+    <sys:String x:Key="LocSettingsLanguages">Sprachen</sys:String>
+    <sys:String x:Key="LocSettingsEasyOcrHint">EasyOCR erfordert Python + 'pip install easyocr'</sys:String>
+    <sys:String x:Key="LocSettingsTesseractFiles">Tesseract-Sprachdateien</sys:String>
+    <sys:String x:Key="LocSettingsSelectLanguage">Sprache auswählen</sys:String>
+    <sys:String x:Key="LocSettingsDownload">Herunterladen</sys:String>
+    <sys:String x:Key="LocSettingsDelete">Löschen</sys:String>
+    <sys:String x:Key="LocSettingsHotkeys">Tastenkombinationen</sys:String>
+    <sys:String x:Key="LocSettingsRegionHotkey">Bereichserfassung</sys:String>
+    <sys:String x:Key="LocSettingsFullscreenHotkey">Vollbild</sys:String>
+    <sys:String x:Key="LocSettingsActiveWindowHotkey">Aktives Fenster</sys:String>
+    <sys:String x:Key="LocSettingsGeneral">Allgemein</sys:String>
+    <sys:String x:Key="LocSettingsTheme">Design</sys:String>
+    <sys:String x:Key="LocSettingsDisplayLanguage">Anzeigesprache</sys:String>
+    <sys:String x:Key="LocSettingsRunOnStartup">Beim Systemstart ausführen</sys:String>
+    <sys:String x:Key="LocSettingsTabMain">Hauptmenü</sys:String>
+    <sys:String x:Key="LocSettingsTabHotkeys">Tastenkombinationen</sys:String>
+    <sys:String x:Key="LocSettingsTabEditor">Editor</sys:String>
+    <sys:String x:Key="LocSettingsEditorHotkeys">Editor-Tastenkombinationen</sys:String>
+    <sys:String x:Key="LocSettingsEditorMouse">Editor-Maus</sys:String>
+    <sys:String x:Key="LocSettingsCopyCloseMouse">Kopieren + Schließen</sys:String>
+    <sys:String x:Key="LocSettingsMoveSelectionMouse">Auswahl verschieben</sys:String>
+    <sys:String x:Key="LocSettingsEditorIcons">Editor-Symbole</sys:String>
+    <sys:String x:Key="LocSettingsEditorOptions">Editor-Optionen</sys:String>
+    <sys:String x:Key="LocSettingsShowThicknessSlider">Stärkeregler anzeigen</sys:String>
+    <sys:String x:Key="LocSettingsDefaultThickness">Standardstärke</sys:String>
+    <sys:String x:Key="LocSettingsShowColorPalette">Farppalette anzeigen</sys:String>
+    <sys:String x:Key="LocSettingsDefaultColor">Standardfarbe</sys:String>
+    <sys:String x:Key="LocSettingsPickColor">Auswählen</sys:String>
+    <sys:String x:Key="LocSettingsDefaultColorHint">Wird verwendet, wenn die Farppalette ausgeblendet ist.</sys:String>
+    <sys:String x:Key="LocSettingsUsePointer">Zeiger verwenden</sys:String>
+    <sys:String x:Key="LocSettingsShowUndo">Rückgängig anzeigen</sys:String>
+    <sys:String x:Key="LocSettingsShowRedo">Wiederholen anzeigen</sys:String>
+    <sys:String x:Key="LocSettingsShowCopy">Kopieren anzeigen</sys:String>
+    <sys:String x:Key="LocSettingsShowSave">Speichern anzeigen</sys:String>
+    <sys:String x:Key="LocSettingsShowUpload">Hochladen anzeigen</sys:String>
+    <sys:String x:Key="LocSettingsShowOcr">OCR anzeigen</sys:String>
+    <sys:String x:Key="LocSettingsShowCancel">Abbrechen anzeigen</sys:String>
+    <sys:String x:Key="LocSettingsShowConfirm">Bestätigen anzeigen</sys:String>
+    <sys:String x:Key="LocSettingsShowClose">Schließen anzeigen</sys:String>
+    <sys:String x:Key="LocSettingsShowSelection">Auswahl anzeigen</sys:String>
+    <sys:String x:Key="LocSettingsShowMove">Verschieben anzeigen</sys:String>
+    <sys:String x:Key="LocSettingsShowPen">Stift anzeigen</sys:String>
+    <sys:String x:Key="LocSettingsShowLine">Linie anzeigen</sys:String>
+    <sys:String x:Key="LocSettingsShowArrow">Pfeil anzeigen</sys:String>
+    <sys:String x:Key="LocSettingsShowRectangle">Rechteck anzeigen</sys:String>
+    <sys:String x:Key="LocSettingsShowEllipse">Ellipse anzeigen</sys:String>
+    <sys:String x:Key="LocSettingsShowText">Text anzeigen</sys:String>
+    <sys:String x:Key="LocSettingsShowHighlight">Markierung anzeigen</sys:String>
+    <sys:String x:Key="LocSettingsShowBlur">Weichzeichnen anzeigen</sys:String>
+    <sys:String x:Key="LocSettingsShowPixelate">Verpixelung anzeigen</sys:String>
+    <sys:String x:Key="LocSettingsShowThickness">Strichstärke anzeigen</sys:String>
+    <sys:String x:Key="LocSettingsShowColors">Farben anzeigen</sys:String>
+    <sys:String x:Key="LocSettingsShowCrosshair">Fadenkreuz anzeigen</sys:String>
+    <sys:String x:Key="LocSettingsShowResizeHandles">Griffpunkte anzeigen</sys:String>
+    <sys:String x:Key="LocSettingsShowToolbar">Symbolleiste anzeigen</sys:String>
+    <sys:String x:Key="LocSettingsShowPalette">Palette anzeigen</sys:String>
+    <sys:String x:Key="LocSettingsShowPreview">Vorschau anzeigen</sys:String>
+    <sys:String x:Key="LocSettingsShowMiniMap">Mini-Karte anzeigen</sys:String>
+    <sys:String x:Key="LocSettingsShowSelectionSize">Auswahlgröße anzeigen</sys:String>
+    <sys:String x:Key="LocSettingsShowSelectionPosition">Auswahlposition anzeigen</sys:String>
+
+    <!-- Common -->
+    <sys:String x:Key="LocCommonClose">Schließen</sys:String>
+
+    <!-- Tools -->
+    <sys:String x:Key="LocToolSelect">Auswählen</sys:String>
+    <sys:String x:Key="LocToolRegion">Bereich wählen</sys:String>
+    <sys:String x:Key="LocToolMove">Bereich verschieben</sys:String>
+    <sys:String x:Key="LocToolPen">Stift</sys:String>
+    <sys:String x:Key="LocToolLine">Linie</sys:String>
+    <sys:String x:Key="LocToolArrow">Pfeil</sys:String>
+    <sys:String x:Key="LocToolRect">Rechteck</sys:String>
+    <sys:String x:Key="LocToolEllipse">Ellipse</sys:String>
+    <sys:String x:Key="LocToolText">Text</sys:String>
+    <sys:String x:Key="LocToolHighlight">Hervorheben</sys:String>
+    <sys:String x:Key="LocToolBlur">Weichzeichnen</sys:String>
+    <sys:String x:Key="LocToolPixelate">Verpixeln</sys:String>
+    <sys:String x:Key="LocToolSaveAs">Speichern unter</sys:String>
+    <sys:String x:Key="LocToolCopy">Kopieren</sys:String>
+    <sys:String x:Key="LocToolUpload">Hochladen</sys:String>
+    <sys:String x:Key="LocToolCancel">Abbrechen</sys:String>
+    <sys:String x:Key="LocToolColors">Farben</sys:String>
+    <sys:String x:Key="LocToolThickness">Stärke</sys:String>
+    <sys:String x:Key="LocToolUndo">Rückgängig</sys:String>
+    <sys:String x:Key="LocToolRedo">Wiederholen</sys:String>
+
+    <sys:String x:Key="LocSettingsRegionHotkeyPlaceholder">Tasten drücken...</sys:String>
+    <sys:String x:Key="LocSettingsFullscreenHotkeyPlaceholder">Tasten drücken...</sys:String>
+    <sys:String x:Key="LocSettingsActiveWindowHotkeyPlaceholder">Tasten drücken...</sys:String>
+    <sys:String x:Key="LocSettingsEditorUndoHotkey">Rückgängig</sys:String>
+    <sys:String x:Key="LocSettingsEditorUndoHotkeyPlaceholder">Ctrl+Z</sys:String>
+    <sys:String x:Key="LocSettingsEditorRedoHotkey">Wiederholen</sys:String>
+    <sys:String x:Key="LocSettingsEditorRedoHotkeyPlaceholder">Ctrl+Y</sys:String>
+    <sys:String x:Key="LocSettingsEditorCopyHotkey">Kopieren</sys:String>
+    <sys:String x:Key="LocSettingsEditorCopyHotkeyPlaceholder">Ctrl+C</sys:String>
+    <sys:String x:Key="LocSettingsEditorSaveHotkey">Speichern</sys:String>
+    <sys:String x:Key="LocSettingsEditorSaveHotkeyPlaceholder">Ctrl+S</sys:String>
+
+    <sys:String x:Key="LocSettingsOcrSettings">OCR-Einstellungen</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstall">EasyOCR installieren</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemove">EasyOCR entfernen</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrStatus">Status</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstalled">Installiert</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrNotInstalled">Nicht installiert</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstalling">Wird installiert...</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemoving">Wird entfernt...</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstallFailed">Installation fehlgeschlagen</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemoveFailed">Entfernung fehlgeschlagen</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstallLang">Installieren</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoveLang">Entfernen</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstalled">Installiert</sys:String>
+    <sys:String x:Key="LocSettingsOcrNotInstalled">Nicht installiert</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstalling">Wird installiert...</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoving">Wird entfernt...</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstallFailed">Installation fehlgeschlagen</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoveFailed">Entfernung fehlgeschlagen</sys:String>
+    <sys:String x:Key="LocSettingsOcrDownloadProgress">Download-Fortschritt</sys:String>
+    <sys:String x:Key="LocSettingsOcrBytes">bytes</sys:String>
+    <sys:String x:Key="LocSettingsOcrLicense">Lizenz</sys:String>
+    <sys:String x:Key="LocSettingsOcrLicenseLink">https://github.com/JaidedAI/EasyOCR/blob/master/LICENSE</sys:String>
+    <sys:String x:Key="LocSettingsOcrTesseractLangs">Tesseract-Sprachen</sys:String>
+    <sys:String x:Key="LocSettingsOcrTesseractHint">Laden Sie hier zusätzliche Tesseract-Sprachen herunter.</sys:String>
+
+    <sys:String x:Key="LocSettingsExamplesTitle">Beispiele</sys:String>
+    <sys:String x:Key="LocSettingsExamplesDescription">Vorschau von Beispielsymbolen im aktuellen Design.</sys:String>
+    <sys:String x:Key="LocSettingsExamplesFormat">Format</sys:String>
+    <sys:String x:Key="LocSettingsExamplesEffects">Effekte</sys:String>
+    <sys:String x:Key="LocSettingsExamplesShape">Form</sys:String>
+    <sys:String x:Key="LocSettingsExamplesIcon">Symbol</sys:String>
+
+    <!-- Tray -->
+    <sys:String x:Key="LocTrayCaptureRegion">Bereich erfassen</sys:String>
+    <sys:String x:Key="LocTrayCaptureFull">Vollbild erfassen</sys:String>
+    <sys:String x:Key="LocTraySettings">Einstellungen</sys:String>
+    <sys:String x:Key="LocTrayAbout">Über</sys:String>
+    <sys:String x:Key="LocTrayExit">Beenden</sys:String>
+
+    <!-- Overlay -->
+    <sys:String x:Key="LocOverlayCopy">Kopieren</sys:String>
+    <sys:String x:Key="LocOverlaySave">Speichern</sys:String>
+    <sys:String x:Key="LocOverlayUpload">Hochladen</sys:String>
+    <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
+    <sys:String x:Key="LocOverlayCancel">Abbrechen</sys:String>
+    <sys:String x:Key="LocOverlayConfirm">Bestätigen</sys:String>
+    <sys:String x:Key="LocOverlayClose">Schließen</sys:String>
+    <sys:String x:Key="LocOverlaySelection">Auswahl</sys:String>
+    <sys:String x:Key="LocOverlayMove">Verschieben</sys:String>
+    <sys:String x:Key="LocOverlayPointer">Zeiger</sys:String>
+    <sys:String x:Key="LocOverlayPen">Stift</sys:String>
+    <sys:String x:Key="LocOverlayLine">Linie</sys:String>
+    <sys:String x:Key="LocOverlayArrow">Pfeil</sys:String>
+    <sys:String x:Key="LocOverlayRectangle">Rechteck</sys:String>
+    <sys:String x:Key="LocOverlayEllipse">Ellipse</sys:String>
+    <sys:String x:Key="LocOverlayText">Text</sys:String>
+    <sys:String x:Key="LocOverlayHighlight">Markierung</sys:String>
+    <sys:String x:Key="LocOverlayBlur">Weichzeichnen</sys:String>
+    <sys:String x:Key="LocOverlayPixelate">Verpixeln</sys:String>
+    <sys:String x:Key="LocOverlayThickness">Stärke</sys:String>
+    <sys:String x:Key="LocOverlayColors">Farben</sys:String>
+    <sys:String x:Key="LocOverlayPosition">Position</sys:String>
+    <sys:String x:Key="LocOverlaySize">Größe</sys:String>
+    <sys:String x:Key="LocOverlayWidth">B</sys:String>
+    <sys:String x:Key="LocOverlayHeight">H</sys:String>
+    <sys:String x:Key="LocOverlayPickColor">Farbe wählen</sys:String>
+    <sys:String x:Key="LocOverlayHintDraw">Klicken und ziehen, um zu zeichnen. Verwenden Sie die Symbolleiste für Werkzeuge.</sys:String>
+    <sys:String x:Key="LocOverlayHintMove">Ziehen Sie innerhalb der Auswahl, um sie zu verschieben. Nutzen Sie die Griffe, um die Größe zu ändern.</sys:String>
+    <sys:String x:Key="LocOverlayHintEdit">Wählen Sie Werkzeuge zum Kommentieren. Nutzen Sie Rückgängig/Wiederholen nach Bedarf.</sys:String>
+    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Abbrechen, Enter: Bestätigen, Strg+Z: Rückgängig, Strg+Y: Wiederholen</sys:String>
+
+    <!-- Text Input -->
+    <sys:String x:Key="LocTextInputTitle">Text hinzufügen</sys:String>
+    <sys:String x:Key="LocTextInputHint">Geben Sie Text ein, um ihn auf dem Screenshot zu platzieren.</sys:String>
+    <sys:String x:Key="LocTextInputFont">Schriftart</sys:String>
+    <sys:String x:Key="LocTextInputSize">Größe</sys:String>
+    <sys:String x:Key="LocTextInputBold">Fett</sys:String>
+    <sys:String x:Key="LocTextInputItalic">Kursiv</sys:String>
+    <sys:String x:Key="LocTextInputColor">Farbe</sys:String>
+    <sys:String x:Key="LocTextInputPlace">Text platzieren</sys:String>
+    <sys:String x:Key="LocTextInputCancel">Abbrechen</sys:String>
+
+    <!-- About -->
+    <sys:String x:Key="LocAboutTitle">Über Shotora</sys:String>
+    <sys:String x:Key="LocAboutVersion">Version</sys:String>
+    <sys:String x:Key="LocAboutCopyright">© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
+    <sys:String x:Key="LocAboutLinks">Links</sys:String>
+    <sys:String x:Key="LocAboutWebsite">Webseite</sys:String>
+    <sys:String x:Key="LocAboutLinkedIn">LinkedIn</sys:String>
+    <sys:String x:Key="LocAboutEmail">E-Mail</sys:String>
+
+    <!-- OCR Result -->
+    <sys:String x:Key="LocOcrResultTitle">OCR-Ergebnis</sys:String>
+    <sys:String x:Key="LocOcrResultCopy">Kopieren</sys:String>
+    <sys:String x:Key="LocOcrResultClose">Schließen</sys:String>
+    <sys:String x:Key="LocOcrResultHint">Erkannten Text</sys:String>
+
+    <!-- Notifications -->
+    <sys:String x:Key="LocNotificationCopySuccess">In die Zwischenablage kopiert</sys:String>
+    <sys:String x:Key="LocNotificationSaveSuccess">Gespeichert</sys:String>
+    <sys:String x:Key="LocNotificationSaveFailed">Speichern fehlgeschlagen</sys:String>
+    <sys:String x:Key="LocNotificationUploadSuccess">Hochgeladen</sys:String>
+    <sys:String x:Key="LocNotificationUploadFailed">Hochladen fehlgeschlagen</sys:String>
+    <sys:String x:Key="LocNotificationOcrSuccess">OCR abgeschlossen</sys:String>
+    <sys:String x:Key="LocNotificationOcrFailed">OCR fehlgeschlagen</sys:String>
+
+    <!-- Buttons -->
+    <sys:String x:Key="LocButtonSave">Speichern</sys:String>
+    <sys:String x:Key="LocButtonCancel">Abbrechen</sys:String>
+    <sys:String x:Key="LocButtonClose">Schließen</sys:String>
+    <sys:String x:Key="LocButtonOK">OK</sys:String>
+
+    <!-- Dialogs -->
+    <sys:String x:Key="LocDialogSaveTitle">Screenshot speichern</sys:String>
+    <sys:String x:Key="LocDialogSaveFilter">PNG-Dateien|*.png|JPEG-Dateien|*.jpg;*.jpeg|WebP-Dateien|*.webp|Alle Dateien|*.*</sys:String>
+    <sys:String x:Key="LocDialogSaveDefaultName">Shotora.png</sys:String>
+    <sys:String x:Key="LocDialogSelectFolder">Ordner auswählen</sys:String>
+    <sys:String x:Key="LocDialogConfirm">Bestätigen</sys:String>
+    <sys:String x:Key="LocDialogDelete">Löschen</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguage">Sprachdatei entfernen?</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguageConfirm">Möchten Sie diese Sprachdatei wirklich entfernen?</sys:String>
+
+    <!-- Errors -->
+    <sys:String x:Key="LocErrorInvalidHotkey">Ungültige Tastenkombination</sys:String>
+    <sys:String x:Key="LocErrorHotkeyInUse">Tastenkombination bereits vergeben</sys:String>
+    <sys:String x:Key="LocErrorHotkeyRegisterFailed">Registrierung der Tastenkombination fehlgeschlagen</sys:String>
+    <sys:String x:Key="LocErrorSaveFailed">Speichern fehlgeschlagen</sys:String>
+    <sys:String x:Key="LocErrorOcrFailed">OCR fehlgeschlagen</sys:String>
+    <sys:String x:Key="LocErrorInvalidSelection">Ungültige Auswahl</sys:String>
+    <sys:String x:Key="LocErrorNoSelection">Keine Auswahl</sys:String>
+    <sys:String x:Key="LocErrorTextEmpty">Text ist leer</sys:String>
+
+    <sys:String x:Key="LocMainTitle">Shotora</sys:String>
+    <sys:String x:Key="LocMainHint1">Verwenden Sie das Tray-Symbol oder globale Tastenkombinationen zum Erfassen.</sys:String>
+    <sys:String x:Key="LocMainHint2">Dieses Fenster ist optional; schließen Sie es, damit Shotora weiterhin im Tray läuft.</sys:String>
+
+    <sys:String x:Key="LocAboutSubtitle">Bildschirmaufnahme und Anmerkungen</sys:String>
+    <sys:String x:Key="LocAboutDescription">Schnelle Screenshots, Markierungen, OCR und Uploads mit Shotora.</sys:String>
+    <sys:String x:Key="LocAboutLicense">Lizenz</sys:String>
+    <sys:String x:Key="LocAboutAuthor">Autor</sys:String>
+    <sys:String x:Key="LocAboutRole">Rolle</sys:String>
+    <sys:String x:Key="LocAboutContact">Kontakt</sys:String>
+    <sys:String x:Key="LocAboutContactIntro">Melden Sie sich für Feedback oder Zusammenarbeit.</sys:String>
+</ResourceDictionary>

@@ -1,0 +1,3 @@
+Setup Complete
+
+Shotora is now installed. Launch from the Start Menu (or Applications folder on macOS) and configure hotkeys and OCR languages in Settings.

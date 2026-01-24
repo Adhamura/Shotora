@@ -1,0 +1,153 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <LangVersion>14</LangVersion>
+        <Authors>Kazuki Kimura</Authors>
+        <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+        <PublicSign>false</PublicSign>
+        <TargetFramework>net10.0</TargetFramework>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <!-- Target Windows 7+ APIs and suppress CA1416 platform warnings for Windows-only code paths -->
+        <SupportedOSPlatformVersion>6.1</SupportedOSPlatformVersion>
+        <NoWarn>$(NoWarn);CA1416</NoWarn>
+        <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+        <IncludeAllContentForSelfExtract>true</IncludeAllContentForSelfExtract>
+    </PropertyGroup>
+
+    <!-- Define WINDOWS symbol only when targeting Windows (or building on Windows without an explicit RID) -->
+    <PropertyGroup Condition="( $([MSBuild]::IsOSPlatform('Windows')) and $([System.String]::IsNullOrEmpty('$(RuntimeIdentifier)')) ) or $([System.String]::Copy('$(RuntimeIdentifier)').StartsWith('win'))">
+        <DefineConstants>$(DefineConstants);WINDOWS</DefineConstants>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <WarningLevel>10</WarningLevel>
+        <Prefer32bit>false</Prefer32bit>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+        <DebugType>full</DebugType>
+        <WarningLevel>10</WarningLevel>
+        <DebugSymbols>true</DebugSymbols>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\NativeSupport\NativeSupport.csproj"/>
+        <ProjectReference Include="..\Shared.Interfaces\Shared.Interfaces.csproj"/>
+        <ProjectReference Include="..\Shotora.App.Interfaces\Shotora.App.Interfaces.csproj"/>
+        <ProjectReference Include="..\Shotora.App.Models\Shotora.App.Models.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="7z.Libs" Version="25.1.0"/>
+        <PackageReference Include="Avalonia" Version="11.3.11"/>
+        <PackageReference Include="Avalonia.Desktop" Version="11.3.11"/>
+        <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0"/>
+        <PackageReference Include="H.NotifyIcon" Version="2.4.1"/>
+        <PackageReference Include="SevenZipLib" Version="1.4.0"/>
+        <PackageReference Include="SharpSevenZip" Version="2.0.35"/>
+        <PackageReference Include="System.Drawing.Common" Version="10.0.2"/>
+        <PackageReference Include="Tesseract" Version="5.2.0" Condition="'$(_IsWindows)'=='true'"/>
+        <PackageReference Include="Tesseract" Version="5.2.0" ExcludeAssets="build;buildTransitive;contentFiles;x64;x86" Condition="'$(_IsLinux)'=='true' or '$(_IsMac)'=='true'"/>
+    </ItemGroup>
+
+    <!-- Platform-aware native copy: include only natives that match the publish/runtime OS -->
+    <PropertyGroup>
+        <!-- Prefer explicit RuntimeIdentifier (publish target); fall back to first RuntimeIdentifiers entry; else host OS -->
+        <_TargetRid Condition="'$(RuntimeIdentifier)'!=''">$([System.String]::Copy('$(RuntimeIdentifier)').ToLowerInvariant())</_TargetRid>
+        <_TargetRid Condition="'$(_TargetRid)'=='' and '$(RuntimeIdentifiers)'!=''">$([System.String]::Copy('$(RuntimeIdentifiers)').Split(';')[0].ToLowerInvariant())</_TargetRid>
+        <_TargetRid Condition="'$(_TargetRid)'=='' and $([MSBuild]::IsOSPlatform('Linux'))">linux</_TargetRid>
+        <_TargetRid Condition="'$(_TargetRid)'=='' and $([MSBuild]::IsOSPlatform('OSX'))">osx</_TargetRid>
+        <_TargetRid Condition="'$(_TargetRid)'=='' and $([MSBuild]::IsOSPlatform('Windows'))">win</_TargetRid>
+
+        <_IsLinux Condition="'$(_TargetRid)'!='' and $([System.String]::Copy('$(_TargetRid)').StartsWith('linux'))">true</_IsLinux>
+        <_IsMac Condition="'$(_TargetRid)'!='' and $([System.String]::Copy('$(_TargetRid)').StartsWith('osx'))">true</_IsMac>
+        <_IsWindows Condition="'$(_TargetRid)'!='' and $([System.String]::Copy('$(_TargetRid)').StartsWith('win'))">true</_IsWindows>
+
+        <_HostRid Condition="'$(NETCoreSdkRuntimeIdentifier)'!=''">$([System.String]::Copy('$(NETCoreSdkRuntimeIdentifier)').ToLowerInvariant())</_HostRid>
+        <_TargetArch Condition="'$(RuntimeIdentifier)'!='' and $([System.String]::Copy('$(RuntimeIdentifier)').ToLowerInvariant().Contains('arm64'))">arm64</_TargetArch>
+        <_TargetArch Condition="'$(_TargetArch)'=='' and '$(RuntimeIdentifier)'!='' and $([System.String]::Copy('$(RuntimeIdentifier)').ToLowerInvariant().Contains('arm'))">arm</_TargetArch>
+        <_TargetArch Condition="'$(_TargetArch)'=='' and '$(RuntimeIdentifier)'!='' and $([System.String]::Copy('$(RuntimeIdentifier)').ToLowerInvariant().Contains('x64'))">x64</_TargetArch>
+        <_TargetArch Condition="'$(_TargetArch)'=='' and '$(RuntimeIdentifier)'!='' and $([System.String]::Copy('$(RuntimeIdentifier)').ToLowerInvariant().Contains('x86'))">x86</_TargetArch>
+        <_TargetArch Condition="'$(_TargetArch)'=='' and '$(_HostRid)'!='' and $([System.String]::Copy('$(_HostRid)').Contains('arm64'))">arm64</_TargetArch>
+        <_TargetArch Condition="'$(_TargetArch)'=='' and '$(_HostRid)'!='' and $([System.String]::Copy('$(_HostRid)').Contains('arm'))">arm</_TargetArch>
+        <_TargetArch Condition="'$(_TargetArch)'=='' and '$(_HostRid)'!='' and $([System.String]::Copy('$(_HostRid)').Contains('x86'))">x86</_TargetArch>
+        <_TargetArch Condition="'$(_TargetArch)'==''">x64</_TargetArch>
+
+        <_LinuxNativeArch Condition="'$(_IsLinux)'=='true'">$(_TargetArch)</_LinuxNativeArch>
+        <_LinuxNativeArch Condition="'$(_IsLinux)'=='true' and !Exists('$(MSBuildProjectDirectory)\Binaries\Linux\$(_LinuxNativeArch)')">x64</_LinuxNativeArch>
+        <_MacNativeArch Condition="'$(_IsMac)'=='true'">$(_TargetArch)</_MacNativeArch>
+        <_MacNativeArch Condition="'$(_IsMac)'=='true' and !Exists('$(MSBuildProjectDirectory)\Binaries\Mac\$(_MacNativeArch)')">x64</_MacNativeArch>
+    </PropertyGroup>
+
+    <!-- Linux natives -->
+    <ItemGroup Condition="'$(_IsLinux)'=='true'">
+        <Content Include="Binaries\Linux\$(_LinuxNativeArch)\**\*">
+            <TargetPath>Binaries\Linux\$(_LinuxNativeArch)\%(Filename)%(Extension)</TargetPath>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        </Content>
+        <Content Update="PythonEmbed\Windows\x64\python.7z">
+            <TargetPath>PythonEmbed\Windows\x64\python.7z</TargetPath>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+            <Link>PythonEmbed\Windows\x86\python.7z</Link>
+        </Content>
+    </ItemGroup>
+
+    <!-- macOS natives -->
+    <ItemGroup Condition="'$(_IsMac)'=='true'">
+        <Content Include="Binaries\Mac\$(_MacNativeArch)\**\*">
+            <TargetPath>Binaries\Mac\$(_MacNativeArch)\%(Filename)%(Extension)</TargetPath>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        </Content>
+        <!-- Also drop macOS natives at the publish root for direct probing -->
+        <Content Include="Binaries\Mac\$(_MacNativeArch)\**\*">
+            <TargetPath>%(Filename)%(Extension)</TargetPath>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        </Content>
+        <!-- Duplicate into a plain x64 folder for macOS probing/packaging tools -->
+        <Content Include="Binaries\Mac\$(_MacNativeArch)\**\*"
+                 Condition="$(_MacNativeArch) == 'x64'">
+            <TargetPath>x64\%(Filename)%(Extension)</TargetPath>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        </Content>
+    </ItemGroup>
+    <ItemGroup>
+        <Folder Include="PythonEmbed\Windows\x64\"/>
+    </ItemGroup>
+
+    <Target Name="LogNativeCopySelection" BeforeTargets="Build;Publish">
+        <Message Importance="High" Text="[_TargetRid]=$(_TargetRid)  _IsLinux=$(_IsLinux)  _IsMac=$(_IsMac)  _IsWindows=$(_IsWindows)"/>
+        <Message Importance="High" Condition="'$(_IsLinux)'=='true'" Text="Including Linux natives (arch folder) from $(MSBuildProjectDirectory)\Binaries\Linux\$(_LinuxNativeArch)"/>
+        <Message Importance="High" Condition="'$(_IsMac)'=='true'" Text="Including macOS natives (arch folder) from $(MSBuildProjectDirectory)\Binaries\Mac\$(_MacNativeArch)"/>
+        <Message Importance="High" Condition="'$(_IsWindows)'=='true'" Text="(No platform natives configured for Windows here)"/>
+    </Target>
+
+    <!-- Clean up any arch subfolders that might remain from packages -->
+    <Target Name="PruneArchFolders_Services" AfterTargets="Build;Publish">
+        <!-- Keep arch-specific folders (x64/arm64) so runtime probes can find them; only strip x86 noise -->
+        <RemoveDir Condition="'$(OutDir)'!='' and Exists('$(OutDir)x86')" Directories="$(OutDir)x86"/>
+        <RemoveDir Condition="'$(PublishDir)'!='' and Exists('$(PublishDir)x86')" Directories="$(PublishDir)x86"/>
+    </Target>
+
+    <!-- Strip Tesseract/Leptonica natives for non-target OS/arch before publish/single-file -->
+    <Target Name="PruneForeignRuntimeNatives" AfterTargets="ResolvePublishFiles">
+        <ItemGroup Condition="'$(_IsLinux)'=='true'">
+            <ResolvedFileToPublish Remove="@(ResolvedFileToPublish)" Condition="$([System.String]::Copy('%(ResolvedFileToPublish.RelativePath)').StartsWith('runtimes/win')) &#xD;&#xA;                                           or $([System.String]::Copy('%(ResolvedFileToPublish.RelativePath)').StartsWith('runtimes/osx'))&#xD;&#xA;                                           or $([System.String]::Copy('%(ResolvedFileToPublish.RelativePath)').StartsWith('x86/'))"/>
+        </ItemGroup>
+        <ItemGroup Condition="'$(_IsMac)'=='true'">
+            <ResolvedFileToPublish Remove="@(ResolvedFileToPublish)" Condition="$([System.String]::Copy('%(ResolvedFileToPublish.RelativePath)').StartsWith('runtimes/win')) &#xD;&#xA;                                           or $([System.String]::Copy('%(ResolvedFileToPublish.RelativePath)').StartsWith('runtimes/linux'))&#xD;&#xA;                                           or $([System.String]::Copy('%(ResolvedFileToPublish.RelativePath)').StartsWith('x86/'))"/>
+        </ItemGroup>
+        <ItemGroup Condition="'$(_IsWindows)'=='true'">
+            <ResolvedFileToPublish Remove="@(ResolvedFileToPublish)" Condition="$([System.String]::Copy('%(ResolvedFileToPublish.RelativePath)').StartsWith('runtimes/linux')) &#xD;&#xA;                                           or $([System.String]::Copy('%(ResolvedFileToPublish.RelativePath)').StartsWith('runtimes/osx'))"/>
+        </ItemGroup>
+    </Target>
+
+</Project>

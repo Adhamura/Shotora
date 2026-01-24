@@ -1,0 +1,255 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <!-- Settings -->
+    <sys:String x:Key="LocSettingsTitle">Settyansow</sys:String>
+    <sys:String x:Key="LocSettingsStorage">Gwithva</sys:String>
+    <sys:String x:Key="LocSettingsDefaultFolder">Folen dhefowt</sys:String>
+    <sys:String x:Key="LocSettingsBrowse">Peuri</sys:String>
+    <sys:String x:Key="LocSettingsDefaultFormat">Furm dhefowt</sys:String>
+    <sys:String x:Key="LocSettingsJpegQuality">Kwalita JPEG</sys:String>
+    <sys:String x:Key="LocSettingsFilenamePattern">Patrom hanow fyl</sys:String>
+    <sys:String x:Key="LocSettingsOcr">OCR</sys:String>
+    <sys:String x:Key="LocSettingsProvider">Skrifenner</sys:String>
+    <sys:String x:Key="LocSettingsLanguages">Yethow</sys:String>
+    <sys:String x:Key="LocSettingsEasyOcrHint">EasyOCR a dherev Python + 'pip install easyocr'</sys:String>
+    <sys:String x:Key="LocSettingsTesseractFiles">Fylow yeth Tesseract</sys:String>
+    <sys:String x:Key="LocSettingsSelectLanguage">Dewis yeth</sys:String>
+    <sys:String x:Key="LocSettingsDownload">Iskarga</sys:String>
+    <sys:String x:Key="LocSettingsDelete">Delya</sys:String>
+    <sys:String x:Key="LocSettingsHotkeys">Alwedhow berr</sys:String>
+    <sys:String x:Key="LocSettingsRegionHotkey">Kregi ranndir</sys:String>
+    <sys:String x:Key="LocSettingsFullscreenHotkey">Skrin leun</sys:String>
+    <sys:String x:Key="LocSettingsActiveWindowHotkey">Fenester weythresek</sys:String>
+    <sys:String x:Key="LocSettingsGeneral">Ollgemmyn</sys:String>
+    <sys:String x:Key="LocSettingsTheme">Thema</sys:String>
+    <sys:String x:Key="LocSettingsDisplayLanguage">Yeth an diskwedhyans</sys:String>
+    <sys:String x:Key="LocSettingsRunOnStartup">Degi orth dalleth</sys:String>
+    <sys:String x:Key="LocSettingsTabMain">Penn</sys:String>
+    <sys:String x:Key="LocSettingsTabHotkeys">Alwedhow berr</sys:String>
+    <sys:String x:Key="LocSettingsTabEditor">Chonjer</sys:String>
+    <sys:String x:Key="LocSettingsEditorHotkeys">Alwedhow berr chonjer</sys:String>
+    <sys:String x:Key="LocSettingsEditorMouse">Logoden chonjer</sys:String>
+    <sys:String x:Key="LocSettingsCopyCloseMouse">Kopia + dege</sys:String>
+    <sys:String x:Key="LocSettingsMoveSelectionMouse">Gwaya dewisyans</sys:String>
+    <sys:String x:Key="LocSettingsEditorIcons">Arvow chonjer</sys:String>
+    <sys:String x:Key="LocSettingsEditorOptions">Etholyow chonjer</sys:String>
+    <sys:String x:Key="LocSettingsShowThicknessSlider">Diskwedhes sledyer tewder</sys:String>
+    <sys:String x:Key="LocSettingsDefaultThickness">Tewder dhefowt</sys:String>
+    <sys:String x:Key="LocSettingsShowColorPalette">Diskwedhes palet liwow</sys:String>
+    <sys:String x:Key="LocSettingsDefaultColor">Liw dhefowt</sys:String>
+    <sys:String x:Key="LocSettingsPickColor">Dewis</sys:String>
+    <sys:String x:Key="LocSettingsDefaultColorHint">Usys tra vo an palet liwow kudhys.</sys:String>
+    <sys:String x:Key="LocSettingsUsePointer">Usi pointer</sys:String>
+    <sys:String x:Key="LocSettingsShowUndo">Dhe wel Undo</sys:String>
+    <sys:String x:Key="LocSettingsShowRedo">Dhe wel Redo</sys:String>
+    <sys:String x:Key="LocSettingsShowCopy">Dhe wel Kopia</sys:String>
+    <sys:String x:Key="LocSettingsShowSave">Dhe wel Gwir</sys:String>
+    <sys:String x:Key="LocSettingsShowUpload">Dhe wel Uskargya</sys:String>
+    <sys:String x:Key="LocSettingsShowOcr">Dhe wel OCR</sys:String>
+    <sys:String x:Key="LocSettingsShowCancel">Dhe wel Ganslow</sys:String>
+    <sys:String x:Key="LocSettingsShowConfirm">Dhe wel Gwirya</sys:String>
+    <sys:String x:Key="LocSettingsShowClose">Dhe wel Stow</sys:String>
+    <sys:String x:Key="LocSettingsShowSelection">Dhe wel Dewisyans</sys:String>
+    <sys:String x:Key="LocSettingsShowMove">Dhe wel Gwedh</sys:String>
+    <sys:String x:Key="LocSettingsShowPen">Dhe wel Pen</sys:String>
+    <sys:String x:Key="LocSettingsShowLine">Dhe wel Lyn</sys:String>
+    <sys:String x:Key="LocSettingsShowArrow">Dhe wel Kyns</sys:String>
+    <sys:String x:Key="LocSettingsShowRectangle">Dhe wel Pedheseg</sys:String>
+    <sys:String x:Key="LocSettingsShowEllipse">Dhe wel Ellip</sys:String>
+    <sys:String x:Key="LocSettingsShowText">Dhe wel Testun</sys:String>
+    <sys:String x:Key="LocSettingsShowHighlight">Dhe wel Dyskladha</sys:String>
+    <sys:String x:Key="LocSettingsShowBlur">Dhe wel Afon</sys:String>
+    <sys:String x:Key="LocSettingsShowPixelate">Dhe wel Pixela</sys:String>
+    <sys:String x:Key="LocSettingsShowThickness">Dhe wel Treth</sys:String>
+    <sys:String x:Key="LocSettingsShowColors">Dhe wel Liwo</sys:String>
+    <sys:String x:Key="LocSettingsShowCrosshair">Dhe wel Gwrys</sys:String>
+    <sys:String x:Key="LocSettingsShowResizeHandles">Dhe wel Horrow</sys:String>
+    <sys:String x:Key="LocSettingsShowToolbar">Dhe wel Barwer</sys:String>
+    <sys:String x:Key="LocSettingsShowPalette">Dhe wel Palet</sys:String>
+    <sys:String x:Key="LocSettingsShowPreview">Dhe wel Dewgh</sys:String>
+    <sys:String x:Key="LocSettingsShowMiniMap">Dhe wel Mapp</sys:String>
+    <sys:String x:Key="LocSettingsShowSelectionSize">Dhe wel Mosow Dewisyans</sys:String>
+    <sys:String x:Key="LocSettingsShowSelectionPosition">Dhe wel Dewisyans Nasyow</sys:String>
+
+    <!-- Common -->
+    <sys:String x:Key="LocCommonClose">Dege</sys:String>
+
+    <!-- Tools -->
+    <sys:String x:Key="LocToolSelect">Dewis</sys:String>
+    <sys:String x:Key="LocToolRegion">Dewis ranndir</sys:String>
+    <sys:String x:Key="LocToolMove">Gwaya ranndir</sys:String>
+    <sys:String x:Key="LocToolPen">Pluven</sys:String>
+    <sys:String x:Key="LocToolLine">Linen</sys:String>
+    <sys:String x:Key="LocToolArrow">Seth</sys:String>
+    <sys:String x:Key="LocToolRect">Pedrevan</sys:String>
+    <sys:String x:Key="LocToolEllipse">Eleeips</sys:String>
+    <sys:String x:Key="LocToolText">Tekst</sys:String>
+    <sys:String x:Key="LocToolHighlight">Uskelwel</sys:String>
+    <sys:String x:Key="LocToolBlur">Dorchya</sys:String>
+    <sys:String x:Key="LocToolPixelate">Picseledra</sys:String>
+    <sys:String x:Key="LocToolSaveAs">Gwitha avel</sys:String>
+    <sys:String x:Key="LocToolCopy">Kopia</sys:String>
+    <sys:String x:Key="LocToolUpload">Uskarga</sys:String>
+    <sys:String x:Key="LocToolCancel">Hedhi</sys:String>
+    <sys:String x:Key="LocToolColors">Liwow</sys:String>
+    <sys:String x:Key="LocToolThickness">Tewder</sys:String>
+    <sys:String x:Key="LocToolUndo">Diswul</sys:String>
+    <sys:String x:Key="LocToolRedo">Daswul</sys:String>
+
+    <sys:String x:Key="LocSettingsRegionHotkeyPlaceholder">Prysa telyow...</sys:String>
+    <sys:String x:Key="LocSettingsFullscreenHotkeyPlaceholder">Prysa telyow...</sys:String>
+    <sys:String x:Key="LocSettingsActiveWindowHotkeyPlaceholder">Prysa telyow...</sys:String>
+    <sys:String x:Key="LocSettingsEditorUndoHotkey">Dolvra</sys:String>
+    <sys:String x:Key="LocSettingsEditorUndoHotkeyPlaceholder">Ctrl+Z</sys:String>
+    <sys:String x:Key="LocSettingsEditorRedoHotkey">Ribra</sys:String>
+    <sys:String x:Key="LocSettingsEditorRedoHotkeyPlaceholder">Ctrl+Y</sys:String>
+    <sys:String x:Key="LocSettingsEditorCopyHotkey">Kopia</sys:String>
+    <sys:String x:Key="LocSettingsEditorCopyHotkeyPlaceholder">Ctrl+C</sys:String>
+    <sys:String x:Key="LocSettingsEditorSaveHotkey">Gwir</sys:String>
+    <sys:String x:Key="LocSettingsEditorSaveHotkeyPlaceholder">Ctrl+S</sys:String>
+
+    <sys:String x:Key="LocSettingsOcrSettings">Gosodansow OCR</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstall">Lemmyn EasyOCR</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemove">Tynn EasyOCR</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrStatus">Yow</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstalled">Lemmyn</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrNotInstalled">Ny ow lemmy</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstalling">Yma ow lemmy...</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemoving">Yma ow tynn...</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstallFailed">Lemmyn ny yll</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemoveFailed">Tynn ny yll</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstallLang">Lemmyn</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoveLang">Tynn</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstalled">Lemmyn</sys:String>
+    <sys:String x:Key="LocSettingsOcrNotInstalled">Ny ow lemmy</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstalling">Yma ow lemmy...</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoving">Yma ow tynn...</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstallFailed">Lemmyn ny yll</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoveFailed">Tynn ny yll</sys:String>
+    <sys:String x:Key="LocSettingsOcrDownloadProgress">Kudn stryow</sys:String>
+    <sys:String x:Key="LocSettingsOcrBytes">Bytyow</sys:String>
+    <sys:String x:Key="LocSettingsOcrLicense">Tudlas</sys:String>
+    <sys:String x:Key="LocSettingsOcrLicenseLink">https://github.com/JaidedAI/EasyOCR/blob/master/LICENSE</sys:String>
+    <sys:String x:Key="LocSettingsOcrTesseractLangs">Yethow Tesseract</sys:String>
+    <sys:String x:Key="LocSettingsOcrTesseractHint">Yma an yethow Tesseract katter ha yma yn lyvrow gans an stry.</sys:String>
+
+    <sys:String x:Key="LocSettingsExamplesTitle">Keworyon</sys:String>
+    <sys:String x:Key="LocSettingsExamplesDescription">Dhe wor an keworyon an mor perthi yeth ow hedhlow.</sys:String>
+    <sys:String x:Key="LocSettingsExamplesFormat">Furm</sys:String>
+    <sys:String x:Key="LocSettingsExamplesEffects">Evel</sys:String>
+    <sys:String x:Key="LocSettingsExamplesShape">Form</sys:String>
+    <sys:String x:Key="LocSettingsExamplesIcon">Kiws</sys:String>
+
+    <!-- Tray -->
+    <sys:String x:Key="LocTrayCaptureRegion">Kregi Ranndir</sys:String>
+    <sys:String x:Key="LocTrayCaptureFull">Kregi Skrin Leun</sys:String>
+    <sys:String x:Key="LocTraySettings">Settyansow</sys:String>
+    <sys:String x:Key="LocTrayAbout">A-dro dhe</sys:String>
+    <sys:String x:Key="LocTrayExit">Mes</sys:String>
+
+    <!-- Overlay -->
+    <sys:String x:Key="LocOverlayCopy">Kopia</sys:String>
+    <sys:String x:Key="LocOverlaySave">Gwir</sys:String>
+    <sys:String x:Key="LocOverlayUpload">Uskargya</sys:String>
+    <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
+    <sys:String x:Key="LocOverlayCancel">Ganslow</sys:String>
+    <sys:String x:Key="LocOverlayConfirm">Gwirya</sys:String>
+    <sys:String x:Key="LocOverlayClose">Stow</sys:String>
+    <sys:String x:Key="LocOverlaySelection">Dewisyans</sys:String>
+    <sys:String x:Key="LocOverlayMove">Gwedh</sys:String>
+    <sys:String x:Key="LocOverlayPointer">Poynter</sys:String>
+    <sys:String x:Key="LocOverlayPen">Pensel</sys:String>
+    <sys:String x:Key="LocOverlayLine">Lyn</sys:String>
+    <sys:String x:Key="LocOverlayArrow">Kyns</sys:String>
+    <sys:String x:Key="LocOverlayRectangle">Pedheseg</sys:String>
+    <sys:String x:Key="LocOverlayEllipse">Ellip</sys:String>
+    <sys:String x:Key="LocOverlayText">Testun</sys:String>
+    <sys:String x:Key="LocOverlayHighlight">Dyskladha</sys:String>
+    <sys:String x:Key="LocOverlayBlur">Afon</sys:String>
+    <sys:String x:Key="LocOverlayPixelate">Pixela</sys:String>
+    <sys:String x:Key="LocOverlayThickness">Treth</sys:String>
+    <sys:String x:Key="LocOverlayColors">Liwo</sys:String>
+    <sys:String x:Key="LocOverlayPosition">Ladn</sys:String>
+    <sys:String x:Key="LocOverlaySize">Mos</sys:String>
+    <sys:String x:Key="LocOverlayWidth">L</sys:String>
+    <sys:String x:Key="LocOverlayHeight">K</sys:String>
+    <sys:String x:Key="LocOverlayPickColor">Dewis liw</sys:String>
+    <sys:String x:Key="LocOverlayHintDraw">Clysk ha dewra dhe zrel. Usya barwer dhyworth dyhwelyow.</sys:String>
+    <sys:String x:Key="LocOverlayHintMove">Degas gwrys orth agas dewisyans avel gwedhe. Usya horrow dhe donna mos.</sys:String>
+    <sys:String x:Key="LocOverlayHintEdit">Dewis dyhwelyow rag annota. Usya Undo/Redo rag re proper.</sys:String>
+    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Ganslow, Enter: Gwirya, Ctrl+Z: Undo, Ctrl+Y: Redo</sys:String>
+
+    <!-- Text Input -->
+    <sys:String x:Key="LocTextInputTitle">Dhe wel testun</sys:String>
+    <sys:String x:Key="LocTextInputHint">Kodh testun rag gortoz war an raksk</sys:String>
+    <sys:String x:Key="LocTextInputFont">Frunt</sys:String>
+    <sys:String x:Key="LocTextInputSize">Mos</sys:String>
+    <sys:String x:Key="LocTextInputBold">Tumes</sys:String>
+    <sys:String x:Key="LocTextInputItalic">Italik</sys:String>
+    <sys:String x:Key="LocTextInputColor">Liw</sys:String>
+    <sys:String x:Key="LocTextInputPlace">Gos testun</sys:String>
+    <sys:String x:Key="LocTextInputCancel">Ganslow</sys:String>
+
+    <!-- About -->
+    <sys:String x:Key="LocAboutTitle">A-dro dhe Shotora</sys:String>
+    <sys:String x:Key="LocAboutVersion">Versyon</sys:String>
+    <sys:String x:Key="LocAboutCopyright">Â© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
+    <sys:String x:Key="LocAboutLinks">Kevrennow</sys:String>
+    <sys:String x:Key="LocAboutWebsite">Gwiasva</sys:String>
+    <sys:String x:Key="LocAboutLinkedIn">LinkedIn</sys:String>
+    <sys:String x:Key="LocAboutEmail">Ebel</sys:String>
+
+    <!-- OCR Result -->
+    <sys:String x:Key="LocOcrResultTitle">Kwedh OCR</sys:String>
+    <sys:String x:Key="LocOcrResultCopy">Kopia</sys:String>
+    <sys:String x:Key="LocOcrResultClose">Stow</sys:String>
+    <sys:String x:Key="LocOcrResultHint">Testun ow splanna</sys:String>
+
+    <!-- Notifications -->
+    <sys:String x:Key="LocNotificationCopySuccess">Kopia war an gliffy</sys:String>
+    <sys:String x:Key="LocNotificationSaveSuccess">Gwirys</sys:String>
+    <sys:String x:Key="LocNotificationSaveFailed">Gwir ny wra</sys:String>
+    <sys:String x:Key="LocNotificationUploadSuccess">Uskargya</sys:String>
+    <sys:String x:Key="LocNotificationUploadFailed">Uskargya ny wra</sys:String>
+    <sys:String x:Key="LocNotificationOcrSuccess">OCR ow gwra</sys:String>
+    <sys:String x:Key="LocNotificationOcrFailed">OCR ny wra</sys:String>
+
+    <!-- Buttons -->
+    <sys:String x:Key="LocButtonSave">Gwir</sys:String>
+    <sys:String x:Key="LocButtonCancel">Ganslow</sys:String>
+    <sys:String x:Key="LocButtonClose">Stow</sys:String>
+    <sys:String x:Key="LocButtonOK">Yah</sys:String>
+
+    <!-- Dialogs -->
+    <sys:String x:Key="LocDialogSaveTitle">Gwir an raksk</sys:String>
+    <sys:String x:Key="LocDialogSaveFilter">Fylow PNG|*.png|Fylow JPEG|*.jpg;*.jpeg|Fylow WebP|*.webp|Pob fyl|*.*</sys:String>
+    <sys:String x:Key="LocDialogSaveDefaultName">Shotora.png</sys:String>
+    <sys:String x:Key="LocDialogSelectFolder">Dewis guves</sys:String>
+    <sys:String x:Key="LocDialogConfirm">Gwirya</sys:String>
+    <sys:String x:Key="LocDialogDelete">Delya</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguage">Yma ow wul tynn an fayl yeth?</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguageConfirm">Yma dha ow kelwel orth tynn an fayl yeth ma?</sys:String>
+
+    <!-- Errors -->
+    <sys:String x:Key="LocErrorInvalidHotkey">Prysa ny yll</sys:String>
+    <sys:String x:Key="LocErrorHotkeyInUse">Prysa yma ow tos</sys:String>
+    <sys:String x:Key="LocErrorHotkeyRegisterFailed">Ny yll greu prysa</sys:String>
+    <sys:String x:Key="LocErrorSaveFailed">Gwir ny wra</sys:String>
+    <sys:String x:Key="LocErrorOcrFailed">OCR ny wra</sys:String>
+    <sys:String x:Key="LocErrorInvalidSelection">Dewisyans ny wra</sys:String>
+    <sys:String x:Key="LocErrorNoSelection">Ny yw dewisyans</sys:String>
+    <sys:String x:Key="LocErrorTextEmpty">Testun yw dres</sys:String>
+
+    <sys:String x:Key="LocMainTitle">Shotora</sys:String>
+    <sys:String x:Key="LocMainHint1">Usa an ikon an tavern ha prysa gobal gansow rag gansel.</sys:String>
+    <sys:String x:Key="LocMainHint2">An fenn ma yw dilev; stow dha kowena, re ow kelwel Shotora ow kavoes war an tavern.</sys:String>
+
+    <sys:String x:Key="LocAboutSubtitle">Dalgh skrin ha notennow</sys:String>
+    <sys:String x:Key="LocAboutDescription">Dalghow skrin uskis, notennow, OCR ha lwythyow yn mes gans Shotora.</sys:String>
+    <sys:String x:Key="LocAboutLicense">Lavur-dhybry</sys:String>
+    <sys:String x:Key="LocAboutAuthor">Awtour</sys:String>
+    <sys:String x:Key="LocAboutRole">Rol</sys:String>
+    <sys:String x:Key="LocAboutContact">Kuntakt</sys:String>
+    <sys:String x:Key="LocAboutContactIntro">Kuntaktowgh rag daslivres rag owth oberi gansen.</sys:String>
+</ResourceDictionary>

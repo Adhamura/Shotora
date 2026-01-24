@@ -1,0 +1,214 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:Shotora.App.Controls"
+             mc:Ignorable="d" d:DesignWidth="260" d:DesignHeight="260"
+             x:Class="Shotora.App.Controls.ColorPalettePicker"
+             x:DataType="local:ColorPalettePicker"
+             Background="Transparent">
+
+    <UserControl.Styles>
+        <Style Selector="TextBox.color-input">
+            <Setter Property="Height" Value="24" />
+            <Setter Property="FontSize" Value="12" />
+            <Setter Property="Padding" Value="4,2" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="CornerRadius" Value="3" />
+        </Style>
+        <Style Selector="TextBlock.color-label">
+            <Setter Property="FontSize" Value="11" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Foreground" Value="#999" />
+            <Setter Property="Margin" Value="0,0,4,0" />
+        </Style>
+    </UserControl.Styles>
+
+    <Border Background="{DynamicResource PanelBackgroundBrush}"
+            BorderBrush="{DynamicResource PanelBorderBrush}"
+            BorderThickness="1"
+            CornerRadius="6"
+            Padding="10">
+        <StackPanel Spacing="8">
+
+            <!-- SV Panel (Saturation/Value) -->
+            <Grid x:Name="SvPanel" Width="240" Height="150" ClipToBounds="True">
+                <!-- Base hue color layer -->
+                <Rectangle x:Name="HueBackground" RadiusX="4" RadiusY="4" Fill="Red" />
+
+                <!-- White gradient overlay (saturation: left=white, right=hue) -->
+                <Rectangle RadiusX="4" RadiusY="4">
+                    <Rectangle.Fill>
+                        <LinearGradientBrush StartPoint="0%,0%" EndPoint="100%,0%">
+                            <GradientStop Color="#FFFFFFFF" Offset="0" />
+                            <GradientStop Color="#00FFFFFF" Offset="1" />
+                        </LinearGradientBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+
+                <!-- Black gradient overlay (value: top=bright, bottom=dark) -->
+                <Rectangle RadiusX="4" RadiusY="4">
+                    <Rectangle.Fill>
+                        <LinearGradientBrush StartPoint="0%,0%" EndPoint="0%,100%">
+                            <GradientStop Color="#00000000" Offset="0" />
+                            <GradientStop Color="#FF000000" Offset="1" />
+                        </LinearGradientBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+
+                <!-- SV Thumb (circular picker) -->
+                <Canvas x:Name="SvThumbCanvas" IsHitTestVisible="False">
+                    <Ellipse x:Name="SvThumb" Width="16" Height="16"
+                             Fill="Transparent"
+                             Stroke="White" StrokeThickness="2">
+                        <Ellipse.Effect>
+                            <DropShadowEffect Color="Black" BlurRadius="2" OffsetX="0" OffsetY="0" Opacity="0.5" />
+                        </Ellipse.Effect>
+                    </Ellipse>
+                    <!-- Inner dark ring for contrast -->
+                    <Ellipse x:Name="SvThumbInner" Width="14" Height="14"
+                             Fill="Transparent"
+                             Stroke="#333" StrokeThickness="1" />
+                </Canvas>
+            </Grid>
+
+            <!-- Hue Slider -->
+            <Grid x:Name="HueSliderContainer" Height="14">
+                <Border CornerRadius="3" ClipToBounds="True">
+                    <Rectangle x:Name="HueSlider" Height="14" RadiusX="3" RadiusY="3">
+                        <Rectangle.Fill>
+                            <LinearGradientBrush StartPoint="0%,0%" EndPoint="100%,0%">
+                                <GradientStop Color="#FFFF0000" Offset="0.000" />
+                                <GradientStop Color="#FFFF8000" Offset="0.083" />
+                                <GradientStop Color="#FFFFFF00" Offset="0.167" />
+                                <GradientStop Color="#FF80FF00" Offset="0.250" />
+                                <GradientStop Color="#FF00FF00" Offset="0.333" />
+                                <GradientStop Color="#FF00FF80" Offset="0.417" />
+                                <GradientStop Color="#FF00FFFF" Offset="0.500" />
+                                <GradientStop Color="#FF0080FF" Offset="0.583" />
+                                <GradientStop Color="#FF0000FF" Offset="0.667" />
+                                <GradientStop Color="#FF8000FF" Offset="0.750" />
+                                <GradientStop Color="#FFFF00FF" Offset="0.833" />
+                                <GradientStop Color="#FFFF0080" Offset="0.917" />
+                                <GradientStop Color="#FFFF0000" Offset="1.000" />
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                </Border>
+
+                <!-- Hue Thumb -->
+                <Canvas x:Name="HueThumbCanvas" IsHitTestVisible="False">
+                    <Border x:Name="HueThumb" Width="4" Height="18"
+                            Background="White"
+                            BorderBrush="#333" BorderThickness="1"
+                            CornerRadius="1"
+                            Canvas.Top="-2">
+                        <Border.Effect>
+                            <DropShadowEffect Color="Black" BlurRadius="2" OffsetX="0" OffsetY="0" Opacity="0.3" />
+                        </Border.Effect>
+                    </Border>
+                </Canvas>
+            </Grid>
+
+            <!-- Alpha Slider (conditionally visible) -->
+            <Grid x:Name="AlphaSliderContainer" Height="14" IsVisible="{Binding AlphaEnabled}">
+                <Border CornerRadius="3" ClipToBounds="True">
+                    <!-- Checkerboard background for alpha visualization -->
+                    <Border.Background>
+                        <VisualBrush TileMode="Tile" DestinationRect="0,0,8,8">
+                            <VisualBrush.Visual>
+                                <Canvas Width="8" Height="8">
+                                    <Rectangle Width="4" Height="4" Fill="#CCC" Canvas.Left="0" Canvas.Top="0" />
+                                    <Rectangle Width="4" Height="4" Fill="#FFF" Canvas.Left="4" Canvas.Top="0" />
+                                    <Rectangle Width="4" Height="4" Fill="#FFF" Canvas.Left="0" Canvas.Top="4" />
+                                    <Rectangle Width="4" Height="4" Fill="#CCC" Canvas.Left="4" Canvas.Top="4" />
+                                </Canvas>
+                            </VisualBrush.Visual>
+                        </VisualBrush>
+                    </Border.Background>
+                    <Rectangle x:Name="AlphaSlider" Height="14" RadiusX="3" RadiusY="3">
+                        <Rectangle.Fill>
+                            <LinearGradientBrush StartPoint="0%,0%" EndPoint="100%,0%">
+                                <GradientStop Color="#00FF0000" Offset="0" />
+                                <GradientStop Color="#FFFF0000" Offset="1" />
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                </Border>
+
+                <!-- Alpha Thumb -->
+                <Canvas x:Name="AlphaThumbCanvas" IsHitTestVisible="False">
+                    <Border x:Name="AlphaThumb" Width="4" Height="18"
+                            Background="White"
+                            BorderBrush="#333" BorderThickness="1"
+                            CornerRadius="1"
+                            Canvas.Top="-2">
+                        <Border.Effect>
+                            <DropShadowEffect Color="Black" BlurRadius="2" OffsetX="0" OffsetY="0" Opacity="0.3" />
+                        </Border.Effect>
+                    </Border>
+                </Canvas>
+            </Grid>
+
+            <!-- Color Input Fields -->
+            <Grid ColumnDefinitions="30,30,30,30,Auto,*">
+                <TextBox x:Name="RInput" Grid.Column="0" Classes="color-input" MinWidth="30"
+                         LostFocus="RgbInput_LostFocus" KeyDown="RgbInput_KeyDown" />
+
+                <TextBox x:Name="GInput" Grid.Column="1" Classes="color-input" MinWidth="30"
+                         LostFocus="RgbInput_LostFocus" KeyDown="RgbInput_KeyDown" />
+
+                <TextBox x:Name="BInput" Grid.Column="2" Classes="color-input" MinWidth="30"
+                         LostFocus="RgbInput_LostFocus" KeyDown="RgbInput_KeyDown" />
+
+                <TextBox x:Name="AInput" Grid.Column="3" Classes="color-input" MinWidth="30"
+                         IsVisible="{Binding AlphaEnabled}"
+                         LostFocus="RgbInput_LostFocus" KeyDown="RgbInput_KeyDown" />
+
+                <!-- Hex -->
+                <TextBlock Grid.Column="4" Text="#" Classes="color-label" Margin="20,0,0,0" />
+                <TextBox x:Name="HexInput" Grid.Column="5" Classes="color-input"
+                         LostFocus="HexInput_LostFocus" KeyDown="HexInput_KeyDown" />
+            </Grid>
+
+            <!-- Preview Strip -->
+            <Grid Height="24" ColumnDefinitions="*,*">
+                <!-- Current color preview -->
+                <Border Grid.Column="0" CornerRadius="3,0,0,3" ClipToBounds="True">
+                    <Border.Background>
+                        <VisualBrush TileMode="Tile" DestinationRect="0,0,8,8">
+                            <VisualBrush.Visual>
+                                <Canvas Width="8" Height="8">
+                                    <Rectangle Width="4" Height="4" Fill="#CCC" Canvas.Left="0" Canvas.Top="0" />
+                                    <Rectangle Width="4" Height="4" Fill="#FFF" Canvas.Left="4" Canvas.Top="0" />
+                                    <Rectangle Width="4" Height="4" Fill="#FFF" Canvas.Left="0" Canvas.Top="4" />
+                                    <Rectangle Width="4" Height="4" Fill="#CCC" Canvas.Left="4" Canvas.Top="4" />
+                                </Canvas>
+                            </VisualBrush.Visual>
+                        </VisualBrush>
+                    </Border.Background>
+                    <Rectangle x:Name="CurrentColorPreview" RadiusX="3" RadiusY="0" Fill="Red" />
+                </Border>
+
+                <!-- Original color preview (for comparison) -->
+                <Border Grid.Column="1" CornerRadius="0,3,3,0" ClipToBounds="True"
+                        IsVisible="{Binding ShowOriginalColor}">
+                    <Border.Background>
+                        <VisualBrush TileMode="Tile" DestinationRect="0,0,8,8">
+                            <VisualBrush.Visual>
+                                <Canvas Width="8" Height="8">
+                                    <Rectangle Width="4" Height="4" Fill="#CCC" Canvas.Left="0" Canvas.Top="0" />
+                                    <Rectangle Width="4" Height="4" Fill="#FFF" Canvas.Left="4" Canvas.Top="0" />
+                                    <Rectangle Width="4" Height="4" Fill="#FFF" Canvas.Left="0" Canvas.Top="4" />
+                                    <Rectangle Width="4" Height="4" Fill="#CCC" Canvas.Left="4" Canvas.Top="4" />
+                                </Canvas>
+                            </VisualBrush.Visual>
+                        </VisualBrush>
+                    </Border.Background>
+                    <Rectangle x:Name="OriginalColorPreview" RadiusX="0" RadiusY="3" Fill="Red" />
+                </Border>
+            </Grid>
+
+        </StackPanel>
+    </Border>
+</UserControl>

@@ -1,0 +1,34 @@
+{
+  "profiles": {
+	"Windows (x64) | Publish and Pack": {
+	  "commandName"     : "Executable",
+	  "executablePath"  : "powershell",
+	  "commandLineArgs" : "-NoProfile -ExecutionPolicy Bypass -Command \"dotnet tool run dotnet-cake --runtime=win-x64 --singlefile=true --selfcontained=true --output=../ready/win-x64; ./build/pack-from-cake.ps1 -PackDir ../ready/win-x64 -Runtime win-x64 -Channel stable\"",
+	  "workingDirectory": ".."
+	},
+	"Windows (x86) | Publish and Pack": {
+	  "commandName"     : "Executable",
+	  "executablePath"  : "powershell",
+	  "commandLineArgs" : "-NoProfile -ExecutionPolicy Bypass -Command \"dotnet tool run dotnet-cake --runtime=win-x86 --singlefile=true --selfcontained=true --output=../ready/win-x86; ./build/pack-from-cake.ps1 -PackDir ../ready/win-x86 -Runtime win-x86 -Channel stable\"",
+	  "workingDirectory": ".."
+	},
+	"Linux (x64) | Only Publish "     : {
+	  "commandName"     : "Executable",
+	  "executablePath"  : "powershell",
+	  "commandLineArgs" : "-NoProfile -ExecutionPolicy Bypass -Command \"dotnet tool run dotnet-cake --runtime=linux-x64 --singlefile=true --selfcontained=true --output=../ready/linux-x64; \"",
+	  "workingDirectory": ".."
+	},
+	"Linux (arm64) | Only Publish "   : {
+	  "commandName"     : "Executable",
+	  "executablePath"  : "powershell",
+	  "commandLineArgs" : "-NoProfile -ExecutionPolicy Bypass -Command \"dotnet tool run dotnet-cake --runtime=linux-arm64 --singlefile=true --selfcontained=true --output=../ready/linux-arm64; \"",
+	  "workingDirectory": ".."
+	},
+	"MacOS (x64) | Publish and Pack"  : {
+	  "commandName"     : "Executable",
+	  "executablePath"  : "pwsh",
+	  "commandLineArgs" : "-NoProfile -ExecutionPolicy Bypass -Command \"dotnet tool run dotnet-cake --runtime=osx-x64 --singlefile=true --selfcontained=true --output=../ready/osx-x64; ./build/pack-from-cake.ps1 -PackDir ../ready/osx-x64 -Runtime osx-x64 -Channel stable\"",
+	  "workingDirectory": ".."
+	}
+  }
+}

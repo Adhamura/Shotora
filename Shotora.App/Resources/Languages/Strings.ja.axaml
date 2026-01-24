@@ -1,0 +1,255 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <!-- Settings -->
+    <sys:String x:Key="LocSettingsTitle">設定</sys:String>
+    <sys:String x:Key="LocSettingsStorage">ストレージ</sys:String>
+    <sys:String x:Key="LocSettingsDefaultFolder">デフォルトフォルダ</sys:String>
+    <sys:String x:Key="LocSettingsBrowse">参照</sys:String>
+    <sys:String x:Key="LocSettingsDefaultFormat">デフォルト形式</sys:String>
+    <sys:String x:Key="LocSettingsJpegQuality">JPEG品質</sys:String>
+    <sys:String x:Key="LocSettingsFilenamePattern">ファイル名パターン</sys:String>
+    <sys:String x:Key="LocSettingsOcr">OCR</sys:String>
+    <sys:String x:Key="LocSettingsProvider">プロバイダー</sys:String>
+    <sys:String x:Key="LocSettingsLanguages">言語</sys:String>
+    <sys:String x:Key="LocSettingsEasyOcrHint">EasyOCRにはPython + 'pip install easyocr'が必要です</sys:String>
+    <sys:String x:Key="LocSettingsTesseractFiles">Tesseract言語ファイル</sys:String>
+    <sys:String x:Key="LocSettingsSelectLanguage">言語を選択</sys:String>
+    <sys:String x:Key="LocSettingsDownload">ダウンロード</sys:String>
+    <sys:String x:Key="LocSettingsDelete">削除</sys:String>
+    <sys:String x:Key="LocSettingsHotkeys">ホットキー</sys:String>
+    <sys:String x:Key="LocSettingsRegionHotkey">領域キャプチャ</sys:String>
+    <sys:String x:Key="LocSettingsFullscreenHotkey">フルスクリーン</sys:String>
+    <sys:String x:Key="LocSettingsActiveWindowHotkey">アクティブウィンドウ</sys:String>
+    <sys:String x:Key="LocSettingsGeneral">一般</sys:String>
+    <sys:String x:Key="LocSettingsTheme">テーマ</sys:String>
+    <sys:String x:Key="LocSettingsDisplayLanguage">表示言語</sys:String>
+    <sys:String x:Key="LocSettingsRunOnStartup">起動時に実行</sys:String>
+    <sys:String x:Key="LocSettingsTabMain">メイン</sys:String>
+    <sys:String x:Key="LocSettingsTabHotkeys">ホットキー</sys:String>
+    <sys:String x:Key="LocSettingsTabEditor">エディター</sys:String>
+    <sys:String x:Key="LocSettingsEditorHotkeys">エディターホットキー</sys:String>
+    <sys:String x:Key="LocSettingsEditorMouse">エディターマウス</sys:String>
+    <sys:String x:Key="LocSettingsCopyCloseMouse">コピー+閉じる</sys:String>
+    <sys:String x:Key="LocSettingsMoveSelectionMouse">選択範囲を移動</sys:String>
+    <sys:String x:Key="LocSettingsEditorIcons">エディターアイコン</sys:String>
+    <sys:String x:Key="LocSettingsEditorOptions">エディターオプション</sys:String>
+    <sys:String x:Key="LocSettingsShowThicknessSlider">太さスライダーを表示</sys:String>
+    <sys:String x:Key="LocSettingsDefaultThickness">デフォルトの太さ</sys:String>
+    <sys:String x:Key="LocSettingsShowColorPalette">カラーパレットを表示</sys:String>
+    <sys:String x:Key="LocSettingsDefaultColor">デフォルト色</sys:String>
+    <sys:String x:Key="LocSettingsPickColor">選択</sys:String>
+    <sys:String x:Key="LocSettingsDefaultColorHint">パレットが非表示の場合に使用されます。</sys:String>
+    <sys:String x:Key="LocSettingsUsePointer">ポインターを使用</sys:String>
+    <sys:String x:Key="LocSettingsShowUndo">元に戻すを表示</sys:String>
+    <sys:String x:Key="LocSettingsShowRedo">やり直しを表示</sys:String>
+    <sys:String x:Key="LocSettingsShowCopy">コピーを表示</sys:String>
+    <sys:String x:Key="LocSettingsShowSave">保存を表示</sys:String>
+    <sys:String x:Key="LocSettingsShowUpload">アップロードを表示</sys:String>
+    <sys:String x:Key="LocSettingsShowOcr">OCRを表示</sys:String>
+    <sys:String x:Key="LocSettingsShowCancel">キャンセルを表示</sys:String>
+    <sys:String x:Key="LocSettingsShowConfirm">確認を表示</sys:String>
+    <sys:String x:Key="LocSettingsShowClose">閉じるを表示</sys:String>
+    <sys:String x:Key="LocSettingsShowSelection">選択を表示</sys:String>
+    <sys:String x:Key="LocSettingsShowMove">移動を表示</sys:String>
+    <sys:String x:Key="LocSettingsShowPen">ペンを表示</sys:String>
+    <sys:String x:Key="LocSettingsShowLine">線を表示</sys:String>
+    <sys:String x:Key="LocSettingsShowArrow">矢印を表示</sys:String>
+    <sys:String x:Key="LocSettingsShowRectangle">四角形を表示</sys:String>
+    <sys:String x:Key="LocSettingsShowEllipse">楕円を表示</sys:String>
+    <sys:String x:Key="LocSettingsShowText">テキストを表示</sys:String>
+    <sys:String x:Key="LocSettingsShowHighlight">ハイライトを表示</sys:String>
+    <sys:String x:Key="LocSettingsShowBlur">ぼかしを表示</sys:String>
+    <sys:String x:Key="LocSettingsShowPixelate">ピクセル化を表示</sys:String>
+    <sys:String x:Key="LocSettingsShowThickness">太さを表示</sys:String>
+    <sys:String x:Key="LocSettingsShowColors">色を表示</sys:String>
+    <sys:String x:Key="LocSettingsShowCrosshair">十字線を表示</sys:String>
+    <sys:String x:Key="LocSettingsShowResizeHandles">リサイズハンドルを表示</sys:String>
+    <sys:String x:Key="LocSettingsShowToolbar">ツールバーを表示</sys:String>
+    <sys:String x:Key="LocSettingsShowPalette">パレットを表示</sys:String>
+    <sys:String x:Key="LocSettingsShowPreview">プレビューを表示</sys:String>
+    <sys:String x:Key="LocSettingsShowMiniMap">ミニマップを表示</sys:String>
+    <sys:String x:Key="LocSettingsShowSelectionSize">選択サイズを表示</sys:String>
+    <sys:String x:Key="LocSettingsShowSelectionPosition">選択位置を表示</sys:String>
+
+    <!-- Common -->
+    <sys:String x:Key="LocCommonClose">閉じる</sys:String>
+
+    <!-- Tools -->
+    <sys:String x:Key="LocToolSelect">選択</sys:String>
+    <sys:String x:Key="LocToolRegion">領域を選択</sys:String>
+    <sys:String x:Key="LocToolMove">移動</sys:String>
+    <sys:String x:Key="LocToolPen">ペン</sys:String>
+    <sys:String x:Key="LocToolLine">線</sys:String>
+    <sys:String x:Key="LocToolArrow">矢印</sys:String>
+    <sys:String x:Key="LocToolRect">四角形</sys:String>
+    <sys:String x:Key="LocToolEllipse">楕円</sys:String>
+    <sys:String x:Key="LocToolText">テキスト</sys:String>
+    <sys:String x:Key="LocToolHighlight">ハイライト</sys:String>
+    <sys:String x:Key="LocToolBlur">ぼかし</sys:String>
+    <sys:String x:Key="LocToolPixelate">ピクセル化</sys:String>
+    <sys:String x:Key="LocToolSaveAs">名前を付けて保存</sys:String>
+    <sys:String x:Key="LocToolCopy">コピー</sys:String>
+    <sys:String x:Key="LocToolUpload">アップロード</sys:String>
+    <sys:String x:Key="LocToolCancel">キャンセル</sys:String>
+    <sys:String x:Key="LocToolColors">色</sys:String>
+    <sys:String x:Key="LocToolThickness">太さ</sys:String>
+    <sys:String x:Key="LocToolUndo">元に戻す</sys:String>
+    <sys:String x:Key="LocToolRedo">やり直し</sys:String>
+
+    <sys:String x:Key="LocSettingsRegionHotkeyPlaceholder">キーを押してください...</sys:String>
+    <sys:String x:Key="LocSettingsFullscreenHotkeyPlaceholder">キーを押してください...</sys:String>
+    <sys:String x:Key="LocSettingsActiveWindowHotkeyPlaceholder">キーを押してください...</sys:String>
+    <sys:String x:Key="LocSettingsEditorUndoHotkey">元に戻す</sys:String>
+    <sys:String x:Key="LocSettingsEditorUndoHotkeyPlaceholder">Ctrl+Z</sys:String>
+    <sys:String x:Key="LocSettingsEditorRedoHotkey">やり直し</sys:String>
+    <sys:String x:Key="LocSettingsEditorRedoHotkeyPlaceholder">Ctrl+Y</sys:String>
+    <sys:String x:Key="LocSettingsEditorCopyHotkey">コピー</sys:String>
+    <sys:String x:Key="LocSettingsEditorCopyHotkeyPlaceholder">Ctrl+C</sys:String>
+    <sys:String x:Key="LocSettingsEditorSaveHotkey">保存</sys:String>
+    <sys:String x:Key="LocSettingsEditorSaveHotkeyPlaceholder">Ctrl+S</sys:String>
+
+    <sys:String x:Key="LocSettingsOcrSettings">OCR設定</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstall">EasyOCRをインストール</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemove">EasyOCRを削除</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrStatus">ステータス</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstalled">インストール済み</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrNotInstalled">未インストール</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstalling">インストール中...</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemoving">削除中...</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstallFailed">インストール失敗</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemoveFailed">削除失敗</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstallLang">インストール</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoveLang">削除</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstalled">インストール済み</sys:String>
+    <sys:String x:Key="LocSettingsOcrNotInstalled">未インストール</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstalling">インストール中...</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoving">削除中...</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstallFailed">インストール失敗</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoveFailed">削除失敗</sys:String>
+    <sys:String x:Key="LocSettingsOcrDownloadProgress">ダウンロード進行状況</sys:String>
+    <sys:String x:Key="LocSettingsOcrBytes">バイト</sys:String>
+    <sys:String x:Key="LocSettingsOcrLicense">ライセンス</sys:String>
+    <sys:String x:Key="LocSettingsOcrLicenseLink">https://github.com/JaidedAI/EasyOCR/blob/master/LICENSE</sys:String>
+    <sys:String x:Key="LocSettingsOcrTesseractLangs">Tesseract言語</sys:String>
+    <sys:String x:Key="LocSettingsOcrTesseractHint">追加のTesseract言語をここからダウンロードできます。</sys:String>
+
+    <sys:String x:Key="LocSettingsExamplesTitle">例</sys:String>
+    <sys:String x:Key="LocSettingsExamplesDescription">現在のテーマでアイコン例をプレビュー。</sys:String>
+    <sys:String x:Key="LocSettingsExamplesFormat">形式</sys:String>
+    <sys:String x:Key="LocSettingsExamplesEffects">エフェクト</sys:String>
+    <sys:String x:Key="LocSettingsExamplesShape">図形</sys:String>
+    <sys:String x:Key="LocSettingsExamplesIcon">アイコン</sys:String>
+
+    <!-- Tray -->
+    <sys:String x:Key="LocTrayCaptureRegion">領域をキャプチャ</sys:String>
+    <sys:String x:Key="LocTrayCaptureFull">全画面をキャプチャ</sys:String>
+    <sys:String x:Key="LocTraySettings">設定</sys:String>
+    <sys:String x:Key="LocTrayAbout">情報</sys:String>
+    <sys:String x:Key="LocTrayExit">終了</sys:String>
+
+    <!-- Overlay -->
+    <sys:String x:Key="LocOverlayCopy">コピー</sys:String>
+    <sys:String x:Key="LocOverlaySave">保存</sys:String>
+    <sys:String x:Key="LocOverlayUpload">アップロード</sys:String>
+    <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
+    <sys:String x:Key="LocOverlayCancel">キャンセル</sys:String>
+    <sys:String x:Key="LocOverlayConfirm">確認</sys:String>
+    <sys:String x:Key="LocOverlayClose">閉じる</sys:String>
+    <sys:String x:Key="LocOverlaySelection">選択</sys:String>
+    <sys:String x:Key="LocOverlayMove">移動</sys:String>
+    <sys:String x:Key="LocOverlayPointer">ポインター</sys:String>
+    <sys:String x:Key="LocOverlayPen">ペン</sys:String>
+    <sys:String x:Key="LocOverlayLine">線</sys:String>
+    <sys:String x:Key="LocOverlayArrow">矢印</sys:String>
+    <sys:String x:Key="LocOverlayRectangle">四角形</sys:String>
+    <sys:String x:Key="LocOverlayEllipse">楕円</sys:String>
+    <sys:String x:Key="LocOverlayText">テキスト</sys:String>
+    <sys:String x:Key="LocOverlayHighlight">ハイライト</sys:String>
+    <sys:String x:Key="LocOverlayBlur">ぼかし</sys:String>
+    <sys:String x:Key="LocOverlayPixelate">ピクセル化</sys:String>
+    <sys:String x:Key="LocOverlayThickness">太さ</sys:String>
+    <sys:String x:Key="LocOverlayColors">色</sys:String>
+    <sys:String x:Key="LocOverlayPosition">位置</sys:String>
+    <sys:String x:Key="LocOverlaySize">サイズ</sys:String>
+    <sys:String x:Key="LocOverlayWidth">幅</sys:String>
+    <sys:String x:Key="LocOverlayHeight">高さ</sys:String>
+    <sys:String x:Key="LocOverlayPickColor">色を選択</sys:String>
+    <sys:String x:Key="LocOverlayHintDraw">クリック&amp;ドラッグで描画。ツールバーでツールを選択。</sys:String>
+    <sys:String x:Key="LocOverlayHintMove">選択範囲内でドラッグして移動。ハンドルでリサイズ。</sys:String>
+    <sys:String x:Key="LocOverlayHintEdit">ツールを選択して注釈。必要に応じて元に戻す/やり直し。</sys:String>
+    <sys:String x:Key="LocOverlayHintKeyboard">Esc: キャンセル、Enter: 確認、Ctrl+Z: 元に戻す、Ctrl+Y: やり直し</sys:String>
+
+    <!-- Text Input -->
+    <sys:String x:Key="LocTextInputTitle">テキストを追加</sys:String>
+    <sys:String x:Key="LocTextInputHint">スクリーンショットに配置するテキストを入力</sys:String>
+    <sys:String x:Key="LocTextInputFont">フォント</sys:String>
+    <sys:String x:Key="LocTextInputSize">サイズ</sys:String>
+    <sys:String x:Key="LocTextInputBold">太字</sys:String>
+    <sys:String x:Key="LocTextInputItalic">斜体</sys:String>
+    <sys:String x:Key="LocTextInputColor">色</sys:String>
+    <sys:String x:Key="LocTextInputPlace">テキストを配置</sys:String>
+    <sys:String x:Key="LocTextInputCancel">キャンセル</sys:String>
+
+    <!-- About -->
+    <sys:String x:Key="LocAboutTitle">Shotoraについて</sys:String>
+    <sys:String x:Key="LocAboutVersion">バージョン</sys:String>
+    <sys:String x:Key="LocAboutCopyright">© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
+    <sys:String x:Key="LocAboutLinks">リンク</sys:String>
+    <sys:String x:Key="LocAboutWebsite">ウェブサイト</sys:String>
+    <sys:String x:Key="LocAboutLinkedIn">LinkedIn</sys:String>
+    <sys:String x:Key="LocAboutEmail">メール</sys:String>
+
+    <!-- OCR Result -->
+    <sys:String x:Key="LocOcrResultTitle">OCR結果</sys:String>
+    <sys:String x:Key="LocOcrResultCopy">コピー</sys:String>
+    <sys:String x:Key="LocOcrResultClose">閉じる</sys:String>
+    <sys:String x:Key="LocOcrResultHint">認識されたテキスト</sys:String>
+
+    <!-- Notifications -->
+    <sys:String x:Key="LocNotificationCopySuccess">クリップボードにコピーしました</sys:String>
+    <sys:String x:Key="LocNotificationSaveSuccess">保存しました</sys:String>
+    <sys:String x:Key="LocNotificationSaveFailed">保存に失敗しました</sys:String>
+    <sys:String x:Key="LocNotificationUploadSuccess">アップロードしました</sys:String>
+    <sys:String x:Key="LocNotificationUploadFailed">アップロードに失敗しました</sys:String>
+    <sys:String x:Key="LocNotificationOcrSuccess">OCR完了</sys:String>
+    <sys:String x:Key="LocNotificationOcrFailed">OCRに失敗しました</sys:String>
+
+    <!-- Buttons -->
+    <sys:String x:Key="LocButtonSave">保存</sys:String>
+    <sys:String x:Key="LocButtonCancel">キャンセル</sys:String>
+    <sys:String x:Key="LocButtonClose">閉じる</sys:String>
+    <sys:String x:Key="LocButtonOK">OK</sys:String>
+
+    <!-- Dialogs -->
+    <sys:String x:Key="LocDialogSaveTitle">スクリーンショットを保存</sys:String>
+    <sys:String x:Key="LocDialogSaveFilter">PNGファイル|*.png|JPEGファイル|*.jpg;*.jpeg|WebPファイル|*.webp|すべてのファイル|*.*</sys:String>
+    <sys:String x:Key="LocDialogSaveDefaultName">Shotora.png</sys:String>
+    <sys:String x:Key="LocDialogSelectFolder">フォルダを選択</sys:String>
+    <sys:String x:Key="LocDialogConfirm">確認</sys:String>
+    <sys:String x:Key="LocDialogDelete">削除</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguage">言語ファイルを削除しますか？</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguageConfirm">この言語ファイルを削除してもよろしいですか？</sys:String>
+
+    <!-- Errors -->
+    <sys:String x:Key="LocErrorInvalidHotkey">無効なホットキー</sys:String>
+    <sys:String x:Key="LocErrorHotkeyInUse">ホットキーは既に使用中です</sys:String>
+    <sys:String x:Key="LocErrorHotkeyRegisterFailed">ホットキーの登録に失敗しました</sys:String>
+    <sys:String x:Key="LocErrorSaveFailed">保存に失敗しました</sys:String>
+    <sys:String x:Key="LocErrorOcrFailed">OCRに失敗しました</sys:String>
+    <sys:String x:Key="LocErrorInvalidSelection">無効な選択</sys:String>
+    <sys:String x:Key="LocErrorNoSelection">選択なし</sys:String>
+    <sys:String x:Key="LocErrorTextEmpty">テキストが空です</sys:String>
+
+    <sys:String x:Key="LocMainTitle">Shotora</sys:String>
+    <sys:String x:Key="LocMainHint1">トレイアイコンまたはグローバルホットキーを使用してキャプチャ。</sys:String>
+    <sys:String x:Key="LocMainHint2">このウィンドウはオプションです。閉じるとShotoraはトレイで実行されます。</sys:String>
+
+    <sys:String x:Key="LocAboutSubtitle">画面キャプチャと注釈</sys:String>
+    <sys:String x:Key="LocAboutDescription">Shotora で高速スクリーンショット、注釈、OCR、アップロード。</sys:String>
+    <sys:String x:Key="LocAboutLicense">ライセンス</sys:String>
+    <sys:String x:Key="LocAboutAuthor">作者</sys:String>
+    <sys:String x:Key="LocAboutRole">役割</sys:String>
+    <sys:String x:Key="LocAboutContact">連絡先</sys:String>
+    <sys:String x:Key="LocAboutContactIntro">フィードバックや協力のご連絡をお待ちしています。</sys:String>
+</ResourceDictionary>

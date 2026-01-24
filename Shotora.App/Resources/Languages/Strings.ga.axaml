@@ -1,0 +1,255 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <!-- Settings -->
+    <sys:String x:Key="LocSettingsTitle">Socruithe</sys:String>
+    <sys:String x:Key="LocSettingsStorage">Stóráil</sys:String>
+    <sys:String x:Key="LocSettingsDefaultFolder">Fillteán réamhshocraithe</sys:String>
+    <sys:String x:Key="LocSettingsBrowse">Brabhsáil</sys:String>
+    <sys:String x:Key="LocSettingsDefaultFormat">Formáid réamhshocraithe</sys:String>
+    <sys:String x:Key="LocSettingsJpegQuality">Cáilíocht JPEG</sys:String>
+    <sys:String x:Key="LocSettingsFilenamePattern">Patrún ainm comhaid</sys:String>
+    <sys:String x:Key="LocSettingsOcr">OCR</sys:String>
+    <sys:String x:Key="LocSettingsProvider">Soláthraí</sys:String>
+    <sys:String x:Key="LocSettingsLanguages">Teangacha</sys:String>
+    <sys:String x:Key="LocSettingsEasyOcrHint">Éilíonn EasyOCR Python + 'pip install easyocr'</sys:String>
+    <sys:String x:Key="LocSettingsTesseractFiles">Comhaid teanga Tesseract</sys:String>
+    <sys:String x:Key="LocSettingsSelectLanguage">Roghnaigh teanga</sys:String>
+    <sys:String x:Key="LocSettingsDownload">Íoslódáil</sys:String>
+    <sys:String x:Key="LocSettingsDelete">Scrios</sys:String>
+    <sys:String x:Key="LocSettingsHotkeys">Eochracha aicearra</sys:String>
+    <sys:String x:Key="LocSettingsRegionHotkey">Gabháil réigiúin</sys:String>
+    <sys:String x:Key="LocSettingsFullscreenHotkey">Scáileán iomlán</sys:String>
+    <sys:String x:Key="LocSettingsActiveWindowHotkey">Fuinneog ghníomhach</sys:String>
+    <sys:String x:Key="LocSettingsGeneral">Ginearálta</sys:String>
+    <sys:String x:Key="LocSettingsTheme">Téama</sys:String>
+    <sys:String x:Key="LocSettingsDisplayLanguage">Teanga taispeána</sys:String>
+    <sys:String x:Key="LocSettingsRunOnStartup">Rith ag am tosaithe</sys:String>
+    <sys:String x:Key="LocSettingsTabMain">Príomh</sys:String>
+    <sys:String x:Key="LocSettingsTabHotkeys">Aicearraí</sys:String>
+    <sys:String x:Key="LocSettingsTabEditor">Eagarthóir</sys:String>
+    <sys:String x:Key="LocSettingsEditorHotkeys">Aicearraí eagarthóra</sys:String>
+    <sys:String x:Key="LocSettingsEditorMouse">Luch eagarthóra</sys:String>
+    <sys:String x:Key="LocSettingsCopyCloseMouse">Cóipeáil + dún</sys:String>
+    <sys:String x:Key="LocSettingsMoveSelectionMouse">Bog roghnúchán</sys:String>
+    <sys:String x:Key="LocSettingsEditorIcons">Deilbhíní eagarthóra</sys:String>
+    <sys:String x:Key="LocSettingsEditorOptions">Roghanna eagarthóra</sys:String>
+    <sys:String x:Key="LocSettingsShowThicknessSlider">Taispeáin sleamhnán tiús</sys:String>
+    <sys:String x:Key="LocSettingsDefaultThickness">Tiús réamhshocraithe</sys:String>
+    <sys:String x:Key="LocSettingsShowColorPalette">Taispeáin pailéad dathanna</sys:String>
+    <sys:String x:Key="LocSettingsDefaultColor">Dath réamhshocraithe</sys:String>
+    <sys:String x:Key="LocSettingsPickColor">Roghnaigh</sys:String>
+    <sys:String x:Key="LocSettingsDefaultColorHint">Úsáidtear nuair atá an pailéad dathanna i bhfolach.</sys:String>
+    <sys:String x:Key="LocSettingsUsePointer">Úsáid an pointeoir</sys:String>
+    <sys:String x:Key="LocSettingsShowUndo">Taispeáin Cealaigh</sys:String>
+    <sys:String x:Key="LocSettingsShowRedo">Taispeáin Athdhéanamh</sys:String>
+    <sys:String x:Key="LocSettingsShowCopy">Taispeáin Cóipeáil</sys:String>
+    <sys:String x:Key="LocSettingsShowSave">Taispeáin Sábháil</sys:String>
+    <sys:String x:Key="LocSettingsShowUpload">Taispeáin Uaslódáil</sys:String>
+    <sys:String x:Key="LocSettingsShowOcr">Taispeáin OCR</sys:String>
+    <sys:String x:Key="LocSettingsShowCancel">Taispeáin Cealaigh</sys:String>
+    <sys:String x:Key="LocSettingsShowConfirm">Taispeáin Deimhniú</sys:String>
+    <sys:String x:Key="LocSettingsShowClose">Taispeáin Dún</sys:String>
+    <sys:String x:Key="LocSettingsShowSelection">Taispeáin Roghnú</sys:String>
+    <sys:String x:Key="LocSettingsShowMove">Taispeáin Bog</sys:String>
+    <sys:String x:Key="LocSettingsShowPen">Taispeáin Peann</sys:String>
+    <sys:String x:Key="LocSettingsShowLine">Taispeáin Líne</sys:String>
+    <sys:String x:Key="LocSettingsShowArrow">Taispeáin Saighead</sys:String>
+    <sys:String x:Key="LocSettingsShowRectangle">Taispeáin Cearnóg</sys:String>
+    <sys:String x:Key="LocSettingsShowEllipse">Taispeáin Eillipsea</sys:String>
+    <sys:String x:Key="LocSettingsShowText">Taispeáin Téacs</sys:String>
+    <sys:String x:Key="LocSettingsShowHighlight">Taispeáin Béim</sys:String>
+    <sys:String x:Key="LocSettingsShowBlur">Taispeáin Mhoilliú</sys:String>
+    <sys:String x:Key="LocSettingsShowPixelate">Taispeáin Píosaí</sys:String>
+    <sys:String x:Key="LocSettingsShowThickness">Taispeáin Tiús</sys:String>
+    <sys:String x:Key="LocSettingsShowColors">Taispeáin Dathanna</sys:String>
+    <sys:String x:Key="LocSettingsShowCrosshair">Taispeáin Crois</sys:String>
+    <sys:String x:Key="LocSettingsShowResizeHandles">Taispeáin Láimhseálacha</sys:String>
+    <sys:String x:Key="LocSettingsShowToolbar">Taispeáin Barra Uirlisí</sys:String>
+    <sys:String x:Key="LocSettingsShowPalette">Taispeáin Paléad</sys:String>
+    <sys:String x:Key="LocSettingsShowPreview">Taispeáin Réamhamharc</sys:String>
+    <sys:String x:Key="LocSettingsShowMiniMap">Taispeáin Mapa Beag</sys:String>
+    <sys:String x:Key="LocSettingsShowSelectionSize">Taispeáin Toise Roghnaithe</sys:String>
+    <sys:String x:Key="LocSettingsShowSelectionPosition">Taispeáin Suíomh Roghnaithe</sys:String>
+
+    <!-- Common -->
+    <sys:String x:Key="LocCommonClose">Dún</sys:String>
+
+    <!-- Tools -->
+    <sys:String x:Key="LocToolSelect">Roghnaigh</sys:String>
+    <sys:String x:Key="LocToolRegion">Roghnaigh réigiún</sys:String>
+    <sys:String x:Key="LocToolMove">Bog réigiún</sys:String>
+    <sys:String x:Key="LocToolPen">Peann</sys:String>
+    <sys:String x:Key="LocToolLine">Líne</sys:String>
+    <sys:String x:Key="LocToolArrow">Saighead</sys:String>
+    <sys:String x:Key="LocToolRect">Dronuilleog</sys:String>
+    <sys:String x:Key="LocToolEllipse">Éilips</sys:String>
+    <sys:String x:Key="LocToolText">Téacs</sys:String>
+    <sys:String x:Key="LocToolHighlight">Aibhsigh</sys:String>
+    <sys:String x:Key="LocToolBlur">Doiléirigh</sys:String>
+    <sys:String x:Key="LocToolPixelate">Picteilínigh</sys:String>
+    <sys:String x:Key="LocToolSaveAs">Sábháil mar</sys:String>
+    <sys:String x:Key="LocToolCopy">Cóipeáil</sys:String>
+    <sys:String x:Key="LocToolUpload">Uaslódáil</sys:String>
+    <sys:String x:Key="LocToolCancel">Cealaigh</sys:String>
+    <sys:String x:Key="LocToolColors">Dathanna</sys:String>
+    <sys:String x:Key="LocToolThickness">Tiús</sys:String>
+    <sys:String x:Key="LocToolUndo">Cealaigh</sys:String>
+    <sys:String x:Key="LocToolRedo">Athdhéan</sys:String>
+
+    <sys:String x:Key="LocSettingsRegionHotkeyPlaceholder">Brú na heochracha...</sys:String>
+    <sys:String x:Key="LocSettingsFullscreenHotkeyPlaceholder">Brú na heochracha...</sys:String>
+    <sys:String x:Key="LocSettingsActiveWindowHotkeyPlaceholder">Brú na heochracha...</sys:String>
+    <sys:String x:Key="LocSettingsEditorUndoHotkey">Cealaigh</sys:String>
+    <sys:String x:Key="LocSettingsEditorUndoHotkeyPlaceholder">Ctrl+Z</sys:String>
+    <sys:String x:Key="LocSettingsEditorRedoHotkey">Athdhéanamh</sys:String>
+    <sys:String x:Key="LocSettingsEditorRedoHotkeyPlaceholder">Ctrl+Y</sys:String>
+    <sys:String x:Key="LocSettingsEditorCopyHotkey">Cóipeáil</sys:String>
+    <sys:String x:Key="LocSettingsEditorCopyHotkeyPlaceholder">Ctrl+C</sys:String>
+    <sys:String x:Key="LocSettingsEditorSaveHotkey">Sábháil</sys:String>
+    <sys:String x:Key="LocSettingsEditorSaveHotkeyPlaceholder">Ctrl+S</sys:String>
+
+    <sys:String x:Key="LocSettingsOcrSettings">Socruithe OCR</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstall">Suiteáil EasyOCR</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemove">Bain EasyOCR</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrStatus">Stádas</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstalled">Suiteáilte</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrNotInstalled">Gan suiteáil</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstalling">Ag suiteáil...</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemoving">Ag baint...</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstallFailed">Theip ar an tsuiteáil</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemoveFailed">Theip ar an mbain</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstallLang">Suiteáil</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoveLang">Bain</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstalled">Suiteáilte</sys:String>
+    <sys:String x:Key="LocSettingsOcrNotInstalled">Gan suiteáil</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstalling">Ag suiteáil...</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoving">Ag baint...</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstallFailed">Theip ar an tsuiteáil</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoveFailed">Theip ar an mbain</sys:String>
+    <sys:String x:Key="LocSettingsOcrDownloadProgress">Dul chun cinn íoslódála</sys:String>
+    <sys:String x:Key="LocSettingsOcrBytes">bytes</sys:String>
+    <sys:String x:Key="LocSettingsOcrLicense">Ceadúnas</sys:String>
+    <sys:String x:Key="LocSettingsOcrLicenseLink">https://github.com/JaidedAI/EasyOCR/blob/master/LICENSE</sys:String>
+    <sys:String x:Key="LocSettingsOcrTesseractLangs">Teangacha Tesseract</sys:String>
+    <sys:String x:Key="LocSettingsOcrTesseractHint">Íoslódáil teangacha breise Tesseract anseo.</sys:String>
+
+    <sys:String x:Key="LocSettingsExamplesTitle">Samplaí</sys:String>
+    <sys:String x:Key="LocSettingsExamplesDescription">Réamhamharc ar shiombailí samplacha sa téama reatha.</sys:String>
+    <sys:String x:Key="LocSettingsExamplesFormat">Formáid</sys:String>
+    <sys:String x:Key="LocSettingsExamplesEffects">Éifeachtaí</sys:String>
+    <sys:String x:Key="LocSettingsExamplesShape">Cruth</sys:String>
+    <sys:String x:Key="LocSettingsExamplesIcon">Siombail</sys:String>
+
+    <!-- Tray -->
+    <sys:String x:Key="LocTrayCaptureRegion">Gabh Réigiún</sys:String>
+    <sys:String x:Key="LocTrayCaptureFull">Gabh Scáileán Iomlán</sys:String>
+    <sys:String x:Key="LocTraySettings">Socruithe</sys:String>
+    <sys:String x:Key="LocTrayAbout">Maidir le</sys:String>
+    <sys:String x:Key="LocTrayExit">Scoir</sys:String>
+
+    <!-- Overlay -->
+    <sys:String x:Key="LocOverlayCopy">Cóipeáil</sys:String>
+    <sys:String x:Key="LocOverlaySave">Sábháil</sys:String>
+    <sys:String x:Key="LocOverlayUpload">Uaslódáil</sys:String>
+    <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
+    <sys:String x:Key="LocOverlayCancel">Cealaigh</sys:String>
+    <sys:String x:Key="LocOverlayConfirm">Dearbhaigh</sys:String>
+    <sys:String x:Key="LocOverlayClose">Dún</sys:String>
+    <sys:String x:Key="LocOverlaySelection">Roghnú</sys:String>
+    <sys:String x:Key="LocOverlayMove">Bog</sys:String>
+    <sys:String x:Key="LocOverlayPointer">Léaráid</sys:String>
+    <sys:String x:Key="LocOverlayPen">Peann</sys:String>
+    <sys:String x:Key="LocOverlayLine">Línte</sys:String>
+    <sys:String x:Key="LocOverlayArrow">Saighead</sys:String>
+    <sys:String x:Key="LocOverlayRectangle">Cearnóg</sys:String>
+    <sys:String x:Key="LocOverlayEllipse">Eilim</sys:String>
+    <sys:String x:Key="LocOverlayText">Téacs</sys:String>
+    <sys:String x:Key="LocOverlayHighlight">Béim</sys:String>
+    <sys:String x:Key="LocOverlayBlur">Mhoill</sys:String>
+    <sys:String x:Key="LocOverlayPixelate">Píosaí</sys:String>
+    <sys:String x:Key="LocOverlayThickness">Tiús</sys:String>
+    <sys:String x:Key="LocOverlayColors">Dathanna</sys:String>
+    <sys:String x:Key="LocOverlayPosition">Suíomh</sys:String>
+    <sys:String x:Key="LocOverlaySize">Méid</sys:String>
+    <sys:String x:Key="LocOverlayWidth">Leithead</sys:String>
+    <sys:String x:Key="LocOverlayHeight">Airde</sys:String>
+    <sys:String x:Key="LocOverlayPickColor">Roghnaigh dath</sys:String>
+    <sys:String x:Key="LocOverlayHintDraw">Cliceáil agus tarraing chun a tharraingt. Úsáid an barra uirlisí do na huirlisí.</sys:String>
+    <sys:String x:Key="LocOverlayHintMove">Tarraing taobh istigh den roghnú chun bogadh. Úsáid láimhseálacha chun athmhéid a dhéanamh.</sys:String>
+    <sys:String x:Key="LocOverlayHintEdit">Roghnaigh uirlisí le haghaidh míniúcháin. Úsáid Cealaigh/Athdhéanamh de réir mar is gá.</sys:String>
+    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Cealaigh, Iontráil: Dearbhaigh, Ctrl+Z: Cealaigh, Ctrl+Y: Athdhéanamh</sys:String>
+
+    <!-- Text Input -->
+    <sys:String x:Key="LocTextInputTitle">Cuir téacs leis</sys:String>
+    <sys:String x:Key="LocTextInputHint">Cuir téacs isteach chun é a chur ar an ngrianghraf scáileáin</sys:String>
+    <sys:String x:Key="LocTextInputFont">Cló</sys:String>
+    <sys:String x:Key="LocTextInputSize">Méid</sys:String>
+    <sys:String x:Key="LocTextInputBold">Lom</sys:String>
+    <sys:String x:Key="LocTextInputItalic">Leath</sys:String>
+    <sys:String x:Key="LocTextInputColor">Dath</sys:String>
+    <sys:String x:Key="LocTextInputPlace">Cuir téacs</sys:String>
+    <sys:String x:Key="LocTextInputCancel">Cealaigh</sys:String>
+
+    <!-- About -->
+    <sys:String x:Key="LocAboutTitle">Maidir le Shotora</sys:String>
+    <sys:String x:Key="LocAboutVersion">Leagan</sys:String>
+    <sys:String x:Key="LocAboutCopyright">Â© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
+    <sys:String x:Key="LocAboutLinks">Naisc</sys:String>
+    <sys:String x:Key="LocAboutWebsite">Suíomh Gréasáin</sys:String>
+    <sys:String x:Key="LocAboutLinkedIn">LinkedIn</sys:String>
+    <sys:String x:Key="LocAboutEmail">R-phost</sys:String>
+
+    <!-- OCR Result -->
+    <sys:String x:Key="LocOcrResultTitle">Toradh OCR</sys:String>
+    <sys:String x:Key="LocOcrResultCopy">Cóipeáil</sys:String>
+    <sys:String x:Key="LocOcrResultClose">Dún</sys:String>
+    <sys:String x:Key="LocOcrResultHint">Téacs aitheanta</sys:String>
+
+    <!-- Notifications -->
+    <sys:String x:Key="LocNotificationCopySuccess">Cóipte chuig an ngearrthaisce</sys:String>
+    <sys:String x:Key="LocNotificationSaveSuccess">Sábháladh</sys:String>
+    <sys:String x:Key="LocNotificationSaveFailed">Theip ar shábháil</sys:String>
+    <sys:String x:Key="LocNotificationUploadSuccess">Uaslódáilte</sys:String>
+    <sys:String x:Key="LocNotificationUploadFailed">Theip ar uaslódáil</sys:String>
+    <sys:String x:Key="LocNotificationOcrSuccess">Críochnaíodh OCR</sys:String>
+    <sys:String x:Key="LocNotificationOcrFailed">Theip ar OCR</sys:String>
+
+    <!-- Buttons -->
+    <sys:String x:Key="LocButtonSave">Sábháil</sys:String>
+    <sys:String x:Key="LocButtonCancel">Cealaigh</sys:String>
+    <sys:String x:Key="LocButtonClose">Dún</sys:String>
+    <sys:String x:Key="LocButtonOK">OK</sys:String>
+
+    <!-- Dialogs -->
+    <sys:String x:Key="LocDialogSaveTitle">Sábháil scáileán</sys:String>
+    <sys:String x:Key="LocDialogSaveFilter">Comhaid PNG|*.png|Comhaid JPEG|*.jpg;*.jpeg|Comhaid WebP|*.webp|Gach comhad|*.*</sys:String>
+    <sys:String x:Key="LocDialogSaveDefaultName">Shotora.png</sys:String>
+    <sys:String x:Key="LocDialogSelectFolder">Roghnaigh fillteán</sys:String>
+    <sys:String x:Key="LocDialogConfirm">Deimhnigh</sys:String>
+    <sys:String x:Key="LocDialogDelete">Scrios</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguage">An bhfuil tú ag iarraidh an comhad teanga a scriosadh?</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguageConfirm">An bhfuil tú cinnte go dteastaíonn uait é a bhaint?</sys:String>
+
+    <!-- Errors -->
+    <sys:String x:Key="LocErrorInvalidHotkey">Ghearrchlib mícheart</sys:String>
+    <sys:String x:Key="LocErrorHotkeyInUse">Tá an gearrchlib in úsáid cheana féin</sys:String>
+    <sys:String x:Key="LocErrorHotkeyRegisterFailed">Theip ar an náisiúntóir a chlárú</sys:String>
+    <sys:String x:Key="LocErrorSaveFailed">Theip ar shábháil</sys:String>
+    <sys:String x:Key="LocErrorOcrFailed">Theip ar OCR</sys:String>
+    <sys:String x:Key="LocErrorInvalidSelection">Roghnú neamhbhailí</sys:String>
+    <sys:String x:Key="LocErrorNoSelection">Níl roghnú ann</sys:String>
+    <sys:String x:Key="LocErrorTextEmpty">Tá an téacs folamh</sys:String>
+
+    <sys:String x:Key="LocMainTitle">Shotora</sys:String>
+    <sys:String x:Key="LocMainHint1">Úsáid an siombail sa bhfeidhmchlár nó na gearrchlibeanna domhanda chun gabháil a dhéanamh.</sys:String>
+    <sys:String x:Key="LocMainHint2">Tá an fhuinneog seo roghnach; dún í má tá tú ag iarraidh Shotora a fhágáil sa bharra chórais.</sys:String>
+
+    <sys:String x:Key="LocAboutSubtitle">Gabháil scáileáin agus anótáil</sys:String>
+    <sys:String x:Key="LocAboutDescription">Seatanna scáileáin gasta, marcáil, OCR agus uaslódálacha le Shotora.</sys:String>
+    <sys:String x:Key="LocAboutLicense">Ceadúnas</sys:String>
+    <sys:String x:Key="LocAboutAuthor">Údar</sys:String>
+    <sys:String x:Key="LocAboutRole">Ról</sys:String>
+    <sys:String x:Key="LocAboutContact">Teagmháil</sys:String>
+    <sys:String x:Key="LocAboutContactIntro">Déan teagmháil linn le haghaidh aiseolais nó comhoibrithe.</sys:String>
+</ResourceDictionary>

@@ -1,0 +1,255 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <!-- Settings -->
+    <sys:String x:Key="LocSettingsTitle">Indstillinger</sys:String>
+    <sys:String x:Key="LocSettingsStorage">Lager</sys:String>
+    <sys:String x:Key="LocSettingsDefaultFolder">Standardmappe</sys:String>
+    <sys:String x:Key="LocSettingsBrowse">Gennemse</sys:String>
+    <sys:String x:Key="LocSettingsDefaultFormat">Standardformat</sys:String>
+    <sys:String x:Key="LocSettingsJpegQuality">JPEG-kvalitet</sys:String>
+    <sys:String x:Key="LocSettingsFilenamePattern">Filnavnsmønster</sys:String>
+    <sys:String x:Key="LocSettingsOcr">OCR</sys:String>
+    <sys:String x:Key="LocSettingsProvider">Udyder</sys:String>
+    <sys:String x:Key="LocSettingsLanguages">Sprog</sys:String>
+    <sys:String x:Key="LocSettingsEasyOcrHint">EasyOCR kræver Python + 'pip install easyocr'</sys:String>
+    <sys:String x:Key="LocSettingsTesseractFiles">Tesseract sprogfiler</sys:String>
+    <sys:String x:Key="LocSettingsSelectLanguage">Vælg sprog</sys:String>
+    <sys:String x:Key="LocSettingsDownload">Download</sys:String>
+    <sys:String x:Key="LocSettingsDelete">Slet</sys:String>
+    <sys:String x:Key="LocSettingsHotkeys">Genvejstaster</sys:String>
+    <sys:String x:Key="LocSettingsRegionHotkey">Områdefangst</sys:String>
+    <sys:String x:Key="LocSettingsFullscreenHotkey">Fuld skærm</sys:String>
+    <sys:String x:Key="LocSettingsActiveWindowHotkey">Aktivt vindue</sys:String>
+    <sys:String x:Key="LocSettingsGeneral">Generelt</sys:String>
+    <sys:String x:Key="LocSettingsTheme">Tema</sys:String>
+    <sys:String x:Key="LocSettingsDisplayLanguage">Visningssprog</sys:String>
+    <sys:String x:Key="LocSettingsRunOnStartup">Kør ved opstart</sys:String>
+    <sys:String x:Key="LocSettingsTabMain">Hovedmenu</sys:String>
+    <sys:String x:Key="LocSettingsTabHotkeys">Genvejstaster</sys:String>
+    <sys:String x:Key="LocSettingsTabEditor">Editor</sys:String>
+    <sys:String x:Key="LocSettingsEditorHotkeys">Editor genvejstaster</sys:String>
+    <sys:String x:Key="LocSettingsEditorMouse">Editor mus</sys:String>
+    <sys:String x:Key="LocSettingsCopyCloseMouse">Kopier + luk</sys:String>
+    <sys:String x:Key="LocSettingsMoveSelectionMouse">Flyt markering</sys:String>
+    <sys:String x:Key="LocSettingsEditorIcons">Editor ikoner</sys:String>
+    <sys:String x:Key="LocSettingsEditorOptions">Editor indstillinger</sys:String>
+    <sys:String x:Key="LocSettingsShowThicknessSlider">Vis tykkelsesskyder</sys:String>
+    <sys:String x:Key="LocSettingsDefaultThickness">Standardtykkelse</sys:String>
+    <sys:String x:Key="LocSettingsShowColorPalette">Vis farvepalette</sys:String>
+    <sys:String x:Key="LocSettingsDefaultColor">Standardfarve</sys:String>
+    <sys:String x:Key="LocSettingsPickColor">Vælg</sys:String>
+    <sys:String x:Key="LocSettingsDefaultColorHint">Bruges når farvepaletten er skjult.</sys:String>
+    <sys:String x:Key="LocSettingsUsePointer">Brug markør</sys:String>
+    <sys:String x:Key="LocSettingsShowUndo">Vis Fortryd</sys:String>
+    <sys:String x:Key="LocSettingsShowRedo">Vis Gør om</sys:String>
+    <sys:String x:Key="LocSettingsShowCopy">Vis Kopier</sys:String>
+    <sys:String x:Key="LocSettingsShowSave">Vis Gem</sys:String>
+    <sys:String x:Key="LocSettingsShowUpload">Vis Upload</sys:String>
+    <sys:String x:Key="LocSettingsShowOcr">Vis OCR</sys:String>
+    <sys:String x:Key="LocSettingsShowCancel">Vis Annuller</sys:String>
+    <sys:String x:Key="LocSettingsShowConfirm">Vis Bekræft</sys:String>
+    <sys:String x:Key="LocSettingsShowClose">Vis Luk</sys:String>
+    <sys:String x:Key="LocSettingsShowSelection">Vis Markering</sys:String>
+    <sys:String x:Key="LocSettingsShowMove">Vis Flyt</sys:String>
+    <sys:String x:Key="LocSettingsShowPen">Vis Pen</sys:String>
+    <sys:String x:Key="LocSettingsShowLine">Vis Linje</sys:String>
+    <sys:String x:Key="LocSettingsShowArrow">Vis Pil</sys:String>
+    <sys:String x:Key="LocSettingsShowRectangle">Vis Rektangel</sys:String>
+    <sys:String x:Key="LocSettingsShowEllipse">Vis Ellipse</sys:String>
+    <sys:String x:Key="LocSettingsShowText">Vis Tekst</sys:String>
+    <sys:String x:Key="LocSettingsShowHighlight">Vis Fremhæv</sys:String>
+    <sys:String x:Key="LocSettingsShowBlur">Vis Slør</sys:String>
+    <sys:String x:Key="LocSettingsShowPixelate">Vis Pixeliser</sys:String>
+    <sys:String x:Key="LocSettingsShowThickness">Vis Tykkelse</sys:String>
+    <sys:String x:Key="LocSettingsShowColors">Vis Farver</sys:String>
+    <sys:String x:Key="LocSettingsShowCrosshair">Vis Sigte</sys:String>
+    <sys:String x:Key="LocSettingsShowResizeHandles">Vis håndtag til ændring af størrelse</sys:String>
+    <sys:String x:Key="LocSettingsShowToolbar">Vis værktøjslinje</sys:String>
+    <sys:String x:Key="LocSettingsShowPalette">Vis palet</sys:String>
+    <sys:String x:Key="LocSettingsShowPreview">Vis forhåndsvisning</sys:String>
+    <sys:String x:Key="LocSettingsShowMiniMap">Vis mini-kort</sys:String>
+    <sys:String x:Key="LocSettingsShowSelectionSize">Vis markeringens størrelse</sys:String>
+    <sys:String x:Key="LocSettingsShowSelectionPosition">Vis markeringens position</sys:String>
+
+    <!-- Common -->
+    <sys:String x:Key="LocCommonClose">Luk</sys:String>
+
+    <!-- Tools -->
+    <sys:String x:Key="LocToolSelect">Vælg</sys:String>
+    <sys:String x:Key="LocToolRegion">Vælg område</sys:String>
+    <sys:String x:Key="LocToolMove">Flyt område</sys:String>
+    <sys:String x:Key="LocToolPen">Pen</sys:String>
+    <sys:String x:Key="LocToolLine">Linje</sys:String>
+    <sys:String x:Key="LocToolArrow">Pil</sys:String>
+    <sys:String x:Key="LocToolRect">Rektangel</sys:String>
+    <sys:String x:Key="LocToolEllipse">Ellipse</sys:String>
+    <sys:String x:Key="LocToolText">Tekst</sys:String>
+    <sys:String x:Key="LocToolHighlight">Fremhæv</sys:String>
+    <sys:String x:Key="LocToolBlur">Slør</sys:String>
+    <sys:String x:Key="LocToolPixelate">Pixelering</sys:String>
+    <sys:String x:Key="LocToolSaveAs">Gem som</sys:String>
+    <sys:String x:Key="LocToolCopy">Kopier</sys:String>
+    <sys:String x:Key="LocToolUpload">Upload</sys:String>
+    <sys:String x:Key="LocToolCancel">Annuller</sys:String>
+    <sys:String x:Key="LocToolColors">Farver</sys:String>
+    <sys:String x:Key="LocToolThickness">Tykkelse</sys:String>
+    <sys:String x:Key="LocToolUndo">Fortryd</sys:String>
+    <sys:String x:Key="LocToolRedo">Annuller fortryd</sys:String>
+
+    <sys:String x:Key="LocSettingsRegionHotkeyPlaceholder">Tryk på taster...</sys:String>
+    <sys:String x:Key="LocSettingsFullscreenHotkeyPlaceholder">Tryk på taster...</sys:String>
+    <sys:String x:Key="LocSettingsActiveWindowHotkeyPlaceholder">Tryk på taster...</sys:String>
+    <sys:String x:Key="LocSettingsEditorUndoHotkey">Fortryd</sys:String>
+    <sys:String x:Key="LocSettingsEditorUndoHotkeyPlaceholder">Ctrl+Z</sys:String>
+    <sys:String x:Key="LocSettingsEditorRedoHotkey">Gør om</sys:String>
+    <sys:String x:Key="LocSettingsEditorRedoHotkeyPlaceholder">Ctrl+Y</sys:String>
+    <sys:String x:Key="LocSettingsEditorCopyHotkey">Kopier</sys:String>
+    <sys:String x:Key="LocSettingsEditorCopyHotkeyPlaceholder">Ctrl+C</sys:String>
+    <sys:String x:Key="LocSettingsEditorSaveHotkey">Gem</sys:String>
+    <sys:String x:Key="LocSettingsEditorSaveHotkeyPlaceholder">Ctrl+S</sys:String>
+
+    <sys:String x:Key="LocSettingsOcrSettings">OCR-indstillinger</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstall">Installer EasyOCR</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemove">Afinstaller EasyOCR</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrStatus">Status</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstalled">Installeret</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrNotInstalled">Ikke installeret</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstalling">Installerer...</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemoving">Afinstallerer...</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstallFailed">Installation mislykkedes</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemoveFailed">Afinstallation mislykkedes</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstallLang">Installer</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoveLang">Fjern</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstalled">Installeret</sys:String>
+    <sys:String x:Key="LocSettingsOcrNotInstalled">Ikke installeret</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstalling">Installerer...</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoving">Fjerner...</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstallFailed">Installation mislykkedes</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoveFailed">Fjernelse mislykkedes</sys:String>
+    <sys:String x:Key="LocSettingsOcrDownloadProgress">Download-fremskridt</sys:String>
+    <sys:String x:Key="LocSettingsOcrBytes">bytes</sys:String>
+    <sys:String x:Key="LocSettingsOcrLicense">Licens</sys:String>
+    <sys:String x:Key="LocSettingsOcrLicenseLink">https://github.com/JaidedAI/EasyOCR/blob/master/LICENSE</sys:String>
+    <sys:String x:Key="LocSettingsOcrTesseractLangs">Tesseract-sprog</sys:String>
+    <sys:String x:Key="LocSettingsOcrTesseractHint">Download/tilføj ekstra Tesseract-sprog her.</sys:String>
+
+    <sys:String x:Key="LocSettingsExamplesTitle">Examples</sys:String>
+    <sys:String x:Key="LocSettingsExamplesDescription">Preview example icons in current theme.</sys:String>
+    <sys:String x:Key="LocSettingsExamplesFormat">Format</sys:String>
+    <sys:String x:Key="LocSettingsExamplesEffects">Effects</sys:String>
+    <sys:String x:Key="LocSettingsExamplesShape">Shape</sys:String>
+    <sys:String x:Key="LocSettingsExamplesIcon">Icon</sys:String>
+
+    <!-- Tray -->
+    <sys:String x:Key="LocTrayCaptureRegion">Fang område</sys:String>
+    <sys:String x:Key="LocTrayCaptureFull">Fang fuld skærm</sys:String>
+    <sys:String x:Key="LocTraySettings">Indstillinger</sys:String>
+    <sys:String x:Key="LocTrayAbout">Om</sys:String>
+    <sys:String x:Key="LocTrayExit">Afslut</sys:String>
+
+    <!-- Overlay -->
+    <sys:String x:Key="LocOverlayCopy">Kopier</sys:String>
+    <sys:String x:Key="LocOverlaySave">Gem</sys:String>
+    <sys:String x:Key="LocOverlayUpload">Upload</sys:String>
+    <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
+    <sys:String x:Key="LocOverlayCancel">Annuller</sys:String>
+    <sys:String x:Key="LocOverlayConfirm">Bekræft</sys:String>
+    <sys:String x:Key="LocOverlayClose">Luk</sys:String>
+    <sys:String x:Key="LocOverlaySelection">Markering</sys:String>
+    <sys:String x:Key="LocOverlayMove">Flyt</sys:String>
+    <sys:String x:Key="LocOverlayPointer">Pegepind</sys:String>
+    <sys:String x:Key="LocOverlayPen">Pen</sys:String>
+    <sys:String x:Key="LocOverlayLine">Linje</sys:String>
+    <sys:String x:Key="LocOverlayArrow">Pil</sys:String>
+    <sys:String x:Key="LocOverlayRectangle">Rektangel</sys:String>
+    <sys:String x:Key="LocOverlayEllipse">Ellipse</sys:String>
+    <sys:String x:Key="LocOverlayText">Tekst</sys:String>
+    <sys:String x:Key="LocOverlayHighlight">Fremhæv</sys:String>
+    <sys:String x:Key="LocOverlayBlur">Slør</sys:String>
+    <sys:String x:Key="LocOverlayPixelate">Pixelering</sys:String>
+    <sys:String x:Key="LocOverlayThickness">Tykkelse</sys:String>
+    <sys:String x:Key="LocOverlayColors">Farver</sys:String>
+    <sys:String x:Key="LocOverlayPosition">Position</sys:String>
+    <sys:String x:Key="LocOverlaySize">Størrelse</sys:String>
+    <sys:String x:Key="LocOverlayWidth">B</sys:String>
+    <sys:String x:Key="LocOverlayHeight">H</sys:String>
+    <sys:String x:Key="LocOverlayPickColor">Vælg farve</sys:String>
+    <sys:String x:Key="LocOverlayHintDraw">Klik og træk for at tegne. Brug værktøjslinje til værktøjer.</sys:String>
+    <sys:String x:Key="LocOverlayHintMove">Træk inden for markering for at flytte. Brug håndtag til at ændre størrelse.</sys:String>
+    <sys:String x:Key="LocOverlayHintEdit">Vælg værktøjer for at annotere. Brug Fortryd/Annuller fortryd efter behov.</sys:String>
+    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Annuller, Enter: Bekræft, Ctrl+Z: Fortryd, Ctrl+Y: Annuller fortryd</sys:String>
+
+    <!-- Text Input -->
+    <sys:String x:Key="LocTextInputTitle">Tilføj tekst</sys:String>
+    <sys:String x:Key="LocTextInputHint">Angiv tekst, der skal placeres på skærmbilledet</sys:String>
+    <sys:String x:Key="LocTextInputFont">Skrifttype</sys:String>
+    <sys:String x:Key="LocTextInputSize">Størrelse</sys:String>
+    <sys:String x:Key="LocTextInputBold">Fed</sys:String>
+    <sys:String x:Key="LocTextInputItalic">Kursiv</sys:String>
+    <sys:String x:Key="LocTextInputColor">Farve</sys:String>
+    <sys:String x:Key="LocTextInputPlace">Placer tekst</sys:String>
+    <sys:String x:Key="LocTextInputCancel">Annuller</sys:String>
+
+    <!-- About -->
+    <sys:String x:Key="LocAboutTitle">Om Shotora</sys:String>
+    <sys:String x:Key="LocAboutVersion">Version</sys:String>
+    <sys:String x:Key="LocAboutCopyright">Â© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
+    <sys:String x:Key="LocAboutLinks">Links</sys:String>
+    <sys:String x:Key="LocAboutWebsite">Websted</sys:String>
+    <sys:String x:Key="LocAboutLinkedIn">LinkedIn</sys:String>
+    <sys:String x:Key="LocAboutEmail">E-mail</sys:String>
+
+    <!-- OCR Result -->
+    <sys:String x:Key="LocOcrResultTitle">OCR-resultat</sys:String>
+    <sys:String x:Key="LocOcrResultCopy">Kopier</sys:String>
+    <sys:String x:Key="LocOcrResultClose">Luk</sys:String>
+    <sys:String x:Key="LocOcrResultHint">Genkendt tekst</sys:String>
+
+    <!-- Notifications -->
+    <sys:String x:Key="LocNotificationCopySuccess">Kopieret til udklipsholder</sys:String>
+    <sys:String x:Key="LocNotificationSaveSuccess">Gemt</sys:String>
+    <sys:String x:Key="LocNotificationSaveFailed">Gemning mislykkedes</sys:String>
+    <sys:String x:Key="LocNotificationUploadSuccess">Uploadet</sys:String>
+    <sys:String x:Key="LocNotificationUploadFailed">Upload mislykkedes</sys:String>
+    <sys:String x:Key="LocNotificationOcrSuccess">OCR fuldført</sys:String>
+    <sys:String x:Key="LocNotificationOcrFailed">OCR mislykkedes</sys:String>
+
+    <!-- Buttons -->
+    <sys:String x:Key="LocButtonSave">Gem</sys:String>
+    <sys:String x:Key="LocButtonCancel">Annuller</sys:String>
+    <sys:String x:Key="LocButtonClose">Luk</sys:String>
+    <sys:String x:Key="LocButtonOK">OK</sys:String>
+
+    <!-- Dialogs -->
+    <sys:String x:Key="LocDialogSaveTitle">Gem skærmbillede</sys:String>
+    <sys:String x:Key="LocDialogSaveFilter">PNG-filer|*.png|JPEG-filer|*.jpg;*.jpeg|WebP-filer|*.webp|Alle filer|*.*</sys:String>
+    <sys:String x:Key="LocDialogSaveDefaultName">Shotora.png</sys:String>
+    <sys:String x:Key="LocDialogSelectFolder">Vælg mappe</sys:String>
+    <sys:String x:Key="LocDialogConfirm">Bekræft</sys:String>
+    <sys:String x:Key="LocDialogDelete">Slet</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguage">Fjern sprogfil?</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguageConfirm">Er du sikker på, at du vil fjerne denne sprogfil?</sys:String>
+
+    <!-- Errors -->
+    <sys:String x:Key="LocErrorInvalidHotkey">Ugyldig genvej</sys:String>
+    <sys:String x:Key="LocErrorHotkeyInUse">Genvej allerede i brug</sys:String>
+    <sys:String x:Key="LocErrorHotkeyRegisterFailed">Registrering af genvej mislykkedes</sys:String>
+    <sys:String x:Key="LocErrorSaveFailed">Gemning mislykkedes</sys:String>
+    <sys:String x:Key="LocErrorOcrFailed">OCR mislykkedes</sys:String>
+    <sys:String x:Key="LocErrorInvalidSelection">Ugyldig markering</sys:String>
+    <sys:String x:Key="LocErrorNoSelection">Ingen markering</sys:String>
+    <sys:String x:Key="LocErrorTextEmpty">Tekst er tom</sys:String>
+
+    <sys:String x:Key="LocMainTitle">Shotora</sys:String>
+    <sys:String x:Key="LocMainHint1">Brug bakke-ikonet eller globale genveje for at indfange.</sys:String>
+    <sys:String x:Key="LocMainHint2">Dette vindue er valgfrit; luk det for at lade Shotora køre i bakken.</sys:String>
+
+    <sys:String x:Key="LocAboutSubtitle">Skærmoptagelse og annotering</sys:String>
+    <sys:String x:Key="LocAboutDescription">Hurtige skærmbilleder, markeringer, OCR og uploads med Shotora.</sys:String>
+    <sys:String x:Key="LocAboutLicense">Licens</sys:String>
+    <sys:String x:Key="LocAboutAuthor">Forfatter</sys:String>
+    <sys:String x:Key="LocAboutRole">Rolle</sys:String>
+    <sys:String x:Key="LocAboutContact">Kontakt</sys:String>
+    <sys:String x:Key="LocAboutContactIntro">Tag kontakt for feedback eller samarbejde.</sys:String>
+</ResourceDictionary>

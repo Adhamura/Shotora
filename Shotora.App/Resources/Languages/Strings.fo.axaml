@@ -1,0 +1,255 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <!-- Settings -->
+    <sys:String x:Key="LocSettingsTitle">Stillingar</sys:String>
+    <sys:String x:Key="LocSettingsStorage">Goymsla</sys:String>
+    <sys:String x:Key="LocSettingsDefaultFolder">Standardmappa</sys:String>
+    <sys:String x:Key="LocSettingsBrowse">Leita</sys:String>
+    <sys:String x:Key="LocSettingsDefaultFormat">Standardsnið</sys:String>
+    <sys:String x:Key="LocSettingsJpegQuality">JPEG-góðska</sys:String>
+    <sys:String x:Key="LocSettingsFilenamePattern">Fílunavnsmynstur</sys:String>
+    <sys:String x:Key="LocSettingsOcr">OCR</sys:String>
+    <sys:String x:Key="LocSettingsProvider">Veitari</sys:String>
+    <sys:String x:Key="LocSettingsLanguages">Mál</sys:String>
+    <sys:String x:Key="LocSettingsEasyOcrHint">EasyOCR krevur Python + 'pip install easyocr'</sys:String>
+    <sys:String x:Key="LocSettingsTesseractFiles">Tesseract málfílur</sys:String>
+    <sys:String x:Key="LocSettingsSelectLanguage">Vel mál</sys:String>
+    <sys:String x:Key="LocSettingsDownload">Tak niður</sys:String>
+    <sys:String x:Key="LocSettingsDelete">Strika</sys:String>
+    <sys:String x:Key="LocSettingsHotkeys">Flýtilyklar</sys:String>
+    <sys:String x:Key="LocSettingsRegionHotkey">Partvís fangadiskur</sys:String>
+    <sys:String x:Key="LocSettingsFullscreenHotkey">Fullskíggi</sys:String>
+    <sys:String x:Key="LocSettingsActiveWindowHotkey">Virkið vindeyga</sys:String>
+    <sys:String x:Key="LocSettingsGeneral">Alment</sys:String>
+    <sys:String x:Key="LocSettingsTheme">Evni</sys:String>
+    <sys:String x:Key="LocSettingsDisplayLanguage">Vísingarmál</sys:String>
+    <sys:String x:Key="LocSettingsRunOnStartup">Koyr við uppstart</sys:String>
+    <sys:String x:Key="LocSettingsTabMain">Høvuð</sys:String>
+    <sys:String x:Key="LocSettingsTabHotkeys">Flýtilyklar</sys:String>
+    <sys:String x:Key="LocSettingsTabEditor">Ritil</sys:String>
+    <sys:String x:Key="LocSettingsEditorHotkeys">Flýtilyklar hjá ritilinum</sys:String>
+    <sys:String x:Key="LocSettingsEditorMouse">Mús hjá ritilinum</sys:String>
+    <sys:String x:Key="LocSettingsCopyCloseMouse">Avrita + lat aftur</sys:String>
+    <sys:String x:Key="LocSettingsMoveSelectionMouse">Flyt val</sys:String>
+    <sys:String x:Key="LocSettingsEditorIcons">Ritil-ikonir</sys:String>
+    <sys:String x:Key="LocSettingsEditorOptions">Ritil-stillingar</sys:String>
+    <sys:String x:Key="LocSettingsShowThicknessSlider">Vís tjúkdarskúva</sys:String>
+    <sys:String x:Key="LocSettingsDefaultThickness">Standardtjúkd</sys:String>
+    <sys:String x:Key="LocSettingsShowColorPalette">Vís litpailett</sys:String>
+    <sys:String x:Key="LocSettingsDefaultColor">Standardlitur</sys:String>
+    <sys:String x:Key="LocSettingsPickColor">Vel</sys:String>
+    <sys:String x:Key="LocSettingsDefaultColorHint">Verður brúkt tá litpailettin er fjald.</sys:String>
+    <sys:String x:Key="LocSettingsUsePointer">Brúka vísara</sys:String>
+    <sys:String x:Key="LocSettingsShowUndo">Vís Angra</sys:String>
+    <sys:String x:Key="LocSettingsShowRedo">Vís Ger aftur</sys:String>
+    <sys:String x:Key="LocSettingsShowCopy">Vís Avrita</sys:String>
+    <sys:String x:Key="LocSettingsShowSave">Vís Goyma</sys:String>
+    <sys:String x:Key="LocSettingsShowUpload">Vís Send upp</sys:String>
+    <sys:String x:Key="LocSettingsShowOcr">Vís OCR</sys:String>
+    <sys:String x:Key="LocSettingsShowCancel">Vís Avlýsa</sys:String>
+    <sys:String x:Key="LocSettingsShowConfirm">Vís Vátta</sys:String>
+    <sys:String x:Key="LocSettingsShowClose">Vís Lat aftur</sys:String>
+    <sys:String x:Key="LocSettingsShowSelection">Vís Val</sys:String>
+    <sys:String x:Key="LocSettingsShowMove">Vís Flyt</sys:String>
+    <sys:String x:Key="LocSettingsShowPen">Vís Penn</sys:String>
+    <sys:String x:Key="LocSettingsShowLine">Vís Linja</sys:String>
+    <sys:String x:Key="LocSettingsShowArrow">Vís P¡lur</sys:String>
+    <sys:String x:Key="LocSettingsShowRectangle">Vís Rektangul</sys:String>
+    <sys:String x:Key="LocSettingsShowEllipse">Vís Ellipsa</sys:String>
+    <sys:String x:Key="LocSettingsShowText">Vís Tekstur</sys:String>
+    <sys:String x:Key="LocSettingsShowHighlight">Vís H skilji</sys:String>
+    <sys:String x:Key="LocSettingsShowBlur">Vís Ogreitt</sys:String>
+    <sys:String x:Key="LocSettingsShowPixelate">Vís Piksla</sys:String>
+    <sys:String x:Key="LocSettingsShowThickness">Vís Tj£kd</sys:String>
+    <sys:String x:Key="LocSettingsShowColors">Vís Litir</sys:String>
+    <sys:String x:Key="LocSettingsShowCrosshair">Vís Kross-horn</sys:String>
+    <sys:String x:Key="LocSettingsShowResizeHandles">Vís máthandtak</sys:String>
+    <sys:String x:Key="LocSettingsShowToolbar">Vís tólaliga</sys:String>
+    <sys:String x:Key="LocSettingsShowPalette">Vís palettu</sys:String>
+    <sys:String x:Key="LocSettingsShowPreview">Vís forskoðan</sys:String>
+    <sys:String x:Key="LocSettingsShowMiniMap">Vís mini-kort</sys:String>
+    <sys:String x:Key="LocSettingsShowSelectionSize">Vís valstødd</sys:String>
+    <sys:String x:Key="LocSettingsShowSelectionPosition">Vís valstaðseting</sys:String>
+
+    <!-- Common -->
+    <sys:String x:Key="LocCommonClose">Lat aftur</sys:String>
+
+    <!-- Tools -->
+    <sys:String x:Key="LocToolSelect">Vel</sys:String>
+    <sys:String x:Key="LocToolRegion">Vel part</sys:String>
+    <sys:String x:Key="LocToolMove">Flyt part</sys:String>
+    <sys:String x:Key="LocToolPen">Pennur</sys:String>
+    <sys:String x:Key="LocToolLine">Linja</sys:String>
+    <sys:String x:Key="LocToolArrow">Pílur</sys:String>
+    <sys:String x:Key="LocToolRect">Rektangul</sys:String>
+    <sys:String x:Key="LocToolEllipse">Ellipsa</sys:String>
+    <sys:String x:Key="LocToolText">Tekstur</sys:String>
+    <sys:String x:Key="LocToolHighlight">Háskilji</sys:String>
+    <sys:String x:Key="LocToolBlur">Ógreitt</sys:String>
+    <sys:String x:Key="LocToolPixelate">Piksla</sys:String>
+    <sys:String x:Key="LocToolSaveAs">Vista sum</sys:String>
+    <sys:String x:Key="LocToolCopy">Avrita</sys:String>
+    <sys:String x:Key="LocToolUpload">Send upp</sys:String>
+    <sys:String x:Key="LocToolCancel">Avlýs</sys:String>
+    <sys:String x:Key="LocToolColors">Litir</sys:String>
+    <sys:String x:Key="LocToolThickness">Tjúkd</sys:String>
+    <sys:String x:Key="LocToolUndo">Angra</sys:String>
+    <sys:String x:Key="LocToolRedo">Gjer aftur</sys:String>
+
+    <sys:String x:Key="LocSettingsRegionHotkeyPlaceholder">Trýst tasta...</sys:String>
+    <sys:String x:Key="LocSettingsFullscreenHotkeyPlaceholder">Trýst tasta...</sys:String>
+    <sys:String x:Key="LocSettingsActiveWindowHotkeyPlaceholder">Trýst tasta...</sys:String>
+    <sys:String x:Key="LocSettingsEditorUndoHotkey">Angra</sys:String>
+    <sys:String x:Key="LocSettingsEditorUndoHotkeyPlaceholder">Ctrl+Z</sys:String>
+    <sys:String x:Key="LocSettingsEditorRedoHotkey">Ger aftur</sys:String>
+    <sys:String x:Key="LocSettingsEditorRedoHotkeyPlaceholder">Ctrl+Y</sys:String>
+    <sys:String x:Key="LocSettingsEditorCopyHotkey">Avrita</sys:String>
+    <sys:String x:Key="LocSettingsEditorCopyHotkeyPlaceholder">Ctrl+C</sys:String>
+    <sys:String x:Key="LocSettingsEditorSaveHotkey">Goyma</sys:String>
+    <sys:String x:Key="LocSettingsEditorSaveHotkeyPlaceholder">Ctrl+S</sys:String>
+
+    <sys:String x:Key="LocSettingsOcrSettings">OCR-stillingar</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstall">Installa EasyOCR</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemove">Tak burtur EasyOCR</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrStatus">Støða</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstalled">Installerað</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrNotInstalled">Ikki installerað</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstalling">Installar...</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemoving">Fjarar...</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstallFailed">Installasjónin miseydnaðist</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemoveFailed">Fjaratøkan miseydnaðist</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstallLang">Installa</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoveLang">Tak burtur</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstalled">Installerað</sys:String>
+    <sys:String x:Key="LocSettingsOcrNotInstalled">Ikki installerað</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstalling">Installar...</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoving">Fjarar...</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstallFailed">Installasjónin miseydnaðist</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoveFailed">Fjaratøkan miseydnaðist</sys:String>
+    <sys:String x:Key="LocSettingsOcrDownloadProgress">Niðurtampingar gongd</sys:String>
+    <sys:String x:Key="LocSettingsOcrBytes">byt</sys:String>
+    <sys:String x:Key="LocSettingsOcrLicense">Loyvi</sys:String>
+    <sys:String x:Key="LocSettingsOcrLicenseLink">https://github.com/JaidedAI/EasyOCR/blob/master/LICENSE</sys:String>
+    <sys:String x:Key="LocSettingsOcrTesseractLangs">Tesseract mál</sys:String>
+    <sys:String x:Key="LocSettingsOcrTesseractHint">Niðurtammi eyka Tesseract mál her.</sys:String>
+
+    <sys:String x:Key="LocSettingsExamplesTitle">Dømi</sys:String>
+    <sys:String x:Key="LocSettingsExamplesDescription">Sí dømi av ikonum í núverandi evni.</sys:String>
+    <sys:String x:Key="LocSettingsExamplesFormat">Format</sys:String>
+    <sys:String x:Key="LocSettingsExamplesEffects">Ávirkanir</sys:String>
+    <sys:String x:Key="LocSettingsExamplesShape">Formur</sys:String>
+    <sys:String x:Key="LocSettingsExamplesIcon">Ikon</sys:String>
+
+    <!-- Tray -->
+    <sys:String x:Key="LocTrayCaptureRegion">Fanga part</sys:String>
+    <sys:String x:Key="LocTrayCaptureFull">Fanga fullskíggja</sys:String>
+    <sys:String x:Key="LocTraySettings">Stillingar</sys:String>
+    <sys:String x:Key="LocTrayAbout">Um</sys:String>
+    <sys:String x:Key="LocTrayExit">Sløkk</sys:String>
+
+    <!-- Overlay -->
+    <sys:String x:Key="LocOverlayCopy">Avrita</sys:String>
+    <sys:String x:Key="LocOverlaySave">Goyma</sys:String>
+    <sys:String x:Key="LocOverlayUpload">Send upp</sys:String>
+    <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
+    <sys:String x:Key="LocOverlayCancel">AvlÝsa</sys:String>
+    <sys:String x:Key="LocOverlayConfirm">Vátta</sys:String>
+    <sys:String x:Key="LocOverlayClose">Lat aftur</sys:String>
+    <sys:String x:Key="LocOverlaySelection">Val</sys:String>
+    <sys:String x:Key="LocOverlayMove">Flyt</sys:String>
+    <sys:String x:Key="LocOverlayPointer">Vísari</sys:String>
+    <sys:String x:Key="LocOverlayPen">Pennur</sys:String>
+    <sys:String x:Key="LocOverlayLine">Linja</sys:String>
+    <sys:String x:Key="LocOverlayArrow">P¡lur</sys:String>
+    <sys:String x:Key="LocOverlayRectangle">Rektangul</sys:String>
+    <sys:String x:Key="LocOverlayEllipse">Ellipsa</sys:String>
+    <sys:String x:Key="LocOverlayText">Tekstur</sys:String>
+    <sys:String x:Key="LocOverlayHighlight">H skilji</sys:String>
+    <sys:String x:Key="LocOverlayBlur">Ogreitt</sys:String>
+    <sys:String x:Key="LocOverlayPixelate">Piksla</sys:String>
+    <sys:String x:Key="LocOverlayThickness">Tj£kd</sys:String>
+    <sys:String x:Key="LocOverlayColors">Litir</sys:String>
+    <sys:String x:Key="LocOverlayPosition">Staðseting</sys:String>
+    <sys:String x:Key="LocOverlaySize">Stødd</sys:String>
+    <sys:String x:Key="LocOverlayWidth">Breidd</sys:String>
+    <sys:String x:Key="LocOverlayHeight">Hædd</sys:String>
+    <sys:String x:Key="LocOverlayPickColor">Vel lit</sys:String>
+    <sys:String x:Key="LocOverlayHintDraw">Klikka og draga fyri at tekna. Brúka tólaliga til at velja tól.</sys:String>
+    <sys:String x:Key="LocOverlayHintMove">Draga innan valið fyri at flyta. Brúka handtak til at broyta stødd.</sys:String>
+    <sys:String x:Key="LocOverlayHintEdit">Vel tól til at merkja. Brúka Angra/Ger aftur eftir tørvi.</sys:String>
+    <sys:String x:Key="LocOverlayHintKeyboard">Esc: AvlÝsa, Enter: Vátta, Ctrl+Z: Angra, Ctrl+Y: Ger aftur</sys:String>
+
+    <!-- Text Input -->
+    <sys:String x:Key="LocTextInputTitle">Legg tekst til</sys:String>
+    <sys:String x:Key="LocTextInputHint">Skriva tekst, ið skal setast á skíggjan</sys:String>
+    <sys:String x:Key="LocTextInputFont">Fontur</sys:String>
+    <sys:String x:Key="LocTextInputSize">Stødd</sys:String>
+    <sys:String x:Key="LocTextInputBold">Fet</sys:String>
+    <sys:String x:Key="LocTextInputItalic">Skakt</sys:String>
+    <sys:String x:Key="LocTextInputColor">Litur</sys:String>
+    <sys:String x:Key="LocTextInputPlace">Set tekst</sys:String>
+    <sys:String x:Key="LocTextInputCancel">AvlÝsa</sys:String>
+
+    <!-- About -->
+    <sys:String x:Key="LocAboutTitle">Um Shotora</sys:String>
+    <sys:String x:Key="LocAboutVersion">Útgáva</sys:String>
+    <sys:String x:Key="LocAboutCopyright">Â© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
+    <sys:String x:Key="LocAboutLinks">Leinki</sys:String>
+    <sys:String x:Key="LocAboutWebsite">Heimasíða</sys:String>
+    <sys:String x:Key="LocAboutLinkedIn">LinkedIn</sys:String>
+    <sys:String x:Key="LocAboutEmail">Teldupostur</sys:String>
+
+    <!-- OCR Result -->
+    <sys:String x:Key="LocOcrResultTitle">OCR úrslit</sys:String>
+    <sys:String x:Key="LocOcrResultCopy">Avrita</sys:String>
+    <sys:String x:Key="LocOcrResultClose">Lat aftur</sys:String>
+    <sys:String x:Key="LocOcrResultHint">Framleitaður tekstur</sys:String>
+
+    <!-- Notifications -->
+    <sys:String x:Key="LocNotificationCopySuccess">Avritað á milliminniskipan</sys:String>
+    <sys:String x:Key="LocNotificationSaveSuccess">Goymt</sys:String>
+    <sys:String x:Key="LocNotificationSaveFailed">Goymsla miseydnaðist</sys:String>
+    <sys:String x:Key="LocNotificationUploadSuccess">Sent upp</sys:String>
+    <sys:String x:Key="LocNotificationUploadFailed">Yvirførslan miseydnaðist</sys:String>
+    <sys:String x:Key="LocNotificationOcrSuccess">OCR liðugt</sys:String>
+    <sys:String x:Key="LocNotificationOcrFailed">OCR miseydnaðist</sys:String>
+
+    <!-- Buttons -->
+    <sys:String x:Key="LocButtonSave">Goyma</sys:String>
+    <sys:String x:Key="LocButtonCancel">AvlÝsa</sys:String>
+    <sys:String x:Key="LocButtonClose">Lat aftur</sys:String>
+    <sys:String x:Key="LocButtonOK">OK</sys:String>
+
+    <!-- Dialogs -->
+    <sys:String x:Key="LocDialogSaveTitle">Goym skíggjutak</sys:String>
+    <sys:String x:Key="LocDialogSaveFilter">PNG f¡lur|*.png|JPEG f¡lur|*.jpg;*.jpeg|WebP f¡lur|*.webp|Øll f¡lur|*.*</sys:String>
+    <sys:String x:Key="LocDialogSaveDefaultName">Shotora.png</sys:String>
+    <sys:String x:Key="LocDialogSelectFolder">Vel mappu</sys:String>
+    <sys:String x:Key="LocDialogConfirm">Vátta</sys:String>
+    <sys:String x:Key="LocDialogDelete">Strika</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguage">Tak hesa málf¡lu burtur?</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguageConfirm">Ert tú vísur í at taka hesa málf¡lu burtur?</sys:String>
+
+    <!-- Errors -->
+    <sys:String x:Key="LocErrorInvalidHotkey">Ólóglig flytilykil</sys:String>
+    <sys:String x:Key="LocErrorHotkeyInUse">Flytilykil er longu brúktur</sys:String>
+    <sys:String x:Key="LocErrorHotkeyRegisterFailed">Flytilykilregistrering miseydnaðist</sys:String>
+    <sys:String x:Key="LocErrorSaveFailed">Goymsla miseydnaðist</sys:String>
+    <sys:String x:Key="LocErrorOcrFailed">OCR miseydnaðist</sys:String>
+    <sys:String x:Key="LocErrorInvalidSelection">Ólógligt val</sys:String>
+    <sys:String x:Key="LocErrorNoSelection">Einki val</sys:String>
+    <sys:String x:Key="LocErrorTextEmpty">Tekstur er tómur</sys:String>
+
+    <sys:String x:Key="LocMainTitle">Shotora</sys:String>
+    <sys:String x:Key="LocMainHint1">Brúka myndina í arbeiðsreglinum ella globalar flytilyklar at taka upp.</sys:String>
+    <sys:String x:Key="LocMainHint2">Hesi vindeyga er valfrítt; lat tað vera fyri at Shotora heldur fram í arbeiðsreglinum.</sys:String>
+
+    <sys:String x:Key="LocAboutSubtitle">Skíggjamynd og viðmerkingar</sys:String>
+    <sys:String x:Key="LocAboutDescription">Skjótar skíggjamyndir, viðmerkingar, OCR og uppílegging við Shotora.</sys:String>
+    <sys:String x:Key="LocAboutLicense">Loyvi</sys:String>
+    <sys:String x:Key="LocAboutAuthor">Høvundur</sys:String>
+    <sys:String x:Key="LocAboutRole">Leiklutir</sys:String>
+    <sys:String x:Key="LocAboutContact">Samband</sys:String>
+    <sys:String x:Key="LocAboutContactIntro">Set teg í samband fyri afturmelding ella samstarv.</sys:String>
+</ResourceDictionary>

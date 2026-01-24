@@ -1,0 +1,255 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <!-- Settings -->
+    <sys:String x:Key="LocSettingsTitle">Ezarpenak</sys:String>
+    <sys:String x:Key="LocSettingsStorage">Biltegiratzea</sys:String>
+    <sys:String x:Key="LocSettingsDefaultFolder">Karpeta lehenetsia</sys:String>
+    <sys:String x:Key="LocSettingsBrowse">Arakatu</sys:String>
+    <sys:String x:Key="LocSettingsDefaultFormat">Formatu lehenetsia</sys:String>
+    <sys:String x:Key="LocSettingsJpegQuality">JPEG kalitatea</sys:String>
+    <sys:String x:Key="LocSettingsFilenamePattern">Fitxategi-izenaren eredua</sys:String>
+    <sys:String x:Key="LocSettingsOcr">OCR</sys:String>
+    <sys:String x:Key="LocSettingsProvider">Hornitzailea</sys:String>
+    <sys:String x:Key="LocSettingsLanguages">Hizkuntzak</sys:String>
+    <sys:String x:Key="LocSettingsEasyOcrHint">EasyOCR-ek Python + 'pip install easyocr' behar du</sys:String>
+    <sys:String x:Key="LocSettingsTesseractFiles">Tesseract hizkuntza-fitxategiak</sys:String>
+    <sys:String x:Key="LocSettingsSelectLanguage">Hautatu hizkuntza</sys:String>
+    <sys:String x:Key="LocSettingsDownload">Deskargatu</sys:String>
+    <sys:String x:Key="LocSettingsDelete">Ezabatu</sys:String>
+    <sys:String x:Key="LocSettingsHotkeys">Laster-teklak</sys:String>
+    <sys:String x:Key="LocSettingsRegionHotkey">Eskualde-kaptura</sys:String>
+    <sys:String x:Key="LocSettingsFullscreenHotkey">Pantaila osoa</sys:String>
+    <sys:String x:Key="LocSettingsActiveWindowHotkey">Leiho aktiboa</sys:String>
+    <sys:String x:Key="LocSettingsGeneral">Orokorra</sys:String>
+    <sys:String x:Key="LocSettingsTheme">Gaia</sys:String>
+    <sys:String x:Key="LocSettingsDisplayLanguage">Bistaratze hizkuntza</sys:String>
+    <sys:String x:Key="LocSettingsRunOnStartup">Exekutatu abiaraztean</sys:String>
+    <sys:String x:Key="LocSettingsTabMain">Nagusia</sys:String>
+    <sys:String x:Key="LocSettingsTabHotkeys">Laster-teklak</sys:String>
+    <sys:String x:Key="LocSettingsTabEditor">Editorea</sys:String>
+    <sys:String x:Key="LocSettingsEditorHotkeys">Editorearen laster-teklak</sys:String>
+    <sys:String x:Key="LocSettingsEditorMouse">Editorearen sagua</sys:String>
+    <sys:String x:Key="LocSettingsCopyCloseMouse">Kopiatu + itxi</sys:String>
+    <sys:String x:Key="LocSettingsMoveSelectionMouse">Mugitu hautapena</sys:String>
+    <sys:String x:Key="LocSettingsEditorIcons">Editorearen ikonoak</sys:String>
+    <sys:String x:Key="LocSettingsEditorOptions">Editorearen aukerak</sys:String>
+    <sys:String x:Key="LocSettingsShowThicknessSlider">Erakutsi lodiera-barra</sys:String>
+    <sys:String x:Key="LocSettingsDefaultThickness">Lodiera lehenetsia</sys:String>
+    <sys:String x:Key="LocSettingsShowColorPalette">Erakutsi kolore-paleta</sys:String>
+    <sys:String x:Key="LocSettingsDefaultColor">Kolore lehenetsia</sys:String>
+    <sys:String x:Key="LocSettingsPickColor">Hautatu</sys:String>
+    <sys:String x:Key="LocSettingsDefaultColorHint">Kolore-paleta ezkutatuta dagoenean erabiltzen da.</sys:String>
+    <sys:String x:Key="LocSettingsUsePointer">Erabili adierazlea</sys:String>
+    <sys:String x:Key="LocSettingsShowUndo">Erakutsi Desegin</sys:String>
+    <sys:String x:Key="LocSettingsShowRedo">Erakutsi Berriro egin</sys:String>
+    <sys:String x:Key="LocSettingsShowCopy">Erakutsi Kopiatu</sys:String>
+    <sys:String x:Key="LocSettingsShowSave">Erakutsi Gorde</sys:String>
+    <sys:String x:Key="LocSettingsShowUpload">Erakutsi Kargatu</sys:String>
+    <sys:String x:Key="LocSettingsShowOcr">Erakutsi OCR</sys:String>
+    <sys:String x:Key="LocSettingsShowCancel">Erakutsi Utzi</sys:String>
+    <sys:String x:Key="LocSettingsShowConfirm">Erakutsi Baieztatu</sys:String>
+    <sys:String x:Key="LocSettingsShowClose">Erakutsi Itxi</sys:String>
+    <sys:String x:Key="LocSettingsShowSelection">Erakutsi Hautapena</sys:String>
+    <sys:String x:Key="LocSettingsShowMove">Erakutsi Mugitu</sys:String>
+    <sys:String x:Key="LocSettingsShowPen">Erakutsi Arkatz</sys:String>
+    <sys:String x:Key="LocSettingsShowLine">Erakutsi Lerroa</sys:String>
+    <sys:String x:Key="LocSettingsShowArrow">Erakutsi Gezia</sys:String>
+    <sys:String x:Key="LocSettingsShowRectangle">Erakutsi Laukizuzena</sys:String>
+    <sys:String x:Key="LocSettingsShowEllipse">Erakutsi Elipse</sys:String>
+    <sys:String x:Key="LocSettingsShowText">Erakutsi Testua</sys:String>
+    <sys:String x:Key="LocSettingsShowHighlight">Erakutsi Nabarmentzea</sys:String>
+    <sys:String x:Key="LocSettingsShowBlur">Erakutsi Lausotzea</sys:String>
+    <sys:String x:Key="LocSettingsShowPixelate">Erakutsi Pixelatzea</sys:String>
+    <sys:String x:Key="LocSettingsShowThickness">Erakutsi Lodiera</sys:String>
+    <sys:String x:Key="LocSettingsShowColors">Erakutsi Koloreak</sys:String>
+    <sys:String x:Key="LocSettingsShowCrosshair">Erakutsi gurutze-lerroa</sys:String>
+    <sys:String x:Key="LocSettingsShowResizeHandles">Erakutsi tamaina-atenak</sys:String>
+    <sys:String x:Key="LocSettingsShowToolbar">Erakutsi tresna-barra</sys:String>
+    <sys:String x:Key="LocSettingsShowPalette">Erakutsi paleta</sys:String>
+    <sys:String x:Key="LocSettingsShowPreview">Erakutsi aurrebista</sys:String>
+    <sys:String x:Key="LocSettingsShowMiniMap">Erakutsi mini-map</sys:String>
+    <sys:String x:Key="LocSettingsShowSelectionSize">Erakutsi hautapenaren tamaina</sys:String>
+    <sys:String x:Key="LocSettingsShowSelectionPosition">Erakutsi hautapenaren posizioa</sys:String>
+
+    <!-- Common -->
+    <sys:String x:Key="LocCommonClose">Itxi</sys:String>
+
+    <!-- Tools -->
+    <sys:String x:Key="LocToolSelect">Hautatu</sys:String>
+    <sys:String x:Key="LocToolRegion">Eskualde hautapena</sys:String>
+    <sys:String x:Key="LocToolMove">Mugitu eskualdea</sys:String>
+    <sys:String x:Key="LocToolPen">Boligrafoa</sys:String>
+    <sys:String x:Key="LocToolLine">Lerroa</sys:String>
+    <sys:String x:Key="LocToolArrow">Gezia</sys:String>
+    <sys:String x:Key="LocToolRect">Laukizuzena</sys:String>
+    <sys:String x:Key="LocToolEllipse">Elipsea</sys:String>
+    <sys:String x:Key="LocToolText">Testua</sys:String>
+    <sys:String x:Key="LocToolHighlight">Nabarmendu</sys:String>
+    <sys:String x:Key="LocToolBlur"> Lausotu</sys:String>
+    <sys:String x:Key="LocToolPixelate">Pixelatu</sys:String>
+    <sys:String x:Key="LocToolSaveAs">Gorde honela</sys:String>
+    <sys:String x:Key="LocToolCopy">Kopiatu</sys:String>
+    <sys:String x:Key="LocToolUpload">Igo</sys:String>
+    <sys:String x:Key="LocToolCancel">Utzi</sys:String>
+    <sys:String x:Key="LocToolColors">Koloreak</sys:String>
+    <sys:String x:Key="LocToolThickness">Lodiera</sys:String>
+    <sys:String x:Key="LocToolUndo">Desegin</sys:String>
+    <sys:String x:Key="LocToolRedo">Berregin</sys:String>
+
+    <sys:String x:Key="LocSettingsRegionHotkeyPlaceholder">Sakatu teklak...</sys:String>
+    <sys:String x:Key="LocSettingsFullscreenHotkeyPlaceholder">Sakatu teklak...</sys:String>
+    <sys:String x:Key="LocSettingsActiveWindowHotkeyPlaceholder">Sakatu teklak...</sys:String>
+    <sys:String x:Key="LocSettingsEditorUndoHotkey">Desegin</sys:String>
+    <sys:String x:Key="LocSettingsEditorUndoHotkeyPlaceholder">Ctrl+Z</sys:String>
+    <sys:String x:Key="LocSettingsEditorRedoHotkey">Berriro egin</sys:String>
+    <sys:String x:Key="LocSettingsEditorRedoHotkeyPlaceholder">Ctrl+Y</sys:String>
+    <sys:String x:Key="LocSettingsEditorCopyHotkey">Kopiatu</sys:String>
+    <sys:String x:Key="LocSettingsEditorCopyHotkeyPlaceholder">Ctrl+C</sys:String>
+    <sys:String x:Key="LocSettingsEditorSaveHotkey">Gorde</sys:String>
+    <sys:String x:Key="LocSettingsEditorSaveHotkeyPlaceholder">Ctrl+S</sys:String>
+
+    <sys:String x:Key="LocSettingsOcrSettings">OCR ezarpenak</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstall">EasyOCR instalatu</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemove">EasyOCR kendu</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrStatus">Egoera</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstalled">Instalatu da</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrNotInstalled">Ez dago instalatuta</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstalling">Instalatzen...</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemoving">Kendatzen...</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstallFailed">Instalatzeak huts egin du</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemoveFailed">Kendetzak huts egin du</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstallLang">Instalatu</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoveLang">Kendu</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstalled">Instalatu da</sys:String>
+    <sys:String x:Key="LocSettingsOcrNotInstalled">Ez dago instalatuta</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstalling">Instalatzen...</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoving">Kendatzen...</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstallFailed">Instalatzeak huts egin du</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoveFailed">Kendetzak huts egin du</sys:String>
+    <sys:String x:Key="LocSettingsOcrDownloadProgress">Deskarga aurrerapena</sys:String>
+    <sys:String x:Key="LocSettingsOcrBytes">byte</sys:String>
+    <sys:String x:Key="LocSettingsOcrLicense">Lizentzia</sys:String>
+    <sys:String x:Key="LocSettingsOcrLicenseLink">https://github.com/JaidedAI/EasyOCR/blob/master/LICENSE</sys:String>
+    <sys:String x:Key="LocSettingsOcrTesseractLangs">Tesseract hizkuntzak</sys:String>
+    <sys:String x:Key="LocSettingsOcrTesseractHint">Deskargatu Tesseract hizkuntza osagarriak hemen.</sys:String>
+
+    <sys:String x:Key="LocSettingsExamplesTitle">Adibideak</sys:String>
+    <sys:String x:Key="LocSettingsExamplesDescription">Egungo gaian adibide ikonoen aurrebista.</sys:String>
+    <sys:String x:Key="LocSettingsExamplesFormat">Formatua</sys:String>
+    <sys:String x:Key="LocSettingsExamplesEffects">Efektuak</sys:String>
+    <sys:String x:Key="LocSettingsExamplesShape">Forma</sys:String>
+    <sys:String x:Key="LocSettingsExamplesIcon">Ikonoa</sys:String>
+
+    <!-- Tray -->
+    <sys:String x:Key="LocTrayCaptureRegion">Kapturatu eskualdea</sys:String>
+    <sys:String x:Key="LocTrayCaptureFull">Kapturatu pantaila osoa</sys:String>
+    <sys:String x:Key="LocTraySettings">Ezarpenak</sys:String>
+    <sys:String x:Key="LocTrayAbout">Honi buruz</sys:String>
+    <sys:String x:Key="LocTrayExit">Irten</sys:String>
+
+    <!-- Overlay -->
+    <sys:String x:Key="LocOverlayCopy">Kopiatu</sys:String>
+    <sys:String x:Key="LocOverlaySave">Gorde</sys:String>
+    <sys:String x:Key="LocOverlayUpload">Kargatu</sys:String>
+    <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
+    <sys:String x:Key="LocOverlayCancel">Utzi</sys:String>
+    <sys:String x:Key="LocOverlayConfirm">Baieztatu</sys:String>
+    <sys:String x:Key="LocOverlayClose">Itxi</sys:String>
+    <sys:String x:Key="LocOverlaySelection">Hautapena</sys:String>
+    <sys:String x:Key="LocOverlayMove">Mugitu</sys:String>
+    <sys:String x:Key="LocOverlayPointer">Adierazlea</sys:String>
+    <sys:String x:Key="LocOverlayPen">Arkatz</sys:String>
+    <sys:String x:Key="LocOverlayLine">Lerroa</sys:String>
+    <sys:String x:Key="LocOverlayArrow">Gezia</sys:String>
+    <sys:String x:Key="LocOverlayRectangle">Laukizuzena</sys:String>
+    <sys:String x:Key="LocOverlayEllipse">Elipse</sys:String>
+    <sys:String x:Key="LocOverlayText">Testua</sys:String>
+    <sys:String x:Key="LocOverlayHighlight">Nabarmentzea</sys:String>
+    <sys:String x:Key="LocOverlayBlur">Lausotzea</sys:String>
+    <sys:String x:Key="LocOverlayPixelate">Pixelatzea</sys:String>
+    <sys:String x:Key="LocOverlayThickness">Lodiera</sys:String>
+    <sys:String x:Key="LocOverlayColors">Koloreak</sys:String>
+    <sys:String x:Key="LocOverlayPosition">Posizioa</sys:String>
+    <sys:String x:Key="LocOverlaySize">Tamaina</sys:String>
+    <sys:String x:Key="LocOverlayWidth">Zabalera</sys:String>
+    <sys:String x:Key="LocOverlayHeight">Altuera</sys:String>
+    <sys:String x:Key="LocOverlayPickColor">Hautatu kolorea</sys:String>
+    <sys:String x:Key="LocOverlayHintDraw">Klikatu eta arrastatu marrazteko. Erabili tresna-barra tresnak aukeratzeko.</sys:String>
+    <sys:String x:Key="LocOverlayHintMove">Arrastatu hautapen barruan mugitzeko. Erabili heldulekuak tamaina aldatzeko.</sys:String>
+    <sys:String x:Key="LocOverlayHintEdit">Hautatu tresnak oharak egiteko. Erabili Desegin/Berriro egin behar denean.</sys:String>
+    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Utzi, Enter: Baieztatu, Ctrl+Z: Desegin, Ctrl+Y: Berriro egin</sys:String>
+
+    <!-- Text Input -->
+    <sys:String x:Key="LocTextInputTitle">Testua gehitu</sys:String>
+    <sys:String x:Key="LocTextInputHint">Idatzi testua pantailan kokatzeko</sys:String>
+    <sys:String x:Key="LocTextInputFont">Letra-tipoa</sys:String>
+    <sys:String x:Key="LocTextInputSize">Neurria</sys:String>
+    <sys:String x:Key="LocTextInputBold">Lodia</sys:String>
+    <sys:String x:Key="LocTextInputItalic">Etzana</sys:String>
+    <sys:String x:Key="LocTextInputColor">Kolorea</sys:String>
+    <sys:String x:Key="LocTextInputPlace">Kokatu testua</sys:String>
+    <sys:String x:Key="LocTextInputCancel">Utzi</sys:String>
+
+    <!-- About -->
+    <sys:String x:Key="LocAboutTitle">Shotora-i buruz</sys:String>
+    <sys:String x:Key="LocAboutVersion">Bertsioa</sys:String>
+    <sys:String x:Key="LocAboutCopyright">Â© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
+    <sys:String x:Key="LocAboutLinks">Estekak</sys:String>
+    <sys:String x:Key="LocAboutWebsite">Webgunea</sys:String>
+    <sys:String x:Key="LocAboutLinkedIn">LinkedIn</sys:String>
+    <sys:String x:Key="LocAboutEmail">Posta elektronikoa</sys:String>
+
+    <!-- OCR Result -->
+    <sys:String x:Key="LocOcrResultTitle">OCRaren emaitza</sys:String>
+    <sys:String x:Key="LocOcrResultCopy">Kopiatu</sys:String>
+    <sys:String x:Key="LocOcrResultClose">Itxi</sys:String>
+    <sys:String x:Key="LocOcrResultHint">Aitortutako testua</sys:String>
+
+    <!-- Notifications -->
+    <sys:String x:Key="LocNotificationCopySuccess">Kopiatu da pantaila-gordailura</sys:String>
+    <sys:String x:Key="LocNotificationSaveSuccess">Gorde da</sys:String>
+    <sys:String x:Key="LocNotificationSaveFailed">Gorde ezin izan da</sys:String>
+    <sys:String x:Key="LocNotificationUploadSuccess">Kargatu da</sys:String>
+    <sys:String x:Key="LocNotificationUploadFailed">Kargatzeak huts egin du</sys:String>
+    <sys:String x:Key="LocNotificationOcrSuccess">OCR amaitu da</sys:String>
+    <sys:String x:Key="LocNotificationOcrFailed">OCR huts egin du</sys:String>
+
+    <!-- Buttons -->
+    <sys:String x:Key="LocButtonSave">Gorde</sys:String>
+    <sys:String x:Key="LocButtonCancel">Utzi</sys:String>
+    <sys:String x:Key="LocButtonClose">Itxi</sys:String>
+    <sys:String x:Key="LocButtonOK">OK</sys:String>
+
+    <!-- Dialogs -->
+    <sys:String x:Key="LocDialogSaveTitle">Pantaila-irudia gorde</sys:String>
+    <sys:String x:Key="LocDialogSaveFilter">PNG fitxategiak|*.png|JPEG fitxategiak|*.jpg;*.jpeg|WebP fitxategiak|*.webp|Fitxategi guztiak|*.*</sys:String>
+    <sys:String x:Key="LocDialogSaveDefaultName">Shotora.png</sys:String>
+    <sys:String x:Key="LocDialogSelectFolder">Hautatu karpeta</sys:String>
+    <sys:String x:Key="LocDialogConfirm">Baieztatu</sys:String>
+    <sys:String x:Key="LocDialogDelete">Ezabatu</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguage">Hizkuntza-fitxategia ezabatu?</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguageConfirm">Ziur al zaude hizkuntza-fitxategi hau ezabatu nahi duzula?</sys:String>
+
+    <!-- Errors -->
+    <sys:String x:Key="LocErrorInvalidHotkey">Laster-tekla baliogabea</sys:String>
+    <sys:String x:Key="LocErrorHotkeyInUse">Laster-tekla erabileran dago</sys:String>
+    <sys:String x:Key="LocErrorHotkeyRegisterFailed">Laster-tekla erregistratzeak huts egin du</sys:String>
+    <sys:String x:Key="LocErrorSaveFailed">Gorde ezin izan da</sys:String>
+    <sys:String x:Key="LocErrorOcrFailed">OCR huts egin du</sys:String>
+    <sys:String x:Key="LocErrorInvalidSelection">Hautapen baliogabea</sys:String>
+    <sys:String x:Key="LocErrorNoSelection">Ez dago hautapenik</sys:String>
+    <sys:String x:Key="LocErrorTextEmpty">Testua hutsik dago</sys:String>
+
+    <sys:String x:Key="LocMainTitle">Shotora</sys:String>
+    <sys:String x:Key="LocMainHint1">Erabili errenkadako ikonoa edo laster-teklak pantaila hartzeko.</sys:String>
+    <sys:String x:Key="LocMainHint2">Leiho hau aukerakoa da; itxi Shotora errenkadan exekutatzen uzteko.</sys:String>
+
+    <sys:String x:Key="LocAboutSubtitle">Pantaila kapturak eta anotazioak</sys:String>
+    <sys:String x:Key="LocAboutDescription">Pantaila-argazki azkarrak, oharrak, OCR eta igoerak Shotorarekin.</sys:String>
+    <sys:String x:Key="LocAboutLicense">Lizentzia</sys:String>
+    <sys:String x:Key="LocAboutAuthor">Egilea</sys:String>
+    <sys:String x:Key="LocAboutRole">Funtzioa</sys:String>
+    <sys:String x:Key="LocAboutContact">Harremana</sys:String>
+    <sys:String x:Key="LocAboutContactIntro">Jar zaitez harremanetan iruzkin edo lankidetzarako.</sys:String>
+</ResourceDictionary>

@@ -1,0 +1,501 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net10.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+        <ApplicationManifest>app.manifest</ApplicationManifest>
+        <ApplicationIcon>Assets\Shotora.ico</ApplicationIcon>
+        <LangVersion>14</LangVersion>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <!-- Target Windows 7+ APIs and suppress CA1416 platform warnings for Windows-only code paths -->
+        <SupportedOSPlatformVersion>6.1</SupportedOSPlatformVersion>
+        <NoWarn>$(NoWarn);CA1416</NoWarn>
+        <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+        <IncludeAllContentForSelfExtract>true</IncludeAllContentForSelfExtract>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+        <Prefer32bit>false</Prefer32bit>
+        <DebugType>full</DebugType>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <AvaloniaResource Include="Assets\Shotora.ico"/>
+        <AvaloniaResource Include="Assets\Shotora.png"/>
+        <AvaloniaResource Include="Content\**\*.ttf"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Include="Content\KazukiReiwa-Medium.ttf">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Include="..\Shotora.App\Content\easyocr_runner.py">
+            <Link>easyocr_runner.py</Link>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        </Content>
+    </ItemGroup>
+
+
+    <ItemGroup>
+        <PackageReference Include="Avalonia" Version="11.3.11"/>
+        <PackageReference Include="Avalonia.Desktop" Version="11.3.11"/>
+        <PackageReference Include="Avalonia.Themes.Fluent" Version="11.3.11"/>
+        <PackageReference Include="System.Drawing.Common" Version="10.0.2"/>
+        <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
+        <PackageReference Include="Avalonia.Diagnostics" Version="11.3.11">
+            <IncludeAssets Condition="'$(Configuration)' != 'Debug'">none</IncludeAssets>
+            <PrivateAssets Condition="'$(Configuration)' != 'Debug'">all</PrivateAssets>
+        </PackageReference>
+        <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0"/>
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.2"/>
+        <PackageReference Include="Velopack" Version="0.0.1369-g1d5c984"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Shared.Services\Shared.Services.csproj"/>
+        <ProjectReference Include="..\Shotora.App.Interfaces\Shotora.App.Interfaces.csproj"/>
+        <ProjectReference Include="..\Shotora.App.Models\Shotora.App.Models.csproj"/>
+        <ProjectReference Include="..\Shotora.App.Services\Shotora.App.Services.csproj"/>
+    </ItemGroup>
+
+    <!-- Platform-aware native copy (entrypoint project) -->
+    <PropertyGroup>
+        <_TargetRid Condition="'$(RuntimeIdentifier)'!=''">$([System.String]::Copy('$(RuntimeIdentifier)').ToLowerInvariant())</_TargetRid>
+        <_TargetRid Condition="'$(_TargetRid)'=='' and '$(RuntimeIdentifiers)'!=''">$([System.String]::Copy('$(RuntimeIdentifiers)').Split(';')[0].ToLowerInvariant())</_TargetRid>
+        <_TargetRid Condition="'$(_TargetRid)'=='' and $([MSBuild]::IsOSPlatform('Linux'))">linux</_TargetRid>
+        <_TargetRid Condition="'$(_TargetRid)'=='' and $([MSBuild]::IsOSPlatform('OSX'))">osx</_TargetRid>
+        <_TargetRid Condition="'$(_TargetRid)'=='' and $([MSBuild]::IsOSPlatform('Windows'))">win</_TargetRid>
+        <_IsLinux Condition="'$(_TargetRid)'!='' and $([System.String]::Copy('$(_TargetRid)').StartsWith('linux'))">true</_IsLinux>
+        <_IsMac Condition="'$(_TargetRid)'!='' and $([System.String]::Copy('$(_TargetRid)').StartsWith('osx'))">true</_IsMac>
+        <_IsWindows Condition="'$(_TargetRid)'!='' and $([System.String]::Copy('$(_TargetRid)').StartsWith('win'))">true</_IsWindows>
+        <_HostRid Condition="'$(NETCoreSdkRuntimeIdentifier)'!=''">$([System.String]::Copy('$(NETCoreSdkRuntimeIdentifier)').ToLowerInvariant())</_HostRid>
+        <_TargetArch Condition="'$(RuntimeIdentifier)'!='' and $([System.String]::Copy('$(RuntimeIdentifier)').ToLowerInvariant().Contains('arm64'))">arm64</_TargetArch>
+        <_TargetArch Condition="'$(_TargetArch)'=='' and '$(RuntimeIdentifier)'!='' and $([System.String]::Copy('$(RuntimeIdentifier)').ToLowerInvariant().Contains('arm'))">arm</_TargetArch>
+        <_TargetArch Condition="'$(_TargetArch)'=='' and '$(RuntimeIdentifier)'!='' and $([System.String]::Copy('$(RuntimeIdentifier)').ToLowerInvariant().Contains('x64'))">x64</_TargetArch>
+        <_TargetArch Condition="'$(_TargetArch)'=='' and '$(RuntimeIdentifier)'!='' and $([System.String]::Copy('$(RuntimeIdentifier)').ToLowerInvariant().Contains('x86'))">x86</_TargetArch>
+        <_TargetArch Condition="'$(_TargetArch)'=='' and '$(_HostRid)'!='' and $([System.String]::Copy('$(_HostRid)').Contains('arm64'))">arm64</_TargetArch>
+        <_TargetArch Condition="'$(_TargetArch)'=='' and '$(_HostRid)'!='' and $([System.String]::Copy('$(_HostRid)').Contains('arm'))">arm</_TargetArch>
+        <_TargetArch Condition="'$(_TargetArch)'=='' and '$(_HostRid)'!='' and $([System.String]::Copy('$(_HostRid)').Contains('x86'))">x86</_TargetArch>
+        <_TargetArch Condition="'$(_TargetArch)'==''">x64</_TargetArch>
+        <_IsWindowsX64 Condition="'$(_IsWindows)'=='true' and '$(_TargetArch)' == 'x64'">true</_IsWindowsX64>
+        <_IsWindowsX86 Condition="'$(_IsWindows)'=='true' and '$(_TargetArch)' == 'x86'">true</_IsWindowsX86>
+        <_LinuxNativeArch Condition="'$(_IsLinux)'=='true'">$(_TargetArch)</_LinuxNativeArch>
+        <_LinuxNativeArch Condition="'$(_IsLinux)'=='true' and !Exists('$(MSBuildProjectDirectory)\\..\\Shotora.App.Services\\Binaries\\Linux\\$(_LinuxNativeArch)')">x64</_LinuxNativeArch>
+        <_MacNativeArch Condition="'$(_IsMac)'=='true'">$(_TargetArch)</_MacNativeArch>
+        <_MacNativeArch Condition="'$(_IsMac)'=='true' and !Exists('$(MSBuildProjectDirectory)\\..\\Shotora.App.Services\\Binaries\\Mac\\$(_MacNativeArch)')">x64</_MacNativeArch>
+        <_NativePublishFolder Condition="'$(_IsWindows)'=='true'">$(_TargetArch)</_NativePublishFolder>
+        <_NativePublishFolder Condition="'$(_IsLinux)'=='true'">Binaries\Linux\$(_LinuxNativeArch)</_NativePublishFolder>
+        <_NativePublishFolder Condition="'$(_IsMac)'=='true'">Binaries\Mac\$(_MacNativeArch)</_NativePublishFolder>
+        <_NativeOSName Condition="'$(_IsWindows)'=='true'">Windows</_NativeOSName>
+        <_NativeOSName Condition="'$(_NativeOSName)'=='' and '$(_IsLinux)'=='true'">Linux</_NativeOSName>
+        <_NativeOSName Condition="'$(_NativeOSName)'=='' and '$(_IsMac)'=='true'">Mac</_NativeOSName>
+    </PropertyGroup>
+
+    <ItemGroup Condition="'$(_IsWindows)'=='true'">
+        <Content Include="..\Shotora.App.Services\PythonEmbed\Windows\$(_TargetArch)\python.7z"
+                 Condition="Exists('$(MSBuildProjectDirectory)\\..\\Shotora.App.Services\\PythonEmbed\\Windows\\$(_TargetArch)\\python.7z')">
+            <TargetPath>PythonEmbed\Windows\$(_TargetArch)\python.7z</TargetPath>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        </Content>
+    </ItemGroup>
+    <ItemGroup Condition="'$(_IsLinux)'=='true'">
+        <Content Include="..\Shotora.App.Services\PythonEmbed\Linux\$(_TargetArch)\python.7z"
+                 Condition="Exists('$(MSBuildProjectDirectory)\\..\\Shotora.App.Services\\PythonEmbed\\Linux\\$(_TargetArch)\\python.7z')">
+            <TargetPath>PythonEmbed\Linux\$(_TargetArch)\python.7z</TargetPath>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        </Content>
+        <Content Include="..\Shotora.App.Services\PythonEmbed\Linux\$(_TargetArch)\7zz"
+                 Condition="Exists('$(MSBuildProjectDirectory)\\..\\Shotora.App.Services\\PythonEmbed\\Linux\\$(_TargetArch)\\7zz')">
+            <TargetPath>PythonEmbed\Linux\$(_TargetArch)\7zz</TargetPath>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        </Content>
+    </ItemGroup>
+    <ItemGroup Condition="'$(_IsMac)'=='true'">
+        <Content Include="..\Shotora.App.Services\PythonEmbed\Mac\$(_TargetArch)\python.7z"
+                 Condition="Exists('$(MSBuildProjectDirectory)\\..\\Shotora.App.Services\\PythonEmbed\\Mac\\$(_TargetArch)\\python.7z')">
+            <TargetPath>PythonEmbed\Mac\$(_TargetArch)\python.7z</TargetPath>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        </Content>
+        <Content Include="..\Shotora.App.Services\PythonEmbed\Mac\$(_TargetArch)\7zz"
+                 Condition="Exists('$(MSBuildProjectDirectory)\\..\\Shotora.App.Services\\PythonEmbed\\Mac\\$(_TargetArch)\\7zz')">
+            <TargetPath>PythonEmbed\Mac\$(_TargetArch)\7zz</TargetPath>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        </Content>
+    </ItemGroup>
+
+    <ItemGroup Condition="'$(_IsLinux)'=='true'">
+        <Content Include="..\Shotora.App.Services\Binaries\Linux\$(_LinuxNativeArch)\**\*">
+            <TargetPath>Binaries\Linux\$(_LinuxNativeArch)\%(Filename)%(Extension)</TargetPath>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        </Content>
+    </ItemGroup>
+
+    <ItemGroup Condition="'$(_IsMac)'=='true'">
+        <Content Include="..\Shotora.App.Services\Binaries\Mac\$(_MacNativeArch)\**\*">
+            <TargetPath>Binaries\Mac\$(_MacNativeArch)\%(Filename)%(Extension)</TargetPath>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        </Content>
+        <!-- Also place macOS natives at the publish root for direct probing -->
+        <Content Include="..\Shotora.App.Services\Binaries\Mac\$(_MacNativeArch)\**\*">
+            <TargetPath>%(Filename)%(Extension)</TargetPath>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        </Content>
+        <!-- Duplicate into a plain x64 folder for macOS probing/packaging tools -->
+        <Content Include="..\Shotora.App.Services\Binaries\Mac\$(_MacNativeArch)\**\*"
+                 Condition="$(_MacNativeArch) == 'x64'">
+            <TargetPath>x64\%(Filename)%(Extension)</TargetPath>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        </Content>
+    </ItemGroup>
+
+    <!-- Bundle NativeSupport binaries into single-file publishes so they are extracted at runtime -->
+    <ItemGroup Condition="'$(PublishSingleFile)'=='true' and '$(_NativeOSName)'!=''">
+        <Content Include="..\NativeSupport\Binaries\$(_NativeOSName)\$(_TargetArch)\**\*"
+                 Condition="Exists('$(MSBuildProjectDirectory)\\..\\NativeSupport\\Binaries\\$(_NativeOSName)\\$(_TargetArch)')">
+            <TargetPath>Binaries\$(_NativeOSName)\$(_TargetArch)\%(Filename)%(Extension)</TargetPath>
+            <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+            <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+            <ExcludeFromSingleFile>false</ExcludeFromSingleFile>
+            <IncludeInSingleFile>true</IncludeInSingleFile>
+        </Content>
+    </ItemGroup>
+
+    <Target Name="LogNativeCopySelection_App" BeforeTargets="Build;Publish">
+        <Message Importance="High" Text="App RID: [_TargetRid]=$(_TargetRid)  _IsLinux=$(_IsLinux)  _IsMac=$(_IsMac)"/>
+        <Message Importance="High" Condition="'$(_IsLinux)'=='true'" Text="App including Linux natives (arch folder) from ..\Shotora.App.Services\Binaries\Linux\$(_LinuxNativeArch)"/>
+        <Message Importance="High" Condition="'$(_IsMac)'=='true'" Text="App including macOS natives (arch folder) from ..\Shotora.App.Services\Binaries\Mac\$(_MacNativeArch)"/>
+    </Target>
+
+    <!-- Remove foreign native runtimes before publish/single-file so they don't get bundled/extracted -->
+    <Target Name="PruneForeignRuntimeNatives_App" AfterTargets="ResolvePublishFiles">
+        <ItemGroup Condition="'$(_IsLinux)'=='true'">
+            <ResolvedFileToPublish Remove="@(ResolvedFileToPublish)"
+                                   Condition="$([System.String]::Copy('%(ResolvedFileToPublish.RelativePath)').StartsWith('runtimes/win'))
+                                           or $([System.String]::Copy('%(ResolvedFileToPublish.RelativePath)').StartsWith('runtimes/osx'))
+                                           or $([System.String]::Copy('%(ResolvedFileToPublish.RelativePath)').StartsWith('x86/'))"/>
+        </ItemGroup>
+        <ItemGroup Condition="'$(_IsMac)'=='true'">
+            <ResolvedFileToPublish Remove="@(ResolvedFileToPublish)"
+                                   Condition="$([System.String]::Copy('%(ResolvedFileToPublish.RelativePath)').StartsWith('runtimes/win'))
+                                           or $([System.String]::Copy('%(ResolvedFileToPublish.RelativePath)').StartsWith('runtimes/linux'))
+                                           or $([System.String]::Copy('%(ResolvedFileToPublish.RelativePath)').StartsWith('x86/'))"/>
+        </ItemGroup>
+        <ItemGroup Condition="'$(_IsWindows)'=='true'">
+            <ResolvedFileToPublish Remove="@(ResolvedFileToPublish)"
+                                   Condition="$([System.String]::Copy('%(ResolvedFileToPublish.RelativePath)').StartsWith('runtimes/linux'))
+                                           or $([System.String]::Copy('%(ResolvedFileToPublish.RelativePath)').StartsWith('runtimes/osx'))"/>
+        </ItemGroup>
+        <ItemGroup Condition="'$(_IsWindows)'=='true' and '$(_IsWindowsX64)'!='true'">
+            <ResolvedFileToPublish Remove="@(ResolvedFileToPublish)"
+                                   Condition="$([System.String]::Copy('%(ResolvedFileToPublish.RelativePath)').StartsWith('x64/'))"/>
+        </ItemGroup>
+        <ItemGroup Condition="'$(_IsWindows)'=='true' and '$(_IsWindowsX86)'!='true'">
+            <ResolvedFileToPublish Remove="@(ResolvedFileToPublish)"
+                                   Condition="$([System.String]::Copy('%(ResolvedFileToPublish.RelativePath)').StartsWith('x86/'))"/>
+        </ItemGroup>
+    </Target>
+
+    <!-- Clean up x86 subfolders for Linux/macOS publish outputs. -->
+    <Target Name="PruneArchFolders" AfterTargets="Build;Publish" Condition="'$(_IsLinux)'=='true' or '$(_IsMac)'=='true'">
+        <!-- Clean build output -->
+        <RemoveDir Condition="'$(OutDir)'!='' and Exists('$(OutDir)x86')" Directories="$(OutDir)x86"/>
+        <!-- Clean publish output -->
+        <RemoveDir Condition="'$(PublishDir)'!='' and Exists('$(PublishDir)x86')" Directories="$(PublishDir)x86"/>
+    </Target>
+
+    <!-- Remove Windows arch subfolders that don't match the current RID. -->
+    <Target Name="PruneWindowsArchFolders" AfterTargets="Build;Publish" Condition="'$(_IsWindows)'=='true'">
+        <RemoveDir Condition="'$(_IsWindowsX64)'!='true' and '$(OutDir)'!='' and Exists('$(OutDir)x64')" Directories="$(OutDir)x64"/>
+        <RemoveDir Condition="'$(_IsWindowsX64)'!='true' and '$(PublishDir)'!='' and Exists('$(PublishDir)x64')" Directories="$(PublishDir)x64"/>
+        <RemoveDir Condition="'$(_IsWindowsX86)'!='true' and '$(OutDir)'!='' and Exists('$(OutDir)x86')" Directories="$(OutDir)x86"/>
+        <RemoveDir Condition="'$(_IsWindowsX86)'!='true' and '$(PublishDir)'!='' and Exists('$(PublishDir)x86')" Directories="$(PublishDir)x86"/>
+    </Target>
+
+    <!-- Drop leftover files/folders from previous publishes so only the current RID remains. -->
+    <Target Name="PruneStalePublishArtifacts" AfterTargets="Publish">
+        <ItemGroup>
+            <_ExpectedPublishFiles Include="@(ResolvedFileToPublish->'$(PublishDir)%(RelativePath)')"/>
+        </ItemGroup>
+        <ItemGroup Condition="'$(_IsWindows)'=='true' and '$(AssemblyName)'!=''">
+            <_ExpectedPublishFiles Include="$(PublishDir)$(AssemblyName).exe"/>
+        </ItemGroup>
+        <ItemGroup Condition="'$(_IsWindows)'!='true' and '$(AssemblyName)'!=''">
+            <_ExpectedPublishFiles Include="$(PublishDir)$(AssemblyName)"/>
+        </ItemGroup>
+        <ItemGroup Condition="'$(_IsWindowsX64)'!='true'">
+            <_ExpectedPublishFiles Remove="$(PublishDir)x64\**\*.*"/>
+        </ItemGroup>
+        <ItemGroup Condition="'$(_IsWindowsX86)'!='true'">
+            <_ExpectedPublishFiles Remove="$(PublishDir)x86\**\*.*"/>
+        </ItemGroup>
+        <ItemGroup>
+            <_ExistingPublishFiles Include="$(PublishDir)**\*"/>
+            <_StalePublishFiles Include="@(_ExistingPublishFiles)" Exclude="@(_ExpectedPublishFiles)"/>
+        </ItemGroup>
+        <Delete Files="@(_StalePublishFiles)"/>
+
+        <ItemGroup>
+            <_ExistingPublishDirs Include="$(PublishDir)*"/>
+            <_KeepPublishDirs Include="$(PublishDir)Content;$(PublishDir)PythonEmbed;$(PublishDir)$(_NativePublishFolder)"/>
+            <_KeepPublishDirs Include="$(PublishDir)x64" Condition="'$(_IsMac)'=='true' and '$(_MacNativeArch)'=='x64'"/>
+            <_KeepPublishDirs Include="$(PublishDir)Binaries" Condition="'$(_IsLinux)'=='true' or '$(_IsMac)'=='true'"/>
+            <_DirsToRemove Include="@(_ExistingPublishDirs)" Exclude="@(_KeepPublishDirs)"/>
+        </ItemGroup>
+        <RemoveDir Directories="@(_DirsToRemove)"/>
+    </Target>
+
+    <Target Name="EnsurePublishFolders" AfterTargets="PruneStalePublishArtifacts">
+        <ItemGroup>
+            <_PublishDirs Include="$(PublishDir)Content"/>
+            <_PublishDirs Include="$(PublishDir)PythonEmbed"/>
+            <_PublishDirs Include="$(PublishDir)$(_NativePublishFolder)" Condition="'$(_NativePublishFolder)'!=''"/>
+            <_PublishDirs Include="$(PublishDir)x64" Condition="'$(_IsMac)'=='true' and '$(_MacNativeArch)'=='x64'"/>
+        </ItemGroup>
+        <MakeDir Directories="@(_PublishDirs)" Condition="'$(PublishDir)'!=''"/>
+    </Target>
+
+    <!-- For Linux single-file: remove Windows natives so they aren't bundled/extracted -->
+    <Target Name="RemoveWindowsNativesForLinux" AfterTargets="Publish" Condition="'$(_IsLinux)'=='true' and '$(PublishDir)'!=''">
+        <ItemGroup>
+            <_WinNativeToDelete Include="$(PublishDir)tesseract50.dll;$(PublishDir)leptonica-1.82.0.dll;$(PublishDir)x64\tesseract50.dll;$(PublishDir)x64\leptonica-1.82.0.dll"/>
+        </ItemGroup>
+        <Delete Files="@(_WinNativeToDelete)" ContinueOnError="true"/>
+        <Message Importance="High" Text="Removed Windows native Tesseract/Leptonica from publish output for Linux: @(_WinNativeToDelete)"/>
+    </Target>
+
+    <!-- Ensure Windows-native Tesseract/Leptonica are excluded from single-file bundle -->
+    <ItemGroup Condition="'$(_IsLinux)'=='true'">
+        <FileToExcludeFromSingleFile Include="**/tesseract50.dll;**/leptonica-1.82.0.dll"/>
+        <FileToExcludeFromSingleFile Include="x86/**;runtimes/win*/**;runtimes/osx*/**"/>
+    </ItemGroup>
+    <ItemGroup Condition="'$(_IsMac)'=='true'">
+        <FileToExcludeFromSingleFile Include="x86/**;runtimes/win*/**;runtimes/linux*/**"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Resource Include="Assets\Shotora.png"/>
+        <Resource Include="Resources/Languages/Strings.en.axaml"/>
+        <Resource Include="Resources/Languages/Strings.ja.axaml"/>
+        <Resource Include="Resources/Languages/Strings.ru.axaml"/>
+        <Resource Include="Resources/Languages/Strings.zh-Hans.axaml"/>
+        <Resource Include="Resources/Languages/Strings.zh-Hant.axaml"/>
+        <Resource Include="Resources/Languages/Strings.zh-TW.axaml"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Page Include="Resources/Languages/Strings.bg.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.br.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.bs.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.ca.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.cnr.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.crh.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.cs.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.csb.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.cy.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.da.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.de.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.dsb.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.el.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.es.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.et.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.eu.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.fi.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.fo.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.fr.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.fur.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.ga.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.gag.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.gd.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.gl.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.gv.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.hr.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.hsb.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.hu.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.hy.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.is.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.it.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.ka.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.kdr.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.krl.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.kw.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.lb.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.liv.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.lt.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.ltg.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.lv.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.mk.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.mo.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.mt.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.nap.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.nl.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.no.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.oc.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.pl.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.pt.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.rm.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.ro.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.rue.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.ruo.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.rup.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.ruq.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.sc.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.scn.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.sk.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.sl.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.sq.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.sr.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.sv.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.szl.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.tr.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.uk.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.vec.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Resources/Languages/Strings.vep.axaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+    </ItemGroup>
+</Project>

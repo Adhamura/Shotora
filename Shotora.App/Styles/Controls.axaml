@@ -1,0 +1,449 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:primitives="clr-namespace:Avalonia.Controls.Primitives;assembly=Avalonia.Controls"
+        x:Class="Shotora.App.Styles.Controls">
+    <Style Selector="TextBlock">
+        <Setter Property="FontFamily" Value="{DynamicResource AppFontFamily}" />
+        <Setter Property="Foreground" Value="{DynamicResource TextPrimaryBrush}" />
+        <Setter Property="FontWeight" Value="Normal" />
+    </Style>
+
+    <Style Selector="TextBox">
+        <Setter Property="FontFamily" Value="{DynamicResource AppFontFamily}" />
+        <Setter Property="Foreground" Value="{DynamicResource InputForegroundBrush}" />
+        <Setter Property="Background" Value="{DynamicResource InputBackgroundBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource InputBorderBrush}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Padding" Value="8,4" />
+        <Setter Property="MinHeight" Value="28" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="CaretBrush" Value="{DynamicResource TextPrimaryBrush}" />
+        <Setter Property="InnerRightContent" Value="{x:Null}" />
+        <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Disabled" />
+        <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Disabled" />
+    </Style>
+
+    <Style Selector="Button">
+        <Setter Property="FontFamily" Value="{DynamicResource AppFontFamily}" />
+        <Setter Property="Height" Value="28" />
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="Foreground" Value="{DynamicResource ButtonForegroundBrush}" />
+        <Setter Property="Background" Value="{DynamicResource ButtonBackgroundBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource ButtonBorderBrush}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Padding" Value="12,4" />
+        <Setter Property="Template">
+            <ControlTemplate>
+                <Border x:Name="PART_ButtonBorder"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        CornerRadius="4">
+                    <ContentPresenter Content="{TemplateBinding Content}"
+                                      ContentTemplate="{TemplateBinding ContentTemplate}"
+                                      HorizontalAlignment="Center"
+                                      VerticalAlignment="Center"
+                                      Foreground="{TemplateBinding Foreground}"
+                                      FontFamily="{TemplateBinding FontFamily}"
+                                      FontSize="{TemplateBinding FontSize}"
+                                      FontWeight="{TemplateBinding FontWeight}" />
+                </Border>
+            </ControlTemplate>
+        </Setter>
+    </Style>
+    <Style Selector="Button:pointerover /template/ Border#PART_ButtonBorder">
+        <Setter Property="Background" Value="{DynamicResource ButtonHoverBrush}" />
+    </Style>
+    <Style Selector="Button:pressed /template/ Border#PART_ButtonBorder">
+        <Setter Property="Background" Value="{DynamicResource ButtonPressedBrush}" />
+    </Style>
+    <Style Selector="Button:disabled /template/ Border#PART_ButtonBorder">
+        <Setter Property="Background" Value="{DynamicResource ButtonDisabledBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource ButtonDisabledBrush}" />
+    </Style>
+    <Style Selector="Button:disabled">
+        <Setter Property="Foreground" Value="{DynamicResource ButtonDisabledForegroundBrush}" />
+        <Setter Property="Opacity" Value="0.85" />
+    </Style>
+    <Style Selector="Button TextBlock">
+        <Setter Property="Foreground" Value="{DynamicResource ButtonForegroundBrush}" />
+    </Style>
+
+    <!-- Rounded action buttons used across settings -->
+    <Style Selector="Button.rounded-action">
+        <Setter Property="Background" Value="{DynamicResource ButtonBackgroundBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource ButtonBorderBrush}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="CornerRadius" Value="6" />
+        <Setter Property="Foreground" Value="{DynamicResource ButtonForegroundBrush}" />
+        <Setter Property="FontWeight" Value="Medium" />
+        <Setter Property="Height" Value="32" />
+        <Setter Property="MinWidth" Value="110" />
+        <Setter Property="Padding" Value="12,6" />
+    </Style>
+    <Style Selector="Button.rounded-action:pointerover /template/ Border#PART_ButtonBorder">
+        <Setter Property="Background" Value="{DynamicResource ButtonHoverBrush}" />
+    </Style>
+    <Style Selector="Button.rounded-action:pressed /template/ Border#PART_ButtonBorder">
+        <Setter Property="Background" Value="{DynamicResource ButtonPressedBrush}" />
+    </Style>
+
+    <Style Selector="ToggleButton">
+        <Setter Property="FontFamily" Value="{DynamicResource AppFontFamily}" />
+    </Style>
+
+    <Style Selector="ComboBox">
+        <Setter Property="FontFamily" Value="{DynamicResource AppFontFamily}" />
+        <Setter Property="Foreground" Value="{DynamicResource TextPrimaryBrush}" />
+        <Setter Property="Background" Value="{DynamicResource InputBackgroundBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource InputBorderBrush}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Padding" Value="10,4,24,4" />
+        <Setter Property="MinHeight" Value="28" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+        <Setter Property="Template">
+            <ControlTemplate>
+                <Grid ColumnDefinitions="*,34">
+                    <Border x:Name="Border"
+                            Grid.ColumnSpan="2"
+                            Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            CornerRadius="3">
+                        <Grid>
+                            <ContentPresenter x:Name="PART_ContentPresenter"
+                                              Margin="{TemplateBinding Padding}"
+                                              VerticalAlignment="Center"
+                                              HorizontalAlignment="Stretch"
+                                              Content="{TemplateBinding SelectionBoxItem}"
+                                              ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}" />
+                            <TextBox x:Name="PART_TextBox"
+                                     Margin="{TemplateBinding Padding}"
+                                     IsVisible="False"
+                                     Background="Transparent"
+                                     BorderThickness="0"
+                                     Padding="0"
+                                     VerticalContentAlignment="Center"
+                                     Foreground="{DynamicResource TextPrimaryBrush}"
+                                     CaretBrush="{DynamicResource TextPrimaryBrush}" />
+                        </Grid>
+                    </Border>
+                    <ToggleButton x:Name="PART_DropDownButton"
+                                  Classes="combo-drop"
+                                  Grid.Column="1"
+                                  Focusable="False"
+                                  IsChecked="{Binding IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}"
+                                  Background="{DynamicResource InputBackgroundHoverBrush}"
+                                  BorderBrush="Transparent"
+                                  BorderThickness="0"
+                                  MinWidth="36"
+                                  HorizontalContentAlignment="Center"
+                                  VerticalAlignment="Stretch"
+                                  VerticalContentAlignment="Center">
+                        <Path x:Name="Arrow"
+                              Data="M 0 0 L 4 4 L 8 0"
+                              Stroke="{DynamicResource AccentPrimaryBrush}"
+                              StrokeThickness="1"
+                              HorizontalAlignment="Center"
+                              VerticalAlignment="Center" />
+                        <ToggleButton.Template>
+                            <ControlTemplate>
+                                <Border Background="Transparent"
+                                        BorderThickness="0"
+                                        Padding="0">
+                                    <Border x:Name="ToggleHost"
+                                            Background="{TemplateBinding Background}"
+                                            BorderBrush="{DynamicResource InputBorderBrush}"
+                                            BorderThickness="1,0,0,0"
+                                            CornerRadius="0,3,3,0">
+                                        <ContentPresenter HorizontalAlignment="Center"
+                                                          VerticalAlignment="Center" />
+                                    </Border>
+                                </Border>
+                            </ControlTemplate>
+                        </ToggleButton.Template>
+                    </ToggleButton>
+                    <Popup x:Name="PART_Popup"
+                           Placement="Bottom"
+                           IsLightDismissEnabled="True"
+                           IsOpen="{TemplateBinding IsDropDownOpen}">
+                        <Border Background="{DynamicResource PopupBackgroundBrush}"
+                                BorderBrush="{DynamicResource PopupBorderBrush}"
+                                BorderThickness="1"
+                                CornerRadius="6">
+                            <ScrollViewer Margin="4"
+                                          Background="{DynamicResource InputBackgroundBrush}"
+                                          BorderThickness="0"
+                                          MaxHeight="260"
+                                          VerticalScrollBarVisibility="Auto"
+                                          HorizontalScrollBarVisibility="Disabled">
+                                <ItemsPresenter />
+                            </ScrollViewer>
+                        </Border>
+                    </Popup>
+                </Grid>
+            </ControlTemplate>
+        </Setter>
+    </Style>
+    <Style Selector="ToggleButton.combo-drop:pointerover /template/ Border#ToggleHost">
+        <Setter Property="Background" Value="{DynamicResource InputBackgroundHoverBrush}" />
+    </Style>
+    <Style Selector="ToggleButton.combo-drop:pressed /template/ Border#ToggleHost">
+        <Setter Property="Background" Value="{DynamicResource ButtonPressedBrush}" />
+    </Style>
+    <Style Selector="ToggleButton.combo-drop:disabled /template/ Border#ToggleHost">
+        <Setter Property="Opacity" Value="0.6" />
+    </Style>
+    <Style Selector="ComboBox:pointerover /template/ Border#Border">
+        <Setter Property="BorderBrush" Value="{DynamicResource ButtonHoverBrush}" />
+        <Setter Property="Background" Value="{DynamicResource InputBackgroundBrush}" />
+    </Style>
+    <Style Selector="ComboBox:pointerover /template/ Path#Arrow">
+        <Setter Property="Stroke" Value="{DynamicResource AccentPrimaryBrush}" />
+    </Style>
+    <Style Selector="ComboBox:pointerover /template/ ToggleButton#PART_DropDownButton /template/ Border#ToggleHost">
+        <Setter Property="Background" Value="{DynamicResource InputBackgroundHoverBrush}" />
+    </Style>
+    <Style Selector="ComboBox:focus-within /template/ Border#Border">
+        <Setter Property="BorderBrush" Value="{DynamicResource AccentPrimaryBrush}" />
+    </Style>
+    <Style Selector="ComboBox:focus-within /template/ Path#Arrow">
+        <Setter Property="Stroke" Value="{DynamicResource TextPrimaryBrush}" />
+    </Style>
+    <Style Selector="ComboBox:disabled /template/ Border#Border">
+        <Setter Property="Opacity" Value="0.65" />
+    </Style>
+    <Style Selector="ComboBox:disabled /template/ Path#Arrow">
+        <Setter Property="Opacity" Value="0.65" />
+    </Style>
+    <!-- IsEditable property is not available in Avalonia 11.3; these styles are reserved for future versions -->
+    <!--
+    <Style Selector="ComboBox[IsEditable=true] /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="IsVisible" Value="False" />
+    </Style>
+    <Style Selector="ComboBox[IsEditable=true] /template/ TextBox#PART_TextBox">
+        <Setter Property="IsVisible" Value="True" />
+        <Setter Property="IsReadOnly" Value="False" />
+    </Style>
+    -->
+
+    <Style Selector="ComboBoxItem">
+        <Setter Property="FontFamily" Value="{DynamicResource AppFontFamily}" />
+        <Setter Property="Foreground" Value="{DynamicResource TextPrimaryBrush}" />
+        <Setter Property="Background" Value="{DynamicResource InputBackgroundBrush}" />
+        <Setter Property="Padding" Value="8,4" />
+        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+        <Setter Property="MinHeight" Value="28" />
+        <Setter Property="Template">
+            <ControlTemplate>
+                <Border x:Name="ItemBorder"
+                        Background="{TemplateBinding Background}"
+                        Padding="{TemplateBinding Padding}">
+                    <ContentPresenter />
+                </Border>
+            </ControlTemplate>
+        </Setter>
+    </Style>
+    <Style Selector="ComboBoxItem:pointerover /template/ Border#ItemBorder">
+        <Setter Property="Background" Value="{DynamicResource HighlightBrush}" />
+    </Style>
+    <Style Selector="ComboBoxItem:selected /template/ Border#ItemBorder">
+        <Setter Property="Background" Value="{DynamicResource HighlightBrush}" />
+    </Style>
+    <Style Selector="ComboBoxItem:disabled">
+        <Setter Property="Opacity" Value="0.5" />
+    </Style>
+
+    <Style Selector="Slider.quality">
+        <Setter Property="Background" Value="{DynamicResource SliderTrackBrush}" />
+        <Setter Property="Foreground" Value="{DynamicResource SliderFillBrush}" />
+    </Style>
+    <Style Selector="Slider.quality:disabled">
+        <Setter Property="Opacity" Value="0.55" />
+    </Style>
+    <Style Selector="Slider.quality /template/ Thumb">
+        <Setter Property="Width" Value="12" />
+        <Setter Property="Height" Value="20" />
+        <Setter Property="Background" Value="{DynamicResource SliderThumbBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource SliderThumbBorderBrush}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Template">
+            <ControlTemplate>
+                <Border Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        CornerRadius="2" />
+            </ControlTemplate>
+        </Setter>
+    </Style>
+    <Style Selector="Slider.quality:disabled /template/ Thumb">
+        <Setter Property="Background" Value="{DynamicResource SliderDisabledThumbBrush}" />
+    </Style>
+
+    <Style Selector="ScrollBar">
+        <Setter Property="Width" Value="12" />
+        <Setter Property="Background" Value="{DynamicResource ScrollBarBackgroundBrush}" />
+    </Style>
+    <Style Selector="ScrollBar /template/ Thumb">
+        <Setter Property="Background" Value="{DynamicResource ScrollBarThumbBrush}" />
+        <Setter Property="Template">
+            <ControlTemplate>
+                <Border Background="{TemplateBinding Background}"
+                        CornerRadius="6" />
+            </ControlTemplate>
+        </Setter>
+    </Style>
+    <Style Selector="ScrollBar /template/ Thumb:pointerover">
+        <Setter Property="Background" Value="{DynamicResource ScrollBarThumbHoverBrush}" />
+    </Style>
+    <Style Selector="ScrollBar:disabled">
+        <Setter Property="Opacity" Value="0.35" />
+    </Style>
+
+    <Style Selector="CheckBox">
+        <Setter Property="FontFamily" Value="{DynamicResource AppFontFamily}" />
+        <Setter Property="Foreground" Value="{DynamicResource TextPrimaryBrush}" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="Template">
+            <ControlTemplate>
+                <StackPanel Orientation="Horizontal"
+                            VerticalAlignment="Center">
+                    <Grid Width="18" Height="18" Margin="0,0,6,0">
+                        <Border x:Name="Box"
+                                Background="{DynamicResource InputBackgroundBrush}"
+                                BorderBrush="{DynamicResource InputBorderBrush}"
+                                BorderThickness="1"
+                                CornerRadius="4" />
+                        <Path x:Name="CheckMark"
+                              Data="M 2 9 L 6 13 L 16 3"
+                              Stroke="White"
+                              StrokeThickness="2"
+                              IsVisible="False" />
+                    </Grid>
+                    <ContentPresenter Content="{TemplateBinding Content}"
+                                      ContentTemplate="{TemplateBinding ContentTemplate}"
+                                      Foreground="{TemplateBinding Foreground}"
+                                      FontFamily="{TemplateBinding FontFamily}"
+                                      FontSize="{TemplateBinding FontSize}"
+                                      FontWeight="{TemplateBinding FontWeight}"
+                                      VerticalAlignment="Center" />
+                </StackPanel>
+            </ControlTemplate>
+        </Setter>
+    </Style>
+    <Style Selector="CheckBox:checked /template/ Border#Box">
+        <Setter Property="Background" Value="#FF3478FF" />
+        <Setter Property="BorderBrush" Value="#FF3478FF" />
+    </Style>
+    <Style Selector="CheckBox:checked /template/ Path#CheckMark">
+        <Setter Property="IsVisible" Value="True" />
+    </Style>
+    <Style Selector="CheckBox:pointerover /template/ Border#Box">
+        <Setter Property="BorderBrush" Value="#FF3478FF" />
+    </Style>
+    <Style Selector="CheckBox:disabled /template/ Border#Box">
+        <Setter Property="Opacity" Value="0.5" />
+    </Style>
+    <Style Selector="CheckBox:disabled">
+        <Setter Property="Foreground" Value="#80000000" />
+    </Style>
+
+    <Style Selector="ContextMenu">
+        <Setter Property="FontFamily" Value="{DynamicResource AppFontFamily}" />
+        <Setter Property="Background" Value="{DynamicResource PopupBackgroundBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource PopupBorderBrush}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="CornerRadius" Value="6" />
+        <Setter Property="Padding" Value="4" />
+    </Style>
+    <Style Selector="MenuItem">
+        <Setter Property="FontFamily" Value="{DynamicResource AppFontFamily}" />
+        <Setter Property="Foreground" Value="{DynamicResource TextPrimaryBrush}" />
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="Padding" Value="10,6" />
+    </Style>
+    <Style Selector="MenuItem:pointerover">
+        <Setter Property="Background" Value="{DynamicResource HighlightBrush}" />
+    </Style>
+    <Style Selector="MenuItem:disabled">
+        <Setter Property="Foreground" Value="{DynamicResource TextSecondaryBrush}" />
+    </Style>
+
+    <Style Selector="Button.tray-menu-item">
+        <Setter Property="FontFamily" Value="{DynamicResource AppFontFamily}" />
+        <Setter Property="FontSize" Value="13" />
+        <Setter Property="Foreground" Value="{DynamicResource TextPrimaryBrush}" />
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="BorderBrush" Value="Transparent" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="Padding" Value="10,6" />
+        <Setter Property="Height" Value="30" />
+        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+    </Style>
+    <Style Selector="Button.tray-menu-item TextBlock">
+        <Setter Property="Foreground" Value="{DynamicResource TextPrimaryBrush}" />
+    </Style>
+    <Style Selector="Button.tray-menu-item:pointerover /template/ Border#PART_ButtonBorder">
+        <Setter Property="Background" Value="{DynamicResource HighlightBrush}" />
+    </Style>
+    <Style Selector="Button.tray-menu-item:pressed /template/ Border#PART_ButtonBorder">
+        <Setter Property="Background" Value="{DynamicResource HighlightBrush}" />
+    </Style>
+
+    <Style Selector="TabControl">
+        <Setter Property="Background" Value="{DynamicResource PanelBackgroundBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource PanelBorderBrush}" />
+        <Setter Property="BorderThickness" Value="1" />
+    </Style>
+    <Style Selector="primitives|TabStrip">
+        <Setter Property="Background" Value="{DynamicResource PanelAltBackgroundBrush}" />
+        <Setter Property="Padding" Value="4" />
+    </Style>
+
+    <Style Selector="TabItem">
+        <Setter Property="FontFamily" Value="{DynamicResource AppFontFamily}" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="FontWeight" Value="SemiBold" />
+        <Setter Property="Foreground" Value="{DynamicResource ButtonForegroundBrush}" />
+        <Setter Property="Background" Value="{DynamicResource ButtonBackgroundBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource ButtonBorderBrush}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Margin" Value="0,0,10,0" />
+        <Setter Property="Padding" Value="18,8" />
+        <Setter Property="MinWidth" Value="110" />
+        <Setter Property="Height" Value="32" />
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
+        <Setter Property="Template">
+            <ControlTemplate>
+                <Border x:Name="TabBorder"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        CornerRadius="6"
+                        Padding="{TemplateBinding Padding}">
+                    <ContentPresenter Content="{TemplateBinding Header}"
+                                      ContentTemplate="{TemplateBinding HeaderTemplate}"
+                                      HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                      VerticalAlignment="Center" />
+                </Border>
+            </ControlTemplate>
+        </Setter>
+    </Style>
+    <Style Selector="TabItem:selected /template/ Border#TabBorder">
+        <Setter Property="Background" Value="{DynamicResource ButtonPressedBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource AccentPrimaryBrush}" />
+    </Style>
+    <Style Selector="TabItem:selected:pointerover /template/ Border#TabBorder">
+        <Setter Property="Background" Value="{DynamicResource ButtonPressedBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource AccentPrimaryDarkBrush}" />
+    </Style>
+    <Style Selector="TabItem:pointerover:not(:selected) /template/ Border#TabBorder">
+        <Setter Property="Background" Value="{DynamicResource ButtonHoverBrush}" />
+    </Style>
+    <Style Selector="TabItem:disabled">
+        <Setter Property="Opacity" Value="0.6" />
+    </Style>
+</Styles>

@@ -1,0 +1,31 @@
+<Project>
+    <!-- Ensure local dotnet tools are restored before any project build/restore.
+         We prefer the repo-root manifest (dotnet-tools.json) and fall back to .config/dotnet-tools.json.
+         Uses a timestamp file to avoid re-running for every project in the solution. -->
+    <PropertyGroup>
+        <LocalToolManifestPath Condition="Exists('$(MSBuildThisFileDirectory)dotnet-tools.json')">$(MSBuildThisFileDirectory)dotnet-tools.json</LocalToolManifestPath>
+        <LocalToolManifestPath Condition="'$(LocalToolManifestPath)'=='' and Exists('$(MSBuildThisFileDirectory).config$(DirectorySeparatorChar)dotnet-tools.json')">$(MSBuildThisFileDirectory).config$(DirectorySeparatorChar)dotnet-tools.json</LocalToolManifestPath>
+        <!-- Allow opt-out if needed -->
+        <RestoreLocalTools Condition="'$(RestoreLocalTools)'==''">true</RestoreLocalTools>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <LocalToolManifest Include="$(LocalToolManifestPath)" Condition="'$(LocalToolManifestPath)' != ''"/>
+    </ItemGroup>
+
+    <Target Name="EnsureLocalDotNetTools"
+            BeforeTargets="Restore;Build;Rebuild"
+            Condition="'@(LocalToolManifest)' != '' and '$(RestoreLocalTools)'=='true'">
+        <Message Importance="High"
+                 Text="Restoring local dotnet tools from %(LocalToolManifest.FullPath)"/>
+        <Exec Command="dotnet tool restore --tool-manifest &quot;%(LocalToolManifest.FullPath)&quot;"
+              WorkingDirectory="$(MSBuildThisFileDirectory)"/>
+    </Target>
+
+    <Target Name="LogMissingToolManifest"
+            BeforeTargets="Restore;Build;Rebuild"
+            Condition="'@(LocalToolManifest)' == '' and '$(RestoreLocalTools)'=='true'">
+        <Message Importance="High"
+                 Text="Warning: no dotnet tool manifest found at repo root or .config; skipping tool restore."/>
+    </Target>
+</Project>

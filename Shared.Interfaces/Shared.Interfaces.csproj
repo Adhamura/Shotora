@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Shared.Models\Shared.Models.csproj"/>
+        <ProjectReference Include="..\Shotora.App.Models\Shotora.App.Models.csproj"/>
+    </ItemGroup>
+
+</Project>

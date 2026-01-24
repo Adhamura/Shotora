@@ -1,0 +1,255 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <!-- Settings -->
+    <sys:String x:Key="LocSettingsTitle">Postavke</sys:String>
+    <sys:String x:Key="LocSettingsStorage">Skladištenje</sys:String>
+    <sys:String x:Key="LocSettingsDefaultFolder">Zadana mapa</sys:String>
+    <sys:String x:Key="LocSettingsBrowse">Pretraži</sys:String>
+    <sys:String x:Key="LocSettingsDefaultFormat">Zadani format</sys:String>
+    <sys:String x:Key="LocSettingsJpegQuality">JPEG kvalitet</sys:String>
+    <sys:String x:Key="LocSettingsFilenamePattern">Šablon imena datoteke</sys:String>
+    <sys:String x:Key="LocSettingsOcr">OCR</sys:String>
+    <sys:String x:Key="LocSettingsProvider">Pružaoc</sys:String>
+    <sys:String x:Key="LocSettingsLanguages">Jezici</sys:String>
+    <sys:String x:Key="LocSettingsEasyOcrHint">EasyOCR zahtijeva Python + 'pip install easyocr'</sys:String>
+    <sys:String x:Key="LocSettingsTesseractFiles">Tesseract jezičke datoteke</sys:String>
+    <sys:String x:Key="LocSettingsSelectLanguage">Izaberi jezik</sys:String>
+    <sys:String x:Key="LocSettingsDownload">Preuzmi</sys:String>
+    <sys:String x:Key="LocSettingsDelete">Obriši</sys:String>
+    <sys:String x:Key="LocSettingsHotkeys">Prečice</sys:String>
+    <sys:String x:Key="LocSettingsRegionHotkey">Snimanje regije</sys:String>
+    <sys:String x:Key="LocSettingsFullscreenHotkey">Cijeli ekran</sys:String>
+    <sys:String x:Key="LocSettingsActiveWindowHotkey">Aktivni prozor</sys:String>
+    <sys:String x:Key="LocSettingsGeneral">Opšte</sys:String>
+    <sys:String x:Key="LocSettingsTheme">Tema</sys:String>
+    <sys:String x:Key="LocSettingsDisplayLanguage">Jezik prikaza</sys:String>
+    <sys:String x:Key="LocSettingsRunOnStartup">Pokreni pri startu</sys:String>
+    <sys:String x:Key="LocSettingsTabMain">Glavno</sys:String>
+    <sys:String x:Key="LocSettingsTabHotkeys">Prečice</sys:String>
+    <sys:String x:Key="LocSettingsTabEditor">Uredjivac</sys:String>
+    <sys:String x:Key="LocSettingsEditorHotkeys">Prečice editora</sys:String>
+    <sys:String x:Key="LocSettingsEditorMouse">Miš editora</sys:String>
+    <sys:String x:Key="LocSettingsCopyCloseMouse">Kopiraj + zatvori</sys:String>
+    <sys:String x:Key="LocSettingsMoveSelectionMouse">Pomjeri izbor</sys:String>
+    <sys:String x:Key="LocSettingsEditorIcons">Ikone editora</sys:String>
+    <sys:String x:Key="LocSettingsEditorOptions">Opcije editora</sys:String>
+    <sys:String x:Key="LocSettingsShowThicknessSlider">Prikaži klizač za debljinu</sys:String>
+    <sys:String x:Key="LocSettingsDefaultThickness">Zadana debljina</sys:String>
+    <sys:String x:Key="LocSettingsShowColorPalette">Prikaži paletu boja</sys:String>
+    <sys:String x:Key="LocSettingsDefaultColor">Zadana boja</sys:String>
+    <sys:String x:Key="LocSettingsPickColor">Izaberi</sys:String>
+    <sys:String x:Key="LocSettingsDefaultColorHint">Koristi se kada je paleta boja skrivena.</sys:String>
+    <sys:String x:Key="LocSettingsUsePointer">Koristi pokazivač</sys:String>
+    <sys:String x:Key="LocSettingsShowUndo">Prikaži Poništi</sys:String>
+    <sys:String x:Key="LocSettingsShowRedo">Prikaži Ponovi</sys:String>
+    <sys:String x:Key="LocSettingsShowCopy">Prikaži Kopiraj</sys:String>
+    <sys:String x:Key="LocSettingsShowSave">Prikaži Sačuvaj</sys:String>
+    <sys:String x:Key="LocSettingsShowUpload">Prikaži Učitaj</sys:String>
+    <sys:String x:Key="LocSettingsShowOcr">Prikaži OCR</sys:String>
+    <sys:String x:Key="LocSettingsShowCancel">Prikaži Otkaži</sys:String>
+    <sys:String x:Key="LocSettingsShowConfirm">Prikaži Potvrdi</sys:String>
+    <sys:String x:Key="LocSettingsShowClose">Prikaži Zatvori</sys:String>
+    <sys:String x:Key="LocSettingsShowSelection">Prikaži Odabir</sys:String>
+    <sys:String x:Key="LocSettingsShowMove">Prikaži Premjesti</sys:String>
+    <sys:String x:Key="LocSettingsShowPen">Prikaži Olovku</sys:String>
+    <sys:String x:Key="LocSettingsShowLine">Prikaži Liniju</sys:String>
+    <sys:String x:Key="LocSettingsShowArrow">Prikaži Strelicu</sys:String>
+    <sys:String x:Key="LocSettingsShowRectangle">Prikaži Pravokutnik</sys:String>
+    <sys:String x:Key="LocSettingsShowEllipse">Prikaži Elipsu</sys:String>
+    <sys:String x:Key="LocSettingsShowText">Prikaži Tekst</sys:String>
+    <sys:String x:Key="LocSettingsShowHighlight">Prikaži Istakni</sys:String>
+    <sys:String x:Key="LocSettingsShowBlur">Prikaži Zamućenje</sys:String>
+    <sys:String x:Key="LocSettingsShowPixelate">Prikaži Pikselizaciju</sys:String>
+    <sys:String x:Key="LocSettingsShowThickness">Prikaži Debljinu</sys:String>
+    <sys:String x:Key="LocSettingsShowColors">Prikaži Boje</sys:String>
+    <sys:String x:Key="LocSettingsShowCrosshair">Prikaži Krst</sys:String>
+    <sys:String x:Key="LocSettingsShowResizeHandles">Prikaži ručke za promjenu veličine</sys:String>
+    <sys:String x:Key="LocSettingsShowToolbar">Prikaži alatnu traku</sys:String>
+    <sys:String x:Key="LocSettingsShowPalette">Prikaži paletu</sys:String>
+    <sys:String x:Key="LocSettingsShowPreview">Prikaži pregled</sys:String>
+    <sys:String x:Key="LocSettingsShowMiniMap">Prikaži minikartu</sys:String>
+    <sys:String x:Key="LocSettingsShowSelectionSize">Prikaži veličinu odabira</sys:String>
+    <sys:String x:Key="LocSettingsShowSelectionPosition">Prikaži poziciju odabira</sys:String>
+
+    <!-- Common -->
+    <sys:String x:Key="LocCommonClose">Zatvori</sys:String>
+
+    <!-- Tools -->
+    <sys:String x:Key="LocToolSelect">Izaberi</sys:String>
+    <sys:String x:Key="LocToolRegion">Izbor regije</sys:String>
+    <sys:String x:Key="LocToolMove">Pomjeri regiju</sys:String>
+    <sys:String x:Key="LocToolPen">Olovka</sys:String>
+    <sys:String x:Key="LocToolLine">Linija</sys:String>
+    <sys:String x:Key="LocToolArrow">Strelica</sys:String>
+    <sys:String x:Key="LocToolRect">Pravougaonik</sys:String>
+    <sys:String x:Key="LocToolEllipse">Elipsa</sys:String>
+    <sys:String x:Key="LocToolText">Tekst</sys:String>
+    <sys:String x:Key="LocToolHighlight">Isticanje</sys:String>
+    <sys:String x:Key="LocToolBlur">Zamućenje</sys:String>
+    <sys:String x:Key="LocToolPixelate">Pikselizacija</sys:String>
+    <sys:String x:Key="LocToolSaveAs">Sačuvaj kao</sys:String>
+    <sys:String x:Key="LocToolCopy">Kopiraj</sys:String>
+    <sys:String x:Key="LocToolUpload">Otpremi</sys:String>
+    <sys:String x:Key="LocToolCancel">Otkaži</sys:String>
+    <sys:String x:Key="LocToolColors">Boje</sys:String>
+    <sys:String x:Key="LocToolThickness">Debljina</sys:String>
+    <sys:String x:Key="LocToolUndo">Opozovi</sys:String>
+    <sys:String x:Key="LocToolRedo">Ponovi</sys:String>
+
+    <sys:String x:Key="LocSettingsRegionHotkeyPlaceholder">Pritisnite tipke...</sys:String>
+    <sys:String x:Key="LocSettingsFullscreenHotkeyPlaceholder">Pritisnite tipke...</sys:String>
+    <sys:String x:Key="LocSettingsActiveWindowHotkeyPlaceholder">Pritisnite tipke...</sys:String>
+    <sys:String x:Key="LocSettingsEditorUndoHotkey">Poništi</sys:String>
+    <sys:String x:Key="LocSettingsEditorUndoHotkeyPlaceholder">Ctrl+Z</sys:String>
+    <sys:String x:Key="LocSettingsEditorRedoHotkey">Ponovi</sys:String>
+    <sys:String x:Key="LocSettingsEditorRedoHotkeyPlaceholder">Ctrl+Y</sys:String>
+    <sys:String x:Key="LocSettingsEditorCopyHotkey">Kopiraj</sys:String>
+    <sys:String x:Key="LocSettingsEditorCopyHotkeyPlaceholder">Ctrl+C</sys:String>
+    <sys:String x:Key="LocSettingsEditorSaveHotkey">Sačuvaj</sys:String>
+    <sys:String x:Key="LocSettingsEditorSaveHotkeyPlaceholder">Ctrl+S</sys:String>
+
+    <sys:String x:Key="LocSettingsOcrSettings">OCR postavke</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstall">Instaliraj EasyOCR</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemove">Ukloni EasyOCR</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrStatus">Stanje</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstalled">Instalirano</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrNotInstalled">Nije instalirano</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstalling">Instaliranje...</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemoving">Uklanjanje...</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstallFailed">Instalacija nije uspjela</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemoveFailed">Uklanjanje nije uspjelo</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstallLang">Instaliraj</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoveLang">Ukloni</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstalled">Instalirano</sys:String>
+    <sys:String x:Key="LocSettingsOcrNotInstalled">Nije instalirano</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstalling">Instaliranje...</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoving">Uklanjanje...</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstallFailed">Instalacija nije uspjela</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoveFailed">Uklanjanje nije uspjelo</sys:String>
+    <sys:String x:Key="LocSettingsOcrDownloadProgress">Napredak preuzimanja</sys:String>
+    <sys:String x:Key="LocSettingsOcrBytes">bajta</sys:String>
+    <sys:String x:Key="LocSettingsOcrLicense">Licenca</sys:String>
+    <sys:String x:Key="LocSettingsOcrLicenseLink">https://github.com/JaidedAI/EasyOCR/blob/master/LICENSE</sys:String>
+    <sys:String x:Key="LocSettingsOcrTesseractLangs">Tesseract jezici</sys:String>
+    <sys:String x:Key="LocSettingsOcrTesseractHint">Preuzmite/dodajte dodatne Tesseract jezike ovdje.</sys:String>
+
+    <sys:String x:Key="LocSettingsExamplesTitle">Primjeri</sys:String>
+    <sys:String x:Key="LocSettingsExamplesDescription">Pregledajte primjerne ikone u trenutnoj temi.</sys:String>
+    <sys:String x:Key="LocSettingsExamplesFormat">Fajl format</sys:String>
+    <sys:String x:Key="LocSettingsExamplesEffects">Efekti</sys:String>
+    <sys:String x:Key="LocSettingsExamplesShape">Oblik</sys:String>
+    <sys:String x:Key="LocSettingsExamplesIcon">Ikona</sys:String>
+
+    <!-- Tray -->
+    <sys:String x:Key="LocTrayCaptureRegion">Snimi regiju</sys:String>
+    <sys:String x:Key="LocTrayCaptureFull">Snimi cijeli ekran</sys:String>
+    <sys:String x:Key="LocTraySettings">Postavke</sys:String>
+    <sys:String x:Key="LocTrayAbout">O programu</sys:String>
+    <sys:String x:Key="LocTrayExit">Izlaz</sys:String>
+
+    <!-- Overlay -->
+    <sys:String x:Key="LocOverlayCopy">Kopiraj</sys:String>
+    <sys:String x:Key="LocOverlaySave">Sačuvaj</sys:String>
+    <sys:String x:Key="LocOverlayUpload">Otpremi</sys:String>
+    <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
+    <sys:String x:Key="LocOverlayCancel">Otkaži</sys:String>
+    <sys:String x:Key="LocOverlayConfirm">Potvrdi</sys:String>
+    <sys:String x:Key="LocOverlayClose">Zatvori</sys:String>
+    <sys:String x:Key="LocOverlaySelection">Odabir</sys:String>
+    <sys:String x:Key="LocOverlayMove">Premjesti</sys:String>
+    <sys:String x:Key="LocOverlayPointer">Pokazivač</sys:String>
+    <sys:String x:Key="LocOverlayPen">Olovka</sys:String>
+    <sys:String x:Key="LocOverlayLine">Linija</sys:String>
+    <sys:String x:Key="LocOverlayArrow">Strelica</sys:String>
+    <sys:String x:Key="LocOverlayRectangle">Pravokutnik</sys:String>
+    <sys:String x:Key="LocOverlayEllipse">Elipsa</sys:String>
+    <sys:String x:Key="LocOverlayText">Tekst</sys:String>
+    <sys:String x:Key="LocOverlayHighlight">Istakni</sys:String>
+    <sys:String x:Key="LocOverlayBlur">Zamućenje</sys:String>
+    <sys:String x:Key="LocOverlayPixelate">Pikselizacija</sys:String>
+    <sys:String x:Key="LocOverlayThickness">Debljina</sys:String>
+    <sys:String x:Key="LocOverlayColors">Boje</sys:String>
+    <sys:String x:Key="LocOverlayPosition">Pozicija</sys:String>
+    <sys:String x:Key="LocOverlaySize">Veličina</sys:String>
+    <sys:String x:Key="LocOverlayWidth">Š</sys:String>
+    <sys:String x:Key="LocOverlayHeight">V</sys:String>
+    <sys:String x:Key="LocOverlayPickColor">Odaberi boju</sys:String>
+    <sys:String x:Key="LocOverlayHintDraw">Kliknite i povucite da crtate. Koristite alatnu traku za alate.</sys:String>
+    <sys:String x:Key="LocOverlayHintMove">Povucite unutar odabira da pomjerite. Koristite ručke za promjenu veličine.</sys:String>
+    <sys:String x:Key="LocOverlayHintEdit">Odaberite alate za anotiranje. Koristite Poništi/Ponovi po potrebi.</sys:String>
+    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Otkaži, Enter: Potvrdi, Ctrl+Z: Poništi, Ctrl+Y: Ponovi</sys:String>
+
+    <!-- Text Input -->
+    <sys:String x:Key="LocTextInputTitle">Dodaj tekst</sys:String>
+    <sys:String x:Key="LocTextInputHint">Unesite tekst koji želite staviti na snimak ekrana</sys:String>
+    <sys:String x:Key="LocTextInputFont">Vrsta fonta</sys:String>
+    <sys:String x:Key="LocTextInputSize">Veličina</sys:String>
+    <sys:String x:Key="LocTextInputBold">Podebljano</sys:String>
+    <sys:String x:Key="LocTextInputItalic">Kurziv</sys:String>
+    <sys:String x:Key="LocTextInputColor">Boja</sys:String>
+    <sys:String x:Key="LocTextInputPlace">Postavite tekst</sys:String>
+    <sys:String x:Key="LocTextInputCancel">Otkaži</sys:String>
+
+    <!-- About -->
+    <sys:String x:Key="LocAboutTitle">O Shotora</sys:String>
+    <sys:String x:Key="LocAboutVersion">Verzija</sys:String>
+    <sys:String x:Key="LocAboutCopyright">Â© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
+    <sys:String x:Key="LocAboutLinks">Linkovi</sys:String>
+    <sys:String x:Key="LocAboutWebsite">Veb-sajt</sys:String>
+    <sys:String x:Key="LocAboutLinkedIn">LinkedIn</sys:String>
+    <sys:String x:Key="LocAboutEmail">E-pošta</sys:String>
+
+    <!-- OCR Result -->
+    <sys:String x:Key="LocOcrResultTitle">Rezultat OCR</sys:String>
+    <sys:String x:Key="LocOcrResultCopy">Kopiraj</sys:String>
+    <sys:String x:Key="LocOcrResultClose">Zatvori</sys:String>
+    <sys:String x:Key="LocOcrResultHint">Prepoznati tekst</sys:String>
+
+    <!-- Notifications -->
+    <sys:String x:Key="LocNotificationCopySuccess">Kopirano u međuspremnik</sys:String>
+    <sys:String x:Key="LocNotificationSaveSuccess">Sačuvano</sys:String>
+    <sys:String x:Key="LocNotificationSaveFailed">Čuvanje nije uspjelo</sys:String>
+    <sys:String x:Key="LocNotificationUploadSuccess">Otpremeljeno</sys:String>
+    <sys:String x:Key="LocNotificationUploadFailed">Slanje nije uspjelo</sys:String>
+    <sys:String x:Key="LocNotificationOcrSuccess">OCR završen</sys:String>
+    <sys:String x:Key="LocNotificationOcrFailed">OCR nije uspio</sys:String>
+
+    <!-- Buttons -->
+    <sys:String x:Key="LocButtonSave">Sačuvaj</sys:String>
+    <sys:String x:Key="LocButtonCancel">Otkaži</sys:String>
+    <sys:String x:Key="LocButtonClose">Zatvori</sys:String>
+    <sys:String x:Key="LocButtonOK">U redu</sys:String>
+
+    <!-- Dialogs -->
+    <sys:String x:Key="LocDialogSaveTitle">Sačuvaj snimak ekrana</sys:String>
+    <sys:String x:Key="LocDialogSaveFilter">PNG datoteke|*.png|JPEG datoteke|*.jpg;*.jpeg|WebP datoteke|*.webp|Sve datoteke|*.*</sys:String>
+    <sys:String x:Key="LocDialogSaveDefaultName">Shotora.png</sys:String>
+    <sys:String x:Key="LocDialogSelectFolder">Odaberite folder</sys:String>
+    <sys:String x:Key="LocDialogConfirm">Potvrdi</sys:String>
+    <sys:String x:Key="LocDialogDelete">Obriši</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguage">Ukloniti jezičku datoteku?</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguageConfirm">Da li ste sigurni da želite ukloniti ovu jezičku datoteku?</sys:String>
+
+    <!-- Errors -->
+    <sys:String x:Key="LocErrorInvalidHotkey">Nevažeća prečica</sys:String>
+    <sys:String x:Key="LocErrorHotkeyInUse">Prečica je već u upotrebi</sys:String>
+    <sys:String x:Key="LocErrorHotkeyRegisterFailed">Registracija prečice nije uspjela</sys:String>
+    <sys:String x:Key="LocErrorSaveFailed">Čuvanje nije uspjelo</sys:String>
+    <sys:String x:Key="LocErrorOcrFailed">OCR nije uspio</sys:String>
+    <sys:String x:Key="LocErrorInvalidSelection">Nevažeći odabir</sys:String>
+    <sys:String x:Key="LocErrorNoSelection">Nema odabira</sys:String>
+    <sys:String x:Key="LocErrorTextEmpty">Tekst je prazan</sys:String>
+
+    <sys:String x:Key="LocMainTitle">Shotora</sys:String>
+    <sys:String x:Key="LocMainHint1">Koristite ikonu u sistemskoj traci ili globalne prečice za snimanje.</sys:String>
+    <sys:String x:Key="LocMainHint2">Ovaj prozor je opcionalan; zatvorite ga da Shotora ostane aktivna u traci.</sys:String>
+
+    <sys:String x:Key="LocAboutSubtitle">Snimanje ekrana i označavanje</sys:String>
+    <sys:String x:Key="LocAboutDescription">Brzi snimci ekrana, označavanje, OCR i otpremanje uz Shotora.</sys:String>
+    <sys:String x:Key="LocAboutLicense">Licenca</sys:String>
+    <sys:String x:Key="LocAboutAuthor">Autor</sys:String>
+    <sys:String x:Key="LocAboutRole">Uloga</sys:String>
+    <sys:String x:Key="LocAboutContact">Kontakt</sys:String>
+    <sys:String x:Key="LocAboutContactIntro">Javite se za povratne informacije ili saradnju.</sys:String>
+</ResourceDictionary>

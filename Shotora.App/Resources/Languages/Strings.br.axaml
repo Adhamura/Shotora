@@ -1,0 +1,255 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <!-- Settings -->
+    <sys:String x:Key="LocSettingsTitle">Arventennoù</sys:String>
+    <sys:String x:Key="LocSettingsStorage">Stokaj</sys:String>
+    <sys:String x:Key="LocSettingsDefaultFolder">Teuliad dre ziouer</sys:String>
+    <sys:String x:Key="LocSettingsBrowse">Furchal</sys:String>
+    <sys:String x:Key="LocSettingsDefaultFormat">Furmad dre ziouer</sys:String>
+    <sys:String x:Key="LocSettingsJpegQuality">Kwalite JPEG</sys:String>
+    <sys:String x:Key="LocSettingsFilenamePattern">Patrom anv restr</sys:String>
+    <sys:String x:Key="LocSettingsOcr">OCR</sys:String>
+    <sys:String x:Key="LocSettingsProvider">Pourvezer</sys:String>
+    <sys:String x:Key="LocSettingsLanguages">Yezhoù</sys:String>
+    <sys:String x:Key="LocSettingsEasyOcrHint">EasyOCR a goulenn Python + 'pip install easyocr'</sys:String>
+    <sys:String x:Key="LocSettingsTesseractFiles">Restroù yezh Tesseract</sys:String>
+    <sys:String x:Key="LocSettingsSelectLanguage">Dibab ar yezh</sys:String>
+    <sys:String x:Key="LocSettingsDownload">Pellgargañ</sys:String>
+    <sys:String x:Key="LocSettingsDelete">Dilemel</sys:String>
+    <sys:String x:Key="LocSettingsHotkeys">Berradennoù</sys:String>
+    <sys:String x:Key="LocSettingsRegionHotkey">Pakañ ur rann</sys:String>
+    <sys:String x:Key="LocSettingsFullscreenHotkey">Skramm a-bezh</sys:String>
+    <sys:String x:Key="LocSettingsActiveWindowHotkey">Prenestr oberiant</sys:String>
+    <sys:String x:Key="LocSettingsGeneral">Hollek</sys:String>
+    <sys:String x:Key="LocSettingsTheme">Gwiskadur</sys:String>
+    <sys:String x:Key="LocSettingsDisplayLanguage">Yezh diskouez</sys:String>
+    <sys:String x:Key="LocSettingsRunOnStartup">Lancer da zeroù</sys:String>
+    <sys:String x:Key="LocSettingsTabMain">Pennañ</sys:String>
+    <sys:String x:Key="LocSettingsTabHotkeys">Berradennoù</sys:String>
+    <sys:String x:Key="LocSettingsTabEditor">Embanner</sys:String>
+    <sys:String x:Key="LocSettingsEditorHotkeys">Berradennoù an embanner</sys:String>
+    <sys:String x:Key="LocSettingsEditorMouse">Logodenn an embanner</sys:String>
+    <sys:String x:Key="LocSettingsCopyCloseMouse">Kopiañ + serriñ</sys:String>
+    <sys:String x:Key="LocSettingsMoveSelectionMouse">Dilec'hiañ an diuzad</sys:String>
+    <sys:String x:Key="LocSettingsEditorIcons">Skeudennoù an embanner</sys:String>
+    <sys:String x:Key="LocSettingsEditorOptions">Dibarzhioù an embanner</sys:String>
+    <sys:String x:Key="LocSettingsShowThicknessSlider">Diskouez ar ruser tevder</sys:String>
+    <sys:String x:Key="LocSettingsDefaultThickness">Tevder dre ziouer</sys:String>
+    <sys:String x:Key="LocSettingsShowColorPalette">Diskouez al livaoueg</sys:String>
+    <sys:String x:Key="LocSettingsDefaultColor">Liv dre ziouer</sys:String>
+    <sys:String x:Key="LocSettingsPickColor">Dibab</sys:String>
+    <sys:String x:Key="LocSettingsDefaultColorHint">Implijet pa vez al livaoueg kuzhet.</sys:String>
+    <sys:String x:Key="LocSettingsUsePointer">Implij ar pokaz</sys:String>
+    <sys:String x:Key="LocSettingsShowUndo">Diskouez dizober</sys:String>
+    <sys:String x:Key="LocSettingsShowRedo">Diskouez adober</sys:String>
+    <sys:String x:Key="LocSettingsShowCopy">Diskouez kopiañ</sys:String>
+    <sys:String x:Key="LocSettingsShowSave">Diskouez enrollañ</sys:String>
+    <sys:String x:Key="LocSettingsShowUpload">Diskouez kargañ</sys:String>
+    <sys:String x:Key="LocSettingsShowOcr">Diskouez OCR</sys:String>
+    <sys:String x:Key="LocSettingsShowCancel">Diskouez nullañ</sys:String>
+    <sys:String x:Key="LocSettingsShowConfirm">Diskouez kadarnaat</sys:String>
+    <sys:String x:Key="LocSettingsShowClose">Diskouez serriñ</sys:String>
+    <sys:String x:Key="LocSettingsShowSelection">Diskouez ar dibab</sys:String>
+    <sys:String x:Key="LocSettingsShowMove">Diskouez dilec'hiañ</sys:String>
+    <sys:String x:Key="LocSettingsShowPen">Diskouez kreion</sys:String>
+    <sys:String x:Key="LocSettingsShowLine">Diskouez linenn</sys:String>
+    <sys:String x:Key="LocSettingsShowArrow">Diskouez saezh</sys:String>
+    <sys:String x:Key="LocSettingsShowRectangle">Diskouez skizwenn</sys:String>
+    <sys:String x:Key="LocSettingsShowEllipse">Diskouez elipsenn</sys:String>
+    <sys:String x:Key="LocSettingsShowText">Diskouez testenn</sys:String>
+    <sys:String x:Key="LocSettingsShowHighlight">Diskouez uskelaouiñ</sys:String>
+    <sys:String x:Key="LocSettingsShowBlur">Diskouez ruzer</sys:String>
+    <sys:String x:Key="LocSettingsShowPixelate">Diskouez pikselañ</sys:String>
+    <sys:String x:Key="LocSettingsShowThickness">Diskouez tevder</sys:String>
+    <sys:String x:Key="LocSettingsShowColors">Diskouez livioù</sys:String>
+    <sys:String x:Key="LocSettingsShowCrosshair">Diskouez krugazh</sys:String>
+    <sys:String x:Key="LocSettingsShowResizeHandles">Diskouez tielladennoù adalleviñ</sys:String>
+    <sys:String x:Key="LocSettingsShowToolbar">Diskouez barrez ostilhoù</sys:String>
+    <sys:String x:Key="LocSettingsShowPalette">Diskouez palet</sys:String>
+    <sys:String x:Key="LocSettingsShowPreview">Diskouez gwelladenn</sys:String>
+    <sys:String x:Key="LocSettingsShowMiniMap">Diskouez micro-barzh</sys:String>
+    <sys:String x:Key="LocSettingsShowSelectionSize">Diskouez ment ar dibab</sys:String>
+    <sys:String x:Key="LocSettingsShowSelectionPosition">Diskouez lec'h ar dibab</sys:String>
+
+    <!-- Common -->
+    <sys:String x:Key="LocCommonClose">Serriñ</sys:String>
+
+    <!-- Tools -->
+    <sys:String x:Key="LocToolSelect">Dibab</sys:String>
+    <sys:String x:Key="LocToolRegion">Dibab ur rann</sys:String>
+    <sys:String x:Key="LocToolMove">Dilec'hiañ ar rann</sys:String>
+    <sys:String x:Key="LocToolPen">Kreion</sys:String>
+    <sys:String x:Key="LocToolLine">Linenn</sys:String>
+    <sys:String x:Key="LocToolArrow">Saezh</sys:String>
+    <sys:String x:Key="LocToolRect">Skizwenn</sys:String>
+    <sys:String x:Key="LocToolEllipse">Elipsenn</sys:String>
+    <sys:String x:Key="LocToolText">Testenn</sys:String>
+    <sys:String x:Key="LocToolHighlight">Uskelaouiñ</sys:String>
+    <sys:String x:Key="LocToolBlur">Ruzer</sys:String>
+    <sys:String x:Key="LocToolPixelate">Pikselañ</sys:String>
+    <sys:String x:Key="LocToolSaveAs">Enrollañ evel</sys:String>
+    <sys:String x:Key="LocToolCopy">Kopiañ</sys:String>
+    <sys:String x:Key="LocToolUpload">Kargañ</sys:String>
+    <sys:String x:Key="LocToolCancel">Nullañ</sys:String>
+    <sys:String x:Key="LocToolColors">Livoù</sys:String>
+    <sys:String x:Key="LocToolThickness">Tevder</sys:String>
+    <sys:String x:Key="LocToolUndo">Dizober</sys:String>
+    <sys:String x:Key="LocToolRedo">Adober</sys:String>
+
+    <sys:String x:Key="LocSettingsRegionHotkeyPlaceholder">Peuzh klavier...</sys:String>
+    <sys:String x:Key="LocSettingsFullscreenHotkeyPlaceholder">Peuzh klavier...</sys:String>
+    <sys:String x:Key="LocSettingsActiveWindowHotkeyPlaceholder">Peuzh klavier...</sys:String>
+    <sys:String x:Key="LocSettingsEditorUndoHotkey">Dizober</sys:String>
+    <sys:String x:Key="LocSettingsEditorUndoHotkeyPlaceholder">Ctrl+Z</sys:String>
+    <sys:String x:Key="LocSettingsEditorRedoHotkey">Adober</sys:String>
+    <sys:String x:Key="LocSettingsEditorRedoHotkeyPlaceholder">Ctrl+Y</sys:String>
+    <sys:String x:Key="LocSettingsEditorCopyHotkey">Kopiañ</sys:String>
+    <sys:String x:Key="LocSettingsEditorCopyHotkeyPlaceholder">Ctrl+C</sys:String>
+    <sys:String x:Key="LocSettingsEditorSaveHotkey">Enrollañ</sys:String>
+    <sys:String x:Key="LocSettingsEditorSaveHotkeyPlaceholder">Ctrl+S</sys:String>
+
+    <sys:String x:Key="LocSettingsOcrSettings">Arventennoù OCR</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstall">Enrollañ EasyOCR</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemove">Dilemel EasyOCR</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrStatus">Statud</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstalled">Enrollaet</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrNotInstalled">N'eo ket enrollaet</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstalling">O enrollañ...</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemoving">O dilemel...</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstallFailed">Enrollañ faill</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemoveFailed">Dilemel faill</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstallLang">Enrollañ</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoveLang">Dilemel</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstalled">Enrollaet</sys:String>
+    <sys:String x:Key="LocSettingsOcrNotInstalled">N'eo ket enrollaet</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstalling">O enrollañ...</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoving">O dilemel...</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstallFailed">Enrollañ faill</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoveFailed">Dilemel faill</sys:String>
+    <sys:String x:Key="LocSettingsOcrDownloadProgress">Kentelerezh ar pellgargañ</sys:String>
+    <sys:String x:Key="LocSettingsOcrBytes">Octet</sys:String>
+    <sys:String x:Key="LocSettingsOcrLicense">Aotreez</sys:String>
+    <sys:String x:Key="LocSettingsOcrLicenseLink">https://github.com/JaidedAI/EasyOCR/blob/master/LICENSE</sys:String>
+    <sys:String x:Key="LocSettingsOcrTesseractLangs">Yezhoù Tesseract</sys:String>
+    <sys:String x:Key="LocSettingsOcrTesseractHint">Pellgargañ yezhoù Tesseract ouzhpenn amañ.</sys:String>
+
+    <sys:String x:Key="LocSettingsExamplesTitle">Esaouennoù</sys:String>
+    <sys:String x:Key="LocSettingsExamplesDescription">Gwiriañ skeudennoù meroulen er gwiskad breman.</sys:String>
+    <sys:String x:Key="LocSettingsExamplesFormat">Furmad</sys:String>
+    <sys:String x:Key="LocSettingsExamplesEffects">Skeudennoù</sys:String>
+    <sys:String x:Key="LocSettingsExamplesShape">Form</sys:String>
+    <sys:String x:Key="LocSettingsExamplesIcon">Ikoon</sys:String>
+
+    <!-- Tray -->
+    <sys:String x:Key="LocTrayCaptureRegion">Pakañ ur rann</sys:String>
+    <sys:String x:Key="LocTrayCaptureFull">Pakañ ar skramm a-bezh</sys:String>
+    <sys:String x:Key="LocTraySettings">Arventennoù</sys:String>
+    <sys:String x:Key="LocTrayAbout">A-zivout</sys:String>
+    <sys:String x:Key="LocTrayExit">Kuitaat</sys:String>
+
+    <!-- Overlay -->
+    <sys:String x:Key="LocOverlayCopy">Kopiañ</sys:String>
+    <sys:String x:Key="LocOverlaySave">Enrollañ</sys:String>
+    <sys:String x:Key="LocOverlayUpload">Kargañ</sys:String>
+    <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
+    <sys:String x:Key="LocOverlayCancel">Nullañ</sys:String>
+    <sys:String x:Key="LocOverlayConfirm">Kadarnaat</sys:String>
+    <sys:String x:Key="LocOverlayClose">Serriñ</sys:String>
+    <sys:String x:Key="LocOverlaySelection">Dibab</sys:String>
+    <sys:String x:Key="LocOverlayMove">Dilec'hiañ</sys:String>
+    <sys:String x:Key="LocOverlayPointer">Pokaz</sys:String>
+    <sys:String x:Key="LocOverlayPen">Kreion</sys:String>
+    <sys:String x:Key="LocOverlayLine">Linenn</sys:String>
+    <sys:String x:Key="LocOverlayArrow">Saezh</sys:String>
+    <sys:String x:Key="LocOverlayRectangle">Skizwenn</sys:String>
+    <sys:String x:Key="LocOverlayEllipse">Elipsenn</sys:String>
+    <sys:String x:Key="LocOverlayText">Testenn</sys:String>
+    <sys:String x:Key="LocOverlayHighlight">Uskelaouiñ</sys:String>
+    <sys:String x:Key="LocOverlayBlur">Ruzer</sys:String>
+    <sys:String x:Key="LocOverlayPixelate">Pikselañ</sys:String>
+    <sys:String x:Key="LocOverlayThickness">Tevder</sys:String>
+    <sys:String x:Key="LocOverlayColors">Livoù</sys:String>
+    <sys:String x:Key="LocOverlayPosition">Lec'h</sys:String>
+    <sys:String x:Key="LocOverlaySize">Ment</sys:String>
+    <sys:String x:Key="LocOverlayWidth">L</sys:String>
+    <sys:String x:Key="LocOverlayHeight">H</sys:String>
+    <sys:String x:Key="LocOverlayPickColor">Dabariñ liv</sys:String>
+    <sys:String x:Key="LocOverlayHintDraw">Klikañ ha plijañ evit sevel. Implij barrez ostilhoù evit ar modioù.</sys:String>
+    <sys:String x:Key="LocOverlayHintMove">Taol da gerc'hat ar dibab. Implij tielladennoù evit adalleviñ.</sys:String>
+    <sys:String x:Key="LocOverlayHintEdit">Dibabiñ ostilhoù evit annozañ. Implij Dizober/Adober ma vez ezhomm.</sys:String>
+    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Nullañ, Enter: Kadarnaat, Ctrl+Z: Dizober, Ctrl+Y: Adober</sys:String>
+
+    <!-- Text Input -->
+    <sys:String x:Key="LocTextInputTitle">Ouzhpennañ testenn</sys:String>
+    <sys:String x:Key="LocTextInputHint">Tremen testenn da lakaat war skeudenn</sys:String>
+    <sys:String x:Key="LocTextInputFont">Furmad</sys:String>
+    <sys:String x:Key="LocTextInputSize">Ment</sys:String>
+    <sys:String x:Key="LocTextInputBold">Mar</sys:String>
+    <sys:String x:Key="LocTextInputItalic">Skraok</sys:String>
+    <sys:String x:Key="LocTextInputColor">Liv</sys:String>
+    <sys:String x:Key="LocTextInputPlace">Lakaat an testenn</sys:String>
+    <sys:String x:Key="LocTextInputCancel">Nullañ</sys:String>
+
+    <!-- About -->
+    <sys:String x:Key="LocAboutTitle">A-zivout Shotora</sys:String>
+    <sys:String x:Key="LocAboutVersion">Stumm</sys:String>
+    <sys:String x:Key="LocAboutCopyright">Â© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
+    <sys:String x:Key="LocAboutLinks">Liamm</sys:String>
+    <sys:String x:Key="LocAboutWebsite">Gwerennadenn</sys:String>
+    <sys:String x:Key="LocAboutLinkedIn">LinkedIn</sys:String>
+    <sys:String x:Key="LocAboutEmail">Postel</sys:String>
+
+    <!-- OCR Result -->
+    <sys:String x:Key="LocOcrResultTitle">Disoc'h OCR</sys:String>
+    <sys:String x:Key="LocOcrResultCopy">Kopiañ</sys:String>
+    <sys:String x:Key="LocOcrResultClose">Serriñ</sys:String>
+    <sys:String x:Key="LocOcrResultHint">Testenn anavezhet</sys:String>
+
+    <!-- Notifications -->
+    <sys:String x:Key="LocNotificationCopySuccess">Kopiaet d'an daskom</sys:String>
+    <sys:String x:Key="LocNotificationSaveSuccess">Enrollaet</sys:String>
+    <sys:String x:Key="LocNotificationSaveFailed">Enrollañ faill</sys:String>
+    <sys:String x:Key="LocNotificationUploadSuccess">Kargañet</sys:String>
+    <sys:String x:Key="LocNotificationUploadFailed">Kargañ faill</sys:String>
+    <sys:String x:Key="LocNotificationOcrSuccess">OCR echu</sys:String>
+    <sys:String x:Key="LocNotificationOcrFailed">OCR faill</sys:String>
+
+    <!-- Buttons -->
+    <sys:String x:Key="LocButtonSave">Enrollañ</sys:String>
+    <sys:String x:Key="LocButtonCancel">Nullañ</sys:String>
+    <sys:String x:Key="LocButtonClose">Serriñ</sys:String>
+    <sys:String x:Key="LocButtonOK">Mat</sys:String>
+
+    <!-- Dialogs -->
+    <sys:String x:Key="LocDialogSaveTitle">Enrollañ skeudiad skramm</sys:String>
+    <sys:String x:Key="LocDialogSaveFilter">Ficheroù PNG|*.png|Ficheroù JPEG|*.jpg;*.jpeg|Ficheroù WebP|*.webp|Brestroù holl|*.*</sys:String>
+    <sys:String x:Key="LocDialogSaveDefaultName">Shotora.png</sys:String>
+    <sys:String x:Key="LocDialogSelectFolder">Dibab teuliad</sys:String>
+    <sys:String x:Key="LocDialogConfirm">Kadarnaat</sys:String>
+    <sys:String x:Key="LocDialogDelete">Dilemel</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguage">Dilemel ar restr yezh?</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguageConfirm">Ha sur oc'h e fell deoc'h dilemel ar restr yezh-mañ?</sys:String>
+
+    <!-- Errors -->
+    <sys:String x:Key="LocErrorInvalidHotkey">Berrad direizh</sys:String>
+    <sys:String x:Key="LocErrorHotkeyInUse">Berrad implijet</sys:String>
+    <sys:String x:Key="LocErrorHotkeyRegisterFailed">N'en deus ket enrollet ar berrad</sys:String>
+    <sys:String x:Key="LocErrorSaveFailed">Fail enrollañ</sys:String>
+    <sys:String x:Key="LocErrorOcrFailed">OCR faill</sys:String>
+    <sys:String x:Key="LocErrorInvalidSelection">Dibab direizh</sys:String>
+    <sys:String x:Key="LocErrorNoSelection">N'eo ket bet dibabet</sys:String>
+    <sys:String x:Key="LocErrorTextEmpty">Testenn goueze</sys:String>
+
+    <sys:String x:Key="LocMainTitle">Shotora</sys:String>
+    <sys:String x:Key="LocMainHint1">Implij an diviz er trening-dindan pe berradennoù hollek evit lakaat war-raok.</sys:String>
+    <sys:String x:Key="LocMainHint2">Kuzhet eo ar prenestr-mañ ma fell deoc'h en em goll en trell.</sys:String>
+
+    <sys:String x:Key="LocAboutSubtitle">Tapadenn skramm ha notennoù</sys:String>
+    <sys:String x:Key="LocAboutDescription">Skeudennoù-skramm prim, notennoù, OCR ha kas war ar genrouedad gant Shotora.</sys:String>
+    <sys:String x:Key="LocAboutLicense">Aotre-implijout</sys:String>
+    <sys:String x:Key="LocAboutAuthor">Aozer</sys:String>
+    <sys:String x:Key="LocAboutRole">Perzh</sys:String>
+    <sys:String x:Key="LocAboutContact">Darempred</sys:String>
+    <sys:String x:Key="LocAboutContactIntro">Darempredit evit ho evezhiadennoù pe evit kenlabourat.</sys:String>
+</ResourceDictionary>

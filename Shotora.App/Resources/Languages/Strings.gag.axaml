@@ -1,0 +1,255 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <!-- Settings -->
+    <sys:String x:Key="LocSettingsTitle">Ayarlar</sys:String>
+    <sys:String x:Key="LocSettingsStorage">Depo</sys:String>
+    <sys:String x:Key="LocSettingsDefaultFolder">Sıradakı klasör</sys:String>
+    <sys:String x:Key="LocSettingsBrowse">Bakmaa</sys:String>
+    <sys:String x:Key="LocSettingsDefaultFormat">Sıradakı format</sys:String>
+    <sys:String x:Key="LocSettingsJpegQuality">JPEG kalitesi</sys:String>
+    <sys:String x:Key="LocSettingsFilenamePattern">Dosya adı deseni</sys:String>
+    <sys:String x:Key="LocSettingsOcr">OCR</sys:String>
+    <sys:String x:Key="LocSettingsProvider">Saalayıcı</sys:String>
+    <sys:String x:Key="LocSettingsLanguages">Diller</sys:String>
+    <sys:String x:Key="LocSettingsEasyOcrHint">EasyOCR lääzım Python + 'pip install easyocr'</sys:String>
+    <sys:String x:Key="LocSettingsTesseractFiles">Tesseract dil dosyaları</sys:String>
+    <sys:String x:Key="LocSettingsSelectLanguage">Dil seçmää</sys:String>
+    <sys:String x:Key="LocSettingsDownload">İndirmää</sys:String>
+    <sys:String x:Key="LocSettingsDelete">Delete</sys:String>
+    <sys:String x:Key="LocSettingsHotkeys">Kısayol tuşları</sys:String>
+    <sys:String x:Key="LocSettingsRegionHotkey">Bölge yakalama</sys:String>
+    <sys:String x:Key="LocSettingsFullscreenHotkey">Tam ekran</sys:String>
+    <sys:String x:Key="LocSettingsActiveWindowHotkey">Aktiv pencere</sys:String>
+    <sys:String x:Key="LocSettingsGeneral">Genel</sys:String>
+    <sys:String x:Key="LocSettingsTheme">Tema</sys:String>
+    <sys:String x:Key="LocSettingsDisplayLanguage">Görünüş dili</sys:String>
+    <sys:String x:Key="LocSettingsRunOnStartup">Başlangıçta çalıştır</sys:String>
+    <sys:String x:Key="LocSettingsTabMain">Baş</sys:String>
+    <sys:String x:Key="LocSettingsTabHotkeys">Kısayollar</sys:String>
+    <sys:String x:Key="LocSettingsTabEditor">Redaktor</sys:String>
+    <sys:String x:Key="LocSettingsEditorHotkeys">Redaktor kısayolları</sys:String>
+    <sys:String x:Key="LocSettingsEditorMouse">Redaktor mausu</sys:String>
+    <sys:String x:Key="LocSettingsCopyCloseMouse">Kopiya + kapatmaa</sys:String>
+    <sys:String x:Key="LocSettingsMoveSelectionMouse">Seçimi taşımaa</sys:String>
+    <sys:String x:Key="LocSettingsEditorIcons">Redaktor simbolları</sys:String>
+    <sys:String x:Key="LocSettingsEditorOptions">Redaktor seçenekleri</sys:String>
+    <sys:String x:Key="LocSettingsShowThicknessSlider">Kalınlık kaydırıcısını göster</sys:String>
+    <sys:String x:Key="LocSettingsDefaultThickness">Sıradakı kalınlık</sys:String>
+    <sys:String x:Key="LocSettingsShowColorPalette">Renk paletini göster</sys:String>
+    <sys:String x:Key="LocSettingsDefaultColor">Sıradakı renk</sys:String>
+    <sys:String x:Key="LocSettingsPickColor">Seç</sys:String>
+    <sys:String x:Key="LocSettingsDefaultColorHint">Renk paleti gizliykän kullanılır.</sys:String>
+    <sys:String x:Key="LocSettingsUsePointer">İmleci kullan</sys:String>
+    <sys:String x:Key="LocSettingsShowUndo">Geri al göster</sys:String>
+    <sys:String x:Key="LocSettingsShowRedo">Yeniden yap göster</sys:String>
+    <sys:String x:Key="LocSettingsShowCopy">Kopyala göster</sys:String>
+    <sys:String x:Key="LocSettingsShowSave">Kaydet göster</sys:String>
+    <sys:String x:Key="LocSettingsShowUpload">Yükle göster</sys:String>
+    <sys:String x:Key="LocSettingsShowOcr">OCR göster</sys:String>
+    <sys:String x:Key="LocSettingsShowCancel">İptal göster</sys:String>
+    <sys:String x:Key="LocSettingsShowConfirm">Onay göster</sys:String>
+    <sys:String x:Key="LocSettingsShowClose">Kapat göster</sys:String>
+    <sys:String x:Key="LocSettingsShowSelection">Seçim göster</sys:String>
+    <sys:String x:Key="LocSettingsShowMove">Taşı göster</sys:String>
+    <sys:String x:Key="LocSettingsShowPen">Kalem göster</sys:String>
+    <sys:String x:Key="LocSettingsShowLine">Çizgi göster</sys:String>
+    <sys:String x:Key="LocSettingsShowArrow">Ok göster</sys:String>
+    <sys:String x:Key="LocSettingsShowRectangle">Dikdörtgen göster</sys:String>
+    <sys:String x:Key="LocSettingsShowEllipse">Elips göster</sys:String>
+    <sys:String x:Key="LocSettingsShowText">Metin göster</sys:String>
+    <sys:String x:Key="LocSettingsShowHighlight">Vurgula göster</sys:String>
+    <sys:String x:Key="LocSettingsShowBlur">Bulanıklaştır göster</sys:String>
+    <sys:String x:Key="LocSettingsShowPixelate">Piksel göster</sys:String>
+    <sys:String x:Key="LocSettingsShowThickness">Kalınlık göster</sys:String>
+    <sys:String x:Key="LocSettingsShowColors">Renkler göster</sys:String>
+    <sys:String x:Key="LocSettingsShowCrosshair">Hassas göster</sys:String>
+    <sys:String x:Key="LocSettingsShowResizeHandles">Boyut tutacaklarını göster</sys:String>
+    <sys:String x:Key="LocSettingsShowToolbar">Araç çubuğunu göster</sys:String>
+    <sys:String x:Key="LocSettingsShowPalette">Paleti göster</sys:String>
+    <sys:String x:Key="LocSettingsShowPreview">Önizlemeyi göster</sys:String>
+    <sys:String x:Key="LocSettingsShowMiniMap">Mini harita göster</sys:String>
+    <sys:String x:Key="LocSettingsShowSelectionSize">Seçim boyutunu göster</sys:String>
+    <sys:String x:Key="LocSettingsShowSelectionPosition">Seçim konumunu göster</sys:String>
+
+    <!-- Common -->
+    <sys:String x:Key="LocCommonClose">Kapatmaa</sys:String>
+
+    <!-- Tools -->
+    <sys:String x:Key="LocToolSelect">Seçmää</sys:String>
+    <sys:String x:Key="LocToolRegion">Bölge seçmää</sys:String>
+    <sys:String x:Key="LocToolMove">Bölgeyi taşımaa</sys:String>
+    <sys:String x:Key="LocToolPen">Penet</sys:String>
+    <sys:String x:Key="LocToolLine">Liniya</sys:String>
+    <sys:String x:Key="LocToolArrow">Ok</sys:String>
+    <sys:String x:Key="LocToolRect">Dörtköşelik</sys:String>
+    <sys:String x:Key="LocToolEllipse">Elipsa</sys:String>
+    <sys:String x:Key="LocToolText">Tekst</sys:String>
+    <sys:String x:Key="LocToolHighlight">Markalamak</sys:String>
+    <sys:String x:Key="LocToolBlur">Bulanıklık</sys:String>
+    <sys:String x:Key="LocToolPixelate">Pikselleşmäk</sys:String>
+    <sys:String x:Key="LocToolSaveAs">Farklı kaydetmää</sys:String>
+    <sys:String x:Key="LocToolCopy">Kopiya</sys:String>
+    <sys:String x:Key="LocToolUpload">Yüklemää</sys:String>
+    <sys:String x:Key="LocToolCancel">Vazgeçmää</sys:String>
+    <sys:String x:Key="LocToolColors">Renkler</sys:String>
+    <sys:String x:Key="LocToolThickness">Kalınlık</sys:String>
+    <sys:String x:Key="LocToolUndo">Geeri almaa</sys:String>
+    <sys:String x:Key="LocToolRedo">Tekrar etmää</sys:String>
+
+    <sys:String x:Key="LocSettingsRegionHotkeyPlaceholder">Tuslara bas</sys:String>
+    <sys:String x:Key="LocSettingsFullscreenHotkeyPlaceholder">Tuslara bas</sys:String>
+    <sys:String x:Key="LocSettingsActiveWindowHotkeyPlaceholder">Tuslara bas</sys:String>
+    <sys:String x:Key="LocSettingsEditorUndoHotkey">Geri al</sys:String>
+    <sys:String x:Key="LocSettingsEditorUndoHotkeyPlaceholder">Ctrl+Z</sys:String>
+    <sys:String x:Key="LocSettingsEditorRedoHotkey">Yeniden yap</sys:String>
+    <sys:String x:Key="LocSettingsEditorRedoHotkeyPlaceholder">Ctrl+Y</sys:String>
+    <sys:String x:Key="LocSettingsEditorCopyHotkey">Kopyala</sys:String>
+    <sys:String x:Key="LocSettingsEditorCopyHotkeyPlaceholder">Ctrl+C</sys:String>
+    <sys:String x:Key="LocSettingsEditorSaveHotkey">Kaydet</sys:String>
+    <sys:String x:Key="LocSettingsEditorSaveHotkeyPlaceholder">Ctrl+S</sys:String>
+
+    <sys:String x:Key="LocSettingsOcrSettings">OCR Ayarlari</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstall">EasyOCR yukle</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemove">EasyOCR kaldir</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrStatus">Durum</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstalled">Yüklendi</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrNotInstalled">Yüklenmedi</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstalling">Yükleniyor...</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemoving">Kaldiriliyor...</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstallFailed">Yükleme başarısız</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemoveFailed">Kaldirma başarısız</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstallLang">Kur</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoveLang">Kaldir</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstalled">Yüklendi</sys:String>
+    <sys:String x:Key="LocSettingsOcrNotInstalled">Yüklenmedi</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstalling">Yükleniyor...</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoving">Kaldiriliyor...</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstallFailed">Yükleme başarısız</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoveFailed">Kaldirma başarısız</sys:String>
+    <sys:String x:Key="LocSettingsOcrDownloadProgress">İndirme ilerlemesi</sys:String>
+    <sys:String x:Key="LocSettingsOcrBytes">bayt</sys:String>
+    <sys:String x:Key="LocSettingsOcrLicense">Lisans</sys:String>
+    <sys:String x:Key="LocSettingsOcrLicenseLink">https://github.com/JaidedAI/EasyOCR/blob/master/LICENSE</sys:String>
+    <sys:String x:Key="LocSettingsOcrTesseractLangs">Tesseract dilleri</sys:String>
+    <sys:String x:Key="LocSettingsOcrTesseractHint">Buradan ek Tesseract dilleri indir.</sys:String>
+
+    <sys:String x:Key="LocSettingsExamplesTitle">Örneker</sys:String>
+    <sys:String x:Key="LocSettingsExamplesDescription">Şimdiki tema içinde örnek ikonları ön gösterim</sys:String>
+    <sys:String x:Key="LocSettingsExamplesFormat">Format</sys:String>
+    <sys:String x:Key="LocSettingsExamplesEffects">Efektler</sys:String>
+    <sys:String x:Key="LocSettingsExamplesShape">Şekil</sys:String>
+    <sys:String x:Key="LocSettingsExamplesIcon">İkon</sys:String>
+
+    <!-- Tray -->
+    <sys:String x:Key="LocTrayCaptureRegion">Bölge Yakala</sys:String>
+    <sys:String x:Key="LocTrayCaptureFull">Tam Ekran Yakala</sys:String>
+    <sys:String x:Key="LocTraySettings">Ayarlar</sys:String>
+    <sys:String x:Key="LocTrayAbout">Hakkında</sys:String>
+    <sys:String x:Key="LocTrayExit">Çıkmaa</sys:String>
+
+    <!-- Overlay -->
+    <sys:String x:Key="LocOverlayCopy">Kopyala</sys:String>
+    <sys:String x:Key="LocOverlaySave">Kaydet</sys:String>
+    <sys:String x:Key="LocOverlayUpload">Yükle</sys:String>
+    <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
+    <sys:String x:Key="LocOverlayCancel">İptal</sys:String>
+    <sys:String x:Key="LocOverlayConfirm">Onayla</sys:String>
+    <sys:String x:Key="LocOverlayClose">Kapat</sys:String>
+    <sys:String x:Key="LocOverlaySelection">Seçim</sys:String>
+    <sys:String x:Key="LocOverlayMove">Taşı</sys:String>
+    <sys:String x:Key="LocOverlayPointer">İmleç</sys:String>
+    <sys:String x:Key="LocOverlayPen">Kalem</sys:String>
+    <sys:String x:Key="LocOverlayLine">Çizgi</sys:String>
+    <sys:String x:Key="LocOverlayArrow">Ok</sys:String>
+    <sys:String x:Key="LocOverlayRectangle">Dikdörtgen</sys:String>
+    <sys:String x:Key="LocOverlayEllipse">Elips</sys:String>
+    <sys:String x:Key="LocOverlayText">Metin</sys:String>
+    <sys:String x:Key="LocOverlayHighlight">Vurgula</sys:String>
+    <sys:String x:Key="LocOverlayBlur">Bulanık</sys:String>
+    <sys:String x:Key="LocOverlayPixelate">Pikselize et</sys:String>
+    <sys:String x:Key="LocOverlayThickness">Kalınlık</sys:String>
+    <sys:String x:Key="LocOverlayColors">Renkler</sys:String>
+    <sys:String x:Key="LocOverlayPosition">Konum</sys:String>
+    <sys:String x:Key="LocOverlaySize">Boyut</sys:String>
+    <sys:String x:Key="LocOverlayWidth">G</sys:String>
+    <sys:String x:Key="LocOverlayHeight">Y</sys:String>
+    <sys:String x:Key="LocOverlayPickColor">Renk seç</sys:String>
+    <sys:String x:Key="LocOverlayHintDraw">Çizmek için tıkla ve sürükle. Araçlar için araç çubuğunu kullan.</sys:String>
+    <sys:String x:Key="LocOverlayHintMove">Hareket ettirmek için seçimin içine sürükle. Boyutlandırmak için tutacakları kullan.</sys:String>
+    <sys:String x:Key="LocOverlayHintEdit">Ek açıklama yapmak için araçları seç. Gerekirse Geri Al/Yeniden Yap kullan.</sys:String>
+    <sys:String x:Key="LocOverlayHintKeyboard">Esc: İptal, Enter: Onayla, Ctrl+Z: Geri Al, Ctrl+Y: Yeniden Yap</sys:String>
+
+    <!-- Text Input -->
+    <sys:String x:Key="LocTextInputTitle">Metin ekle</sys:String>
+    <sys:String x:Key="LocTextInputHint">Ekran görüntüsüne koymak için metin gir</sys:String>
+    <sys:String x:Key="LocTextInputFont">Yazı tipi</sys:String>
+    <sys:String x:Key="LocTextInputSize">Boyut</sys:String>
+    <sys:String x:Key="LocTextInputBold">Kalın</sys:String>
+    <sys:String x:Key="LocTextInputItalic">İtalik</sys:String>
+    <sys:String x:Key="LocTextInputColor">Renk</sys:String>
+    <sys:String x:Key="LocTextInputPlace">Metin koy</sys:String>
+    <sys:String x:Key="LocTextInputCancel">İptal</sys:String>
+
+    <!-- About -->
+    <sys:String x:Key="LocAboutTitle">Shotora Hakkında</sys:String>
+    <sys:String x:Key="LocAboutVersion">Versiya</sys:String>
+    <sys:String x:Key="LocAboutCopyright">Â© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
+    <sys:String x:Key="LocAboutLinks">Linkler</sys:String>
+    <sys:String x:Key="LocAboutWebsite">Web sitesi</sys:String>
+    <sys:String x:Key="LocAboutLinkedIn">LinkedIn</sys:String>
+    <sys:String x:Key="LocAboutEmail">E-posta</sys:String>
+
+    <!-- OCR Result -->
+    <sys:String x:Key="LocOcrResultTitle">OCR Sonucu</sys:String>
+    <sys:String x:Key="LocOcrResultCopy">Kopyala</sys:String>
+    <sys:String x:Key="LocOcrResultClose">Kapat</sys:String>
+    <sys:String x:Key="LocOcrResultHint">Tanımlanan metin</sys:String>
+
+    <!-- Notifications -->
+    <sys:String x:Key="LocNotificationCopySuccess">Panoya kopyalandı</sys:String>
+    <sys:String x:Key="LocNotificationSaveSuccess">Kaydedildi</sys:String>
+    <sys:String x:Key="LocNotificationSaveFailed">Kaydetme başarısız</sys:String>
+    <sys:String x:Key="LocNotificationUploadSuccess">Yüklendi</sys:String>
+    <sys:String x:Key="LocNotificationUploadFailed">Yükleme başarısız</sys:String>
+    <sys:String x:Key="LocNotificationOcrSuccess">OCR tamamlandı</sys:String>
+    <sys:String x:Key="LocNotificationOcrFailed">OCR başarısız</sys:String>
+
+    <!-- Buttons -->
+    <sys:String x:Key="LocButtonSave">Kaydet</sys:String>
+    <sys:String x:Key="LocButtonCancel">İptal</sys:String>
+    <sys:String x:Key="LocButtonClose">Kapat</sys:String>
+    <sys:String x:Key="LocButtonOK">OK</sys:String>
+
+    <!-- Dialogs -->
+    <sys:String x:Key="LocDialogSaveTitle">Ekran görüntüsünü kaydet</sys:String>
+    <sys:String x:Key="LocDialogSaveFilter">PNG Dosyaları|*.png|JPEG Dosyaları|*.jpg;*.jpeg|WebP Dosyaları|*.webp|Tüm Dosyalar|*.*</sys:String>
+    <sys:String x:Key="LocDialogSaveDefaultName">Shotora.png</sys:String>
+    <sys:String x:Key="LocDialogSelectFolder">Klasör seç</sys:String>
+    <sys:String x:Key="LocDialogConfirm">Onayla</sys:String>
+    <sys:String x:Key="LocDialogDelete">Sil</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguage">Dil dosyasını kaldır?</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguageConfirm">Bu dil dosyasını kaldırmak istediğinizden emin misiniz?</sys:String>
+
+    <!-- Errors -->
+    <sys:String x:Key="LocErrorInvalidHotkey">Geçersiz kısayol</sys:String>
+    <sys:String x:Key="LocErrorHotkeyInUse">Kısayol zaten kullanımda</sys:String>
+    <sys:String x:Key="LocErrorHotkeyRegisterFailed">Kısayol kaydı başarısız</sys:String>
+    <sys:String x:Key="LocErrorSaveFailed">Kaydetme başarısız</sys:String>
+    <sys:String x:Key="LocErrorOcrFailed">OCR başarısız</sys:String>
+    <sys:String x:Key="LocErrorInvalidSelection">Geçersiz seçim</sys:String>
+    <sys:String x:Key="LocErrorNoSelection">Seçim yok</sys:String>
+    <sys:String x:Key="LocErrorTextEmpty">Metin boş</sys:String>
+
+    <sys:String x:Key="LocMainTitle">Shotora</sys:String>
+    <sys:String x:Key="LocMainHint1">Yakalama uchun bildirim çubuğundaki simgeyi veya genel kısayolları kullan.</sys:String>
+    <sys:String x:Key="LocMainHint2">Bu pencere isteğe bağlıdır; Shotora'nın bildirim çubuğunda çalışmaya devam etmesi için kapat.</sys:String>
+
+    <sys:String x:Key="LocAboutSubtitle">Ekran alı̌p yazma ve not tutma</sys:String>
+    <sys:String x:Key="LocAboutDescription">Tez ekran görüntüleri, notlar, OCR ve Shotora ile yükləmə.</sys:String>
+    <sys:String x:Key="LocAboutLicense">Lisans</sys:String>
+    <sys:String x:Key="LocAboutAuthor">Yazarı</sys:String>
+    <sys:String x:Key="LocAboutRole">Rol</sys:String>
+    <sys:String x:Key="LocAboutContact">Baǵlantı</sys:String>
+    <sys:String x:Key="LocAboutContactIntro">Fikir ya da işbirliği içün ulaşı̌n.</sys:String>
+</ResourceDictionary>

@@ -1,0 +1,255 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <!-- Settings -->
+    <sys:String x:Key="LocSettingsTitle">Gosodiadau</sys:String>
+    <sys:String x:Key="LocSettingsStorage">Storio</sys:String>
+    <sys:String x:Key="LocSettingsDefaultFolder">Ffolder rhagosodedig</sys:String>
+    <sys:String x:Key="LocSettingsBrowse">Pori</sys:String>
+    <sys:String x:Key="LocSettingsDefaultFormat">Fformat rhagosodedig</sys:String>
+    <sys:String x:Key="LocSettingsJpegQuality">Ansawdd JPEG</sys:String>
+    <sys:String x:Key="LocSettingsFilenamePattern">Patrwm enw ffeil</sys:String>
+    <sys:String x:Key="LocSettingsOcr">Adnabod testun</sys:String>
+    <sys:String x:Key="LocSettingsProvider">Darparwr</sys:String>
+    <sys:String x:Key="LocSettingsLanguages">Ieithoedd</sys:String>
+    <sys:String x:Key="LocSettingsEasyOcrHint">Mae EasyOCR angen Python + 'pip install easyocr'</sys:String>
+    <sys:String x:Key="LocSettingsTesseractFiles">Ffeiliau iaith Tesseract</sys:String>
+    <sys:String x:Key="LocSettingsSelectLanguage">Dewiswch iaith</sys:String>
+    <sys:String x:Key="LocSettingsDownload">Lawrlwytho</sys:String>
+    <sys:String x:Key="LocSettingsDelete">Dileu</sys:String>
+    <sys:String x:Key="LocSettingsHotkeys">Allweddi poeth</sys:String>
+    <sys:String x:Key="LocSettingsRegionHotkey">Cipio rhanbarth</sys:String>
+    <sys:String x:Key="LocSettingsFullscreenHotkey">Sgrin lawn</sys:String>
+    <sys:String x:Key="LocSettingsActiveWindowHotkey">Ffenestr weithredol</sys:String>
+    <sys:String x:Key="LocSettingsGeneral">Cyffredinol</sys:String>
+    <sys:String x:Key="LocSettingsTheme">Thema</sys:String>
+    <sys:String x:Key="LocSettingsDisplayLanguage">Iaith arddangos</sys:String>
+    <sys:String x:Key="LocSettingsRunOnStartup">Rhedeg wrth gychwyn</sys:String>
+    <sys:String x:Key="LocSettingsTabMain">Prif</sys:String>
+    <sys:String x:Key="LocSettingsTabHotkeys">Allweddi poeth</sys:String>
+    <sys:String x:Key="LocSettingsTabEditor">Golygydd</sys:String>
+    <sys:String x:Key="LocSettingsEditorHotkeys">Allweddi poeth golygydd</sys:String>
+    <sys:String x:Key="LocSettingsEditorMouse">Llygoden golygydd</sys:String>
+    <sys:String x:Key="LocSettingsCopyCloseMouse">Copïo + cau</sys:String>
+    <sys:String x:Key="LocSettingsMoveSelectionMouse">Symud dewis</sys:String>
+    <sys:String x:Key="LocSettingsEditorIcons">Eiconau golygydd</sys:String>
+    <sys:String x:Key="LocSettingsEditorOptions">Opsiynau golygydd</sys:String>
+    <sys:String x:Key="LocSettingsShowThicknessSlider">Dangos llithrydd trwch</sys:String>
+    <sys:String x:Key="LocSettingsDefaultThickness">Trwch rhagosodedig</sys:String>
+    <sys:String x:Key="LocSettingsShowColorPalette">Dangos palet lliwiau</sys:String>
+    <sys:String x:Key="LocSettingsDefaultColor">Lliw rhagosodedig</sys:String>
+    <sys:String x:Key="LocSettingsPickColor">Dewis</sys:String>
+    <sys:String x:Key="LocSettingsDefaultColorHint">Defnyddir pan fydd y palet lliwiau wedi'i guddio.</sys:String>
+    <sys:String x:Key="LocSettingsUsePointer">Defnyddiwch bwyntydd</sys:String>
+    <sys:String x:Key="LocSettingsShowUndo">Dangos Dadwneud</sys:String>
+    <sys:String x:Key="LocSettingsShowRedo">Dangos Ailwneud</sys:String>
+    <sys:String x:Key="LocSettingsShowCopy">Dangos Copi</sys:String>
+    <sys:String x:Key="LocSettingsShowSave">Dangos Cadw</sys:String>
+    <sys:String x:Key="LocSettingsShowUpload">Dangos Llwytho i fyny</sys:String>
+    <sys:String x:Key="LocSettingsShowOcr">Dangos OCR</sys:String>
+    <sys:String x:Key="LocSettingsShowCancel">Dangos Canslo</sys:String>
+    <sys:String x:Key="LocSettingsShowConfirm">Dangos Cadarnhau</sys:String>
+    <sys:String x:Key="LocSettingsShowClose">Dangos Cau</sys:String>
+    <sys:String x:Key="LocSettingsShowSelection">Dangos Dewis</sys:String>
+    <sys:String x:Key="LocSettingsShowMove">Dangos Symud</sys:String>
+    <sys:String x:Key="LocSettingsShowPen">Dangos Pen</sys:String>
+    <sys:String x:Key="LocSettingsShowLine">Dangos Llinell</sys:String>
+    <sys:String x:Key="LocSettingsShowArrow">Dangos Saeth</sys:String>
+    <sys:String x:Key="LocSettingsShowRectangle">Dangos Petryal</sys:String>
+    <sys:String x:Key="LocSettingsShowEllipse">Dangos Elips</sys:String>
+    <sys:String x:Key="LocSettingsShowText">Dangos Testun</sys:String>
+    <sys:String x:Key="LocSettingsShowHighlight">Dangos Tynnu Sylw</sys:String>
+    <sys:String x:Key="LocSettingsShowBlur">Dangos Anllynnu</sys:String>
+    <sys:String x:Key="LocSettingsShowPixelate">Dangos Pikselo</sys:String>
+    <sys:String x:Key="LocSettingsShowThickness">Dangos Trwch</sys:String>
+    <sys:String x:Key="LocSettingsShowColors">Dangos Lliwiau</sys:String>
+    <sys:String x:Key="LocSettingsShowCrosshair">Dangos Cylch Croes</sys:String>
+    <sys:String x:Key="LocSettingsShowResizeHandles">Dangos Handlenni ailfeintio</sys:String>
+    <sys:String x:Key="LocSettingsShowToolbar">Dangos Bar Offer</sys:String>
+    <sys:String x:Key="LocSettingsShowPalette">Dangos Palet</sys:String>
+    <sys:String x:Key="LocSettingsShowPreview">Dangos Rhagolwg</sys:String>
+    <sys:String x:Key="LocSettingsShowMiniMap">Dangos Micro-fap</sys:String>
+    <sys:String x:Key="LocSettingsShowSelectionSize">Dangos Maint Dewis</sys:String>
+    <sys:String x:Key="LocSettingsShowSelectionPosition">Dangos Lleoliad Dewis</sys:String>
+
+    <!-- Common -->
+    <sys:String x:Key="LocCommonClose">Cau</sys:String>
+
+    <!-- Tools -->
+    <sys:String x:Key="LocToolSelect">Dewis</sys:String>
+    <sys:String x:Key="LocToolRegion">Dewis rhanbarth</sys:String>
+    <sys:String x:Key="LocToolMove">Symud rhanbarth</sys:String>
+    <sys:String x:Key="LocToolPen">Pen</sys:String>
+    <sys:String x:Key="LocToolLine">Llinell</sys:String>
+    <sys:String x:Key="LocToolArrow">Saeth</sys:String>
+    <sys:String x:Key="LocToolRect">Petryal</sys:String>
+    <sys:String x:Key="LocToolEllipse">Elips</sys:String>
+    <sys:String x:Key="LocToolText">Testun</sys:String>
+    <sys:String x:Key="LocToolHighlight">Ulychu</sys:String>
+    <sys:String x:Key="LocToolBlur">Nifylu</sys:String>
+    <sys:String x:Key="LocToolPixelate">Picseleiddio</sys:String>
+    <sys:String x:Key="LocToolSaveAs">Cadw fel</sys:String>
+    <sys:String x:Key="LocToolCopy">Copïo</sys:String>
+    <sys:String x:Key="LocToolUpload">Llwytho i fyny</sys:String>
+    <sys:String x:Key="LocToolCancel">Canslo</sys:String>
+    <sys:String x:Key="LocToolColors">Lliwiau</sys:String>
+    <sys:String x:Key="LocToolThickness">Trwch</sys:String>
+    <sys:String x:Key="LocToolUndo">Dadwneud</sys:String>
+    <sys:String x:Key="LocToolRedo">Ailwneud</sys:String>
+
+    <sys:String x:Key="LocSettingsRegionHotkeyPlaceholder">Gwasgwch allweddion...</sys:String>
+    <sys:String x:Key="LocSettingsFullscreenHotkeyPlaceholder">Gwasgwch allweddion...</sys:String>
+    <sys:String x:Key="LocSettingsActiveWindowHotkeyPlaceholder">Gwasgwch allweddion...</sys:String>
+    <sys:String x:Key="LocSettingsEditorUndoHotkey">Dadwneud</sys:String>
+    <sys:String x:Key="LocSettingsEditorUndoHotkeyPlaceholder">Ctrl+Z</sys:String>
+    <sys:String x:Key="LocSettingsEditorRedoHotkey">Ailwneud</sys:String>
+    <sys:String x:Key="LocSettingsEditorRedoHotkeyPlaceholder">Ctrl+Y</sys:String>
+    <sys:String x:Key="LocSettingsEditorCopyHotkey">Copi</sys:String>
+    <sys:String x:Key="LocSettingsEditorCopyHotkeyPlaceholder">Ctrl+C</sys:String>
+    <sys:String x:Key="LocSettingsEditorSaveHotkey">Cadw</sys:String>
+    <sys:String x:Key="LocSettingsEditorSaveHotkeyPlaceholder">Ctrl+S</sys:String>
+
+    <sys:String x:Key="LocSettingsOcrSettings">Gosodiadau OCR</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstall">Gosod EasyOCR</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemove">Tynnu EasyOCR</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrStatus">Statws</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstalled">Wedi'i osod</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrNotInstalled">Heb ei osod</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstalling">Wrthi'n ei osod...</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemoving">Wrthi'n ei dynnu...</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstallFailed">Methiant gosod</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemoveFailed">Methiant tynnu</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstallLang">Gosod</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoveLang">Tynnu</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstalled">Wedi'i osod</sys:String>
+    <sys:String x:Key="LocSettingsOcrNotInstalled">Heb ei osod</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstalling">Wrthi'n ei osod...</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoving">Wrthi'n ei dynnu...</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstallFailed">Methiant gosod</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoveFailed">Methiant tynnu</sys:String>
+    <sys:String x:Key="LocSettingsOcrDownloadProgress">Cynnydd lawrlwytho</sys:String>
+    <sys:String x:Key="LocSettingsOcrBytes">Beitiau</sys:String>
+    <sys:String x:Key="LocSettingsOcrLicense">Trwydded</sys:String>
+    <sys:String x:Key="LocSettingsOcrLicenseLink">https://github.com/JaidedAI/EasyOCR/blob/master/LICENSE</sys:String>
+    <sys:String x:Key="LocSettingsOcrTesseractLangs">Ieithoedd Tesseract</sys:String>
+    <sys:String x:Key="LocSettingsOcrTesseractHint">Lawrlwythwch neu ychwanegwch ieithoedd Tesseract ychwanegol yma.</sys:String>
+
+    <sys:String x:Key="LocSettingsExamplesTitle">Enghreifftiau</sys:String>
+    <sys:String x:Key="LocSettingsExamplesDescription">Rhagolwg ar eiconau enghreifftiol yn y thema bresennol.</sys:String>
+    <sys:String x:Key="LocSettingsExamplesFormat">Fformat enghreifftiol</sys:String>
+    <sys:String x:Key="LocSettingsExamplesEffects">Effeithiau</sys:String>
+    <sys:String x:Key="LocSettingsExamplesShape">Siâp</sys:String>
+    <sys:String x:Key="LocSettingsExamplesIcon">Eicon</sys:String>
+
+    <!-- Tray -->
+    <sys:String x:Key="LocTrayCaptureRegion">Cipio Rhanbarth</sys:String>
+    <sys:String x:Key="LocTrayCaptureFull">Cipio Sgrin Lawn</sys:String>
+    <sys:String x:Key="LocTraySettings">Gosodiadau</sys:String>
+    <sys:String x:Key="LocTrayAbout">Ynglŷn â</sys:String>
+    <sys:String x:Key="LocTrayExit">Gadael</sys:String>
+
+    <!-- Overlay -->
+    <sys:String x:Key="LocOverlayCopy">Copïo</sys:String>
+    <sys:String x:Key="LocOverlaySave">Cadw</sys:String>
+    <sys:String x:Key="LocOverlayUpload">Llwytho i fyny</sys:String>
+    <sys:String x:Key="LocOverlayOcr">Adnabod testun</sys:String>
+    <sys:String x:Key="LocOverlayCancel">Canslo</sys:String>
+    <sys:String x:Key="LocOverlayConfirm">Cadarnhau</sys:String>
+    <sys:String x:Key="LocOverlayClose">Cau</sys:String>
+    <sys:String x:Key="LocOverlaySelection">Dewis</sys:String>
+    <sys:String x:Key="LocOverlayMove">Symud</sys:String>
+    <sys:String x:Key="LocOverlayPointer">Pwyntydd</sys:String>
+    <sys:String x:Key="LocOverlayPen">Pensil</sys:String>
+    <sys:String x:Key="LocOverlayLine">Llinell</sys:String>
+    <sys:String x:Key="LocOverlayArrow">Saeth</sys:String>
+    <sys:String x:Key="LocOverlayRectangle">Petryal</sys:String>
+    <sys:String x:Key="LocOverlayEllipse">Elips</sys:String>
+    <sys:String x:Key="LocOverlayText">Testun</sys:String>
+    <sys:String x:Key="LocOverlayHighlight">Amlygu</sys:String>
+    <sys:String x:Key="LocOverlayBlur">Anllynnu</sys:String>
+    <sys:String x:Key="LocOverlayPixelate">Pikseli</sys:String>
+    <sys:String x:Key="LocOverlayThickness">Trwch</sys:String>
+    <sys:String x:Key="LocOverlayColors">Lliwiau</sys:String>
+    <sys:String x:Key="LocOverlayPosition">Lleoliad</sys:String>
+    <sys:String x:Key="LocOverlaySize">Maint</sys:String>
+    <sys:String x:Key="LocOverlayWidth">L</sys:String>
+    <sys:String x:Key="LocOverlayHeight">U</sys:String>
+    <sys:String x:Key="LocOverlayPickColor">Dewiswch liw</sys:String>
+    <sys:String x:Key="LocOverlayHintDraw">Cliciwch a llusgo i dynnu. Defnyddiwch y bar offer ar gyfer offer.</sys:String>
+    <sys:String x:Key="LocOverlayHintMove">Tynwch o fewn y dewis i symud. Defnyddiwch handlenni i newid maint.</sys:String>
+    <sys:String x:Key="LocOverlayHintEdit">Dewiswch offer i wneud sylwadau. Defnyddiwch Dadwneud/Ailwneud os oes angen.</sys:String>
+    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Canslo, Enter: Cadarnhau, Ctrl+Z: Dadwneud, Ctrl+Y: Ailwneud</sys:String>
+
+    <!-- Text Input -->
+    <sys:String x:Key="LocTextInputTitle">Ychwanegu testun</sys:String>
+    <sys:String x:Key="LocTextInputHint">Nodwch destun i'w osod ar y sgrinlun</sys:String>
+    <sys:String x:Key="LocTextInputFont">Ffont</sys:String>
+    <sys:String x:Key="LocTextInputSize">Maint</sys:String>
+    <sys:String x:Key="LocTextInputBold">Trwm</sys:String>
+    <sys:String x:Key="LocTextInputItalic">Italog</sys:String>
+    <sys:String x:Key="LocTextInputColor">Lliw</sys:String>
+    <sys:String x:Key="LocTextInputPlace">Gosod testun</sys:String>
+    <sys:String x:Key="LocTextInputCancel">Canslo</sys:String>
+
+    <!-- About -->
+    <sys:String x:Key="LocAboutTitle">Ynglŷn ag Shotora</sys:String>
+    <sys:String x:Key="LocAboutVersion">Fersiwn</sys:String>
+    <sys:String x:Key="LocAboutCopyright">Â© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
+    <sys:String x:Key="LocAboutLinks">Dolenni</sys:String>
+    <sys:String x:Key="LocAboutWebsite">Gwefan</sys:String>
+    <sys:String x:Key="LocAboutLinkedIn">LinkedIn</sys:String>
+    <sys:String x:Key="LocAboutEmail">E-bost</sys:String>
+
+    <!-- OCR Result -->
+    <sys:String x:Key="LocOcrResultTitle">Canlyniad OCR</sys:String>
+    <sys:String x:Key="LocOcrResultCopy">Copïo</sys:String>
+    <sys:String x:Key="LocOcrResultClose">Cau</sys:String>
+    <sys:String x:Key="LocOcrResultHint">Testun a ganfuwyd</sys:String>
+
+    <!-- Notifications -->
+    <sys:String x:Key="LocNotificationCopySuccess">Wedi'i gopïo i'r clytydd</sys:String>
+    <sys:String x:Key="LocNotificationSaveSuccess">Wedi'i gadw</sys:String>
+    <sys:String x:Key="LocNotificationSaveFailed">Methiant cadw</sys:String>
+    <sys:String x:Key="LocNotificationUploadSuccess">Wedi'i lwytho i fyny</sys:String>
+    <sys:String x:Key="LocNotificationUploadFailed">Methiant llwytho i fyny</sys:String>
+    <sys:String x:Key="LocNotificationOcrSuccess">OCR wedi'i gwblhau</sys:String>
+    <sys:String x:Key="LocNotificationOcrFailed">Methiant OCR</sys:String>
+
+    <!-- Buttons -->
+    <sys:String x:Key="LocButtonSave">Cadw</sys:String>
+    <sys:String x:Key="LocButtonCancel">Canslo</sys:String>
+    <sys:String x:Key="LocButtonClose">Cau</sys:String>
+    <sys:String x:Key="LocButtonOK">Iawn</sys:String>
+
+    <!-- Dialogs -->
+    <sys:String x:Key="LocDialogSaveTitle">Cadw sgrinlun</sys:String>
+    <sys:String x:Key="LocDialogSaveFilter">Ffeiliau PNG|*.png|Ffeiliau JPEG|*.jpg;*.jpeg|Ffeiliau WebP|*.webp|Pob ffeil|*.*</sys:String>
+    <sys:String x:Key="LocDialogSaveDefaultName">Shotora.png</sys:String>
+    <sys:String x:Key="LocDialogSelectFolder">Dewiswch ffolder</sys:String>
+    <sys:String x:Key="LocDialogConfirm">Cadarnhau</sys:String>
+    <sys:String x:Key="LocDialogDelete">Dileu</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguage">Dileu ffeil iaith?</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguageConfirm">Ydych chi'n siŵr eich bod eisiau dileu'r ffeil iaith hon?</sys:String>
+
+    <!-- Errors -->
+    <sys:String x:Key="LocErrorInvalidHotkey">Allwedd gyflym annilys</sys:String>
+    <sys:String x:Key="LocErrorHotkeyInUse">Mae'r allwedd gyflym eisoes yn cael ei ddefnyddio</sys:String>
+    <sys:String x:Key="LocErrorHotkeyRegisterFailed">Methiant cofrestru'r allwedd gyflym</sys:String>
+    <sys:String x:Key="LocErrorSaveFailed">Methiant cadw</sys:String>
+    <sys:String x:Key="LocErrorOcrFailed">Methiant OCR</sys:String>
+    <sys:String x:Key="LocErrorInvalidSelection">Dewis annilys</sys:String>
+    <sys:String x:Key="LocErrorNoSelection">Dim dewis</sys:String>
+    <sys:String x:Key="LocErrorTextEmpty">Mae'r testun yn wag</sys:String>
+
+    <sys:String x:Key="LocMainTitle">Shotora</sys:String>
+    <sys:String x:Key="LocMainHint1">Defnyddiwch eicon y droriau neu allweddi byd-eang i gymryd cip.</sys:String>
+    <sys:String x:Key="LocMainHint2">Mae'r ffenestr hon yn ddewisol; cau hi i adael Shotora yn rhedeg yn y droriau.</sys:String>
+
+    <sys:String x:Key="LocAboutSubtitle">Cipio sgrin ac anotio</sys:String>
+    <sys:String x:Key="LocAboutDescription">Lluniau sgrin cyflym, nodiadau, OCR a llwytho i fyny gyda Shotora.</sys:String>
+    <sys:String x:Key="LocAboutLicense">Trwydded</sys:String>
+    <sys:String x:Key="LocAboutAuthor">Awdur</sys:String>
+    <sys:String x:Key="LocAboutRole">Rôl</sys:String>
+    <sys:String x:Key="LocAboutContact">Cyswllt</sys:String>
+    <sys:String x:Key="LocAboutContactIntro">Cysylltwch am adborth neu gydweithio.</sys:String>
+</ResourceDictionary>

@@ -1,0 +1,255 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <!-- Settings -->
+    <sys:String x:Key="LocSettingsTitle">Nastavenia</sys:String>
+    <sys:String x:Key="LocSettingsStorage">Úložisko</sys:String>
+    <sys:String x:Key="LocSettingsDefaultFolder">Predvolený priečinok</sys:String>
+    <sys:String x:Key="LocSettingsBrowse">Prehľadávať</sys:String>
+    <sys:String x:Key="LocSettingsDefaultFormat">Predvolený formát</sys:String>
+    <sys:String x:Key="LocSettingsJpegQuality">Kvalita JPEG</sys:String>
+    <sys:String x:Key="LocSettingsFilenamePattern">Vzor názvu súboru</sys:String>
+    <sys:String x:Key="LocSettingsOcr">Optické rozpoznávání znaků</sys:String>
+    <sys:String x:Key="LocSettingsProvider">Poskytovateľ</sys:String>
+    <sys:String x:Key="LocSettingsLanguages">Jazyky</sys:String>
+    <sys:String x:Key="LocSettingsEasyOcrHint">EasyOCR vyžaduje Python + 'pip install easyocr'</sys:String>
+    <sys:String x:Key="LocSettingsTesseractFiles">Jazykové súbory Tesseract</sys:String>
+    <sys:String x:Key="LocSettingsSelectLanguage">Vybrať jazyk</sys:String>
+    <sys:String x:Key="LocSettingsDownload">Stiahnuť</sys:String>
+    <sys:String x:Key="LocSettingsDelete">Smazat</sys:String>
+    <sys:String x:Key="LocSettingsHotkeys">Klávesové skratky</sys:String>
+    <sys:String x:Key="LocSettingsRegionHotkey">Snímanie oblasti</sys:String>
+    <sys:String x:Key="LocSettingsFullscreenHotkey">Celá obrazovka</sys:String>
+    <sys:String x:Key="LocSettingsActiveWindowHotkey">Aktívne okno</sys:String>
+    <sys:String x:Key="LocSettingsGeneral">Všeobecné</sys:String>
+    <sys:String x:Key="LocSettingsTheme">Téma</sys:String>
+    <sys:String x:Key="LocSettingsDisplayLanguage">Jazyk zobrazenia</sys:String>
+    <sys:String x:Key="LocSettingsRunOnStartup">Spustiť pri štarte</sys:String>
+    <sys:String x:Key="LocSettingsTabMain">Hlavné</sys:String>
+    <sys:String x:Key="LocSettingsTabHotkeys">Skratky</sys:String>
+    <sys:String x:Key="LocSettingsTabEditor">Úpravy</sys:String>
+    <sys:String x:Key="LocSettingsEditorHotkeys">Skratky editora</sys:String>
+    <sys:String x:Key="LocSettingsEditorMouse">Myš editora</sys:String>
+    <sys:String x:Key="LocSettingsCopyCloseMouse">Kopírovať + zavrieť</sys:String>
+    <sys:String x:Key="LocSettingsMoveSelectionMouse">Presunúť výber</sys:String>
+    <sys:String x:Key="LocSettingsEditorIcons">Ikony editora</sys:String>
+    <sys:String x:Key="LocSettingsEditorOptions">Možnosti editora</sys:String>
+    <sys:String x:Key="LocSettingsShowThicknessSlider">Zobraziť posuvník hrúbky</sys:String>
+    <sys:String x:Key="LocSettingsDefaultThickness">Predvolená hrúbka</sys:String>
+    <sys:String x:Key="LocSettingsShowColorPalette">Zobraziť paletu farieb</sys:String>
+    <sys:String x:Key="LocSettingsDefaultColor">Predvolená farba</sys:String>
+    <sys:String x:Key="LocSettingsPickColor">Vybrať</sys:String>
+    <sys:String x:Key="LocSettingsDefaultColorHint">Použije sa, keď je paleta farieb skrytá.</sys:String>
+    <sys:String x:Key="LocSettingsUsePointer">Použij ukazatel</sys:String>
+    <sys:String x:Key="LocSettingsShowUndo">Zobrazit Zpět</sys:String>
+    <sys:String x:Key="LocSettingsShowRedo">Zobrazit Znovu</sys:String>
+    <sys:String x:Key="LocSettingsShowCopy">Zobrazit Kopírovat</sys:String>
+    <sys:String x:Key="LocSettingsShowSave">Zobrazit Uložit</sys:String>
+    <sys:String x:Key="LocSettingsShowUpload">Zobrazit Nahrát</sys:String>
+    <sys:String x:Key="LocSettingsShowOcr">Zobrazit OCR</sys:String>
+    <sys:String x:Key="LocSettingsShowCancel">Zobrazit Zrušit</sys:String>
+    <sys:String x:Key="LocSettingsShowConfirm">Zobrazit Potvrdit</sys:String>
+    <sys:String x:Key="LocSettingsShowClose">Zobrazit Zavřít</sys:String>
+    <sys:String x:Key="LocSettingsShowSelection">Zobrazit Výběr</sys:String>
+    <sys:String x:Key="LocSettingsShowMove">Zobrazit Přesunout</sys:String>
+    <sys:String x:Key="LocSettingsShowPen">Zobrazit Pero</sys:String>
+    <sys:String x:Key="LocSettingsShowLine">Zobrazit Čáru</sys:String>
+    <sys:String x:Key="LocSettingsShowArrow">Zobrazit Šipku</sys:String>
+    <sys:String x:Key="LocSettingsShowRectangle">Zobrazit Obdélník</sys:String>
+    <sys:String x:Key="LocSettingsShowEllipse">Zobrazit Elipsu</sys:String>
+    <sys:String x:Key="LocSettingsShowText">Zobrazit Text</sys:String>
+    <sys:String x:Key="LocSettingsShowHighlight">Zobrazit Zvýraznění</sys:String>
+    <sys:String x:Key="LocSettingsShowBlur">Zobrazit Rozostření</sys:String>
+    <sys:String x:Key="LocSettingsShowPixelate">Zobrazit Pixelaci</sys:String>
+    <sys:String x:Key="LocSettingsShowThickness">Zobrazit Tloušťku</sys:String>
+    <sys:String x:Key="LocSettingsShowColors">Zobrazit Barvy</sys:String>
+    <sys:String x:Key="LocSettingsShowCrosshair">Zobrazit Naim</sys:String>
+    <sys:String x:Key="LocSettingsShowResizeHandles">Zobrazit úchyty pro změnu velikosti</sys:String>
+    <sys:String x:Key="LocSettingsShowToolbar">Zobrazit panel nástrojů</sys:String>
+    <sys:String x:Key="LocSettingsShowPalette">Zobrazit paletu</sys:String>
+    <sys:String x:Key="LocSettingsShowPreview">Zobrazit náhled</sys:String>
+    <sys:String x:Key="LocSettingsShowMiniMap">Zobrazit minikartu</sys:String>
+    <sys:String x:Key="LocSettingsShowSelectionSize">Zobrazit velikost výběru</sys:String>
+    <sys:String x:Key="LocSettingsShowSelectionPosition">Zobrazit pozici výběru</sys:String>
+
+    <!-- Common -->
+    <sys:String x:Key="LocCommonClose">Zavrieť</sys:String>
+
+    <!-- Tools -->
+    <sys:String x:Key="LocToolSelect">Vybrať</sys:String>
+    <sys:String x:Key="LocToolRegion">Výber oblasti</sys:String>
+    <sys:String x:Key="LocToolMove">Presunúť oblasť</sys:String>
+    <sys:String x:Key="LocToolPen">Pero</sys:String>
+    <sys:String x:Key="LocToolLine">Čiara</sys:String>
+    <sys:String x:Key="LocToolArrow">Šípka</sys:String>
+    <sys:String x:Key="LocToolRect">Obdĺžnik</sys:String>
+    <sys:String x:Key="LocToolEllipse">Elipsa</sys:String>
+    <sys:String x:Key="LocToolText">Přidat text</sys:String>
+    <sys:String x:Key="LocToolHighlight">Zvýraznenie</sys:String>
+    <sys:String x:Key="LocToolBlur">Rozmazanie</sys:String>
+    <sys:String x:Key="LocToolPixelate">Pixelizácia</sys:String>
+    <sys:String x:Key="LocToolSaveAs">Uložiť ako</sys:String>
+    <sys:String x:Key="LocToolCopy">Kopírovať</sys:String>
+    <sys:String x:Key="LocToolUpload">Nahrať</sys:String>
+    <sys:String x:Key="LocToolCancel">Zrušiť</sys:String>
+    <sys:String x:Key="LocToolColors">Farby</sys:String>
+    <sys:String x:Key="LocToolThickness">Hrúbka</sys:String>
+    <sys:String x:Key="LocToolUndo">Späť</sys:String>
+    <sys:String x:Key="LocToolRedo">Znovu</sys:String>
+
+    <sys:String x:Key="LocSettingsRegionHotkeyPlaceholder">Stiskněte klávesy...</sys:String>
+    <sys:String x:Key="LocSettingsFullscreenHotkeyPlaceholder">Stiskněte klávesy...</sys:String>
+    <sys:String x:Key="LocSettingsActiveWindowHotkeyPlaceholder">Stiskněte klávesy...</sys:String>
+    <sys:String x:Key="LocSettingsEditorUndoHotkey">Zpět</sys:String>
+    <sys:String x:Key="LocSettingsEditorUndoHotkeyPlaceholder">Ctrl+Z</sys:String>
+    <sys:String x:Key="LocSettingsEditorRedoHotkey">Znovu</sys:String>
+    <sys:String x:Key="LocSettingsEditorRedoHotkeyPlaceholder">Ctrl+Y</sys:String>
+    <sys:String x:Key="LocSettingsEditorCopyHotkey">Kopírovat</sys:String>
+    <sys:String x:Key="LocSettingsEditorCopyHotkeyPlaceholder">Ctrl+C</sys:String>
+    <sys:String x:Key="LocSettingsEditorSaveHotkey">Uložit</sys:String>
+    <sys:String x:Key="LocSettingsEditorSaveHotkeyPlaceholder">Ctrl+S</sys:String>
+
+    <sys:String x:Key="LocSettingsOcrSettings">Nastavení OCR</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstall">Nainstalovat EasyOCR</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemove">Odebrat EasyOCR</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrStatus">Stav</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstalled">Nainstalováno</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrNotInstalled">Nenainstalováno</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstalling">Instalace...</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemoving">Odebírání...</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstallFailed">Instalace se nezdařila</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemoveFailed">Odebrání se nezdařilo</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstallLang">Instalovat</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoveLang">Odebrat</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstalled">Nainstalováno</sys:String>
+    <sys:String x:Key="LocSettingsOcrNotInstalled">Nenainstalováno</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstalling">Instaluje se...</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoving">Odebírá se...</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstallFailed">Instalace se nezdařila</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoveFailed">Odebrání se nezdařilo</sys:String>
+    <sys:String x:Key="LocSettingsOcrDownloadProgress">Průběh stahování</sys:String>
+    <sys:String x:Key="LocSettingsOcrBytes">bajtů</sys:String>
+    <sys:String x:Key="LocSettingsOcrLicense">Licence</sys:String>
+    <sys:String x:Key="LocSettingsOcrLicenseLink">https://github.com/JaidedAI/EasyOCR/blob/master/LICENSE</sys:String>
+    <sys:String x:Key="LocSettingsOcrTesseractLangs">Jazyky Tesseractu</sys:String>
+    <sys:String x:Key="LocSettingsOcrTesseractHint">Stáhněte nebo přidejte další jazyky Tesseract zde.</sys:String>
+
+    <sys:String x:Key="LocSettingsExamplesTitle">Příklady</sys:String>
+    <sys:String x:Key="LocSettingsExamplesDescription">Náhled ikon ve vybraném motivu.</sys:String>
+    <sys:String x:Key="LocSettingsExamplesFormat">Formát</sys:String>
+    <sys:String x:Key="LocSettingsExamplesEffects">Efekty</sys:String>
+    <sys:String x:Key="LocSettingsExamplesShape">Tvar</sys:String>
+    <sys:String x:Key="LocSettingsExamplesIcon">Ikona</sys:String>
+
+    <!-- Tray -->
+    <sys:String x:Key="LocTrayCaptureRegion">Snímať oblasť</sys:String>
+    <sys:String x:Key="LocTrayCaptureFull">Snímať celú obrazovku</sys:String>
+    <sys:String x:Key="LocTraySettings">Nastavenia</sys:String>
+    <sys:String x:Key="LocTrayAbout">O aplikácii</sys:String>
+    <sys:String x:Key="LocTrayExit">Ukončiť</sys:String>
+
+    <!-- Overlay -->
+    <sys:String x:Key="LocOverlayCopy">Kopírovat</sys:String>
+    <sys:String x:Key="LocOverlaySave">Uložit</sys:String>
+    <sys:String x:Key="LocOverlayUpload">Nahrát</sys:String>
+    <sys:String x:Key="LocOverlayOcr">Rozpoznat text</sys:String>
+    <sys:String x:Key="LocOverlayCancel">Zrušit</sys:String>
+    <sys:String x:Key="LocOverlayConfirm">Potvrdit</sys:String>
+    <sys:String x:Key="LocOverlayClose">Zavřít</sys:String>
+    <sys:String x:Key="LocOverlaySelection">Výběr</sys:String>
+    <sys:String x:Key="LocOverlayMove">Přesunout</sys:String>
+    <sys:String x:Key="LocOverlayPointer">Ukazatel</sys:String>
+    <sys:String x:Key="LocOverlayPen">Pero</sys:String>
+    <sys:String x:Key="LocOverlayLine">Čára</sys:String>
+    <sys:String x:Key="LocOverlayArrow">Šipka</sys:String>
+    <sys:String x:Key="LocOverlayRectangle">Obdélník</sys:String>
+    <sys:String x:Key="LocOverlayEllipse">Elipsa</sys:String>
+    <sys:String x:Key="LocOverlayText">Přidat text</sys:String>
+    <sys:String x:Key="LocOverlayHighlight">Zvýraznění</sys:String>
+    <sys:String x:Key="LocOverlayBlur">Rozostření</sys:String>
+    <sys:String x:Key="LocOverlayPixelate">Pixelace</sys:String>
+    <sys:String x:Key="LocOverlayThickness">Tloušťka</sys:String>
+    <sys:String x:Key="LocOverlayColors">Barvy</sys:String>
+    <sys:String x:Key="LocOverlayPosition">Pozice</sys:String>
+    <sys:String x:Key="LocOverlaySize">Velikost</sys:String>
+    <sys:String x:Key="LocOverlayWidth">Šířka</sys:String>
+    <sys:String x:Key="LocOverlayHeight">Výška</sys:String>
+    <sys:String x:Key="LocOverlayPickColor">Vybrat barvu</sys:String>
+    <sys:String x:Key="LocOverlayHintDraw">Klikněte a táhněte pro kreslení. Použijte panel nástrojů pro další funkce.</sys:String>
+    <sys:String x:Key="LocOverlayHintMove">Táhněte uvnitř výběru pro přesun. Použijte úchyty pro změnu velikosti.</sys:String>
+    <sys:String x:Key="LocOverlayHintEdit">Vyberte nástroje pro anotaci. V případě potřeby použijte Zpět/Znovu.</sys:String>
+    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Zrušit, Enter: Potvrdit, Ctrl+Z: Zpět, Ctrl+Y: Znovu</sys:String>
+
+    <!-- Text Input -->
+    <sys:String x:Key="LocTextInputTitle">Přidat text</sys:String>
+    <sys:String x:Key="LocTextInputHint">Zadejte text, který chcete umístit na snímek obrazovky</sys:String>
+    <sys:String x:Key="LocTextInputFont">Písmo</sys:String>
+    <sys:String x:Key="LocTextInputSize">Velikost</sys:String>
+    <sys:String x:Key="LocTextInputBold">Tučné</sys:String>
+    <sys:String x:Key="LocTextInputItalic">Kurzíva</sys:String>
+    <sys:String x:Key="LocTextInputColor">Barva</sys:String>
+    <sys:String x:Key="LocTextInputPlace">Umístit text</sys:String>
+    <sys:String x:Key="LocTextInputCancel">Zrušit</sys:String>
+
+    <!-- About -->
+    <sys:String x:Key="LocAboutTitle">O aplikácii Shotora</sys:String>
+    <sys:String x:Key="LocAboutVersion">Verzia</sys:String>
+    <sys:String x:Key="LocAboutCopyright">Â© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
+    <sys:String x:Key="LocAboutLinks">Odkazy</sys:String>
+    <sys:String x:Key="LocAboutWebsite">Web</sys:String>
+    <sys:String x:Key="LocAboutLinkedIn">LinkedIn</sys:String>
+    <sys:String x:Key="LocAboutEmail">E-mail</sys:String>
+
+    <!-- OCR Result -->
+    <sys:String x:Key="LocOcrResultTitle">Výsledek OCR</sys:String>
+    <sys:String x:Key="LocOcrResultCopy">Kopírovat</sys:String>
+    <sys:String x:Key="LocOcrResultClose">Zavřít</sys:String>
+    <sys:String x:Key="LocOcrResultHint">Rozpoznaný text</sys:String>
+
+    <!-- Notifications -->
+    <sys:String x:Key="LocNotificationCopySuccess">Zkopírováno do schránky</sys:String>
+    <sys:String x:Key="LocNotificationSaveSuccess">Uloženo</sys:String>
+    <sys:String x:Key="LocNotificationSaveFailed">Uložení se nezdařilo</sys:String>
+    <sys:String x:Key="LocNotificationUploadSuccess">Nahráno</sys:String>
+    <sys:String x:Key="LocNotificationUploadFailed">Nahrání se nezdařilo</sys:String>
+    <sys:String x:Key="LocNotificationOcrSuccess">OCR dokončeno</sys:String>
+    <sys:String x:Key="LocNotificationOcrFailed">OCR selhalo</sys:String>
+
+    <!-- Buttons -->
+    <sys:String x:Key="LocButtonSave">Uložit</sys:String>
+    <sys:String x:Key="LocButtonCancel">Zrušit</sys:String>
+    <sys:String x:Key="LocButtonClose">Zavřít</sys:String>
+    <sys:String x:Key="LocButtonOK">OK</sys:String>
+
+    <!-- Dialogs -->
+    <sys:String x:Key="LocDialogSaveTitle">Uložit snímek obrazovky</sys:String>
+    <sys:String x:Key="LocDialogSaveFilter">PNG soubory|*.png|JPEG soubory|*.jpg;*.jpeg|WebP soubory|*.webp|Všechny soubory|*.*</sys:String>
+    <sys:String x:Key="LocDialogSaveDefaultName">Shotora.png</sys:String>
+    <sys:String x:Key="LocDialogSelectFolder">Vybrat složku</sys:String>
+    <sys:String x:Key="LocDialogConfirm">Potvrdit</sys:String>
+    <sys:String x:Key="LocDialogDelete">Smazat</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguage">Odstranit soubor jazyka?</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguageConfirm">Opravdu chcete tento jazyk odstranit?</sys:String>
+
+    <!-- Errors -->
+    <sys:String x:Key="LocErrorInvalidHotkey">Neplatná klávesová zkratka</sys:String>
+    <sys:String x:Key="LocErrorHotkeyInUse">Klávesová zkratka je již používána</sys:String>
+    <sys:String x:Key="LocErrorHotkeyRegisterFailed">Registrace zkratky selhala</sys:String>
+    <sys:String x:Key="LocErrorSaveFailed">Uložení se nezdařilo</sys:String>
+    <sys:String x:Key="LocErrorOcrFailed">OCR selhalo</sys:String>
+    <sys:String x:Key="LocErrorInvalidSelection">Neplatný výběr</sys:String>
+    <sys:String x:Key="LocErrorNoSelection">Žádný výběr</sys:String>
+    <sys:String x:Key="LocErrorTextEmpty">Text je prázdný</sys:String>
+
+    <sys:String x:Key="LocMainTitle">Shotora</sys:String>
+    <sys:String x:Key="LocMainHint1">Použijte ikonu v oznamovací oblasti nebo globální zkratky pro zachycení.</sys:String>
+    <sys:String x:Key="LocMainHint2">Toto okno je volitelné; zavřením necháte Shotora běžet v oznamovací oblasti.</sys:String>
+
+    <sys:String x:Key="LocAboutSubtitle">Zachytenie obrazovky a poznámky</sys:String>
+    <sys:String x:Key="LocAboutDescription">Rýchle snímky obrazovky, poznámky, OCR a odosielanie so Shotorou.</sys:String>
+    <sys:String x:Key="LocAboutLicense">Licencia</sys:String>
+    <sys:String x:Key="LocAboutAuthor">Autor</sys:String>
+    <sys:String x:Key="LocAboutRole">Rola</sys:String>
+    <sys:String x:Key="LocAboutContact">Kontakt</sys:String>
+    <sys:String x:Key="LocAboutContactIntro">Napíšte nám na spätnú väzbu alebo spoluprácu.</sys:String>
+</ResourceDictionary>

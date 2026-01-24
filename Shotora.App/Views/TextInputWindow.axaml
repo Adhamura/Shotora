@@ -1,0 +1,78 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="clr-namespace:Shotora.App.Controls"
+        x:Class="Shotora.App.Views.TextInputWindow"
+        Width="520"
+        Height="520"
+        WindowStartupLocation="CenterOwner"
+        CanResize="False"
+        Title="{DynamicResource LocTextInputTitle}"
+        SystemDecorations="None"
+        Background="Transparent"
+        TransparencyLevelHint="Transparent">
+    <Design.DataContext>
+        <x:String>Design</x:String>
+    </Design.DataContext>
+
+    <Border Padding="16"
+            Background="{DynamicResource PanelBackgroundBrush}"
+            BorderBrush="{DynamicResource PanelBorderBrush}"
+            BorderThickness="1"
+            CornerRadius="10"
+            PointerPressed="ShellBorder_OnPointerPressed">
+        <Grid RowDefinitions="Auto,*,Auto" ColumnDefinitions="*">
+            <TextBlock Text="{DynamicResource LocTextInputHint}"
+                       FontSize="16"
+                       FontWeight="SemiBold"
+                       Margin="0,0,0,12" />
+
+            <StackPanel Grid.Row="1" Spacing="10">
+                <TextBox x:Name="TextBox"
+                         AcceptsReturn="True"
+                         TextWrapping="Wrap"
+                         MinHeight="140"
+                         Watermark="{DynamicResource LocTextInputHint}" />
+
+                <Grid ColumnDefinitions="220,120,*" ColumnSpacing="10">
+                    <StackPanel>
+                        <TextBlock Text="{DynamicResource LocTextInputFont}" Margin="0,0,0,4" />
+                        <controls:SearchableComboBox x:Name="FontFamilyBox"
+                                                     Height="34" />
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="1">
+                        <TextBlock Text="{DynamicResource LocTextInputSize}" Margin="0,0,0,4" />
+                        <TextBox x:Name="FontSizeBox" Height="34" Text="16" />
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Bottom" Spacing="6">
+                        <ToggleButton x:Name="BoldToggle" Content="{DynamicResource LocTextInputBold}" />
+                        <ToggleButton x:Name="ItalicToggle" Content="{DynamicResource LocTextInputItalic}" />
+                    </StackPanel>
+                </Grid>
+
+                <StackPanel>
+                    <TextBlock Text="Preview" Margin="0,0,0,4" />
+                    <Border BorderBrush="{DynamicResource ThemeBorderBrush}"
+                            BorderThickness="1"
+                            CornerRadius="6"
+                            Padding="8">
+                        <TextBlock x:Name="PreviewText"
+                                   Text="Sample"
+                                   VerticalAlignment="Center" />
+                    </Border>
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Spacing="10"
+                        Margin="0,12,0,0">
+                <Button Content="{DynamicResource LocTextInputPlace}"
+                        Width="110"
+                        Click="Ok_Click" />
+                <Button Content="{DynamicResource LocCommonClose}"
+                        Width="110"
+                        Click="Cancel_Click" />
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>

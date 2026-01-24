@@ -1,0 +1,65 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewModels2="clr-namespace:Shotora.App.Models.ViewModels;assembly=Shotora.App.Models"
+        mc:Ignorable="d" d:DesignWidth="380" d:DesignHeight="220"
+        x:Class="Shotora.App.Views.MainWindow"
+        x:DataType="viewModels2:MainWindowViewModel"
+        Icon="avares://Shotora.App/Assets/Shotora.ico"
+        Title="Shotora"
+        Width="380"
+        Height="220"
+        CanResize="True"
+        WindowStartupLocation="CenterScreen"
+        SystemDecorations="None"
+        ExtendClientAreaToDecorationsHint="True"
+        ExtendClientAreaChromeHints="PreferSystemChrome"
+        Background="Transparent"
+        TransparencyLevelHint="Transparent">
+    <Design.DataContext>
+        <viewModels2:MainWindowViewModel />
+    </Design.DataContext>
+
+    <Border Background="{DynamicResource PanelBackgroundBrush}"
+            BorderBrush="{DynamicResource PanelBorderBrush}"
+            BorderThickness="1"
+            CornerRadius="10"
+            Padding="16"
+            PointerPressed="ShellBorder_OnPointerPressed"
+            PointerMoved="ShellBorder_OnPointerMoved"
+            PointerExited="ShellBorder_OnPointerLeave">
+        <Grid RowDefinitions="*,Auto">
+            <!-- Content -->
+            <StackPanel Grid.Row="0"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+                <TextBlock Text="{DynamicResource LocMainTitle}"
+                           FontSize="24"
+                           FontWeight="Normal"
+                           Foreground="{DynamicResource TextPrimaryBrush}"
+                           HorizontalAlignment="Center"
+                           Margin="0,0,0,8" />
+                <TextBlock Text="{DynamicResource LocMainHint1}"
+                           Foreground="{DynamicResource TextPrimaryBrush}"
+                           HorizontalAlignment="Center"
+                           Margin="0,0,0,4" />
+                <TextBlock Text="{DynamicResource LocMainHint2}"
+                           Foreground="{DynamicResource TextSecondaryBrush}"
+                           TextWrapping="Wrap"
+                           HorizontalAlignment="Center"
+                           Width="280" />
+            </StackPanel>
+
+            <!-- Close Button (Bottom Right) -->
+            <StackPanel Grid.Row="1"
+                        Orientation="Horizontal"
+                        HorizontalAlignment="Right"
+                        Margin="0,12,0,0">
+                <Button Content="{DynamicResource LocCommonClose}"
+                        Width="90"
+                        Click="Close_Click" />
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>

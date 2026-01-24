@@ -1,0 +1,255 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <!-- Settings -->
+    <sys:String x:Key="LocSettingsTitle">Nastajenja</sys:String>
+    <sys:String x:Key="LocSettingsStorage">Składowadło</sys:String>
+    <sys:String x:Key="LocSettingsDefaultFolder">Standardowy zapis</sys:String>
+    <sys:String x:Key="LocSettingsBrowse">Pśepytaś</sys:String>
+    <sys:String x:Key="LocSettingsDefaultFormat">Standardowy format</sys:String>
+    <sys:String x:Key="LocSettingsJpegQuality">JPEG-kwalita</sys:String>
+    <sys:String x:Key="LocSettingsFilenamePattern">Muster datajowego mjenja</sys:String>
+    <sys:String x:Key="LocSettingsOcr">OCR</sys:String>
+    <sys:String x:Key="LocSettingsProvider">Póskiśowar</sys:String>
+    <sys:String x:Key="LocSettingsLanguages">Rěcy</sys:String>
+    <sys:String x:Key="LocSettingsEasyOcrHint">EasyOCR trjeba Python + 'pip install easyocr'</sys:String>
+    <sys:String x:Key="LocSettingsTesseractFiles">Tesseract rěcyne dataje</sys:String>
+    <sys:String x:Key="LocSettingsSelectLanguage">Rěc wubraś</sys:String>
+    <sys:String x:Key="LocSettingsDownload">Sćagnuś</sys:String>
+    <sys:String x:Key="LocSettingsDelete">Wulašowaś</sys:String>
+    <sys:String x:Key="LocSettingsHotkeys">Tastowe skrotconki</sys:String>
+    <sys:String x:Key="LocSettingsRegionHotkey">Wobcerk wobpśimiś</sys:String>
+    <sys:String x:Key="LocSettingsFullscreenHotkey">Połna wobrazowka</sys:String>
+    <sys:String x:Key="LocSettingsActiveWindowHotkey">Aktiwne wokno</sys:String>
+    <sys:String x:Key="LocSettingsGeneral">Powšyknje</sys:String>
+    <sys:String x:Key="LocSettingsTheme">Design</sys:String>
+    <sys:String x:Key="LocSettingsDisplayLanguage">Zwobraznjeńska rěc</sys:String>
+    <sys:String x:Key="LocSettingsRunOnStartup">Pśi startowanju započaś</sys:String>
+    <sys:String x:Key="LocSettingsTabMain">Głowny</sys:String>
+    <sys:String x:Key="LocSettingsTabHotkeys">Skrotconki</sys:String>
+    <sys:String x:Key="LocSettingsTabEditor">Editor</sys:String>
+    <sys:String x:Key="LocSettingsEditorHotkeys">Editorske skrotconki</sys:String>
+    <sys:String x:Key="LocSettingsEditorMouse">Editorska Myš</sys:String>
+    <sys:String x:Key="LocSettingsCopyCloseMouse">Kopěrowaś + zacyniś</sys:String>
+    <sys:String x:Key="LocSettingsMoveSelectionMouse">Wuběrk pśesunuś</sys:String>
+    <sys:String x:Key="LocSettingsEditorIcons">Editorske symbole</sys:String>
+    <sys:String x:Key="LocSettingsEditorOptions">Editorske opcije</sys:String>
+    <sys:String x:Key="LocSettingsShowThicknessSlider">Regulator tustoty pokazaś</sys:String>
+    <sys:String x:Key="LocSettingsDefaultThickness">Standardna tustota</sys:String>
+    <sys:String x:Key="LocSettingsShowColorPalette">Barwowu paletu pokazaś</sys:String>
+    <sys:String x:Key="LocSettingsDefaultColor">Standardna barba</sys:String>
+    <sys:String x:Key="LocSettingsPickColor">Wubraś</sys:String>
+    <sys:String x:Key="LocSettingsDefaultColorHint">Wužywa se, gaž jo barwowa paleta schowana.</sys:String>
+    <sys:String x:Key="LocSettingsUsePointer">Pokaziwaś wužywaś</sys:String>
+    <sys:String x:Key="LocSettingsShowUndo">Cofnuś pokazaś</sys:String>
+    <sys:String x:Key="LocSettingsShowRedo">Wóspiětowaś pokazaś</sys:String>
+    <sys:String x:Key="LocSettingsShowCopy">Kopěrowaś pokazaś</sys:String>
+    <sys:String x:Key="LocSettingsShowSave">Składowaś pokazaś</sys:String>
+    <sys:String x:Key="LocSettingsShowUpload">Nahraśe pokazaś</sys:String>
+    <sys:String x:Key="LocSettingsShowOcr">OCR pokazaś</sys:String>
+    <sys:String x:Key="LocSettingsShowCancel">Pśestaś pokazaś</sys:String>
+    <sys:String x:Key="LocSettingsShowConfirm">Potwĕrdziś pokazaś</sys:String>
+    <sys:String x:Key="LocSettingsShowClose">Zacyniś pokazaś</sys:String>
+    <sys:String x:Key="LocSettingsShowSelection">Wuběrk pokazaś</sys:String>
+    <sys:String x:Key="LocSettingsShowMove">Pśesunuś pokazaś</sys:String>
+    <sys:String x:Key="LocSettingsShowPen">Pjero pokazaś</sys:String>
+    <sys:String x:Key="LocSettingsShowLine">Liniju pokazaś</sys:String>
+    <sys:String x:Key="LocSettingsShowArrow">Šyp pokazaś</sys:String>
+    <sys:String x:Key="LocSettingsShowRectangle">Pšawokutnik pokazaś</sys:String>
+    <sys:String x:Key="LocSettingsShowEllipse">Elipsu pokazaś</sys:String>
+    <sys:String x:Key="LocSettingsShowText">Tekst pokazaś</sys:String>
+    <sys:String x:Key="LocSettingsShowHighlight">Wuzwignuś pokazaś</sys:String>
+    <sys:String x:Key="LocSettingsShowBlur">Rozmazaś pokazaś</sys:String>
+    <sys:String x:Key="LocSettingsShowPixelate">Pixelizowaś pokazaś</sys:String>
+    <sys:String x:Key="LocSettingsShowThickness">Tustota pokazaś</sys:String>
+    <sys:String x:Key="LocSettingsShowColors">Barwy pokazaś</sys:String>
+    <sys:String x:Key="LocSettingsShowCrosshair">Krëż pokazaś</sys:String>
+    <sys:String x:Key="LocSettingsShowResizeHandles">Rucki za zmjenjowanje wjelikosći pokazaś</sys:String>
+    <sys:String x:Key="LocSettingsShowToolbar">Nastrojowu lejtku pokazaś</sys:String>
+    <sys:String x:Key="LocSettingsShowPalette">Paletu pokazaś</sys:String>
+    <sys:String x:Key="LocSettingsShowPreview">Pśeglěd pokazaś</sys:String>
+    <sys:String x:Key="LocSettingsShowMiniMap">Mini-kartu pokazaś</sys:String>
+    <sys:String x:Key="LocSettingsShowSelectionSize">Wjelikosć wuběrka pokazaś</sys:String>
+    <sys:String x:Key="LocSettingsShowSelectionPosition">Poziciju wuběrka pokazaś</sys:String>
+
+    <!-- Common -->
+    <sys:String x:Key="LocCommonClose">Zacyniś</sys:String>
+
+    <!-- Tools -->
+    <sys:String x:Key="LocToolSelect">Wubraś</sys:String>
+    <sys:String x:Key="LocToolRegion">Wobcerk wubraś</sys:String>
+    <sys:String x:Key="LocToolMove">Wobcerk pśesunuś</sys:String>
+    <sys:String x:Key="LocToolPen">Pjero</sys:String>
+    <sys:String x:Key="LocToolLine">Linija</sys:String>
+    <sys:String x:Key="LocToolArrow">Šyp</sys:String>
+    <sys:String x:Key="LocToolRect">Pšawokutnik</sys:String>
+    <sys:String x:Key="LocToolEllipse">Elipsa</sys:String>
+    <sys:String x:Key="LocToolText">Tekst</sys:String>
+    <sys:String x:Key="LocToolHighlight">Wuzwignuś</sys:String>
+    <sys:String x:Key="LocToolBlur">Rozmazaś</sys:String>
+    <sys:String x:Key="LocToolPixelate">Pixelizowaś</sys:String>
+    <sys:String x:Key="LocToolSaveAs">Składowaś ako</sys:String>
+    <sys:String x:Key="LocToolCopy">Kopěrowaś</sys:String>
+    <sys:String x:Key="LocToolUpload">Nahraśe</sys:String>
+    <sys:String x:Key="LocToolCancel">Pśestaś</sys:String>
+    <sys:String x:Key="LocToolColors">Barwy</sys:String>
+    <sys:String x:Key="LocToolThickness">Tustota</sys:String>
+    <sys:String x:Key="LocToolUndo">Cofnuś</sys:String>
+    <sys:String x:Key="LocToolRedo">Wóspiětowaś</sys:String>
+
+    <sys:String x:Key="LocSettingsRegionHotkeyPlaceholder">Stłóń kławisze...</sys:String>
+    <sys:String x:Key="LocSettingsFullscreenHotkeyPlaceholder">Stłóń kławisze...</sys:String>
+    <sys:String x:Key="LocSettingsActiveWindowHotkeyPlaceholder">Stłóń kławisze...</sys:String>
+    <sys:String x:Key="LocSettingsEditorUndoHotkey">Cofnus</sys:String>
+    <sys:String x:Key="LocSettingsEditorUndoHotkeyPlaceholder">Ctrl+Z</sys:String>
+    <sys:String x:Key="LocSettingsEditorRedoHotkey">Wopjetowas</sys:String>
+    <sys:String x:Key="LocSettingsEditorRedoHotkeyPlaceholder">Ctrl+Y</sys:String>
+    <sys:String x:Key="LocSettingsEditorCopyHotkey">Koperowas</sys:String>
+    <sys:String x:Key="LocSettingsEditorCopyHotkeyPlaceholder">Ctrl+C</sys:String>
+    <sys:String x:Key="LocSettingsEditorSaveHotkey">Skladowas</sys:String>
+    <sys:String x:Key="LocSettingsEditorSaveHotkeyPlaceholder">Ctrl+S</sys:String>
+
+    <sys:String x:Key="LocSettingsOcrSettings">OCR-nastajenja</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstall">EasyOCR instalować</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemove">EasyOCR wotinstalować</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrStatus">Status</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstalled">Instalowany</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrNotInstalled">Njeinstalowany</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstalling">Instalowanje...</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemoving">Wotinstalowanje...</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstallFailed">Instalowanje njepwjesło</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemoveFailed">Wotinstalowanje njepwjesło</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstallLang">Instalować</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoveLang">Wotinstalować</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstalled">Instalowany</sys:String>
+    <sys:String x:Key="LocSettingsOcrNotInstalled">Njeinstalowany</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstalling">Instalowanje...</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoving">Wotinstalowanje...</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstallFailed">Instalowanje njepwjesło</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoveFailed">Wotinstalowanje njepwjesło</sys:String>
+    <sys:String x:Key="LocSettingsOcrDownloadProgress">Postup scagnanja</sys:String>
+    <sys:String x:Key="LocSettingsOcrBytes">bajty</sys:String>
+    <sys:String x:Key="LocSettingsOcrLicense">Licenca</sys:String>
+    <sys:String x:Key="LocSettingsOcrLicenseLink">https://github.com/JaidedAI/EasyOCR/blob/master/LICENSE</sys:String>
+    <sys:String x:Key="LocSettingsOcrTesseractLangs">Tesseract-recy</sys:String>
+    <sys:String x:Key="LocSettingsOcrTesseractHint">Scagnaj dalšne Tesseract-recy tutón.</sys:String>
+
+    <sys:String x:Key="LocSettingsExamplesTitle">Přikłady</sys:String>
+    <sys:String x:Key="LocSettingsExamplesDescription">Pśeglěd přikładnych ikonow w aktuelnej temi.</sys:String>
+    <sys:String x:Key="LocSettingsExamplesFormat">Format</sys:String>
+    <sys:String x:Key="LocSettingsExamplesEffects">Efekty</sys:String>
+    <sys:String x:Key="LocSettingsExamplesShape">Forma</sys:String>
+    <sys:String x:Key="LocSettingsExamplesIcon">Ikona</sys:String>
+
+    <!-- Tray -->
+    <sys:String x:Key="LocTrayCaptureRegion">Wobcerk wobpśimiś</sys:String>
+    <sys:String x:Key="LocTrayCaptureFull">Połnu wobrazowku wobpśimiś</sys:String>
+    <sys:String x:Key="LocTraySettings">Nastajenja</sys:String>
+    <sys:String x:Key="LocTrayAbout">Wo programje</sys:String>
+    <sys:String x:Key="LocTrayExit">Wustup</sys:String>
+
+    <!-- Overlay -->
+    <sys:String x:Key="LocOverlayCopy">Kopěrowaś</sys:String>
+    <sys:String x:Key="LocOverlaySave">Składowaś</sys:String>
+    <sys:String x:Key="LocOverlayUpload">Nagraśe</sys:String>
+    <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
+    <sys:String x:Key="LocOverlayCancel">Pśestaś</sys:String>
+    <sys:String x:Key="LocOverlayConfirm">Potwĕrdziś</sys:String>
+    <sys:String x:Key="LocOverlayClose">Zacyniś</sys:String>
+    <sys:String x:Key="LocOverlaySelection">Wuběrk</sys:String>
+    <sys:String x:Key="LocOverlayMove">Pśesunuś</sys:String>
+    <sys:String x:Key="LocOverlayPointer">Pokaziwaś</sys:String>
+    <sys:String x:Key="LocOverlayPen">Pjero</sys:String>
+    <sys:String x:Key="LocOverlayLine">Linija</sys:String>
+    <sys:String x:Key="LocOverlayArrow">Šyp</sys:String>
+    <sys:String x:Key="LocOverlayRectangle">Pšawokutnik</sys:String>
+    <sys:String x:Key="LocOverlayEllipse">Elipsa</sys:String>
+    <sys:String x:Key="LocOverlayText">Tekst</sys:String>
+    <sys:String x:Key="LocOverlayHighlight">Wuzwignuś</sys:String>
+    <sys:String x:Key="LocOverlayBlur">Rozmazaś</sys:String>
+    <sys:String x:Key="LocOverlayPixelate">Pixelizowaś</sys:String>
+    <sys:String x:Key="LocOverlayThickness">Tustota</sys:String>
+    <sys:String x:Key="LocOverlayColors">Barwy</sys:String>
+    <sys:String x:Key="LocOverlayPosition">Pozicija</sys:String>
+    <sys:String x:Key="LocOverlaySize">Wjelikosć</sys:String>
+    <sys:String x:Key="LocOverlayWidth">Š</sys:String>
+    <sys:String x:Key="LocOverlayHeight">W</sys:String>
+    <sys:String x:Key="LocOverlayPickColor">Barwu wubraś</sys:String>
+    <sys:String x:Key="LocOverlayHintDraw">Klikaś a pśesunuś za rysanjeś. Nastrojowu lejtku za nastoje wužywaś.</sys:String>
+    <sys:String x:Key="LocOverlayHintMove">Wobcerk pśesunuś. Rucki za zmjenjowanje wjelikosći wužywaś.</sys:String>
+    <sys:String x:Key="LocOverlayHintEdit">Nastoje za anotěrowanje wubraś. Cofnuś/Wóspiětowaś ako trjeba wužywaś.</sys:String>
+    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Pśestaś, Enter: Potwĕrdziś, Ctrl+Z: Cofnuś, Ctrl+Y: Wóspiětowaś</sys:String>
+
+    <!-- Text Input -->
+    <sys:String x:Key="LocTextInputTitle">Tekst pśidaś</sys:String>
+    <sys:String x:Key="LocTextInputHint">Tekst zapódaś, kótaryž se ma na wobrazowku stajiś</sys:String>
+    <sys:String x:Key="LocTextInputFont">Pismo</sys:String>
+    <sys:String x:Key="LocTextInputSize">Wjelikosć</sys:String>
+    <sys:String x:Key="LocTextInputBold">Tołsty</sys:String>
+    <sys:String x:Key="LocTextInputItalic">Kursiwny</sys:String>
+    <sys:String x:Key="LocTextInputColor">Barba</sys:String>
+    <sys:String x:Key="LocTextInputPlace">Tekst stajiś</sys:String>
+    <sys:String x:Key="LocTextInputCancel">Pśestaś</sys:String>
+
+    <!-- About -->
+    <sys:String x:Key="LocAboutTitle">Wo Shotora</sys:String>
+    <sys:String x:Key="LocAboutVersion">Wersija</sys:String>
+    <sys:String x:Key="LocAboutCopyright">Â© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
+    <sys:String x:Key="LocAboutLinks">Wotkazy</sys:String>
+    <sys:String x:Key="LocAboutWebsite">Websedło</sys:String>
+    <sys:String x:Key="LocAboutLinkedIn">LinkedIn</sys:String>
+    <sys:String x:Key="LocAboutEmail">E-mail</sys:String>
+
+    <!-- OCR Result -->
+    <sys:String x:Key="LocOcrResultTitle">Wuslědk OCR</sys:String>
+    <sys:String x:Key="LocOcrResultCopy">Kopěrowaś</sys:String>
+    <sys:String x:Key="LocOcrResultClose">Zacyniś</sys:String>
+    <sys:String x:Key="LocOcrResultHint">Sćitany tekst</sys:String>
+
+    <!-- Notifications -->
+    <sys:String x:Key="LocNotificationCopySuccess">Kopěrowanu do mejnika</sys:String>
+    <sys:String x:Key="LocNotificationSaveSuccess">Składowane</sys:String>
+    <sys:String x:Key="LocNotificationSaveFailed">Składowanje njepwešło</sys:String>
+    <sys:String x:Key="LocNotificationUploadSuccess">Nahraśe</sys:String>
+    <sys:String x:Key="LocNotificationUploadFailed">Nahraśe njepwešło</sys:String>
+    <sys:String x:Key="LocNotificationOcrSuccess">OCR dokóńcone</sys:String>
+    <sys:String x:Key="LocNotificationOcrFailed">OCR njepwešło</sys:String>
+
+    <!-- Buttons -->
+    <sys:String x:Key="LocButtonSave">Složowaś</sys:String>
+    <sys:String x:Key="LocButtonCancel">Pśestaś</sys:String>
+    <sys:String x:Key="LocButtonClose">Zacyniś</sys:String>
+    <sys:String x:Key="LocButtonOK">W porjadku</sys:String>
+
+    <!-- Dialogs -->
+    <sys:String x:Key="LocDialogSaveTitle">Wobrazowku składowaś</sys:String>
+    <sys:String x:Key="LocDialogSaveFilter">PNG-dataje|*.png|JPEG-dataje|*.jpg;*.jpeg|WebP-dataje|*.webp|Wšykne dataje|*.*</sys:String>
+    <sys:String x:Key="LocDialogSaveDefaultName">Shotora.png</sys:String>
+    <sys:String x:Key="LocDialogSelectFolder">Zarjadowak wubraś</sys:String>
+    <sys:String x:Key="LocDialogConfirm">Potwĕrdziś</sys:String>
+    <sys:String x:Key="LocDialogDelete">Wulašowaś</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguage">Rěcynu dataju wulašowaś?</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguageConfirm">Sćo sigory, až chcecz tu rěcynu dataju wulašowaś?</sys:String>
+
+    <!-- Errors -->
+    <sys:String x:Key="LocErrorInvalidHotkey">Njepłaćiwa skrotconka</sys:String>
+    <sys:String x:Key="LocErrorHotkeyInUse">Skrotconka jo wužo wužywana</sys:String>
+    <sys:String x:Key="LocErrorHotkeyRegisterFailed">Zacerkowanje skrotconki njepwešło</sys:String>
+    <sys:String x:Key="LocErrorSaveFailed">Składowanje njepwešło</sys:String>
+    <sys:String x:Key="LocErrorOcrFailed">OCR njepwešło</sys:String>
+    <sys:String x:Key="LocErrorInvalidSelection">Njepłaćiwy wuběrk</sys:String>
+    <sys:String x:Key="LocErrorNoSelection">Žedno wuběrk</sys:String>
+    <sys:String x:Key="LocErrorTextEmpty">Tekst jo prozny</sys:String>
+
+    <sys:String x:Key="LocMainTitle">Shotora</sys:String>
+    <sys:String x:Key="LocMainHint1">Symbolu w zawěšowaku abo globalne skrotconki za wobpśimowanje wužywaś.</sys:String>
+    <sys:String x:Key="LocMainHint2">Tóte wokno jo nadbytna; zacyńśo jo, aby Shotora w zawěšowaku běžała.</sys:String>
+
+    <sys:String x:Key="LocAboutSubtitle">Zachytowanje wobrazowki a markěrowanje</sys:String>
+    <sys:String x:Key="LocAboutDescription">Malsne fota wobrazowki, markěrowanja, OCR a nahraśa ze Shotoru.</sys:String>
+    <sys:String x:Key="LocAboutLicense">Licenca</sys:String>
+    <sys:String x:Key="LocAboutAuthor">Awtor</sys:String>
+    <sys:String x:Key="LocAboutRole">Rola</sys:String>
+    <sys:String x:Key="LocAboutContact">Kontakt</sys:String>
+    <sys:String x:Key="LocAboutContactIntro">Stajśo se do zwiska za komentary abo za zgromadne źěło.</sys:String>
+</ResourceDictionary>

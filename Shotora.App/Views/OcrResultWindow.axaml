@@ -1,0 +1,47 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="Shotora.App.Views.OcrResultWindow"
+        Width="480"
+        Height="220"
+        CanResize="False"
+        SystemDecorations="None"
+        Background="Transparent"
+        TransparencyLevelHint="Transparent"
+        ShowInTaskbar="False"
+        Topmost="True">
+    <Border Background="{DynamicResource PanelBackgroundBrush}"
+            BorderBrush="{DynamicResource PanelBorderBrush}"
+            BorderThickness="1"
+            CornerRadius="8"
+            Padding="10">
+        <Grid RowDefinitions="Auto,*,Auto">
+            <TextBlock Text="{DynamicResource LocOcrResultHint}"
+                       FontSize="15"
+                       FontWeight="Bold"
+                       Margin="0,0,0,6"
+                       Foreground="{DynamicResource TextPrimaryBrush}" />
+
+            <TextBox x:Name="ResultBox"
+                     Grid.Row="1"
+                     Background="{DynamicResource InputBackgroundBrush}"
+                     Foreground="{DynamicResource InputForegroundBrush}"
+                     BorderBrush="{DynamicResource InputBorderBrush}"
+                     TextWrapping="Wrap"
+                     AcceptsReturn="True"
+                     VerticalContentAlignment="Top"
+                     IsReadOnly="True" />
+
+            <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,8,0,0">
+                <Button Content="{DynamicResource LocToolCopy}"
+                        Width="90"
+                        Margin="0,0,8,0"
+                        Click="Copy_Click"
+                        Classes="accent" />
+                <Button Content="{DynamicResource LocCommonClose}"
+                        Width="90"
+                        Click="Close_Click"
+                        Classes="accent" />
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>

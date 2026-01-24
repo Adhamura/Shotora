@@ -1,0 +1,255 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <!-- Settings -->
+    <sys:String x:Key="LocSettingsTitle">设置</sys:String>
+    <sys:String x:Key="LocSettingsStorage">存储</sys:String>
+    <sys:String x:Key="LocSettingsDefaultFolder">默认文件夹</sys:String>
+    <sys:String x:Key="LocSettingsBrowse">浏览</sys:String>
+    <sys:String x:Key="LocSettingsDefaultFormat">默认格式</sys:String>
+    <sys:String x:Key="LocSettingsJpegQuality">JPEG质量</sys:String>
+    <sys:String x:Key="LocSettingsFilenamePattern">文件名模式</sys:String>
+    <sys:String x:Key="LocSettingsOcr">文字识别</sys:String>
+    <sys:String x:Key="LocSettingsProvider">提供商</sys:String>
+    <sys:String x:Key="LocSettingsLanguages">语言</sys:String>
+    <sys:String x:Key="LocSettingsEasyOcrHint">EasyOCR需要Python + 'pip install easyocr'</sys:String>
+    <sys:String x:Key="LocSettingsTesseractFiles">Tesseract语言文件</sys:String>
+    <sys:String x:Key="LocSettingsSelectLanguage">选择语言</sys:String>
+    <sys:String x:Key="LocSettingsDownload">下载</sys:String>
+    <sys:String x:Key="LocSettingsDelete">删除</sys:String>
+    <sys:String x:Key="LocSettingsHotkeys">快捷键</sys:String>
+    <sys:String x:Key="LocSettingsRegionHotkey">区域截图</sys:String>
+    <sys:String x:Key="LocSettingsFullscreenHotkey">全屏</sys:String>
+    <sys:String x:Key="LocSettingsActiveWindowHotkey">活动窗口</sys:String>
+    <sys:String x:Key="LocSettingsGeneral">常规</sys:String>
+    <sys:String x:Key="LocSettingsTheme">主题</sys:String>
+    <sys:String x:Key="LocSettingsDisplayLanguage">显示语言</sys:String>
+    <sys:String x:Key="LocSettingsRunOnStartup">开机启动</sys:String>
+    <sys:String x:Key="LocSettingsTabMain">主要</sys:String>
+    <sys:String x:Key="LocSettingsTabHotkeys">快捷键</sys:String>
+    <sys:String x:Key="LocSettingsTabEditor">编辑器</sys:String>
+    <sys:String x:Key="LocSettingsEditorHotkeys">编辑器快捷键</sys:String>
+    <sys:String x:Key="LocSettingsEditorMouse">编辑器鼠标</sys:String>
+    <sys:String x:Key="LocSettingsCopyCloseMouse">复制+关闭</sys:String>
+    <sys:String x:Key="LocSettingsMoveSelectionMouse">移动选区</sys:String>
+    <sys:String x:Key="LocSettingsEditorIcons">编辑器图标</sys:String>
+    <sys:String x:Key="LocSettingsEditorOptions">编辑器选项</sys:String>
+    <sys:String x:Key="LocSettingsShowThicknessSlider">显示粗细滑块</sys:String>
+    <sys:String x:Key="LocSettingsDefaultThickness">默认粗细</sys:String>
+    <sys:String x:Key="LocSettingsShowColorPalette">显示调色板</sys:String>
+    <sys:String x:Key="LocSettingsDefaultColor">默认颜色</sys:String>
+    <sys:String x:Key="LocSettingsPickColor">选择</sys:String>
+    <sys:String x:Key="LocSettingsDefaultColorHint">调色板隐藏时使用。</sys:String>
+    <sys:String x:Key="LocSettingsUsePointer">使用指针</sys:String>
+    <sys:String x:Key="LocSettingsShowUndo">显示撤销</sys:String>
+    <sys:String x:Key="LocSettingsShowRedo">显示重做</sys:String>
+    <sys:String x:Key="LocSettingsShowCopy">显示复制</sys:String>
+    <sys:String x:Key="LocSettingsShowSave">显示保存</sys:String>
+    <sys:String x:Key="LocSettingsShowUpload">显示上传</sys:String>
+    <sys:String x:Key="LocSettingsShowOcr">显示OCR</sys:String>
+    <sys:String x:Key="LocSettingsShowCancel">显示取消</sys:String>
+    <sys:String x:Key="LocSettingsShowConfirm">显示确认</sys:String>
+    <sys:String x:Key="LocSettingsShowClose">显示关闭</sys:String>
+    <sys:String x:Key="LocSettingsShowSelection">显示选择</sys:String>
+    <sys:String x:Key="LocSettingsShowMove">显示移动</sys:String>
+    <sys:String x:Key="LocSettingsShowPen">显示画笔</sys:String>
+    <sys:String x:Key="LocSettingsShowLine">显示线条</sys:String>
+    <sys:String x:Key="LocSettingsShowArrow">显示箭头</sys:String>
+    <sys:String x:Key="LocSettingsShowRectangle">显示矩形</sys:String>
+    <sys:String x:Key="LocSettingsShowEllipse">显示椭圆</sys:String>
+    <sys:String x:Key="LocSettingsShowText">显示文本</sys:String>
+    <sys:String x:Key="LocSettingsShowHighlight">显示高亮</sys:String>
+    <sys:String x:Key="LocSettingsShowBlur">显示模糊</sys:String>
+    <sys:String x:Key="LocSettingsShowPixelate">显示像素化</sys:String>
+    <sys:String x:Key="LocSettingsShowThickness">显示粗细</sys:String>
+    <sys:String x:Key="LocSettingsShowColors">显示颜色</sys:String>
+    <sys:String x:Key="LocSettingsShowCrosshair">显示十字准星</sys:String>
+    <sys:String x:Key="LocSettingsShowResizeHandles">显示调整大小手柄</sys:String>
+    <sys:String x:Key="LocSettingsShowToolbar">显示工具栏</sys:String>
+    <sys:String x:Key="LocSettingsShowPalette">显示调色板</sys:String>
+    <sys:String x:Key="LocSettingsShowPreview">显示预览</sys:String>
+    <sys:String x:Key="LocSettingsShowMiniMap">显示小地图</sys:String>
+    <sys:String x:Key="LocSettingsShowSelectionSize">显示选区大小</sys:String>
+    <sys:String x:Key="LocSettingsShowSelectionPosition">显示选区位置</sys:String>
+
+    <!-- Common -->
+    <sys:String x:Key="LocCommonClose">关闭</sys:String>
+
+    <!-- Tools -->
+    <sys:String x:Key="LocToolSelect">选择</sys:String>
+    <sys:String x:Key="LocToolRegion">选择区域</sys:String>
+    <sys:String x:Key="LocToolMove">移动</sys:String>
+    <sys:String x:Key="LocToolPen">画笔</sys:String>
+    <sys:String x:Key="LocToolLine">线条</sys:String>
+    <sys:String x:Key="LocToolArrow">箭头</sys:String>
+    <sys:String x:Key="LocToolRect">矩形</sys:String>
+    <sys:String x:Key="LocToolEllipse">椭圆</sys:String>
+    <sys:String x:Key="LocToolText">文本</sys:String>
+    <sys:String x:Key="LocToolHighlight">高亮</sys:String>
+    <sys:String x:Key="LocToolBlur">模糊</sys:String>
+    <sys:String x:Key="LocToolPixelate">像素化</sys:String>
+    <sys:String x:Key="LocToolSaveAs">另存为</sys:String>
+    <sys:String x:Key="LocToolCopy">复制</sys:String>
+    <sys:String x:Key="LocToolUpload">上传</sys:String>
+    <sys:String x:Key="LocToolCancel">取消</sys:String>
+    <sys:String x:Key="LocToolColors">颜色</sys:String>
+    <sys:String x:Key="LocToolThickness">线宽</sys:String>
+    <sys:String x:Key="LocToolUndo">撤销</sys:String>
+    <sys:String x:Key="LocToolRedo">重做</sys:String>
+
+    <sys:String x:Key="LocSettingsRegionHotkeyPlaceholder">按下按键...</sys:String>
+    <sys:String x:Key="LocSettingsFullscreenHotkeyPlaceholder">按下按键...</sys:String>
+    <sys:String x:Key="LocSettingsActiveWindowHotkeyPlaceholder">按下按键...</sys:String>
+    <sys:String x:Key="LocSettingsEditorUndoHotkey">撤销</sys:String>
+    <sys:String x:Key="LocSettingsEditorUndoHotkeyPlaceholder">Ctrl+Z</sys:String>
+    <sys:String x:Key="LocSettingsEditorRedoHotkey">重做</sys:String>
+    <sys:String x:Key="LocSettingsEditorRedoHotkeyPlaceholder">Ctrl+Y</sys:String>
+    <sys:String x:Key="LocSettingsEditorCopyHotkey">复制</sys:String>
+    <sys:String x:Key="LocSettingsEditorCopyHotkeyPlaceholder">Ctrl+C</sys:String>
+    <sys:String x:Key="LocSettingsEditorSaveHotkey">保存</sys:String>
+    <sys:String x:Key="LocSettingsEditorSaveHotkeyPlaceholder">Ctrl+S</sys:String>
+
+    <sys:String x:Key="LocSettingsOcrSettings">OCR设置</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstall">安装EasyOCR</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemove">移除EasyOCR</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrStatus">状态</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstalled">已安装</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrNotInstalled">未安装</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstalling">安装中...</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemoving">移除中...</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstallFailed">安装失败</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemoveFailed">移除失败</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstallLang">安装</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoveLang">移除</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstalled">已安装</sys:String>
+    <sys:String x:Key="LocSettingsOcrNotInstalled">未安装</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstalling">安装中...</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoving">移除中...</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstallFailed">安装失败</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoveFailed">移除失败</sys:String>
+    <sys:String x:Key="LocSettingsOcrDownloadProgress">下载进度</sys:String>
+    <sys:String x:Key="LocSettingsOcrBytes">字节</sys:String>
+    <sys:String x:Key="LocSettingsOcrLicense">许可证</sys:String>
+    <sys:String x:Key="LocSettingsOcrLicenseLink">https://github.com/JaidedAI/EasyOCR/blob/master/LICENSE</sys:String>
+    <sys:String x:Key="LocSettingsOcrTesseractLangs">Tesseract语言</sys:String>
+    <sys:String x:Key="LocSettingsOcrTesseractHint">在这里下载额外的Tesseract语言。</sys:String>
+
+    <sys:String x:Key="LocSettingsExamplesTitle">示例</sys:String>
+    <sys:String x:Key="LocSettingsExamplesDescription">预览当前主题中的示例图标。</sys:String>
+    <sys:String x:Key="LocSettingsExamplesFormat">格式</sys:String>
+    <sys:String x:Key="LocSettingsExamplesEffects">效果</sys:String>
+    <sys:String x:Key="LocSettingsExamplesShape">形状</sys:String>
+    <sys:String x:Key="LocSettingsExamplesIcon">图标</sys:String>
+
+    <!-- Tray -->
+    <sys:String x:Key="LocTrayCaptureRegion">截取区域</sys:String>
+    <sys:String x:Key="LocTrayCaptureFull">截取全屏</sys:String>
+    <sys:String x:Key="LocTraySettings">设置</sys:String>
+    <sys:String x:Key="LocTrayAbout">关于</sys:String>
+    <sys:String x:Key="LocTrayExit">退出</sys:String>
+
+    <!-- Overlay -->
+    <sys:String x:Key="LocOverlayCopy">复制</sys:String>
+    <sys:String x:Key="LocOverlaySave">保存</sys:String>
+    <sys:String x:Key="LocOverlayUpload">上传</sys:String>
+    <sys:String x:Key="LocOverlayOcr">文字识别</sys:String>
+    <sys:String x:Key="LocOverlayCancel">取消</sys:String>
+    <sys:String x:Key="LocOverlayConfirm">确认</sys:String>
+    <sys:String x:Key="LocOverlayClose">关闭</sys:String>
+    <sys:String x:Key="LocOverlaySelection">选择</sys:String>
+    <sys:String x:Key="LocOverlayMove">移动</sys:String>
+    <sys:String x:Key="LocOverlayPointer">指针</sys:String>
+    <sys:String x:Key="LocOverlayPen">画笔</sys:String>
+    <sys:String x:Key="LocOverlayLine">线条</sys:String>
+    <sys:String x:Key="LocOverlayArrow">箭头</sys:String>
+    <sys:String x:Key="LocOverlayRectangle">矩形</sys:String>
+    <sys:String x:Key="LocOverlayEllipse">椭圆</sys:String>
+    <sys:String x:Key="LocOverlayText">文本</sys:String>
+    <sys:String x:Key="LocOverlayHighlight">高亮</sys:String>
+    <sys:String x:Key="LocOverlayBlur">模糊</sys:String>
+    <sys:String x:Key="LocOverlayPixelate">像素化</sys:String>
+    <sys:String x:Key="LocOverlayThickness">线宽</sys:String>
+    <sys:String x:Key="LocOverlayColors">颜色</sys:String>
+    <sys:String x:Key="LocOverlayPosition">位置</sys:String>
+    <sys:String x:Key="LocOverlaySize">大小</sys:String>
+    <sys:String x:Key="LocOverlayWidth">宽</sys:String>
+    <sys:String x:Key="LocOverlayHeight">高</sys:String>
+    <sys:String x:Key="LocOverlayPickColor">选择颜色</sys:String>
+    <sys:String x:Key="LocOverlayHintDraw">点击拖动绘制。使用工具栏选择工具。</sys:String>
+    <sys:String x:Key="LocOverlayHintMove">在选区内拖动移动。使用手柄调整大小。</sys:String>
+    <sys:String x:Key="LocOverlayHintEdit">选择工具添加注释。根据需要使用撤销/重做。</sys:String>
+    <sys:String x:Key="LocOverlayHintKeyboard">Esc: 取消，Enter: 确认，Ctrl+Z: 撤销，Ctrl+Y: 重做</sys:String>
+
+    <!-- Text Input -->
+    <sys:String x:Key="LocTextInputTitle">添加文本</sys:String>
+    <sys:String x:Key="LocTextInputHint">输入要放置在截图上的文本</sys:String>
+    <sys:String x:Key="LocTextInputFont">字体</sys:String>
+    <sys:String x:Key="LocTextInputSize">大小</sys:String>
+    <sys:String x:Key="LocTextInputBold">粗体</sys:String>
+    <sys:String x:Key="LocTextInputItalic">斜体</sys:String>
+    <sys:String x:Key="LocTextInputColor">颜色</sys:String>
+    <sys:String x:Key="LocTextInputPlace">放置文本</sys:String>
+    <sys:String x:Key="LocTextInputCancel">取消</sys:String>
+
+    <!-- About -->
+    <sys:String x:Key="LocAboutTitle">关于Shotora</sys:String>
+    <sys:String x:Key="LocAboutVersion">版本</sys:String>
+    <sys:String x:Key="LocAboutCopyright">© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
+    <sys:String x:Key="LocAboutLinks">链接</sys:String>
+    <sys:String x:Key="LocAboutWebsite">网站</sys:String>
+    <sys:String x:Key="LocAboutLinkedIn">LinkedIn</sys:String>
+    <sys:String x:Key="LocAboutEmail">电子邮件</sys:String>
+
+    <!-- OCR Result -->
+    <sys:String x:Key="LocOcrResultTitle">OCR结果</sys:String>
+    <sys:String x:Key="LocOcrResultCopy">复制</sys:String>
+    <sys:String x:Key="LocOcrResultClose">关闭</sys:String>
+    <sys:String x:Key="LocOcrResultHint">识别的文本</sys:String>
+
+    <!-- Notifications -->
+    <sys:String x:Key="LocNotificationCopySuccess">已复制到剪贴板</sys:String>
+    <sys:String x:Key="LocNotificationSaveSuccess">已保存</sys:String>
+    <sys:String x:Key="LocNotificationSaveFailed">保存失败</sys:String>
+    <sys:String x:Key="LocNotificationUploadSuccess">已上传</sys:String>
+    <sys:String x:Key="LocNotificationUploadFailed">上传失败</sys:String>
+    <sys:String x:Key="LocNotificationOcrSuccess">OCR完成</sys:String>
+    <sys:String x:Key="LocNotificationOcrFailed">OCR失败</sys:String>
+
+    <!-- Buttons -->
+    <sys:String x:Key="LocButtonSave">保存</sys:String>
+    <sys:String x:Key="LocButtonCancel">取消</sys:String>
+    <sys:String x:Key="LocButtonClose">关闭</sys:String>
+    <sys:String x:Key="LocButtonOK">确定</sys:String>
+
+    <!-- Dialogs -->
+    <sys:String x:Key="LocDialogSaveTitle">保存截图</sys:String>
+    <sys:String x:Key="LocDialogSaveFilter">PNG文件|*.png|JPEG文件|*.jpg;*.jpeg|WebP文件|*.webp|所有文件|*.*</sys:String>
+    <sys:String x:Key="LocDialogSaveDefaultName">Shotora截图.png</sys:String>
+    <sys:String x:Key="LocDialogSelectFolder">选择文件夹</sys:String>
+    <sys:String x:Key="LocDialogConfirm">确认</sys:String>
+    <sys:String x:Key="LocDialogDelete">删除</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguage">删除语言文件？</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguageConfirm">确定要删除此语言文件吗？</sys:String>
+
+    <!-- Errors -->
+    <sys:String x:Key="LocErrorInvalidHotkey">无效的快捷键</sys:String>
+    <sys:String x:Key="LocErrorHotkeyInUse">快捷键已被使用</sys:String>
+    <sys:String x:Key="LocErrorHotkeyRegisterFailed">快捷键注册失败</sys:String>
+    <sys:String x:Key="LocErrorSaveFailed">保存失败</sys:String>
+    <sys:String x:Key="LocErrorOcrFailed">OCR失败</sys:String>
+    <sys:String x:Key="LocErrorInvalidSelection">无效的选择</sys:String>
+    <sys:String x:Key="LocErrorNoSelection">没有选择</sys:String>
+    <sys:String x:Key="LocErrorTextEmpty">文本为空</sys:String>
+
+    <sys:String x:Key="LocMainTitle">Shotora</sys:String>
+    <sys:String x:Key="LocMainHint1">使用托盘图标或全局快捷键进行截图。</sys:String>
+    <sys:String x:Key="LocMainHint2">此窗口是可选的；关闭它，Shotora将在托盘中运行。</sys:String>
+
+    <sys:String x:Key="LocAboutSubtitle">屏幕截图与标注</sys:String>
+    <sys:String x:Key="LocAboutDescription">使用 Shotora 快速截图、标注、OCR 和上传。</sys:String>
+    <sys:String x:Key="LocAboutLicense">许可证</sys:String>
+    <sys:String x:Key="LocAboutAuthor">作者</sys:String>
+    <sys:String x:Key="LocAboutRole">角色</sys:String>
+    <sys:String x:Key="LocAboutContact">联系</sys:String>
+    <sys:String x:Key="LocAboutContactIntro">欢迎联系，反馈或合作。</sys:String>
+</ResourceDictionary>

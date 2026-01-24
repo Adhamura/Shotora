@@ -1,0 +1,255 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <!-- Settings -->
+    <sys:String x:Key="LocSettingsTitle">Ρυθμίσεις</sys:String>
+    <sys:String x:Key="LocSettingsStorage">Αποθήκευση</sys:String>
+    <sys:String x:Key="LocSettingsDefaultFolder">Προεπιλεγμένος φάκελος</sys:String>
+    <sys:String x:Key="LocSettingsBrowse">Αναζήτηση</sys:String>
+    <sys:String x:Key="LocSettingsDefaultFormat">Προεπιλεγμένη μορφή</sys:String>
+    <sys:String x:Key="LocSettingsJpegQuality">Ποιότητα JPEG</sys:String>
+    <sys:String x:Key="LocSettingsFilenamePattern">Μοτίβο ονόματος αρχείου</sys:String>
+    <sys:String x:Key="LocSettingsOcr">OCR</sys:String>
+    <sys:String x:Key="LocSettingsProvider">Πάροχος</sys:String>
+    <sys:String x:Key="LocSettingsLanguages">Γλώσσες</sys:String>
+    <sys:String x:Key="LocSettingsEasyOcrHint">Το EasyOCR απαιτεί Python + 'pip install easyocr'</sys:String>
+    <sys:String x:Key="LocSettingsTesseractFiles">Αρχεία γλώσσας Tesseract</sys:String>
+    <sys:String x:Key="LocSettingsSelectLanguage">Επιλογή γλώσσας</sys:String>
+    <sys:String x:Key="LocSettingsDownload">Λήψη</sys:String>
+    <sys:String x:Key="LocSettingsDelete">Διαγραφή</sys:String>
+    <sys:String x:Key="LocSettingsHotkeys">Συντομεύσεις</sys:String>
+    <sys:String x:Key="LocSettingsRegionHotkey">Λήψη περιοχής</sys:String>
+    <sys:String x:Key="LocSettingsFullscreenHotkey">Πλήρης οθόνη</sys:String>
+    <sys:String x:Key="LocSettingsActiveWindowHotkey">Ενεργό παράθυρο</sys:String>
+    <sys:String x:Key="LocSettingsGeneral">Γενικά</sys:String>
+    <sys:String x:Key="LocSettingsTheme">Θέμα</sys:String>
+    <sys:String x:Key="LocSettingsDisplayLanguage">Γλώσσα εμφάνισης</sys:String>
+    <sys:String x:Key="LocSettingsRunOnStartup">Εκτέλεση κατά την εκκίνηση</sys:String>
+    <sys:String x:Key="LocSettingsTabMain">Κύριο</sys:String>
+    <sys:String x:Key="LocSettingsTabHotkeys">Συντομεύσεις</sys:String>
+    <sys:String x:Key="LocSettingsTabEditor">Επεξεργαστής</sys:String>
+    <sys:String x:Key="LocSettingsEditorHotkeys">Συντομεύσεις επεξεργαστή</sys:String>
+    <sys:String x:Key="LocSettingsEditorMouse">Ποντίκι επεξεργαστή</sys:String>
+    <sys:String x:Key="LocSettingsCopyCloseMouse">Αντιγραφή + κλείσιμο</sys:String>
+    <sys:String x:Key="LocSettingsMoveSelectionMouse">Μετακίνηση επιλογής</sys:String>
+    <sys:String x:Key="LocSettingsEditorIcons">Εικονίδια επεξεργαστή</sys:String>
+    <sys:String x:Key="LocSettingsEditorOptions">Επιλογές επεξεργαστή</sys:String>
+    <sys:String x:Key="LocSettingsShowThicknessSlider">Εμφάνιση ρυθμιστή πάχους</sys:String>
+    <sys:String x:Key="LocSettingsDefaultThickness">Προεπιλεγμένο πάχος</sys:String>
+    <sys:String x:Key="LocSettingsShowColorPalette">Εμφάνιση παλέτας χρωμάτων</sys:String>
+    <sys:String x:Key="LocSettingsDefaultColor">Προεπιλεγμένο χρώμα</sys:String>
+    <sys:String x:Key="LocSettingsPickColor">Επιλογή</sys:String>
+    <sys:String x:Key="LocSettingsDefaultColorHint">Χρησιμοποιείται όταν η παλέτα χρωμάτων είναι κρυφή.</sys:String>
+    <sys:String x:Key="LocSettingsUsePointer">Χρήση δείκτη</sys:String>
+    <sys:String x:Key="LocSettingsShowUndo">Εμφάνιση Αναίρεσης</sys:String>
+    <sys:String x:Key="LocSettingsShowRedo">Εμφάνιση Επαναφοράς</sys:String>
+    <sys:String x:Key="LocSettingsShowCopy">Εμφάνιση Αντιγραφής</sys:String>
+    <sys:String x:Key="LocSettingsShowSave">Εμφάνιση Αποθήκευσης</sys:String>
+    <sys:String x:Key="LocSettingsShowUpload">Εμφάνιση Μεταφόρτωσης</sys:String>
+    <sys:String x:Key="LocSettingsShowOcr">Εμφάνιση OCR</sys:String>
+    <sys:String x:Key="LocSettingsShowCancel">Εμφάνιση Ακύρωσης</sys:String>
+    <sys:String x:Key="LocSettingsShowConfirm">Εμφάνιση Επιβεβαίωσης</sys:String>
+    <sys:String x:Key="LocSettingsShowClose">Εμφάνιση Κλεισίματος</sys:String>
+    <sys:String x:Key="LocSettingsShowSelection">Εμφάνιση Επιλογής</sys:String>
+    <sys:String x:Key="LocSettingsShowMove">Εμφάνιση Μετακίνησης</sys:String>
+    <sys:String x:Key="LocSettingsShowPen">Εμφάνιση Στυλό</sys:String>
+    <sys:String x:Key="LocSettingsShowLine">Εμφάνιση Γραμμής</sys:String>
+    <sys:String x:Key="LocSettingsShowArrow">Εμφάνιση Βέλους</sys:String>
+    <sys:String x:Key="LocSettingsShowRectangle">Εμφάνιση Ορθογωνίου</sys:String>
+    <sys:String x:Key="LocSettingsShowEllipse">Εμφάνιση Έλλειψης</sys:String>
+    <sys:String x:Key="LocSettingsShowText">Εμφάνιση Κειμένου</sys:String>
+    <sys:String x:Key="LocSettingsShowHighlight">Εμφάνιση Επισημάνσεων</sys:String>
+    <sys:String x:Key="LocSettingsShowBlur">Εμφάνιση Θόλωσης</sys:String>
+    <sys:String x:Key="LocSettingsShowPixelate">Εμφάνιση Ψηφιοποίησης</sys:String>
+    <sys:String x:Key="LocSettingsShowThickness">Εμφάνιση Πάχους</sys:String>
+    <sys:String x:Key="LocSettingsShowColors">Εμφάνιση Χρωμάτων</sys:String>
+    <sys:String x:Key="LocSettingsShowCrosshair">Εμφάνιση Στόχου</sys:String>
+    <sys:String x:Key="LocSettingsShowResizeHandles">Εμφάνιση χειριστηρίων αλλαγής μεγέθους</sys:String>
+    <sys:String x:Key="LocSettingsShowToolbar">Εμφάνιση γραμμής εργαλείων</sys:String>
+    <sys:String x:Key="LocSettingsShowPalette">Εμφάνιση παλέτας</sys:String>
+    <sys:String x:Key="LocSettingsShowPreview">Εμφάνιση προεπισκόπησης</sys:String>
+    <sys:String x:Key="LocSettingsShowMiniMap">Εμφάνιση μίνι χάρτη</sys:String>
+    <sys:String x:Key="LocSettingsShowSelectionSize">Εμφάνιση μεγέθους επιλογής</sys:String>
+    <sys:String x:Key="LocSettingsShowSelectionPosition">Εμφάνιση θέσης επιλογής</sys:String>
+
+    <!-- Common -->
+    <sys:String x:Key="LocCommonClose">Κλείσιμο</sys:String>
+
+    <!-- Tools -->
+    <sys:String x:Key="LocToolSelect">Επιλογή</sys:String>
+    <sys:String x:Key="LocToolRegion">Επιλογή περιοχής</sys:String>
+    <sys:String x:Key="LocToolMove">Μετακίνηση περιοχής</sys:String>
+    <sys:String x:Key="LocToolPen">Πένα</sys:String>
+    <sys:String x:Key="LocToolLine">Γραμμή</sys:String>
+    <sys:String x:Key="LocToolArrow">Βέλος</sys:String>
+    <sys:String x:Key="LocToolRect">Ορθογώνιο</sys:String>
+    <sys:String x:Key="LocToolEllipse">Έλλειψη</sys:String>
+    <sys:String x:Key="LocToolText">Κείμενο</sys:String>
+    <sys:String x:Key="LocToolHighlight">Επισήμανση</sys:String>
+    <sys:String x:Key="LocToolBlur">Θόλωση</sys:String>
+    <sys:String x:Key="LocToolPixelate">Εικονοστοιχείωση</sys:String>
+    <sys:String x:Key="LocToolSaveAs">Αποθήκευση ως</sys:String>
+    <sys:String x:Key="LocToolCopy">Αντιγραφή</sys:String>
+    <sys:String x:Key="LocToolUpload">Μεταφόρτωση</sys:String>
+    <sys:String x:Key="LocToolCancel">Ακύρωση</sys:String>
+    <sys:String x:Key="LocToolColors">Χρώματα</sys:String>
+    <sys:String x:Key="LocToolThickness">Πάχος</sys:String>
+    <sys:String x:Key="LocToolUndo">Αναίρεση</sys:String>
+    <sys:String x:Key="LocToolRedo">Επανάληψη</sys:String>
+
+    <sys:String x:Key="LocSettingsRegionHotkeyPlaceholder">Πατήστε πλήκτρα...</sys:String>
+    <sys:String x:Key="LocSettingsFullscreenHotkeyPlaceholder">Πατήστε πλήκτρα...</sys:String>
+    <sys:String x:Key="LocSettingsActiveWindowHotkeyPlaceholder">Πατήστε πλήκτρα...</sys:String>
+    <sys:String x:Key="LocSettingsEditorUndoHotkey">Αναίρεση</sys:String>
+    <sys:String x:Key="LocSettingsEditorUndoHotkeyPlaceholder">Ctrl+Z</sys:String>
+    <sys:String x:Key="LocSettingsEditorRedoHotkey">Επανάληψη</sys:String>
+    <sys:String x:Key="LocSettingsEditorRedoHotkeyPlaceholder">Ctrl+Y</sys:String>
+    <sys:String x:Key="LocSettingsEditorCopyHotkey">Αντιγραφή</sys:String>
+    <sys:String x:Key="LocSettingsEditorCopyHotkeyPlaceholder">Ctrl+C</sys:String>
+    <sys:String x:Key="LocSettingsEditorSaveHotkey">Αποθήκευση</sys:String>
+    <sys:String x:Key="LocSettingsEditorSaveHotkeyPlaceholder">Ctrl+S</sys:String>
+
+    <sys:String x:Key="LocSettingsOcrSettings">Ρυθμίσεις OCR</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstall">Εγκατάσταση EasyOCR</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemove">Αφαίρεση EasyOCR</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrStatus">Κατάσταση</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstalled">Εγκατεστημένο</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrNotInstalled">Μη εγκατεστημένο</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstalling">Εγκατάσταση...</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemoving">Αφαίρεση...</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstallFailed">Η εγκατάσταση απέτυχε</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemoveFailed">Η αφαίρεση απέτυχε</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstallLang">Εγκατάσταση</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoveLang">Αφαίρεση</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstalled">Εγκατεστημένο</sys:String>
+    <sys:String x:Key="LocSettingsOcrNotInstalled">Μη εγκατεστημένο</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstalling">Εγκατάσταση...</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoving">Αφαίρεση...</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstallFailed">Η εγκατάσταση απέτυχε</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoveFailed">Η αφαίρεση απέτυχε</sys:String>
+    <sys:String x:Key="LocSettingsOcrDownloadProgress">Πρόοδος λήψης</sys:String>
+    <sys:String x:Key="LocSettingsOcrBytes">bytes</sys:String>
+    <sys:String x:Key="LocSettingsOcrLicense">Άδεια</sys:String>
+    <sys:String x:Key="LocSettingsOcrLicenseLink">https://github.com/JaidedAI/EasyOCR/blob/master/LICENSE</sys:String>
+    <sys:String x:Key="LocSettingsOcrTesseractLangs">Γλώσσες Tesseract</sys:String>
+    <sys:String x:Key="LocSettingsOcrTesseractHint">Κατεβάστε επιπλέον γλώσσες Tesseract εδώ.</sys:String>
+
+    <sys:String x:Key="LocSettingsExamplesTitle">Παραδείγματα</sys:String>
+    <sys:String x:Key="LocSettingsExamplesDescription">Προεπισκόπηση παραδειγματικών εικονιδίων στο τρέχον θέμα.</sys:String>
+    <sys:String x:Key="LocSettingsExamplesFormat">Μορφή</sys:String>
+    <sys:String x:Key="LocSettingsExamplesEffects">Εφέ</sys:String>
+    <sys:String x:Key="LocSettingsExamplesShape">Σχήμα</sys:String>
+    <sys:String x:Key="LocSettingsExamplesIcon">Εικονίδιο</sys:String>
+
+    <!-- Tray -->
+    <sys:String x:Key="LocTrayCaptureRegion">Λήψη περιοχής</sys:String>
+    <sys:String x:Key="LocTrayCaptureFull">Λήψη πλήρους οθόνης</sys:String>
+    <sys:String x:Key="LocTraySettings">Ρυθμίσεις</sys:String>
+    <sys:String x:Key="LocTrayAbout">Σχετικά</sys:String>
+    <sys:String x:Key="LocTrayExit">Έξοδος</sys:String>
+
+    <!-- Overlay -->
+    <sys:String x:Key="LocOverlayCopy">Αντιγραφή</sys:String>
+    <sys:String x:Key="LocOverlaySave">Αποθήκευση</sys:String>
+    <sys:String x:Key="LocOverlayUpload">Μεταφόρτωση</sys:String>
+    <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
+    <sys:String x:Key="LocOverlayCancel">Ακύρωση</sys:String>
+    <sys:String x:Key="LocOverlayConfirm">Επιβεβαίωση</sys:String>
+    <sys:String x:Key="LocOverlayClose">Κλείσιμο</sys:String>
+    <sys:String x:Key="LocOverlaySelection">Επιλογή</sys:String>
+    <sys:String x:Key="LocOverlayMove">Μετακίνηση</sys:String>
+    <sys:String x:Key="LocOverlayPointer">Δείκτης</sys:String>
+    <sys:String x:Key="LocOverlayPen">Στυλό</sys:String>
+    <sys:String x:Key="LocOverlayLine">Γραμμή</sys:String>
+    <sys:String x:Key="LocOverlayArrow">Βέλος</sys:String>
+    <sys:String x:Key="LocOverlayRectangle">Ορθογώνιο</sys:String>
+    <sys:String x:Key="LocOverlayEllipse">Έλλειψη</sys:String>
+    <sys:String x:Key="LocOverlayText">Κείμενο</sys:String>
+    <sys:String x:Key="LocOverlayHighlight">Επισημάνσεις</sys:String>
+    <sys:String x:Key="LocOverlayBlur">Θόλωμα</sys:String>
+    <sys:String x:Key="LocOverlayPixelate">Ψηφιοποίηση</sys:String>
+    <sys:String x:Key="LocOverlayThickness">Πάχος</sys:String>
+    <sys:String x:Key="LocOverlayColors">Χρώματα</sys:String>
+    <sys:String x:Key="LocOverlayPosition">Θέση</sys:String>
+    <sys:String x:Key="LocOverlaySize">Μέγεθος</sys:String>
+    <sys:String x:Key="LocOverlayWidth">Π</sys:String>
+    <sys:String x:Key="LocOverlayHeight">Υ</sys:String>
+    <sys:String x:Key="LocOverlayPickColor">Επιλέξτε χρώμα</sys:String>
+    <sys:String x:Key="LocOverlayHintDraw">Κάντε κλικ και σύρετε για να σχεδιάσετε. Χρησιμοποιήστε τη γραμμή εργαλείων για τα εργαλεία.</sys:String>
+    <sys:String x:Key="LocOverlayHintMove">Σύρετε μέσα στην επιλογή για να μετακινήσετε. Χρησιμοποιήστε τις λαβές για αλλαγή μεγέθους.</sys:String>
+    <sys:String x:Key="LocOverlayHintEdit">Επιλέξτε εργαλεία για σχολιασμό. Χρησιμοποιήστε Αναίρεση/Επανάληψη όπως χρειάζεται.</sys:String>
+    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Ακύρωση, Enter: Επιβεβαίωση, Ctrl+Z: Αναίρεση, Ctrl+Y: Επανάληψη</sys:String>
+
+    <!-- Text Input -->
+    <sys:String x:Key="LocTextInputTitle">Προσθήκη κειμένου</sys:String>
+    <sys:String x:Key="LocTextInputHint">Εισαγάγετε κείμενο για να το τοποθετήσετε στην οθόνη.</sys:String>
+    <sys:String x:Key="LocTextInputFont">Γραμματοσειρά</sys:String>
+    <sys:String x:Key="LocTextInputSize">Μέγεθος</sys:String>
+    <sys:String x:Key="LocTextInputBold">Έντονη</sys:String>
+    <sys:String x:Key="LocTextInputItalic">Πλάγια</sys:String>
+    <sys:String x:Key="LocTextInputColor">Χρώμα</sys:String>
+    <sys:String x:Key="LocTextInputPlace">Τοποθετήστε το κείμενο</sys:String>
+    <sys:String x:Key="LocTextInputCancel">Ακύρωση</sys:String>
+
+    <!-- About -->
+    <sys:String x:Key="LocAboutTitle">Σχετικά με το Shotora</sys:String>
+    <sys:String x:Key="LocAboutVersion">Έκδοση</sys:String>
+    <sys:String x:Key="LocAboutCopyright">Â© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
+    <sys:String x:Key="LocAboutLinks">Σύνδεσμοι</sys:String>
+    <sys:String x:Key="LocAboutWebsite">Ιστότοπος</sys:String>
+    <sys:String x:Key="LocAboutLinkedIn">LinkedIn</sys:String>
+    <sys:String x:Key="LocAboutEmail">Ηλ. Ταχυδρομείο</sys:String>
+
+    <!-- OCR Result -->
+    <sys:String x:Key="LocOcrResultTitle">Αποτέλεσμα OCR</sys:String>
+    <sys:String x:Key="LocOcrResultCopy">Αντιγραφή</sys:String>
+    <sys:String x:Key="LocOcrResultClose">Κλείσιμο</sys:String>
+    <sys:String x:Key="LocOcrResultHint">Αναγνωρισμένο κείμενο</sys:String>
+
+    <!-- Notifications -->
+    <sys:String x:Key="LocNotificationCopySuccess">Αντιγράφηκε στο πρόχειρο</sys:String>
+    <sys:String x:Key="LocNotificationSaveSuccess">Αποθηκεύτηκε</sys:String>
+    <sys:String x:Key="LocNotificationSaveFailed">Η αποθήκευση απέτυχε</sys:String>
+    <sys:String x:Key="LocNotificationUploadSuccess">Μεταφορτώθηκε</sys:String>
+    <sys:String x:Key="LocNotificationUploadFailed">Η μεταφόρτωση απέτυχε</sys:String>
+    <sys:String x:Key="LocNotificationOcrSuccess">Το OCR ολοκληρώθηκε</sys:String>
+    <sys:String x:Key="LocNotificationOcrFailed">Το OCR απέτυχε</sys:String>
+
+    <!-- Buttons -->
+    <sys:String x:Key="LocButtonSave">Αποθήκευση</sys:String>
+    <sys:String x:Key="LocButtonCancel">Ακύρωση</sys:String>
+    <sys:String x:Key="LocButtonClose">Κλείσιμο</sys:String>
+    <sys:String x:Key="LocButtonOK">Εντάξει</sys:String>
+
+    <!-- Dialogs -->
+    <sys:String x:Key="LocDialogSaveTitle">Αποθήκευση στιγμιότυπου</sys:String>
+    <sys:String x:Key="LocDialogSaveFilter">Αρχεία PNG|*.png|Αρχεία JPEG|*.jpg;*.jpeg|Αρχεία WebP|*.webp|Όλα τα αρχεία|*.*</sys:String>
+    <sys:String x:Key="LocDialogSaveDefaultName">Shotora.png</sys:String>
+    <sys:String x:Key="LocDialogSelectFolder">Επιλογή φακέλου</sys:String>
+    <sys:String x:Key="LocDialogConfirm">Επιβεβαίωση</sys:String>
+    <sys:String x:Key="LocDialogDelete">Διαγραφή</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguage">Αφαίρεση αρχείου γλώσσας;</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguageConfirm">Είστε σίγουροι ότι θέλετε να αφαιρέσετε αυτό το αρχείο γλώσσας;</sys:String>
+
+    <!-- Errors -->
+    <sys:String x:Key="LocErrorInvalidHotkey">Μη έγκυρος συνδυασμός πλήκτρων</sys:String>
+    <sys:String x:Key="LocErrorHotkeyInUse">Ο συνδυασμός πλήκτρων χρησιμοποιείται ήδη</sys:String>
+    <sys:String x:Key="LocErrorHotkeyRegisterFailed">Η εγγραφή του συνδυασμού πλήκτρων απέτυχε</sys:String>
+    <sys:String x:Key="LocErrorSaveFailed">Η αποθήκευση απέτυχε</sys:String>
+    <sys:String x:Key="LocErrorOcrFailed">Το OCR απέτυχε</sys:String>
+    <sys:String x:Key="LocErrorInvalidSelection">Μη έγκυρη επιλογή</sys:String>
+    <sys:String x:Key="LocErrorNoSelection">Καμία επιλογή</sys:String>
+    <sys:String x:Key="LocErrorTextEmpty">Το κείμενο είναι κενό</sys:String>
+
+    <sys:String x:Key="LocMainTitle">Shotora</sys:String>
+    <sys:String x:Key="LocMainHint1">Χρησιμοποιήστε το εικονίδιο στο δίσκο ή παγκόσμιες συντομεύσεις για να καταγράψετε.</sys:String>
+    <sys:String x:Key="LocMainHint2">Αυτό το παράθυρο είναι προαιρετικό· κλείστε το για να αφήσετε το Shotora να τρέχει στο δίσκο.</sys:String>
+
+    <sys:String x:Key="LocAboutSubtitle">Σύλληψη οθόνης και σημειώσεις</sys:String>
+    <sys:String x:Key="LocAboutDescription">Γρήγορα στιγμιότυπα, σημειώσεις, OCR και μεταφορτώσεις με το Shotora.</sys:String>
+    <sys:String x:Key="LocAboutLicense">Άδεια</sys:String>
+    <sys:String x:Key="LocAboutAuthor">Συντάκτης</sys:String>
+    <sys:String x:Key="LocAboutRole">Ρόλος</sys:String>
+    <sys:String x:Key="LocAboutContact">Επικοινωνία</sys:String>
+    <sys:String x:Key="LocAboutContactIntro">Επικοινωνήστε για σχόλια ή συνεργασία.</sys:String>
+</ResourceDictionary>

@@ -1,0 +1,255 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <!-- Settings -->
+    <sys:String x:Key="LocSettingsTitle">Налаштування</sys:String>
+    <sys:String x:Key="LocSettingsStorage">Сховище</sys:String>
+    <sys:String x:Key="LocSettingsDefaultFolder">Типова папка</sys:String>
+    <sys:String x:Key="LocSettingsBrowse">Огляд</sys:String>
+    <sys:String x:Key="LocSettingsDefaultFormat">Типовий формат</sys:String>
+    <sys:String x:Key="LocSettingsJpegQuality">Якість JPEG</sys:String>
+    <sys:String x:Key="LocSettingsFilenamePattern">Шаблон імені файлу</sys:String>
+    <sys:String x:Key="LocSettingsOcr">OCR</sys:String>
+    <sys:String x:Key="LocSettingsProvider">Провайдер</sys:String>
+    <sys:String x:Key="LocSettingsLanguages">Мови</sys:String>
+    <sys:String x:Key="LocSettingsEasyOcrHint">EasyOCR потребує Python + 'pip install easyocr'</sys:String>
+    <sys:String x:Key="LocSettingsTesseractFiles">Мовні файли Tesseract</sys:String>
+    <sys:String x:Key="LocSettingsSelectLanguage">Оберіть мову</sys:String>
+    <sys:String x:Key="LocSettingsDownload">Завантажити</sys:String>
+    <sys:String x:Key="LocSettingsDelete">Удалить</sys:String>
+    <sys:String x:Key="LocSettingsHotkeys">Гарячі клавіші</sys:String>
+    <sys:String x:Key="LocSettingsRegionHotkey">Захоплення області</sys:String>
+    <sys:String x:Key="LocSettingsFullscreenHotkey">Повний екран</sys:String>
+    <sys:String x:Key="LocSettingsActiveWindowHotkey">Активне вікно</sys:String>
+    <sys:String x:Key="LocSettingsGeneral">Загальні</sys:String>
+    <sys:String x:Key="LocSettingsTheme">Тема</sys:String>
+    <sys:String x:Key="LocSettingsDisplayLanguage">Мова інтерфейсу</sys:String>
+    <sys:String x:Key="LocSettingsRunOnStartup">Запускати при старті</sys:String>
+    <sys:String x:Key="LocSettingsTabMain">Головна</sys:String>
+    <sys:String x:Key="LocSettingsTabHotkeys">Клавіші</sys:String>
+    <sys:String x:Key="LocSettingsTabEditor">Редактор</sys:String>
+    <sys:String x:Key="LocSettingsEditorHotkeys">Гарячі клавіші редактора</sys:String>
+    <sys:String x:Key="LocSettingsEditorMouse">Миша редактора</sys:String>
+    <sys:String x:Key="LocSettingsCopyCloseMouse">Копіювати + закрити</sys:String>
+    <sys:String x:Key="LocSettingsMoveSelectionMouse">Перемістити виділення</sys:String>
+    <sys:String x:Key="LocSettingsEditorIcons">Іконки редактора</sys:String>
+    <sys:String x:Key="LocSettingsEditorOptions">Опції редактора</sys:String>
+    <sys:String x:Key="LocSettingsShowThicknessSlider">Показати повзунок товщини</sys:String>
+    <sys:String x:Key="LocSettingsDefaultThickness">Типова товщина</sys:String>
+    <sys:String x:Key="LocSettingsShowColorPalette">Показати палітру кольорів</sys:String>
+    <sys:String x:Key="LocSettingsDefaultColor">Типовий колір</sys:String>
+    <sys:String x:Key="LocSettingsPickColor">Обрати</sys:String>
+    <sys:String x:Key="LocSettingsDefaultColorHint">Використовується, коли палітра кольорів прихована.</sys:String>
+    <sys:String x:Key="LocSettingsUsePointer">Использовать указатель</sys:String>
+    <sys:String x:Key="LocSettingsShowUndo">Показать Отменить</sys:String>
+    <sys:String x:Key="LocSettingsShowRedo">Показать Повторить</sys:String>
+    <sys:String x:Key="LocSettingsShowCopy">Показать Копировать</sys:String>
+    <sys:String x:Key="LocSettingsShowSave">Показать Сохранить</sys:String>
+    <sys:String x:Key="LocSettingsShowUpload">Показать Загрузить</sys:String>
+    <sys:String x:Key="LocSettingsShowOcr">Показать OCR</sys:String>
+    <sys:String x:Key="LocSettingsShowCancel">Показать Отмена</sys:String>
+    <sys:String x:Key="LocSettingsShowConfirm">Показать Подтвердить</sys:String>
+    <sys:String x:Key="LocSettingsShowClose">Показать Закрыть</sys:String>
+    <sys:String x:Key="LocSettingsShowSelection">Показать Выделение</sys:String>
+    <sys:String x:Key="LocSettingsShowMove">Показать Переместить</sys:String>
+    <sys:String x:Key="LocSettingsShowPen">Показать Карандаш</sys:String>
+    <sys:String x:Key="LocSettingsShowLine">Показать Линию</sys:String>
+    <sys:String x:Key="LocSettingsShowArrow">Показать Стрелку</sys:String>
+    <sys:String x:Key="LocSettingsShowRectangle">Показать Прямоугольник</sys:String>
+    <sys:String x:Key="LocSettingsShowEllipse">Показать Эллипс</sys:String>
+    <sys:String x:Key="LocSettingsShowText">Показать Текст</sys:String>
+    <sys:String x:Key="LocSettingsShowHighlight">Показать Маркер</sys:String>
+    <sys:String x:Key="LocSettingsShowBlur">Показать Размытие</sys:String>
+    <sys:String x:Key="LocSettingsShowPixelate">Показать Пикселизацию</sys:String>
+    <sys:String x:Key="LocSettingsShowThickness">Показать Толщину</sys:String>
+    <sys:String x:Key="LocSettingsShowColors">Показать Цвета</sys:String>
+    <sys:String x:Key="LocSettingsShowCrosshair">Показать прицел</sys:String>
+    <sys:String x:Key="LocSettingsShowResizeHandles">Показать маркеры изменения</sys:String>
+    <sys:String x:Key="LocSettingsShowToolbar">Показать панель инструментов</sys:String>
+    <sys:String x:Key="LocSettingsShowPalette">Показать палитру</sys:String>
+    <sys:String x:Key="LocSettingsShowPreview">Показать превью</sys:String>
+    <sys:String x:Key="LocSettingsShowMiniMap">Показать мини-карту</sys:String>
+    <sys:String x:Key="LocSettingsShowSelectionSize">Показать размер выделения</sys:String>
+    <sys:String x:Key="LocSettingsShowSelectionPosition">Показать позицию выделения</sys:String>
+
+    <!-- Common -->
+    <sys:String x:Key="LocCommonClose">Закрити</sys:String>
+
+    <!-- Tools -->
+    <sys:String x:Key="LocToolSelect">Вибрати</sys:String>
+    <sys:String x:Key="LocToolRegion">Вибір області</sys:String>
+    <sys:String x:Key="LocToolMove">Перемістити область</sys:String>
+    <sys:String x:Key="LocToolPen">Ручка</sys:String>
+    <sys:String x:Key="LocToolLine">Лінія</sys:String>
+    <sys:String x:Key="LocToolArrow">Стрілка</sys:String>
+    <sys:String x:Key="LocToolRect">Прямокутник</sys:String>
+    <sys:String x:Key="LocToolEllipse">Еліпс</sys:String>
+    <sys:String x:Key="LocToolText">Текст</sys:String>
+    <sys:String x:Key="LocToolHighlight">Маркер</sys:String>
+    <sys:String x:Key="LocToolBlur">Розмиття</sys:String>
+    <sys:String x:Key="LocToolPixelate">Пікселізація</sys:String>
+    <sys:String x:Key="LocToolSaveAs">Зберегти як</sys:String>
+    <sys:String x:Key="LocToolCopy">Копіювати</sys:String>
+    <sys:String x:Key="LocToolUpload">Завантажити</sys:String>
+    <sys:String x:Key="LocToolCancel">Скасувати</sys:String>
+    <sys:String x:Key="LocToolColors">Кольори</sys:String>
+    <sys:String x:Key="LocToolThickness">Товщина</sys:String>
+    <sys:String x:Key="LocToolUndo">Скасувати</sys:String>
+    <sys:String x:Key="LocToolRedo">Повторити</sys:String>
+
+    <sys:String x:Key="LocSettingsRegionHotkeyPlaceholder">Нажмите клавиши...</sys:String>
+    <sys:String x:Key="LocSettingsFullscreenHotkeyPlaceholder">Нажмите клавиши...</sys:String>
+    <sys:String x:Key="LocSettingsActiveWindowHotkeyPlaceholder">Нажмите клавиши...</sys:String>
+    <sys:String x:Key="LocSettingsEditorUndoHotkey">Отменить</sys:String>
+    <sys:String x:Key="LocSettingsEditorUndoHotkeyPlaceholder">Ctrl+Z</sys:String>
+    <sys:String x:Key="LocSettingsEditorRedoHotkey">Повторить</sys:String>
+    <sys:String x:Key="LocSettingsEditorRedoHotkeyPlaceholder">Ctrl+Y</sys:String>
+    <sys:String x:Key="LocSettingsEditorCopyHotkey">Копировать</sys:String>
+    <sys:String x:Key="LocSettingsEditorCopyHotkeyPlaceholder">Ctrl+C</sys:String>
+    <sys:String x:Key="LocSettingsEditorSaveHotkey">Сохранить</sys:String>
+    <sys:String x:Key="LocSettingsEditorSaveHotkeyPlaceholder">Ctrl+S</sys:String>
+
+    <sys:String x:Key="LocSettingsOcrSettings">Настройки OCR</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstall">Установить EasyOCR</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemove">Удалить EasyOCR</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrStatus">Статус</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstalled">Установлено</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrNotInstalled">Не установлено</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstalling">Установка...</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemoving">Удаление...</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstallFailed">Ошибка установки</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemoveFailed">Ошибка удаления</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstallLang">Установить</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoveLang">Удалить</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstalled">Установлено</sys:String>
+    <sys:String x:Key="LocSettingsOcrNotInstalled">Не установлено</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstalling">Установка...</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoving">Удаление...</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstallFailed">Ошибка установки</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoveFailed">Ошибка удаления</sys:String>
+    <sys:String x:Key="LocSettingsOcrDownloadProgress">Прогресс загрузки</sys:String>
+    <sys:String x:Key="LocSettingsOcrBytes">байт</sys:String>
+    <sys:String x:Key="LocSettingsOcrLicense">Лицензия</sys:String>
+    <sys:String x:Key="LocSettingsOcrLicenseLink">https://github.com/JaidedAI/EasyOCR/blob/master/LICENSE</sys:String>
+    <sys:String x:Key="LocSettingsOcrTesseractLangs">Языки Tesseract</sys:String>
+    <sys:String x:Key="LocSettingsOcrTesseractHint">Загрузите дополнительные языки Tesseract здесь.</sys:String>
+
+    <sys:String x:Key="LocSettingsExamplesTitle">Примеры</sys:String>
+    <sys:String x:Key="LocSettingsExamplesDescription">Просмотр примеров иконок в текущей теме.</sys:String>
+    <sys:String x:Key="LocSettingsExamplesFormat">Формат</sys:String>
+    <sys:String x:Key="LocSettingsExamplesEffects">Эффекты</sys:String>
+    <sys:String x:Key="LocSettingsExamplesShape">Фигура</sys:String>
+    <sys:String x:Key="LocSettingsExamplesIcon">Иконка</sys:String>
+
+    <!-- Tray -->
+    <sys:String x:Key="LocTrayCaptureRegion">Знімок області</sys:String>
+    <sys:String x:Key="LocTrayCaptureFull">Знімок усього екрана</sys:String>
+    <sys:String x:Key="LocTraySettings">Налаштування</sys:String>
+    <sys:String x:Key="LocTrayAbout">Про програму</sys:String>
+    <sys:String x:Key="LocTrayExit">Вихід</sys:String>
+
+    <!-- Overlay -->
+    <sys:String x:Key="LocOverlayCopy">Копировать</sys:String>
+    <sys:String x:Key="LocOverlaySave">Сохранить</sys:String>
+    <sys:String x:Key="LocOverlayUpload">Загрузить</sys:String>
+    <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
+    <sys:String x:Key="LocOverlayCancel">Отмена</sys:String>
+    <sys:String x:Key="LocOverlayConfirm">Подтвердить</sys:String>
+    <sys:String x:Key="LocOverlayClose">Закрыть</sys:String>
+    <sys:String x:Key="LocOverlaySelection">Выделение</sys:String>
+    <sys:String x:Key="LocOverlayMove">Переместить</sys:String>
+    <sys:String x:Key="LocOverlayPointer">Указатель</sys:String>
+    <sys:String x:Key="LocOverlayPen">Карандаш</sys:String>
+    <sys:String x:Key="LocOverlayLine">Линия</sys:String>
+    <sys:String x:Key="LocOverlayArrow">Стрелка</sys:String>
+    <sys:String x:Key="LocOverlayRectangle">Прямоугольник</sys:String>
+    <sys:String x:Key="LocOverlayEllipse">Эллипс</sys:String>
+    <sys:String x:Key="LocOverlayText">Текст</sys:String>
+    <sys:String x:Key="LocOverlayHighlight">Маркер</sys:String>
+    <sys:String x:Key="LocOverlayBlur">Размытие</sys:String>
+    <sys:String x:Key="LocOverlayPixelate">Пикселизация</sys:String>
+    <sys:String x:Key="LocOverlayThickness">Толщина</sys:String>
+    <sys:String x:Key="LocOverlayColors">Цвета</sys:String>
+    <sys:String x:Key="LocOverlayPosition">Позиция</sys:String>
+    <sys:String x:Key="LocOverlaySize">Размер</sys:String>
+    <sys:String x:Key="LocOverlayWidth">Ш</sys:String>
+    <sys:String x:Key="LocOverlayHeight">В</sys:String>
+    <sys:String x:Key="LocOverlayPickColor">Выбрать цвет</sys:String>
+    <sys:String x:Key="LocOverlayHintDraw">Нажмите и перетащите для рисования. Используйте панель инструментов.</sys:String>
+    <sys:String x:Key="LocOverlayHintMove">Перетащите внутри выделения для перемещения. Используйте маркеры для изменения размера.</sys:String>
+    <sys:String x:Key="LocOverlayHintEdit">Выберите инструменты для аннотации. Используйте Отменить/Повторить по необходимости.</sys:String>
+    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Отмена, Enter: Подтвердить, Ctrl+Z: Отменить, Ctrl+Y: Повторить</sys:String>
+
+    <!-- Text Input -->
+    <sys:String x:Key="LocTextInputTitle">Добавить текст</sys:String>
+    <sys:String x:Key="LocTextInputHint">Введите текст для размещения на скриншоте</sys:String>
+    <sys:String x:Key="LocTextInputFont">Шрифт</sys:String>
+    <sys:String x:Key="LocTextInputSize">Размер</sys:String>
+    <sys:String x:Key="LocTextInputBold">Жирный</sys:String>
+    <sys:String x:Key="LocTextInputItalic">Курсив</sys:String>
+    <sys:String x:Key="LocTextInputColor">Цвет</sys:String>
+    <sys:String x:Key="LocTextInputPlace">Разместить текст</sys:String>
+    <sys:String x:Key="LocTextInputCancel">Отмена</sys:String>
+
+    <!-- About -->
+    <sys:String x:Key="LocAboutTitle">Про Shotora</sys:String>
+    <sys:String x:Key="LocAboutVersion">Версія</sys:String>
+    <sys:String x:Key="LocAboutCopyright">© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
+    <sys:String x:Key="LocAboutLinks">Посилання</sys:String>
+    <sys:String x:Key="LocAboutWebsite">Веб-сайт</sys:String>
+    <sys:String x:Key="LocAboutLinkedIn">LinkedIn</sys:String>
+    <sys:String x:Key="LocAboutEmail">Почта</sys:String>
+
+    <!-- OCR Result -->
+    <sys:String x:Key="LocOcrResultTitle">Результат OCR</sys:String>
+    <sys:String x:Key="LocOcrResultCopy">Копировать</sys:String>
+    <sys:String x:Key="LocOcrResultClose">Закрыть</sys:String>
+    <sys:String x:Key="LocOcrResultHint">Распознанный текст</sys:String>
+
+    <!-- Notifications -->
+    <sys:String x:Key="LocNotificationCopySuccess">Скопировано в буфер обмена</sys:String>
+    <sys:String x:Key="LocNotificationSaveSuccess">Сохранено</sys:String>
+    <sys:String x:Key="LocNotificationSaveFailed">Ошибка сохранения</sys:String>
+    <sys:String x:Key="LocNotificationUploadSuccess">Загружено</sys:String>
+    <sys:String x:Key="LocNotificationUploadFailed">Ошибка загрузки</sys:String>
+    <sys:String x:Key="LocNotificationOcrSuccess">OCR завершен</sys:String>
+    <sys:String x:Key="LocNotificationOcrFailed">Ошибка OCR</sys:String>
+
+    <!-- Buttons -->
+    <sys:String x:Key="LocButtonSave">Сохранить</sys:String>
+    <sys:String x:Key="LocButtonCancel">Отмена</sys:String>
+    <sys:String x:Key="LocButtonClose">Закрыть</sys:String>
+    <sys:String x:Key="LocButtonOK">ОК</sys:String>
+
+    <!-- Dialogs -->
+    <sys:String x:Key="LocDialogSaveTitle">Сохранить скриншот</sys:String>
+    <sys:String x:Key="LocDialogSaveFilter">PNG Файлы|*.png|JPEG Файлы|*.jpg;*.jpeg|WebP Файлы|*.webp|Все файлы|*.*</sys:String>
+    <sys:String x:Key="LocDialogSaveDefaultName">Shotora.png</sys:String>
+    <sys:String x:Key="LocDialogSelectFolder">Выбрать папку</sys:String>
+    <sys:String x:Key="LocDialogConfirm">Подтвердить</sys:String>
+    <sys:String x:Key="LocDialogDelete">Удалить</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguage">Удалить языковой файл?</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguageConfirm">Вы уверены, что хотите удалить этот языковой файл?</sys:String>
+
+    <!-- Errors -->
+    <sys:String x:Key="LocErrorInvalidHotkey">Неверная горячая клавиша</sys:String>
+    <sys:String x:Key="LocErrorHotkeyInUse">Горячая клавиша уже используется</sys:String>
+    <sys:String x:Key="LocErrorHotkeyRegisterFailed">Не удалось зарегистрировать горячую клавишу</sys:String>
+    <sys:String x:Key="LocErrorSaveFailed">Ошибка сохранения</sys:String>
+    <sys:String x:Key="LocErrorOcrFailed">Ошибка OCR</sys:String>
+    <sys:String x:Key="LocErrorInvalidSelection">Неверное выделение</sys:String>
+    <sys:String x:Key="LocErrorNoSelection">Нет выделения</sys:String>
+    <sys:String x:Key="LocErrorTextEmpty">Текст пустой</sys:String>
+
+    <sys:String x:Key="LocMainTitle">Shotora</sys:String>
+    <sys:String x:Key="LocMainHint1">Используйте иконку в трее или горячие клавиши для захвата.</sys:String>
+    <sys:String x:Key="LocMainHint2">Это окно необязательно; закройте его, чтобы Shotora работала в трее.</sys:String>
+
+    <sys:String x:Key="LocAboutSubtitle">Захоплення екрана та примітки</sys:String>
+    <sys:String x:Key="LocAboutDescription">Швидкі скріншоти, позначки, OCR і завантаження з Shotora.</sys:String>
+    <sys:String x:Key="LocAboutLicense">Ліцензія</sys:String>
+    <sys:String x:Key="LocAboutAuthor">Автор</sys:String>
+    <sys:String x:Key="LocAboutRole">Роль</sys:String>
+    <sys:String x:Key="LocAboutContact">Контакт</sys:String>
+    <sys:String x:Key="LocAboutContactIntro">Пишіть для відгуків або співпраці.</sys:String>
+</ResourceDictionary>

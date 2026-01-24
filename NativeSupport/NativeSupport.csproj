@@ -1,0 +1,123 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <IsPublishable>true</IsPublishable>
+        <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+        <IncludeAllContentForSelfExtract>true</IncludeAllContentForSelfExtract>
+
+    </PropertyGroup>
+
+    <!-- Ensure Cake.Tool is available when building NativeSupport -->
+    <PropertyGroup>
+        <_NativeSupportToolManifest Condition="Exists('$(MSBuildThisFileDirectory)..$(DirectorySeparatorChar)dotnet-tools.json')">$(MSBuildThisFileDirectory)..$(DirectorySeparatorChar)dotnet-tools.json</_NativeSupportToolManifest>
+        <_NativeSupportToolManifest Condition="'$(_NativeSupportToolManifest)'=='' and Exists('$(MSBuildThisFileDirectory)..$(DirectorySeparatorChar).config$(DirectorySeparatorChar)dotnet-tools.json')">$(MSBuildThisFileDirectory)..$(DirectorySeparatorChar).config$(DirectorySeparatorChar)dotnet-tools.json</_NativeSupportToolManifest>
+    </PropertyGroup>
+
+    <!-- Force-install Cake.Tool on each build/restore (non-fatal if already installed) -->
+    <Target Name="InstallCakeTool_NativeSupport"
+            BeforeTargets="Build"
+            Condition="'$(InstallCakeTool_NativeSupport_Disabled)'==''">
+        <Message Importance="High" Text="Ensuring Cake.Tool is installed (NativeSupport build hook)..."/>
+        <Exec Command="dotnet tool install Cake.Tool"
+              ContinueOnError="true"/>
+    </Target>
+
+    <Target Name="EnsureCakeToolForNativeSupport"
+            BeforeTargets="Restore"
+            Condition="'$(_NativeSupportToolManifest)' != ''">
+        <Message Importance="High" Text="Restoring dotnet tools for NativeSupport from $(_NativeSupportToolManifest)"/>
+        <Exec Command="dotnet tool restore --tool-manifest &quot;$(_NativeSupportToolManifest)&quot;"
+              WorkingDirectory="$(MSBuildThisFileDirectory)..$(DirectorySeparatorChar)"/>
+    </Target>
+
+    <ItemGroup>
+        <PackageReference Include="Tesseract" Version="5.2.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="tessdata\**" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" ExcludeFromSingleFile="false"/>
+    </ItemGroup>
+
+    <PropertyGroup>
+        <NativeRid Condition="'$(NativeSupportRid)' != ''">$(NativeSupportRid)</NativeRid>
+        <NativeRid Condition="'$(NativeRid)' == '' and '$(RuntimeIdentifier)' != ''">$(RuntimeIdentifier)</NativeRid>
+        <NativeRid Condition="'$(NativeRid)' == '' and '$(PublishRuntimeIdentifier)' != ''">$(PublishRuntimeIdentifier)</NativeRid>
+
+        <NativeOS Condition="'$(NativeRid)' != '' and $([System.String]::Copy('$(NativeRid)').StartsWith('win'))">Windows</NativeOS>
+        <NativeOS Condition="'$(NativeRid)' != '' and $([System.String]::Copy('$(NativeRid)').StartsWith('linux'))">Linux</NativeOS>
+        <NativeOS Condition="'$(NativeRid)' != '' and ($([System.String]::Copy('$(NativeRid)').StartsWith('osx')) or $([System.String]::Copy('$(NativeRid)').StartsWith('mac')) or $([System.String]::Copy('$(NativeRid)').StartsWith('maccatalyst')))">Mac</NativeOS>
+
+        <NativeArch Condition="'$(NativeRid)' != '' and $([System.String]::Copy('$(NativeRid)').EndsWith('x86'))">x86</NativeArch>
+        <NativeArch Condition="'$(NativeRid)' != '' and $([System.String]::Copy('$(NativeRid)').EndsWith('x64'))">x64</NativeArch>
+        <NativeArch Condition="'$(NativeRid)' != '' and $([System.String]::Copy('$(NativeRid)').EndsWith('arm64'))">arm64</NativeArch>
+
+        <NativeDestinationArch Condition="'$(NativeArch)'=='x86'">x86</NativeDestinationArch>
+        <NativeDestinationArch Condition="'$(NativeArch)'=='x64'">x64</NativeDestinationArch>
+        <NativeDestinationArch Condition="'$(NativeArch)'=='arm64'">x64</NativeDestinationArch>
+    </PropertyGroup>
+
+    <ItemGroup Condition="'$(NativeRid)' != '' and '$(NativeOS)' != '' and '$(NativeDestinationArch)' != ''">
+        <NativeLibs Include="Binaries\$(NativeOS)\$(NativeArch)\**\*"/>
+        <ResolvedFileToPublish Include="@(NativeLibs)">
+            <RelativePath>$(NativeDestinationArch)\%(Filename)%(Extension)</RelativePath>
+            <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+            <ExcludeFromSingleFile>false</ExcludeFromSingleFile>
+            <IncludeInSingleFile>true</IncludeInSingleFile>
+        </ResolvedFileToPublish>
+        <Content Include="@(NativeLibs)">
+            <TargetPath>$(NativeDestinationArch)\%(Filename)%(Extension)</TargetPath>
+            <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+            <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+            <ExcludeFromSingleFile>false</ExcludeFromSingleFile>
+            <IncludeInSingleFile>true</IncludeInSingleFile>
+        </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Include="Binaries\Linux\arm64\libdl.so"/>
+        <Content Include="Binaries\Linux\arm64\libdl.so.2"/>
+        <Content Include="Binaries\Linux\arm64\libdl.so.6"/>
+        <Content Include="Binaries\Linux\arm64\libgcc_s.so.1"/>
+        <Content Include="Binaries\Linux\arm64\libjpeg.so.6"/>
+        <Content Include="Binaries\Linux\arm64\libleptonica-1.82.0.so"/>
+        <Content Include="Binaries\Linux\arm64\libopenjp2.so"/>
+        <Content Include="Binaries\Linux\arm64\libpng16.so.16"/>
+        <Content Include="Binaries\Linux\arm64\libstdc++.so.6"/>
+        <Content Include="Binaries\Linux\arm64\libtesseract.so.5.0.3"/>
+        <Content Include="Binaries\Linux\arm64\libtesseract50.so"/>
+        <Content Include="Binaries\Linux\arm64\libtiff.so.6"/>
+        <Content Include="Binaries\Linux\x64\libdl.so"/>
+        <Content Include="Binaries\Linux\x64\libdl.so.2"/>
+        <Content Include="Binaries\Linux\x64\libdl.so.6"/>
+        <Content Include="Binaries\Linux\x64\libgcc_s.so.1"/>
+        <Content Include="Binaries\Linux\x64\libjbig.so.0"/>
+        <Content Include="Binaries\Linux\x64\libjpeg.so.62"/>
+        <Content Include="Binaries\Linux\x64\libleptonica-1.82.0.so"/>
+        <Content Include="Binaries\Linux\x64\libopenjp2.so"/>
+        <Content Include="Binaries\Linux\x64\libpng16.so.16"/>
+        <Content Include="Binaries\Linux\x64\libstdc++.so.6"/>
+        <Content Include="Binaries\Linux\x64\libtesseract50.so"/>
+        <Content Include="Binaries\Linux\x64\libtiff.so.6"/>
+        <Content Include="Binaries\Mac\x64\libarchive.13.dylib"/>
+        <Content Include="Binaries\Mac\x64\libb2.1.dylib"/>
+        <Content Include="Binaries\Mac\x64\libb2.dylib"/>
+        <Content Include="Binaries\Mac\x64\libgif.7.dylib"/>
+        <Content Include="Binaries\Mac\x64\libjpeg.8.dylib"/>
+        <Content Include="Binaries\Mac\x64\libleptonica-1.82.0.dylib"/>
+        <Content Include="Binaries\Mac\x64\libleptonica.6.dylib"/>
+        <Content Include="Binaries\Mac\x64\libopenjp2.7.dylib"/>
+        <Content Include="Binaries\Mac\x64\libopenjp2.dylib"/>
+        <Content Include="Binaries\Mac\x64\libpng16.16.dylib"/>
+        <Content Include="Binaries\Mac\x64\libpng16.dylib"/>
+        <Content Include="Binaries\Mac\x64\libtesseract50.dylib"/>
+        <Content Include="Binaries\Mac\x64\libtiff.6.dylib"/>
+        <Content Include="Binaries\Windows\x64\leptonica-1.82.0.dll"/>
+        <Content Include="Binaries\Windows\x64\tesseract50.dll"/>
+        <Content Include="Binaries\Windows\x86\leptonica-1.82.0.dll"/>
+        <Content Include="Binaries\Windows\x86\tesseract50.dll"/>
+    </ItemGroup>
+
+</Project>

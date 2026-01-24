@@ -1,0 +1,255 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <!-- Settings -->
+    <sys:String x:Key="LocSettingsTitle">Kiaraghyn</sys:String>
+    <sys:String x:Key="LocSettingsStorage">Tashtey</sys:String>
+    <sys:String x:Key="LocSettingsDefaultFolder">Coonrey cadjin</sys:String>
+    <sys:String x:Key="LocSettingsBrowse">Ronnee</sys:String>
+    <sys:String x:Key="LocSettingsDefaultFormat">Kruinn cadjin</sys:String>
+    <sys:String x:Key="LocSettingsJpegQuality">Kwalitee JPEG</sys:String>
+    <sys:String x:Key="LocSettingsFilenamePattern">Cummey ennym coadan</sys:String>
+    <sys:String x:Key="LocSettingsOcr">OCR</sys:String>
+    <sys:String x:Key="LocSettingsProvider">Kione-chowree</sys:String>
+    <sys:String x:Key="LocSettingsLanguages">Çhengaghyn</sys:String>
+    <sys:String x:Key="LocSettingsEasyOcrHint">Ta EasyOCR feme Python + 'pip install easyocr'</sys:String>
+    <sys:String x:Key="LocSettingsTesseractFiles">Coadanyn çhengey Tesseract</sys:String>
+    <sys:String x:Key="LocSettingsSelectLanguage">Reih çhengey</sys:String>
+    <sys:String x:Key="LocSettingsDownload">Lughtey neose</sys:String>
+    <sys:String x:Key="LocSettingsDelete">Scragh</sys:String>
+    <sys:String x:Key="LocSettingsHotkeys">Ogheryn aiceyr</sys:String>
+    <sys:String x:Key="LocSettingsRegionHotkey">Gaitney ard</sys:String>
+    <sys:String x:Key="LocSettingsFullscreenHotkey">Lann-scaa</sys:String>
+    <sys:String x:Key="LocSettingsActiveWindowHotkey">Uinnag obbyr</sys:String>
+    <sys:String x:Key="LocSettingsGeneral">Cadjin</sys:String>
+    <sys:String x:Key="LocSettingsTheme">Ard-chooish</sys:String>
+    <sys:String x:Key="LocSettingsDisplayLanguage">Çhengey soilshaghey</sys:String>
+    <sys:String x:Key="LocSettingsRunOnStartup">Roie ec toshiaght</sys:String>
+    <sys:String x:Key="LocSettingsTabMain">Ard</sys:String>
+    <sys:String x:Key="LocSettingsTabHotkeys">Aiceyryn</sys:String>
+    <sys:String x:Key="LocSettingsTabEditor">Lhiassagheyder</sys:String>
+    <sys:String x:Key="LocSettingsEditorHotkeys">Aiceyryn lhiassagheyder</sys:String>
+    <sys:String x:Key="LocSettingsEditorMouse">Luch lhiassagheyder</sys:String>
+    <sys:String x:Key="LocSettingsCopyCloseMouse">Clow + doon</sys:String>
+    <sys:String x:Key="LocSettingsMoveSelectionMouse">Scughey reih</sys:String>
+    <sys:String x:Key="LocSettingsEditorIcons">Cowraghyn lhiassagheyder</sys:String>
+    <sys:String x:Key="LocSettingsEditorOptions">Reihyn lhiassagheyder</sys:String>
+    <sys:String x:Key="LocSettingsShowThicknessSlider">Soilshee sleayder çhiugheid</sys:String>
+    <sys:String x:Key="LocSettingsDefaultThickness">Çhiugheid chadjin</sys:String>
+    <sys:String x:Key="LocSettingsShowColorPalette">Soilshee paileid dathyn</sys:String>
+    <sys:String x:Key="LocSettingsDefaultColor">Dath cadjin</sys:String>
+    <sys:String x:Key="LocSettingsPickColor">Reih</sys:String>
+    <sys:String x:Key="LocSettingsDefaultColorHint">Ymmydeit tra ta'n phaileid dathyn folaid.</sys:String>
+    <sys:String x:Key="LocSettingsUsePointer">Ussee yn pointer</sys:String>
+    <sys:String x:Key="LocSettingsShowUndo">Shooyl Jarroud</sys:String>
+    <sys:String x:Key="LocSettingsShowRedo">Shooyl Aathoillee</sys:String>
+    <sys:String x:Key="LocSettingsShowCopy">Shooyl Clow</sys:String>
+    <sys:String x:Key="LocSettingsShowSave">Shooyl Sauail</sys:String>
+    <sys:String x:Key="LocSettingsShowUpload">Shooyl Lughtey seose</sys:String>
+    <sys:String x:Key="LocSettingsShowOcr">Shooyl OCR</sys:String>
+    <sys:String x:Key="LocSettingsShowCancel">Shooyl Scuirr</sys:String>
+    <sys:String x:Key="LocSettingsShowConfirm">Shooyl Cur shickyr</sys:String>
+    <sys:String x:Key="LocSettingsShowClose">Shooyl Doon</sys:String>
+    <sys:String x:Key="LocSettingsShowSelection">Shooyl Reih</sys:String>
+    <sys:String x:Key="LocSettingsShowMove">Shooyl Scugh</sys:String>
+    <sys:String x:Key="LocSettingsShowPen">Shooyl Penn</sys:String>
+    <sys:String x:Key="LocSettingsShowLine">Shooyl Linney</sys:String>
+    <sys:String x:Key="LocSettingsShowArrow">Shooyl Side</sys:String>
+    <sys:String x:Key="LocSettingsShowRectangle">Shooyl Kiare-chuilleig</sys:String>
+    <sys:String x:Key="LocSettingsShowEllipse">Shooyl Eleeips</sys:String>
+    <sys:String x:Key="LocSettingsShowText">Shooyl Teks</sys:String>
+    <sys:String x:Key="LocSettingsShowHighlight">Shooyl Soilshaghey</sys:String>
+    <sys:String x:Key="LocSettingsShowBlur">Shooyl Dorchaghey</sys:String>
+    <sys:String x:Key="LocSettingsShowPixelate">Shooyl Picseleyder</sys:String>
+    <sys:String x:Key="LocSettingsShowThickness">Shooyl €hiugheid</sys:String>
+    <sys:String x:Key="LocSettingsShowColors">Shooyl Dathyn</sys:String>
+    <sys:String x:Key="LocSettingsShowCrosshair">Shooyl Crosh</sys:String>
+    <sys:String x:Key="LocSettingsShowResizeHandles">Shooyl ashey reayr</sys:String>
+    <sys:String x:Key="LocSettingsShowToolbar">Shooyl barree tool</sys:String>
+    <sys:String x:Key="LocSettingsShowPalette">Shooyl paileid</sys:String>
+    <sys:String x:Key="LocSettingsShowPreview">Shooyl roie</sys:String>
+    <sys:String x:Key="LocSettingsShowMiniMap">Shooyl mini-map</sys:String>
+    <sys:String x:Key="LocSettingsShowSelectionSize">Shooyl meyr reih</sys:String>
+    <sys:String x:Key="LocSettingsShowSelectionPosition">Shooyl sheeish reih</sys:String>
+
+    <!-- Common -->
+    <sys:String x:Key="LocCommonClose">Doon</sys:String>
+
+    <!-- Tools -->
+    <sys:String x:Key="LocToolSelect">Reih</sys:String>
+    <sys:String x:Key="LocToolRegion">Reih ard</sys:String>
+    <sys:String x:Key="LocToolMove">Scugh ard</sys:String>
+    <sys:String x:Key="LocToolPen">Penn</sys:String>
+    <sys:String x:Key="LocToolLine">Linney</sys:String>
+    <sys:String x:Key="LocToolArrow">Side</sys:String>
+    <sys:String x:Key="LocToolRect">Kiare-chuilleig</sys:String>
+    <sys:String x:Key="LocToolEllipse">Eleeips</sys:String>
+    <sys:String x:Key="LocToolText">Teks</sys:String>
+    <sys:String x:Key="LocToolHighlight">Soilshaghey</sys:String>
+    <sys:String x:Key="LocToolBlur">Dorchaghey</sys:String>
+    <sys:String x:Key="LocToolPixelate">Picseleyder</sys:String>
+    <sys:String x:Key="LocToolSaveAs">Sauail myr</sys:String>
+    <sys:String x:Key="LocToolCopy">Clow</sys:String>
+    <sys:String x:Key="LocToolUpload">Lughtey seose</sys:String>
+    <sys:String x:Key="LocToolCancel">Scuirr</sys:String>
+    <sys:String x:Key="LocToolColors">Dathyn</sys:String>
+    <sys:String x:Key="LocToolThickness">Çhiugheid</sys:String>
+    <sys:String x:Key="LocToolUndo">Jarroud</sys:String>
+    <sys:String x:Key="LocToolRedo">Aathoillee</sys:String>
+
+    <sys:String x:Key="LocSettingsRegionHotkeyPlaceholder">Cur as y chooardey...</sys:String>
+    <sys:String x:Key="LocSettingsFullscreenHotkeyPlaceholder">Cur as y chooardey...</sys:String>
+    <sys:String x:Key="LocSettingsActiveWindowHotkeyPlaceholder">Cur as y chooardey...</sys:String>
+    <sys:String x:Key="LocSettingsEditorUndoHotkey">Jarroud</sys:String>
+    <sys:String x:Key="LocSettingsEditorUndoHotkeyPlaceholder">Ctrl+Z</sys:String>
+    <sys:String x:Key="LocSettingsEditorRedoHotkey">Aathoillee</sys:String>
+    <sys:String x:Key="LocSettingsEditorRedoHotkeyPlaceholder">Ctrl+Y</sys:String>
+    <sys:String x:Key="LocSettingsEditorCopyHotkey">Clow</sys:String>
+    <sys:String x:Key="LocSettingsEditorCopyHotkeyPlaceholder">Ctrl+C</sys:String>
+    <sys:String x:Key="LocSettingsEditorSaveHotkey">Sauail</sys:String>
+    <sys:String x:Key="LocSettingsEditorSaveHotkeyPlaceholder">Ctrl+S</sys:String>
+
+    <sys:String x:Key="LocSettingsOcrSettings">Reihyn OCR</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstall">Staal EasyOCR</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemove">Sleih EasyOCR</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrStatus">Yndatey</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstalled">Stooil</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrNotInstalled">Cha nel stooil</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstalling">Staalagh...</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemoving">Sleih...</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstallFailed">Cha nel stooil</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemoveFailed">Cha nel sleih</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstallLang">Staal</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoveLang">Sleih</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstalled">Stooil</sys:String>
+    <sys:String x:Key="LocSettingsOcrNotInstalled">Cha nel stooil</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstalling">Staalagh...</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoving">Sleih...</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstallFailed">Cha nel stooil</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoveFailed">Cha nel sleih</sys:String>
+    <sys:String x:Key="LocSettingsOcrDownloadProgress">Reillys y lughtey</sys:String>
+    <sys:String x:Key="LocSettingsOcrBytes">bytes</sys:String>
+    <sys:String x:Key="LocSettingsOcrLicense">Licence</sys:String>
+    <sys:String x:Key="LocSettingsOcrLicenseLink">https://github.com/JaidedAI/EasyOCR/blob/master/LICENSE</sys:String>
+    <sys:String x:Key="LocSettingsOcrTesseractLangs">Çhengoayl Tesseract</sys:String>
+    <sys:String x:Key="LocSettingsOcrTesseractHint">Lughtey er çhengoayl arrick Tesseract shen.</sys:String>
+
+    <sys:String x:Key="LocSettingsExamplesTitle">Samplagh</sys:String>
+    <sys:String x:Key="LocSettingsExamplesDescription">Roie enney sampleyn ayns y theme shen.</sys:String>
+    <sys:String x:Key="LocSettingsExamplesFormat">Format</sys:String>
+    <sys:String x:Key="LocSettingsExamplesEffects">Efeaghyn</sys:String>
+    <sys:String x:Key="LocSettingsExamplesShape">Cumagh</sys:String>
+    <sys:String x:Key="LocSettingsExamplesIcon">Icon</sys:String>
+
+    <!-- Tray -->
+    <sys:String x:Key="LocTrayCaptureRegion">Gaitney Ard</sys:String>
+    <sys:String x:Key="LocTrayCaptureFull">Gaitney Lann-scaa</sys:String>
+    <sys:String x:Key="LocTraySettings">Kiaraghyn</sys:String>
+    <sys:String x:Key="LocTrayAbout">Mychione</sys:String>
+    <sys:String x:Key="LocTrayExit">Ass-an-shoh</sys:String>
+
+    <!-- Overlay -->
+    <sys:String x:Key="LocOverlayCopy">Clow</sys:String>
+    <sys:String x:Key="LocOverlaySave">Sauail</sys:String>
+    <sys:String x:Key="LocOverlayUpload">Lughtey seose</sys:String>
+    <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
+    <sys:String x:Key="LocOverlayCancel">Scuirr</sys:String>
+    <sys:String x:Key="LocOverlayConfirm">Cur shickyr</sys:String>
+    <sys:String x:Key="LocOverlayClose">Doon</sys:String>
+    <sys:String x:Key="LocOverlaySelection">Reih</sys:String>
+    <sys:String x:Key="LocOverlayMove">Scugh</sys:String>
+    <sys:String x:Key="LocOverlayPointer">Punter</sys:String>
+    <sys:String x:Key="LocOverlayPen">Penn</sys:String>
+    <sys:String x:Key="LocOverlayLine">Linney</sys:String>
+    <sys:String x:Key="LocOverlayArrow">Side</sys:String>
+    <sys:String x:Key="LocOverlayRectangle">Kiare-chuilleig</sys:String>
+    <sys:String x:Key="LocOverlayEllipse">Eleeips</sys:String>
+    <sys:String x:Key="LocOverlayText">Teks</sys:String>
+    <sys:String x:Key="LocOverlayHighlight">Soilshaghey</sys:String>
+    <sys:String x:Key="LocOverlayBlur">Dorchaghey</sys:String>
+    <sys:String x:Key="LocOverlayPixelate">Picseleyder</sys:String>
+    <sys:String x:Key="LocOverlayThickness">€hiugheid</sys:String>
+    <sys:String x:Key="LocOverlayColors">Dathyn</sys:String>
+    <sys:String x:Key="LocOverlayPosition">Sheeish</sys:String>
+    <sys:String x:Key="LocOverlaySize">Meyr</sys:String>
+    <sys:String x:Key="LocOverlayWidth">W</sys:String>
+    <sys:String x:Key="LocOverlayHeight">H</sys:String>
+    <sys:String x:Key="LocOverlayPickColor">Reih dath</sys:String>
+    <sys:String x:Key="LocOverlayHintDraw">Cliag as tarree dy chur, as uss barree tool son ny toolsh.</sys:String>
+    <sys:String x:Key="LocOverlayHintMove">Tarree ersooyl reih dy scugh. Ussee ashey reayr dy cur ayns laue.</sys:String>
+    <sys:String x:Key="LocOverlayHintEdit">Reih ny toolsh dy ennagh. Ussee Jarroud/Aathoillee ersooyl dy reayr.</sys:String>
+    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Scuirr, Enter: Cur shickyr, Ctrl+Z: Jarroud, Ctrl+Y: Aathoillee</sys:String>
+
+    <!-- Text Input -->
+    <sys:String x:Key="LocTextInputTitle">Cur teksh</sys:String>
+    <sys:String x:Key="LocTextInputHint">Scar teksh dy chur ec y screeim</sys:String>
+    <sys:String x:Key="LocTextInputFont">Yeval</sys:String>
+    <sys:String x:Key="LocTextInputSize">Meyr</sys:String>
+    <sys:String x:Key="LocTextInputBold">Cruin</sys:String>
+    <sys:String x:Key="LocTextInputItalic">Garey</sys:String>
+    <sys:String x:Key="LocTextInputColor">Dath</sys:String>
+    <sys:String x:Key="LocTextInputPlace">Cur teksh</sys:String>
+    <sys:String x:Key="LocTextInputCancel">Scuirr</sys:String>
+
+    <!-- About -->
+    <sys:String x:Key="LocAboutTitle">Mychione Shotora</sys:String>
+    <sys:String x:Key="LocAboutVersion">Lhiaggan</sys:String>
+    <sys:String x:Key="LocAboutCopyright">Â© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
+    <sys:String x:Key="LocAboutLinks">Kianglaghyn</sys:String>
+    <sys:String x:Key="LocAboutWebsite">Ynnyd-eggey</sys:String>
+    <sys:String x:Key="LocAboutLinkedIn">LinkedIn</sys:String>
+    <sys:String x:Key="LocAboutEmail">Poast-lie</sys:String>
+
+    <!-- OCR Result -->
+    <sys:String x:Key="LocOcrResultTitle">Çhroymey OCR</sys:String>
+    <sys:String x:Key="LocOcrResultCopy">Clow</sys:String>
+    <sys:String x:Key="LocOcrResultClose">Doon</sys:String>
+    <sys:String x:Key="LocOcrResultHint">Teks feddyr</sys:String>
+
+    <!-- Notifications -->
+    <sys:String x:Key="LocNotificationCopySuccess">Clow goll er y clappyder</sys:String>
+    <sys:String x:Key="LocNotificationSaveSuccess">Sauail roie</sys:String>
+    <sys:String x:Key="LocNotificationSaveFailed">Cha nel sauail</sys:String>
+    <sys:String x:Key="LocNotificationUploadSuccess">Lughtey seose roie</sys:String>
+    <sys:String x:Key="LocNotificationUploadFailed">Cha nel lughtey seose</sys:String>
+    <sys:String x:Key="LocNotificationOcrSuccess">OCR croo</sys:String>
+    <sys:String x:Key="LocNotificationOcrFailed">Cha nel OCR</sys:String>
+
+    <!-- Buttons -->
+    <sys:String x:Key="LocButtonSave">Sauail</sys:String>
+    <sys:String x:Key="LocButtonCancel">Scuirr</sys:String>
+    <sys:String x:Key="LocButtonClose">Doon</sys:String>
+    <sys:String x:Key="LocButtonOK">OK</sys:String>
+
+    <!-- Dialogs -->
+    <sys:String x:Key="LocDialogSaveTitle">Sauail scrincaptur</sys:String>
+    <sys:String x:Key="LocDialogSaveFilter">Fayley PNG|*.png|Fayley JPEG|*.jpg;*.jpeg|Fayley WebP|*.webp|Kiare fayley|*.*</sys:String>
+    <sys:String x:Key="LocDialogSaveDefaultName">Shotora.png</sys:String>
+    <sys:String x:Key="LocDialogSelectFolder">Reih coonrey</sys:String>
+    <sys:String x:Key="LocDialogConfirm">Cur shickyr</sys:String>
+    <sys:String x:Key="LocDialogDelete">Scragh</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguage">Vel oo shen shooyl y fayl çhengaghyn?</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguageConfirm">Vel oo shooyl shen er y foayr y fayl çhengaghyn?</sys:String>
+
+    <!-- Errors -->
+    <sys:String x:Key="LocErrorInvalidHotkey">Hotkey neoarragh</sys:String>
+    <sys:String x:Key="LocErrorHotkeyInUse">Ta hotkey shen er y lhiassaghey</sys:String>
+    <sys:String x:Key="LocErrorHotkeyRegisterFailed">Cha nel er y chooid</sys:String>
+    <sys:String x:Key="LocErrorSaveFailed">Cha nel sauail</sys:String>
+    <sys:String x:Key="LocErrorOcrFailed">Cha nel OCR</sys:String>
+    <sys:String x:Key="LocErrorInvalidSelection">Reih neoarragh</sys:String>
+    <sys:String x:Key="LocErrorNoSelection">Chan v' reih</sys:String>
+    <sys:String x:Key="LocErrorTextEmpty">Ta'n teks folley</sys:String>
+
+    <sys:String x:Key="LocMainTitle">Shotora</sys:String>
+    <sys:String x:Key="LocMainHint1">Ussee yn icon tray as ny hotkeyyn gobal dy carrey.</sys:String>
+    <sys:String x:Key="LocMainHint2">Ta'n uinnag shen gyn arraghee; dooal eh myr shen dy vel Shotora cur er tray.</sys:String>
+
+    <sys:String x:Key="LocAboutSubtitle">Goaill-screeyn as coimeentyn</sys:String>
+    <sys:String x:Key="LocAboutDescription">Goaill-screeyn tappee, coimeentyn, OCR as laadey seose lesh Shotora.</sys:String>
+    <sys:String x:Key="LocAboutLicense">Kiangley</sys:String>
+    <sys:String x:Key="LocAboutAuthor">Ughtar</sys:String>
+    <sys:String x:Key="LocAboutRole">Paitçhey-obbragh</sys:String>
+    <sys:String x:Key="LocAboutContact">Cohaarjer</sys:String>
+    <sys:String x:Key="LocAboutContactIntro">Gow rish shin son feyshtyn ny co-obbraghey.</sys:String>
+</ResourceDictionary>

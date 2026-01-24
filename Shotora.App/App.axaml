@@ -1,0 +1,16 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="Shotora.App.App"
+             xmlns:local="using:Shotora.App"
+             xmlns:styles="clr-namespace:Shotora.App.Styles"
+             RequestedThemeVariant="Dark">
+    <Application.DataTemplates>
+        <local:ViewLocator />
+    </Application.DataTemplates>
+
+    <Application.Styles>
+        <FluentTheme />
+        <styles:Controls />
+        <styles:Theme />
+    </Application.Styles>
+</Application>

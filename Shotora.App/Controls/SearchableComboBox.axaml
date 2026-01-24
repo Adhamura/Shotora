@@ -1,0 +1,120 @@
+<UserControl x:Class="Shotora.App.Controls.SearchableComboBox"
+             xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="240" d:DesignHeight="32"
+             x:Name="Root"
+             Focusable="False"
+             KeyDown="Root_OnKeyDown">
+    <UserControl.Styles>
+        <Style Selector="ToggleButton#PART_DropDown:disabled /template/ Border#ToggleHost">
+            <Setter Property="Opacity" Value="0.6" />
+        </Style>
+    </UserControl.Styles>
+    <Grid Width="{Binding Width, ElementName=Root}"
+          MinWidth="{Binding MinWidth, ElementName=Root}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="34" />
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.ColumnSpan="2"
+                x:Name="Shell"
+                MinHeight="28"
+                Background="{DynamicResource InputBackgroundBrush}"
+                BorderBrush="{DynamicResource InputBorderBrush}"
+                BorderThickness="1"
+                CornerRadius="3"
+                PointerPressed="Shell_OnPointerPressed">
+            <Grid>
+                <TextBox x:Name="PART_TextBox"
+                         Text="{Binding Text, ElementName=Root, Mode=TwoWay}"
+                         Background="Transparent"
+                         BorderThickness="0"
+                         Padding="10,4,24,4"
+                         VerticalContentAlignment="Center"
+                         HorizontalContentAlignment="Stretch"
+                         Foreground="{DynamicResource TextPrimaryBrush}"
+                         CaretBrush="{DynamicResource TextPrimaryBrush}"
+                         GotFocus="TextBox_OnGotFocus"
+                         KeyDown="TextBox_OnKeyDown"
+                         TextChanged="TextBox_OnTextChanged" />
+            </Grid>
+        </Border>
+
+        <ToggleButton x:Name="PART_DropDown"
+                      Grid.Column="1"
+                      IsChecked="{Binding IsDropDownOpen, ElementName=Root, Mode=TwoWay}"
+                      Focusable="False"
+                      Background="Transparent"
+                      BorderBrush="{DynamicResource InputBorderBrush}"
+                      BorderThickness="1,0,0,0"
+                      MinWidth="31"
+                      Height="30"
+                      Margin="0,0,0,0"
+                      HorizontalContentAlignment="Center"
+                      VerticalAlignment="Stretch"
+                      VerticalContentAlignment="Center">
+            <ToggleButton.Template>
+                <ControlTemplate TargetType="ToggleButton">
+                    <Border x:Name="ToggleHost"
+                            Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            CornerRadius="0,3,3,0">
+                        <Path Data="M 0 0 L 4 4 L 8 0"
+                              Stroke="{DynamicResource AccentPrimaryBrush}"
+                              StrokeThickness="1"
+                              HorizontalAlignment="Center"
+                              VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </ToggleButton.Template>
+        </ToggleButton>
+
+        <Popup x:Name="PART_Popup"
+               Placement="Bottom"
+               PlacementTarget="{Binding #Shell}"
+               IsOpen="{Binding IsDropDownOpen, ElementName=Root, Mode=TwoWay}"
+               IsLightDismissEnabled="True">
+            <Border x:Name="PART_PopupBorder"
+                    Width="{Binding #Shell.Bounds.Width}"
+                    Background="{DynamicResource PopupBackgroundBrush}"
+                    BorderBrush="{DynamicResource PopupBorderBrush}"
+                    BorderThickness="1"
+                    CornerRadius="6"
+                    Padding="0">
+                <ScrollViewer x:Name="PART_ScrollViewer"
+                              Background="{DynamicResource InputBackgroundBrush}"
+                              MaxHeight="260"
+                              Margin="4"
+                              VerticalScrollBarVisibility="Auto"
+                              HorizontalScrollBarVisibility="Disabled">
+                    <ListBox x:Name="PART_ListBox"
+                             Background="{DynamicResource InputBackgroundBrush}"
+                             BorderThickness="0"
+                             SelectionMode="Single"
+                             SelectionChanged="ListBox_OnSelectionChanged"
+                             PointerReleased="ListBox_OnPointerReleased">
+                        <ListBox.Styles>
+                            <Style Selector="ListBoxItem">
+                                <Setter Property="Foreground" Value="{DynamicResource TextPrimaryBrush}" />
+                                <Setter Property="Background" Value="{DynamicResource InputBackgroundBrush}" />
+                                <Setter Property="Padding" Value="8,4" />
+                                <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                                <Setter Property="MinHeight" Value="28" />
+                            </Style>
+                            <Style Selector="ListBoxItem:pointerover /template/ ContentPresenter">
+                                <Setter Property="Background" Value="{DynamicResource HighlightBrush}" />
+                            </Style>
+                            <Style Selector="ListBoxItem:selected /template/ ContentPresenter">
+                                <Setter Property="Background" Value="{DynamicResource HighlightBrush}" />
+                            </Style>
+                        </ListBox.Styles>
+                    </ListBox>
+                </ScrollViewer>
+            </Border>
+        </Popup>
+    </Grid>
+</UserControl>
