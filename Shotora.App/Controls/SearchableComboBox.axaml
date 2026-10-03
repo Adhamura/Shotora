@@ -8,7 +8,25 @@
              Focusable="False"
              KeyDown="Root_OnKeyDown">
     <UserControl.Styles>
+        <Style Selector="Border#Shell:pointerover">
+            <Setter Property="BorderBrush" Value="{DynamicResource InputBorderHoverBrush}" />
+        </Style>
+        <Style Selector="Border#Shell:focus-within">
+            <Setter Property="BorderBrush" Value="{DynamicResource AccentPrimaryBrush}" />
+        </Style>
+        <Style Selector="ToggleButton#PART_DropDown /template/ Border#ToggleHost">
+            <Setter Property="Background" Value="Transparent" />
+        </Style>
+        <Style Selector="ToggleButton#PART_DropDown:pointerover /template/ Border#ToggleHost">
+            <Setter Property="Background" Value="{DynamicResource SubtleHoverBrush}" />
+        </Style>
+        <Style Selector="ToggleButton#PART_DropDown:checked /template/ Border#ToggleHost">
+            <Setter Property="Background" Value="{DynamicResource SubtlePressedBrush}" />
+        </Style>
         <Style Selector="ToggleButton#PART_DropDown:disabled /template/ Border#ToggleHost">
+            <Setter Property="Opacity" Value="0.6" />
+        </Style>
+        <Style Selector="Border#Shell:disabled">
             <Setter Property="Opacity" Value="0.6" />
         </Style>
     </UserControl.Styles>
@@ -21,21 +39,22 @@
 
         <Border Grid.ColumnSpan="2"
                 x:Name="Shell"
-                MinHeight="28"
+                MinHeight="{StaticResource ControlHeight}"
                 Background="{DynamicResource InputBackgroundBrush}"
                 BorderBrush="{DynamicResource InputBorderBrush}"
                 BorderThickness="1"
-                CornerRadius="3"
+                CornerRadius="{StaticResource RadiusMd}"
                 PointerPressed="Shell_OnPointerPressed">
             <Grid>
                 <TextBox x:Name="PART_TextBox"
                          Text="{Binding Text, ElementName=Root, Mode=TwoWay}"
                          Background="Transparent"
                          BorderThickness="0"
-                         Padding="10,4,24,4"
+                         MinHeight="0"
+                         Padding="10,4,36,4"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Stretch"
-                         Foreground="{DynamicResource TextPrimaryBrush}"
+                         Foreground="{DynamicResource InputForegroundBrush}"
                          CaretBrush="{DynamicResource TextPrimaryBrush}"
                          GotFocus="TextBox_OnGotFocus"
                          KeyDown="TextBox_OnKeyDown"
@@ -47,12 +66,11 @@
                       Grid.Column="1"
                       IsChecked="{Binding IsDropDownOpen, ElementName=Root, Mode=TwoWay}"
                       Focusable="False"
+                      Cursor="Hand"
                       Background="Transparent"
-                      BorderBrush="{DynamicResource InputBorderBrush}"
-                      BorderThickness="1,0,0,0"
-                      MinWidth="31"
-                      Height="30"
-                      Margin="0,0,0,0"
+                      BorderThickness="0"
+                      Margin="0,1,1,1"
+                      HorizontalAlignment="Stretch"
                       HorizontalContentAlignment="Center"
                       VerticalAlignment="Stretch"
                       VerticalContentAlignment="Center">
@@ -62,10 +80,10 @@
                             Background="{TemplateBinding Background}"
                             BorderBrush="{TemplateBinding BorderBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}"
-                            CornerRadius="0,3,3,0">
+                            CornerRadius="0,5,5,0">
                         <Path Data="M 0 0 L 4 4 L 8 0"
-                              Stroke="{DynamicResource AccentPrimaryBrush}"
-                              StrokeThickness="1"
+                              Stroke="{DynamicResource TextSecondaryBrush}"
+                              StrokeThickness="1.5"
                               HorizontalAlignment="Center"
                               VerticalAlignment="Center" />
                     </Border>
@@ -80,19 +98,19 @@
                IsLightDismissEnabled="True">
             <Border x:Name="PART_PopupBorder"
                     Width="{Binding #Shell.Bounds.Width}"
+                    Margin="0,4,0,0"
                     Background="{DynamicResource PopupBackgroundBrush}"
                     BorderBrush="{DynamicResource PopupBorderBrush}"
                     BorderThickness="1"
-                    CornerRadius="6"
-                    Padding="0">
+                    CornerRadius="{StaticResource RadiusLg}"
+                    Padding="4">
                 <ScrollViewer x:Name="PART_ScrollViewer"
-                              Background="{DynamicResource InputBackgroundBrush}"
+                              Background="Transparent"
                               MaxHeight="260"
-                              Margin="4"
                               VerticalScrollBarVisibility="Auto"
                               HorizontalScrollBarVisibility="Disabled">
                     <ListBox x:Name="PART_ListBox"
-                             Background="{DynamicResource InputBackgroundBrush}"
+                             Background="Transparent"
                              BorderThickness="0"
                              SelectionMode="Single"
                              SelectionChanged="ListBox_OnSelectionChanged"
@@ -100,16 +118,20 @@
                         <ListBox.Styles>
                             <Style Selector="ListBoxItem">
                                 <Setter Property="Foreground" Value="{DynamicResource TextPrimaryBrush}" />
-                                <Setter Property="Background" Value="{DynamicResource InputBackgroundBrush}" />
+                                <Setter Property="Background" Value="Transparent" />
                                 <Setter Property="Padding" Value="8,4" />
+                                <Setter Property="CornerRadius" Value="{StaticResource RadiusSm}" />
                                 <Setter Property="HorizontalContentAlignment" Value="Stretch" />
-                                <Setter Property="MinHeight" Value="28" />
+                                <Setter Property="MinHeight" Value="{StaticResource ControlHeight}" />
+                                <Setter Property="Cursor" Value="Hand" />
                             </Style>
                             <Style Selector="ListBoxItem:pointerover /template/ ContentPresenter">
-                                <Setter Property="Background" Value="{DynamicResource HighlightBrush}" />
+                                <Setter Property="Background" Value="{DynamicResource SubtleHoverBrush}" />
+                                <Setter Property="Foreground" Value="{DynamicResource TextPrimaryBrush}" />
                             </Style>
                             <Style Selector="ListBoxItem:selected /template/ ContentPresenter">
                                 <Setter Property="Background" Value="{DynamicResource HighlightBrush}" />
+                                <Setter Property="Foreground" Value="{DynamicResource TextPrimaryBrush}" />
                             </Style>
                         </ListBox.Styles>
                     </ListBox>
