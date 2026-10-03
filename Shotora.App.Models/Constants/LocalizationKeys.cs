@@ -44,4 +44,19 @@ public static class LocalizationKeys
 	public const string TraySettings      = "LocTraySettings";
 	public const string TrayAbout         = "LocTrayAbout";
 	public const string TrayExit          = "LocTrayExit";
+
+	public const string UpdateChecking         = "LocUpdateChecking";
+	public const string UpdateUpToDate         = "LocUpdateUpToDate";
+	public const string UpdateUpToDateDetailFmt = "LocUpdateUpToDateDetailFormat";
+	public const string UpdateAvailableFmt     = "LocUpdateAvailableFormat";
+	public const string UpdateAvailableDetailFmt = "LocUpdateAvailableDetailFormat";
+	public const string UpdateManualDetail     = "LocUpdateManualDetail";
+	public const string UpdateFailed           = "LocUpdateFailed";
+	public const string UpdateFailedDetail     = "LocUpdateFailedDetail";
+	public const string UpdateDownloadingFmt   = "LocUpdateDownloadingFormat";
+	public const string UpdateReady            = "LocUpdateReady";
+	public const string UpdateReadyDetail      = "LocUpdateReadyDetail";
+	public const string UpdateInstalling       = "LocUpdateInstalling";
+	public const string UpdateIdle             = "LocUpdateIdle";
+	public const string UpdateCurrentVersionFmt = "LocUpdateCurrentVersionFormat";
 }

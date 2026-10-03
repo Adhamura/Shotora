@@ -53,4 +53,22 @@ public static class LocalizationFallbacks
 		public const string Downloaded       = "Downloaded";
 		public const string FailedFormat     = "Failed: {0}";
 	}
+
+	public static class Update
+	{
+		public const string Checking             = "Checking for updates…";
+		public const string UpToDate             = "Shotora is up to date";
+		public const string UpToDateDetailFormat = "Version {0} is the latest version.";
+		public const string AvailableFormat      = "Shotora {0} is available";
+		public const string AvailableDetailFormat = "You have version {0}. The update downloads in the background and installs when Shotora restarts.";
+		public const string ManualDetail         = "Download the new version from GitHub to update this copy of Shotora.";
+		public const string Failed               = "Couldn't check for updates";
+		public const string FailedDetail         = "Check your internet connection and try again.";
+		public const string DownloadingFormat    = "Downloading update… {0}%";
+		public const string Ready                = "Update ready to install";
+		public const string ReadyDetail          = "Restart Shotora to finish installing the update.";
+		public const string Installing           = "Installing update…";
+		public const string Idle                 = "Check whether a newer version of Shotora is available.";
+		public const string CurrentVersionFormat = "Version {0}";
+	}
 }
