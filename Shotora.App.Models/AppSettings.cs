@@ -18,7 +18,7 @@ public class AppSettings
 
 	public string DefaultTool { get; init; } = nameof(AnnotationToolType.Arrow);
 
-	public string Theme { get; set; }
+	public string Theme { get; set; } = "Dark";
 
 	public HotkeySetting RegionHotkey { get; set; } = HotkeySetting.RegionDefault();
 
