@@ -24,10 +24,10 @@
             <Setter Property="Background" Value="{DynamicResource SubtlePressedBrush}" />
         </Style>
         <Style Selector="ToggleButton#PART_DropDown:disabled /template/ Border#ToggleHost">
-            <Setter Property="Opacity" Value="0.6" />
+            <Setter Property="Opacity" Value="{StaticResource DisabledOpacity}" />
         </Style>
         <Style Selector="Border#Shell:disabled">
-            <Setter Property="Opacity" Value="0.6" />
+            <Setter Property="Opacity" Value="{StaticResource DisabledOpacity}" />
         </Style>
     </UserControl.Styles>
     <Grid Width="{Binding Width, ElementName=Root}"
