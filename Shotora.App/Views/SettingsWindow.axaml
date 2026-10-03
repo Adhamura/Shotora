@@ -24,9 +24,14 @@
         <utilities:InverseBooleanConverter x:Key="InverseBool" />
     </Window.Resources>
     <Window.Styles>
-        <!-- Each tab page scrolls on its own; keep content clear of the vertical scroll bar -->
+        <!-- Each tab page scrolls on its own. The page is pulled 4px outwards and its content pushed back in,
+             so focus rings drawn outside controls are not clipped by the scroll viewer and content stays
+             aligned with the tab strip; the right margin keeps content clear of the vertical scroll bar. -->
+        <Style Selector="ScrollViewer.settings-page">
+            <Setter Property="Margin" Value="-4,0,0,0" />
+        </Style>
         <Style Selector="ScrollViewer.settings-page > StackPanel">
-            <Setter Property="Margin" Value="0,4,16,8" />
+            <Setter Property="Margin" Value="4,4,16,8" />
         </Style>
     </Window.Styles>
 
@@ -252,37 +257,37 @@
                                   HorizontalScrollBarVisibility="Disabled">
                         <StackPanel Grid.IsSharedSizeScope="True">
                             <TextBlock Classes="section-header first" Text="{DynamicResource LocSettingsEditorIcons}" />
-                            <!-- Each option toggles whether the icon is shown in the capture toolbar -->
+                            <!-- Each check box shows/hides the icon in the capture toolbar (Tag = icon preview) -->
                             <primitives:UniformGrid Columns="2">
-                                <ToggleButton Classes="icon-option" IsChecked="{Binding ShowUndoIcon, Mode=TwoWay}"
+                                <CheckBox Classes="icon-option" IsChecked="{Binding ShowUndoIcon, Mode=TwoWay}"
                                               Tag="{StaticResource IconUndo}" Content="{DynamicResource LocToolUndo}" />
-                                <ToggleButton Classes="icon-option" IsChecked="{Binding ShowRedoIcon, Mode=TwoWay}"
+                                <CheckBox Classes="icon-option" IsChecked="{Binding ShowRedoIcon, Mode=TwoWay}"
                                               Tag="{StaticResource IconRedo}" Content="{DynamicResource LocToolRedo}" />
-                                <ToggleButton Classes="icon-option" IsChecked="{Binding ShowMoveIcon, Mode=TwoWay}"
+                                <CheckBox Classes="icon-option" IsChecked="{Binding ShowMoveIcon, Mode=TwoWay}"
                                               Tag="{StaticResource IconMove}" Content="{DynamicResource LocToolMove}" />
-                                <ToggleButton Classes="icon-option" IsChecked="{Binding ShowPenIcon, Mode=TwoWay}"
+                                <CheckBox Classes="icon-option" IsChecked="{Binding ShowPenIcon, Mode=TwoWay}"
                                               Tag="{StaticResource IconPen}" Content="{DynamicResource LocToolPen}" />
-                                <ToggleButton Classes="icon-option" IsChecked="{Binding ShowLineIcon, Mode=TwoWay}"
+                                <CheckBox Classes="icon-option" IsChecked="{Binding ShowLineIcon, Mode=TwoWay}"
                                               Tag="{StaticResource IconLine}" Content="{DynamicResource LocToolLine}" />
-                                <ToggleButton Classes="icon-option" IsChecked="{Binding ShowArrowIcon, Mode=TwoWay}"
+                                <CheckBox Classes="icon-option" IsChecked="{Binding ShowArrowIcon, Mode=TwoWay}"
                                               Tag="{StaticResource IconArrow}" Content="{DynamicResource LocToolArrow}" />
-                                <ToggleButton Classes="icon-option" IsChecked="{Binding ShowRectangleIcon, Mode=TwoWay}"
+                                <CheckBox Classes="icon-option" IsChecked="{Binding ShowRectangleIcon, Mode=TwoWay}"
                                               Tag="{StaticResource IconRect}" Content="{DynamicResource LocToolRect}" />
-                                <ToggleButton Classes="icon-option" IsChecked="{Binding ShowEllipseIcon, Mode=TwoWay}"
+                                <CheckBox Classes="icon-option" IsChecked="{Binding ShowEllipseIcon, Mode=TwoWay}"
                                               Tag="{StaticResource IconEllipse}" Content="{DynamicResource LocToolEllipse}" />
-                                <ToggleButton Classes="icon-option" IsChecked="{Binding ShowTextIcon, Mode=TwoWay}"
+                                <CheckBox Classes="icon-option" IsChecked="{Binding ShowTextIcon, Mode=TwoWay}"
                                               Tag="{StaticResource IconText}" Content="{DynamicResource LocToolText}" />
-                                <ToggleButton Classes="icon-option" IsChecked="{Binding ShowHighlightIcon, Mode=TwoWay}"
+                                <CheckBox Classes="icon-option" IsChecked="{Binding ShowHighlightIcon, Mode=TwoWay}"
                                               Tag="{StaticResource IconHighlight}" Content="{DynamicResource LocToolHighlight}" />
-                                <ToggleButton Classes="icon-option" IsChecked="{Binding ShowBlurIcon, Mode=TwoWay}"
+                                <CheckBox Classes="icon-option" IsChecked="{Binding ShowBlurIcon, Mode=TwoWay}"
                                               Tag="{StaticResource IconBlur}" Content="{DynamicResource LocToolBlur}" />
-                                <ToggleButton Classes="icon-option" IsChecked="{Binding ShowPixelateIcon, Mode=TwoWay}"
+                                <CheckBox Classes="icon-option" IsChecked="{Binding ShowPixelateIcon, Mode=TwoWay}"
                                               Tag="{StaticResource IconPixelate}" Content="{DynamicResource LocToolPixelate}" />
-                                <ToggleButton Classes="icon-option" IsChecked="{Binding ShowSaveIcon, Mode=TwoWay}"
+                                <CheckBox Classes="icon-option" IsChecked="{Binding ShowSaveIcon, Mode=TwoWay}"
                                               Tag="{StaticResource IconSave}" Content="{DynamicResource LocToolSaveAs}" />
-                                <ToggleButton Classes="icon-option" IsChecked="{Binding ShowCopyIcon, Mode=TwoWay}"
+                                <CheckBox Classes="icon-option" IsChecked="{Binding ShowCopyIcon, Mode=TwoWay}"
                                               Tag="{StaticResource IconCopy}" Content="{DynamicResource LocToolCopy}" />
-                                <ToggleButton Classes="icon-option" IsChecked="{Binding ShowCancelIcon, Mode=TwoWay}"
+                                <CheckBox Classes="icon-option" IsChecked="{Binding ShowCancelIcon, Mode=TwoWay}"
                                               Tag="{StaticResource IconCancel}" Content="{DynamicResource LocToolCancel}" />
                             </primitives:UniformGrid>
 

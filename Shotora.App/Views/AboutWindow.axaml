@@ -33,17 +33,17 @@
         <ScrollViewer VerticalScrollBarVisibility="Auto"
                       HorizontalScrollBarVisibility="Disabled">
             <StackPanel Margin="16,0" Spacing="16">
-                <!-- Product header -->
+                <!-- Product header (the window title already names the app, so no second "Shotora" heading) -->
                 <Grid ColumnDefinitions="Auto,*" ColumnSpacing="16">
                     <Image Source="avares://Shotora.App/Assets/Shotora.png"
-                           Width="72"
-                           Height="72"
+                           Width="56"
+                           Height="56"
                            Stretch="Uniform"
                            VerticalAlignment="Center" />
-                    <StackPanel Grid.Column="1" VerticalAlignment="Center" Spacing="4">
-                        <TextBlock Classes="display" Text="{DynamicResource LocMainTitle}" />
-                        <TextBlock Classes="secondary" Text="{DynamicResource LocAboutSubtitle}" />
-                    </StackPanel>
+                    <TextBlock Grid.Column="1"
+                               Classes="subtitle"
+                               VerticalAlignment="Center"
+                               Text="{DynamicResource LocAboutSubtitle}" />
                 </Grid>
 
                 <TextBlock Text="{DynamicResource LocAboutDescription}"
@@ -83,15 +83,15 @@
                 </Border>
 
                 <!-- Updates: check GitHub releases, download and install in place -->
-                <StackPanel Spacing="8">
-                    <TextBlock Classes="label" Text="{DynamicResource LocUpdateSectionTitle}" />
+                <StackPanel>
+                    <TextBlock Classes="section-header first" Text="{DynamicResource LocUpdateSectionTitle}" />
                     <Border Classes="card">
                         <controls:UpdatePanel DataContext="{Binding Updates}" />
                     </Border>
                 </StackPanel>
 
                 <StackPanel Spacing="4">
-                    <TextBlock Classes="label" Text="{DynamicResource LocAboutLinks}" />
+                    <TextBlock Classes="section-header first" Margin="0,0,0,4" Text="{DynamicResource LocAboutLinks}" />
                     <HyperlinkButton NavigateUri="https://www.kazukikimura.com"
                                      ToolTip.Tip="https://www.kazukikimura.com"
                                      Content="{DynamicResource LocAboutWebsite}" />
@@ -101,7 +101,7 @@
                 </StackPanel>
 
                 <StackPanel Spacing="4">
-                    <TextBlock Classes="label" Text="{DynamicResource LocAboutContact}" />
+                    <TextBlock Classes="section-header first" Margin="0,0,0,4" Text="{DynamicResource LocAboutContact}" />
                     <TextBlock Classes="secondary" Text="{DynamicResource LocAboutContactIntro}" />
                     <HyperlinkButton NavigateUri="mailto:kazuki.kimura.jp@gmail.com"
                                      Content="kazuki.kimura.jp@gmail.com" />

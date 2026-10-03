@@ -149,6 +149,16 @@
                               ToolTip.Tip="{DynamicResource LocToolPixelate}"
                               AutomationProperties.Name="{DynamicResource LocToolPixelate}"
                               Content="{StaticResource IconPixelate}" />
+                <!-- Output actions group; the divider hides when every output action is hidden in Settings -->
+                <Border Classes="toolbar-separator">
+                    <Border.IsVisible>
+                        <MultiBinding Converter="{x:Static BoolConverters.Or}">
+                            <Binding Path="IsVisible" ElementName="SaveButton" />
+                            <Binding Path="IsVisible" ElementName="CopyButton" />
+                            <Binding Path="IsVisible" ElementName="CancelButton" />
+                        </MultiBinding>
+                    </Border.IsVisible>
+                </Border>
                 <Button x:Name="SaveButton" Classes="tool" Click="OnSaveClicked"
                         ToolTip.Tip="{DynamicResource LocToolSaveAs}"
                         AutomationProperties.Name="{DynamicResource LocToolSaveAs}"
@@ -164,16 +174,18 @@
             </WrapPanel>
         </Border>
 
+        <!-- Pointer position + selection size; hidden until the first pointer update fills it in -->
         <Border Classes="floating-panel"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Margin="12"
                 Padding="8,4"
                 CornerRadius="{StaticResource RadiusMd}"
-                IsHitTestVisible="False">
+                IsHitTestVisible="False"
+                IsVisible="{Binding #CoordinateLabel.Text, Converter={x:Static StringConverters.IsNotNullOrEmpty}}">
             <TextBlock x:Name="CoordinateLabel"
                        FontSize="{StaticResource FontSizeCaption}"
-                       Text="(0,0) 0x0" />
+                       Text="" />
         </Border>
 
         <!-- Color Palette Panel (Right Side, draggable) -->

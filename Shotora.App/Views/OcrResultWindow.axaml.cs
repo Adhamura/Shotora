@@ -1,4 +1,6 @@
+using System;
 using System.Diagnostics.CodeAnalysis;
+using System.Threading.Tasks;
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
@@ -8,7 +10,12 @@ namespace Shotora.App.Views;
 [ExcludeFromCodeCoverage]
 public partial class OcrResultWindow : Window
 {
+	private static readonly TimeSpan CopiedFeedbackDuration = TimeSpan.FromSeconds(1.5);
+
+	/// <summary>Selection bounds on screen, in physical pixels.</summary>
 	private Rect _anchor;
+
+	private int _copyFeedbackVersion;
 
 	public OcrResultWindow()
 	{
@@ -36,11 +43,16 @@ public partial class OcrResultWindow : Window
 
 	private void PositionNearAnchor()
 	{
-		var height     = double.IsNaN(Height) || Height == 0 ? Bounds.Height : Height;
-		var desiredTop = _anchor.Top - height - 8;
+		// Window sizes are DIPs, screen positions are physical pixels.
+		var scale        = RenderScaling;
+		var heightDips   = double.IsNaN(Height) || Height == 0 ? Bounds.Height : Height;
+		var heightPixels = heightDips * scale;
+		var gap          = 8 * scale;
+
+		var desiredTop = _anchor.Top - heightPixels - gap;
 		if (desiredTop < 0)
 		{
-			desiredTop = _anchor.Bottom + 8;
+			desiredTop = _anchor.Bottom + gap;
 		}
 
 		Position = new PixelPoint((int)_anchor.Left, (int)desiredTop);
@@ -49,14 +61,33 @@ public partial class OcrResultWindow : Window
 	private async void Copy_Click(object? sender, RoutedEventArgs e)
 	{
 		var text = ResultBox.Text ?? string.Empty;
-		if (string.IsNullOrEmpty(text))
+		if (string.IsNullOrEmpty(text) || Clipboard == null)
 		{
 			return;
 		}
 
-		if (Clipboard != null)
+		try
 		{
 			await Clipboard.SetTextAsync(text);
+			await ShowCopiedFeedbackAsync();
+		}
+		catch (Exception)
+		{
+			// Clipboard access can fail (e.g. another process holds it); the window stays open so the user can retry.
+		}
+	}
+
+	/// <summary>Briefly swaps the Copy label for the localized "Copied to clipboard" confirmation.</summary>
+	private async Task ShowCopiedFeedbackAsync()
+	{
+		var version = ++_copyFeedbackVersion;
+		CopyButton.Content = this.FindResource("LocNotificationCopySuccess") ?? CopyButton.Content;
+
+		await Task.Delay(CopiedFeedbackDuration);
+
+		if (version == _copyFeedbackVersion)
+		{
+			CopyButton.Bind(ContentControl.ContentProperty, this.GetResourceObservable("LocToolCopy"));
 		}
 	}
 
