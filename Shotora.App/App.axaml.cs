@@ -18,6 +18,7 @@ using Shotora.App.Interfaces.Abstractions;
 using Shotora.App.Interfaces.Ocr.EastOcr;
 using Shotora.App.Interfaces.Providers;
 using Shotora.App.Interfaces.System;
+using Shotora.App.Interfaces.Updates;
 using Shotora.App.Interfaces.ViewModels;
 using Shotora.App.Models;
 using Shotora.App.Models.Enums;
@@ -43,7 +44,9 @@ public class App(
 	Func<AboutViewModel>         aboutViewModelFactory,
 	IMaintenanceEasyOcrService   maintenanceEasyOcrRuntimeService,
 	ILocalizationProvider        localizationProvider,
-	IStartupService              startupService) : Application
+	IStartupService              startupService,
+	IUpdateCoordinator           updateCoordinator,
+	Func<UpdateWindow>           updateWindowFactory) : Application
 {
 	private OverlayWindow? _activeOverlay;
 	private string?        _currentLanguage;
@@ -51,6 +54,8 @@ public class App(
 	private bool           _prewarmed;
 	private AppSettings    _settings = new();
 	private bool           _settingsHandlersAttached;
+	private UpdateWindow?  _updateWindow;
+	private bool           _updatePromptPending;
 
 	public override void Initialize()
 	{
@@ -84,6 +89,7 @@ public class App(
 				() => ShowCaptureAsync(CaptureMode.Fullscreen),
 				ShowSettings,
 				ShowAbout,
+				() => ShowUpdateWindow(true),
 				() => desktop.Shutdown());
 			RefreshTrayLocalization();
 			RefreshTrayTheme();
@@ -93,6 +99,10 @@ public class App(
 				e.Cancel = true;
 				desktop.MainWindow.Hide();
 			};
+
+			updateCoordinator.UpdateAvailable += (_, _) => Dispatcher.UIThread.Post(OnBackgroundUpdateFound);
+			desktop.Exit                      += (_, _) => updateCoordinator.Dispose();
+			updateCoordinator.Start();
 		}
 
 		base.OnFrameworkInitializationCompleted();
@@ -234,6 +244,36 @@ public class App(
 		}
 	}
 
+	private void OnBackgroundUpdateFound()
+	{
+		// Never interrupt a capture in progress: prompt once the overlay closes.
+		if (_activeOverlay != null)
+		{
+			_updatePromptPending = true;
+			return;
+		}
+
+		ShowUpdateWindow(false);
+	}
+
+	/// <summary>Shows the single update dialog; <paramref name="checkNow" /> starts a fresh check (manual "Check for updates").</summary>
+	private void ShowUpdateWindow(bool checkNow)
+	{
+		if (_updateWindow == null)
+		{
+			_updateWindow        =  updateWindowFactory();
+			_updateWindow.Closed += (_, _) => _updateWindow = null;
+			_updateWindow.Show();
+		}
+
+		_updateWindow.Activate();
+
+		if (checkNow && _updateWindow.ViewModel.CheckCommand.CanExecute(null))
+		{
+			_updateWindow.ViewModel.CheckCommand.Execute(null);
+		}
+	}
+
 	private void ShowAbout()
 	{
 		if (ApplicationLifetime is not IClassicDesktopStyleApplicationLifetime desktop)
@@ -371,6 +411,12 @@ public class App(
 			if (_activeOverlay == overlay)
 			{
 				_activeOverlay = null;
+			}
+
+			if (_updatePromptPending)
+			{
+				_updatePromptPending = false;
+				Dispatcher.UIThread.Post(() => ShowUpdateWindow(false), DispatcherPriority.Background);
 			}
 		};
 		var owner = desktop.MainWindow;

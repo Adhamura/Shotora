@@ -194,7 +194,7 @@
     <!-- About -->
     <sys:String x:Key="LocAboutTitle">Tietoja Shotoraista</sys:String>
     <sys:String x:Key="LocAboutVersion">Versio</sys:String>
-    <sys:String x:Key="LocAboutCopyright">Â© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
+    <sys:String x:Key="LocAboutCopyright">© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
     <sys:String x:Key="LocAboutLinks">Linkit</sys:String>
     <sys:String x:Key="LocAboutWebsite">Web-sivusto</sys:String>
     <sys:String x:Key="LocAboutLinkedIn">LinkedIn</sys:String>
@@ -252,4 +252,33 @@
     <sys:String x:Key="LocAboutRole">Rooli</sys:String>
     <sys:String x:Key="LocAboutContact">Kontakti</sys:String>
     <sys:String x:Key="LocAboutContactIntro">Ottakua yhteyš palauteštä eli yhteistyöšä.</sys:String>
+
+    <!-- Updates -->
+    <sys:String x:Key="LocSettingsAutoCheckUpdates">Kaččo päivitykset automuattizesti</sys:String>
+    <sys:String x:Key="LocTrayCheckForUpdates">Kaččo päivitykset</sys:String>
+    <sys:String x:Key="LocUpdateSectionTitle">Päivitykset</sys:String>
+    <sys:String x:Key="LocUpdateWindowTitle">Ohjelman päivitys</sys:String>
+    <sys:String x:Key="LocUpdateWhatsNew">Mi on uuttu</sys:String>
+    <sys:String x:Key="LocUpdateCheckButton">Kaččo päivitykset</sys:String>
+    <sys:String x:Key="LocUpdateInstallButton">Veratä da azenna</sys:String>
+    <sys:String x:Key="LocUpdateRestartButton">Käynnistä uuvesti da päivitä</sys:String>
+    <sys:String x:Key="LocUpdateOpenReleaseButton">Veratä GitHubas</sys:String>
+    <sys:String x:Key="LocUpdateSkipButton">Jätä tämä versio välil</sys:String>
+    <sys:String x:Key="LocUpdateLaterButton">Muistuta myöhembi</sys:String>
+    <sys:String x:Key="LocUpdateChecking">Kačotah päivityksii…</sys:String>
+    <sys:String x:Key="LocUpdateUpToDate">Shotora on ajan tazal</sys:String>
+    <sys:String x:Key="LocUpdateUpToDateDetailFormat">Versio {0} on uuzin.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableFormat">Shotora {0} on suajavil</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Sinul on versio {0}. Veratä päivitys nygöi – Shotora käynnistyy uuvesti, ku loppie azennuksen.</sys:String>
+    <sys:String x:Key="LocUpdateManualDetail">Veratä uuzi versio GitHubas, ku päivittiä tämä Shotoran kopii.</sys:String>
+    <sys:String x:Key="LocUpdateFailed">Päivityksii ei voinuh kaččuo</sys:String>
+    <sys:String x:Key="LocUpdateFailedDetail">Kaččo internetyhteys da opittele uuvesti.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadingFormat">Päivityksen ladavus… {0}%</sys:String>
+    <sys:String x:Key="LocUpdateReady">Päivitys on valmis azennettavakse</sys:String>
+    <sys:String x:Key="LocUpdateReadyDetail">Käynnistä Shotora uuvesti, ku loppie päivityksen azennus.</sys:String>
+    <sys:String x:Key="LocUpdateInstalling">Päivitys azennetah…</sys:String>
+    <sys:String x:Key="LocUpdateIdle">Kaččo, onko Shotoras suajavil uuvembi versio.</sys:String>
+    <sys:String x:Key="LocUpdateCurrentVersionFormat">Versio {0}</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">Päivitysty ei voinuh azentua</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">Lua ei loppiettu. Kaččo yhteys da opittele uuvesti.</sys:String>
 </ResourceDictionary>

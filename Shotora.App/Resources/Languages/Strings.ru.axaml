@@ -252,4 +252,33 @@
     <sys:String x:Key="LocAboutRole">Роль</sys:String>
     <sys:String x:Key="LocAboutContact">Контакты</sys:String>
     <sys:String x:Key="LocAboutContactIntro">Свяжитесь для отзывов или сотрудничества.</sys:String>
+
+    <!-- Updates -->
+    <sys:String x:Key="LocSettingsAutoCheckUpdates">Автоматически проверять обновления</sys:String>
+    <sys:String x:Key="LocTrayCheckForUpdates">Проверить обновления</sys:String>
+    <sys:String x:Key="LocUpdateSectionTitle">Обновления</sys:String>
+    <sys:String x:Key="LocUpdateWindowTitle">Обновление программы</sys:String>
+    <sys:String x:Key="LocUpdateWhatsNew">Что нового</sys:String>
+    <sys:String x:Key="LocUpdateCheckButton">Проверить обновления</sys:String>
+    <sys:String x:Key="LocUpdateInstallButton">Скачать и установить</sys:String>
+    <sys:String x:Key="LocUpdateRestartButton">Перезапустить и обновить</sys:String>
+    <sys:String x:Key="LocUpdateOpenReleaseButton">Скачать с GitHub</sys:String>
+    <sys:String x:Key="LocUpdateSkipButton">Пропустить эту версию</sys:String>
+    <sys:String x:Key="LocUpdateLaterButton">Напомнить позже</sys:String>
+    <sys:String x:Key="LocUpdateChecking">Проверка обновлений…</sys:String>
+    <sys:String x:Key="LocUpdateUpToDate">Установлена последняя версия Shotora</sys:String>
+    <sys:String x:Key="LocUpdateUpToDateDetailFormat">Версия {0} — последняя.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableFormat">Доступна Shotora {0}</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">У вас версия {0}. Скачайте обновление сейчас — Shotora перезапустится, чтобы завершить установку.</sys:String>
+    <sys:String x:Key="LocUpdateManualDetail">Скачайте новую версию с GitHub, чтобы обновить эту копию Shotora.</sys:String>
+    <sys:String x:Key="LocUpdateFailed">Не удалось проверить обновления</sys:String>
+    <sys:String x:Key="LocUpdateFailedDetail">Проверьте подключение к интернету и попробуйте снова.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadingFormat">Загрузка обновления… {0}%</sys:String>
+    <sys:String x:Key="LocUpdateReady">Обновление готово к установке</sys:String>
+    <sys:String x:Key="LocUpdateReadyDetail">Перезапустите Shotora, чтобы завершить установку обновления.</sys:String>
+    <sys:String x:Key="LocUpdateInstalling">Установка обновления…</sys:String>
+    <sys:String x:Key="LocUpdateIdle">Проверить, доступна ли более новая версия Shotora.</sys:String>
+    <sys:String x:Key="LocUpdateCurrentVersionFormat">Версия {0}</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">Не удалось установить обновление</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">Загрузка не завершилась. Проверьте подключение и попробуйте снова.</sys:String>
 </ResourceDictionary>

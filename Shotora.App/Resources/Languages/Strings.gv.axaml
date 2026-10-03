@@ -194,7 +194,7 @@
     <!-- About -->
     <sys:String x:Key="LocAboutTitle">Mychione Shotora</sys:String>
     <sys:String x:Key="LocAboutVersion">Lhiaggan</sys:String>
-    <sys:String x:Key="LocAboutCopyright">Â© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
+    <sys:String x:Key="LocAboutCopyright">© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
     <sys:String x:Key="LocAboutLinks">Kianglaghyn</sys:String>
     <sys:String x:Key="LocAboutWebsite">Ynnyd-eggey</sys:String>
     <sys:String x:Key="LocAboutLinkedIn">LinkedIn</sys:String>
@@ -252,4 +252,33 @@
     <sys:String x:Key="LocAboutRole">Paitçhey-obbragh</sys:String>
     <sys:String x:Key="LocAboutContact">Cohaarjer</sys:String>
     <sys:String x:Key="LocAboutContactIntro">Gow rish shin son feyshtyn ny co-obbraghey.</sys:String>
+
+    <!-- Updates -->
+    <sys:String x:Key="LocSettingsAutoCheckUpdates">Jeeagh son noaghaghyn dy otomaticagh</sys:String>
+    <sys:String x:Key="LocTrayCheckForUpdates">Jeeagh son noaghaghyn</sys:String>
+    <sys:String x:Key="LocUpdateSectionTitle">Noaghaghyn</sys:String>
+    <sys:String x:Key="LocUpdateWindowTitle">Noaghey yn chlaa</sys:String>
+    <sys:String x:Key="LocUpdateWhatsNew">Cre ta noa</sys:String>
+    <sys:String x:Key="LocUpdateCheckButton">Jeeagh son noaghaghyn</sys:String>
+    <sys:String x:Key="LocUpdateInstallButton">Lughtey neose as soie</sys:String>
+    <sys:String x:Key="LocUpdateRestartButton">Aa-ghoaill toshiaght as noaghey</sys:String>
+    <sys:String x:Key="LocUpdateOpenReleaseButton">Lughtey neose veih GitHub</sys:String>
+    <sys:String x:Key="LocUpdateSkipButton">Lhiggey shaghey yn lhiaggan shoh</sys:String>
+    <sys:String x:Key="LocUpdateLaterButton">Cur my chooinaght orrym ny sanmey</sys:String>
+    <sys:String x:Key="LocUpdateChecking">Jeeaghyn son noaghaghyn…</sys:String>
+    <sys:String x:Key="LocUpdateUpToDate">Ta Shotora noa</sys:String>
+    <sys:String x:Key="LocUpdateUpToDateDetailFormat">Lhiaggan {0} yn lhiaggan s'noa.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableFormat">Ta Shotora {0} ry-gheddyn</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Ta lhiaggan {0} ayd. Lughtee neose yn noaghey nish — nee Shotora aa-ghoaill toshiaght dy chur jerrey er y hoie.</sys:String>
+    <sys:String x:Key="LocUpdateManualDetail">Lughtee neose yn lhiaggan noa veih GitHub dy noaghey yn coip shoh jeh Shotora.</sys:String>
+    <sys:String x:Key="LocUpdateFailed">Cha dod jeeaghyn son noaghaghyn</sys:String>
+    <sys:String x:Key="LocUpdateFailedDetail">Jeeagh er dty chonnaght Idrlion as pryow reesht.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadingFormat">Lughtey neose noaghey… {0}%</sys:String>
+    <sys:String x:Key="LocUpdateReady">Noaghey aarloo dy hoie</sys:String>
+    <sys:String x:Key="LocUpdateReadyDetail">Aa-ghow toshiaght Shotora dy chur jerrey er soie yn noaghey.</sys:String>
+    <sys:String x:Key="LocUpdateInstalling">Soie noaghey…</sys:String>
+    <sys:String x:Key="LocUpdateIdle">Jeeagh vel lhiaggan s'noa jeh Shotora ry-gheddyn.</sys:String>
+    <sys:String x:Key="LocUpdateCurrentVersionFormat">Lhiaggan {0}</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">Cha dod yn noaghey ve soit</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">Cha daink y lughtey neose gys jerrey. Jeeagh er dty chonnaght as pryow reesht.</sys:String>
 </ResourceDictionary>

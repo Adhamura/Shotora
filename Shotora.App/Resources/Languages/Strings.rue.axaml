@@ -252,4 +252,33 @@
     <sys:String x:Key="LocAboutRole">Роль</sys:String>
     <sys:String x:Key="LocAboutContact">Контакт</sys:String>
     <sys:String x:Key="LocAboutContactIntro">Напишіть для відгуків або співпраці.</sys:String>
+
+    <!-- Updates -->
+    <sys:String x:Key="LocSettingsAutoCheckUpdates">Автоматічно перевірёвати актуалізації</sys:String>
+    <sys:String x:Key="LocTrayCheckForUpdates">Перевірити актуалізації</sys:String>
+    <sys:String x:Key="LocUpdateSectionTitle">Актуалізації</sys:String>
+    <sys:String x:Key="LocUpdateWindowTitle">Актуалізація проґрамы</sys:String>
+    <sys:String x:Key="LocUpdateWhatsNew">Што нового</sys:String>
+    <sys:String x:Key="LocUpdateCheckButton">Перевірити актуалізації</sys:String>
+    <sys:String x:Key="LocUpdateInstallButton">Затягнути і інсталовати</sys:String>
+    <sys:String x:Key="LocUpdateRestartButton">Перезапустити і актуалізовати</sys:String>
+    <sys:String x:Key="LocUpdateOpenReleaseButton">Затягнути з GitHub</sys:String>
+    <sys:String x:Key="LocUpdateSkipButton">Перескочити тоту верзію</sys:String>
+    <sys:String x:Key="LocUpdateLaterButton">Припомянути пізнїше</sys:String>
+    <sys:String x:Key="LocUpdateChecking">Перевірёваня актуалізацій…</sys:String>
+    <sys:String x:Key="LocUpdateUpToDate">Shotora є актуална</sys:String>
+    <sys:String x:Key="LocUpdateUpToDateDetailFormat">Верзія {0} є найновша.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableFormat">Доступна є Shotora {0}</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Маєте верзію {0}. Затягнийте актуалізацію теперь — Shotora ся перезапустить, жебы докінчила інсталацію.</sys:String>
+    <sys:String x:Key="LocUpdateManualDetail">Затягнийте нову верзію з GitHub, жебы сьте актуалізовали тоту копію Shotora.</sys:String>
+    <sys:String x:Key="LocUpdateFailed">Не вдало ся перевірити актуалізації</sys:String>
+    <sys:String x:Key="LocUpdateFailedDetail">Перевірте споїня з інтернетом і спробуйте знову.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadingFormat">Затягованя актуалізації… {0}%</sys:String>
+    <sys:String x:Key="LocUpdateReady">Актуалізація є готова к інсталації</sys:String>
+    <sys:String x:Key="LocUpdateReadyDetail">Перезапустьте Shotora, жебы сьте докінчили інсталацію актуалізації.</sys:String>
+    <sys:String x:Key="LocUpdateInstalling">Інсталованя актуалізації…</sys:String>
+    <sys:String x:Key="LocUpdateIdle">Перевірити, чи є доступна новша верзія Shotora.</sys:String>
+    <sys:String x:Key="LocUpdateCurrentVersionFormat">Верзія {0}</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">Актуалізацію не вдало ся інсталовати</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">Затягованя ся не докінчило. Перевірте споїня і спробуйте знову.</sys:String>
 </ResourceDictionary>

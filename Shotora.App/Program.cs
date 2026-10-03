@@ -110,6 +110,8 @@ internal static class Program
 		services.AddTransient<OverlayWindow>();
 		services.AddTransient<AboutWindow>();
 		services.AddTransient<AboutViewModel>();
+		services.AddTransient<UpdateViewModel>();
+		services.AddTransient<UpdateWindow>();
 
 		services.AddSingleton<Func<OverlayWindow>>(sp => sp.GetRequiredService<OverlayWindow>);
 		services.AddSingleton<Func<SettingsWindow>>(sp => sp.GetRequiredService<SettingsWindow>);
@@ -117,6 +119,7 @@ internal static class Program
 		services.AddSingleton<Func<MainWindow>>(sp => sp.GetRequiredService<MainWindow>);
 		services.AddSingleton<Func<AboutWindow>>(sp => sp.GetRequiredService<AboutWindow>);
 		services.AddSingleton<Func<AboutViewModel>>(sp => sp.GetRequiredService<AboutViewModel>);
+		services.AddSingleton<Func<UpdateWindow>>(sp => sp.GetRequiredService<UpdateWindow>);
 
 		services.AddSingleton<App>();
 

@@ -194,7 +194,7 @@
     <!-- About -->
     <sys:String x:Key="LocAboutTitle">Ynglŷn ag Shotora</sys:String>
     <sys:String x:Key="LocAboutVersion">Fersiwn</sys:String>
-    <sys:String x:Key="LocAboutCopyright">Â© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
+    <sys:String x:Key="LocAboutCopyright">© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
     <sys:String x:Key="LocAboutLinks">Dolenni</sys:String>
     <sys:String x:Key="LocAboutWebsite">Gwefan</sys:String>
     <sys:String x:Key="LocAboutLinkedIn">LinkedIn</sys:String>
@@ -252,4 +252,33 @@
     <sys:String x:Key="LocAboutRole">Rôl</sys:String>
     <sys:String x:Key="LocAboutContact">Cyswllt</sys:String>
     <sys:String x:Key="LocAboutContactIntro">Cysylltwch am adborth neu gydweithio.</sys:String>
+
+    <!-- Updates -->
+    <sys:String x:Key="LocSettingsAutoCheckUpdates">Gwirio am ddiweddariadau'n awtomatig</sys:String>
+    <sys:String x:Key="LocTrayCheckForUpdates">Gwirio am Ddiweddariadau</sys:String>
+    <sys:String x:Key="LocUpdateSectionTitle">Diweddariadau</sys:String>
+    <sys:String x:Key="LocUpdateWindowTitle">Diweddariad Meddalwedd</sys:String>
+    <sys:String x:Key="LocUpdateWhatsNew">Beth sy'n newydd</sys:String>
+    <sys:String x:Key="LocUpdateCheckButton">Gwirio am ddiweddariadau</sys:String>
+    <sys:String x:Key="LocUpdateInstallButton">Lawrlwytho a gosod</sys:String>
+    <sys:String x:Key="LocUpdateRestartButton">Ailgychwyn a diweddaru</sys:String>
+    <sys:String x:Key="LocUpdateOpenReleaseButton">Lawrlwytho o GitHub</sys:String>
+    <sys:String x:Key="LocUpdateSkipButton">Hepgor y fersiwn hon</sys:String>
+    <sys:String x:Key="LocUpdateLaterButton">Atgoffa fi wedyn</sys:String>
+    <sys:String x:Key="LocUpdateChecking">Yn gwirio am ddiweddariadau…</sys:String>
+    <sys:String x:Key="LocUpdateUpToDate">Mae Shotora yn gyfredol</sys:String>
+    <sys:String x:Key="LocUpdateUpToDateDetailFormat">Fersiwn {0} yw'r fersiwn ddiweddaraf.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableFormat">Mae Shotora {0} ar gael</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Mae gennych fersiwn {0}. Lawrlwythwch y diweddariad nawr — bydd Shotora yn ailgychwyn i orffen ei osod.</sys:String>
+    <sys:String x:Key="LocUpdateManualDetail">Lawrlwythwch y fersiwn newydd o GitHub i ddiweddaru'r copi hwn o Shotora.</sys:String>
+    <sys:String x:Key="LocUpdateFailed">Methu gwirio am ddiweddariadau</sys:String>
+    <sys:String x:Key="LocUpdateFailedDetail">Gwiriwch eich cysylltiad â'r rhyngrwyd a rhowch gynnig arall arni.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadingFormat">Yn lawrlwytho'r diweddariad… {0}%</sys:String>
+    <sys:String x:Key="LocUpdateReady">Diweddariad yn barod i'w osod</sys:String>
+    <sys:String x:Key="LocUpdateReadyDetail">Ailgychwynnwch Shotora i orffen gosod y diweddariad.</sys:String>
+    <sys:String x:Key="LocUpdateInstalling">Yn gosod y diweddariad…</sys:String>
+    <sys:String x:Key="LocUpdateIdle">Gwirio a oes fersiwn mwy diweddar o Shotora ar gael.</sys:String>
+    <sys:String x:Key="LocUpdateCurrentVersionFormat">Fersiwn {0}</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">Methu gosod y diweddariad</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">Ni chwblhawyd y lawrlwytho. Gwiriwch eich cysylltiad a rhowch gynnig arall arni.</sys:String>
 </ResourceDictionary>

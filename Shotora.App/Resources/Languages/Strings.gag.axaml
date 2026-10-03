@@ -194,7 +194,7 @@
     <!-- About -->
     <sys:String x:Key="LocAboutTitle">Shotora Hakkında</sys:String>
     <sys:String x:Key="LocAboutVersion">Versiya</sys:String>
-    <sys:String x:Key="LocAboutCopyright">Â© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
+    <sys:String x:Key="LocAboutCopyright">© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
     <sys:String x:Key="LocAboutLinks">Linkler</sys:String>
     <sys:String x:Key="LocAboutWebsite">Web sitesi</sys:String>
     <sys:String x:Key="LocAboutLinkedIn">LinkedIn</sys:String>
@@ -252,4 +252,33 @@
     <sys:String x:Key="LocAboutRole">Rol</sys:String>
     <sys:String x:Key="LocAboutContact">Baǵlantı</sys:String>
     <sys:String x:Key="LocAboutContactIntro">Fikir ya da işbirliği içün ulaşı̌n.</sys:String>
+
+    <!-- Updates -->
+    <sys:String x:Key="LocSettingsAutoCheckUpdates">Enilemekleri avtomatik kontrol et</sys:String>
+    <sys:String x:Key="LocTrayCheckForUpdates">Enilemekleri kontrol et</sys:String>
+    <sys:String x:Key="LocUpdateSectionTitle">Enilemeklär</sys:String>
+    <sys:String x:Key="LocUpdateWindowTitle">Programa enilemesi</sys:String>
+    <sys:String x:Key="LocUpdateWhatsNew">Ne var eni</sys:String>
+    <sys:String x:Key="LocUpdateCheckButton">Enilemekleri kontrol et</sys:String>
+    <sys:String x:Key="LocUpdateInstallButton">İndir hem kur</sys:String>
+    <sys:String x:Key="LocUpdateRestartButton">Yannıdan başlat hem enile</sys:String>
+    <sys:String x:Key="LocUpdateOpenReleaseButton">GitHub'tan indir</sys:String>
+    <sys:String x:Key="LocUpdateSkipButton">Bu versiyayı geç</sys:String>
+    <sys:String x:Key="LocUpdateLaterButton">Sora aklıma getir</sys:String>
+    <sys:String x:Key="LocUpdateChecking">Enilemeklär kontrol ediler…</sys:String>
+    <sys:String x:Key="LocUpdateUpToDate">Shotora en eni versiyada</sys:String>
+    <sys:String x:Key="LocUpdateUpToDateDetailFormat">{0} versiyası en enisi.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableFormat">Shotora {0} var</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Sizdä {0} versiyası var. Enilemekleri şindi indirin — Shotora kurmayı bitirmää deyni yannıdan başlayacek.</sys:String>
+    <sys:String x:Key="LocUpdateManualDetail">Shotora'nın bu kopiyasını enilemää deyni eni versiyayı GitHub'tan indirin.</sys:String>
+    <sys:String x:Key="LocUpdateFailed">Enilemekleri kontrol etmää olmadı</sys:String>
+    <sys:String x:Key="LocUpdateFailedDetail">İnternet baalantınızı kontrol edin hem yannıdan deneyin.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadingFormat">Enilemek indiriler… {0}%</sys:String>
+    <sys:String x:Key="LocUpdateReady">Enilemek kurmaa hazır</sys:String>
+    <sys:String x:Key="LocUpdateReadyDetail">Enilemeyin kurulmasını bitirmää deyni Shotora'yı yannıdan başladın.</sys:String>
+    <sys:String x:Key="LocUpdateInstalling">Enilemek kuruler…</sys:String>
+    <sys:String x:Key="LocUpdateIdle">Shotora'nın taa eni versiyası var mı, kontrol edin.</sys:String>
+    <sys:String x:Key="LocUpdateCurrentVersionFormat">Versiya {0}</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">Enilemek kurulamadı</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">İndirmäk bitmedi. Baalantınızı kontrol edin hem yannıdan deneyin.</sys:String>
 </ResourceDictionary>

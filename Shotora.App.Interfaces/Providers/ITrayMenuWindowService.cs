@@ -11,6 +11,7 @@ public interface ITrayMenuWindowService
 		Action onCaptureFull,
 		Action onSettings,
 		Action onAbout,
+		Action onCheckForUpdates,
 		Action onExit,
 		string themeName);
 	void     UpdateLabels(TrayMenuWindowModel model);

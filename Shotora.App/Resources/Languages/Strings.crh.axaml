@@ -194,7 +194,7 @@
     <!-- About -->
     <sys:String x:Key="LocAboutTitle">Shotora hakkında</sys:String>
     <sys:String x:Key="LocAboutVersion">Versiya</sys:String>
-    <sys:String x:Key="LocAboutCopyright">Â© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
+    <sys:String x:Key="LocAboutCopyright">© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
     <sys:String x:Key="LocAboutLinks">Bağlantılar</sys:String>
     <sys:String x:Key="LocAboutWebsite">Web sahife</sys:String>
     <sys:String x:Key="LocAboutLinkedIn">LinkedIn</sys:String>
@@ -252,4 +252,33 @@
     <sys:String x:Key="LocAboutRole">Rol</sys:String>
     <sys:String x:Key="LocAboutContact">İletişim</sys:String>
     <sys:String x:Key="LocAboutContactIntro">Geri bildirim ya da işbirliği için ulaşın.</sys:String>
+
+    <!-- Updates -->
+    <sys:String x:Key="LocSettingsAutoCheckUpdates">Yañartmalarnı avtomatik teşker</sys:String>
+    <sys:String x:Key="LocTrayCheckForUpdates">Yañartmalarnı teşker</sys:String>
+    <sys:String x:Key="LocUpdateSectionTitle">Yañartmalar</sys:String>
+    <sys:String x:Key="LocUpdateWindowTitle">Programma yañartması</sys:String>
+    <sys:String x:Key="LocUpdateWhatsNew">Ne yañı</sys:String>
+    <sys:String x:Key="LocUpdateCheckButton">Yañartmalarnı teşker</sys:String>
+    <sys:String x:Key="LocUpdateInstallButton">Yükle ve qur</sys:String>
+    <sys:String x:Key="LocUpdateRestartButton">Yañıdan başlat ve yañart</sys:String>
+    <sys:String x:Key="LocUpdateOpenReleaseButton">GitHub'dan yükle</sys:String>
+    <sys:String x:Key="LocUpdateSkipButton">Bu versiyanı keç</sys:String>
+    <sys:String x:Key="LocUpdateLaterButton">Soñra hatırlat</sys:String>
+    <sys:String x:Key="LocUpdateChecking">Yañartmalar teşkerile…</sys:String>
+    <sys:String x:Key="LocUpdateUpToDate">Shotora eñ soñki versiyada</sys:String>
+    <sys:String x:Key="LocUpdateUpToDateDetailFormat">{0} versiyası eñ soñkisidir.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableFormat">Shotora {0} mevcut</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Sizde {0} versiyası bar. Yañartmanı şimdi yükleñiz — Shotora quruluvnı tamamlamaq içün yañıdan başlar.</sys:String>
+    <sys:String x:Key="LocUpdateManualDetail">Shotora'nıñ bu nushasını yañartmaq içün yañı versiyanı GitHub'dan yükleñiz.</sys:String>
+    <sys:String x:Key="LocUpdateFailed">Yañartmalarnı teşkerip olmadı</sys:String>
+    <sys:String x:Key="LocUpdateFailedDetail">İnternet bağlantıñıznı teşkeriñiz ve yañıdan deñeñiz.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadingFormat">Yañartma yüklene… {0}%</sys:String>
+    <sys:String x:Key="LocUpdateReady">Yañartma qurmaq içün azır</sys:String>
+    <sys:String x:Key="LocUpdateReadyDetail">Yañartmanıñ quruluvını tamamlamaq içün Shotora'nı yañıdan başlatıñız.</sys:String>
+    <sys:String x:Key="LocUpdateInstalling">Yañartma qurula…</sys:String>
+    <sys:String x:Key="LocUpdateIdle">Shotora'nıñ daa yañı versiyası bar mı, teşkeriñiz.</sys:String>
+    <sys:String x:Key="LocUpdateCurrentVersionFormat">Versiya {0}</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">Yañartmanı qurıp olmadı</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">Yükleme tamamlanmadı. Bağlantıñıznı teşkeriñiz ve yañıdan deñeñiz.</sys:String>
 </ResourceDictionary>

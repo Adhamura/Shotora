@@ -194,7 +194,7 @@
     <!-- About -->
     <sys:String x:Key="LocAboutTitle">Iwwer Shotora</sys:String>
     <sys:String x:Key="LocAboutVersion">Versioun</sys:String>
-    <sys:String x:Key="LocAboutCopyright">Â© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
+    <sys:String x:Key="LocAboutCopyright">© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
     <sys:String x:Key="LocAboutLinks">Linken</sys:String>
     <sys:String x:Key="LocAboutWebsite">Websäit</sys:String>
     <sys:String x:Key="LocAboutLinkedIn">LinkedIn</sys:String>
@@ -252,4 +252,33 @@
     <sys:String x:Key="LocAboutRole">Roll</sys:String>
     <sys:String x:Key="LocAboutContact">Kontakt</sys:String>
     <sys:String x:Key="LocAboutContactIntro">Mellt Iech fir Feedback oder Zesummenaarbecht.</sys:String>
+
+    <!-- Updates -->
+    <sys:String x:Key="LocSettingsAutoCheckUpdates">Automatesch no Aktualiséierunge sichen</sys:String>
+    <sys:String x:Key="LocTrayCheckForUpdates">No Aktualiséierunge sichen</sys:String>
+    <sys:String x:Key="LocUpdateSectionTitle">Aktualiséierungen</sys:String>
+    <sys:String x:Key="LocUpdateWindowTitle">Software-Aktualiséierung</sys:String>
+    <sys:String x:Key="LocUpdateWhatsNew">Wat ass nei</sys:String>
+    <sys:String x:Key="LocUpdateCheckButton">No Aktualiséierunge sichen</sys:String>
+    <sys:String x:Key="LocUpdateInstallButton">Eroflueden an installéieren</sys:String>
+    <sys:String x:Key="LocUpdateRestartButton">Nei starten an aktualiséieren</sys:String>
+    <sys:String x:Key="LocUpdateOpenReleaseButton">Vu GitHub eroflueden</sys:String>
+    <sys:String x:Key="LocUpdateSkipButton">Dës Versioun iwwersprangen</sys:String>
+    <sys:String x:Key="LocUpdateLaterButton">Méi spéit erënneren</sys:String>
+    <sys:String x:Key="LocUpdateChecking">Sich no Aktualiséierungen…</sys:String>
+    <sys:String x:Key="LocUpdateUpToDate">Shotora ass um neiste Stand</sys:String>
+    <sys:String x:Key="LocUpdateUpToDateDetailFormat">D'Versioun {0} ass déi neist Versioun.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableFormat">Shotora {0} ass disponibel</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Dir hutt d'Versioun {0}. Luet d'Aktualiséierung elo erof – Shotora start nei, fir d'Installatioun ofzeschléissen.</sys:String>
+    <sys:String x:Key="LocUpdateManualDetail">Luet déi nei Versioun vu GitHub erof, fir dës Kopie vu Shotora ze aktualiséieren.</sys:String>
+    <sys:String x:Key="LocUpdateFailed">D'Sich no Aktualiséierunge war net méiglech</sys:String>
+    <sys:String x:Key="LocUpdateFailedDetail">Kontrolléiert Är Internetverbindung a probéiert nach eng Kéier.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadingFormat">Aktualiséierung gëtt erofgelueden… {0}%</sys:String>
+    <sys:String x:Key="LocUpdateReady">Aktualiséierung prett fir z'installéieren</sys:String>
+    <sys:String x:Key="LocUpdateReadyDetail">Start Shotora nei, fir d'Installatioun vun der Aktualiséierung ofzeschléissen.</sys:String>
+    <sys:String x:Key="LocUpdateInstalling">Aktualiséierung gëtt installéiert…</sys:String>
+    <sys:String x:Key="LocUpdateIdle">Kucken, ob eng méi nei Versioun vu Shotora disponibel ass.</sys:String>
+    <sys:String x:Key="LocUpdateCurrentVersionFormat">Versioun {0}</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">D'Aktualiséierung konnt net installéiert ginn</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">Den Download gouf net ofgeschloss. Kontrolléiert Är Verbindung a probéiert nach eng Kéier.</sys:String>
 </ResourceDictionary>

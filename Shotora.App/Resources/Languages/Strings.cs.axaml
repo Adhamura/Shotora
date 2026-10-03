@@ -194,7 +194,7 @@
     <!-- About -->
     <sys:String x:Key="LocAboutTitle">O aplikaci Shotora</sys:String>
     <sys:String x:Key="LocAboutVersion">Verze</sys:String>
-    <sys:String x:Key="LocAboutCopyright">Â© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
+    <sys:String x:Key="LocAboutCopyright">© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
     <sys:String x:Key="LocAboutLinks">Odkazy</sys:String>
     <sys:String x:Key="LocAboutWebsite">Web</sys:String>
     <sys:String x:Key="LocAboutLinkedIn">LinkedIn</sys:String>
@@ -252,4 +252,33 @@
     <sys:String x:Key="LocAboutRole">Role</sys:String>
     <sys:String x:Key="LocAboutContact">Kontakt</sys:String>
     <sys:String x:Key="LocAboutContactIntro">Ozvěte se pro zpětnou vazbu nebo spolupráci.</sys:String>
+
+    <!-- Updates -->
+    <sys:String x:Key="LocSettingsAutoCheckUpdates">Automaticky kontrolovat aktualizace</sys:String>
+    <sys:String x:Key="LocTrayCheckForUpdates">Zkontrolovat aktualizace</sys:String>
+    <sys:String x:Key="LocUpdateSectionTitle">Aktualizace</sys:String>
+    <sys:String x:Key="LocUpdateWindowTitle">Aktualizace softwaru</sys:String>
+    <sys:String x:Key="LocUpdateWhatsNew">Novinky</sys:String>
+    <sys:String x:Key="LocUpdateCheckButton">Zkontrolovat aktualizace</sys:String>
+    <sys:String x:Key="LocUpdateInstallButton">Stáhnout a nainstalovat</sys:String>
+    <sys:String x:Key="LocUpdateRestartButton">Restartovat a aktualizovat</sys:String>
+    <sys:String x:Key="LocUpdateOpenReleaseButton">Stáhnout z GitHubu</sys:String>
+    <sys:String x:Key="LocUpdateSkipButton">Přeskočit tuto verzi</sys:String>
+    <sys:String x:Key="LocUpdateLaterButton">Připomenout později</sys:String>
+    <sys:String x:Key="LocUpdateChecking">Kontrola aktualizací…</sys:String>
+    <sys:String x:Key="LocUpdateUpToDate">Shotora je aktuální</sys:String>
+    <sys:String x:Key="LocUpdateUpToDateDetailFormat">Verze {0} je nejnovější.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableFormat">Je k dispozici Shotora {0}</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Máte verzi {0}. Stáhněte aktualizaci hned teď – Shotora se restartuje a dokončí instalaci.</sys:String>
+    <sys:String x:Key="LocUpdateManualDetail">Stáhněte novou verzi z GitHubu a aktualizujte tuto kopii Shotora.</sys:String>
+    <sys:String x:Key="LocUpdateFailed">Aktualizace se nepodařilo zkontrolovat</sys:String>
+    <sys:String x:Key="LocUpdateFailedDetail">Zkontrolujte připojení k internetu a zkuste to znovu.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadingFormat">Stahování aktualizace… {0}%</sys:String>
+    <sys:String x:Key="LocUpdateReady">Aktualizace je připravena k instalaci</sys:String>
+    <sys:String x:Key="LocUpdateReadyDetail">Restartujte Shotora a dokončete instalaci aktualizace.</sys:String>
+    <sys:String x:Key="LocUpdateInstalling">Instalace aktualizace…</sys:String>
+    <sys:String x:Key="LocUpdateIdle">Zkontrolujte, zda je k dispozici novější verze Shotora.</sys:String>
+    <sys:String x:Key="LocUpdateCurrentVersionFormat">Verze {0}</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">Aktualizaci se nepodařilo nainstalovat</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">Stahování nebylo dokončeno. Zkontrolujte připojení a zkuste to znovu.</sys:String>
 </ResourceDictionary>

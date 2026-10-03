@@ -194,7 +194,7 @@
     <!-- About -->
     <sys:String x:Key="LocAboutTitle">Mu dheidhinn Shotora</sys:String>
     <sys:String x:Key="LocAboutVersion">Tionndadh</sys:String>
-    <sys:String x:Key="LocAboutCopyright">Â© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
+    <sys:String x:Key="LocAboutCopyright">© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
     <sys:String x:Key="LocAboutLinks">Ceanglaichean</sys:String>
     <sys:String x:Key="LocAboutWebsite">Làrach-lìn</sys:String>
     <sys:String x:Key="LocAboutLinkedIn">LinkedIn</sys:String>
@@ -252,4 +252,33 @@
     <sys:String x:Key="LocAboutRole">Dreuchd</sys:String>
     <sys:String x:Key="LocAboutContact">Cuir fios</sys:String>
     <sys:String x:Key="LocAboutContactIntro">Cuir fios thugainn airson beachdan no co-obrachadh.</sys:String>
+
+    <!-- Updates -->
+    <sys:String x:Key="LocSettingsAutoCheckUpdates">Thoir sùil airson ùrachaidhean gu fèin-obrachail</sys:String>
+    <sys:String x:Key="LocTrayCheckForUpdates">Thoir sùil airson ùrachaidhean</sys:String>
+    <sys:String x:Key="LocUpdateSectionTitle">Ùrachaidhean</sys:String>
+    <sys:String x:Key="LocUpdateWindowTitle">Ùrachadh bathair-bhog</sys:String>
+    <sys:String x:Key="LocUpdateWhatsNew">Na tha ùr</sys:String>
+    <sys:String x:Key="LocUpdateCheckButton">Thoir sùil airson ùrachaidhean</sys:String>
+    <sys:String x:Key="LocUpdateInstallButton">Luchdaich a-nuas is stàlaich</sys:String>
+    <sys:String x:Key="LocUpdateRestartButton">Ath-thòisich is ùraich</sys:String>
+    <sys:String x:Key="LocUpdateOpenReleaseButton">Luchdaich a-nuas o GitHub</sys:String>
+    <sys:String x:Key="LocUpdateSkipButton">Leum thar an tionndaidh seo</sys:String>
+    <sys:String x:Key="LocUpdateLaterButton">Cuir na m' chuimhne a-rithist</sys:String>
+    <sys:String x:Key="LocUpdateChecking">A' toirt sùil airson ùrachaidhean…</sys:String>
+    <sys:String x:Key="LocUpdateUpToDate">Tha Shotora cho ùr 's a ghabhas</sys:String>
+    <sys:String x:Key="LocUpdateUpToDateDetailFormat">'S e tionndadh {0} an tionndadh as ùire.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableFormat">Tha Shotora {0} ri fhaighinn</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Tha tionndadh {0} agad. Luchdaich a-nuas an t-ùrachadh an-dràsta — thèid Shotora ath-thòiseachadh gus crìoch a chur air an stàladh.</sys:String>
+    <sys:String x:Key="LocUpdateManualDetail">Luchdaich a-nuas an tionndadh ùr o GitHub gus an lethbhreac seo de Shotora ùrachadh.</sys:String>
+    <sys:String x:Key="LocUpdateFailed">Cha b' urrainn dhuinn sùil a thoirt airson ùrachaidhean</sys:String>
+    <sys:String x:Key="LocUpdateFailedDetail">Thoir sùil air a' cheangal ris an eadar-lìon agad is feuch ris a-rithist.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadingFormat">A' luchdadh a-nuas an ùrachaidh… {0}%</sys:String>
+    <sys:String x:Key="LocUpdateReady">Tha an t-ùrachadh deiseil airson stàladh</sys:String>
+    <sys:String x:Key="LocUpdateReadyDetail">Ath-thòisich Shotora gus crìoch a chur air stàladh an ùrachaidh.</sys:String>
+    <sys:String x:Key="LocUpdateInstalling">A' stàladh an ùrachaidh…</sys:String>
+    <sys:String x:Key="LocUpdateIdle">Thoir sùil a bheil tionndadh nas ùire de Shotora ri fhaighinn.</sys:String>
+    <sys:String x:Key="LocUpdateCurrentVersionFormat">Tionndadh {0}</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">Cha b' urrainn dhuinn an t-ùrachadh a stàladh</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">Cha deach an luchdadh a-nuas a choileanadh. Thoir sùil air a' cheangal agad is feuch ris a-rithist.</sys:String>
 </ResourceDictionary>

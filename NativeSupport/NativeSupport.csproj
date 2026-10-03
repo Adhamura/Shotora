@@ -16,15 +16,6 @@
         <_NativeSupportToolManifest Condition="'$(_NativeSupportToolManifest)'=='' and Exists('$(MSBuildThisFileDirectory)..$(DirectorySeparatorChar).config$(DirectorySeparatorChar)dotnet-tools.json')">$(MSBuildThisFileDirectory)..$(DirectorySeparatorChar).config$(DirectorySeparatorChar)dotnet-tools.json</_NativeSupportToolManifest>
     </PropertyGroup>
 
-    <!-- Force-install Cake.Tool on each build/restore (non-fatal if already installed) -->
-    <Target Name="InstallCakeTool_NativeSupport"
-            BeforeTargets="Build"
-            Condition="'$(InstallCakeTool_NativeSupport_Disabled)'==''">
-        <Message Importance="High" Text="Ensuring Cake.Tool is installed (NativeSupport build hook)..."/>
-        <Exec Command="dotnet tool install Cake.Tool"
-              ContinueOnError="true"/>
-    </Target>
-
     <Target Name="EnsureCakeToolForNativeSupport"
             BeforeTargets="Restore"
             Condition="'$(_NativeSupportToolManifest)' != ''">

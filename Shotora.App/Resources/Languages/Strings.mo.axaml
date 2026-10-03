@@ -16,7 +16,7 @@
     <sys:String x:Key="LocSettingsTesseractFiles">Fișiere de limbă Tesseract</sys:String>
     <sys:String x:Key="LocSettingsSelectLanguage">Selectați limba</sys:String>
     <sys:String x:Key="LocSettingsDownload">Descărcare</sys:String>
-    <sys:String x:Key="LocSettingsDelete">?terge</sys:String>
+    <sys:String x:Key="LocSettingsDelete">Șterge</sys:String>
     <sys:String x:Key="LocSettingsHotkeys">Taste rapide</sys:String>
     <sys:String x:Key="LocSettingsRegionHotkey">Captură regiune</sys:String>
     <sys:String x:Key="LocSettingsFullscreenHotkey">Ecran complet</sys:String>
@@ -40,37 +40,37 @@
     <sys:String x:Key="LocSettingsDefaultColor">Culoare implicită</sys:String>
     <sys:String x:Key="LocSettingsPickColor">Alegere</sys:String>
     <sys:String x:Key="LocSettingsDefaultColorHint">Folosit când paleta de culori este ascunsă.</sys:String>
-    <sys:String x:Key="LocSettingsUsePointer">Folose?te cursorul</sys:String>
-    <sys:String x:Key="LocSettingsShowUndo">Arat? Anuleaz?</sys:String>
-    <sys:String x:Key="LocSettingsShowRedo">Arat? Ref?</sys:String>
-    <sys:String x:Key="LocSettingsShowCopy">Arat? Copiere</sys:String>
-    <sys:String x:Key="LocSettingsShowSave">Arat? Salvare</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">Arat? ?nc?rcare</sys:String>
-    <sys:String x:Key="LocSettingsShowOcr">Arat? OCR</sys:String>
-    <sys:String x:Key="LocSettingsShowCancel">Arat? Anulare</sys:String>
-    <sys:String x:Key="LocSettingsShowConfirm">Arat? Confirmare</sys:String>
-    <sys:String x:Key="LocSettingsShowClose">Arat? ?nchidere</sys:String>
-    <sys:String x:Key="LocSettingsShowSelection">Arat? Selec?ie</sys:String>
-    <sys:String x:Key="LocSettingsShowMove">Arat? Mutare</sys:String>
-    <sys:String x:Key="LocSettingsShowPen">Arat? Stilou</sys:String>
-    <sys:String x:Key="LocSettingsShowLine">Arat? Linie</sys:String>
-    <sys:String x:Key="LocSettingsShowArrow">Arat? S?geat?</sys:String>
-    <sys:String x:Key="LocSettingsShowRectangle">Arat? Dreptunghi</sys:String>
-    <sys:String x:Key="LocSettingsShowEllipse">Arat? Elips?</sys:String>
-    <sys:String x:Key="LocSettingsShowText">Arat? Text</sys:String>
-    <sys:String x:Key="LocSettingsShowHighlight">Arat? Eviden?iere</sys:String>
-    <sys:String x:Key="LocSettingsShowBlur">Arat? Estompare</sys:String>
-    <sys:String x:Key="LocSettingsShowPixelate">Arat? Pixelare</sys:String>
-    <sys:String x:Key="LocSettingsShowThickness">Arat? Grosime</sys:String>
-    <sys:String x:Key="LocSettingsShowColors">Arat? Culori</sys:String>
-    <sys:String x:Key="LocSettingsShowCrosshair">Arat? ?int?</sys:String>
-    <sys:String x:Key="LocSettingsShowResizeHandles">Arat? m?nerele de redimensionare</sys:String>
-    <sys:String x:Key="LocSettingsShowToolbar">Arat? bara de instrumente</sys:String>
-    <sys:String x:Key="LocSettingsShowPalette">Arat? paleta</sys:String>
-    <sys:String x:Key="LocSettingsShowPreview">Arat? previzualizarea</sys:String>
-    <sys:String x:Key="LocSettingsShowMiniMap">Arat? mini-harta</sys:String>
-    <sys:String x:Key="LocSettingsShowSelectionSize">Arat? dimensiunea selec?iei</sys:String>
-    <sys:String x:Key="LocSettingsShowSelectionPosition">Arat? pozi?ia selec?iei</sys:String>
+    <sys:String x:Key="LocSettingsUsePointer">Folosește cursorul</sys:String>
+    <sys:String x:Key="LocSettingsShowUndo">Arată Anulează</sys:String>
+    <sys:String x:Key="LocSettingsShowRedo">Arată Refă</sys:String>
+    <sys:String x:Key="LocSettingsShowCopy">Arată Copiere</sys:String>
+    <sys:String x:Key="LocSettingsShowSave">Arată Salvare</sys:String>
+    <sys:String x:Key="LocSettingsShowUpload">Arată Încărcare</sys:String>
+    <sys:String x:Key="LocSettingsShowOcr">Arată OCR</sys:String>
+    <sys:String x:Key="LocSettingsShowCancel">Arată Anulare</sys:String>
+    <sys:String x:Key="LocSettingsShowConfirm">Arată Confirmare</sys:String>
+    <sys:String x:Key="LocSettingsShowClose">Arată Închidere</sys:String>
+    <sys:String x:Key="LocSettingsShowSelection">Arată Selecție</sys:String>
+    <sys:String x:Key="LocSettingsShowMove">Arată Mutare</sys:String>
+    <sys:String x:Key="LocSettingsShowPen">Arată Stilou</sys:String>
+    <sys:String x:Key="LocSettingsShowLine">Arată Linie</sys:String>
+    <sys:String x:Key="LocSettingsShowArrow">Arată Săgeată</sys:String>
+    <sys:String x:Key="LocSettingsShowRectangle">Arată Dreptunghi</sys:String>
+    <sys:String x:Key="LocSettingsShowEllipse">Arată Elipsă</sys:String>
+    <sys:String x:Key="LocSettingsShowText">Arată Text</sys:String>
+    <sys:String x:Key="LocSettingsShowHighlight">Arată Evidențiere</sys:String>
+    <sys:String x:Key="LocSettingsShowBlur">Arată Estompare</sys:String>
+    <sys:String x:Key="LocSettingsShowPixelate">Arată Pixelare</sys:String>
+    <sys:String x:Key="LocSettingsShowThickness">Arată Grosime</sys:String>
+    <sys:String x:Key="LocSettingsShowColors">Arată Culori</sys:String>
+    <sys:String x:Key="LocSettingsShowCrosshair">Arată Țintă</sys:String>
+    <sys:String x:Key="LocSettingsShowResizeHandles">Arată mânerele de redimensionare</sys:String>
+    <sys:String x:Key="LocSettingsShowToolbar">Arată bara de instrumente</sys:String>
+    <sys:String x:Key="LocSettingsShowPalette">Arată paleta</sys:String>
+    <sys:String x:Key="LocSettingsShowPreview">Arată previzualizarea</sys:String>
+    <sys:String x:Key="LocSettingsShowMiniMap">Arată mini-harta</sys:String>
+    <sys:String x:Key="LocSettingsShowSelectionSize">Arată dimensiunea selecției</sys:String>
+    <sys:String x:Key="LocSettingsShowSelectionPosition">Arată poziția selecției</sys:String>
 
     <!-- Common -->
     <sys:String x:Key="LocCommonClose">Închidere</sys:String>
@@ -97,49 +97,49 @@
     <sys:String x:Key="LocToolUndo">Anulare</sys:String>
     <sys:String x:Key="LocToolRedo">Refacere</sys:String>
 
-    <sys:String x:Key="LocSettingsRegionHotkeyPlaceholder">Apas? tastele...</sys:String>
-    <sys:String x:Key="LocSettingsFullscreenHotkeyPlaceholder">Apas? tastele...</sys:String>
-    <sys:String x:Key="LocSettingsActiveWindowHotkeyPlaceholder">Apas? tastele...</sys:String>
-    <sys:String x:Key="LocSettingsEditorUndoHotkey">Anuleaz?</sys:String>
+    <sys:String x:Key="LocSettingsRegionHotkeyPlaceholder">Apasă tastele...</sys:String>
+    <sys:String x:Key="LocSettingsFullscreenHotkeyPlaceholder">Apasă tastele...</sys:String>
+    <sys:String x:Key="LocSettingsActiveWindowHotkeyPlaceholder">Apasă tastele...</sys:String>
+    <sys:String x:Key="LocSettingsEditorUndoHotkey">Anulează</sys:String>
     <sys:String x:Key="LocSettingsEditorUndoHotkeyPlaceholder">Ctrl+Z</sys:String>
-    <sys:String x:Key="LocSettingsEditorRedoHotkey">Ref?</sys:String>
+    <sys:String x:Key="LocSettingsEditorRedoHotkey">Refă</sys:String>
     <sys:String x:Key="LocSettingsEditorRedoHotkeyPlaceholder">Ctrl+Y</sys:String>
-    <sys:String x:Key="LocSettingsEditorCopyHotkey">Copiaz?</sys:String>
+    <sys:String x:Key="LocSettingsEditorCopyHotkey">Copiază</sys:String>
     <sys:String x:Key="LocSettingsEditorCopyHotkeyPlaceholder">Ctrl+C</sys:String>
-    <sys:String x:Key="LocSettingsEditorSaveHotkey">Salveaz?</sys:String>
+    <sys:String x:Key="LocSettingsEditorSaveHotkey">Salvează</sys:String>
     <sys:String x:Key="LocSettingsEditorSaveHotkeyPlaceholder">Ctrl+S</sys:String>
 
-    <sys:String x:Key="LocSettingsOcrSettings">Set?ri OCR</sys:String>
-    <sys:String x:Key="LocSettingsOcrEasyOcrInstall">Instaleaz? EasyOCR</sys:String>
-    <sys:String x:Key="LocSettingsOcrEasyOcrRemove">Elimin? EasyOCR</sys:String>
+    <sys:String x:Key="LocSettingsOcrSettings">Setări OCR</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstall">Instalează EasyOCR</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemove">Elimină EasyOCR</sys:String>
     <sys:String x:Key="LocSettingsOcrEasyOcrStatus">Stare</sys:String>
     <sys:String x:Key="LocSettingsOcrEasyOcrInstalled">Instalat</sys:String>
     <sys:String x:Key="LocSettingsOcrEasyOcrNotInstalled">Neinstalat</sys:String>
-    <sys:String x:Key="LocSettingsOcrEasyOcrInstalling">Se instaleaz?...</sys:String>
-    <sys:String x:Key="LocSettingsOcrEasyOcrRemoving">Se elimin?...</sys:String>
-    <sys:String x:Key="LocSettingsOcrEasyOcrInstallFailed">Instalarea a e?uat</sys:String>
-    <sys:String x:Key="LocSettingsOcrEasyOcrRemoveFailed">Eliminarea a e?uat</sys:String>
-    <sys:String x:Key="LocSettingsOcrInstallLang">Instaleaz?</sys:String>
-    <sys:String x:Key="LocSettingsOcrRemoveLang">Elimin?</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstalling">Se instalează...</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemoving">Se elimină...</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstallFailed">Instalarea a eșuat</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemoveFailed">Eliminarea a eșuat</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstallLang">Instalează</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoveLang">Elimină</sys:String>
     <sys:String x:Key="LocSettingsOcrInstalled">Instalat</sys:String>
     <sys:String x:Key="LocSettingsOcrNotInstalled">Neinstalat</sys:String>
-    <sys:String x:Key="LocSettingsOcrInstalling">Se instaleaz?...</sys:String>
-    <sys:String x:Key="LocSettingsOcrRemoving">Se elimin?...</sys:String>
-    <sys:String x:Key="LocSettingsOcrInstallFailed">Instalarea a e?uat</sys:String>
-    <sys:String x:Key="LocSettingsOcrRemoveFailed">Eliminarea a e?uat</sys:String>
-    <sys:String x:Key="LocSettingsOcrDownloadProgress">Progres desc?rcare</sys:String>
-    <sys:String x:Key="LocSettingsOcrBytes">octe?i</sys:String>
-    <sys:String x:Key="LocSettingsOcrLicense">Licen??</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstalling">Se instalează...</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoving">Se elimină...</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstallFailed">Instalarea a eșuat</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoveFailed">Eliminarea a eșuat</sys:String>
+    <sys:String x:Key="LocSettingsOcrDownloadProgress">Progres descărcare</sys:String>
+    <sys:String x:Key="LocSettingsOcrBytes">octeți</sys:String>
+    <sys:String x:Key="LocSettingsOcrLicense">Licență</sys:String>
     <sys:String x:Key="LocSettingsOcrLicenseLink">https://github.com/JaidedAI/EasyOCR/blob/master/LICENSE</sys:String>
     <sys:String x:Key="LocSettingsOcrTesseractLangs">Limbi Tesseract</sys:String>
-    <sys:String x:Key="LocSettingsOcrTesseractHint">Descarc? sau adaug? limbi Tesseract suplimentare aici.</sys:String>
+    <sys:String x:Key="LocSettingsOcrTesseractHint">Descarcă sau adaugă limbi Tesseract suplimentare aici.</sys:String>
 
     <sys:String x:Key="LocSettingsExamplesTitle">Exemple</sys:String>
-    <sys:String x:Key="LocSettingsExamplesDescription">Previzualizeaz? pictogramele exemplu ?n tema curent?.</sys:String>
-    <sys:String x:Key="LocSettingsExamplesFormat">Structur?</sys:String>
+    <sys:String x:Key="LocSettingsExamplesDescription">Previzualizează pictogramele exemplu în tema curentă.</sys:String>
+    <sys:String x:Key="LocSettingsExamplesFormat">Format</sys:String>
     <sys:String x:Key="LocSettingsExamplesEffects">Efecte</sys:String>
-    <sys:String x:Key="LocSettingsExamplesShape">Form?</sys:String>
-    <sys:String x:Key="LocSettingsExamplesIcon">Pictogram?</sys:String>
+    <sys:String x:Key="LocSettingsExamplesShape">Formă</sys:String>
+    <sys:String x:Key="LocSettingsExamplesIcon">Pictogramă</sys:String>
 
     <!-- Tray -->
     <sys:String x:Key="LocTrayCaptureRegion">Captură regiune</sys:String>
@@ -149,52 +149,52 @@
     <sys:String x:Key="LocTrayExit">Ieșire</sys:String>
 
     <!-- Overlay -->
-    <sys:String x:Key="LocOverlayCopy">Copiaz?</sys:String>
-    <sys:String x:Key="LocOverlaySave">Salveaz?</sys:String>
-    <sys:String x:Key="LocOverlayUpload">?nc?rcare</sys:String>
+    <sys:String x:Key="LocOverlayCopy">Copiază</sys:String>
+    <sys:String x:Key="LocOverlaySave">Salvează</sys:String>
+    <sys:String x:Key="LocOverlayUpload">Încărcare</sys:String>
     <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
-    <sys:String x:Key="LocOverlayCancel">Anuleaz?</sys:String>
-    <sys:String x:Key="LocOverlayConfirm">Confirm?</sys:String>
-    <sys:String x:Key="LocOverlayClose">?nchide</sys:String>
-    <sys:String x:Key="LocOverlaySelection">Selec?ie</sys:String>
-    <sys:String x:Key="LocOverlayMove">Mut?</sys:String>
+    <sys:String x:Key="LocOverlayCancel">Anulează</sys:String>
+    <sys:String x:Key="LocOverlayConfirm">Confirmă</sys:String>
+    <sys:String x:Key="LocOverlayClose">Închide</sys:String>
+    <sys:String x:Key="LocOverlaySelection">Selecție</sys:String>
+    <sys:String x:Key="LocOverlayMove">Mută</sys:String>
     <sys:String x:Key="LocOverlayPointer">Cursor</sys:String>
     <sys:String x:Key="LocOverlayPen">Creion</sys:String>
     <sys:String x:Key="LocOverlayLine">Linie</sys:String>
-    <sys:String x:Key="LocOverlayArrow">S?geat?</sys:String>
+    <sys:String x:Key="LocOverlayArrow">Săgeată</sys:String>
     <sys:String x:Key="LocOverlayRectangle">Dreptunghi</sys:String>
-    <sys:String x:Key="LocOverlayEllipse">Elips?</sys:String>
+    <sys:String x:Key="LocOverlayEllipse">Elipsă</sys:String>
     <sys:String x:Key="LocOverlayText">Scris</sys:String>
-    <sys:String x:Key="LocOverlayHighlight">Eviden?iaz?</sys:String>
-    <sys:String x:Key="LocOverlayBlur">Estompeaz?</sys:String>
+    <sys:String x:Key="LocOverlayHighlight">Evidențiază</sys:String>
+    <sys:String x:Key="LocOverlayBlur">Estompează</sys:String>
     <sys:String x:Key="LocOverlayPixelate">Pixelare</sys:String>
     <sys:String x:Key="LocOverlayThickness">Grosime</sys:String>
     <sys:String x:Key="LocOverlayColors">Culori</sys:String>
-    <sys:String x:Key="LocOverlayPosition">Pozi?ie</sys:String>
+    <sys:String x:Key="LocOverlayPosition">Poziție</sys:String>
     <sys:String x:Key="LocOverlaySize">Dimensiune</sys:String>
-    <sys:String x:Key="LocOverlayWidth">W</sys:String>
-    <sys:String x:Key="LocOverlayHeight">H</sys:String>
+    <sys:String x:Key="LocOverlayWidth">L</sys:String>
+    <sys:String x:Key="LocOverlayHeight">Î</sys:String>
     <sys:String x:Key="LocOverlayPickColor">Alege culoare</sys:String>
-    <sys:String x:Key="LocOverlayHintDraw">Clic ?i trage pentru a desena. Folose?te bara de instrumente.</sys:String>
-    <sys:String x:Key="LocOverlayHintMove">Trage ?n interiorul selec?iei pentru a muta. Folose?te m?nerele pentru a redimensiona.</sys:String>
-    <sys:String x:Key="LocOverlayHintEdit">Selecteaz? instrumentele pentru adnot?ri. Folose?te Anuleaz?/Ref? dup? nevoie.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Anuleaz?, Enter: Confirm?, Ctrl+Z: Anuleaz?, Ctrl+Y: Ref?</sys:String>
+    <sys:String x:Key="LocOverlayHintDraw">Fă clic și trage pentru a desena. Folosește bara de instrumente.</sys:String>
+    <sys:String x:Key="LocOverlayHintMove">Trage în interiorul selecției pentru a muta. Folosește mânerele pentru a redimensiona.</sys:String>
+    <sys:String x:Key="LocOverlayHintEdit">Selectează instrumentele pentru adnotări. Folosește Anulează/Refă după nevoie.</sys:String>
+    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Anulează, Enter: Confirmă, Ctrl+Z: Anulează, Ctrl+Y: Refă</sys:String>
 
     <!-- Text Input -->
-    <sys:String x:Key="LocTextInputTitle">Adaug? text</sys:String>
-    <sys:String x:Key="LocTextInputHint">Introdu textul pe care vrei s?-l plasezi pe captura de ecran</sys:String>
+    <sys:String x:Key="LocTextInputTitle">Adaugă text</sys:String>
+    <sys:String x:Key="LocTextInputHint">Introdu textul pe care vrei să-l plasezi pe captura de ecran</sys:String>
     <sys:String x:Key="LocTextInputFont">Tip de font</sys:String>
     <sys:String x:Key="LocTextInputSize">Dimensiune</sys:String>
     <sys:String x:Key="LocTextInputBold">Aldin</sys:String>
     <sys:String x:Key="LocTextInputItalic">Cursiv</sys:String>
     <sys:String x:Key="LocTextInputColor">Culoare</sys:String>
-    <sys:String x:Key="LocTextInputPlace">Plaseaz? text</sys:String>
-    <sys:String x:Key="LocTextInputCancel">Anuleaz?</sys:String>
+    <sys:String x:Key="LocTextInputPlace">Plasează textul</sys:String>
+    <sys:String x:Key="LocTextInputCancel">Anulează</sys:String>
 
     <!-- About -->
     <sys:String x:Key="LocAboutTitle">Despre Shotora</sys:String>
     <sys:String x:Key="LocAboutVersion">Versiune</sys:String>
-    <sys:String x:Key="LocAboutCopyright">Â© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
+    <sys:String x:Key="LocAboutCopyright">© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
     <sys:String x:Key="LocAboutLinks">Link-uri</sys:String>
     <sys:String x:Key="LocAboutWebsite">Site web</sys:String>
     <sys:String x:Key="LocAboutLinkedIn">LinkedIn</sys:String>
@@ -202,48 +202,48 @@
 
     <!-- OCR Result -->
     <sys:String x:Key="LocOcrResultTitle">Rezultat OCR</sys:String>
-    <sys:String x:Key="LocOcrResultCopy">Copiaz?</sys:String>
-    <sys:String x:Key="LocOcrResultClose">?nchide</sys:String>
+    <sys:String x:Key="LocOcrResultCopy">Copiază</sys:String>
+    <sys:String x:Key="LocOcrResultClose">Închide</sys:String>
     <sys:String x:Key="LocOcrResultHint">Text recunoscut</sys:String>
 
     <!-- Notifications -->
-    <sys:String x:Key="LocNotificationCopySuccess">Copiat ?n clipboard</sys:String>
+    <sys:String x:Key="LocNotificationCopySuccess">Copiat în clipboard</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">Salvat</sys:String>
-    <sys:String x:Key="LocNotificationSaveFailed">Salvarea a e?uat</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">?nc?rcat</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">?nc?rcarea a e?uat</sys:String>
+    <sys:String x:Key="LocNotificationSaveFailed">Salvarea a eșuat</sys:String>
+    <sys:String x:Key="LocNotificationUploadSuccess">Încărcat</sys:String>
+    <sys:String x:Key="LocNotificationUploadFailed">Încărcarea a eșuat</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR finalizat</sys:String>
-    <sys:String x:Key="LocNotificationOcrFailed">OCR e?uat</sys:String>
+    <sys:String x:Key="LocNotificationOcrFailed">OCR a eșuat</sys:String>
 
     <!-- Buttons -->
-    <sys:String x:Key="LocButtonSave">Salveaz?</sys:String>
-    <sys:String x:Key="LocButtonCancel">Anuleaz?</sys:String>
-    <sys:String x:Key="LocButtonClose">?nchide</sys:String>
+    <sys:String x:Key="LocButtonSave">Salvează</sys:String>
+    <sys:String x:Key="LocButtonCancel">Anulează</sys:String>
+    <sys:String x:Key="LocButtonClose">Închide</sys:String>
     <sys:String x:Key="LocButtonOK">OK</sys:String>
 
     <!-- Dialogs -->
-    <sys:String x:Key="LocDialogSaveTitle">Salveaz? captura de ecran</sys:String>
-    <sys:String x:Key="LocDialogSaveFilter">Fi?iere PNG|*.png|Fi?iere JPEG|*.jpg;*.jpeg|Fi?iere WebP|*.webp|Toate fi?ierele|*.*</sys:String>
+    <sys:String x:Key="LocDialogSaveTitle">Salvează captura de ecran</sys:String>
+    <sys:String x:Key="LocDialogSaveFilter">Fișiere PNG|*.png|Fișiere JPEG|*.jpg;*.jpeg|Fișiere WebP|*.webp|Toate fișierele|*.*</sys:String>
     <sys:String x:Key="LocDialogSaveDefaultName">Shotora.png</sys:String>
-    <sys:String x:Key="LocDialogSelectFolder">Selecteaz? dosarul</sys:String>
-    <sys:String x:Key="LocDialogConfirm">Confirm?</sys:String>
-    <sys:String x:Key="LocDialogDelete">?terge</sys:String>
-    <sys:String x:Key="LocDialogRemoveLanguage">?tergi fi?ierul de limb??</sys:String>
-    <sys:String x:Key="LocDialogRemoveLanguageConfirm">E?ti sigur c? vrei s? ?tergi acest fi?ier de limb??</sys:String>
+    <sys:String x:Key="LocDialogSelectFolder">Selectează dosarul</sys:String>
+    <sys:String x:Key="LocDialogConfirm">Confirmă</sys:String>
+    <sys:String x:Key="LocDialogDelete">Șterge</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguage">Ștergi fișierul de limbă?</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguageConfirm">Ești sigur că vrei să ștergi acest fișier de limbă?</sys:String>
 
     <!-- Errors -->
-    <sys:String x:Key="LocErrorInvalidHotkey">Tast? rapid? invalid?</sys:String>
-    <sys:String x:Key="LocErrorHotkeyInUse">Tast? rapid? deja folosit?</sys:String>
-    <sys:String x:Key="LocErrorHotkeyRegisterFailed">?nregistrarea tastei rapide a e?uat</sys:String>
-    <sys:String x:Key="LocErrorSaveFailed">Failed to save</sys:String>
-    <sys:String x:Key="LocErrorOcrFailed">OCR e?uat</sys:String>
-    <sys:String x:Key="LocErrorInvalidSelection">Selec?ie invalid?</sys:String>
-    <sys:String x:Key="LocErrorNoSelection">Nicio selec?ie</sys:String>
+    <sys:String x:Key="LocErrorInvalidHotkey">Tastă rapidă invalidă</sys:String>
+    <sys:String x:Key="LocErrorHotkeyInUse">Tasta rapidă este deja folosită</sys:String>
+    <sys:String x:Key="LocErrorHotkeyRegisterFailed">Înregistrarea tastei rapide a eșuat</sys:String>
+    <sys:String x:Key="LocErrorSaveFailed">Salvarea a eșuat</sys:String>
+    <sys:String x:Key="LocErrorOcrFailed">OCR a eșuat</sys:String>
+    <sys:String x:Key="LocErrorInvalidSelection">Selecție invalidă</sys:String>
+    <sys:String x:Key="LocErrorNoSelection">Nicio selecție</sys:String>
     <sys:String x:Key="LocErrorTextEmpty">Textul este gol</sys:String>
 
     <sys:String x:Key="LocMainTitle">Shotora</sys:String>
-    <sys:String x:Key="LocMainHint1">Folose?te pictograma din tav? sau tastele rapide globale pentru a captura.</sys:String>
-    <sys:String x:Key="LocMainHint2">Aceast? fereastr? este op?ional?; ?nchide-o pentru a l?sa Shotora activ ?n tav?.</sys:String>
+    <sys:String x:Key="LocMainHint1">Folosește pictograma din tavă sau tastele rapide globale pentru a captura.</sys:String>
+    <sys:String x:Key="LocMainHint2">Această fereastră este opțională; închide-o pentru a lăsa Shotora activ în tavă.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Captură de ecran și adnotări</sys:String>
     <sys:String x:Key="LocAboutDescription">Capturi rapide, adnotări, OCR și încărcări cu Shotora.</sys:String>
@@ -252,4 +252,33 @@
     <sys:String x:Key="LocAboutRole">Rol</sys:String>
     <sys:String x:Key="LocAboutContact">Contact</sys:String>
     <sys:String x:Key="LocAboutContactIntro">Scrieți pentru feedback sau colaborare.</sys:String>
+
+    <!-- Updates -->
+    <sys:String x:Key="LocSettingsAutoCheckUpdates">Caută automat actualizări</sys:String>
+    <sys:String x:Key="LocTrayCheckForUpdates">Caută actualizări</sys:String>
+    <sys:String x:Key="LocUpdateSectionTitle">Actualizări</sys:String>
+    <sys:String x:Key="LocUpdateWindowTitle">Actualizare software</sys:String>
+    <sys:String x:Key="LocUpdateWhatsNew">Noutăți</sys:String>
+    <sys:String x:Key="LocUpdateCheckButton">Caută actualizări</sys:String>
+    <sys:String x:Key="LocUpdateInstallButton">Descarcă și instalează</sys:String>
+    <sys:String x:Key="LocUpdateRestartButton">Repornește și actualizează</sys:String>
+    <sys:String x:Key="LocUpdateOpenReleaseButton">Descarcă de pe GitHub</sys:String>
+    <sys:String x:Key="LocUpdateSkipButton">Omite această versiune</sys:String>
+    <sys:String x:Key="LocUpdateLaterButton">Amintește-mi mai târziu</sys:String>
+    <sys:String x:Key="LocUpdateChecking">Se caută actualizări…</sys:String>
+    <sys:String x:Key="LocUpdateUpToDate">Shotora este actualizat</sys:String>
+    <sys:String x:Key="LocUpdateUpToDateDetailFormat">Versiunea {0} este cea mai recentă.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableFormat">Shotora {0} este disponibil</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Ai versiunea {0}. Descarcă actualizarea acum — Shotora repornește pentru a finaliza instalarea.</sys:String>
+    <sys:String x:Key="LocUpdateManualDetail">Descarcă noua versiune de pe GitHub pentru a actualiza această copie a Shotora.</sys:String>
+    <sys:String x:Key="LocUpdateFailed">Căutarea actualizărilor a eșuat</sys:String>
+    <sys:String x:Key="LocUpdateFailedDetail">Verifică conexiunea la internet și încearcă din nou.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadingFormat">Se descarcă actualizarea… {0}%</sys:String>
+    <sys:String x:Key="LocUpdateReady">Actualizarea este gata de instalare</sys:String>
+    <sys:String x:Key="LocUpdateReadyDetail">Repornește Shotora pentru a finaliza instalarea actualizării.</sys:String>
+    <sys:String x:Key="LocUpdateInstalling">Se instalează actualizarea…</sys:String>
+    <sys:String x:Key="LocUpdateIdle">Verifică dacă este disponibilă o versiune mai nouă a Shotora.</sys:String>
+    <sys:String x:Key="LocUpdateCurrentVersionFormat">Versiunea {0}</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">Actualizarea nu a putut fi instalată</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">Descărcarea nu s-a finalizat. Verifică conexiunea și încearcă din nou.</sys:String>
 </ResourceDictionary>

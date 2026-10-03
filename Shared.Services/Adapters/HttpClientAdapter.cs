@@ -11,6 +11,7 @@ public class HttpClientAdapter(IFileFacade fileFacade) : IHttpClientAdapter
 	{
 		using var client = new HttpClient();
 		client.Timeout = TimeSpan.FromMinutes(2);
+		client.DefaultRequestHeaders.UserAgent.ParseAdd("Shotora");
 		var getPipUri = new Uri(url);
 		return await client.GetByteArrayAsync(getPipUri, cancellationToken).ConfigureAwait(configureAwait);
 	}

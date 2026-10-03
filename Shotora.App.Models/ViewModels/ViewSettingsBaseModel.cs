@@ -80,6 +80,9 @@ public partial class ViewSettingsBaseModel : ViewModelBase
 	private bool _runOnStartup;
 	[ObservableProperty]
 	[SettingsExtension(SettingsTypes.NullOrEmpty, SettingsPropertyTypes.Simple)]
+	private bool _autoCheckForUpdates = true;
+	[ObservableProperty]
+	[SettingsExtension(SettingsTypes.NullOrEmpty, SettingsPropertyTypes.Simple)]
 	private bool _showArrowIcon = true;
 	[ObservableProperty]
 	[SettingsExtension(SettingsTypes.NullOrEmpty, SettingsPropertyTypes.Simple)]

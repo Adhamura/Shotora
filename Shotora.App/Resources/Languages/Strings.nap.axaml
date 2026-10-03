@@ -194,7 +194,7 @@
     <!-- About -->
     <sys:String x:Key="LocAboutTitle">Nfurmazziune ncopp'a Shotora</sys:String>
     <sys:String x:Key="LocAboutVersion">Versione</sys:String>
-    <sys:String x:Key="LocAboutCopyright">Â© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
+    <sys:String x:Key="LocAboutCopyright">© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
     <sys:String x:Key="LocAboutLinks">Link</sys:String>
     <sys:String x:Key="LocAboutWebsite">Sito Web</sys:String>
     <sys:String x:Key="LocAboutLinkedIn">LinkedIn</sys:String>
@@ -233,17 +233,17 @@
 
     <!-- Errors -->
     <sys:String x:Key="LocErrorInvalidHotkey">Tasto rapido non valido</sys:String>
-    <sys:String x:Key="LocErrorHotkeyInUse">Tasto rapido gi? in uso</sys:String>
+    <sys:String x:Key="LocErrorHotkeyInUse">'O tasto rapido è già usato</sys:String>
     <sys:String x:Key="LocErrorHotkeyRegisterFailed">Registrazione tasto rapido fallita</sys:String>
     <sys:String x:Key="LocErrorSaveFailed">Salvataggio fallito</sys:String>
     <sys:String x:Key="LocErrorOcrFailed">OCR fallito</sys:String>
     <sys:String x:Key="LocErrorInvalidSelection">Selezione non valida</sys:String>
     <sys:String x:Key="LocErrorNoSelection">Nessuna selezione</sys:String>
-    <sys:String x:Key="LocErrorTextEmpty">Il testo ? vuoto</sys:String>
+    <sys:String x:Key="LocErrorTextEmpty">'O testo è vacante</sys:String>
 
     <sys:String x:Key="LocMainTitle">Shotora</sys:String>
     <sys:String x:Key="LocMainHint1">Usa l'icona nella tray o i tasti rapidi globali per catturare.</sys:String>
-    <sys:String x:Key="LocMainHint2">Questa finestra ? facoltativa; chiudila per lasciare Shotora attivo nella tray.</sys:String>
+    <sys:String x:Key="LocMainHint2">Chesta fenesta è facoltativa; chiurela pe' lassà Shotora attivo 'int' 'a tray.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Cattura d' 'o schermo e note</sys:String>
     <sys:String x:Key="LocAboutDescription">Screenshot veloce, segni, OCR e 'ncarricamenti cu Shotora.</sys:String>
@@ -252,4 +252,33 @@
     <sys:String x:Key="LocAboutRole">Ruolo</sys:String>
     <sys:String x:Key="LocAboutContact">Contatto</sys:String>
     <sys:String x:Key="LocAboutContactIntro">Scrivicce pe' feedback o pe' collabburà.</sys:String>
+
+    <!-- Updates -->
+    <sys:String x:Key="LocSettingsAutoCheckUpdates">Cuntrolla automaticamente ll'aggiurnamiente</sys:String>
+    <sys:String x:Key="LocTrayCheckForUpdates">Cuntrolla aggiurnamiente</sys:String>
+    <sys:String x:Key="LocUpdateSectionTitle">Aggiurnamiente</sys:String>
+    <sys:String x:Key="LocUpdateWindowTitle">Aggiurnamento d''o software</sys:String>
+    <sys:String x:Key="LocUpdateWhatsNew">Novità</sys:String>
+    <sys:String x:Key="LocUpdateCheckButton">Cuntrolla aggiurnamiente</sys:String>
+    <sys:String x:Key="LocUpdateInstallButton">Scarrica e installa</sys:String>
+    <sys:String x:Key="LocUpdateRestartButton">Riavvia e aggiurna</sys:String>
+    <sys:String x:Key="LocUpdateOpenReleaseButton">Scarrica 'a GitHub</sys:String>
+    <sys:String x:Key="LocUpdateSkipButton">Zompa chesta versione</sys:String>
+    <sys:String x:Key="LocUpdateLaterButton">Ricordammello cchiù tarde</sys:String>
+    <sys:String x:Key="LocUpdateChecking">Cuntrollo d''e aggiurnamiente…</sys:String>
+    <sys:String x:Key="LocUpdateUpToDate">Shotora è aggiurnato</sys:String>
+    <sys:String x:Key="LocUpdateUpToDateDetailFormat">'A versione {0} è ll'ultima.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableFormat">Shotora {0} è disponibbile</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Tiene 'a versione {0}. Scarrica mo ll'aggiurnamento: Shotora se riavvia pe' fernì ll'installazzione.</sys:String>
+    <sys:String x:Key="LocUpdateManualDetail">Scarrica 'a versione nova 'a GitHub pe' aggiurnà chesta copia 'e Shotora.</sys:String>
+    <sys:String x:Key="LocUpdateFailed">Nun se só pututo cuntrullà ll'aggiurnamiente</sys:String>
+    <sys:String x:Key="LocUpdateFailedDetail">Cuntrolla 'a cunnessione a internet e prova n'ata vota.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadingFormat">Scarrecanno ll'aggiurnamento… {0}%</sys:String>
+    <sys:String x:Key="LocUpdateReady">Aggiurnamento pronto pe' ll'installazzione</sys:String>
+    <sys:String x:Key="LocUpdateReadyDetail">Riavvia Shotora pe' fernì ll'installazzione 'e ll'aggiurnamento.</sys:String>
+    <sys:String x:Key="LocUpdateInstalling">Installanno ll'aggiurnamento…</sys:String>
+    <sys:String x:Key="LocUpdateIdle">Cuntrolla si ce sta na versione cchiù nova 'e Shotora.</sys:String>
+    <sys:String x:Key="LocUpdateCurrentVersionFormat">Versione {0}</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">Nun se só pututo installà ll'aggiurnamento</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">'O scarrecamento nun è fernuto. Cuntrolla 'a cunnessione e prova n'ata vota.</sys:String>
 </ResourceDictionary>

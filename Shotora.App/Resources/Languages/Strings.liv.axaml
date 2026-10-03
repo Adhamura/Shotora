@@ -194,7 +194,7 @@
     <!-- About -->
     <sys:String x:Key="LocAboutTitle">Shotora polhe</sys:String>
     <sys:String x:Key="LocAboutVersion">Versi</sys:String>
-    <sys:String x:Key="LocAboutCopyright">Â© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
+    <sys:String x:Key="LocAboutCopyright">© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
     <sys:String x:Key="LocAboutLinks">Linkõd</sys:String>
     <sys:String x:Key="LocAboutWebsite">Web-sait</sys:String>
     <sys:String x:Key="LocAboutLinkedIn">LinkedIn</sys:String>
@@ -252,4 +252,33 @@
     <sys:String x:Key="LocAboutRole">Rõļ</sys:String>
     <sys:String x:Key="LocAboutContact">Kontakts</sys:String>
     <sys:String x:Key="LocAboutContactIntro">Ota yhteyttä taganedõks vai ühtiztõmisõks.</sys:String>
+
+    <!-- Updates -->
+    <sys:String x:Key="LocSettingsAutoCheckUpdates">Vaņț ūdstõkšõd automātiliz</sys:String>
+    <sys:String x:Key="LocTrayCheckForUpdates">Vaņț ūdstõkšõd</sys:String>
+    <sys:String x:Key="LocUpdateSectionTitle">Ūdstõkšõd</sys:String>
+    <sys:String x:Key="LocUpdateWindowTitle">Programm ūdstõkš</sys:String>
+    <sys:String x:Key="LocUpdateWhatsNew">Mis um ūž</sys:String>
+    <sys:String x:Key="LocUpdateCheckButton">Vaņț ūdstõkšõd</sys:String>
+    <sys:String x:Key="LocUpdateInstallButton">Vieratõ ja instalēr</sys:String>
+    <sys:String x:Key="LocUpdateRestartButton">Ūdsõst zapustõ ja ūdstõ</sys:String>
+    <sys:String x:Key="LocUpdateOpenReleaseButton">Vieratõ GitHubõst</sys:String>
+    <sys:String x:Key="LocUpdateSkipButton">Jātõ se versi vaidõ</sys:String>
+    <sys:String x:Key="LocUpdateLaterButton">Meelõ tuļļ pierāst</sys:String>
+    <sys:String x:Key="LocUpdateChecking">Ūdstõkšidi vaņțimi…</sys:String>
+    <sys:String x:Key="LocUpdateUpToDate">Shotora um ūdstõtõd</sys:String>
+    <sys:String x:Key="LocUpdateUpToDateDetailFormat">Versi {0} um ama ūž.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableFormat">Shotora {0} um sōdõb</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Sinnõn um versi {0}. Vieratõ ūdstõkš nūžõ — Shotora zapustõb ūdsõst, ku lopūtõ instalērimi.</sys:String>
+    <sys:String x:Key="LocUpdateManualDetail">Vieratõ ūž versi GitHubõst, ku ūdstõ se Shotora kopij.</sys:String>
+    <sys:String x:Key="LocUpdateFailed">Ūdstõkšidi äb sā vaņțõ</sys:String>
+    <sys:String x:Key="LocUpdateFailedDetail">Vaņț internet sidām ja kōtõ ūdsõst.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadingFormat">Ūdstõkš vierātimi… {0}%</sys:String>
+    <sys:String x:Key="LocUpdateReady">Ūdstõkš um valmõ instalērimiz pierāst</sys:String>
+    <sys:String x:Key="LocUpdateReadyDetail">Zapustõ Shotora ūdsõst, ku lopūtõ ūdstõkš instalērimi.</sys:String>
+    <sys:String x:Key="LocUpdateInstalling">Ūdstõkš instalērimi…</sys:String>
+    <sys:String x:Key="LocUpdateIdle">Vaņț, kas um sōdõb ūžimi Shotora versi.</sys:String>
+    <sys:String x:Key="LocUpdateCurrentVersionFormat">Versi {0}</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">Ūdstõkšt äb sā instalērõ</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">Vieratimi äb lopūtõ. Vaņț sidām ja kōtõ ūdsõst.</sys:String>
 </ResourceDictionary>

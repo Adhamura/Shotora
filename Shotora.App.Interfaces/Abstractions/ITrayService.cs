@@ -7,6 +7,7 @@ public interface ITrayService : IDisposable
 		Action captureFull,
 		Action showSettings,
 		Action showAbout,
+		Action checkForUpdates,
 		Action exitApp);
 
 	void RefreshLocalization();

@@ -1,6 +1,5 @@
 using Avalonia;
 using Avalonia.Controls;
-using Avalonia.Input;
 using Avalonia.Layout;
 using Avalonia.Media;
 using Avalonia.Platform;
@@ -10,7 +9,6 @@ using Shotora.App.Interfaces.Facades;
 using Shotora.App.Interfaces.Providers;
 using Shotora.App.Interfaces.System;
 using Shotora.App.Models.Constants;
-using Shotora.App.Models.ItemModels;
 using Shotora.App.Models.Localization;
 using Shotora.App.Models.ViewModels;
 
@@ -23,6 +21,7 @@ public class TrayMenuWindowService(ILocalizationProvider localizationProvider, I
 		Action onCaptureFull,
 		Action onSettings,
 		Action onAbout,
+		Action onCheckForUpdates,
 		Action onExit,
 		string themeName)
 	{
@@ -45,14 +44,12 @@ public class TrayMenuWindowService(ILocalizationProvider localizationProvider, I
 		var captureFullButton   = CreateButton(onCaptureFull);
 		var settingsButton      = CreateButton(onSettings);
 		var aboutButton         = CreateButton(onAbout);
+		var updatesButton       = CreateButton(onCheckForUpdates);
 		var exitButton          = CreateButton(onExit);
 
-		var separator = new Border
-		{
-			Height              = 1,
-			Margin              = new Thickness(8, 6),
-			HorizontalAlignment = HorizontalAlignment.Stretch
-		};
+		// Size and spacing come from the shared "menu-separator" style (Shotora.App/Styles/Controls.axaml).
+		var separator = new Border();
+		separator.Classes.Add("menu-separator");
 
 		var stack = new StackPanel
 		{
@@ -63,6 +60,7 @@ public class TrayMenuWindowService(ILocalizationProvider localizationProvider, I
 		stack.Children.Add(captureRegionButton);
 		stack.Children.Add(captureFullButton);
 		stack.Children.Add(settingsButton);
+		stack.Children.Add(updatesButton);
 		stack.Children.Add(aboutButton);
 		stack.Children.Add(separator);
 		stack.Children.Add(exitButton);
@@ -86,7 +84,7 @@ public class TrayMenuWindowService(ILocalizationProvider localizationProvider, I
 		window.Content = root;
 
 		var model = new TrayMenuWindowModel();
-		model.Init(window, captureRegionButton, captureFullButton, settingsButton, aboutButton, exitButton, root, separator);
+		model.Init(window, captureRegionButton, captureFullButton, settingsButton, aboutButton, updatesButton, exitButton, root, separator);
 		model.CurrentOs = processSystemService.GetCurrentOs();
 
 		window.Deactivated += (_, _) =>
@@ -116,6 +114,7 @@ public class TrayMenuWindowService(ILocalizationProvider localizationProvider, I
 		model.CaptureFullButton.Content   = localizationProvider.GetString(LocalizationKeys.TrayCaptureFull,   LocalizationFallbacks.Tray.CaptureFull);
 		model.SettingsButton.Content      = localizationProvider.GetString(LocalizationKeys.TraySettings,      LocalizationFallbacks.Tray.Settings);
 		model.AboutButton.Content         = localizationProvider.GetString(LocalizationKeys.TrayAbout,         LocalizationFallbacks.Tray.About);
+		model.UpdatesButton.Content       = localizationProvider.GetString(LocalizationKeys.TrayCheckForUpdates, LocalizationFallbacks.Tray.CheckForUpdates);
 		model.ExitButton.Content          = localizationProvider.GetString(LocalizationKeys.TrayExit,          LocalizationFallbacks.Tray.Exit);
 	}
 
@@ -125,14 +124,11 @@ public class TrayMenuWindowService(ILocalizationProvider localizationProvider, I
 
 		var isLight  = themeName.Equals("Light",  StringComparison.OrdinalIgnoreCase);
 		var isSunset = themeName.Equals("Sunset", StringComparison.OrdinalIgnoreCase);
-		var isDark   = !isLight && !isSunset;
 
 		IBrush backgroundBrush;
 		IBrush borderBrush;
 		IBrush textBrush;
 		IBrush separatorBrush;
-		IBrush idleButtonBrush;
-		IBrush hoverButtonBrush;
 
 		if (app != null                                                    &&
 			app.TryFindResource("PanelBackgroundBrush", out var bgRes)     &&
@@ -142,10 +138,7 @@ public class TrayMenuWindowService(ILocalizationProvider localizationProvider, I
 			backgroundBrush = (IBrush)bgRes!;
 			borderBrush     = (IBrush)borderRes!;
 			textBrush       = (IBrush)textRes!;
-			separatorBrush  = app.TryFindResource("HighlightBrush", out var hl) && hl is IBrush hb ? hb : borderBrush;
-
-			idleButtonBrush  = GetResource<IBrush>(app, "PopupBackgroundBrush") ?? GetResource<IBrush>(app, "InputBackgroundBrush")      ?? backgroundBrush;
-			hoverButtonBrush = GetResource<IBrush>(app, "ButtonHoverBrush")     ?? GetResource<IBrush>(app, "InputBackgroundHoverBrush") ?? separatorBrush;
+			separatorBrush  = GetResource<IBrush>(app, "DividerBrush") ?? borderBrush;
 		}
 		else
 		{
@@ -167,28 +160,14 @@ public class TrayMenuWindowService(ILocalizationProvider localizationProvider, I
 			separatorBrush = isSunset
 				? new SolidColorBrush(Color.FromArgb(255, 217, 140, 104))
 				: borderBrush;
-			idleButtonBrush = isSunset
-				? new SolidColorBrush(Color.FromArgb(255, 247, 217, 179))
-				: isLight
-					? new SolidColorBrush(Color.FromArgb(255, 244, 246, 252))
-					: new SolidColorBrush(Color.FromArgb(255, 38,  40,  48));
-			hoverButtonBrush = isSunset
-				? new SolidColorBrush(Color.FromArgb(255, 237, 202, 160))
-				: isLight
-					? new SolidColorBrush(Color.FromArgb(255, 232, 235, 244))
-					: new SolidColorBrush(Color.FromArgb(255, 50,  54,  64));
 		}
 
+		// Menu entries take their idle/hover/pressed/focus visuals from the "menu-item" style; only the
+		// window chrome is themed here (the menu is a separate top-level window created in code).
 		model.Root.Background      = backgroundBrush;
 		model.Root.BorderBrush     = borderBrush;
 		model.Separator.Background = separatorBrush;
 		model.Window.Foreground    = textBrush;
-
-		SetButtonTheme(model.CaptureRegionButton, textBrush, idleButtonBrush, hoverButtonBrush);
-		SetButtonTheme(model.CaptureFullButton,   textBrush, idleButtonBrush, hoverButtonBrush);
-		SetButtonTheme(model.SettingsButton,      textBrush, idleButtonBrush, hoverButtonBrush);
-		SetButtonTheme(model.AboutButton,         textBrush, idleButtonBrush, hoverButtonBrush);
-		SetButtonTheme(model.ExitButton,          textBrush, idleButtonBrush, hoverButtonBrush);
 	}
 
 	public void ShowAt(TrayMenuWindowModel model, PixelPoint anchor)
@@ -255,17 +234,10 @@ public class TrayMenuWindowService(ILocalizationProvider localizationProvider, I
 
 	private Button CreateButton(Action onClick)
 	{
-		var button = new Button
-		{
-			HorizontalAlignment        = HorizontalAlignment.Stretch,
-			Padding                    = new Thickness(12, 8),
-			HorizontalContentAlignment = HorizontalAlignment.Left,
-			BorderThickness            = new Thickness(0),
-			CornerRadius               = new CornerRadius(6),
-			FontSize                   = 13,
-			FontWeight                 = FontWeight.Medium,
-			Cursor                     = new Cursor(StandardCursorType.Hand)
-		};
+		// Size, padding, typography and all states come from the shared "menu-item" style
+		// (Shotora.App/Styles/Controls.axaml) so the tray menu matches the rest of the UI.
+		var button = new Button();
+		button.Classes.Add("menu-item");
 		button.Click += (_, _) => ExecuteOnUiThread(onClick);
 		return button;
 	}
@@ -275,20 +247,37 @@ public class TrayMenuWindowService(ILocalizationProvider localizationProvider, I
 		var window = model.Window;
 		var screen = window.Screens.ScreenFromPoint(anchor) ?? window.Screens.Primary ?? window.Screens.All[0];
 
-		var menuWidth  = window.Bounds.Width  > 0 ? (int)window.Bounds.Width : (int)window.ClientSize.Width;
-		var menuHeight = window.Bounds.Height > 0 ? (int)window.Bounds.Height : (int)window.ClientSize.Height;
+		var widthDips  = window.Bounds.Width  > 0 ? window.Bounds.Width : window.ClientSize.Width;
+		var heightDips = window.Bounds.Height > 0 ? window.Bounds.Height : window.ClientSize.Height;
+
+		window.Position = CalculateMenuPosition(anchor, screen.WorkingArea, new Size(widthDips, heightDips), screen.Scaling);
+	}
+
+	/// <summary>
+	///     Places the menu centred above the tray anchor, clamped to the working area with a 12 DIP margin.
+	///     The anchor, working area and result are physical pixels; <paramref name="menuSizeDips" /> is in DIPs and is
+	///     converted with <paramref name="scaling" /> (the screen's scaling factor).
+	/// </summary>
+	public static PixelPoint CalculateMenuPosition(PixelPoint anchor, PixelRect workingArea, Size menuSizeDips, double scaling)
+	{
+		if (scaling <= 0 || double.IsNaN(scaling))
+		{
+			scaling = 1;
+		}
+
+		var menuWidth  = (int)Math.Ceiling(menuSizeDips.Width  * scaling);
+		var menuHeight = (int)Math.Ceiling(menuSizeDips.Height * scaling);
 
 		if (menuWidth <= 0)
 		{
-			menuWidth = 200;
+			menuWidth = (int)Math.Ceiling(200 * scaling);
 		}
 		if (menuHeight <= 0)
 		{
-			menuHeight = 220;
+			menuHeight = (int)Math.Ceiling(220 * scaling);
 		}
 
-		var       workingArea = screen.WorkingArea;
-		const int margin      = 12;
+		var margin = (int)Math.Round(12 * scaling);
 
 		var x = anchor.X - menuWidth / 2;
 		var y = anchor.Y - menuHeight - margin;
@@ -311,41 +300,11 @@ public class TrayMenuWindowService(ILocalizationProvider localizationProvider, I
 			y = workingArea.Bottom - menuHeight - margin;
 		}
 
-		window.Position = new PixelPoint(x, y);
+		return new PixelPoint(x, y);
 	}
 
 	private static T? GetResource<T>(Application app, string key) where T : class
 	{
 		return app.TryFindResource(key, out var resource) && resource is T typed ? typed : null;
-	}
-
-	private static void SetButtonTheme(Button button, IBrush? textBrush, IBrush idleBg, IBrush hoverBg)
-	{
-		if (button.Tag is HoverHandlers existing)
-		{
-			if (existing.Enter != null)
-			{
-				button.PointerEntered -= existing.Enter;
-			}
-			if (existing.Exit != null)
-			{
-				button.PointerExited -= existing.Exit;
-			}
-		}
-
-		button.Background  = idleBg;
-		button.BorderBrush = Brushes.Transparent;
-		button.Foreground  = textBrush ?? Brushes.White;
-
-		EventHandler<PointerEventArgs> onEnter = (_, _) => button.Background = hoverBg;
-		EventHandler<PointerEventArgs> onExit  = (_, _) => button.Background = idleBg;
-
-		button.PointerEntered += onEnter;
-		button.PointerExited  += onExit;
-		button.Tag = new HoverHandlers
-		{
-			Enter = onEnter,
-			Exit  = onExit
-		};
 	}
 }

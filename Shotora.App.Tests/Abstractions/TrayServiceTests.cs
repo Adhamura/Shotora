@@ -49,11 +49,13 @@ public class TrayServiceTests
 			var full     = new NativeMenuItem();
 			var settings = new NativeMenuItem();
 			var about    = new NativeMenuItem();
+			var updates  = new NativeMenuItem();
 			var exit     = new NativeMenuItem();
 			SetPrivateField("_macCaptureRegionItem", region);
 			SetPrivateField("_macCaptureFullItem",   full);
 			SetPrivateField("_macSettingsItem",      settings);
 			SetPrivateField("_macAboutItem",         about);
+			SetPrivateField("_macUpdatesItem",       updates);
 			SetPrivateField("_macExitItem",          exit);
 
 			var menuWindow = (TrayMenuWindowModel)RuntimeHelpers.GetUninitializedObject(typeof(TrayMenuWindowModel));
@@ -63,6 +65,7 @@ public class TrayServiceTests
 			_localization.Setup(l => l.GetString(LocalizationKeys.TrayCaptureFull,   LocalizationFallbacks.Tray.CaptureFull)).Returns("cap-full");
 			_localization.Setup(l => l.GetString(LocalizationKeys.TraySettings,      LocalizationFallbacks.Tray.Settings)).Returns("settings");
 			_localization.Setup(l => l.GetString(LocalizationKeys.TrayAbout,         LocalizationFallbacks.Tray.About)).Returns("about");
+			_localization.Setup(l => l.GetString(LocalizationKeys.TrayCheckForUpdates, LocalizationFallbacks.Tray.CheckForUpdates)).Returns("updates");
 			_localization.Setup(l => l.GetString(LocalizationKeys.TrayExit,          LocalizationFallbacks.Tray.Exit)).Returns("exit");
 
 			_menuService.Setup(s => s.UpdateLabels(menuWindow));
@@ -73,6 +76,7 @@ public class TrayServiceTests
 			Assert.Equal("cap-full",   full.Header);
 			Assert.Equal("settings",   settings.Header);
 			Assert.Equal("about",      about.Header);
+			Assert.Equal("updates",    updates.Header);
 			Assert.Equal("exit",       exit.Header);
 			_menuService.Verify(s => s.UpdateLabels(menuWindow), Times.Once);
 			_menuService.VerifyNoOtherCalls();
@@ -122,6 +126,9 @@ public class TrayServiceTests
 		var showAbout = () =>
 		{
 		};
+		var checkUpdates = () =>
+		{
+		};
 		var exit = () =>
 		{
 		};
@@ -130,18 +137,19 @@ public class TrayServiceTests
 		SetPrivateField("_captureFull",   captureFull);
 		SetPrivateField("_showSettings",  showSettings);
 		SetPrivateField("_showAbout",     showAbout);
+		SetPrivateField("_checkForUpdates", checkUpdates);
 		SetPrivateField("_exitApp",       exit);
 		SetPrivateField("_currentTheme",  "Dark");
 
 		var created = (TrayMenuWindowModel)RuntimeHelpers.GetUninitializedObject(typeof(TrayMenuWindowModel));
-		_menuService.Setup(s => s.CreateWindow(captureRegion, captureFull, showSettings, showAbout, exit, "Dark"))
+		_menuService.Setup(s => s.CreateWindow(captureRegion, captureFull, showSettings, showAbout, checkUpdates, exit, "Dark"))
 			.Returns(created);
 
 		var result = InvokeCreateMenuWindow();
 
 		Assert.Same(created, result);
 		Assert.Same(created, GetPrivateField("_menuWindow"));
-		_menuService.Verify(s => s.CreateWindow(captureRegion, captureFull, showSettings, showAbout, exit, "Dark"), Times.Once);
+		_menuService.Verify(s => s.CreateWindow(captureRegion, captureFull, showSettings, showAbout, checkUpdates, exit, "Dark"), Times.Once);
 		_menuService.VerifyNoOtherCalls();
 	}
 

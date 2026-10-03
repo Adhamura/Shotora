@@ -194,7 +194,7 @@
     <!-- About -->
     <sys:String x:Key="LocAboutTitle">Um Shotora</sys:String>
     <sys:String x:Key="LocAboutVersion">Útgáva</sys:String>
-    <sys:String x:Key="LocAboutCopyright">Â© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
+    <sys:String x:Key="LocAboutCopyright">© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
     <sys:String x:Key="LocAboutLinks">Leinki</sys:String>
     <sys:String x:Key="LocAboutWebsite">Heimasíða</sys:String>
     <sys:String x:Key="LocAboutLinkedIn">LinkedIn</sys:String>
@@ -252,4 +252,33 @@
     <sys:String x:Key="LocAboutRole">Leiklutir</sys:String>
     <sys:String x:Key="LocAboutContact">Samband</sys:String>
     <sys:String x:Key="LocAboutContactIntro">Set teg í samband fyri afturmelding ella samstarv.</sys:String>
+
+    <!-- Updates -->
+    <sys:String x:Key="LocSettingsAutoCheckUpdates">Leita sjálvvirkandi eftir dagføringum</sys:String>
+    <sys:String x:Key="LocTrayCheckForUpdates">Leita eftir dagføringum</sys:String>
+    <sys:String x:Key="LocUpdateSectionTitle">Dagføringar</sys:String>
+    <sys:String x:Key="LocUpdateWindowTitle">Ritbúnaðardagføring</sys:String>
+    <sys:String x:Key="LocUpdateWhatsNew">Hvat er nýtt</sys:String>
+    <sys:String x:Key="LocUpdateCheckButton">Leita eftir dagføringum</sys:String>
+    <sys:String x:Key="LocUpdateInstallButton">Tak niður og legg inn</sys:String>
+    <sys:String x:Key="LocUpdateRestartButton">Endurbyrja og dagfør</sys:String>
+    <sys:String x:Key="LocUpdateOpenReleaseButton">Tak niður frá GitHub</sys:String>
+    <sys:String x:Key="LocUpdateSkipButton">Leyp hesa útgávuna um</sys:String>
+    <sys:String x:Key="LocUpdateLaterButton">Minn meg á seinni</sys:String>
+    <sys:String x:Key="LocUpdateChecking">Leitar eftir dagføringum…</sys:String>
+    <sys:String x:Key="LocUpdateUpToDate">Shotora er dagført</sys:String>
+    <sys:String x:Key="LocUpdateUpToDateDetailFormat">Útgáva {0} er nýggjasta útgávan.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableFormat">Shotora {0} er tøkt</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Tú hevur útgávu {0}. Tak dagføringina niður nú – Shotora endurbyrjar fyri at fullføra innleggingina.</sys:String>
+    <sys:String x:Key="LocUpdateManualDetail">Tak nýggju útgávuna niður frá GitHub fyri at dagføra hetta avritið av Shotora.</sys:String>
+    <sys:String x:Key="LocUpdateFailed">Kundi ikki leita eftir dagføringum</sys:String>
+    <sys:String x:Key="LocUpdateFailedDetail">Kanna internetsambandið og royn aftur.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadingFormat">Tekur dagføring niður… {0}%</sys:String>
+    <sys:String x:Key="LocUpdateReady">Dagføringin er klár at leggja inn</sys:String>
+    <sys:String x:Key="LocUpdateReadyDetail">Endurbyrja Shotora fyri at fullføra innleggingina av dagføringini.</sys:String>
+    <sys:String x:Key="LocUpdateInstalling">Leggur dagføring inn…</sys:String>
+    <sys:String x:Key="LocUpdateIdle">Kanna, um ein nýggjari útgáva av Shotora er tøk.</sys:String>
+    <sys:String x:Key="LocUpdateCurrentVersionFormat">Útgáva {0}</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">Dagføringin kundi ikki leggjast inn</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">Niðurtøkan varð ikki liðug. Kanna sambandið og royn aftur.</sys:String>
 </ResourceDictionary>

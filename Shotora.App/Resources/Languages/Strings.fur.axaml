@@ -194,7 +194,7 @@
     <!-- About -->
     <sys:String x:Key="LocAboutTitle">Informazions su Shotora</sys:String>
     <sys:String x:Key="LocAboutVersion">Version</sys:String>
-    <sys:String x:Key="LocAboutCopyright">Â© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
+    <sys:String x:Key="LocAboutCopyright">© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
     <sys:String x:Key="LocAboutLinks">Colegaments</sys:String>
     <sys:String x:Key="LocAboutWebsite">Sît Web</sys:String>
     <sys:String x:Key="LocAboutLinkedIn">LinkedIn</sys:String>
@@ -252,4 +252,33 @@
     <sys:String x:Key="LocAboutRole">Rûl</sys:String>
     <sys:String x:Key="LocAboutContact">Contat</sys:String>
     <sys:String x:Key="LocAboutContactIntro">Contatinus par vuestris coments o par lavorâ adun.</sys:String>
+
+    <!-- Updates -->
+    <sys:String x:Key="LocSettingsAutoCheckUpdates">Controle in automatic i inzornaments</sys:String>
+    <sys:String x:Key="LocTrayCheckForUpdates">Controle inzornaments</sys:String>
+    <sys:String x:Key="LocUpdateSectionTitle">Inzornaments</sys:String>
+    <sys:String x:Key="LocUpdateWindowTitle">Inzornament dal software</sys:String>
+    <sys:String x:Key="LocUpdateWhatsNew">Novitâts</sys:String>
+    <sys:String x:Key="LocUpdateCheckButton">Controle inzornaments</sys:String>
+    <sys:String x:Key="LocUpdateInstallButton">Discjame e instale</sys:String>
+    <sys:String x:Key="LocUpdateRestartButton">Torne invie e inzorne</sys:String>
+    <sys:String x:Key="LocUpdateOpenReleaseButton">Discjame di GitHub</sys:String>
+    <sys:String x:Key="LocUpdateSkipButton">Salte cheste version</sys:String>
+    <sys:String x:Key="LocUpdateLaterButton">Visimi plui tart</sys:String>
+    <sys:String x:Key="LocUpdateChecking">Control dai inzornaments…</sys:String>
+    <sys:String x:Key="LocUpdateUpToDate">Shotora al è inzornât</sys:String>
+    <sys:String x:Key="LocUpdateUpToDateDetailFormat">La version {0} e je la plui gnove.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableFormat">Shotora {0} al è disponibil</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Tu âs la version {0}. Discjame cumò l'inzornament: Shotora si torne a inviâ par finî la instalazion.</sys:String>
+    <sys:String x:Key="LocUpdateManualDetail">Discjame la gnove version di GitHub par inzornâ cheste copie di Shotora.</sys:String>
+    <sys:String x:Key="LocUpdateFailed">Impussibil controlâ i inzornaments</sys:String>
+    <sys:String x:Key="LocUpdateFailedDetail">Controle la conession a internet e torne prove.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadingFormat">Daûr a discjamâ l'inzornament… {0}%</sys:String>
+    <sys:String x:Key="LocUpdateReady">Inzornament pront pe instalazion</sys:String>
+    <sys:String x:Key="LocUpdateReadyDetail">Torne invie Shotora par finî la instalazion dal inzornament.</sys:String>
+    <sys:String x:Key="LocUpdateInstalling">Daûr a instalâ l'inzornament…</sys:String>
+    <sys:String x:Key="LocUpdateIdle">Controle se e je disponibile une version plui gnove di Shotora.</sys:String>
+    <sys:String x:Key="LocUpdateCurrentVersionFormat">Version {0}</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">No si à podût instalâ l'inzornament</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">Il discjamament nol è stât completât. Controle la conession e torne prove.</sys:String>
 </ResourceDictionary>

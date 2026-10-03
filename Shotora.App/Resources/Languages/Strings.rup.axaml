@@ -252,4 +252,33 @@
     <sys:String x:Key="LocAboutRole">Rul</sys:String>
     <sys:String x:Key="LocAboutContact">Contact</sys:String>
     <sys:String x:Key="LocAboutContactIntro">Scriți-ne pã pãreri ori lucrari dimpreună.</sys:String>
+
+    <!-- Updates -->
+    <sys:String x:Key="LocSettingsAutoCheckUpdates">Caftă automat actualizări</sys:String>
+    <sys:String x:Key="LocTrayCheckForUpdates">Caftă actualizări</sys:String>
+    <sys:String x:Key="LocUpdateSectionTitle">Actualizări</sys:String>
+    <sys:String x:Key="LocUpdateWindowTitle">Actualizari di software</sys:String>
+    <sys:String x:Key="LocUpdateWhatsNew">Ți easti nău</sys:String>
+    <sys:String x:Key="LocUpdateCheckButton">Caftă actualizări</sys:String>
+    <sys:String x:Key="LocUpdateInstallButton">Discarcă și instaleadză</sys:String>
+    <sys:String x:Key="LocUpdateRestartButton">Ahurheaște diznău și actualizeadză</sys:String>
+    <sys:String x:Key="LocUpdateOpenReleaseButton">Discarcă di pi GitHub</sys:String>
+    <sys:String x:Key="LocUpdateSkipButton">Treați aestă versiuni</sys:String>
+    <sys:String x:Key="LocUpdateLaterButton">Adu-ni aminti ma amânat</sys:String>
+    <sys:String x:Key="LocUpdateChecking">Si caftă actualizări…</sys:String>
+    <sys:String x:Key="LocUpdateUpToDate">Shotora easti actualizat</sys:String>
+    <sys:String x:Key="LocUpdateUpToDateDetailFormat">Versiunea {0} easti ma nauă.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableFormat">Shotora {0} easti dispunibil</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Ai versiunea {0}. Discarcă actualizarea tora — Shotora ahurheaște diznău tra s-bitisească instalarea.</sys:String>
+    <sys:String x:Key="LocUpdateManualDetail">Discarcă versiunea nauă di pi GitHub tra s-actualizedz aestă copie a Shotora.</sys:String>
+    <sys:String x:Key="LocUpdateFailed">Nu s-putu s-caftă actualizări</sys:String>
+    <sys:String x:Key="LocUpdateFailedDetail">Verifică ligătura la internet și ncearcă diznău.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadingFormat">Si discarcă actualizarea… {0}%</sys:String>
+    <sys:String x:Key="LocUpdateReady">Actualizarea easti etimă tra instalari</sys:String>
+    <sys:String x:Key="LocUpdateReadyDetail">Ahurheaște diznău Shotora tra s-bitisești instalarea a actualizariljei.</sys:String>
+    <sys:String x:Key="LocUpdateInstalling">Si instaleadză actualizarea…</sys:String>
+    <sys:String x:Key="LocUpdateIdle">Verifică cara easti dispunibilă unã versiuni ma nauă a Shotora.</sys:String>
+    <sys:String x:Key="LocUpdateCurrentVersionFormat">Versiuni {0}</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">Actualizarea nu s-putu s-instaleadză</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">Discărcarea nu s-bitisi. Verifică ligătura și ncearcă diznău.</sys:String>
 </ResourceDictionary>

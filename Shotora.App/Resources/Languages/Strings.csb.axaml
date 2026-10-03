@@ -194,7 +194,7 @@
     <!-- About -->
     <sys:String x:Key="LocAboutTitle">Ò Shotora</sys:String>
     <sys:String x:Key="LocAboutVersion">Wersëjô</sys:String>
-    <sys:String x:Key="LocAboutCopyright">Â© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
+    <sys:String x:Key="LocAboutCopyright">© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
     <sys:String x:Key="LocAboutLinks">Linczi</sys:String>
     <sys:String x:Key="LocAboutWebsite">Strona internetowô</sys:String>
     <sys:String x:Key="LocAboutLinkedIn">LinkedIn</sys:String>
@@ -252,4 +252,33 @@
     <sys:String x:Key="LocAboutRole">Rola</sys:String>
     <sys:String x:Key="LocAboutContact">Kòntakt</sys:String>
     <sys:String x:Key="LocAboutContactIntro">Dôwzëwôj sã w sprawie ùwôg abò wëspòłpracy.</sys:String>
+
+    <!-- Updates -->
+    <sys:String x:Key="LocSettingsAutoCheckUpdates">Aùtomatnie sprôwdzôj aktualizacje</sys:String>
+    <sys:String x:Key="LocTrayCheckForUpdates">Sprôwdzë aktualizacje</sys:String>
+    <sys:String x:Key="LocUpdateSectionTitle">Aktualizacje</sys:String>
+    <sys:String x:Key="LocUpdateWindowTitle">Aktualizacjô softwôru</sys:String>
+    <sys:String x:Key="LocUpdateWhatsNew">Co nowégò</sys:String>
+    <sys:String x:Key="LocUpdateCheckButton">Sprôwdzë aktualizacje</sys:String>
+    <sys:String x:Key="LocUpdateInstallButton">Zladëjë ë zainstalëjë</sys:String>
+    <sys:String x:Key="LocUpdateRestartButton">Zrëszë znowa ë zaktualizëjë</sys:String>
+    <sys:String x:Key="LocUpdateOpenReleaseButton">Zladëjë z GitHuba</sys:String>
+    <sys:String x:Key="LocUpdateSkipButton">Pòminë tã wersëjã</sys:String>
+    <sys:String x:Key="LocUpdateLaterButton">Wspòmni pózni</sys:String>
+    <sys:String x:Key="LocUpdateChecking">Sprôwdzanié aktualizacjów…</sys:String>
+    <sys:String x:Key="LocUpdateUpToDate">Shotora je aktualnô</sys:String>
+    <sys:String x:Key="LocUpdateUpToDateDetailFormat">Wersëjô {0} je nônowszô.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableFormat">Przistãpnô je Shotora {0}</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Môsz wersëjã {0}. Zladëjë terô aktualizacjã — Shotora zrëszi sã znowa, żebë zakùńczëc instalacjã.</sys:String>
+    <sys:String x:Key="LocUpdateManualDetail">Zladëjë nową wersëjã z GitHuba, żebë zaktualizowac nã kòpiã Shotora.</sys:String>
+    <sys:String x:Key="LocUpdateFailed">Nie dało sã sprôwdzëc aktualizacjów</sys:String>
+    <sys:String x:Key="LocUpdateFailedDetail">Sprôwdzë pòłączenié z internetã ë spróbùjë jesz rôz.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadingFormat">Zladowanié aktualizacje… {0}%</sys:String>
+    <sys:String x:Key="LocUpdateReady">Aktualizacjô je rëchtownô do instalacje</sys:String>
+    <sys:String x:Key="LocUpdateReadyDetail">Zrëszë znowa Shotora, żebë zakùńczëc instalacjã aktualizacje.</sys:String>
+    <sys:String x:Key="LocUpdateInstalling">Instalowanié aktualizacje…</sys:String>
+    <sys:String x:Key="LocUpdateIdle">Sprôwdzë, czë je przistãpnô nowszô wersëjô Shotora.</sys:String>
+    <sys:String x:Key="LocUpdateCurrentVersionFormat">Wersëjô {0}</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">Nie dało sã zainstalowac aktualizacje</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">Zladowanié nie skùńczëło sã. Sprôwdzë pòłączenié ë spróbùjë jesz rôz.</sys:String>
 </ResourceDictionary>

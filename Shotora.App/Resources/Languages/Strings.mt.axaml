@@ -10,13 +10,13 @@
     <sys:String x:Key="LocSettingsJpegQuality">Kwalità JPEG</sys:String>
     <sys:String x:Key="LocSettingsFilenamePattern">Pattern tal-isem tal-fajl</sys:String>
     <sys:String x:Key="LocSettingsOcr">OCR</sys:String>
-    <sys:String x:Key="LocSettingsProvider">Forni?ur</sys:String>
+    <sys:String x:Key="LocSettingsProvider">Fornitur</sys:String>
     <sys:String x:Key="LocSettingsLanguages">Lingwi</sys:String>
     <sys:String x:Key="LocSettingsEasyOcrHint">EasyOCR jirrikjedi Python + 'pip install easyocr'</sys:String>
     <sys:String x:Key="LocSettingsTesseractFiles">Fajls tal-lingwa Tesseract</sys:String>
     <sys:String x:Key="LocSettingsSelectLanguage">Agħżel il-lingwa</sys:String>
     <sys:String x:Key="LocSettingsDownload">Niżżel</sys:String>
-    <sys:String x:Key="LocSettingsDelete">?assar</sys:String>
+    <sys:String x:Key="LocSettingsDelete">Ħassar</sys:String>
     <sys:String x:Key="LocSettingsHotkeys">Shortcuts</sys:String>
     <sys:String x:Key="LocSettingsRegionHotkey">Capture ta' reġjun</sys:String>
     <sys:String x:Key="LocSettingsFullscreenHotkey">Full screen</sys:String>
@@ -40,21 +40,21 @@
     <sys:String x:Key="LocSettingsDefaultColor">Kulur default</sys:String>
     <sys:String x:Key="LocSettingsPickColor">Agħżel</sys:String>
     <sys:String x:Key="LocSettingsDefaultColorHint">Użat meta l-paletta tal-kuluri tkun moħbija.</sys:String>
-    <sys:String x:Key="LocSettingsUsePointer">U?a l-indikatur</sys:String>
+    <sys:String x:Key="LocSettingsUsePointer">Uża l-indikatur</sys:String>
     <sys:String x:Key="LocSettingsShowUndo">Uri Annulla</sys:String>
-    <sys:String x:Key="LocSettingsShowRedo">Uri Er?a?</sys:String>
+    <sys:String x:Key="LocSettingsShowRedo">Uri Erġa' agħmel</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Uri Kopja</sys:String>
-    <sys:String x:Key="LocSettingsShowSave">Uri ?lief</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">Uri Tella?</sys:String>
+    <sys:String x:Key="LocSettingsShowSave">Uri Issejvja</sys:String>
+    <sys:String x:Key="LocSettingsShowUpload">Uri Tella'</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">Uri OCR</sys:String>
-    <sys:String x:Key="LocSettingsShowCancel">Uri I??ansella</sys:String>
+    <sys:String x:Key="LocSettingsShowCancel">Uri Ikkanċella</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">Uri Kkonferma</sys:String>
-    <sys:String x:Key="LocSettingsShowClose">Uri G?alaq</sys:String>
-    <sys:String x:Key="LocSettingsShowSelection">Uri L-g?a?la</sys:String>
-    <sys:String x:Key="LocSettingsShowMove">Uri I??aqlaq</sys:String>
+    <sys:String x:Key="LocSettingsShowClose">Uri Agħlaq</sys:String>
+    <sys:String x:Key="LocSettingsShowSelection">Uri l-Għażla</sys:String>
+    <sys:String x:Key="LocSettingsShowMove">Uri Iċċaqlaq</sys:String>
     <sys:String x:Key="LocSettingsShowPen">Uri l-penna</sys:String>
     <sys:String x:Key="LocSettingsShowLine">Uri Linja</sys:String>
-    <sys:String x:Key="LocSettingsShowArrow">Uri Vle??a</sys:String>
+    <sys:String x:Key="LocSettingsShowArrow">Uri Vleġġa</sys:String>
     <sys:String x:Key="LocSettingsShowRectangle">Uri Rektanglu</sys:String>
     <sys:String x:Key="LocSettingsShowEllipse">Uri Ellissi</sys:String>
     <sys:String x:Key="LocSettingsShowText">Uri Test</sys:String>
@@ -63,14 +63,14 @@
     <sys:String x:Key="LocSettingsShowPixelate">Uri Pixellazzjoni</sys:String>
     <sys:String x:Key="LocSettingsShowThickness">Uri Tkebb</sys:String>
     <sys:String x:Key="LocSettingsShowColors">Uri Kuluri</sys:String>
-    <sys:String x:Key="LocSettingsShowCrosshair">Uri l-kro??ieg?</sys:String>
-    <sys:String x:Key="LocSettingsShowResizeHandles">Uri l-imnie?er tal-bidla ta? daqs</sys:String>
-    <sys:String x:Key="LocSettingsShowToolbar">Uri l-barra tal-g?odod</sys:String>
+    <sys:String x:Key="LocSettingsShowCrosshair">Uri s-salib tal-immirar</sys:String>
+    <sys:String x:Key="LocSettingsShowResizeHandles">Uri l-manki biex tibdel id-daqs</sys:String>
+    <sys:String x:Key="LocSettingsShowToolbar">Uri l-barra tal-għodod</sys:String>
     <sys:String x:Key="LocSettingsShowPalette">Uri l-palette</sys:String>
-    <sys:String x:Key="LocSettingsShowPreview">Uri l-qabel-ma?</sys:String>
+    <sys:String x:Key="LocSettingsShowPreview">Uri d-dehra minn qabel</sys:String>
     <sys:String x:Key="LocSettingsShowMiniMap">Uri mini-mappa</sys:String>
-    <sys:String x:Key="LocSettingsShowSelectionSize">Uri d-daqs tal-g?a?la</sys:String>
-    <sys:String x:Key="LocSettingsShowSelectionPosition">Uri l-po?izzjoni tal-g?a?la</sys:String>
+    <sys:String x:Key="LocSettingsShowSelectionSize">Uri d-daqs tal-għażla</sys:String>
+    <sys:String x:Key="LocSettingsShowSelectionPosition">Uri l-pożizzjoni tal-għażla</sys:String>
 
     <!-- Common -->
     <sys:String x:Key="LocCommonClose">Agħlaq</sys:String>
@@ -95,14 +95,14 @@
     <sys:String x:Key="LocToolColors">Kuluri</sys:String>
     <sys:String x:Key="LocToolThickness">Ħxuna</sys:String>
     <sys:String x:Key="LocToolUndo">Annulla</sys:String>
-    <sys:String x:Key="LocToolRedo">Er?a?</sys:String>
+    <sys:String x:Key="LocToolRedo">Erġa' agħmel</sys:String>
 
-    <sys:String x:Key="LocSettingsRegionHotkeyPlaceholder">Ag?fas il-buttuni...</sys:String>
-    <sys:String x:Key="LocSettingsFullscreenHotkeyPlaceholder">Ag?fas il-buttuni...</sys:String>
-    <sys:String x:Key="LocSettingsActiveWindowHotkeyPlaceholder">Ag?fas il-buttuni...</sys:String>
+    <sys:String x:Key="LocSettingsRegionHotkeyPlaceholder">Agħfas il-buttuni...</sys:String>
+    <sys:String x:Key="LocSettingsFullscreenHotkeyPlaceholder">Agħfas il-buttuni...</sys:String>
+    <sys:String x:Key="LocSettingsActiveWindowHotkeyPlaceholder">Agħfas il-buttuni...</sys:String>
     <sys:String x:Key="LocSettingsEditorUndoHotkey">Annulla</sys:String>
     <sys:String x:Key="LocSettingsEditorUndoHotkeyPlaceholder">Ctrl+Z</sys:String>
-    <sys:String x:Key="LocSettingsEditorRedoHotkey">Er?a?</sys:String>
+    <sys:String x:Key="LocSettingsEditorRedoHotkey">Erġa' agħmel</sys:String>
     <sys:String x:Key="LocSettingsEditorRedoHotkeyPlaceholder">Ctrl+Y</sys:String>
     <sys:String x:Key="LocSettingsEditorCopyHotkey">Kopja</sys:String>
     <sys:String x:Key="LocSettingsEditorCopyHotkeyPlaceholder">Ctrl+C</sys:String>
@@ -111,31 +111,31 @@
 
     <sys:String x:Key="LocSettingsOcrSettings">Impostazzjonijiet OCR</sys:String>
     <sys:String x:Key="LocSettingsOcrEasyOcrInstall">Installa EasyOCR</sys:String>
-    <sys:String x:Key="LocSettingsOcrEasyOcrRemove">Ne??i EasyOCR</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemove">Neħħi EasyOCR</sys:String>
     <sys:String x:Key="LocSettingsOcrEasyOcrStatus">Stat</sys:String>
     <sys:String x:Key="LocSettingsOcrEasyOcrInstalled">Installat</sys:String>
     <sys:String x:Key="LocSettingsOcrEasyOcrNotInstalled">Mhux installat</sys:String>
     <sys:String x:Key="LocSettingsOcrEasyOcrInstalling">Qed jintinstalla...</sys:String>
-    <sys:String x:Key="LocSettingsOcrEasyOcrRemoving">Qed jintu?a...</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemoving">Qed jitneħħa...</sys:String>
     <sys:String x:Key="LocSettingsOcrEasyOcrInstallFailed">L-installazzjoni ma rnexxietx</sys:String>
-    <sys:String x:Key="LocSettingsOcrEasyOcrRemoveFailed">It-tne??ija ma rnexxietx</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrRemoveFailed">It-tneħħija ma rnexxietx</sys:String>
     <sys:String x:Key="LocSettingsOcrInstallLang">Installa</sys:String>
-    <sys:String x:Key="LocSettingsOcrRemoveLang">Ne??i</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoveLang">Neħħi</sys:String>
     <sys:String x:Key="LocSettingsOcrInstalled">Installat</sys:String>
     <sys:String x:Key="LocSettingsOcrNotInstalled">Mhux installat</sys:String>
     <sys:String x:Key="LocSettingsOcrInstalling">Qed jintinstalla...</sys:String>
-    <sys:String x:Key="LocSettingsOcrRemoving">Qed jintu?a...</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoving">Qed jitneħħa...</sys:String>
     <sys:String x:Key="LocSettingsOcrInstallFailed">L-installazzjoni ma rnexxietx</sys:String>
-    <sys:String x:Key="LocSettingsOcrRemoveFailed">It-tne??ija ma rnexxietx</sys:String>
-    <sys:String x:Key="LocSettingsOcrDownloadProgress">Progress tat-tni??il</sys:String>
+    <sys:String x:Key="LocSettingsOcrRemoveFailed">It-tneħħija ma rnexxietx</sys:String>
+    <sys:String x:Key="LocSettingsOcrDownloadProgress">Progress tat-tniżżil</sys:String>
     <sys:String x:Key="LocSettingsOcrBytes">bajt</sys:String>
-    <sys:String x:Key="LocSettingsOcrLicense">Li?enzja</sys:String>
+    <sys:String x:Key="LocSettingsOcrLicense">Liċenzja</sys:String>
     <sys:String x:Key="LocSettingsOcrLicenseLink">https://github.com/JaidedAI/EasyOCR/blob/master/LICENSE</sys:String>
     <sys:String x:Key="LocSettingsOcrTesseractLangs">Lingwi Tesseract</sys:String>
-    <sys:String x:Key="LocSettingsOcrTesseractHint">Ni??el jew ?id lingwi Tesseract addizzjonali hawn.</sys:String>
+    <sys:String x:Key="LocSettingsOcrTesseractHint">Niżżel jew żid lingwi Tesseract addizzjonali hawn.</sys:String>
 
-    <sys:String x:Key="LocSettingsExamplesTitle">E?empji</sys:String>
-    <sys:String x:Key="LocSettingsExamplesDescription">Ara l-e?empji tal-ikoni fil-tema attwali.</sys:String>
+    <sys:String x:Key="LocSettingsExamplesTitle">Eżempji</sys:String>
+    <sys:String x:Key="LocSettingsExamplesDescription">Ara eżempji tal-ikoni fit-tema attwali.</sys:String>
     <sys:String x:Key="LocSettingsExamplesFormat">Formattazzjoni</sys:String>
     <sys:String x:Key="LocSettingsExamplesEffects">Effetti</sys:String>
     <sys:String x:Key="LocSettingsExamplesShape">Forma</sys:String>
@@ -143,7 +143,7 @@
 
     <!-- Tray -->
     <sys:String x:Key="LocTrayCaptureRegion">Capture Reġjun</sys:String>
-    <sys:String x:Key="LocTrayCaptureFull">?u l-iskrin s?i?</sys:String>
+    <sys:String x:Key="LocTrayCaptureFull">Ħu l-iskrin sħiħ</sys:String>
     <sys:String x:Key="LocTraySettings">Impostazzjonijiet</sys:String>
     <sys:String x:Key="LocTrayAbout">Dwar</sys:String>
     <sys:String x:Key="LocTrayExit">Oħroġ</sys:String>
@@ -151,17 +151,17 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">Kopja</sys:String>
     <sys:String x:Key="LocOverlaySave">Salva</sys:String>
-    <sys:String x:Key="LocOverlayUpload">Tella?</sys:String>
+    <sys:String x:Key="LocOverlayUpload">Tella'</sys:String>
     <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
-    <sys:String x:Key="LocOverlayCancel">I??ansella</sys:String>
+    <sys:String x:Key="LocOverlayCancel">Ikkanċella</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Kkonferma</sys:String>
-    <sys:String x:Key="LocOverlayClose">G?alaq</sys:String>
-    <sys:String x:Key="LocOverlaySelection">G?a?la</sys:String>
-    <sys:String x:Key="LocOverlayMove">I??aqlaq</sys:String>
+    <sys:String x:Key="LocOverlayClose">Agħlaq</sys:String>
+    <sys:String x:Key="LocOverlaySelection">Għażla</sys:String>
+    <sys:String x:Key="LocOverlayMove">Iċċaqlaq</sys:String>
     <sys:String x:Key="LocOverlayPointer">Indikatur</sys:String>
     <sys:String x:Key="LocOverlayPen">Penna</sys:String>
     <sys:String x:Key="LocOverlayLine">Linja</sys:String>
-    <sys:String x:Key="LocOverlayArrow">Vle??a</sys:String>
+    <sys:String x:Key="LocOverlayArrow">Vleġġa</sys:String>
     <sys:String x:Key="LocOverlayRectangle">Rektanglu</sys:String>
     <sys:String x:Key="LocOverlayEllipse">Ellissi</sys:String>
     <sys:String x:Key="LocOverlayText">Test</sys:String>
@@ -170,40 +170,40 @@
     <sys:String x:Key="LocOverlayPixelate">Pixellazzjoni</sys:String>
     <sys:String x:Key="LocOverlayThickness">Tkebb</sys:String>
     <sys:String x:Key="LocOverlayColors">Kuluri</sys:String>
-    <sys:String x:Key="LocOverlayPosition">Po?izzjoni</sys:String>
+    <sys:String x:Key="LocOverlayPosition">Pożizzjoni</sys:String>
     <sys:String x:Key="LocOverlaySize">Daqs</sys:String>
     <sys:String x:Key="LocOverlayWidth">W</sys:String>
-    <sys:String x:Key="LocOverlayHeight">H</sys:String>
-    <sys:String x:Key="LocOverlayPickColor">Ag??el kulur</sys:String>
-    <sys:String x:Key="LocOverlayHintDraw">Ikklikkja u ddrag g?al disinn. U?a l-barra tal-g?odod.</sys:String>
-    <sys:String x:Key="LocOverlayHintMove">I?awwad ?ewwa l-g?a?la biex tmexxi. U?a l-imnie?er g?all-bidla ta? daqs.</sys:String>
-    <sys:String x:Key="LocOverlayHintEdit">Ag??el l-g?odod g?all-annotazzjoni. U?a Annulla/Er?a? skont il-b?onn.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: I??ansella, Enter: Kkonferma, Ctrl+Z: Annulla, Ctrl+Y: Er?a?</sys:String>
+    <sys:String x:Key="LocOverlayHeight">G</sys:String>
+    <sys:String x:Key="LocOverlayPickColor">Agħżel kulur</sys:String>
+    <sys:String x:Key="LocOverlayHintDraw">Ikklikkja u kaxkar biex tpinġi. Uża l-barra tal-għodod.</sys:String>
+    <sys:String x:Key="LocOverlayHintMove">Kaxkar ġewwa l-għażla biex iċċaqlaqha. Uża l-manki biex tibdel id-daqs.</sys:String>
+    <sys:String x:Key="LocOverlayHintEdit">Agħżel l-għodod għall-annotazzjoni. Uża Annulla/Erġa' agħmel skont il-bżonn.</sys:String>
+    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Ikkanċella, Enter: Ikkonferma, Ctrl+Z: Annulla, Ctrl+Y: Erġa' agħmel</sys:String>
 
     <!-- Text Input -->
-    <sys:String x:Key="LocTextInputTitle">?id test</sys:String>
-    <sys:String x:Key="LocTextInputHint">Da??al test biex tpo??ih fuq il-kaptura</sys:String>
-    <sys:String x:Key="LocTextInputFont">Tip ta? font</sys:String>
+    <sys:String x:Key="LocTextInputTitle">Żid test</sys:String>
+    <sys:String x:Key="LocTextInputHint">Daħħal it-test biex tpoġġih fuq il-kaptura tal-iskrin</sys:String>
+    <sys:String x:Key="LocTextInputFont">Tip ta' font</sys:String>
     <sys:String x:Key="LocTextInputSize">Daqs</sys:String>
     <sys:String x:Key="LocTextInputBold">Tqil</sys:String>
     <sys:String x:Key="LocTextInputItalic">Italiku</sys:String>
     <sys:String x:Key="LocTextInputColor">Kulur</sys:String>
-    <sys:String x:Key="LocTextInputPlace">Po??i t-test</sys:String>
-    <sys:String x:Key="LocTextInputCancel">I??ansella</sys:String>
+    <sys:String x:Key="LocTextInputPlace">Poġġi t-test</sys:String>
+    <sys:String x:Key="LocTextInputCancel">Ikkanċella</sys:String>
 
     <!-- About -->
     <sys:String x:Key="LocAboutTitle">Dwar Shotora</sys:String>
     <sys:String x:Key="LocAboutVersion">Verżjoni</sys:String>
-    <sys:String x:Key="LocAboutCopyright">Â© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
+    <sys:String x:Key="LocAboutCopyright">© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
     <sys:String x:Key="LocAboutLinks">Konnessjonijiet</sys:String>
     <sys:String x:Key="LocAboutWebsite">Websajt</sys:String>
     <sys:String x:Key="LocAboutLinkedIn">LinkedIn</sys:String>
-    <sys:String x:Key="LocAboutEmail">Email</sys:String>
+    <sys:String x:Key="LocAboutEmail">Imejl</sys:String>
 
     <!-- OCR Result -->
-    <sys:String x:Key="LocOcrResultTitle">Ri?ultat OCR</sys:String>
+    <sys:String x:Key="LocOcrResultTitle">Riżultat tal-OCR</sys:String>
     <sys:String x:Key="LocOcrResultCopy">Kopja</sys:String>
-    <sys:String x:Key="LocOcrResultClose">G?alaq</sys:String>
+    <sys:String x:Key="LocOcrResultClose">Agħlaq</sys:String>
     <sys:String x:Key="LocOcrResultHint">Test rikonoxxut</sys:String>
 
     <!-- Notifications -->
@@ -211,39 +211,39 @@
     <sys:String x:Key="LocNotificationSaveSuccess">Salvat</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Is-salvjar ma rnexxiex</sys:String>
     <sys:String x:Key="LocNotificationUploadSuccess">Itelljajt</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">It-tella? ma rnexxiex</sys:String>
+    <sys:String x:Key="LocNotificationUploadFailed">It-tlugħ ma rnexxiex</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR lest</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">OCR ma rnexxiex</sys:String>
 
     <!-- Buttons -->
     <sys:String x:Key="LocButtonSave">Salva</sys:String>
-    <sys:String x:Key="LocButtonCancel">I??ansella</sys:String>
-    <sys:String x:Key="LocButtonClose">G?alaq</sys:String>
+    <sys:String x:Key="LocButtonCancel">Ikkanċella</sys:String>
+    <sys:String x:Key="LocButtonClose">Agħlaq</sys:String>
     <sys:String x:Key="LocButtonOK">Tajjeb</sys:String>
 
     <!-- Dialogs -->
-    <sys:String x:Key="LocDialogSaveTitle">?lief il-kaptura</sys:String>
+    <sys:String x:Key="LocDialogSaveTitle">Issejvja l-kaptura tal-iskrin</sys:String>
     <sys:String x:Key="LocDialogSaveFilter">Fajls PNG|*.png|Fajls JPEG|*.jpg;*.jpeg|Fajls WebP|*.webp|Kull fajl|*.*</sys:String>
     <sys:String x:Key="LocDialogSaveDefaultName">Shotora.png</sys:String>
-    <sys:String x:Key="LocDialogSelectFolder">Ag??el folder</sys:String>
+    <sys:String x:Key="LocDialogSelectFolder">Agħżel folder</sys:String>
     <sys:String x:Key="LocDialogConfirm">Kkonferma</sys:String>
-    <sys:String x:Key="LocDialogDelete">?assar</sys:String>
-    <sys:String x:Key="LocDialogRemoveLanguage">Ne??i l-fajl tal-lingwa?</sys:String>
-    <sys:String x:Key="LocDialogRemoveLanguageConfirm">Inti ?ert li trid ne??i dan il-fajl tal-lingwa?</sys:String>
+    <sys:String x:Key="LocDialogDelete">Ħassar</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguage">Tneħħi l-fajl tal-lingwa?</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguageConfirm">Żgur li trid tneħħi dan il-fajl tal-lingwa?</sys:String>
 
     <!-- Errors -->
     <sys:String x:Key="LocErrorInvalidHotkey">Shortcut invalidu</sys:String>
-    <sys:String x:Key="LocErrorHotkeyInUse">Shortcut di?? qed jintu?a</sys:String>
-    <sys:String x:Key="LocErrorHotkeyRegisterFailed">Ma nistax nirre?istra shortcut</sys:String>
+    <sys:String x:Key="LocErrorHotkeyInUse">Ix-shortcut diġà qed jintuża</sys:String>
+    <sys:String x:Key="LocErrorHotkeyRegisterFailed">Ma rnexxiex tiġi rreġistrata x-shortcut</sys:String>
     <sys:String x:Key="LocErrorSaveFailed">Is-salvjar ma rnexxiex</sys:String>
     <sys:String x:Key="LocErrorOcrFailed">OCR ma rnexxiex</sys:String>
-    <sys:String x:Key="LocErrorInvalidSelection">G?a?la invalida</sys:String>
-    <sys:String x:Key="LocErrorNoSelection">Ebda g?a?la</sys:String>
+    <sys:String x:Key="LocErrorInvalidSelection">Għażla invalida</sys:String>
+    <sys:String x:Key="LocErrorNoSelection">L-ebda għażla</sys:String>
     <sys:String x:Key="LocErrorTextEmpty">It-test huwa vojt</sys:String>
 
     <sys:String x:Key="LocMainTitle">Shotora</sys:String>
-    <sys:String x:Key="LocMainHint1">U?a l-ikona tat-tray jew shortcuts globali biex taqbad.</sys:String>
-    <sys:String x:Key="LocMainHint2">Din it-tieqa hija fakultattiva; g?alaqha biex t?alli Shotora g?addej fit-tray.</sys:String>
+    <sys:String x:Key="LocMainHint1">Uża l-ikona fit-tray jew shortcuts globali biex taqbad l-iskrin.</sys:String>
+    <sys:String x:Key="LocMainHint2">Din it-tieqa hija fakultattiva; agħlaqha biex tħalli lil Shotora għaddej fit-tray.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Qbid tal-iskrin u annotazzjonijiet</sys:String>
     <sys:String x:Key="LocAboutDescription">Screenshots mgħaġġla, annotazzjonijiet, OCR u uploads b’Shotora.</sys:String>
@@ -252,4 +252,33 @@
     <sys:String x:Key="LocAboutRole">Rwol</sys:String>
     <sys:String x:Key="LocAboutContact">Kuntatt</sys:String>
     <sys:String x:Key="LocAboutContactIntro">Ikkuntattjana għal feedback jew kollaborazzjoni.</sys:String>
+
+    <!-- Updates -->
+    <sys:String x:Key="LocSettingsAutoCheckUpdates">Iċċekkja awtomatikament għal aġġornamenti</sys:String>
+    <sys:String x:Key="LocTrayCheckForUpdates">Iċċekkja għal aġġornamenti</sys:String>
+    <sys:String x:Key="LocUpdateSectionTitle">Aġġornamenti</sys:String>
+    <sys:String x:Key="LocUpdateWindowTitle">Aġġornament tas-softwer</sys:String>
+    <sys:String x:Key="LocUpdateWhatsNew">X'hemm ġdid</sys:String>
+    <sys:String x:Key="LocUpdateCheckButton">Iċċekkja għal aġġornamenti</sys:String>
+    <sys:String x:Key="LocUpdateInstallButton">Niżżel u installa</sys:String>
+    <sys:String x:Key="LocUpdateRestartButton">Erġa' ibda u aġġorna</sys:String>
+    <sys:String x:Key="LocUpdateOpenReleaseButton">Niżżel minn GitHub</sys:String>
+    <sys:String x:Key="LocUpdateSkipButton">Aqbeż din il-verżjoni</sys:String>
+    <sys:String x:Key="LocUpdateLaterButton">Fakkarni aktar tard</sys:String>
+    <sys:String x:Key="LocUpdateChecking">Qed jiċċekkja għal aġġornamenti…</sys:String>
+    <sys:String x:Key="LocUpdateUpToDate">Shotora huwa aġġornat</sys:String>
+    <sys:String x:Key="LocUpdateUpToDateDetailFormat">Il-verżjoni {0} hija l-aħħar verżjoni.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableFormat">Shotora {0} huwa disponibbli</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Għandek il-verżjoni {0}. Niżżel l-aġġornament issa — Shotora jerġa' jibda biex itemm l-installazzjoni.</sys:String>
+    <sys:String x:Key="LocUpdateManualDetail">Niżżel il-verżjoni l-ġdida minn GitHub biex taġġorna din il-kopja ta' Shotora.</sys:String>
+    <sys:String x:Key="LocUpdateFailed">Ma setax jiċċekkja għal aġġornamenti</sys:String>
+    <sys:String x:Key="LocUpdateFailedDetail">Iċċekkja l-konnessjoni tal-internet u erġa' pprova.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadingFormat">Qed jitniżżel l-aġġornament… {0}%</sys:String>
+    <sys:String x:Key="LocUpdateReady">L-aġġornament lest biex jiġi installat</sys:String>
+    <sys:String x:Key="LocUpdateReadyDetail">Erġa' ibda Shotora biex tlesti l-installazzjoni tal-aġġornament.</sys:String>
+    <sys:String x:Key="LocUpdateInstalling">Qed jiġi installat l-aġġornament…</sys:String>
+    <sys:String x:Key="LocUpdateIdle">Iċċekkja jekk hemmx verżjoni aktar ġdida ta' Shotora disponibbli.</sys:String>
+    <sys:String x:Key="LocUpdateCurrentVersionFormat">Verżjoni {0}</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">L-aġġornament ma setax jiġi installat</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">It-tniżżil ma tlestiex. Iċċekkja l-konnessjoni u erġa' pprova.</sys:String>
 </ResourceDictionary>

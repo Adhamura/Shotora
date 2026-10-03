@@ -10,6 +10,7 @@ public static class LocalizationFallbacks
 		public const string Repair  = "Repair";
 		public const string Delete  = "Delete";
 		public const string Install = "Install";
+		public const string Close   = "Close";
 	}
 
 	public static class Tray
@@ -18,6 +19,7 @@ public static class LocalizationFallbacks
 		public const string CaptureFull   = "Capture Full Screen";
 		public const string Settings      = "Settings";
 		public const string About         = "About";
+		public const string CheckForUpdates = "Check for Updates";
 		public const string Exit          = "Exit";
 	}
 
@@ -52,5 +54,26 @@ public static class LocalizationFallbacks
 		public const string Starting         = "Starting...";
 		public const string Downloaded       = "Downloaded";
 		public const string FailedFormat     = "Failed: {0}";
+	}
+
+	public static class Update
+	{
+		public const string Checking             = "Checking for updates…";
+		public const string UpToDate             = "Shotora is up to date";
+		public const string UpToDateDetailFormat = "Version {0} is the latest version.";
+		public const string AvailableFormat      = "Shotora {0} is available";
+		public const string AvailableDetailFormat = "You have version {0}. Download the update now — Shotora restarts to finish installing it.";
+		public const string ManualDetail         = "Download the new version from GitHub to update this copy of Shotora.";
+		public const string Failed               = "Couldn't check for updates";
+		public const string FailedDetail         = "Check your internet connection and try again.";
+		public const string DownloadFailed       = "The update couldn't be installed";
+		public const string DownloadFailedDetail = "The download didn't complete. Check your connection and try again.";
+		public const string DownloadingFormat    = "Downloading update… {0}%";
+		public const string Ready                = "Update ready to install";
+		public const string ReadyDetail          = "Restart Shotora to finish installing the update.";
+		public const string Installing           = "Installing update…";
+		public const string Idle                 = "Check whether a newer version of Shotora is available.";
+		public const string CurrentVersionFormat = "Version {0}";
+		public const string LaterButton          = "Remind me later";
 	}
 }

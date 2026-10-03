@@ -194,7 +194,7 @@
     <!-- About -->
     <sys:String x:Key="LocAboutTitle">A-zivout Shotora</sys:String>
     <sys:String x:Key="LocAboutVersion">Stumm</sys:String>
-    <sys:String x:Key="LocAboutCopyright">Â© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
+    <sys:String x:Key="LocAboutCopyright">© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
     <sys:String x:Key="LocAboutLinks">Liamm</sys:String>
     <sys:String x:Key="LocAboutWebsite">Gwerennadenn</sys:String>
     <sys:String x:Key="LocAboutLinkedIn">LinkedIn</sys:String>
@@ -252,4 +252,33 @@
     <sys:String x:Key="LocAboutRole">Perzh</sys:String>
     <sys:String x:Key="LocAboutContact">Darempred</sys:String>
     <sys:String x:Key="LocAboutContactIntro">Darempredit evit ho evezhiadennoù pe evit kenlabourat.</sys:String>
+
+    <!-- Updates -->
+    <sys:String x:Key="LocSettingsAutoCheckUpdates">Gwiriañ ent emgefre an hizivadurioù</sys:String>
+    <sys:String x:Key="LocTrayCheckForUpdates">Gwiriañ an hizivadurioù</sys:String>
+    <sys:String x:Key="LocUpdateSectionTitle">Hizivadurioù</sys:String>
+    <sys:String x:Key="LocUpdateWindowTitle">Hizivadur ar meziant</sys:String>
+    <sys:String x:Key="LocUpdateWhatsNew">Petra zo nevez</sys:String>
+    <sys:String x:Key="LocUpdateCheckButton">Gwiriañ an hizivadurioù</sys:String>
+    <sys:String x:Key="LocUpdateInstallButton">Pellgargañ ha staliañ</sys:String>
+    <sys:String x:Key="LocUpdateRestartButton">Adloc'hañ hag hizivaat</sys:String>
+    <sys:String x:Key="LocUpdateOpenReleaseButton">Pellgargañ diwar GitHub</sys:String>
+    <sys:String x:Key="LocUpdateSkipButton">Lezel ar stumm-mañ</sys:String>
+    <sys:String x:Key="LocUpdateLaterButton">Degas da soñj din diwezhatoc'h</sys:String>
+    <sys:String x:Key="LocUpdateChecking">O wiriañ an hizivadurioù…</sys:String>
+    <sys:String x:Key="LocUpdateUpToDate">Hizivaet eo Shotora</sys:String>
+    <sys:String x:Key="LocUpdateUpToDateDetailFormat">Ar stumm {0} eo an diwezhañ.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableFormat">Shotora {0} a zo hegerz</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Ar stumm {0} hoc'h eus. Pellgargit an hizivadur bremañ — adloc'hañ a raio Shotora evit echuiñ ar staliañ.</sys:String>
+    <sys:String x:Key="LocUpdateManualDetail">Pellgargit ar stumm nevez diwar GitHub evit hizivaat an eilskouerenn-mañ eus Shotora.</sys:String>
+    <sys:String x:Key="LocUpdateFailed">N'haller ket gwiriañ an hizivadurioù</sys:String>
+    <sys:String x:Key="LocUpdateFailedDetail">Gwiriit ho kennask Internet ha klaskit en-dro.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadingFormat">O pellgargañ an hizivadur… {0}%</sys:String>
+    <sys:String x:Key="LocUpdateReady">Prest eo an hizivadur da vezañ staliet</sys:String>
+    <sys:String x:Key="LocUpdateReadyDetail">Adloc'hit Shotora evit echuiñ staliañ an hizivadur.</sys:String>
+    <sys:String x:Key="LocUpdateInstalling">O staliañ an hizivadur…</sys:String>
+    <sys:String x:Key="LocUpdateIdle">Gwiriañ hag-eñ ez eus ur stumm nevesoc'h eus Shotora.</sys:String>
+    <sys:String x:Key="LocUpdateCurrentVersionFormat">Stumm {0}</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">N'eus ket bet gallet staliañ an hizivadur</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">N'eo ket bet echuet ar pellgargañ. Gwiriit ho kennask ha klaskit en-dro.</sys:String>
 </ResourceDictionary>

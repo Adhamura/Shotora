@@ -194,7 +194,7 @@
     <!-- About -->
     <sys:String x:Key="LocAboutTitle">Informasion su Shotora</sys:String>
     <sys:String x:Key="LocAboutVersion">Versione</sys:String>
-    <sys:String x:Key="LocAboutCopyright">Â© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
+    <sys:String x:Key="LocAboutCopyright">© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
     <sys:String x:Key="LocAboutLinks">Link</sys:String>
     <sys:String x:Key="LocAboutWebsite">Sito Web</sys:String>
     <sys:String x:Key="LocAboutLinkedIn">LinkedIn</sys:String>
@@ -252,4 +252,33 @@
     <sys:String x:Key="LocAboutRole">Rolo</sys:String>
     <sys:String x:Key="LocAboutContact">Contato</sys:String>
     <sys:String x:Key="LocAboutContactIntro">Scrivine par pareri o par lavorar insembre.</sys:String>
+
+    <!-- Updates -->
+    <sys:String x:Key="LocSettingsAutoCheckUpdates">Controła in automàtego i ajornamenti</sys:String>
+    <sys:String x:Key="LocTrayCheckForUpdates">Controła ajornamenti</sys:String>
+    <sys:String x:Key="LocUpdateSectionTitle">Ajornamenti</sys:String>
+    <sys:String x:Key="LocUpdateWindowTitle">Ajornamento del software</sys:String>
+    <sys:String x:Key="LocUpdateWhatsNew">Novità</sys:String>
+    <sys:String x:Key="LocUpdateCheckButton">Controła ajornamenti</sys:String>
+    <sys:String x:Key="LocUpdateInstallButton">Scarga e instała</sys:String>
+    <sys:String x:Key="LocUpdateRestartButton">Riavia e ajorna</sys:String>
+    <sys:String x:Key="LocUpdateOpenReleaseButton">Scarga da GitHub</sys:String>
+    <sys:String x:Key="LocUpdateSkipButton">Salta sta version</sys:String>
+    <sys:String x:Key="LocUpdateLaterButton">Ricòrdamelo pì tardi</sys:String>
+    <sys:String x:Key="LocUpdateChecking">Controło dei ajornamenti…</sys:String>
+    <sys:String x:Key="LocUpdateUpToDate">Shotora el xe ajornà</sys:String>
+    <sys:String x:Key="LocUpdateUpToDateDetailFormat">Ła version {0} ła xe l'ùltima.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableFormat">Shotora {0} el xe disponìbiłe</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Te ghe ła version {0}. Scarga deso l'ajornamento: Shotora el se riavia par finir l'instałasion.</sys:String>
+    <sys:String x:Key="LocUpdateManualDetail">Scarga ła version nova da GitHub par ajornar sta copia de Shotora.</sys:String>
+    <sys:String x:Key="LocUpdateFailed">No se ga podesto controłar i ajornamenti</sys:String>
+    <sys:String x:Key="LocUpdateFailedDetail">Controła ła conesion a internet e próa n'antra volta.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadingFormat">Scargamento de l'ajornamento… {0}%</sys:String>
+    <sys:String x:Key="LocUpdateReady">Ajornamento pronto par l'instałasion</sys:String>
+    <sys:String x:Key="LocUpdateReadyDetail">Riavia Shotora par finir l'instałasion de l'ajornamento.</sys:String>
+    <sys:String x:Key="LocUpdateInstalling">Instałasion de l'ajornamento…</sys:String>
+    <sys:String x:Key="LocUpdateIdle">Controła se ghe xe na version pì nova de Shotora.</sys:String>
+    <sys:String x:Key="LocUpdateCurrentVersionFormat">Versione {0}</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">No se ga podesto instałar l'ajornamento</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">El scargamento no'l xe stà conpletà. Controła ła conesion e próa n'antra volta.</sys:String>
 </ResourceDictionary>

@@ -3,7 +3,7 @@
         xmlns:controls="clr-namespace:Shotora.App.Controls"
         x:Class="Shotora.App.Views.TextInputWindow"
         Width="520"
-        Height="520"
+        SizeToContent="Height"
         WindowStartupLocation="CenterOwner"
         CanResize="False"
         Title="{DynamicResource LocTextInputTitle}"
@@ -14,65 +14,67 @@
         <x:String>Design</x:String>
     </Design.DataContext>
 
-    <Border Padding="16"
-            Background="{DynamicResource PanelBackgroundBrush}"
-            BorderBrush="{DynamicResource PanelBorderBrush}"
-            BorderThickness="1"
-            CornerRadius="10"
-            PointerPressed="ShellBorder_OnPointerPressed">
-        <Grid RowDefinitions="Auto,*,Auto" ColumnDefinitions="*">
-            <TextBlock Text="{DynamicResource LocTextInputHint}"
-                       FontSize="16"
-                       FontWeight="SemiBold"
-                       Margin="0,0,0,12" />
-
-            <StackPanel Grid.Row="1" Spacing="10">
-                <TextBox x:Name="TextBox"
-                         AcceptsReturn="True"
-                         TextWrapping="Wrap"
-                         MinHeight="140"
-                         Watermark="{DynamicResource LocTextInputHint}" />
-
-                <Grid ColumnDefinitions="220,120,*" ColumnSpacing="10">
-                    <StackPanel>
-                        <TextBlock Text="{DynamicResource LocTextInputFont}" Margin="0,0,0,4" />
-                        <controls:SearchableComboBox x:Name="FontFamilyBox"
-                                                     Height="34" />
-                    </StackPanel>
-
-                    <StackPanel Grid.Column="1">
-                        <TextBlock Text="{DynamicResource LocTextInputSize}" Margin="0,0,0,4" />
-                        <TextBox x:Name="FontSizeBox" Height="34" Text="16" />
-                    </StackPanel>
-
-                    <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Bottom" Spacing="6">
-                        <ToggleButton x:Name="BoldToggle" Content="{DynamicResource LocTextInputBold}" />
-                        <ToggleButton x:Name="ItalicToggle" Content="{DynamicResource LocTextInputItalic}" />
-                    </StackPanel>
-                </Grid>
-
-                <StackPanel>
-                    <TextBlock Text="Preview" Margin="0,0,0,4" />
-                    <Border BorderBrush="{DynamicResource ThemeBorderBrush}"
-                            BorderThickness="1"
-                            CornerRadius="6"
-                            Padding="8">
-                        <TextBlock x:Name="PreviewText"
-                                   Text="Sample"
-                                   VerticalAlignment="Center" />
-                    </Border>
-                </StackPanel>
-            </StackPanel>
-
-            <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Spacing="10"
-                        Margin="0,12,0,0">
-                <Button Content="{DynamicResource LocTextInputPlace}"
-                        Width="110"
-                        Click="Ok_Click" />
-                <Button Content="{DynamicResource LocCommonClose}"
-                        Width="110"
+    <controls:DialogShell Title="{DynamicResource LocTextInputTitle}">
+        <controls:DialogShell.Footer>
+            <StackPanel Classes="dialog-actions">
+                <Button Content="{DynamicResource LocTextInputCancel}"
+                        IsCancel="True"
                         Click="Cancel_Click" />
+                <Button Classes="accent"
+                        Content="{DynamicResource LocTextInputPlace}"
+                        IsDefault="True"
+                        Click="Ok_Click" />
             </StackPanel>
-        </Grid>
-    </Border>
+        </controls:DialogShell.Footer>
+
+        <StackPanel Spacing="12">
+            <!-- Enter inserts a new line; Ctrl+Enter places the text (see code-behind) -->
+            <TextBox x:Name="TextBox"
+                     AcceptsReturn="True"
+                     TextWrapping="Wrap"
+                     MinHeight="112"
+                     MaxHeight="240"
+                     Watermark="{DynamicResource LocTextInputHint}"
+                     AutomationProperties.Name="{DynamicResource LocTextInputHint}" />
+
+            <Grid ColumnDefinitions="*,96,Auto" ColumnSpacing="12">
+                <StackPanel Spacing="4">
+                    <TextBlock Text="{DynamicResource LocTextInputFont}" />
+                    <controls:SearchableComboBox x:Name="FontFamilyBox" />
+                </StackPanel>
+
+                <StackPanel Grid.Column="1" Spacing="4">
+                    <TextBlock Text="{DynamicResource LocTextInputSize}" />
+                    <TextBox x:Name="FontSizeBox"
+                             Text="16"
+                             AutomationProperties.Name="{DynamicResource LocTextInputSize}" />
+                </StackPanel>
+
+                <StackPanel Grid.Column="2"
+                            Orientation="Horizontal"
+                            VerticalAlignment="Bottom"
+                            Spacing="4">
+                    <ToggleButton x:Name="BoldToggle"
+                                  Classes="toggle"
+                                  FontWeight="Bold"
+                                  ToolTip.Tip="{DynamicResource LocTextInputBold}"
+                                  Content="{DynamicResource LocTextInputBold}" />
+                    <ToggleButton x:Name="ItalicToggle"
+                                  Classes="toggle"
+                                  FontStyle="Italic"
+                                  ToolTip.Tip="{DynamicResource LocTextInputItalic}"
+                                  Content="{DynamicResource LocTextInputItalic}" />
+                </StackPanel>
+            </Grid>
+
+            <!-- Live preview of the text with the chosen font settings -->
+            <Border Classes="card" MinHeight="56" Padding="12,8">
+                <TextBlock x:Name="PreviewText"
+                           TextWrapping="Wrap"
+                           MaxHeight="120"
+                           TextTrimming="CharacterEllipsis"
+                           VerticalAlignment="Center" />
+            </Border>
+        </StackPanel>
+    </controls:DialogShell>
 </Window>

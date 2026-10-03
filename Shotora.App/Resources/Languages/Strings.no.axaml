@@ -42,7 +42,7 @@
     <sys:String x:Key="LocSettingsDefaultColorHint">Brukes når fargepaletten er skjult.</sys:String>
     <sys:String x:Key="LocSettingsUsePointer">Bruk pekeren</sys:String>
     <sys:String x:Key="LocSettingsShowUndo">Vis Angre</sys:String>
-    <sys:String x:Key="LocSettingsShowRedo">Vis Gj?r om</sys:String>
+    <sys:String x:Key="LocSettingsShowRedo">Vis Gjør om</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Vis Kopier</sys:String>
     <sys:String x:Key="LocSettingsShowSave">Vis Lagre</sys:String>
     <sys:String x:Key="LocSettingsShowUpload">Vis Last opp</sys:String>
@@ -64,12 +64,12 @@
     <sys:String x:Key="LocSettingsShowThickness">Vis Tykkelse</sys:String>
     <sys:String x:Key="LocSettingsShowColors">Vis Farger</sys:String>
     <sys:String x:Key="LocSettingsShowCrosshair">Vis Siktekors</sys:String>
-    <sys:String x:Key="LocSettingsShowResizeHandles">Vis st?rrelsesh?ndtak</sys:String>
-    <sys:String x:Key="LocSettingsShowToolbar">Vis verkt?ylinje</sys:String>
+    <sys:String x:Key="LocSettingsShowResizeHandles">Vis størrelseshåndtak</sys:String>
+    <sys:String x:Key="LocSettingsShowToolbar">Vis verktøylinje</sys:String>
     <sys:String x:Key="LocSettingsShowPalette">Vis palett</sys:String>
-    <sys:String x:Key="LocSettingsShowPreview">Vis forh?ndsvisning</sys:String>
+    <sys:String x:Key="LocSettingsShowPreview">Vis forhåndsvisning</sys:String>
     <sys:String x:Key="LocSettingsShowMiniMap">Vis minikart</sys:String>
-    <sys:String x:Key="LocSettingsShowSelectionSize">Vis utvalgsst?rrelse</sys:String>
+    <sys:String x:Key="LocSettingsShowSelectionSize">Vis utvalgsstørrelse</sys:String>
     <sys:String x:Key="LocSettingsShowSelectionPosition">Vis utvalgsposisjon</sys:String>
 
     <!-- Common -->
@@ -97,12 +97,12 @@
     <sys:String x:Key="LocToolUndo">Angre</sys:String>
     <sys:String x:Key="LocToolRedo">Gjør om</sys:String>
 
-    <sys:String x:Key="LocSettingsRegionHotkeyPlaceholder">Trykk p? tastene...</sys:String>
-    <sys:String x:Key="LocSettingsFullscreenHotkeyPlaceholder">Trykk p? tastene...</sys:String>
-    <sys:String x:Key="LocSettingsActiveWindowHotkeyPlaceholder">Trykk p? tastene...</sys:String>
+    <sys:String x:Key="LocSettingsRegionHotkeyPlaceholder">Trykk på tastene...</sys:String>
+    <sys:String x:Key="LocSettingsFullscreenHotkeyPlaceholder">Trykk på tastene...</sys:String>
+    <sys:String x:Key="LocSettingsActiveWindowHotkeyPlaceholder">Trykk på tastene...</sys:String>
     <sys:String x:Key="LocSettingsEditorUndoHotkey">Angre</sys:String>
     <sys:String x:Key="LocSettingsEditorUndoHotkeyPlaceholder">Ctrl+Z</sys:String>
-    <sys:String x:Key="LocSettingsEditorRedoHotkey">Gj?r om</sys:String>
+    <sys:String x:Key="LocSettingsEditorRedoHotkey">Gjør om</sys:String>
     <sys:String x:Key="LocSettingsEditorRedoHotkeyPlaceholder">Ctrl+Y</sys:String>
     <sys:String x:Key="LocSettingsEditorCopyHotkey">Kopier</sys:String>
     <sys:String x:Key="LocSettingsEditorCopyHotkeyPlaceholder">Ctrl+C</sys:String>
@@ -131,11 +131,11 @@
     <sys:String x:Key="LocSettingsOcrBytes">byte</sys:String>
     <sys:String x:Key="LocSettingsOcrLicense">Lisens</sys:String>
     <sys:String x:Key="LocSettingsOcrLicenseLink">https://github.com/JaidedAI/EasyOCR/blob/master/LICENSE</sys:String>
-    <sys:String x:Key="LocSettingsOcrTesseractLangs">Tesseract-spr?k</sys:String>
-    <sys:String x:Key="LocSettingsOcrTesseractHint">Last ned eller legg til flere Tesseract-spr?k her.</sys:String>
+    <sys:String x:Key="LocSettingsOcrTesseractLangs">Tesseract-språk</sys:String>
+    <sys:String x:Key="LocSettingsOcrTesseractHint">Last ned eller legg til flere Tesseract-språk her.</sys:String>
 
     <sys:String x:Key="LocSettingsExamplesTitle">Eksempler</sys:String>
-    <sys:String x:Key="LocSettingsExamplesDescription">Forh?ndsvis eksempelikoner i gjeldende tema.</sys:String>
+    <sys:String x:Key="LocSettingsExamplesDescription">Forhåndsvis eksempelikoner i gjeldende tema.</sys:String>
     <sys:String x:Key="LocSettingsExamplesFormat">Format</sys:String>
     <sys:String x:Key="LocSettingsExamplesEffects">Effekter</sys:String>
     <sys:String x:Key="LocSettingsExamplesShape">Form</sys:String>
@@ -156,9 +156,9 @@
     <sys:String x:Key="LocOverlayCancel">Avbryt</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Bekreft</sys:String>
     <sys:String x:Key="LocOverlayClose">Lukk</sys:String>
-    <sys:String x:Key="LocOverlaySelection">Selection</sys:String>
-    <sys:String x:Key="LocOverlayMove">Move</sys:String>
-    <sys:String x:Key="LocOverlayPointer">Pointer</sys:String>
+    <sys:String x:Key="LocOverlaySelection">Utvalg</sys:String>
+    <sys:String x:Key="LocOverlayMove">Flytt</sys:String>
+    <sys:String x:Key="LocOverlayPointer">Peker</sys:String>
     <sys:String x:Key="LocOverlayPen">Penn</sys:String>
     <sys:String x:Key="LocOverlayLine">Linje</sys:String>
     <sys:String x:Key="LocOverlayArrow">Pil</sys:String>
@@ -170,21 +170,21 @@
     <sys:String x:Key="LocOverlayPixelate">Pikselering</sys:String>
     <sys:String x:Key="LocOverlayThickness">Tykkelse</sys:String>
     <sys:String x:Key="LocOverlayColors">Farger</sys:String>
-    <sys:String x:Key="LocOverlayPosition">Position</sys:String>
-    <sys:String x:Key="LocOverlaySize">St?rrelse</sys:String>
-    <sys:String x:Key="LocOverlayWidth">W</sys:String>
+    <sys:String x:Key="LocOverlayPosition">Posisjon</sys:String>
+    <sys:String x:Key="LocOverlaySize">Størrelse</sys:String>
+    <sys:String x:Key="LocOverlayWidth">B</sys:String>
     <sys:String x:Key="LocOverlayHeight">H</sys:String>
-    <sys:String x:Key="LocOverlayPickColor">Pick color</sys:String>
-    <sys:String x:Key="LocOverlayHintDraw">Klikk og dra for ? tegne. Bruk verkt?ylinjen for verkt?y.</sys:String>
-    <sys:String x:Key="LocOverlayHintMove">Dra innenfor utvalget for ? flytte. Bruk h?ndtak for ? endre st?rrelse.</sys:String>
-    <sys:String x:Key="LocOverlayHintEdit">Velg verkt?y for ? kommentere. Bruk Angre/Gj?r om ved behov.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Avbryt, Enter: Bekreft, Ctrl+Z: Angre, Ctrl+Y: Gj?r om</sys:String>
+    <sys:String x:Key="LocOverlayPickColor">Velg farge</sys:String>
+    <sys:String x:Key="LocOverlayHintDraw">Klikk og dra for å tegne. Bruk verktøylinjen for verktøy.</sys:String>
+    <sys:String x:Key="LocOverlayHintMove">Dra innenfor utvalget for å flytte. Bruk håndtakene for å endre størrelse.</sys:String>
+    <sys:String x:Key="LocOverlayHintEdit">Velg verktøy for å kommentere. Bruk Angre/Gjør om ved behov.</sys:String>
+    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Avbryt, Enter: Bekreft, Ctrl+Z: Angre, Ctrl+Y: Gjør om</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">Legg til tekst</sys:String>
-    <sys:String x:Key="LocTextInputHint">Skriv inn tekst som skal plasseres p? skjermbildet</sys:String>
+    <sys:String x:Key="LocTextInputHint">Skriv inn tekst som skal plasseres på skjermbildet</sys:String>
     <sys:String x:Key="LocTextInputFont">Skrift</sys:String>
-    <sys:String x:Key="LocTextInputSize">St?rrelse</sys:String>
+    <sys:String x:Key="LocTextInputSize">Størrelse</sys:String>
     <sys:String x:Key="LocTextInputBold">Fet</sys:String>
     <sys:String x:Key="LocTextInputItalic">Kursiv</sys:String>
     <sys:String x:Key="LocTextInputColor">Farge</sys:String>
@@ -194,7 +194,7 @@
     <!-- About -->
     <sys:String x:Key="LocAboutTitle">Om Shotora</sys:String>
     <sys:String x:Key="LocAboutVersion">Versjon</sys:String>
-    <sys:String x:Key="LocAboutCopyright">Â© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
+    <sys:String x:Key="LocAboutCopyright">© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
     <sys:String x:Key="LocAboutLinks">Lenker</sys:String>
     <sys:String x:Key="LocAboutWebsite">Nettsted</sys:String>
     <sys:String x:Key="LocAboutLinkedIn">LinkedIn</sys:String>
@@ -212,7 +212,7 @@
     <sys:String x:Key="LocNotificationSaveFailed">Lagring mislyktes</sys:String>
     <sys:String x:Key="LocNotificationUploadSuccess">Lastet opp</sys:String>
     <sys:String x:Key="LocNotificationUploadFailed">Opplasting mislyktes</sys:String>
-    <sys:String x:Key="LocNotificationOcrSuccess">OCR fullf?rt</sys:String>
+    <sys:String x:Key="LocNotificationOcrSuccess">OCR fullført</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">OCR mislyktes</sys:String>
 
     <!-- Buttons -->
@@ -228,8 +228,8 @@
     <sys:String x:Key="LocDialogSelectFolder">Velg mappe</sys:String>
     <sys:String x:Key="LocDialogConfirm">Bekreft</sys:String>
     <sys:String x:Key="LocDialogDelete">Slett</sys:String>
-    <sys:String x:Key="LocDialogRemoveLanguage">Fjern spr?kfil?</sys:String>
-    <sys:String x:Key="LocDialogRemoveLanguageConfirm">Er du sikker p? at du vil fjerne denne spr?kfilen?</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguage">Fjerne språkfilen?</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguageConfirm">Er du sikker på at du vil fjerne denne språkfilen?</sys:String>
 
     <!-- Errors -->
     <sys:String x:Key="LocErrorInvalidHotkey">Ugyldig hurtigtast</sys:String>
@@ -242,8 +242,8 @@
     <sys:String x:Key="LocErrorTextEmpty">Teksten er tom</sys:String>
 
     <sys:String x:Key="LocMainTitle">Shotora</sys:String>
-    <sys:String x:Key="LocMainHint1">Bruk ikon i oppgavelinjen eller globale hurtigtaster for ? ta skjermbilde.</sys:String>
-    <sys:String x:Key="LocMainHint2">Dette vinduet er valgfritt; lukk det for ? la Shotora kj?re i systemfeltet.</sys:String>
+    <sys:String x:Key="LocMainHint1">Bruk ikonet i systemfeltet eller globale hurtigtaster for å ta skjermbilde.</sys:String>
+    <sys:String x:Key="LocMainHint2">Dette vinduet er valgfritt; lukk det for å la Shotora kjøre i systemfeltet.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Skjermfangst og merknader</sys:String>
     <sys:String x:Key="LocAboutDescription">Raske skjermbilder, merking, OCR og opplastinger med Shotora.</sys:String>
@@ -252,4 +252,33 @@
     <sys:String x:Key="LocAboutRole">Rolle</sys:String>
     <sys:String x:Key="LocAboutContact">Kontakt</sys:String>
     <sys:String x:Key="LocAboutContactIntro">Ta kontakt for tilbakemeldinger eller samarbeid.</sys:String>
+
+    <!-- Updates -->
+    <sys:String x:Key="LocSettingsAutoCheckUpdates">Se etter oppdateringer automatisk</sys:String>
+    <sys:String x:Key="LocTrayCheckForUpdates">Se etter oppdateringer</sys:String>
+    <sys:String x:Key="LocUpdateSectionTitle">Oppdateringer</sys:String>
+    <sys:String x:Key="LocUpdateWindowTitle">Programvareoppdatering</sys:String>
+    <sys:String x:Key="LocUpdateWhatsNew">Nyheter</sys:String>
+    <sys:String x:Key="LocUpdateCheckButton">Se etter oppdateringer</sys:String>
+    <sys:String x:Key="LocUpdateInstallButton">Last ned og installer</sys:String>
+    <sys:String x:Key="LocUpdateRestartButton">Start på nytt og oppdater</sys:String>
+    <sys:String x:Key="LocUpdateOpenReleaseButton">Last ned fra GitHub</sys:String>
+    <sys:String x:Key="LocUpdateSkipButton">Hopp over denne versjonen</sys:String>
+    <sys:String x:Key="LocUpdateLaterButton">Påminn meg senere</sys:String>
+    <sys:String x:Key="LocUpdateChecking">Ser etter oppdateringer…</sys:String>
+    <sys:String x:Key="LocUpdateUpToDate">Shotora er oppdatert</sys:String>
+    <sys:String x:Key="LocUpdateUpToDateDetailFormat">Versjon {0} er den nyeste versjonen.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableFormat">Shotora {0} er tilgjengelig</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Du har versjon {0}. Last ned oppdateringen nå – Shotora starter på nytt for å fullføre installeringen.</sys:String>
+    <sys:String x:Key="LocUpdateManualDetail">Last ned den nye versjonen fra GitHub for å oppdatere denne kopien av Shotora.</sys:String>
+    <sys:String x:Key="LocUpdateFailed">Kunne ikke se etter oppdateringer</sys:String>
+    <sys:String x:Key="LocUpdateFailedDetail">Sjekk internettforbindelsen og prøv igjen.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadingFormat">Laster ned oppdatering… {0}%</sys:String>
+    <sys:String x:Key="LocUpdateReady">Oppdateringen er klar til installering</sys:String>
+    <sys:String x:Key="LocUpdateReadyDetail">Start Shotora på nytt for å fullføre installeringen av oppdateringen.</sys:String>
+    <sys:String x:Key="LocUpdateInstalling">Installerer oppdatering…</sys:String>
+    <sys:String x:Key="LocUpdateIdle">Sjekk om en nyere versjon av Shotora er tilgjengelig.</sys:String>
+    <sys:String x:Key="LocUpdateCurrentVersionFormat">Versjon {0}</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">Oppdateringen kunne ikke installeres</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">Nedlastingen ble ikke fullført. Sjekk tilkoblingen og prøv igjen.</sys:String>
 </ResourceDictionary>

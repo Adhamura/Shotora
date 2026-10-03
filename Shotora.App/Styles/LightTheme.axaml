@@ -1,51 +1,83 @@
+<!--
+    Light theme brushes. Every theme (Theme / LightTheme / SunsetTheme) must define the exact same set of keys;
+    see docs/design/DESIGN_SYSTEM.md for the meaning of each key.
+-->
 <Styles xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         x:Class="Shotora.App.Styles.LightTheme">
     <Styles.Resources>
         <FontFamily x:Key="AppFontFamily">avares://Shotora.App/Content/KazukiReiwa-Medium.ttf#KazukiReiwa</FontFamily>
 
-        <SolidColorBrush x:Key="WindowBackgroundBrush" Color="#FFF3F3F3" />
-        <SolidColorBrush x:Key="AppBackgroundBrush" Color="#FFF5F5F5" />
+        <!-- Surfaces -->
         <SolidColorBrush x:Key="PanelBackgroundBrush" Color="#FFF5F5F5" />
-        <SolidColorBrush x:Key="PanelAltBackgroundBrush" Color="#FFE8E8E8" />
+        <SolidColorBrush x:Key="PanelAltBackgroundBrush" Color="#F2FAFAFA" />
         <SolidColorBrush x:Key="PanelBorderBrush" Color="#FFD6D6D6" />
-        <SolidColorBrush x:Key="WindowOverlayBackgroundBrush" Color="#AAFFFFFF" />
+        <SolidColorBrush x:Key="CardBackgroundBrush" Color="#FFFFFFFF" />
+        <SolidColorBrush x:Key="DividerBrush" Color="#FFE3E3E3" />
         <SolidColorBrush x:Key="OverlayMaskBrush" Color="#66FFFFFF" />
 
-        <SolidColorBrush x:Key="TextPrimaryBrush" Color="#FF2B2B2B" />
-        <SolidColorBrush x:Key="TextSecondaryBrush" Color="#FF4D4D4D" />
+        <!-- Text & icons -->
+        <SolidColorBrush x:Key="TextPrimaryBrush" Color="#FF1F1F1F" />
+        <SolidColorBrush x:Key="TextSecondaryBrush" Color="#FF555555" />
+        <SolidColorBrush x:Key="TextDisabledBrush" Color="#FF9A9A9A" />
         <SolidColorBrush x:Key="IconBrush" Color="#FF2B2B2B" />
 
+        <!-- Inputs -->
         <SolidColorBrush x:Key="InputBackgroundBrush" Color="#FFFFFFFF" />
-        <SolidColorBrush x:Key="InputBackgroundHoverBrush" Color="#FFF9F9F9" />
-        <SolidColorBrush x:Key="InputBorderBrush" Color="#FFCCCCCC" />
-        <SolidColorBrush x:Key="InputForegroundBrush" Color="#FF2B2B2B" />
+        <SolidColorBrush x:Key="InputBackgroundHoverBrush" Color="#FFF7F7F7" />
+        <SolidColorBrush x:Key="InputBorderBrush" Color="#FFC4C4C4" />
+        <SolidColorBrush x:Key="InputBorderHoverBrush" Color="#FF9E9E9E" />
+        <SolidColorBrush x:Key="InputForegroundBrush" Color="#FF1F1F1F" />
 
-        <SolidColorBrush x:Key="ButtonBackgroundBrush" Color="#FFF1F1F1" />
-        <SolidColorBrush x:Key="ButtonBorderBrush" Color="#FFCCCCCC" />
-        <SolidColorBrush x:Key="ButtonHoverBrush" Color="#FFE6E6E6" />
-        <SolidColorBrush x:Key="ButtonPressedBrush" Color="#FFD9D9D9" />
-        <SolidColorBrush x:Key="ButtonForegroundBrush" Color="#FF2B2B2B" />
-        <SolidColorBrush x:Key="ButtonDisabledBrush" Color="#FFEBEBEB" />
-        <SolidColorBrush x:Key="ButtonDisabledForegroundBrush" Color="#882B2B2B" />
+        <!-- Secondary (neutral) buttons -->
+        <SolidColorBrush x:Key="ButtonBackgroundBrush" Color="#FFFFFFFF" />
+        <SolidColorBrush x:Key="ButtonBorderBrush" Color="#FFC4C4C4" />
+        <SolidColorBrush x:Key="ButtonHoverBrush" Color="#FFF0F0F0" />
+        <SolidColorBrush x:Key="ButtonPressedBrush" Color="#FFE4E4E4" />
+        <SolidColorBrush x:Key="ButtonForegroundBrush" Color="#FF1F1F1F" />
 
+        <!-- Subtle (ghost) buttons, menu items, tabs, title-bar buttons -->
+        <SolidColorBrush x:Key="SubtleHoverBrush" Color="#12000000" />
+        <SolidColorBrush x:Key="SubtlePressedBrush" Color="#1F000000" />
+
+        <!-- Accent (primary actions, selection, checked states) -->
         <SolidColorBrush x:Key="AccentPrimaryBrush" Color="#FF8C2BD9" />
         <SolidColorBrush x:Key="AccentPrimaryDarkBrush" Color="#FF601C97" />
-        <SolidColorBrush x:Key="AccentSecondaryBrush" Color="#FFA855F7" />
+        <SolidColorBrush x:Key="AccentForegroundBrush" Color="#FFFFFFFF" />
+        <!-- Tinted "selected" treatment: checked tools/toggles (fill + border + AccentTextBrush foreground) -->
+        <SolidColorBrush x:Key="AccentSubtleBrush" Color="#248C2BD9" />
+        <SolidColorBrush x:Key="AccentSubtleHoverBrush" Color="#388C2BD9" />
+        <SolidColorBrush x:Key="AccentTextBrush" Color="#FF7A1FC2" />
+        <SolidColorBrush x:Key="AccentButtonBackgroundBrush" Color="#FF8C2BD9" />
+        <SolidColorBrush x:Key="AccentButtonHoverBrush" Color="#FF7B24C2" />
+        <SolidColorBrush x:Key="AccentButtonPressedBrush" Color="#FF691EA6" />
+        <SolidColorBrush x:Key="AccentButtonBorderBrush" Color="#FF7B24C2" />
+        <SolidColorBrush x:Key="AccentButtonForegroundBrush" Color="#FFFFFFFF" />
         <SolidColorBrush x:Key="SelectionBorderBrush" Color="#FF8C2BD9" />
+        <SolidColorBrush x:Key="FocusRingBrush" Color="#FF4C1385" />
 
-        <SolidColorBrush x:Key="ScrollBarBackgroundBrush" Color="#FFF7F7F7" />
+        <!-- Status -->
+        <SolidColorBrush x:Key="DangerBrush" Color="#FFC42B1C" />
+        <SolidColorBrush x:Key="DangerHoverBrush" Color="#FFB02617" />
+        <SolidColorBrush x:Key="DangerPressedBrush" Color="#FF962013" />
+        <SolidColorBrush x:Key="DangerForegroundBrush" Color="#FFFFFFFF" />
+        <SolidColorBrush x:Key="SuccessBrush" Color="#FF107C10" />
+        <SolidColorBrush x:Key="LinkBrush" Color="#FF7A1FC2" />
+        <SolidColorBrush x:Key="LinkHoverBrush" Color="#FF5B1691" />
+
+        <!-- Scrollbars, popups, list highlight -->
+        <SolidColorBrush x:Key="ScrollBarBackgroundBrush" Color="#00FFFFFF" />
         <SolidColorBrush x:Key="ScrollBarThumbBrush" Color="#FFB5B5B5" />
-        <SolidColorBrush x:Key="ScrollBarThumbHoverBrush" Color="#FF9E9E9E" />
+        <SolidColorBrush x:Key="ScrollBarThumbHoverBrush" Color="#FF8E8E8E" />
         <SolidColorBrush x:Key="PopupBackgroundBrush" Color="#FFFFFFFF" />
         <SolidColorBrush x:Key="PopupBorderBrush" Color="#FFCCCCCC" />
-        <SolidColorBrush x:Key="HighlightBrush" Color="#FFEFEFEF" />
+        <SolidColorBrush x:Key="HighlightBrush" Color="#FFE8E8E8" />
 
-        <SolidColorBrush x:Key="SliderTrackBrush" Color="#FFE6E6E6" />
-        <SolidColorBrush x:Key="SliderFillBrush" Color="#FFCECECE" />
-        <SolidColorBrush x:Key="SliderThumbBrush" Color="#FFB3B3B3" />
-        <SolidColorBrush x:Key="SliderThumbBorderBrush" Color="#FF999999" />
+        <!-- Sliders -->
+        <SolidColorBrush x:Key="SliderTrackBrush" Color="#FFDADADA" />
+        <SolidColorBrush x:Key="SliderFillBrush" Color="#FF8C2BD9" />
+        <SolidColorBrush x:Key="SliderThumbBrush" Color="#FFFFFFFF" />
+        <SolidColorBrush x:Key="SliderThumbBorderBrush" Color="#FF8E8E8E" />
         <SolidColorBrush x:Key="SliderDisabledThumbBrush" Color="#FFD6D6D6" />
-        <SolidColorBrush x:Key="SliderValueBrush" Color="#FF2B2B2B" />
     </Styles.Resources>
 </Styles>

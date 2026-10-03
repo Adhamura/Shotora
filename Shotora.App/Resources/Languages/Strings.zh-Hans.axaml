@@ -252,4 +252,33 @@
     <sys:String x:Key="LocAboutRole">角色</sys:String>
     <sys:String x:Key="LocAboutContact">联系</sys:String>
     <sys:String x:Key="LocAboutContactIntro">欢迎联系，反馈或合作。</sys:String>
+
+    <!-- Updates -->
+    <sys:String x:Key="LocSettingsAutoCheckUpdates">自动检查更新</sys:String>
+    <sys:String x:Key="LocTrayCheckForUpdates">检查更新</sys:String>
+    <sys:String x:Key="LocUpdateSectionTitle">更新</sys:String>
+    <sys:String x:Key="LocUpdateWindowTitle">软件更新</sys:String>
+    <sys:String x:Key="LocUpdateWhatsNew">新功能</sys:String>
+    <sys:String x:Key="LocUpdateCheckButton">检查更新</sys:String>
+    <sys:String x:Key="LocUpdateInstallButton">下载并安装</sys:String>
+    <sys:String x:Key="LocUpdateRestartButton">重启并更新</sys:String>
+    <sys:String x:Key="LocUpdateOpenReleaseButton">从GitHub下载</sys:String>
+    <sys:String x:Key="LocUpdateSkipButton">跳过此版本</sys:String>
+    <sys:String x:Key="LocUpdateLaterButton">稍后提醒</sys:String>
+    <sys:String x:Key="LocUpdateChecking">正在检查更新…</sys:String>
+    <sys:String x:Key="LocUpdateUpToDate">Shotora已是最新版本</sys:String>
+    <sys:String x:Key="LocUpdateUpToDateDetailFormat">版本{0}是最新版本。</sys:String>
+    <sys:String x:Key="LocUpdateAvailableFormat">Shotora {0}现已推出</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">你的版本是{0}。立即下载更新，Shotora将重启以完成安装。</sys:String>
+    <sys:String x:Key="LocUpdateManualDetail">从GitHub下载新版本以更新此Shotora副本。</sys:String>
+    <sys:String x:Key="LocUpdateFailed">无法检查更新</sys:String>
+    <sys:String x:Key="LocUpdateFailedDetail">请检查网络连接，然后重试。</sys:String>
+    <sys:String x:Key="LocUpdateDownloadingFormat">正在下载更新… {0}%</sys:String>
+    <sys:String x:Key="LocUpdateReady">更新已准备好安装</sys:String>
+    <sys:String x:Key="LocUpdateReadyDetail">重启Shotora以完成更新的安装。</sys:String>
+    <sys:String x:Key="LocUpdateInstalling">正在安装更新…</sys:String>
+    <sys:String x:Key="LocUpdateIdle">检查是否有更新版本的Shotora可用。</sys:String>
+    <sys:String x:Key="LocUpdateCurrentVersionFormat">版本 {0}</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">无法安装更新</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">下载未完成。请检查网络连接，然后重试。</sys:String>
 </ResourceDictionary>

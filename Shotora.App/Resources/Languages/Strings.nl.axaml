@@ -43,7 +43,7 @@
     <sys:String x:Key="LocSettingsUsePointer">Gebruik aanwijzer</sys:String>
     <sys:String x:Key="LocSettingsShowUndo">Ongedaan maken tonen</sys:String>
     <sys:String x:Key="LocSettingsShowRedo">Opnieuw tonen</sys:String>
-    <sys:String x:Key="LocSettingsShowCopy">Kopi?ren tonen</sys:String>
+    <sys:String x:Key="LocSettingsShowCopy">Kopiëren tonen</sys:String>
     <sys:String x:Key="LocSettingsShowSave">Opslaan tonen</sys:String>
     <sys:String x:Key="LocSettingsShowUpload">Uploaden tonen</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">OCR tonen</sys:String>
@@ -104,7 +104,7 @@
     <sys:String x:Key="LocSettingsEditorUndoHotkeyPlaceholder">Ctrl+Z</sys:String>
     <sys:String x:Key="LocSettingsEditorRedoHotkey">Opnieuw</sys:String>
     <sys:String x:Key="LocSettingsEditorRedoHotkeyPlaceholder">Ctrl+Y</sys:String>
-    <sys:String x:Key="LocSettingsEditorCopyHotkey">Kopi?ren</sys:String>
+    <sys:String x:Key="LocSettingsEditorCopyHotkey">Kopiëren</sys:String>
     <sys:String x:Key="LocSettingsEditorCopyHotkeyPlaceholder">Ctrl+C</sys:String>
     <sys:String x:Key="LocSettingsEditorSaveHotkey">Opslaan</sys:String>
     <sys:String x:Key="LocSettingsEditorSaveHotkeyPlaceholder">Ctrl+S</sys:String>
@@ -113,16 +113,16 @@
     <sys:String x:Key="LocSettingsOcrEasyOcrInstall">EasyOCR installeren</sys:String>
     <sys:String x:Key="LocSettingsOcrEasyOcrRemove">EasyOCR verwijderen</sys:String>
     <sys:String x:Key="LocSettingsOcrEasyOcrStatus">Toestand</sys:String>
-    <sys:String x:Key="LocSettingsOcrEasyOcrInstalled">Ge?nstalleerd</sys:String>
-    <sys:String x:Key="LocSettingsOcrEasyOcrNotInstalled">Niet ge?nstalleerd</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrInstalled">Geïnstalleerd</sys:String>
+    <sys:String x:Key="LocSettingsOcrEasyOcrNotInstalled">Niet geïnstalleerd</sys:String>
     <sys:String x:Key="LocSettingsOcrEasyOcrInstalling">Bezig met installeren...</sys:String>
     <sys:String x:Key="LocSettingsOcrEasyOcrRemoving">Bezig met verwijderen...</sys:String>
     <sys:String x:Key="LocSettingsOcrEasyOcrInstallFailed">Installatie mislukt</sys:String>
     <sys:String x:Key="LocSettingsOcrEasyOcrRemoveFailed">Verwijderen mislukt</sys:String>
     <sys:String x:Key="LocSettingsOcrInstallLang">Installeren</sys:String>
     <sys:String x:Key="LocSettingsOcrRemoveLang">Verwijderen</sys:String>
-    <sys:String x:Key="LocSettingsOcrInstalled">Ge?nstalleerd</sys:String>
-    <sys:String x:Key="LocSettingsOcrNotInstalled">Niet ge?nstalleerd</sys:String>
+    <sys:String x:Key="LocSettingsOcrInstalled">Geïnstalleerd</sys:String>
+    <sys:String x:Key="LocSettingsOcrNotInstalled">Niet geïnstalleerd</sys:String>
     <sys:String x:Key="LocSettingsOcrInstalling">Bezig met installeren...</sys:String>
     <sys:String x:Key="LocSettingsOcrRemoving">Bezig met verwijderen...</sys:String>
     <sys:String x:Key="LocSettingsOcrInstallFailed">Installatie mislukt</sys:String>
@@ -149,7 +149,7 @@
     <sys:String x:Key="LocTrayExit">Afsluiten</sys:String>
 
     <!-- Overlay -->
-    <sys:String x:Key="LocOverlayCopy">Kopi?ren</sys:String>
+    <sys:String x:Key="LocOverlayCopy">Kopiëren</sys:String>
     <sys:String x:Key="LocOverlaySave">Opslaan</sys:String>
     <sys:String x:Key="LocOverlayUpload">Uploaden</sys:String>
     <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
@@ -172,7 +172,7 @@
     <sys:String x:Key="LocOverlayColors">Kleuren</sys:String>
     <sys:String x:Key="LocOverlayPosition">Positie</sys:String>
     <sys:String x:Key="LocOverlaySize">Grootte</sys:String>
-    <sys:String x:Key="LocOverlayWidth">W</sys:String>
+    <sys:String x:Key="LocOverlayWidth">B</sys:String>
     <sys:String x:Key="LocOverlayHeight">H</sys:String>
     <sys:String x:Key="LocOverlayPickColor">Kies kleur</sys:String>
     <sys:String x:Key="LocOverlayHintDraw">Klik en sleep om te tekenen. Gebruik de werkbalk voor gereedschap.</sys:String>
@@ -194,7 +194,7 @@
     <!-- About -->
     <sys:String x:Key="LocAboutTitle">Over Shotora</sys:String>
     <sys:String x:Key="LocAboutVersion">Versie</sys:String>
-    <sys:String x:Key="LocAboutCopyright">Â© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
+    <sys:String x:Key="LocAboutCopyright">© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
     <sys:String x:Key="LocAboutLinks">Links</sys:String>
     <sys:String x:Key="LocAboutWebsite">Website</sys:String>
     <sys:String x:Key="LocAboutLinkedIn">LinkedIn</sys:String>
@@ -202,7 +202,7 @@
 
     <!-- OCR Result -->
     <sys:String x:Key="LocOcrResultTitle">OCR-resultaat</sys:String>
-    <sys:String x:Key="LocOcrResultCopy">Kopi?ren</sys:String>
+    <sys:String x:Key="LocOcrResultCopy">Kopiëren</sys:String>
     <sys:String x:Key="LocOcrResultClose">Sluiten</sys:String>
     <sys:String x:Key="LocOcrResultHint">Herkenbare tekst</sys:String>
 
@@ -210,7 +210,7 @@
     <sys:String x:Key="LocNotificationCopySuccess">Gekopieerd naar klembord</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">Opgeslagen</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Opslaan mislukt</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">Ge?pload</sys:String>
+    <sys:String x:Key="LocNotificationUploadSuccess">Geüpload</sys:String>
     <sys:String x:Key="LocNotificationUploadFailed">Upload mislukt</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR voltooid</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">OCR mislukt</sys:String>
@@ -252,4 +252,33 @@
     <sys:String x:Key="LocAboutRole">Rol</sys:String>
     <sys:String x:Key="LocAboutContact">Contact</sys:String>
     <sys:String x:Key="LocAboutContactIntro">Neem contact op voor feedback of samenwerking.</sys:String>
+
+    <!-- Updates -->
+    <sys:String x:Key="LocSettingsAutoCheckUpdates">Automatisch controleren op updates</sys:String>
+    <sys:String x:Key="LocTrayCheckForUpdates">Controleren op updates</sys:String>
+    <sys:String x:Key="LocUpdateSectionTitle">Updates</sys:String>
+    <sys:String x:Key="LocUpdateWindowTitle">Software-update</sys:String>
+    <sys:String x:Key="LocUpdateWhatsNew">Wat is er nieuw</sys:String>
+    <sys:String x:Key="LocUpdateCheckButton">Controleren op updates</sys:String>
+    <sys:String x:Key="LocUpdateInstallButton">Downloaden en installeren</sys:String>
+    <sys:String x:Key="LocUpdateRestartButton">Herstarten en bijwerken</sys:String>
+    <sys:String x:Key="LocUpdateOpenReleaseButton">Downloaden van GitHub</sys:String>
+    <sys:String x:Key="LocUpdateSkipButton">Deze versie overslaan</sys:String>
+    <sys:String x:Key="LocUpdateLaterButton">Later herinneren</sys:String>
+    <sys:String x:Key="LocUpdateChecking">Controleren op updates…</sys:String>
+    <sys:String x:Key="LocUpdateUpToDate">Shotora is up-to-date</sys:String>
+    <sys:String x:Key="LocUpdateUpToDateDetailFormat">Versie {0} is de nieuwste versie.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableFormat">Shotora {0} is beschikbaar</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Je hebt versie {0}. Download de update nu — Shotora start opnieuw om de installatie te voltooien.</sys:String>
+    <sys:String x:Key="LocUpdateManualDetail">Download de nieuwe versie van GitHub om deze kopie van Shotora bij te werken.</sys:String>
+    <sys:String x:Key="LocUpdateFailed">Kan niet controleren op updates</sys:String>
+    <sys:String x:Key="LocUpdateFailedDetail">Controleer je internetverbinding en probeer het opnieuw.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadingFormat">Update downloaden… {0}%</sys:String>
+    <sys:String x:Key="LocUpdateReady">Update klaar voor installatie</sys:String>
+    <sys:String x:Key="LocUpdateReadyDetail">Start Shotora opnieuw om de installatie van de update te voltooien.</sys:String>
+    <sys:String x:Key="LocUpdateInstalling">Update installeren…</sys:String>
+    <sys:String x:Key="LocUpdateIdle">Controleer of er een nieuwere versie van Shotora beschikbaar is.</sys:String>
+    <sys:String x:Key="LocUpdateCurrentVersionFormat">Versie {0}</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">De update kon niet worden geïnstalleerd</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">De download is niet voltooid. Controleer je verbinding en probeer het opnieuw.</sys:String>
 </ResourceDictionary>

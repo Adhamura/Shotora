@@ -194,7 +194,7 @@
     <!-- About -->
     <sys:String x:Key="LocAboutTitle">A-dro dhe Shotora</sys:String>
     <sys:String x:Key="LocAboutVersion">Versyon</sys:String>
-    <sys:String x:Key="LocAboutCopyright">Â© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
+    <sys:String x:Key="LocAboutCopyright">© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
     <sys:String x:Key="LocAboutLinks">Kevrennow</sys:String>
     <sys:String x:Key="LocAboutWebsite">Gwiasva</sys:String>
     <sys:String x:Key="LocAboutLinkedIn">LinkedIn</sys:String>
@@ -252,4 +252,33 @@
     <sys:String x:Key="LocAboutRole">Rol</sys:String>
     <sys:String x:Key="LocAboutContact">Kuntakt</sys:String>
     <sys:String x:Key="LocAboutContactIntro">Kuntaktowgh rag daslivres rag owth oberi gansen.</sys:String>
+
+    <!-- Updates -->
+    <sys:String x:Key="LocSettingsAutoCheckUpdates">Checkya nowedhyansow yn awtomatek</sys:String>
+    <sys:String x:Key="LocTrayCheckForUpdates">Checkya nowedhyansow</sys:String>
+    <sys:String x:Key="LocUpdateSectionTitle">Nowedhyansow</sys:String>
+    <sys:String x:Key="LocUpdateWindowTitle">Nowedhyans medhelweyth</sys:String>
+    <sys:String x:Key="LocUpdateWhatsNew">Pyth yw nowydh</sys:String>
+    <sys:String x:Key="LocUpdateCheckButton">Checkya nowedhyansow</sys:String>
+    <sys:String x:Key="LocUpdateInstallButton">Iskarga ha ynstallya</sys:String>
+    <sys:String x:Key="LocUpdateRestartButton">Dastalleth ha nowedhi</sys:String>
+    <sys:String x:Key="LocUpdateOpenReleaseButton">Iskarga a GitHub</sys:String>
+    <sys:String x:Key="LocUpdateSkipButton">Gasa an versyon ma</sys:String>
+    <sys:String x:Key="LocUpdateLaterButton">Perthi kov dhymm diwettha</sys:String>
+    <sys:String x:Key="LocUpdateChecking">Ow checkya nowedhyansow…</sys:String>
+    <sys:String x:Key="LocUpdateUpToDate">Shotora yw nowedhys</sys:String>
+    <sys:String x:Key="LocUpdateUpToDateDetailFormat">Versyon {0} yw an diwettha.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableFormat">Shotora {0} yw kavadow</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Yma dhis versyon {0}. Iskarg an nowedhyans lemmyn — Shotora a dhastalleth rag gorfenna an ynstallyans.</sys:String>
+    <sys:String x:Key="LocUpdateManualDetail">Iskarg an versyon nowydh a GitHub rag nowedhi an dasskrif ma a Shotora.</sys:String>
+    <sys:String x:Key="LocUpdateFailed">Ny veu possybyl checkya nowedhyansow</sys:String>
+    <sys:String x:Key="LocUpdateFailedDetail">Checkya dha junyans kesrosweyth ha assay arta.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadingFormat">Owth iskarga nowedhyans… {0}%</sys:String>
+    <sys:String x:Key="LocUpdateReady">Nowedhyans parys dhe ynstallya</sys:String>
+    <sys:String x:Key="LocUpdateReadyDetail">Dastalleth Shotora rag gorfenna ynstallya an nowedhyans.</sys:String>
+    <sys:String x:Key="LocUpdateInstalling">Owth ynstallya nowedhyans…</sys:String>
+    <sys:String x:Key="LocUpdateIdle">Checkya mars yw versyon nowyttha a Shotora kavadow.</sys:String>
+    <sys:String x:Key="LocUpdateCurrentVersionFormat">Versyon {0}</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">Ny veu possybyl ynstallya an nowedhyans</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">Ny veu gorfennys an iskargans. Checkya dha junyans ha assay arta.</sys:String>
 </ResourceDictionary>

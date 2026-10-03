@@ -2,6 +2,7 @@ using System.Reflection;
 using System.Runtime.Serialization;
 using Avalonia;
 using Avalonia.Controls;
+using Avalonia.Controls.Primitives;
 using Avalonia.Headless;
 using Avalonia.Input;
 using Avalonia.Interactivity;
@@ -53,6 +54,7 @@ public class TrayMenuWindowServiceTests : IDisposable
 		_localization.Setup(l => l.GetString(LocalizationKeys.TrayCaptureFull,   LocalizationFallbacks.Tray.CaptureFull)).Returns("Full");
 		_localization.Setup(l => l.GetString(LocalizationKeys.TraySettings,      LocalizationFallbacks.Tray.Settings)).Returns("Settings");
 		_localization.Setup(l => l.GetString(LocalizationKeys.TrayAbout,         LocalizationFallbacks.Tray.About)).Returns("About");
+		_localization.Setup(l => l.GetString(LocalizationKeys.TrayCheckForUpdates, LocalizationFallbacks.Tray.CheckForUpdates)).Returns("Updates");
 		_localization.Setup(l => l.GetString(LocalizationKeys.TrayExit,          LocalizationFallbacks.Tray.Exit)).Returns("Exit");
 		_process.Setup(p => p.GetCurrentOs()).Returns(RuntimeOs.Mac);
 
@@ -60,6 +62,7 @@ public class TrayMenuWindowServiceTests : IDisposable
 		var fullClicks    = 0;
 		var settingsCalls = 0;
 		var aboutCalls    = 0;
+		var updatesCalls  = 0;
 		var exitCalls     = 0;
 
 		var model = _sut.CreateWindow(
@@ -67,6 +70,7 @@ public class TrayMenuWindowServiceTests : IDisposable
 			() => fullClicks++,
 			() => settingsCalls++,
 			() => aboutCalls++,
+			() => updatesCalls++,
 			() => exitCalls++,
 			"Dark");
 
@@ -75,12 +79,14 @@ public class TrayMenuWindowServiceTests : IDisposable
 		Assert.Equal("Full",        model.CaptureFullButton.Content);
 		Assert.Equal("Settings",    model.SettingsButton.Content);
 		Assert.Equal("About",       model.AboutButton.Content);
+		Assert.Equal("Updates",     model.UpdatesButton.Content);
 		Assert.Equal("Exit",        model.ExitButton.Content);
 
 		RaiseClick(model.CaptureRegionButton);
 		RaiseClick(model.CaptureFullButton);
 		RaiseClick(model.SettingsButton);
 		RaiseClick(model.AboutButton);
+		RaiseClick(model.UpdatesButton);
 		RaiseClick(model.ExitButton);
 		RunJobs();
 
@@ -88,6 +94,7 @@ public class TrayMenuWindowServiceTests : IDisposable
 		Assert.Equal(1, fullClicks);
 		Assert.Equal(1, settingsCalls);
 		Assert.Equal(1, aboutCalls);
+		Assert.Equal(1, updatesCalls);
 		Assert.Equal(1, exitCalls);
 
 		_localization.VerifyAll();
@@ -95,55 +102,41 @@ public class TrayMenuWindowServiceTests : IDisposable
 	}
 
 	[Fact]
-	public void Given_AppResources_When_ApplyTheme_Then_UsesResourceBrushesAndRebindsHoverHandlers()
+	public void Given_AppResources_When_ApplyTheme_Then_UsesResourceBrushesForChromeOnly()
 	{
 		EnsureHeadless();
 		var model = BuildModel();
 		var app   = Application.Current ?? new Application();
 		SetApplication(app);
 
-		var bg     = Brushes.AliceBlue;
-		var border = Brushes.BlanchedAlmond;
-		var text   = Brushes.Brown;
-		var hl     = Brushes.CadetBlue;
+		var bg      = Brushes.AliceBlue;
+		var border  = Brushes.BlanchedAlmond;
+		var text    = Brushes.Brown;
+		var divider = Brushes.CadetBlue;
 		app.Resources["PanelBackgroundBrush"] = bg;
 		app.Resources["PanelBorderBrush"]     = border;
 		app.Resources["TextPrimaryBrush"]     = text;
-		app.Resources["HighlightBrush"]       = hl;
-		app.Resources["PopupBackgroundBrush"] = Brushes.Chartreuse;
-		app.Resources["ButtonHoverBrush"]     = Brushes.Coral;
-
-		var enterHandler = new EventHandler<PointerEventArgs>((_, _) =>
-		{
-		});
-		var exitHandler = new EventHandler<PointerEventArgs>((_, _) =>
-		{
-		});
-		model.CaptureRegionButton.Tag = new HoverHandlers
-		{
-			Enter = enterHandler,
-			Exit  = exitHandler
-		};
+		app.Resources["DividerBrush"]         = divider;
 
 		_sut.ApplyTheme(model, "Light");
 
-		Assert.Same(bg,     model.Root.Background);
-		Assert.Same(border, model.Root.BorderBrush);
-		Assert.Same(hl,     model.Separator.Background);
-		Assert.Same(text,   model.Window.Foreground);
+		Assert.Same(bg,      model.Root.Background);
+		Assert.Same(border,  model.Root.BorderBrush);
+		Assert.Same(divider, model.Separator.Background);
+		Assert.Same(text,    model.Window.Foreground);
 
-		AssertHoverHandlersReplaced(model.CaptureRegionButton);
-		AssertHoverHandlersReplaced(model.CaptureFullButton);
-		AssertHoverHandlersReplaced(model.SettingsButton);
-		AssertHoverHandlersReplaced(model.AboutButton);
-		AssertHoverHandlersReplaced(model.ExitButton);
+		// Entry visuals are style-driven ("menu-item"), so the service must not pin local brushes on them.
+		AssertNoLocalButtonBrushes(model.CaptureRegionButton);
+		AssertNoLocalButtonBrushes(model.CaptureFullButton);
+		AssertNoLocalButtonBrushes(model.SettingsButton);
+		AssertNoLocalButtonBrushes(model.AboutButton);
+		AssertNoLocalButtonBrushes(model.UpdatesButton);
+		AssertNoLocalButtonBrushes(model.ExitButton);
 
 		app.Resources.Remove("PanelBackgroundBrush");
 		app.Resources.Remove("PanelBorderBrush");
 		app.Resources.Remove("TextPrimaryBrush");
-		app.Resources.Remove("HighlightBrush");
-		app.Resources.Remove("PopupBackgroundBrush");
-		app.Resources.Remove("ButtonHoverBrush");
+		app.Resources.Remove("DividerBrush");
 	}
 
 	[Theory]
@@ -271,6 +264,7 @@ public class TrayMenuWindowServiceTests : IDisposable
 		_localization.Setup(l => l.GetString(LocalizationKeys.TrayCaptureFull,   LocalizationFallbacks.Tray.CaptureFull)).Returns("Capture Full");
 		_localization.Setup(l => l.GetString(LocalizationKeys.TraySettings,      LocalizationFallbacks.Tray.Settings)).Returns("Settings");
 		_localization.Setup(l => l.GetString(LocalizationKeys.TrayAbout,         LocalizationFallbacks.Tray.About)).Returns("About");
+		_localization.Setup(l => l.GetString(LocalizationKeys.TrayCheckForUpdates, LocalizationFallbacks.Tray.CheckForUpdates)).Returns("Updates");
 		_localization.Setup(l => l.GetString(LocalizationKeys.TrayExit,          LocalizationFallbacks.Tray.Exit)).Returns("Exit");
 
 		_sut.UpdateLabels(model);
@@ -279,6 +273,7 @@ public class TrayMenuWindowServiceTests : IDisposable
 		Assert.Equal("Capture Full",   model.CaptureFullButton.Content);
 		Assert.Equal("Settings",       model.SettingsButton.Content);
 		Assert.Equal("About",          model.AboutButton.Content);
+		Assert.Equal("Updates",        model.UpdatesButton.Content);
 		Assert.Equal("Exit",           model.ExitButton.Content);
 		_localization.VerifyAll();
 	}
@@ -291,6 +286,8 @@ public class TrayMenuWindowServiceTests : IDisposable
 		_process.Setup(p => p.GetCurrentOs()).Returns(RuntimeOs.Windows);
 
 		var model = _sut.CreateWindow(() =>
+		{
+		}, () =>
 		{
 		}, () =>
 		{
@@ -323,6 +320,8 @@ public class TrayMenuWindowServiceTests : IDisposable
 		{
 		}, () =>
 		{
+		}, () =>
+		{
 		}, "Dark");
 
 		Assert.Equal(RuntimeOs.Mac, model.CurrentOs);
@@ -336,6 +335,8 @@ public class TrayMenuWindowServiceTests : IDisposable
 		_process.Setup(p => p.GetCurrentOs()).Returns(RuntimeOs.Windows);
 
 		var model = _sut.CreateWindow(() =>
+		{
+		}, () =>
 		{
 		}, () =>
 		{
@@ -593,20 +594,23 @@ public class TrayMenuWindowServiceTests : IDisposable
 	}
 
 	[Fact]
-	public void Given_ExistingHoverHandlers_When_ApplyTheme_Then_RemovesOldHandlersAndAddsNew()
+	public void Given_CreatedWindow_When_Inspected_Then_EntriesAndSeparatorUseSharedStyleClasses()
 	{
 		EnsureHeadless();
 		SetApplication(null);
-		var model = BuildModel();
+		_process.Setup(p => p.GetCurrentOs()).Returns(RuntimeOs.Other);
+		_localization.Setup(l => l.GetString(It.IsAny<string>(), It.IsAny<string>())).Returns((string _, string fallback) => fallback);
 
-		_sut.ApplyTheme(model, "Light");
-		var firstTag = model.CaptureRegionButton.Tag;
-		Assert.NotNull(firstTag);
+		var model = _sut.CreateWindow(() => { }, () => { }, () => { }, () => { }, () => { }, () => { }, "Dark");
 
-		_sut.ApplyTheme(model, "Dark");
-		var secondTag = model.CaptureRegionButton.Tag;
+		foreach (var button in new[] { model.CaptureRegionButton, model.CaptureFullButton, model.SettingsButton, model.AboutButton, model.UpdatesButton, model.ExitButton })
+		{
+			Assert.Contains("menu-item", button.Classes);
+			AssertNoLocalButtonBrushes(button);
+			Assert.Null(button.Tag);
+		}
 
-		Assert.NotSame(firstTag, secondTag);
+		Assert.Contains("menu-separator", model.Separator.Classes);
 	}
 
 	[Fact]
@@ -630,31 +634,23 @@ public class TrayMenuWindowServiceTests : IDisposable
 		app.Resources.Remove("TextPrimaryBrush");
 	}
 
-	[Fact]
-	public void Given_AppWithInputBackgroundBrush_When_ApplyTheme_Then_UsesAsFallback()
+	[Theory]
+	[InlineData(1.0, 950, 888)]
+	[InlineData(2.0, 900, 776)]
+	public void Given_ScreenScaling_When_CalculateMenuPosition_Then_ConvertsMenuSizeAndMarginToPixels(double scaling, int expectedX, int expectedY)
 	{
-		EnsureHeadless();
-		var model = BuildModel();
-		var app   = Application.Current ?? new Application();
-		SetApplication(app);
+		// 100x100 DIPs; at 200% that is 200x200 px with a 24 px margin: x = 1000 - 200/2, y = 1000 - 200 - 24.
+		var position = TrayMenuWindowService.CalculateMenuPosition(new PixelPoint(1000, 1000), new PixelRect(0, 0, 1920, 1080), new Size(100, 100), scaling);
 
-		var inputBg    = Brushes.LightGray;
-		var inputHover = Brushes.DarkGray;
-		app.Resources["PanelBackgroundBrush"]      = Brushes.White;
-		app.Resources["PanelBorderBrush"]          = Brushes.Gray;
-		app.Resources["TextPrimaryBrush"]          = Brushes.Black;
-		app.Resources["InputBackgroundBrush"]      = inputBg;
-		app.Resources["InputBackgroundHoverBrush"] = inputHover;
+		Assert.Equal(new PixelPoint(expectedX, expectedY), position);
+	}
 
-		_sut.ApplyTheme(model, "Light");
+	[Fact]
+	public void Given_InvalidScaling_When_CalculateMenuPosition_Then_TreatsAsUnscaled()
+	{
+		var position = TrayMenuWindowService.CalculateMenuPosition(new PixelPoint(1000, 1000), new PixelRect(0, 0, 1920, 1080), new Size(100, 100), 0);
 
-		Assert.Same(inputBg, model.CaptureRegionButton.Background);
-
-		app.Resources.Remove("PanelBackgroundBrush");
-		app.Resources.Remove("PanelBorderBrush");
-		app.Resources.Remove("TextPrimaryBrush");
-		app.Resources.Remove("InputBackgroundBrush");
-		app.Resources.Remove("InputBackgroundHoverBrush");
+		Assert.Equal(new PixelPoint(950, 888), position);
 	}
 
 	private static TrayMenuWindowModel BuildModel()
@@ -665,11 +661,12 @@ public class TrayMenuWindowServiceTests : IDisposable
 		var full      = new Button();
 		var settings  = new Button();
 		var about     = new Button();
+		var updates   = new Button();
 		var exit      = new Button();
 		var root      = new Border();
 		var separator = new Border();
 		var model     = new TrayMenuWindowModel();
-		model.Init(window, capture, full, settings, about, exit, root, separator);
+		model.Init(window, capture, full, settings, about, updates, exit, root, separator);
 		return model;
 	}
 
@@ -738,12 +735,11 @@ public class TrayMenuWindowServiceTests : IDisposable
 		_headlessInitialized = true;
 	}
 
-	private static void AssertHoverHandlersReplaced(Button button)
+	private static void AssertNoLocalButtonBrushes(Button button)
 	{
-		Assert.IsType<HoverHandlers>(button.Tag);
-		var handlers = (HoverHandlers)button.Tag!;
-		Assert.NotNull(handlers.Enter);
-		Assert.NotNull(handlers.Exit);
+		Assert.False(button.IsSet(TemplatedControl.BackgroundProperty));
+		Assert.False(button.IsSet(TemplatedControl.ForegroundProperty));
+		Assert.False(button.IsSet(TemplatedControl.BorderBrushProperty));
 	}
 
 	private static Screens CreateScreens(PixelRect workingArea)

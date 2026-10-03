@@ -18,7 +18,7 @@ public class AppSettings
 
 	public string DefaultTool { get; init; } = nameof(AnnotationToolType.Arrow);
 
-	public string Theme { get; set; }
+	public string Theme { get; set; } = "Dark";
 
 	public HotkeySetting RegionHotkey { get; set; } = HotkeySetting.RegionDefault();
 
@@ -27,6 +27,8 @@ public class AppSettings
 	public HotkeySetting ActiveWindowHotkey { get; set; } = HotkeySetting.ActiveWindowDefault();
 
 	public bool RunOnStartup { get; set; } = false;
+
+	public bool AutoCheckForUpdates { get; set; } = true;
 
 	public string FilenamePattern { get; set; } = "Shotora_{0:yyyy-MM-dd_HH-mm-ss}";
 

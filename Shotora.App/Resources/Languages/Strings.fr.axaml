@@ -194,7 +194,7 @@
     <!-- About -->
     <sys:String x:Key="LocAboutTitle">À propos d'Shotora</sys:String>
     <sys:String x:Key="LocAboutVersion">Version</sys:String>
-    <sys:String x:Key="LocAboutCopyright">Â© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
+    <sys:String x:Key="LocAboutCopyright">© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
     <sys:String x:Key="LocAboutLinks">Liens</sys:String>
     <sys:String x:Key="LocAboutWebsite">Site Web</sys:String>
     <sys:String x:Key="LocAboutLinkedIn">LinkedIn</sys:String>
@@ -252,4 +252,33 @@
     <sys:String x:Key="LocAboutRole">Rôle</sys:String>
     <sys:String x:Key="LocAboutContact">Contact</sys:String>
     <sys:String x:Key="LocAboutContactIntro">Contactez-nous pour des retours ou une collaboration.</sys:String>
+
+    <!-- Updates -->
+    <sys:String x:Key="LocSettingsAutoCheckUpdates">Rechercher automatiquement les mises à jour</sys:String>
+    <sys:String x:Key="LocTrayCheckForUpdates">Rechercher des mises à jour</sys:String>
+    <sys:String x:Key="LocUpdateSectionTitle">Mises à jour</sys:String>
+    <sys:String x:Key="LocUpdateWindowTitle">Mise à jour logicielle</sys:String>
+    <sys:String x:Key="LocUpdateWhatsNew">Nouveautés</sys:String>
+    <sys:String x:Key="LocUpdateCheckButton">Rechercher des mises à jour</sys:String>
+    <sys:String x:Key="LocUpdateInstallButton">Télécharger et installer</sys:String>
+    <sys:String x:Key="LocUpdateRestartButton">Redémarrer et mettre à jour</sys:String>
+    <sys:String x:Key="LocUpdateOpenReleaseButton">Télécharger depuis GitHub</sys:String>
+    <sys:String x:Key="LocUpdateSkipButton">Ignorer cette version</sys:String>
+    <sys:String x:Key="LocUpdateLaterButton">Me le rappeler plus tard</sys:String>
+    <sys:String x:Key="LocUpdateChecking">Recherche de mises à jour…</sys:String>
+    <sys:String x:Key="LocUpdateUpToDate">Shotora est à jour</sys:String>
+    <sys:String x:Key="LocUpdateUpToDateDetailFormat">La version {0} est la plus récente.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableFormat">Shotora {0} est disponible</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Vous avez la version {0}. Téléchargez la mise à jour maintenant — Shotora redémarre pour terminer l'installation.</sys:String>
+    <sys:String x:Key="LocUpdateManualDetail">Téléchargez la nouvelle version depuis GitHub pour mettre à jour cette copie de Shotora.</sys:String>
+    <sys:String x:Key="LocUpdateFailed">Impossible de rechercher des mises à jour</sys:String>
+    <sys:String x:Key="LocUpdateFailedDetail">Vérifiez votre connexion Internet et réessayez.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadingFormat">Téléchargement de la mise à jour… {0}%</sys:String>
+    <sys:String x:Key="LocUpdateReady">Mise à jour prête à être installée</sys:String>
+    <sys:String x:Key="LocUpdateReadyDetail">Redémarrez Shotora pour terminer l'installation de la mise à jour.</sys:String>
+    <sys:String x:Key="LocUpdateInstalling">Installation de la mise à jour…</sys:String>
+    <sys:String x:Key="LocUpdateIdle">Vérifiez si une version plus récente de Shotora est disponible.</sys:String>
+    <sys:String x:Key="LocUpdateCurrentVersionFormat">Version {0}</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">La mise à jour n'a pas pu être installée</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">Le téléchargement n'a pas abouti. Vérifiez votre connexion et réessayez.</sys:String>
 </ResourceDictionary>
