@@ -269,7 +269,7 @@
     <sys:String x:Key="LocUpdateUpToDate">Shotora el xe ajornà</sys:String>
     <sys:String x:Key="LocUpdateUpToDateDetailFormat">Ła version {0} ła xe l'ùltima.</sys:String>
     <sys:String x:Key="LocUpdateAvailableFormat">Shotora {0} el xe disponìbiłe</sys:String>
-    <sys:String x:Key="LocUpdateAvailableDetailFormat">Te ghe ła version {0}. L'ajornamento el se scarga in sotofondo e el se instała co Shotora el se riavia.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Te ghe ła version {0}. Scarga deso l'ajornamento: Shotora el se riavia par finir l'instałasion.</sys:String>
     <sys:String x:Key="LocUpdateManualDetail">Scarga ła version nova da GitHub par ajornar sta copia de Shotora.</sys:String>
     <sys:String x:Key="LocUpdateFailed">No se ga podesto controłar i ajornamenti</sys:String>
     <sys:String x:Key="LocUpdateFailedDetail">Controła ła conesion a internet e próa n'antra volta.</sys:String>
@@ -279,6 +279,6 @@
     <sys:String x:Key="LocUpdateInstalling">Instałasion de l'ajornamento…</sys:String>
     <sys:String x:Key="LocUpdateIdle">Controła se ghe xe na version pì nova de Shotora.</sys:String>
     <sys:String x:Key="LocUpdateCurrentVersionFormat">Versione {0}</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailed">The update couldn't be installed</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailedDetail">The download didn't complete. Check your connection and try again.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">No se ga podesto instałar l'ajornamento</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">El scargamento no'l xe stà conpletà. Controła ła conesion e próa n'antra volta.</sys:String>
 </ResourceDictionary>

@@ -269,7 +269,7 @@
     <sys:String x:Key="LocUpdateUpToDate">Shotora es a jorn</sys:String>
     <sys:String x:Key="LocUpdateUpToDateDetailFormat">La version {0} es la mai recenta.</sys:String>
     <sys:String x:Key="LocUpdateAvailableFormat">Shotora {0} es disponible</sys:String>
-    <sys:String x:Key="LocUpdateAvailableDetailFormat">Avètz la version {0}. La mesa a jorn se telecarga en rèire-plan e s'installa quand Shotora se reavia.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Avètz la version {0}. Telecargatz la mesa a jorn ara — Shotora se reavia per acabar l'installacion.</sys:String>
     <sys:String x:Key="LocUpdateManualDetail">Telecargatz la version novèla dempuèi GitHub per metre a jorn aquesta còpia de Shotora.</sys:String>
     <sys:String x:Key="LocUpdateFailed">Impossible de verificar las mesas a jorn</sys:String>
     <sys:String x:Key="LocUpdateFailedDetail">Verificatz vòstra connexion a Internet e tornatz ensajar.</sys:String>
@@ -279,6 +279,6 @@
     <sys:String x:Key="LocUpdateInstalling">Installacion de la mesa a jorn…</sys:String>
     <sys:String x:Key="LocUpdateIdle">Verificar se una version mai recenta de Shotora es disponibla.</sys:String>
     <sys:String x:Key="LocUpdateCurrentVersionFormat">Version {0}</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailed">The update couldn't be installed</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailedDetail">The download didn't complete. Check your connection and try again.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">La mesa a jorn a pas pogut èsser installada</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">Lo telecargament s'es pas acabat. Verificatz vòstra connexion e tornatz ensajar.</sys:String>
 </ResourceDictionary>

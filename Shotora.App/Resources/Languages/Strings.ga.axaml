@@ -269,7 +269,7 @@
     <sys:String x:Key="LocUpdateUpToDate">Tá Shotora cothrom le dáta</sys:String>
     <sys:String x:Key="LocUpdateUpToDateDetailFormat">Is é leagan {0} an leagan is déanaí.</sys:String>
     <sys:String x:Key="LocUpdateAvailableFormat">Tá Shotora {0} ar fáil</sys:String>
-    <sys:String x:Key="LocUpdateAvailableDetailFormat">Tá leagan {0} agat. Íoslódáiltear an nuashonrú sa chúlra agus suiteáiltear é nuair a atosaíonn Shotora.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Tá leagan {0} agat. Íoslódáil an nuashonrú anois — atosóidh Shotora chun an tsuiteáil a chríochnú.</sys:String>
     <sys:String x:Key="LocUpdateManualDetail">Íoslódáil an leagan nua ó GitHub chun an chóip seo de Shotora a nuashonrú.</sys:String>
     <sys:String x:Key="LocUpdateFailed">Níorbh fhéidir seiceáil le haghaidh nuashonruithe</sys:String>
     <sys:String x:Key="LocUpdateFailedDetail">Seiceáil do nasc idirlín agus bain triail eile as.</sys:String>
@@ -279,6 +279,6 @@
     <sys:String x:Key="LocUpdateInstalling">Nuashonrú á shuiteáil…</sys:String>
     <sys:String x:Key="LocUpdateIdle">Seiceáil an bhfuil leagan níos nuaí de Shotora ar fáil.</sys:String>
     <sys:String x:Key="LocUpdateCurrentVersionFormat">Leagan {0}</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailed">The update couldn't be installed</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailedDetail">The download didn't complete. Check your connection and try again.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">Níorbh fhéidir an nuashonrú a shuiteáil</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">Níor críochnaíodh an íoslódáil. Seiceáil do nasc agus bain triail eile as.</sys:String>
 </ResourceDictionary>

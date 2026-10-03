@@ -269,7 +269,7 @@
     <sys:String x:Key="LocUpdateUpToDate">Shotora已是最新版本</sys:String>
     <sys:String x:Key="LocUpdateUpToDateDetailFormat">版本{0}是最新版本。</sys:String>
     <sys:String x:Key="LocUpdateAvailableFormat">Shotora {0}现已推出</sys:String>
-    <sys:String x:Key="LocUpdateAvailableDetailFormat">你的版本是{0}。更新将在后台下载，并在Shotora重启时安装。</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">你的版本是{0}。立即下载更新，Shotora将重启以完成安装。</sys:String>
     <sys:String x:Key="LocUpdateManualDetail">从GitHub下载新版本以更新此Shotora副本。</sys:String>
     <sys:String x:Key="LocUpdateFailed">无法检查更新</sys:String>
     <sys:String x:Key="LocUpdateFailedDetail">请检查网络连接，然后重试。</sys:String>
@@ -279,6 +279,6 @@
     <sys:String x:Key="LocUpdateInstalling">正在安装更新…</sys:String>
     <sys:String x:Key="LocUpdateIdle">检查是否有更新版本的Shotora可用。</sys:String>
     <sys:String x:Key="LocUpdateCurrentVersionFormat">版本 {0}</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailed">The update couldn't be installed</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailedDetail">The download didn't complete. Check your connection and try again.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">无法安装更新</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">下载未完成。请检查网络连接，然后重试。</sys:String>
 </ResourceDictionary>

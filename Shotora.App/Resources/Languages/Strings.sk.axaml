@@ -269,7 +269,7 @@
     <sys:String x:Key="LocUpdateUpToDate">Shotora je aktuálna</sys:String>
     <sys:String x:Key="LocUpdateUpToDateDetailFormat">Verzia {0} je najnovšia.</sys:String>
     <sys:String x:Key="LocUpdateAvailableFormat">Je k dispozícii Shotora {0}</sys:String>
-    <sys:String x:Key="LocUpdateAvailableDetailFormat">Máte verziu {0}. Aktualizácia sa stiahne na pozadí a nainštaluje sa pri reštarte Shotora.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Máte verziu {0}. Stiahnite si aktualizáciu teraz – Shotora sa reštartuje a dokončí inštaláciu.</sys:String>
     <sys:String x:Key="LocUpdateManualDetail">Stiahnite si novú verziu z GitHubu a aktualizujte túto kópiu Shotora.</sys:String>
     <sys:String x:Key="LocUpdateFailed">Aktualizácie sa nepodarilo skontrolovať</sys:String>
     <sys:String x:Key="LocUpdateFailedDetail">Skontrolujte pripojenie na internet a skúste to znova.</sys:String>
@@ -279,6 +279,6 @@
     <sys:String x:Key="LocUpdateInstalling">Inštaluje sa aktualizácia…</sys:String>
     <sys:String x:Key="LocUpdateIdle">Skontrolujte, či je k dispozícii novšia verzia Shotora.</sys:String>
     <sys:String x:Key="LocUpdateCurrentVersionFormat">Verzia {0}</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailed">The update couldn't be installed</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailedDetail">The download didn't complete. Check your connection and try again.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">Aktualizáciu sa nepodarilo nainštalovať</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">Sťahovanie sa nedokončilo. Skontrolujte pripojenie a skúste to znova.</sys:String>
 </ResourceDictionary>

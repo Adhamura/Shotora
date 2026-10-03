@@ -269,7 +269,7 @@
     <sys:String x:Key="LocUpdateUpToDate">Shotora huwa aġġornat</sys:String>
     <sys:String x:Key="LocUpdateUpToDateDetailFormat">Il-verżjoni {0} hija l-aħħar verżjoni.</sys:String>
     <sys:String x:Key="LocUpdateAvailableFormat">Shotora {0} huwa disponibbli</sys:String>
-    <sys:String x:Key="LocUpdateAvailableDetailFormat">Għandek il-verżjoni {0}. L-aġġornament jitniżżel fl-isfond u jiġi installat meta Shotora jerġa' jibda.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Għandek il-verżjoni {0}. Niżżel l-aġġornament issa — Shotora jerġa' jibda biex itemm l-installazzjoni.</sys:String>
     <sys:String x:Key="LocUpdateManualDetail">Niżżel il-verżjoni l-ġdida minn GitHub biex taġġorna din il-kopja ta' Shotora.</sys:String>
     <sys:String x:Key="LocUpdateFailed">Ma setax jiċċekkja għal aġġornamenti</sys:String>
     <sys:String x:Key="LocUpdateFailedDetail">Iċċekkja l-konnessjoni tal-internet u erġa' pprova.</sys:String>
@@ -279,6 +279,6 @@
     <sys:String x:Key="LocUpdateInstalling">Qed jiġi installat l-aġġornament…</sys:String>
     <sys:String x:Key="LocUpdateIdle">Iċċekkja jekk hemmx verżjoni aktar ġdida ta' Shotora disponibbli.</sys:String>
     <sys:String x:Key="LocUpdateCurrentVersionFormat">Verżjoni {0}</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailed">The update couldn't be installed</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailedDetail">The download didn't complete. Check your connection and try again.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">L-aġġornament ma setax jiġi installat</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">It-tniżżil ma tlestiex. Iċċekkja l-konnessjoni u erġa' pprova.</sys:String>
 </ResourceDictionary>

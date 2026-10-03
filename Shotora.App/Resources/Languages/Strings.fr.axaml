@@ -269,7 +269,7 @@
     <sys:String x:Key="LocUpdateUpToDate">Shotora est à jour</sys:String>
     <sys:String x:Key="LocUpdateUpToDateDetailFormat">La version {0} est la plus récente.</sys:String>
     <sys:String x:Key="LocUpdateAvailableFormat">Shotora {0} est disponible</sys:String>
-    <sys:String x:Key="LocUpdateAvailableDetailFormat">Vous avez la version {0}. La mise à jour se télécharge en arrière-plan et s'installe au redémarrage de Shotora.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Vous avez la version {0}. Téléchargez la mise à jour maintenant — Shotora redémarre pour terminer l'installation.</sys:String>
     <sys:String x:Key="LocUpdateManualDetail">Téléchargez la nouvelle version depuis GitHub pour mettre à jour cette copie de Shotora.</sys:String>
     <sys:String x:Key="LocUpdateFailed">Impossible de rechercher des mises à jour</sys:String>
     <sys:String x:Key="LocUpdateFailedDetail">Vérifiez votre connexion Internet et réessayez.</sys:String>
@@ -279,6 +279,6 @@
     <sys:String x:Key="LocUpdateInstalling">Installation de la mise à jour…</sys:String>
     <sys:String x:Key="LocUpdateIdle">Vérifiez si une version plus récente de Shotora est disponible.</sys:String>
     <sys:String x:Key="LocUpdateCurrentVersionFormat">Version {0}</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailed">The update couldn't be installed</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailedDetail">The download didn't complete. Check your connection and try again.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">La mise à jour n'a pas pu être installée</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">Le téléchargement n'a pas abouti. Vérifiez votre connexion et réessayez.</sys:String>
 </ResourceDictionary>

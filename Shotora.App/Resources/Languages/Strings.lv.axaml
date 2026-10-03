@@ -269,7 +269,7 @@
     <sys:String x:Key="LocUpdateUpToDate">Shotora ir atjaunināta</sys:String>
     <sys:String x:Key="LocUpdateUpToDateDetailFormat">Versija {0} ir jaunākā.</sys:String>
     <sys:String x:Key="LocUpdateAvailableFormat">Pieejama Shotora {0}</sys:String>
-    <sys:String x:Key="LocUpdateAvailableDetailFormat">Jums ir versija {0}. Atjauninājums tiek lejupielādēts fonā un instalēts, kad Shotora tiek restartēta.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Jums ir versija {0}. Lejupielādējiet atjauninājumu tagad — Shotora tiks restartēta, lai pabeigtu instalēšanu.</sys:String>
     <sys:String x:Key="LocUpdateManualDetail">Lejupielādējiet jauno versiju no GitHub, lai atjauninātu šo Shotora kopiju.</sys:String>
     <sys:String x:Key="LocUpdateFailed">Neizdevās meklēt atjauninājumus</sys:String>
     <sys:String x:Key="LocUpdateFailedDetail">Pārbaudiet interneta savienojumu un mēģiniet vēlreiz.</sys:String>
@@ -279,6 +279,6 @@
     <sys:String x:Key="LocUpdateInstalling">Instalē atjauninājumu…</sys:String>
     <sys:String x:Key="LocUpdateIdle">Pārbaudiet, vai ir pieejama jaunāka Shotora versija.</sys:String>
     <sys:String x:Key="LocUpdateCurrentVersionFormat">Versija {0}</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailed">The update couldn't be installed</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailedDetail">The download didn't complete. Check your connection and try again.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">Atjauninājumu neizdevās instalēt</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">Lejupielāde netika pabeigta. Pārbaudiet savienojumu un mēģiniet vēlreiz.</sys:String>
 </ResourceDictionary>

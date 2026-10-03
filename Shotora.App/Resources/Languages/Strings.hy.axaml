@@ -269,7 +269,7 @@
     <sys:String x:Key="LocUpdateUpToDate">Shotora-ն թարմացված է</sys:String>
     <sys:String x:Key="LocUpdateUpToDateDetailFormat">{0} տարբերակը վերջինն է։</sys:String>
     <sys:String x:Key="LocUpdateAvailableFormat">Հասանելի է Shotora {0}</sys:String>
-    <sys:String x:Key="LocUpdateAvailableDetailFormat">Դուք ունեք {0} տարբերակը։ Թարմացումը ներբեռնվում է ֆոնային ռեժիմում և տեղադրվում Shotora-ի վերագործարկման ժամանակ։</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Դուք ունեք {0} տարբերակը։ Ներբեռնեք թարմացումը հիմա․ Shotora-ն կվերագործարկվի՝ տեղադրումն ավարտելու համար։</sys:String>
     <sys:String x:Key="LocUpdateManualDetail">Ներբեռնեք նոր տարբերակը GitHub-ից՝ Shotora-ի այս օրինակը թարմացնելու համար։</sys:String>
     <sys:String x:Key="LocUpdateFailed">Չհաջողվեց ստուգել թարմացումները</sys:String>
     <sys:String x:Key="LocUpdateFailedDetail">Ստուգեք ինտերնետ կապը և նորից փորձեք։</sys:String>
@@ -279,6 +279,6 @@
     <sys:String x:Key="LocUpdateInstalling">Թարմացման տեղադրում…</sys:String>
     <sys:String x:Key="LocUpdateIdle">Ստուգեք, արդյոք հասանելի է Shotora-ի ավելի նոր տարբերակ։</sys:String>
     <sys:String x:Key="LocUpdateCurrentVersionFormat">Տարբերակ {0}</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailed">The update couldn't be installed</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailedDetail">The download didn't complete. Check your connection and try again.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">Չհաջողվեց տեղադրել թարմացումը</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">Ներբեռնումը չավարտվեց։ Ստուգեք կապը և նորից փորձեք։</sys:String>
 </ResourceDictionary>

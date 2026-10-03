@@ -269,7 +269,7 @@
     <sys:String x:Key="LocUpdateUpToDate">Shotora è aggiurnato</sys:String>
     <sys:String x:Key="LocUpdateUpToDateDetailFormat">'A versione {0} è ll'ultima.</sys:String>
     <sys:String x:Key="LocUpdateAvailableFormat">Shotora {0} è disponibbile</sys:String>
-    <sys:String x:Key="LocUpdateAvailableDetailFormat">Tiene 'a versione {0}. L'aggiurnamento se scarreca 'int' 'o sfunno e s'installa quanno Shotora se riavvia.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Tiene 'a versione {0}. Scarrica mo ll'aggiurnamento: Shotora se riavvia pe' fernì ll'installazzione.</sys:String>
     <sys:String x:Key="LocUpdateManualDetail">Scarrica 'a versione nova 'a GitHub pe' aggiurnà chesta copia 'e Shotora.</sys:String>
     <sys:String x:Key="LocUpdateFailed">Nun se só pututo cuntrullà ll'aggiurnamiente</sys:String>
     <sys:String x:Key="LocUpdateFailedDetail">Cuntrolla 'a cunnessione a internet e prova n'ata vota.</sys:String>
@@ -279,6 +279,6 @@
     <sys:String x:Key="LocUpdateInstalling">Installanno ll'aggiurnamento…</sys:String>
     <sys:String x:Key="LocUpdateIdle">Cuntrolla si ce sta na versione cchiù nova 'e Shotora.</sys:String>
     <sys:String x:Key="LocUpdateCurrentVersionFormat">Versione {0}</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailed">The update couldn't be installed</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailedDetail">The download didn't complete. Check your connection and try again.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">Nun se só pututo installà ll'aggiurnamento</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">'O scarrecamento nun è fernuto. Cuntrolla 'a cunnessione e prova n'ata vota.</sys:String>
 </ResourceDictionary>

@@ -269,7 +269,7 @@
     <sys:String x:Key="LocUpdateUpToDate">Mae Shotora yn gyfredol</sys:String>
     <sys:String x:Key="LocUpdateUpToDateDetailFormat">Fersiwn {0} yw'r fersiwn ddiweddaraf.</sys:String>
     <sys:String x:Key="LocUpdateAvailableFormat">Mae Shotora {0} ar gael</sys:String>
-    <sys:String x:Key="LocUpdateAvailableDetailFormat">Mae gennych fersiwn {0}. Mae'r diweddariad yn lawrlwytho yn y cefndir ac yn gosod pan fydd Shotora yn ailgychwyn.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Mae gennych fersiwn {0}. Lawrlwythwch y diweddariad nawr — bydd Shotora yn ailgychwyn i orffen ei osod.</sys:String>
     <sys:String x:Key="LocUpdateManualDetail">Lawrlwythwch y fersiwn newydd o GitHub i ddiweddaru'r copi hwn o Shotora.</sys:String>
     <sys:String x:Key="LocUpdateFailed">Methu gwirio am ddiweddariadau</sys:String>
     <sys:String x:Key="LocUpdateFailedDetail">Gwiriwch eich cysylltiad â'r rhyngrwyd a rhowch gynnig arall arni.</sys:String>
@@ -279,6 +279,6 @@
     <sys:String x:Key="LocUpdateInstalling">Yn gosod y diweddariad…</sys:String>
     <sys:String x:Key="LocUpdateIdle">Gwirio a oes fersiwn mwy diweddar o Shotora ar gael.</sys:String>
     <sys:String x:Key="LocUpdateCurrentVersionFormat">Fersiwn {0}</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailed">The update couldn't be installed</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailedDetail">The download didn't complete. Check your connection and try again.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">Methu gosod y diweddariad</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">Ni chwblhawyd y lawrlwytho. Gwiriwch eich cysylltiad a rhowch gynnig arall arni.</sys:String>
 </ResourceDictionary>

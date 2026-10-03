@@ -269,7 +269,7 @@
     <sys:String x:Key="LocUpdateUpToDate">Shotora ass um neiste Stand</sys:String>
     <sys:String x:Key="LocUpdateUpToDateDetailFormat">D'Versioun {0} ass déi neist Versioun.</sys:String>
     <sys:String x:Key="LocUpdateAvailableFormat">Shotora {0} ass disponibel</sys:String>
-    <sys:String x:Key="LocUpdateAvailableDetailFormat">Dir hutt d'Versioun {0}. D'Aktualiséierung gëtt am Hannergrond erofgelueden an installéiert, wann Shotora nei gestart gëtt.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Dir hutt d'Versioun {0}. Luet d'Aktualiséierung elo erof – Shotora start nei, fir d'Installatioun ofzeschléissen.</sys:String>
     <sys:String x:Key="LocUpdateManualDetail">Luet déi nei Versioun vu GitHub erof, fir dës Kopie vu Shotora ze aktualiséieren.</sys:String>
     <sys:String x:Key="LocUpdateFailed">D'Sich no Aktualiséierunge war net méiglech</sys:String>
     <sys:String x:Key="LocUpdateFailedDetail">Kontrolléiert Är Internetverbindung a probéiert nach eng Kéier.</sys:String>
@@ -279,6 +279,6 @@
     <sys:String x:Key="LocUpdateInstalling">Aktualiséierung gëtt installéiert…</sys:String>
     <sys:String x:Key="LocUpdateIdle">Kucken, ob eng méi nei Versioun vu Shotora disponibel ass.</sys:String>
     <sys:String x:Key="LocUpdateCurrentVersionFormat">Versioun {0}</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailed">The update couldn't be installed</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailedDetail">The download didn't complete. Check your connection and try again.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">D'Aktualiséierung konnt net installéiert ginn</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">Den Download gouf net ofgeschloss. Kontrolléiert Är Verbindung a probéiert nach eng Kéier.</sys:String>
 </ResourceDictionary>

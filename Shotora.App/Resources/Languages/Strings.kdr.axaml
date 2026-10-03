@@ -269,7 +269,7 @@
     <sys:String x:Key="LocUpdateUpToDate">Shotora jangy versijada</sys:String>
     <sys:String x:Key="LocUpdateUpToDateDetailFormat">{0} versija – en jangysy.</sys:String>
     <sys:String x:Key="LocUpdateAvailableFormat">Shotora {0} bar</sys:String>
-    <sys:String x:Key="LocUpdateAvailableDetailFormat">Sizde {0} versija. Jangyrtuv artta jukleniet da Shotora jangydan bashłanganda kuruluvet.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Sizde {0} versija. Jangyrtuvnu emdi jukleńiz — Shotora kuruvnu tamamłamach üčün jangydan bashłanyr.</sys:String>
     <sys:String x:Key="LocUpdateManualDetail">Shotora-nyn bu kopijasyn jangyrtmach üčün jangy versijany GitHub-tan jukleńiz.</sys:String>
     <sys:String x:Key="LocUpdateFailed">Jangyrtuvłarny tiksierme bołmady</sys:String>
     <sys:String x:Key="LocUpdateFailedDetail">Internet bajłanyshyjyzny tiksierijiz da jangydan synajyz.</sys:String>
@@ -279,6 +279,6 @@
     <sys:String x:Key="LocUpdateInstalling">Jangyrtuv kuruluvet…</sys:String>
     <sys:String x:Key="LocUpdateIdle">Shotora-nyn jangyrach versijasy bar my, tiksierijiz.</sys:String>
     <sys:String x:Key="LocUpdateCurrentVersionFormat">Versija {0}</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailed">The update couldn't be installed</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailedDetail">The download didn't complete. Check your connection and try again.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">Jangyrtuvnu kurma bołmady</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">Juklieme tamamłanmady. Bajłanyshyjyzny tiksierijiz da jangydan synajyz.</sys:String>
 </ResourceDictionary>

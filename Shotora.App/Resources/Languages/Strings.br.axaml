@@ -269,7 +269,7 @@
     <sys:String x:Key="LocUpdateUpToDate">Hizivaet eo Shotora</sys:String>
     <sys:String x:Key="LocUpdateUpToDateDetailFormat">Ar stumm {0} eo an diwezhañ.</sys:String>
     <sys:String x:Key="LocUpdateAvailableFormat">Shotora {0} a zo hegerz</sys:String>
-    <sys:String x:Key="LocUpdateAvailableDetailFormat">Ar stumm {0} hoc'h eus. Pellgarget e vez an hizivadur en drekleur ha staliet pa adloc'h Shotora.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Ar stumm {0} hoc'h eus. Pellgargit an hizivadur bremañ — adloc'hañ a raio Shotora evit echuiñ ar staliañ.</sys:String>
     <sys:String x:Key="LocUpdateManualDetail">Pellgargit ar stumm nevez diwar GitHub evit hizivaat an eilskouerenn-mañ eus Shotora.</sys:String>
     <sys:String x:Key="LocUpdateFailed">N'haller ket gwiriañ an hizivadurioù</sys:String>
     <sys:String x:Key="LocUpdateFailedDetail">Gwiriit ho kennask Internet ha klaskit en-dro.</sys:String>
@@ -279,6 +279,6 @@
     <sys:String x:Key="LocUpdateInstalling">O staliañ an hizivadur…</sys:String>
     <sys:String x:Key="LocUpdateIdle">Gwiriañ hag-eñ ez eus ur stumm nevesoc'h eus Shotora.</sys:String>
     <sys:String x:Key="LocUpdateCurrentVersionFormat">Stumm {0}</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailed">The update couldn't be installed</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailedDetail">The download didn't complete. Check your connection and try again.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">N'eus ket bet gallet staliañ an hizivadur</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">N'eo ket bet echuet ar pellgargañ. Gwiriit ho kennask ha klaskit en-dro.</sys:String>
 </ResourceDictionary>

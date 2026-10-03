@@ -269,7 +269,7 @@
     <sys:String x:Key="LocUpdateUpToDate">Shotora güncel</sys:String>
     <sys:String x:Key="LocUpdateUpToDateDetailFormat">{0} sürümü en son sürümdür.</sys:String>
     <sys:String x:Key="LocUpdateAvailableFormat">Shotora {0} kullanılabilir</sys:String>
-    <sys:String x:Key="LocUpdateAvailableDetailFormat">{0} sürümüne sahipsiniz. Güncelleme arka planda indirilir ve Shotora yeniden başlatıldığında yüklenir.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">{0} sürümüne sahipsiniz. Güncellemeyi şimdi indirin; Shotora yüklemeyi tamamlamak için yeniden başlatılır.</sys:String>
     <sys:String x:Key="LocUpdateManualDetail">Shotora'nın bu kopyasını güncellemek için yeni sürümü GitHub'dan indirin.</sys:String>
     <sys:String x:Key="LocUpdateFailed">Güncellemeler denetlenemedi</sys:String>
     <sys:String x:Key="LocUpdateFailedDetail">İnternet bağlantınızı kontrol edip yeniden deneyin.</sys:String>
@@ -279,6 +279,6 @@
     <sys:String x:Key="LocUpdateInstalling">Güncelleme yükleniyor…</sys:String>
     <sys:String x:Key="LocUpdateIdle">Shotora'nın daha yeni bir sürümünün olup olmadığını denetleyin.</sys:String>
     <sys:String x:Key="LocUpdateCurrentVersionFormat">Sürüm {0}</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailed">The update couldn't be installed</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailedDetail">The download didn't complete. Check your connection and try again.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">Güncelleme yüklenemedi</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">İndirme tamamlanmadı. Bağlantınızı kontrol edip yeniden deneyin.</sys:String>
 </ResourceDictionary>

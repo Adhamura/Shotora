@@ -269,7 +269,7 @@
     <sys:String x:Key="LocUpdateUpToDate">Shotora er uppfært</sys:String>
     <sys:String x:Key="LocUpdateUpToDateDetailFormat">Útgáfa {0} er nýjasta útgáfan.</sys:String>
     <sys:String x:Key="LocUpdateAvailableFormat">Shotora {0} er í boði</sys:String>
-    <sys:String x:Key="LocUpdateAvailableDetailFormat">Þú ert með útgáfu {0}. Uppfærslan er sótt í bakgrunni og sett upp þegar Shotora er endurræst.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Þú ert með útgáfu {0}. Sæktu uppfærsluna núna – Shotora endurræsist til að ljúka uppsetningunni.</sys:String>
     <sys:String x:Key="LocUpdateManualDetail">Sæktu nýju útgáfuna af GitHub til að uppfæra þetta eintak af Shotora.</sys:String>
     <sys:String x:Key="LocUpdateFailed">Ekki tókst að leita að uppfærslum</sys:String>
     <sys:String x:Key="LocUpdateFailedDetail">Athugaðu nettenginguna og reyndu aftur.</sys:String>
@@ -279,6 +279,6 @@
     <sys:String x:Key="LocUpdateInstalling">Setur upp uppfærslu…</sys:String>
     <sys:String x:Key="LocUpdateIdle">Athuga hvort nýrri útgáfa af Shotora sé í boði.</sys:String>
     <sys:String x:Key="LocUpdateCurrentVersionFormat">Útgáfa {0}</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailed">The update couldn't be installed</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailedDetail">The download didn't complete. Check your connection and try again.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">Ekki tókst að setja upp uppfærsluna</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">Niðurhalinu lauk ekki. Athugaðu tenginguna og reyndu aftur.</sys:String>
 </ResourceDictionary>

@@ -269,7 +269,7 @@
     <sys:String x:Key="LocUpdateUpToDate">Shotora eñ soñki versiyada</sys:String>
     <sys:String x:Key="LocUpdateUpToDateDetailFormat">{0} versiyası eñ soñkisidir.</sys:String>
     <sys:String x:Key="LocUpdateAvailableFormat">Shotora {0} mevcut</sys:String>
-    <sys:String x:Key="LocUpdateAvailableDetailFormat">Sizde {0} versiyası bar. Yañartma arqa planda yüklenir ve Shotora yañıdan başlağanda qurulır.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Sizde {0} versiyası bar. Yañartmanı şimdi yükleñiz — Shotora quruluvnı tamamlamaq içün yañıdan başlar.</sys:String>
     <sys:String x:Key="LocUpdateManualDetail">Shotora'nıñ bu nushasını yañartmaq içün yañı versiyanı GitHub'dan yükleñiz.</sys:String>
     <sys:String x:Key="LocUpdateFailed">Yañartmalarnı teşkerip olmadı</sys:String>
     <sys:String x:Key="LocUpdateFailedDetail">İnternet bağlantıñıznı teşkeriñiz ve yañıdan deñeñiz.</sys:String>
@@ -279,6 +279,6 @@
     <sys:String x:Key="LocUpdateInstalling">Yañartma qurula…</sys:String>
     <sys:String x:Key="LocUpdateIdle">Shotora'nıñ daa yañı versiyası bar mı, teşkeriñiz.</sys:String>
     <sys:String x:Key="LocUpdateCurrentVersionFormat">Versiya {0}</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailed">The update couldn't be installed</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailedDetail">The download didn't complete. Check your connection and try again.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">Yañartmanı qurıp olmadı</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">Yükleme tamamlanmadı. Bağlantıñıznı teşkeriñiz ve yañıdan deñeñiz.</sys:String>
 </ResourceDictionary>
