@@ -55,6 +55,9 @@ jobs:
       - uses: actions/setup-dotnet@v5
         with:
           dotnet-version: 10.0.x # global.json pins 10.0.0 (rollForward is local-only), which setup-dotnet cannot download
+      - name: Restore tools
+        # Restore once up front; the per-project restore hooks then find a warm cache instead of racing.
+        run: dotnet tool restore
       - name: Build
         run: dotnet build Shotora.sln -c Release
       - name: Test
