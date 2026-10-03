@@ -4,6 +4,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Threading.Tasks;
 using Avalonia;
+using Avalonia.Automation;
 using Avalonia.Controls;
 using Avalonia.Controls.Primitives;
 using Avalonia.Controls.Shapes;
@@ -189,6 +190,10 @@ public partial class OverlayWindow(
 				Classes    = { "swatch" },
 				Background = new SolidColorBrush(color)
 			};
+			// Icon-only control: expose the colour as hex for tooltips and screen readers (no localization needed).
+			var hex = $"#{color.R:X2}{color.G:X2}{color.B:X2}";
+			ToolTip.SetTip(swatch, hex);
+			AutomationProperties.SetName(swatch, hex);
 			swatch.Click += (_, _) => SetCurrentColor(color);
 			ColorPalette.Children.Add(swatch);
 		}
@@ -533,7 +538,9 @@ public partial class OverlayWindow(
 			var capture = _state.Capture;
 			if (capture?.Raw != null)
 			{
-				var anchor = new Rect(Position.X + _state.SelectionRect.X, Position.Y + _state.SelectionRect.Y, _state.SelectionRect.Width, _state.SelectionRect.Height);
+				// Screen anchor in physical pixels: window position is in pixels, the selection in DIPs.
+				var scale  = RenderScaling;
+				var anchor = new Rect(Position.X + _state.SelectionRect.X * scale, Position.Y + _state.SelectionRect.Y * scale, _state.SelectionRect.Width * scale, _state.SelectionRect.Height * scale);
 				_ = textDrawingService.ShowOcrForSelectionAsync(capture.Raw, _state.SelectionRect, anchor, _state.Settings.OcrLanguages, _state.Settings.OcrEngine);
 			}
 		}

@@ -36,14 +36,22 @@
 
             <!-- Control metrics -->
             <x:Double x:Key="ControlHeight">32</x:Double>
+            <x:Double x:Key="MenuItemHeight">30</x:Double>
             <x:Double x:Key="ButtonMinWidth">96</x:Double>
             <x:Double x:Key="IconButtonSize">32</x:Double>
             <x:Double x:Key="ToolButtonSize">40</x:Double>
+            <x:Double x:Key="FormLabelMinWidth">160</x:Double>
             <x:Double x:Key="FormLabelMaxWidth">220</x:Double>
-            <x:Double x:Key="FormFieldMaxWidth">380</x:Double>
-            <Thickness x:Key="ButtonPadding">16,6</Thickness>
-            <Thickness x:Key="InputPadding">10,6</Thickness>
+            <x:Double x:Key="FormFieldMaxWidth">460</x:Double>
+            <x:Double x:Key="DisabledOpacity">0.45</x:Double>
+            <!-- Vertical padding is chosen so that text + padding + border stays within ControlHeight -->
+            <Thickness x:Key="ButtonPadding">16,4</Thickness>
+            <Thickness x:Key="InputPadding">10,4</Thickness>
+
+            <!-- Focus ring: 2px, drawn 1px outside the control (Margin -3), concentric radius -->
             <Thickness x:Key="FocusRingThickness">2</Thickness>
+            <Thickness x:Key="FocusRingMargin">-3</Thickness>
+            <controls:FocusRingRadiusConverter x:Key="FocusRingRadius" />
         </ResourceDictionary>
     </Styles.Resources>
 
@@ -66,6 +74,12 @@
     </Style>
     <Style Selector="TextBlock.display">
         <Setter Property="FontSize" Value="{StaticResource FontSizeDisplay}" />
+    </Style>
+    <!-- Prominent in-content heading (status lines, product tagline); one step below the window title -->
+    <Style Selector="TextBlock.subtitle">
+        <Setter Property="FontSize" Value="{StaticResource FontSizeSubtitle}" />
+        <Setter Property="FontWeight" Value="SemiBold" />
+        <Setter Property="TextWrapping" Value="Wrap" />
     </Style>
     <Style Selector="TextBlock.section-header">
         <Setter Property="FontSize" Value="{StaticResource FontSizeSubtitle}" />
@@ -95,6 +109,7 @@
 
     <!-- ===================================================================== -->
     <!-- Dialog shell (Controls/DialogShell.cs)                                -->
+    <!-- Drag area = PART_TitleBar + empty parts of PART_FooterPresenter.      -->
     <!-- ===================================================================== -->
     <Style Selector="controls|DialogShell">
         <Setter Property="Background" Value="{DynamicResource PanelBackgroundBrush}" />
@@ -112,29 +127,30 @@
                         ClipToBounds="True">
                     <Grid RowDefinitions="Auto,*,Auto">
                         <!-- Title bar: drag area + title + close button -->
-                        <Grid x:Name="PART_TitleBar"
-                              ColumnDefinitions="*,Auto"
-                              Background="Transparent"
-                              Margin="16,12,10,0"
-                              MinHeight="{StaticResource IconButtonSize}">
-                            <StackPanel VerticalAlignment="Center" Spacing="2">
-                                <TextBlock Classes="title"
-                                           Text="{TemplateBinding Title}" />
-                                <TextBlock Classes="secondary"
-                                           Text="{TemplateBinding Subtitle}"
-                                           IsVisible="{TemplateBinding Subtitle, Converter={x:Static StringConverters.IsNotNullOrEmpty}}" />
-                            </StackPanel>
-                            <Button x:Name="PART_CloseButton"
-                                    Grid.Column="1"
-                                    Classes="icon subtle"
-                                    VerticalAlignment="Top"
-                                    Margin="8,0,0,0"
-                                    IsVisible="{TemplateBinding ShowCloseButton}"
-                                    KeyboardNavigation.IsTabStop="False"
-                                    ToolTip.Tip="{DynamicResource LocCommonClose}"
-                                    AutomationProperties.Name="{DynamicResource LocCommonClose}"
-                                    Content="{StaticResource IconCancel}" />
-                        </Grid>
+                        <Border x:Name="PART_TitleBar"
+                                Background="Transparent"
+                                Padding="16,12,10,0">
+                            <Grid ColumnDefinitions="*,Auto"
+                                  MinHeight="{StaticResource IconButtonSize}">
+                                <StackPanel VerticalAlignment="Center" Spacing="2">
+                                    <TextBlock Classes="title"
+                                               Text="{TemplateBinding Title}" />
+                                    <TextBlock Classes="secondary"
+                                               Text="{TemplateBinding Subtitle}"
+                                               IsVisible="{TemplateBinding Subtitle, Converter={x:Static StringConverters.IsNotNullOrEmpty}}" />
+                                </StackPanel>
+                                <Button x:Name="PART_CloseButton"
+                                        Grid.Column="1"
+                                        Classes="icon subtle"
+                                        VerticalAlignment="Top"
+                                        Margin="8,0,0,0"
+                                        IsVisible="{TemplateBinding ShowCloseButton}"
+                                        KeyboardNavigation.IsTabStop="False"
+                                        ToolTip.Tip="{DynamicResource LocCommonClose}"
+                                        AutomationProperties.Name="{DynamicResource LocCommonClose}"
+                                        Content="{StaticResource IconCancel}" />
+                            </Grid>
+                        </Border>
 
                         <ContentPresenter x:Name="PART_ContentPresenter"
                                           Grid.Row="1"
@@ -147,7 +163,8 @@
                         <!-- Footer: right-aligned actions, primary action last -->
                         <ContentPresenter x:Name="PART_FooterPresenter"
                                           Grid.Row="2"
-                                          Margin="16,16,16,16"
+                                          Background="Transparent"
+                                          Padding="16"
                                           Content="{TemplateBinding Footer}"
                                           IsVisible="{TemplateBinding Footer, Converter={x:Static ObjectConverters.IsNotNull}}" />
                     </Grid>
@@ -169,6 +186,8 @@
     <!-- ===================================================================== -->
     <!-- Form layout (Controls/LabeledField.cs)                                -->
     <!-- Put Grid.IsSharedSizeScope="True" on the container so labels align.  -->
+    <!-- An empty Label collapses its cell: no indent of its own; the row     -->
+    <!-- still aligns with the field column when other rows have labels.     -->
     <!-- ===================================================================== -->
     <Style Selector="controls|LabeledField">
         <Setter Property="Margin" Value="0,0,0,8" />
@@ -183,7 +202,9 @@
                     </Grid.ColumnDefinitions>
                     <TextBlock x:Name="PART_Label"
                                Text="{TemplateBinding Label}"
+                               IsVisible="{TemplateBinding Label, Converter={x:Static StringConverters.IsNotNullOrEmpty}}"
                                TextWrapping="Wrap"
+                               MinWidth="{StaticResource FormLabelMinWidth}"
                                MaxWidth="{StaticResource FormLabelMaxWidth}"
                                Margin="0,0,16,0"
                                VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
@@ -235,9 +256,11 @@
         <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Disabled" />
         <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Disabled" />
     </Style>
-    <!-- Multi-line inputs must be able to scroll long content -->
-    <Style Selector="TextBox[AcceptsReturn=True]">
+    <!-- Multi-line content must be able to scroll. Use AcceptsReturn for editable input; use the
+         "multiline" class for read-only text so Enter still reaches the dialog's default button. -->
+    <Style Selector="TextBox[AcceptsReturn=True], TextBox.multiline">
         <Setter Property="VerticalContentAlignment" Value="Top" />
+        <Setter Property="TextWrapping" Value="Wrap" />
         <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto" />
     </Style>
     <Style Selector="TextBox:pointerover /template/ Border#PART_BorderElement">
@@ -255,11 +278,12 @@
         <Setter Property="Foreground" Value="{DynamicResource InputForegroundBrush}" />
     </Style>
     <Style Selector="TextBox:disabled /template/ Border#PART_BorderElement">
-        <Setter Property="Background" Value="{DynamicResource ButtonDisabledBrush}" />
+        <Setter Property="Background" Value="{DynamicResource InputBackgroundBrush}" />
         <Setter Property="BorderBrush" Value="{DynamicResource InputBorderBrush}" />
     </Style>
     <Style Selector="TextBox:disabled">
-        <Setter Property="Foreground" Value="{DynamicResource TextDisabledBrush}" />
+        <Setter Property="Foreground" Value="{DynamicResource InputForegroundBrush}" />
+        <Setter Property="Opacity" Value="{StaticResource DisabledOpacity}" />
     </Style>
     <Style Selector="TextBox /template/ TextBlock#PART_Watermark, TextBox /template/ TextBlock#PART_FloatingWatermark">
         <Setter Property="Foreground" Value="{DynamicResource TextSecondaryBrush}" />
@@ -269,8 +293,11 @@
     <!-- Button                                                                -->
     <!-- Default (no class) = secondary. Classes: accent | danger | subtle |   -->
     <!-- icon (square, icon-only; combine with subtle) | menu-item | swatch.   -->
+    <!-- Disabled state (all interactive controls): Opacity = DisabledOpacity. -->
     <!-- ===================================================================== -->
     <Style Selector="Button">
+        <!-- The focus ring is drawn outside the bounds (Margin -3); never clip it -->
+        <Setter Property="ClipToBounds" Value="False" />
         <Setter Property="FocusAdorner" Value="{x:Null}" />
         <Setter Property="FontFamily" Value="{DynamicResource AppFontFamily}" />
         <Setter Property="FontSize" Value="{StaticResource FontSizeBody}" />
@@ -309,8 +336,10 @@
                                           FontSize="{TemplateBinding FontSize}"
                                           FontWeight="{TemplateBinding FontWeight}" />
                     </Border>
+                    <!-- Drawn outside the control so it stays visible on accent / checked fills -->
                     <Border x:Name="PART_FocusRing"
-                            CornerRadius="{TemplateBinding CornerRadius}"
+                            Margin="{StaticResource FocusRingMargin}"
+                            CornerRadius="{TemplateBinding CornerRadius, Converter={StaticResource FocusRingRadius}}"
                             BorderBrush="{DynamicResource FocusRingBrush}"
                             BorderThickness="{StaticResource FocusRingThickness}"
                             IsHitTestVisible="False"
@@ -325,12 +354,8 @@
     <Style Selector="Button:pressed /template/ Border#PART_ButtonBorder">
         <Setter Property="Background" Value="{DynamicResource ButtonPressedBrush}" />
     </Style>
-    <Style Selector="Button:disabled /template/ Border#PART_ButtonBorder">
-        <Setter Property="Background" Value="{DynamicResource ButtonDisabledBrush}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource ButtonDisabledBrush}" />
-    </Style>
     <Style Selector="Button:disabled">
-        <Setter Property="Foreground" Value="{DynamicResource ButtonDisabledForegroundBrush}" />
+        <Setter Property="Opacity" Value="{StaticResource DisabledOpacity}" />
         <Setter Property="Cursor" Value="Arrow" />
     </Style>
     <Style Selector="Button:focus-visible /template/ Border#PART_FocusRing">
@@ -376,10 +401,6 @@
     <Style Selector="Button.subtle:pressed /template/ Border#PART_ButtonBorder">
         <Setter Property="Background" Value="{DynamicResource SubtlePressedBrush}" />
     </Style>
-    <Style Selector="Button.subtle:disabled /template/ Border#PART_ButtonBorder">
-        <Setter Property="Background" Value="Transparent" />
-        <Setter Property="BorderBrush" Value="Transparent" />
-    </Style>
 
     <!-- Square icon-only button (always give it ToolTip.Tip + AutomationProperties.Name) -->
     <Style Selector="Button.icon">
@@ -390,20 +411,34 @@
         <Setter Property="Padding" Value="8" />
     </Style>
 
-    <!-- Tray menu entries (created in TrayMenuWindowService) -->
+    <!-- Tray menu entries (created in TrayMenuWindowService; all visuals come from here) -->
     <Style Selector="Button.menu-item">
         <Setter Property="HorizontalAlignment" Value="Stretch" />
         <Setter Property="HorizontalContentAlignment" Value="Left" />
         <Setter Property="MinWidth" Value="180" />
-    </Style>
-    <Style Selector="Button.menu-item /template/ Border#PART_ButtonBorder">
+        <Setter Property="MinHeight" Value="{StaticResource MenuItemHeight}" />
+        <Setter Property="Padding" Value="10,4" />
+        <Setter Property="Foreground" Value="{DynamicResource TextPrimaryBrush}" />
         <Setter Property="Background" Value="Transparent" />
+        <Setter Property="BorderBrush" Value="Transparent" />
+        <Setter Property="BorderThickness" Value="0" />
     </Style>
     <Style Selector="Button.menu-item:pointerover /template/ Border#PART_ButtonBorder">
         <Setter Property="Background" Value="{DynamicResource SubtleHoverBrush}" />
     </Style>
     <Style Selector="Button.menu-item:pressed /template/ Border#PART_ButtonBorder">
         <Setter Property="Background" Value="{DynamicResource SubtlePressedBrush}" />
+    </Style>
+    <!-- Menus have no room outside their rows, so the menu focus ring is drawn inside -->
+    <Style Selector="Button.menu-item /template/ Border#PART_FocusRing">
+        <Setter Property="Margin" Value="0" />
+        <Setter Property="CornerRadius" Value="{StaticResource RadiusMd}" />
+    </Style>
+    <Style Selector="Border.menu-separator">
+        <Setter Property="Height" Value="1" />
+        <Setter Property="Margin" Value="8,4" />
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+        <Setter Property="Background" Value="{DynamicResource DividerBrush}" />
     </Style>
 
     <!-- Colour swatch (overlay quick palette) -->
@@ -423,12 +458,14 @@
         <Setter Property="BorderThickness" Value="2" />
     </Style>
 
-    <!-- HyperlinkButton: inline links (About window) -->
+    <!-- HyperlinkButton: inline links (About window). The -2 margin cancels the padding so the
+         link text lines up with surrounding text while the focus ring keeps 2px of room. -->
     <Style Selector="HyperlinkButton">
         <Setter Property="FocusAdorner" Value="{x:Null}" />
         <Setter Property="FontFamily" Value="{DynamicResource AppFontFamily}" />
         <Setter Property="Foreground" Value="{DynamicResource LinkBrush}" />
         <Setter Property="Padding" Value="2" />
+        <Setter Property="Margin" Value="-2,0,0,0" />
         <Setter Property="Cursor" Value="Hand" />
         <Setter Property="HorizontalAlignment" Value="Left" />
     </Style>
@@ -454,6 +491,8 @@
 
     <!-- ===================================================================== -->
     <!-- ToggleButton                                                          -->
+    <!-- Checked = tinted selection (AccentSubtle fill + accent border +       -->
+    <!-- AccentText foreground); solid accent is reserved for primary actions. -->
     <!-- ===================================================================== -->
     <Style Selector="ToggleButton">
         <Setter Property="FontFamily" Value="{DynamicResource AppFontFamily}" />
@@ -461,10 +500,12 @@
 
     <!-- Two-state text toggle (e.g. Bold / Italic) -->
     <Style Selector="ToggleButton.toggle">
+        <!-- The focus ring is drawn outside the bounds (Margin -3); never clip it -->
+        <Setter Property="ClipToBounds" Value="False" />
         <Setter Property="FocusAdorner" Value="{x:Null}" />
         <Setter Property="MinHeight" Value="{StaticResource ControlHeight}" />
         <Setter Property="MinWidth" Value="{StaticResource ControlHeight}" />
-        <Setter Property="Padding" Value="12,6" />
+        <Setter Property="Padding" Value="12,4" />
         <Setter Property="Foreground" Value="{DynamicResource ButtonForegroundBrush}" />
         <Setter Property="Background" Value="{DynamicResource ButtonBackgroundBrush}" />
         <Setter Property="BorderBrush" Value="{DynamicResource ButtonBorderBrush}" />
@@ -487,7 +528,8 @@
                                           Foreground="{TemplateBinding Foreground}" />
                     </Border>
                     <Border x:Name="PART_FocusRing"
-                            CornerRadius="{TemplateBinding CornerRadius}"
+                            Margin="{StaticResource FocusRingMargin}"
+                            CornerRadius="{TemplateBinding CornerRadius, Converter={StaticResource FocusRingRadius}}"
                             BorderBrush="{DynamicResource FocusRingBrush}"
                             BorderThickness="{StaticResource FocusRingThickness}"
                             IsHitTestVisible="False"
@@ -503,101 +545,30 @@
         <Setter Property="Background" Value="{DynamicResource ButtonPressedBrush}" />
     </Style>
     <Style Selector="ToggleButton.toggle:checked">
-        <Setter Property="Foreground" Value="{DynamicResource AccentForegroundBrush}" />
+        <Setter Property="Foreground" Value="{DynamicResource AccentTextBrush}" />
     </Style>
     <Style Selector="ToggleButton.toggle:checked /template/ Border#PART_ButtonBorder">
-        <Setter Property="Background" Value="{DynamicResource AccentPrimaryBrush}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource AccentPrimaryDarkBrush}" />
+        <Setter Property="Background" Value="{DynamicResource AccentSubtleBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource AccentPrimaryBrush}" />
+    </Style>
+    <Style Selector="ToggleButton.toggle:checked:pointerover /template/ Border#PART_ButtonBorder">
+        <Setter Property="Background" Value="{DynamicResource AccentSubtleHoverBrush}" />
     </Style>
     <Style Selector="ToggleButton.toggle:focus-visible /template/ Border#PART_FocusRing">
         <Setter Property="IsVisible" Value="True" />
     </Style>
     <Style Selector="ToggleButton.toggle:disabled">
-        <Setter Property="Opacity" Value="0.5" />
-    </Style>
-
-    <!-- Settings > Editor: "show this icon" option. Content = label, Tag = icon Geometry. -->
-    <Style Selector="ToggleButton.icon-option">
-        <Setter Property="FocusAdorner" Value="{x:Null}" />
-        <Setter Property="HorizontalAlignment" Value="Stretch" />
-        <Setter Property="HorizontalContentAlignment" Value="Left" />
-        <Setter Property="Padding" Value="6" />
-        <Setter Property="Margin" Value="0,0,8,4" />
-        <Setter Property="Background" Value="Transparent" />
-        <Setter Property="Foreground" Value="{DynamicResource TextPrimaryBrush}" />
-        <Setter Property="CornerRadius" Value="{StaticResource RadiusLg}" />
-        <Setter Property="Cursor" Value="Hand" />
-        <Setter Property="Template">
-            <ControlTemplate>
-                <Panel>
-                    <Border x:Name="PART_Row"
-                            Background="{TemplateBinding Background}"
-                            CornerRadius="{TemplateBinding CornerRadius}"
-                            Padding="{TemplateBinding Padding}">
-                        <Grid ColumnDefinitions="Auto,*">
-                            <Panel Width="{StaticResource ToolButtonSize}" Height="{StaticResource ToolButtonSize}">
-                                <Ellipse x:Name="PART_Circle"
-                                         Fill="{DynamicResource ButtonBackgroundBrush}"
-                                         Stroke="{DynamicResource ButtonBorderBrush}"
-                                         StrokeThickness="1" />
-                                <Viewbox Width="20" Height="20" Stretch="Uniform">
-                                    <Path x:Name="PART_Icon"
-                                          Data="{Binding Tag, RelativeSource={RelativeSource TemplatedParent}, DataType=ToggleButton}"
-                                          Fill="{DynamicResource IconBrush}"
-                                          Stretch="Uniform" />
-                                </Viewbox>
-                            </Panel>
-                            <ContentPresenter Grid.Column="1"
-                                              Margin="12,0,0,0"
-                                              VerticalAlignment="Center"
-                                              Content="{TemplateBinding Content}"
-                                              Foreground="{TemplateBinding Foreground}">
-                                <ContentPresenter.DataTemplates>
-                                    <DataTemplate DataType="x:String">
-                                        <TextBlock Text="{Binding}" TextWrapping="Wrap" />
-                                    </DataTemplate>
-                                </ContentPresenter.DataTemplates>
-                            </ContentPresenter>
-                        </Grid>
-                    </Border>
-                    <Border x:Name="PART_FocusRing"
-                            CornerRadius="{TemplateBinding CornerRadius}"
-                            BorderBrush="{DynamicResource FocusRingBrush}"
-                            BorderThickness="{StaticResource FocusRingThickness}"
-                            IsHitTestVisible="False"
-                            IsVisible="False" />
-                </Panel>
-            </ControlTemplate>
-        </Setter>
-    </Style>
-    <Style Selector="ToggleButton.icon-option:pointerover /template/ Border#PART_Row">
-        <Setter Property="Background" Value="{DynamicResource SubtleHoverBrush}" />
-    </Style>
-    <Style Selector="ToggleButton.icon-option:pressed /template/ Border#PART_Row">
-        <Setter Property="Background" Value="{DynamicResource SubtlePressedBrush}" />
-    </Style>
-    <Style Selector="ToggleButton.icon-option:unchecked /template/ Panel > Ellipse#PART_Circle, ToggleButton.icon-option:unchecked /template/ Viewbox">
-        <Setter Property="Opacity" Value="0.55" />
-    </Style>
-    <Style Selector="ToggleButton.icon-option:unchecked">
-        <Setter Property="Foreground" Value="{DynamicResource TextSecondaryBrush}" />
-    </Style>
-    <Style Selector="ToggleButton.icon-option:checked /template/ Ellipse#PART_Circle">
-        <Setter Property="Fill" Value="{DynamicResource AccentPrimaryBrush}" />
-        <Setter Property="Stroke" Value="{DynamicResource AccentPrimaryDarkBrush}" />
-    </Style>
-    <Style Selector="ToggleButton.icon-option:checked /template/ Path#PART_Icon">
-        <Setter Property="Fill" Value="{DynamicResource AccentForegroundBrush}" />
-    </Style>
-    <Style Selector="ToggleButton.icon-option:focus-visible /template/ Border#PART_FocusRing">
-        <Setter Property="IsVisible" Value="True" />
+        <Setter Property="Opacity" Value="{StaticResource DisabledOpacity}" />
     </Style>
 
     <!-- ===================================================================== -->
     <!-- Editor toolbar (OverlayWindow): round tool buttons                    -->
     <!-- Content = icon Geometry. Always set ToolTip.Tip.                      -->
+    <!-- Checked tool = tinted; "tool accent" (Copy) = the one solid primary.  -->
     <!-- ===================================================================== -->
     <Style Selector="Button.tool, ToggleButton.tool">
+        <!-- The focus ring is drawn outside the bounds (Margin -3); never clip it -->
+        <Setter Property="ClipToBounds" Value="False" />
         <Setter Property="FocusAdorner" Value="{x:Null}" />
         <Setter Property="Width" Value="{StaticResource ToolButtonSize}" />
         <Setter Property="Height" Value="{StaticResource ToolButtonSize}" />
@@ -632,7 +603,8 @@
                                           Foreground="{TemplateBinding Foreground}" />
                     </Border>
                     <Border x:Name="PART_FocusRing"
-                            CornerRadius="{TemplateBinding CornerRadius}"
+                            Margin="{StaticResource FocusRingMargin}"
+                            CornerRadius="{TemplateBinding CornerRadius, Converter={StaticResource FocusRingRadius}}"
                             BorderBrush="{DynamicResource FocusRingBrush}"
                             BorderThickness="{StaticResource FocusRingThickness}"
                             IsHitTestVisible="False"
@@ -649,11 +621,15 @@
         <Setter Property="Background" Value="{DynamicResource SubtlePressedBrush}" />
     </Style>
     <Style Selector="ToggleButton.tool:checked">
-        <Setter Property="Foreground" Value="{DynamicResource AccentForegroundBrush}" />
+        <Setter Property="Foreground" Value="{DynamicResource AccentTextBrush}" />
     </Style>
     <Style Selector="ToggleButton.tool:checked /template/ Border#PART_ButtonBorder">
-        <Setter Property="Background" Value="{DynamicResource AccentPrimaryBrush}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource AccentPrimaryDarkBrush}" />
+        <Setter Property="Background" Value="{DynamicResource AccentSubtleBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource AccentPrimaryBrush}" />
+    </Style>
+    <Style Selector="ToggleButton.tool:checked:pointerover /template/ Border#PART_ButtonBorder">
+        <Setter Property="Background" Value="{DynamicResource AccentSubtleHoverBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource AccentPrimaryBrush}" />
     </Style>
     <Style Selector="Button.tool.accent">
         <Setter Property="Foreground" Value="{DynamicResource AccentButtonForegroundBrush}" />
@@ -662,17 +638,14 @@
     </Style>
     <Style Selector="Button.tool.accent:pointerover /template/ Border#PART_ButtonBorder">
         <Setter Property="Background" Value="{DynamicResource AccentButtonHoverBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource AccentButtonBorderBrush}" />
     </Style>
     <Style Selector="Button.tool.accent:pressed /template/ Border#PART_ButtonBorder">
         <Setter Property="Background" Value="{DynamicResource AccentButtonPressedBrush}" />
     </Style>
     <Style Selector="Button.tool:disabled, ToggleButton.tool:disabled">
-        <Setter Property="Opacity" Value="0.35" />
+        <Setter Property="Opacity" Value="{StaticResource DisabledOpacity}" />
         <Setter Property="Cursor" Value="Arrow" />
-    </Style>
-    <Style Selector="Button.tool:disabled /template/ Border#PART_ButtonBorder">
-        <Setter Property="Background" Value="Transparent" />
-        <Setter Property="BorderBrush" Value="Transparent" />
     </Style>
     <Style Selector="Button.tool:focus-visible /template/ Border#PART_FocusRing, ToggleButton.tool:focus-visible /template/ Border#PART_FocusRing">
         <Setter Property="IsVisible" Value="True" />
@@ -686,7 +659,7 @@
     </Style>
 
     <!-- ===================================================================== -->
-    <!-- CheckBox                                                              -->
+    <!-- CheckBox (and CheckBox.icon-option for Settings > Editor icons)       -->
     <!-- ===================================================================== -->
     <Style Selector="CheckBox">
         <Setter Property="FocusAdorner" Value="{x:Null}" />
@@ -710,8 +683,8 @@
                               StrokeThickness="2"
                               IsVisible="False" />
                         <Border x:Name="PART_FocusRing"
-                                Margin="-3"
-                                CornerRadius="6"
+                                Margin="{StaticResource FocusRingMargin}"
+                                CornerRadius="7"
                                 BorderBrush="{DynamicResource FocusRingBrush}"
                                 BorderThickness="{StaticResource FocusRingThickness}"
                                 IsHitTestVisible="False"
@@ -735,6 +708,58 @@
             </ControlTemplate>
         </Setter>
     </Style>
+
+    <!-- Check box + neutral icon (Tag = icon Geometry) + wrapping label (Content) -->
+    <Style Selector="CheckBox.icon-option">
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+        <Setter Property="Margin" Value="0,0,8,4" />
+        <Setter Property="Template">
+            <ControlTemplate>
+                <Grid ColumnDefinitions="Auto,Auto,*" Background="Transparent" VerticalAlignment="Center">
+                    <Panel Width="18" Height="18" Margin="0,0,12,0" VerticalAlignment="Center">
+                        <Border x:Name="Box"
+                                Background="{DynamicResource InputBackgroundBrush}"
+                                BorderBrush="{DynamicResource InputBorderBrush}"
+                                BorderThickness="1"
+                                CornerRadius="{StaticResource RadiusSm}" />
+                        <Path x:Name="CheckMark"
+                              Data="M 3.5 9 L 7.5 13 L 14.5 5"
+                              Stroke="{DynamicResource AccentForegroundBrush}"
+                              StrokeThickness="2"
+                              IsVisible="False" />
+                        <Border x:Name="PART_FocusRing"
+                                Margin="{StaticResource FocusRingMargin}"
+                                CornerRadius="7"
+                                BorderBrush="{DynamicResource FocusRingBrush}"
+                                BorderThickness="{StaticResource FocusRingThickness}"
+                                IsHitTestVisible="False"
+                                IsVisible="False" />
+                    </Panel>
+                    <Viewbox Grid.Column="1"
+                             Width="20"
+                             Height="20"
+                             Margin="0,0,10,0"
+                             Stretch="Uniform"
+                             VerticalAlignment="Center">
+                        <Path Data="{Binding Tag, RelativeSource={RelativeSource TemplatedParent}, DataType=CheckBox}"
+                              Fill="{DynamicResource IconBrush}"
+                              Stretch="Uniform" />
+                    </Viewbox>
+                    <ContentPresenter Grid.Column="2"
+                                      Content="{TemplateBinding Content}"
+                                      Foreground="{TemplateBinding Foreground}"
+                                      VerticalAlignment="Center">
+                        <ContentPresenter.DataTemplates>
+                            <DataTemplate DataType="x:String">
+                                <TextBlock Text="{Binding}" TextWrapping="Wrap" />
+                            </DataTemplate>
+                        </ContentPresenter.DataTemplates>
+                    </ContentPresenter>
+                </Grid>
+            </ControlTemplate>
+        </Setter>
+    </Style>
+
     <Style Selector="CheckBox:checked /template/ Border#Box">
         <Setter Property="Background" Value="{DynamicResource AccentPrimaryBrush}" />
         <Setter Property="BorderBrush" Value="{DynamicResource AccentPrimaryBrush}" />
@@ -748,11 +773,8 @@
     <Style Selector="CheckBox:focus-visible /template/ Border#PART_FocusRing">
         <Setter Property="IsVisible" Value="True" />
     </Style>
-    <Style Selector="CheckBox:disabled /template/ Border#Box">
-        <Setter Property="Opacity" Value="0.5" />
-    </Style>
     <Style Selector="CheckBox:disabled">
-        <Setter Property="Foreground" Value="{DynamicResource TextDisabledBrush}" />
+        <Setter Property="Opacity" Value="{StaticResource DisabledOpacity}" />
         <Setter Property="Cursor" Value="Arrow" />
     </Style>
 
@@ -763,9 +785,11 @@
         <Setter Property="FocusAdorner" Value="{x:Null}" />
         <Setter Property="Background" Value="{DynamicResource SliderTrackBrush}" />
         <Setter Property="Foreground" Value="{DynamicResource SliderFillBrush}" />
+        <Setter Property="MinHeight" Value="{StaticResource ControlHeight}" />
+        <Setter Property="Height" Value="{StaticResource ControlHeight}" />
     </Style>
     <Style Selector="Slider.quality:disabled">
-        <Setter Property="Opacity" Value="0.55" />
+        <Setter Property="Opacity" Value="{StaticResource DisabledOpacity}" />
     </Style>
     <Style Selector="Slider.quality /template/ Thumb">
         <Setter Property="Width" Value="16" />

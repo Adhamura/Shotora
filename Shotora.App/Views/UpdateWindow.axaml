@@ -64,9 +64,8 @@
                        Stretch="Uniform"
                        VerticalAlignment="Top" />
                 <StackPanel Grid.Column="1" VerticalAlignment="Center" Spacing="4">
-                    <TextBlock Classes="title"
-                               Text="{Binding StatusTitle}"
-                               TextWrapping="Wrap" />
+                    <TextBlock Classes="subtitle"
+                               Text="{Binding StatusTitle}" />
                     <TextBlock Classes="secondary"
                                Text="{Binding StatusDetail}"
                                IsVisible="{Binding HasStatusDetail}"

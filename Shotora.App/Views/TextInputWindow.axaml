@@ -3,7 +3,6 @@
         xmlns:controls="clr-namespace:Shotora.App.Controls"
         x:Class="Shotora.App.Views.TextInputWindow"
         Width="520"
-        MinWidth="400"
         SizeToContent="Height"
         WindowStartupLocation="CenterOwner"
         CanResize="False"

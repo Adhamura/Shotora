@@ -5,8 +5,6 @@
         Title="{DynamicResource LocOcrResultTitle}"
         Width="480"
         Height="260"
-        MinWidth="320"
-        MinHeight="200"
         CanResize="False"
         SystemDecorations="None"
         Background="Transparent"
@@ -19,16 +17,17 @@
                 <Button Content="{DynamicResource LocCommonClose}"
                         IsCancel="True"
                         Click="Close_Click" />
-                <Button Classes="accent"
+                <Button x:Name="CopyButton"
+                        Classes="accent"
                         Content="{DynamicResource LocToolCopy}"
                         IsDefault="True"
                         Click="Copy_Click" />
             </StackPanel>
         </controls:DialogShell.Footer>
 
+        <!-- "multiline" (not AcceptsReturn) so Enter reaches the default Copy button -->
         <TextBox x:Name="ResultBox"
-                 TextWrapping="Wrap"
-                 AcceptsReturn="True"
+                 Classes="multiline"
                  IsReadOnly="True"
                  AutomationProperties.Name="{DynamicResource LocOcrResultHint}" />
     </controls:DialogShell>

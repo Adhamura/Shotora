@@ -9,14 +9,11 @@
         <FontFamily x:Key="AppFontFamily">avares://Shotora.App/Content/KazukiReiwa-Medium.ttf#KazukiReiwa</FontFamily>
 
         <!-- Surfaces -->
-        <SolidColorBrush x:Key="WindowBackgroundBrush" Color="#FFF3F3F3" />
-        <SolidColorBrush x:Key="AppBackgroundBrush" Color="#FFF5F5F5" />
         <SolidColorBrush x:Key="PanelBackgroundBrush" Color="#FFF5F5F5" />
         <SolidColorBrush x:Key="PanelAltBackgroundBrush" Color="#F2FAFAFA" />
         <SolidColorBrush x:Key="PanelBorderBrush" Color="#FFD6D6D6" />
         <SolidColorBrush x:Key="CardBackgroundBrush" Color="#FFFFFFFF" />
         <SolidColorBrush x:Key="DividerBrush" Color="#FFE3E3E3" />
-        <SolidColorBrush x:Key="WindowOverlayBackgroundBrush" Color="#AAFFFFFF" />
         <SolidColorBrush x:Key="OverlayMaskBrush" Color="#66FFFFFF" />
 
         <!-- Text & icons -->
@@ -38,8 +35,6 @@
         <SolidColorBrush x:Key="ButtonHoverBrush" Color="#FFF0F0F0" />
         <SolidColorBrush x:Key="ButtonPressedBrush" Color="#FFE4E4E4" />
         <SolidColorBrush x:Key="ButtonForegroundBrush" Color="#FF1F1F1F" />
-        <SolidColorBrush x:Key="ButtonDisabledBrush" Color="#FFEDEDED" />
-        <SolidColorBrush x:Key="ButtonDisabledForegroundBrush" Color="#FF9A9A9A" />
 
         <!-- Subtle (ghost) buttons, menu items, tabs, title-bar buttons -->
         <SolidColorBrush x:Key="SubtleHoverBrush" Color="#12000000" />
@@ -48,8 +43,11 @@
         <!-- Accent (primary actions, selection, checked states) -->
         <SolidColorBrush x:Key="AccentPrimaryBrush" Color="#FF8C2BD9" />
         <SolidColorBrush x:Key="AccentPrimaryDarkBrush" Color="#FF601C97" />
-        <SolidColorBrush x:Key="AccentSecondaryBrush" Color="#FFA855F7" />
         <SolidColorBrush x:Key="AccentForegroundBrush" Color="#FFFFFFFF" />
+        <!-- Tinted "selected" treatment: checked tools/toggles (fill + border + AccentTextBrush foreground) -->
+        <SolidColorBrush x:Key="AccentSubtleBrush" Color="#248C2BD9" />
+        <SolidColorBrush x:Key="AccentSubtleHoverBrush" Color="#388C2BD9" />
+        <SolidColorBrush x:Key="AccentTextBrush" Color="#FF7A1FC2" />
         <SolidColorBrush x:Key="AccentButtonBackgroundBrush" Color="#FF8C2BD9" />
         <SolidColorBrush x:Key="AccentButtonHoverBrush" Color="#FF7B24C2" />
         <SolidColorBrush x:Key="AccentButtonPressedBrush" Color="#FF691EA6" />
@@ -81,6 +79,5 @@
         <SolidColorBrush x:Key="SliderThumbBrush" Color="#FFFFFFFF" />
         <SolidColorBrush x:Key="SliderThumbBorderBrush" Color="#FF8E8E8E" />
         <SolidColorBrush x:Key="SliderDisabledThumbBrush" Color="#FFD6D6D6" />
-        <SolidColorBrush x:Key="SliderValueBrush" Color="#FF1F1F1F" />
     </Styles.Resources>
 </Styles>

@@ -7,6 +7,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Reflection;
 using Avalonia;
+using Avalonia.Automation;
 using Avalonia.Controls;
 using Avalonia.Controls.Templates;
 using Avalonia.Data;
@@ -139,6 +140,13 @@ public partial class SearchableComboBox : UserControl
 	protected override void OnPropertyChanged(AvaloniaPropertyChangedEventArgs change)
 	{
 		base.OnPropertyChanged(change);
+
+		// The UserControl itself is not focusable; screen readers land on the inner text box,
+		// so it carries the accessible name (e.g. the label supplied by LabeledField).
+		if (change.Property == AutomationProperties.NameProperty && PART_TextBox != null)
+		{
+			AutomationProperties.SetName(PART_TextBox, change.GetNewValue<string?>());
+		}
 
 		if (change.Property == ItemsSourceProperty)
 		{
