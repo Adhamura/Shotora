@@ -5,6 +5,7 @@ var selfContained = Argument("selfcontained", false);
 var outputArg = Argument("output", "./ready");
 var channel = Argument("channel", "stable");
 var useVp = Argument("usevp", Argument("useVp", false));
+var versionArg = Argument("version", string.Empty);
 
 var ridMap = new Dictionary<string, (string os, string arch, string dest)>
 {
@@ -43,17 +44,25 @@ Task("Publish")
 
     Information($"Publishing {runtimeArg} -> {baseDir} (single-file:{singleFile}, self-contained:{selfContained})...");
 
+    var msbuildSettings = new DotNetMSBuildSettings()
+        .WithProperty("EnableCompressionInSingleFile", singleFile ? "true" : "false")
+        .WithProperty("InvariantGlobalization", "true")
+        .WithProperty("DebugType", "None")
+        .WithProperty("DebugSymbols", "false");
+
+    if (!string.IsNullOrWhiteSpace(versionArg))
+    {
+        // Stamps every assembly so the app reports the release version (used by the in-app updater).
+        msbuildSettings = msbuildSettings.WithProperty("Version", versionArg);
+    }
+
     DotNetPublish("./Shotora.App/Shotora.App.csproj", new DotNetPublishSettings {
         Configuration = configuration,
         Runtime = runtimeArg,
         SelfContained = selfContained,
         PublishSingleFile = singleFile,
         OutputDirectory = baseDir,
-        MSBuildSettings = new DotNetMSBuildSettings()
-            .WithProperty("EnableCompressionInSingleFile", singleFile ? "true" : "false")
-            .WithProperty("InvariantGlobalization", "true")
-            .WithProperty("DebugType", "None")
-            .WithProperty("DebugSymbols", "false")
+        MSBuildSettings = msbuildSettings
     });
 
     var outputName = runtimeArg.StartsWith("win")

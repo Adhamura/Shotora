@@ -1,0 +1,145 @@
+name: Release
+
+# Publishes a GitHub release with Velopack packages for every platform.
+# Installed copies of Shotora check this feed and update themselves in place;
+# portable copies are pointed to the release page.
+#
+# Trigger: push a tag like "v1.2.0", or run manually with a version.
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Semantic version to release (e.g. 1.2.0)"
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  DOTNET_NOLOGO: true
+  DOTNET_CLI_TELEMETRY_OPTOUT: true
+
+jobs:
+  release:
+    name: ${{ matrix.rid }}
+    strategy:
+      fail-fast: false
+      max-parallel: 1 # jobs append to the same GitHub release; run them one at a time
+      matrix:
+        include:
+          - rid: win-x64
+            os: windows-latest
+            exe: Shotora.App.exe
+            icon: Shotora.App/Assets/Shotora.ico
+          - rid: linux-x64
+            os: ubuntu-latest
+            exe: Shotora.App
+            icon: Shotora.App/Assets/Shotora.png
+          - rid: osx-arm64
+            os: macos-latest
+            exe: Shotora.App
+            icon: Shotora.App/Assets/Shotora.icns
+          - rid: osx-x64
+            os: macos-13
+            exe: Shotora.App
+            icon: Shotora.App/Assets/Shotora.icns
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # full history for release notes
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: global.json
+
+      - name: Resolve version
+        id: version
+        shell: bash
+        env:
+          VERSION_INPUT: ${{ inputs.version }}
+        run: |
+          if [ -n "$VERSION_INPUT" ]; then v="${VERSION_INPUT#v}"; else v="${GITHUB_REF_NAME#v}"; fi
+          if ! [[ "$v" =~ ^[0-9]+\.[0-9]+\.[0-9]+(-[0-9A-Za-z.-]+)?$ ]]; then echo "Invalid version '$v'"; exit 1; fi
+          echo "value=$v" >> "$GITHUB_OUTPUT"
+          if [[ "$v" == *-* ]]; then echo "pre=--pre" >> "$GITHUB_OUTPUT"; else echo "pre=" >> "$GITHUB_OUTPUT"; fi
+
+      - name: Generate release notes
+        shell: bash
+        run: |
+          previous=$(git describe --tags --abbrev=0 "HEAD^" 2>/dev/null || true)
+          range=${previous:+$previous..HEAD}
+          {
+            echo "## What's new"
+            echo
+            git log ${range:-HEAD} --no-merges -n 50 --pretty=tformat:'- %s' | { grep -v -i -E '^- (wip|fixup)' || true; }
+          } > release-notes.md
+          cat release-notes.md
+
+      - name: Restore tools
+        run: dotnet tool restore
+
+      - name: Publish
+        shell: bash
+        run: >
+          dotnet tool run dotnet-cake --target=Publish
+          --runtime=${{ matrix.rid }}
+          --configuration=Release
+          --selfcontained=true
+          --version=${{ steps.version.outputs.value }}
+          --output=./publish/${{ matrix.rid }}
+
+      - name: Download previous release (enables delta updates)
+        shell: bash
+        continue-on-error: true
+        env:
+          DOTNET_ROLL_FORWARD: LatestMajor
+        run: >
+          dotnet tool run vpk download github
+          --repoUrl "${{ github.server_url }}/${{ github.repository }}"
+          --channel ${{ matrix.rid }}
+          --token "${{ secrets.GITHUB_TOKEN }}"
+          --outputDir ./releases/${{ matrix.rid }}
+
+      - name: Pack
+        shell: bash
+        env:
+          DOTNET_ROLL_FORWARD: LatestMajor
+        # On each runner "vpk pack" produces the native package (Setup.exe / .AppImage / .pkg).
+        run: >
+          dotnet tool run vpk pack
+          --packId Shotora
+          --packTitle Shotora
+          --packAuthors "Kazuki Kimura"
+          --packVersion "${{ steps.version.outputs.value }}"
+          --packDir ./publish/${{ matrix.rid }}
+          --mainExe ${{ matrix.exe }}
+          --runtime ${{ matrix.rid }}
+          --channel ${{ matrix.rid }}
+          --icon "${{ matrix.icon }}"
+          --releaseNotes release-notes.md
+          --outputDir ./releases/${{ matrix.rid }}
+
+      - name: Upload to GitHub release
+        shell: bash
+        env:
+          DOTNET_ROLL_FORWARD: LatestMajor
+        run: >
+          dotnet tool run vpk upload github
+          --repoUrl "${{ github.server_url }}/${{ github.repository }}"
+          --channel ${{ matrix.rid }}
+          --outputDir ./releases/${{ matrix.rid }}
+          --tag "v${{ steps.version.outputs.value }}"
+          --releaseName "Shotora v${{ steps.version.outputs.value }}"
+          --publish
+          --merge
+          ${{ steps.version.outputs.pre }}
+          --token "${{ secrets.GITHUB_TOKEN }}"
