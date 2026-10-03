@@ -269,7 +269,7 @@
     <sys:String x:Key="LocUpdateUpToDate">Shotora è actual</sys:String>
     <sys:String x:Key="LocUpdateUpToDateDetailFormat">La versiun {0} è la pli nova.</sys:String>
     <sys:String x:Key="LocUpdateAvailableFormat">Shotora {0} è disponibla</sys:String>
-    <sys:String x:Key="LocUpdateAvailableDetailFormat">Ti has la versiun {0}. L'actualisaziun vegn telechargiada en il fund ed installada cura che Shotora vegn reavià.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Ti has la versiun {0}. Telechargia ussa l'actualisaziun — Shotora vegn reavià per terminar l'installaziun.</sys:String>
     <sys:String x:Key="LocUpdateManualDetail">Telechargia la nova versiun da GitHub per actualisar questa copia da Shotora.</sys:String>
     <sys:String x:Key="LocUpdateFailed">Impussibel da tschertgar actualisaziuns</sys:String>
     <sys:String x:Key="LocUpdateFailedDetail">Controllescha tia connexiun d'internet ed emprova anc ina giada.</sys:String>
@@ -279,6 +279,6 @@
     <sys:String x:Key="LocUpdateInstalling">L'actualisaziun vegn installada…</sys:String>
     <sys:String x:Key="LocUpdateIdle">Controllar sch'ina versiun pli nova da Shotora è disponibla.</sys:String>
     <sys:String x:Key="LocUpdateCurrentVersionFormat">Versiun {0}</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailed">The update couldn't be installed</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailedDetail">The download didn't complete. Check your connection and try again.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">L'actualisaziun n'ha betg pudì vegnir installada</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">La telechargiada n'è betg vegnida terminada. Controllescha tia connexiun ed emprova anc ina giada.</sys:String>
 </ResourceDictionary>

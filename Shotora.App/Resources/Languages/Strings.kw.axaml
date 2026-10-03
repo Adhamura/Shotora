@@ -269,7 +269,7 @@
     <sys:String x:Key="LocUpdateUpToDate">Shotora yw nowedhys</sys:String>
     <sys:String x:Key="LocUpdateUpToDateDetailFormat">Versyon {0} yw an diwettha.</sys:String>
     <sys:String x:Key="LocUpdateAvailableFormat">Shotora {0} yw kavadow</sys:String>
-    <sys:String x:Key="LocUpdateAvailableDetailFormat">Yma dhis versyon {0}. An nowedhyans a iskarg y'n keyndir hag a ynstall pan dhastalleth Shotora.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Yma dhis versyon {0}. Iskarg an nowedhyans lemmyn — Shotora a dhastalleth rag gorfenna an ynstallyans.</sys:String>
     <sys:String x:Key="LocUpdateManualDetail">Iskarg an versyon nowydh a GitHub rag nowedhi an dasskrif ma a Shotora.</sys:String>
     <sys:String x:Key="LocUpdateFailed">Ny veu possybyl checkya nowedhyansow</sys:String>
     <sys:String x:Key="LocUpdateFailedDetail">Checkya dha junyans kesrosweyth ha assay arta.</sys:String>
@@ -279,6 +279,6 @@
     <sys:String x:Key="LocUpdateInstalling">Owth ynstallya nowedhyans…</sys:String>
     <sys:String x:Key="LocUpdateIdle">Checkya mars yw versyon nowyttha a Shotora kavadow.</sys:String>
     <sys:String x:Key="LocUpdateCurrentVersionFormat">Versyon {0}</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailed">The update couldn't be installed</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailedDetail">The download didn't complete. Check your connection and try again.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">Ny veu possybyl ynstallya an nowedhyans</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">Ny veu gorfennys an iskargans. Checkya dha junyans ha assay arta.</sys:String>
 </ResourceDictionary>

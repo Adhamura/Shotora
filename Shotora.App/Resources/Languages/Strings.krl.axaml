@@ -269,7 +269,7 @@
     <sys:String x:Key="LocUpdateUpToDate">Shotora on ajan tazal</sys:String>
     <sys:String x:Key="LocUpdateUpToDateDetailFormat">Versio {0} on uuzin.</sys:String>
     <sys:String x:Key="LocUpdateAvailableFormat">Shotora {0} on suajavil</sys:String>
-    <sys:String x:Key="LocUpdateAvailableDetailFormat">Sinul on versio {0}. Päivitys ladavuu tuagan da azennetah, konzu Shotora käynnistyy uuvesti.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Sinul on versio {0}. Veratä päivitys nygöi – Shotora käynnistyy uuvesti, ku loppie azennuksen.</sys:String>
     <sys:String x:Key="LocUpdateManualDetail">Veratä uuzi versio GitHubas, ku päivittiä tämä Shotoran kopii.</sys:String>
     <sys:String x:Key="LocUpdateFailed">Päivityksii ei voinuh kaččuo</sys:String>
     <sys:String x:Key="LocUpdateFailedDetail">Kaččo internetyhteys da opittele uuvesti.</sys:String>
@@ -279,6 +279,6 @@
     <sys:String x:Key="LocUpdateInstalling">Päivitys azennetah…</sys:String>
     <sys:String x:Key="LocUpdateIdle">Kaččo, onko Shotoras suajavil uuvembi versio.</sys:String>
     <sys:String x:Key="LocUpdateCurrentVersionFormat">Versio {0}</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailed">The update couldn't be installed</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailedDetail">The download didn't complete. Check your connection and try again.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">Päivitysty ei voinuh azentua</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">Lua ei loppiettu. Kaččo yhteys da opittele uuvesti.</sys:String>
 </ResourceDictionary>

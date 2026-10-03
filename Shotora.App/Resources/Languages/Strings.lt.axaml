@@ -269,7 +269,7 @@
     <sys:String x:Key="LocUpdateUpToDate">Shotora yra atnaujinta</sys:String>
     <sys:String x:Key="LocUpdateUpToDateDetailFormat">Versija {0} yra naujausia.</sys:String>
     <sys:String x:Key="LocUpdateAvailableFormat">Galima Shotora {0}</sys:String>
-    <sys:String x:Key="LocUpdateAvailableDetailFormat">Turite versiją {0}. Naujinimas atsisiunčiamas fone ir įdiegiamas iš naujo paleidus Shotora.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Turite versiją {0}. Atsisiųskite naujinimą dabar – Shotora bus paleista iš naujo, kad baigtų diegimą.</sys:String>
     <sys:String x:Key="LocUpdateManualDetail">Atsisiųskite naują versiją iš GitHub, kad atnaujintumėte šią Shotora kopiją.</sys:String>
     <sys:String x:Key="LocUpdateFailed">Nepavyko patikrinti naujinimų</sys:String>
     <sys:String x:Key="LocUpdateFailedDetail">Patikrinkite interneto ryšį ir bandykite dar kartą.</sys:String>
@@ -279,6 +279,6 @@
     <sys:String x:Key="LocUpdateInstalling">Diegiamas naujinimas…</sys:String>
     <sys:String x:Key="LocUpdateIdle">Patikrinkite, ar yra naujesnė Shotora versija.</sys:String>
     <sys:String x:Key="LocUpdateCurrentVersionFormat">Versija {0}</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailed">The update couldn't be installed</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailedDetail">The download didn't complete. Check your connection and try again.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">Nepavyko įdiegti naujinimo</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">Atsisiuntimas nebaigtas. Patikrinkite ryšį ir bandykite dar kartą.</sys:String>
 </ResourceDictionary>

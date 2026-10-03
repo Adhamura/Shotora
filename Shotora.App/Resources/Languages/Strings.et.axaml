@@ -269,7 +269,7 @@
     <sys:String x:Key="LocUpdateUpToDate">Shotora on ajakohane</sys:String>
     <sys:String x:Key="LocUpdateUpToDateDetailFormat">Versioon {0} on uusim versioon.</sys:String>
     <sys:String x:Key="LocUpdateAvailableFormat">Shotora {0} on saadaval</sys:String>
-    <sys:String x:Key="LocUpdateAvailableDetailFormat">Sul on versioon {0}. Värskendus laaditakse taustal alla ja paigaldatakse Shotora taaskäivitamisel.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Sul on versioon {0}. Laadi värskendus kohe alla – Shotora taaskäivitub, et paigaldamine lõpule viia.</sys:String>
     <sys:String x:Key="LocUpdateManualDetail">Laadi uus versioon GitHubist alla, et värskendada seda Shotora koopiat.</sys:String>
     <sys:String x:Key="LocUpdateFailed">Värskendusi ei õnnestunud otsida</sys:String>
     <sys:String x:Key="LocUpdateFailedDetail">Kontrolli internetiühendust ja proovi uuesti.</sys:String>
@@ -279,6 +279,6 @@
     <sys:String x:Key="LocUpdateInstalling">Värskenduse paigaldamine…</sys:String>
     <sys:String x:Key="LocUpdateIdle">Kontrolli, kas Shotorast on saadaval uuem versioon.</sys:String>
     <sys:String x:Key="LocUpdateCurrentVersionFormat">Versioon {0}</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailed">The update couldn't be installed</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailedDetail">The download didn't complete. Check your connection and try again.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">Värskendust ei õnnestunud paigaldada</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">Allalaadimine ei lõppenud. Kontrolli ühendust ja proovi uuesti.</sys:String>
 </ResourceDictionary>

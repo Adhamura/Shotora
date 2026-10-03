@@ -269,7 +269,7 @@
     <sys:String x:Key="LocUpdateUpToDate">Shotora er dagført</sys:String>
     <sys:String x:Key="LocUpdateUpToDateDetailFormat">Útgáva {0} er nýggjasta útgávan.</sys:String>
     <sys:String x:Key="LocUpdateAvailableFormat">Shotora {0} er tøkt</sys:String>
-    <sys:String x:Key="LocUpdateAvailableDetailFormat">Tú hevur útgávu {0}. Dagføringin verður tikin niður í bakgrundini og løgd inn, tá ið Shotora verður endurbyrjað.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Tú hevur útgávu {0}. Tak dagføringina niður nú – Shotora endurbyrjar fyri at fullføra innleggingina.</sys:String>
     <sys:String x:Key="LocUpdateManualDetail">Tak nýggju útgávuna niður frá GitHub fyri at dagføra hetta avritið av Shotora.</sys:String>
     <sys:String x:Key="LocUpdateFailed">Kundi ikki leita eftir dagføringum</sys:String>
     <sys:String x:Key="LocUpdateFailedDetail">Kanna internetsambandið og royn aftur.</sys:String>
@@ -279,6 +279,6 @@
     <sys:String x:Key="LocUpdateInstalling">Leggur dagføring inn…</sys:String>
     <sys:String x:Key="LocUpdateIdle">Kanna, um ein nýggjari útgáva av Shotora er tøk.</sys:String>
     <sys:String x:Key="LocUpdateCurrentVersionFormat">Útgáva {0}</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailed">The update couldn't be installed</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailedDetail">The download didn't complete. Check your connection and try again.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">Dagføringin kundi ikki leggjast inn</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">Niðurtøkan varð ikki liðug. Kanna sambandið og royn aftur.</sys:String>
 </ResourceDictionary>

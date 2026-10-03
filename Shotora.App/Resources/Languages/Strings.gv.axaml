@@ -269,7 +269,7 @@
     <sys:String x:Key="LocUpdateUpToDate">Ta Shotora noa</sys:String>
     <sys:String x:Key="LocUpdateUpToDateDetailFormat">Lhiaggan {0} yn lhiaggan s'noa.</sys:String>
     <sys:String x:Key="LocUpdateAvailableFormat">Ta Shotora {0} ry-gheddyn</sys:String>
-    <sys:String x:Key="LocUpdateAvailableDetailFormat">Ta lhiaggan {0} ayd. Ta'n noaghey lughtey neose ayns y chooylrey as soie tra ta Shotora aa-ghoaill toshiaght.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">Ta lhiaggan {0} ayd. Lughtee neose yn noaghey nish — nee Shotora aa-ghoaill toshiaght dy chur jerrey er y hoie.</sys:String>
     <sys:String x:Key="LocUpdateManualDetail">Lughtee neose yn lhiaggan noa veih GitHub dy noaghey yn coip shoh jeh Shotora.</sys:String>
     <sys:String x:Key="LocUpdateFailed">Cha dod jeeaghyn son noaghaghyn</sys:String>
     <sys:String x:Key="LocUpdateFailedDetail">Jeeagh er dty chonnaght Idrlion as pryow reesht.</sys:String>
@@ -279,6 +279,6 @@
     <sys:String x:Key="LocUpdateInstalling">Soie noaghey…</sys:String>
     <sys:String x:Key="LocUpdateIdle">Jeeagh vel lhiaggan s'noa jeh Shotora ry-gheddyn.</sys:String>
     <sys:String x:Key="LocUpdateCurrentVersionFormat">Lhiaggan {0}</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailed">The update couldn't be installed</sys:String>
-    <sys:String x:Key="LocUpdateDownloadFailedDetail">The download didn't complete. Check your connection and try again.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">Cha dod yn noaghey ve soit</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">Cha daink y lughtey neose gys jerrey. Jeeagh er dty chonnaght as pryow reesht.</sys:String>
 </ResourceDictionary>
