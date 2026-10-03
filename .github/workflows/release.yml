@@ -51,10 +51,10 @@ jobs:
     name: Build and test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-dotnet@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-dotnet@v5
         with:
-          global-json-file: global.json
+          dotnet-version: 10.0.x # global.json pins 10.0.0 (rollForward is local-only), which setup-dotnet cannot download
       - name: Build
         run: dotnet build Shotora.sln -c Release
       - name: Test
@@ -90,13 +90,13 @@ jobs:
       DOTNET_ROLL_FORWARD: LatestMajor # vpk targets an older runtime
       COLUMNS: 160 # Cake's console renderer needs a width when there is no TTY
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0 # full history for release notes
 
-      - uses: actions/setup-dotnet@v4
+      - uses: actions/setup-dotnet@v5
         with:
-          global-json-file: global.json
+          dotnet-version: 10.0.x # global.json pins 10.0.0 (rollForward is local-only), which setup-dotnet cannot download
 
       - name: Generate release notes
         shell: bash
