@@ -49,7 +49,7 @@
                 <TextBlock Text="{DynamicResource LocAboutDescription}"
                            TextWrapping="Wrap" />
 
-                <!-- Details: label/value rows. VersionSection is the extension point for update checks. -->
+                <!-- Details: label/value rows -->
                 <Border Classes="card">
                     <StackPanel Grid.IsSharedSizeScope="True" Spacing="8">
                         <Grid x:Name="VersionSection">
@@ -81,6 +81,14 @@
                         </Grid>
                     </StackPanel>
                 </Border>
+
+                <!-- Updates: check GitHub releases, download and install in place -->
+                <StackPanel Spacing="8">
+                    <TextBlock Classes="label" Text="{DynamicResource LocUpdateSectionTitle}" />
+                    <Border Classes="card">
+                        <controls:UpdatePanel DataContext="{Binding Updates}" />
+                    </Border>
+                </StackPanel>
 
                 <StackPanel Spacing="4">
                     <TextBlock Classes="label" Text="{DynamicResource LocAboutLinks}" />

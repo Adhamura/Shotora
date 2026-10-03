@@ -59,4 +59,6 @@ public static class LocalizationKeys
 	public const string UpdateInstalling       = "LocUpdateInstalling";
 	public const string UpdateIdle             = "LocUpdateIdle";
 	public const string UpdateCurrentVersionFmt = "LocUpdateCurrentVersionFormat";
+	public const string UpdateLaterButton      = "LocUpdateLaterButton";
+	public const string CommonClose            = "LocCommonClose";
 }

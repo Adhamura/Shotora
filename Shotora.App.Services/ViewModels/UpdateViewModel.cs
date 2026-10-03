@@ -103,7 +103,20 @@ public sealed class UpdateViewModel : ViewModelBase, IDisposable
 
 	public string? ReleaseNotes => string.IsNullOrWhiteSpace(Result?.ReleaseNotes) ? null : Result!.ReleaseNotes!.Trim();
 
-	public bool HasReleaseNotes => IsUpdateAvailable && ReleaseNotes != null;
+	/// <summary>Release notes converted from Markdown to display-ready plain text.</summary>
+	public string? ReleaseNotesText => ReleaseNotesFormatter.ToPlainText(ReleaseNotes);
+
+	public bool HasReleaseNotes => IsUpdateAvailable && ReleaseNotesText != null;
+
+	/// <summary>Primary footer action of the update dialog: exactly one of install / restart / open release page.</summary>
+	public bool ShowInstallButton => CanDownload;
+
+	/// <summary>Dialog dismiss label: "Remind me later" while an update is pending, otherwise "Close".</summary>
+	public string DismissText => IsUpdateAvailable && !IsReadyToInstall
+		? Text(LocalizationKeys.UpdateLaterButton, LocalizationFallbacks.Update.LaterButton)
+		: Text(LocalizationKeys.CommonClose,       LocalizationFallbacks.Common.Close);
+
+	public bool CanSkipVersion => IsUpdateAvailable && !IsBusy && !IsReadyToInstall;
 
 	public string StatusTitle => Status switch
 	{

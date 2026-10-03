@@ -18,6 +18,7 @@ using Shotora.App.Interfaces.Abstractions;
 using Shotora.App.Interfaces.Ocr.EastOcr;
 using Shotora.App.Interfaces.Providers;
 using Shotora.App.Interfaces.System;
+using Shotora.App.Interfaces.Updates;
 using Shotora.App.Interfaces.ViewModels;
 using Shotora.App.Models;
 using Shotora.App.Models.Enums;
@@ -43,7 +44,9 @@ public class App(
 	Func<AboutViewModel>         aboutViewModelFactory,
 	IMaintenanceEasyOcrService   maintenanceEasyOcrRuntimeService,
 	ILocalizationProvider        localizationProvider,
-	IStartupService              startupService) : Application
+	IStartupService              startupService,
+	IUpdateCoordinator           updateCoordinator,
+	Func<UpdateWindow>           updateWindowFactory) : Application
 {
 	private OverlayWindow? _activeOverlay;
 	private string?        _currentLanguage;
@@ -51,6 +54,7 @@ public class App(
 	private bool           _prewarmed;
 	private AppSettings    _settings = new();
 	private bool           _settingsHandlersAttached;
+	private UpdateWindow?  _updateWindow;
 
 	public override void Initialize()
 	{
@@ -93,6 +97,10 @@ public class App(
 				e.Cancel = true;
 				desktop.MainWindow.Hide();
 			};
+
+			updateCoordinator.UpdateAvailable += (_, _) => Dispatcher.UIThread.Post(() => ShowUpdateWindow(false));
+			desktop.Exit                      += (_, _) => updateCoordinator.Dispose();
+			updateCoordinator.Start();
 		}
 
 		base.OnFrameworkInitializationCompleted();
@@ -231,6 +239,24 @@ public class App(
 		foreach (var plugin in dataValidationPluginsToRemove)
 		{
 			BindingPlugins.DataValidators.Remove(plugin);
+		}
+	}
+
+	/// <summary>Shows the single update dialog; <paramref name="checkNow" /> starts a fresh check (manual "Check for updates").</summary>
+	private void ShowUpdateWindow(bool checkNow)
+	{
+		if (_updateWindow == null)
+		{
+			_updateWindow        =  updateWindowFactory();
+			_updateWindow.Closed += (_, _) => _updateWindow = null;
+			_updateWindow.Show();
+		}
+
+		_updateWindow.Activate();
+
+		if (checkNow && _updateWindow.ViewModel.CheckCommand.CanExecute(null))
+		{
+			_updateWindow.ViewModel.CheckCommand.Execute(null);
 		}
 	}
 

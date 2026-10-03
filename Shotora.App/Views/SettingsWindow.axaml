@@ -74,6 +74,10 @@
                                 <CheckBox Content="{DynamicResource LocSettingsRunOnStartup}"
                                           IsChecked="{Binding RunOnStartup}" />
                             </controls:LabeledField>
+                            <controls:LabeledField>
+                                <CheckBox Content="{DynamicResource LocSettingsAutoCheckUpdates}"
+                                          IsChecked="{Binding AutoCheckForUpdates}" />
+                            </controls:LabeledField>
 
                             <TextBlock Classes="section-header" Text="{DynamicResource LocSettingsStorage}" />
                             <controls:LabeledField Label="{DynamicResource LocSettingsDefaultFolder}">

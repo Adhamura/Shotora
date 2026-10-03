@@ -252,4 +252,31 @@
     <sys:String x:Key="LocAboutRole">Роль</sys:String>
     <sys:String x:Key="LocAboutContact">Контакты</sys:String>
     <sys:String x:Key="LocAboutContactIntro">Свяжитесь для отзывов или сотрудничества.</sys:String>
+
+    <!-- Updates -->
+    <sys:String x:Key="LocSettingsAutoCheckUpdates">Automatically check for updates</sys:String>
+    <sys:String x:Key="LocTrayCheckForUpdates">Check for Updates</sys:String>
+    <sys:String x:Key="LocUpdateSectionTitle">Updates</sys:String>
+    <sys:String x:Key="LocUpdateWindowTitle">Software Update</sys:String>
+    <sys:String x:Key="LocUpdateWhatsNew">What's new</sys:String>
+    <sys:String x:Key="LocUpdateCheckButton">Check for updates</sys:String>
+    <sys:String x:Key="LocUpdateInstallButton">Download and install</sys:String>
+    <sys:String x:Key="LocUpdateRestartButton">Restart and update</sys:String>
+    <sys:String x:Key="LocUpdateOpenReleaseButton">Download from GitHub</sys:String>
+    <sys:String x:Key="LocUpdateSkipButton">Skip this version</sys:String>
+    <sys:String x:Key="LocUpdateLaterButton">Remind me later</sys:String>
+    <sys:String x:Key="LocUpdateChecking">Checking for updates…</sys:String>
+    <sys:String x:Key="LocUpdateUpToDate">Shotora is up to date</sys:String>
+    <sys:String x:Key="LocUpdateUpToDateDetailFormat">Version {0} is the latest version.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableFormat">Shotora {0} is available</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">You have version {0}. The update downloads in the background and installs when Shotora restarts.</sys:String>
+    <sys:String x:Key="LocUpdateManualDetail">Download the new version from GitHub to update this copy of Shotora.</sys:String>
+    <sys:String x:Key="LocUpdateFailed">Couldn't check for updates</sys:String>
+    <sys:String x:Key="LocUpdateFailedDetail">Check your internet connection and try again.</sys:String>
+    <sys:String x:Key="LocUpdateDownloadingFormat">Downloading update… {0}%</sys:String>
+    <sys:String x:Key="LocUpdateReady">Update ready to install</sys:String>
+    <sys:String x:Key="LocUpdateReadyDetail">Restart Shotora to finish installing the update.</sys:String>
+    <sys:String x:Key="LocUpdateInstalling">Installing update…</sys:String>
+    <sys:String x:Key="LocUpdateIdle">Check whether a newer version of Shotora is available.</sys:String>
+    <sys:String x:Key="LocUpdateCurrentVersionFormat">Version {0}</sys:String>
 </ResourceDictionary>

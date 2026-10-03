@@ -10,6 +10,7 @@ public static class LocalizationFallbacks
 		public const string Repair  = "Repair";
 		public const string Delete  = "Delete";
 		public const string Install = "Install";
+		public const string Close   = "Close";
 	}
 
 	public static class Tray
@@ -70,5 +71,6 @@ public static class LocalizationFallbacks
 		public const string Installing           = "Installing update…";
 		public const string Idle                 = "Check whether a newer version of Shotora is available.";
 		public const string CurrentVersionFormat = "Version {0}";
+		public const string LaterButton          = "Remind me later";
 	}
 }

@@ -78,10 +78,9 @@ jobs:
           previous=$(git describe --tags --abbrev=0 "HEAD^" 2>/dev/null || true)
           range=${previous:+$previous..HEAD}
           {
-            echo "## What's new"
-            echo
             git log ${range:-HEAD} --no-merges -n 50 --pretty=tformat:'- %s' | { grep -v -i -E '^- (wip|fixup)' || true; }
           } > release-notes.md
+          # The app shows these notes under its own "What's new" heading.
           cat release-notes.md
 
       - name: Restore tools

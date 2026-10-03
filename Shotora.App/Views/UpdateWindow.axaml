@@ -1,0 +1,107 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="clr-namespace:Shotora.App.Controls"
+        xmlns:viewModels="clr-namespace:Shotora.App.Services.ViewModels;assembly=Shotora.App.Services"
+        x:Class="Shotora.App.Views.UpdateWindow"
+        x:DataType="viewModels:UpdateViewModel"
+        Title="{DynamicResource LocUpdateWindowTitle}"
+        Width="520"
+        Height="460"
+        MinWidth="400"
+        MinHeight="300"
+        CanResize="True"
+        WindowStartupLocation="CenterScreen"
+        SystemDecorations="None"
+        ExtendClientAreaToDecorationsHint="True"
+        ExtendClientAreaChromeHints="PreferSystemChrome"
+        Background="Transparent"
+        TransparencyLevelHint="Transparent"
+        Icon="avares://Shotora.App/Assets/Shotora.ico">
+    <controls:DialogShell x:Name="Shell"
+                          Title="{DynamicResource LocUpdateWindowTitle}">
+        <controls:DialogShell.Footer>
+            <Grid ColumnDefinitions="Auto,*,Auto">
+                <Button Classes="subtle"
+                        Content="{DynamicResource LocUpdateSkipButton}"
+                        Command="{Binding SkipVersionCommand}"
+                        IsVisible="{Binding CanSkipVersion}" />
+
+                <StackPanel Grid.Column="2" Classes="dialog-actions">
+                    <Button Content="{Binding DismissText}"
+                            IsCancel="True"
+                            Command="{Binding RemindLaterCommand}" />
+                    <!-- Exactly one primary action is visible at a time -->
+                    <Button Classes="accent"
+                            Content="{DynamicResource LocUpdateCheckButton}"
+                            Command="{Binding CheckCommand}"
+                            IsDefault="{Binding ShowCheckButton}"
+                            IsVisible="{Binding ShowCheckButton}" />
+                    <Button Classes="accent"
+                            Content="{DynamicResource LocUpdateInstallButton}"
+                            Command="{Binding InstallCommand}"
+                            IsDefault="{Binding ShowInstallButton}"
+                            IsVisible="{Binding ShowInstallButton}" />
+                    <Button Classes="accent"
+                            Content="{DynamicResource LocUpdateRestartButton}"
+                            Command="{Binding RestartCommand}"
+                            IsDefault="{Binding IsReadyToInstall}"
+                            IsVisible="{Binding IsReadyToInstall}" />
+                    <Button Classes="accent"
+                            Content="{DynamicResource LocUpdateOpenReleaseButton}"
+                            Command="{Binding OpenReleasePageCommand}"
+                            IsDefault="{Binding ShowOpenReleasePage}"
+                            IsVisible="{Binding ShowOpenReleasePage}" />
+                </StackPanel>
+            </Grid>
+        </controls:DialogShell.Footer>
+
+        <Grid RowDefinitions="Auto,Auto,Auto,*">
+            <!-- Status header -->
+            <Grid ColumnDefinitions="Auto,*" ColumnSpacing="16">
+                <Image Source="avares://Shotora.App/Assets/Shotora.png"
+                       Width="56"
+                       Height="56"
+                       Stretch="Uniform"
+                       VerticalAlignment="Top" />
+                <StackPanel Grid.Column="1" VerticalAlignment="Center" Spacing="4">
+                    <TextBlock Classes="title"
+                               Text="{Binding StatusTitle}"
+                               TextWrapping="Wrap" />
+                    <TextBlock Classes="secondary"
+                               Text="{Binding StatusDetail}"
+                               IsVisible="{Binding HasStatusDetail}"
+                               ToolTip.Tip="{Binding ErrorDetail}"
+                               TextWrapping="Wrap" />
+                    <TextBlock Classes="caption"
+                               Text="{Binding CurrentVersionText}"
+                               IsVisible="{Binding IsUpdateAvailable}" />
+                </StackPanel>
+            </Grid>
+
+            <ProgressBar Grid.Row="1"
+                         Margin="0,16,0,0"
+                         Minimum="0"
+                         Maximum="100"
+                         Value="{Binding DownloadProgress}"
+                         IsIndeterminate="{Binding IsIndeterminate}"
+                         IsVisible="{Binding IsBusy}"
+                         AutomationProperties.Name="{Binding StatusTitle}" />
+
+            <TextBlock Grid.Row="2"
+                       Classes="section-header"
+                       Text="{DynamicResource LocUpdateWhatsNew}"
+                       IsVisible="{Binding HasReleaseNotes}" />
+
+            <Border Grid.Row="3"
+                    Classes="card"
+                    Margin="0,0,0,0"
+                    IsVisible="{Binding HasReleaseNotes}">
+                <ScrollViewer VerticalScrollBarVisibility="Auto"
+                              HorizontalScrollBarVisibility="Disabled">
+                    <SelectableTextBlock Text="{Binding ReleaseNotesText}"
+                                         TextWrapping="Wrap" />
+                </ScrollViewer>
+            </Border>
+        </Grid>
+    </controls:DialogShell>
+</Window>

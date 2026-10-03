@@ -1,0 +1,42 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:viewModels="clr-namespace:Shotora.App.Services.ViewModels;assembly=Shotora.App.Services"
+             x:Class="Shotora.App.Controls.UpdatePanel"
+             x:DataType="viewModels:UpdateViewModel">
+    <!-- Compact update status + actions. Used inside the About window's "Updates" card.
+         All buttons are secondary here: the hosting dialog owns the single accent action. -->
+    <StackPanel Spacing="8">
+        <StackPanel Spacing="2">
+            <TextBlock Classes="label"
+                       Text="{Binding StatusTitle}"
+                       TextWrapping="Wrap" />
+            <TextBlock Classes="secondary"
+                       Text="{Binding StatusDetail}"
+                       IsVisible="{Binding HasStatusDetail}"
+                       ToolTip.Tip="{Binding ErrorDetail}"
+                       TextWrapping="Wrap" />
+        </StackPanel>
+
+        <ProgressBar Minimum="0"
+                     Maximum="100"
+                     Value="{Binding DownloadProgress}"
+                     IsIndeterminate="{Binding IsIndeterminate}"
+                     IsVisible="{Binding IsBusy}"
+                     AutomationProperties.Name="{Binding StatusTitle}" />
+
+        <WrapPanel ItemSpacing="8" LineSpacing="8">
+            <Button Content="{DynamicResource LocUpdateCheckButton}"
+                    Command="{Binding CheckCommand}"
+                    IsVisible="{Binding ShowCheckButton}" />
+            <Button Content="{DynamicResource LocUpdateInstallButton}"
+                    Command="{Binding InstallCommand}"
+                    IsVisible="{Binding ShowInstallButton}" />
+            <Button Content="{DynamicResource LocUpdateRestartButton}"
+                    Command="{Binding RestartCommand}"
+                    IsVisible="{Binding IsReadyToInstall}" />
+            <Button Content="{DynamicResource LocUpdateOpenReleaseButton}"
+                    Command="{Binding OpenReleasePageCommand}"
+                    IsVisible="{Binding ShowOpenReleasePage}" />
+        </WrapPanel>
+    </StackPanel>
+</UserControl>
