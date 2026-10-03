@@ -266,6 +266,8 @@ public class TrayMenuWindowService(ILocalizationProvider localizationProvider, I
 			FontWeight                 = FontWeight.Medium,
 			Cursor                     = new Cursor(StandardCursorType.Hand)
 		};
+		// Shared hover/pressed/focus visuals for menu entries (Shotora.App/Styles/Controls.axaml).
+		button.Classes.Add("menu-item");
 		button.Click += (_, _) => ExecuteOnUiThread(onClick);
 		return button;
 	}
