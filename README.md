@@ -19,10 +19,7 @@ A free, open-source tray screenshot tool for Windows, macOS and Linux.
 
 <br />
 
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="docs/images/settings-light.png" />
-  <img src="docs/images/settings-dark.png" width="560" alt="Shotora settings window in the Dark theme" />
-</picture>
+<img src="docs/images/hero.png" width="860" alt="Shotora capture overlay: a selected region annotated with a highlight, rectangles, an arrow and a text label, with the editor toolbar below" />
 
 </div>
 
@@ -99,7 +96,10 @@ sha256sum Shotora-linux-x64.AppImage
 ### Annotation tools
 
 <p align="center">
-  <img src="screenshots/panel.png" width="720" alt="Shotora editor toolbar" />
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="docs/images/toolbar-light.png" />
+    <img src="docs/images/toolbar-dark.png" width="720" alt="Shotora editor toolbar" />
+  </picture>
 </p>
 
 | Tool | What it does |
