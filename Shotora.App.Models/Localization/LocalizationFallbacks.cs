@@ -66,6 +66,8 @@ public static class LocalizationFallbacks
 		public const string ManualDetail         = "Download the new version from GitHub to update this copy of Shotora.";
 		public const string Failed               = "Couldn't check for updates";
 		public const string FailedDetail         = "Check your internet connection and try again.";
+		public const string DownloadFailed       = "The update couldn't be installed";
+		public const string DownloadFailedDetail = "The download didn't complete. Check your connection and try again.";
 		public const string DownloadingFormat    = "Downloading update… {0}%";
 		public const string Ready                = "Update ready to install";
 		public const string ReadyDetail          = "Restart Shotora to finish installing the update.";

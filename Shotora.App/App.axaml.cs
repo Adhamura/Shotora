@@ -55,6 +55,7 @@ public class App(
 	private AppSettings    _settings = new();
 	private bool           _settingsHandlersAttached;
 	private UpdateWindow?  _updateWindow;
+	private bool           _updatePromptPending;
 
 	public override void Initialize()
 	{
@@ -99,7 +100,7 @@ public class App(
 				desktop.MainWindow.Hide();
 			};
 
-			updateCoordinator.UpdateAvailable += (_, _) => Dispatcher.UIThread.Post(() => ShowUpdateWindow(false));
+			updateCoordinator.UpdateAvailable += (_, _) => Dispatcher.UIThread.Post(OnBackgroundUpdateFound);
 			desktop.Exit                      += (_, _) => updateCoordinator.Dispose();
 			updateCoordinator.Start();
 		}
@@ -241,6 +242,18 @@ public class App(
 		{
 			BindingPlugins.DataValidators.Remove(plugin);
 		}
+	}
+
+	private void OnBackgroundUpdateFound()
+	{
+		// Never interrupt a capture in progress: prompt once the overlay closes.
+		if (_activeOverlay != null)
+		{
+			_updatePromptPending = true;
+			return;
+		}
+
+		ShowUpdateWindow(false);
 	}
 
 	/// <summary>Shows the single update dialog; <paramref name="checkNow" /> starts a fresh check (manual "Check for updates").</summary>
@@ -398,6 +411,12 @@ public class App(
 			if (_activeOverlay == overlay)
 			{
 				_activeOverlay = null;
+			}
+
+			if (_updatePromptPending)
+			{
+				_updatePromptPending = false;
+				Dispatcher.UIThread.Post(() => ShowUpdateWindow(false), DispatcherPriority.Background);
 			}
 		};
 		var owner = desktop.MainWindow;

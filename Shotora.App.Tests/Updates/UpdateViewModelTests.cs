@@ -128,4 +128,15 @@ public class UpdateViewModelTests
 
 		_service.Verify(s => s.CheckForUpdatesAsync(It.IsAny<CancellationToken>()), Times.Once);
 	}
+
+	[Fact]
+	public void Given_DownloadFailed_When_StateChanges_Then_ShowsDownloadErrorAndOffersRetry()
+	{
+		Arrange(UpdateStatus.Failed, new UpdateCheckResult(UpdateStatus.UpdateAvailable, "1.0.0", "1.2.0", CanInstallInPlace: true, Error: "disk full"));
+
+		Assert.Equal("The update couldn't be installed", _sut.StatusTitle);
+		Assert.True(_sut.CanDownload);
+		Assert.False(_sut.ShowCheckButton);
+		Assert.Equal("disk full", _sut.ErrorDetail);
+	}
 }

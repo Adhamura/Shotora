@@ -54,6 +54,8 @@ public static class LocalizationKeys
 	public const string UpdateManualDetail     = "LocUpdateManualDetail";
 	public const string UpdateFailed           = "LocUpdateFailed";
 	public const string UpdateFailedDetail     = "LocUpdateFailedDetail";
+	public const string UpdateDownloadFailed   = "LocUpdateDownloadFailed";
+	public const string UpdateDownloadFailedDetail = "LocUpdateDownloadFailedDetail";
 	public const string UpdateDownloadingFmt   = "LocUpdateDownloadingFormat";
 	public const string UpdateReady            = "LocUpdateReady";
 	public const string UpdateReadyDetail      = "LocUpdateReadyDetail";

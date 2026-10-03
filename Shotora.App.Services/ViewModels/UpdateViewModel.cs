@@ -126,6 +126,7 @@ public sealed class UpdateViewModel : ViewModelBase, IDisposable
 		UpdateStatus.Downloading    => Format(LocalizationKeys.UpdateDownloadingFmt, LocalizationFallbacks.Update.DownloadingFormat, DownloadProgress),
 		UpdateStatus.ReadyToInstall => Text(LocalizationKeys.UpdateReady,      LocalizationFallbacks.Update.Ready),
 		UpdateStatus.Installing     => Text(LocalizationKeys.UpdateInstalling, LocalizationFallbacks.Update.Installing),
+		UpdateStatus.Failed when IsUpdateAvailable => Text(LocalizationKeys.UpdateDownloadFailed, LocalizationFallbacks.Update.DownloadFailed),
 		UpdateStatus.Failed         => Text(LocalizationKeys.UpdateFailed,     LocalizationFallbacks.Update.Failed),
 		_                           => CurrentVersionText
 	};
@@ -137,6 +138,7 @@ public sealed class UpdateViewModel : ViewModelBase, IDisposable
 			=> Format(LocalizationKeys.UpdateAvailableDetailFmt, LocalizationFallbacks.Update.AvailableDetailFormat, _updateService.CurrentVersion),
 		UpdateStatus.UpdateAvailable => Text(LocalizationKeys.UpdateManualDetail, LocalizationFallbacks.Update.ManualDetail),
 		UpdateStatus.ReadyToInstall  => Text(LocalizationKeys.UpdateReadyDetail,  LocalizationFallbacks.Update.ReadyDetail),
+		UpdateStatus.Failed when IsUpdateAvailable => Text(LocalizationKeys.UpdateDownloadFailedDetail, LocalizationFallbacks.Update.DownloadFailedDetail),
 		UpdateStatus.Failed          => Text(LocalizationKeys.UpdateFailedDetail, LocalizationFallbacks.Update.FailedDetail),
 		UpdateStatus.Idle            => Text(LocalizationKeys.UpdateIdle,         LocalizationFallbacks.Update.Idle),
 		_                            => string.Empty
