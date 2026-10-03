@@ -1,10 +1,12 @@
 name: Release
 
 # Publishes a GitHub release with Velopack packages for every platform.
-# Installed copies of Shotora check this feed and update themselves in place;
+# Installed copies of Shotora read this feed and update themselves in place;
 # portable copies are pointed to the release page.
 #
 # Trigger: push a tag like "v1.2.0", or run manually with a version.
+# Flow: test -> pack each platform (artifacts only) -> publish one release with all assets,
+# so users never see a release that is missing their platform.
 
 on:
   push:
@@ -17,7 +19,7 @@ on:
         required: true
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: release-${{ github.ref }}
@@ -28,11 +30,42 @@ env:
   DOTNET_CLI_TELEMETRY_OPTOUT: true
 
 jobs:
-  release:
-    name: ${{ matrix.rid }}
+  version:
+    name: Resolve version
+    runs-on: ubuntu-latest
+    outputs:
+      value: ${{ steps.version.outputs.value }}
+      prerelease: ${{ steps.version.outputs.prerelease }}
+    steps:
+      - id: version
+        shell: bash
+        env:
+          VERSION_INPUT: ${{ inputs.version }}
+        run: |
+          if [ -n "$VERSION_INPUT" ]; then v="${VERSION_INPUT#v}"; else v="${GITHUB_REF_NAME#v}"; fi
+          if ! [[ "$v" =~ ^[0-9]+\.[0-9]+\.[0-9]+(-[0-9A-Za-z.-]+)?$ ]]; then echo "Invalid version '$v'"; exit 1; fi
+          echo "value=$v" >> "$GITHUB_OUTPUT"
+          if [[ "$v" == *-* ]]; then echo "prerelease=true" >> "$GITHUB_OUTPUT"; else echo "prerelease=false" >> "$GITHUB_OUTPUT"; fi
+
+  test:
+    name: Build and test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: global.json
+      - name: Build
+        run: dotnet build Shotora.sln -c Release
+      - name: Test
+        # Avalonia UI tests share one dispatcher thread; run test collections serially.
+        run: dotnet test Shotora.App.Tests -c Release --no-build -- xUnit.ParallelizeTestCollections=false
+
+  pack:
+    name: Pack ${{ matrix.rid }}
+    needs: [version, test]
     strategy:
-      fail-fast: false
-      max-parallel: 1 # jobs append to the same GitHub release; run them one at a time
+      fail-fast: true
       matrix:
         include:
           - rid: win-x64
@@ -48,10 +81,14 @@ jobs:
             exe: Shotora.App
             icon: Shotora.App/Assets/Shotora.icns
           - rid: osx-x64
-            os: macos-13
+            os: macos-15-intel
             exe: Shotora.App
             icon: Shotora.App/Assets/Shotora.icns
     runs-on: ${{ matrix.os }}
+    env:
+      VERSION: ${{ needs.version.outputs.value }}
+      DOTNET_ROLL_FORWARD: LatestMajor # vpk targets an older runtime
+      COLUMNS: 160 # Cake's console renderer needs a width when there is no TTY
     steps:
       - uses: actions/checkout@v4
         with:
@@ -61,27 +98,18 @@ jobs:
         with:
           global-json-file: global.json
 
-      - name: Resolve version
-        id: version
-        shell: bash
-        env:
-          VERSION_INPUT: ${{ inputs.version }}
-        run: |
-          if [ -n "$VERSION_INPUT" ]; then v="${VERSION_INPUT#v}"; else v="${GITHUB_REF_NAME#v}"; fi
-          if ! [[ "$v" =~ ^[0-9]+\.[0-9]+\.[0-9]+(-[0-9A-Za-z.-]+)?$ ]]; then echo "Invalid version '$v'"; exit 1; fi
-          echo "value=$v" >> "$GITHUB_OUTPUT"
-          if [[ "$v" == *-* ]]; then echo "pre=--pre" >> "$GITHUB_OUTPUT"; else echo "pre=" >> "$GITHUB_OUTPUT"; fi
-
       - name: Generate release notes
         shell: bash
         run: |
           previous=$(git describe --tags --abbrev=0 "HEAD^" 2>/dev/null || true)
           range=${previous:+$previous..HEAD}
-          {
-            git log ${range:-HEAD} --no-merges -n 50 --pretty=tformat:'- %s' | { grep -v -i -E '^- (wip|fixup)' || true; }
-          } > release-notes.md
           # The app shows these notes under its own "What's new" heading.
+          git log ${range:-HEAD} --no-merges -n 50 --pretty=tformat:'- %s' | { grep -v -i -E '^- (wip|fixup)' || true; } > release-notes.md
           cat release-notes.md
+
+      - name: Install Linux packaging tools
+        if: runner.os == 'Linux'
+        run: sudo apt-get update && sudo apt-get install -y squashfs-tools # vpk needs mksquashfs for the AppImage
 
       - name: Restore tools
         run: dotnet tool restore
@@ -93,52 +121,88 @@ jobs:
           --runtime=${{ matrix.rid }}
           --configuration=Release
           --selfcontained=true
-          --version=${{ steps.version.outputs.value }}
+          --appversion=$VERSION
           --output=./publish/${{ matrix.rid }}
 
       - name: Download previous release (enables delta updates)
         shell: bash
         continue-on-error: true
-        env:
-          DOTNET_ROLL_FORWARD: LatestMajor
         run: >
           dotnet tool run vpk download github
           --repoUrl "${{ github.server_url }}/${{ github.repository }}"
           --channel ${{ matrix.rid }}
           --token "${{ secrets.GITHUB_TOKEN }}"
-          --outputDir ./releases/${{ matrix.rid }}
+          --outputDir ./releases
 
       - name: Pack
         shell: bash
-        env:
-          DOTNET_ROLL_FORWARD: LatestMajor
-        # On each runner "vpk pack" produces the native package (Setup.exe / .AppImage / .pkg).
+        # On each runner "vpk pack" produces the native installer (Setup.exe / .AppImage / .pkg).
+        # Code signing: add --signParams (Windows) or --signAppIdentity/--notaryProfile (macOS) here once
+        # certificates are available as repository secrets.
         run: >
           dotnet tool run vpk pack
           --packId Shotora
           --packTitle Shotora
           --packAuthors "Kazuki Kimura"
-          --packVersion "${{ steps.version.outputs.value }}"
+          --packVersion "$VERSION"
           --packDir ./publish/${{ matrix.rid }}
           --mainExe ${{ matrix.exe }}
           --runtime ${{ matrix.rid }}
           --channel ${{ matrix.rid }}
           --icon "${{ matrix.icon }}"
           --releaseNotes release-notes.md
-          --outputDir ./releases/${{ matrix.rid }}
+          --outputDir ./releases
 
-      - name: Upload to GitHub release
+      - name: Collect this version's assets
         shell: bash
-        env:
-          DOTNET_ROLL_FORWARD: LatestMajor
-        run: >
-          dotnet tool run vpk upload github
-          --repoUrl "${{ github.server_url }}/${{ github.repository }}"
-          --channel ${{ matrix.rid }}
-          --outputDir ./releases/${{ matrix.rid }}
-          --tag "v${{ steps.version.outputs.value }}"
-          --releaseName "Shotora v${{ steps.version.outputs.value }}"
-          --publish
-          --merge
-          ${{ steps.version.outputs.pre }}
-          --token "${{ secrets.GITHUB_TOKEN }}"
+        run: |
+          mkdir -p dist
+          # Feed files for this channel plus every package/installer of this version (not the downloaded previous one).
+          for f in releases/*; do
+            name=$(basename "$f")
+            case "$name" in
+              *"$VERSION"*|releases.${{ matrix.rid }}.json|assets.${{ matrix.rid }}.json|RELEASES-${{ matrix.rid }}|*-${{ matrix.rid }}-Setup*|*-${{ matrix.rid }}-Portable*|*.AppImage|*.pkg)
+                cp "$f" dist/ ;;
+            esac
+          done
+          ls -la dist
+          cp release-notes.md dist/release-notes.md
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: release-${{ matrix.rid }}
+          path: dist/
+          if-no-files-found: error
+
+  publish:
+    name: Publish GitHub release
+    needs: [version, pack]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      VERSION: ${{ needs.version.outputs.value }}
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: release-*
+          path: artifacts
+
+      - name: Create release
+        shell: bash
+        run: |
+          mkdir -p upload
+          for dir in artifacts/release-*; do
+            find "$dir" -maxdepth 1 -type f ! -name release-notes.md -exec cp {} upload/ \;
+          done
+          notes=$(ls artifacts/release-*/release-notes.md | head -n 1)
+          prerelease_flag=""
+          if [ "${{ needs.version.outputs.prerelease }}" = "true" ]; then prerelease_flag="--prerelease"; fi
+          ls -la upload
+          gh release create "v$VERSION" upload/* \
+            --repo "${{ github.repository }}" \
+            --target "${{ github.sha }}" \
+            --title "Shotora v$VERSION" \
+            --notes-file "$notes" \
+            $prerelease_flag

@@ -5,7 +5,7 @@ var selfContained = Argument("selfcontained", false);
 var outputArg = Argument("output", "./ready");
 var channel = Argument("channel", "stable");
 var useVp = Argument("usevp", Argument("useVp", false));
-var versionArg = Argument("version", string.Empty);
+var versionArg = Argument("appversion", string.Empty); // "--version" is reserved by Cake itself
 
 var ridMap = new Dictionary<string, (string os, string arch, string dest)>
 {
