@@ -1,4 +1,6 @@
+using Avalonia.Threading;
 using CommunityToolkit.Mvvm.Input;
+using Shotora.App.Interfaces.Facades;
 using Shotora.App.Interfaces.Providers;
 using Shotora.App.Interfaces.System;
 using Shotora.App.Interfaces.Updates;
@@ -19,29 +21,20 @@ public sealed class UpdateViewModel : ViewModelBase, IDisposable
 	private readonly IUpdateCoordinator    _coordinator;
 	private readonly IUpdateService        _updateService;
 	private readonly IUrlLauncherService   _urlLauncher;
-	private readonly Action<Action>        _uiDispatch;
-
-	public UpdateViewModel(
-		IUpdateService        updateService,
-		IUpdateCoordinator    coordinator,
-		ILocalizationProvider localization,
-		IUrlLauncherService   urlLauncher)
-		: this(updateService, coordinator, localization, urlLauncher, PostToUiThread)
-	{
-	}
+	private readonly IDispatcherFacade     _dispatcher;
 
 	public UpdateViewModel(
 		IUpdateService        updateService,
 		IUpdateCoordinator    coordinator,
 		ILocalizationProvider localization,
 		IUrlLauncherService   urlLauncher,
-		Action<Action>        uiDispatch)
+		IDispatcherFacade     dispatcher)
 	{
 		_updateService = updateService;
 		_coordinator   = coordinator;
 		_localization  = localization;
 		_urlLauncher   = urlLauncher;
-		_uiDispatch    = uiDispatch;
+		_dispatcher    = dispatcher;
 
 		CheckCommand           = new AsyncRelayCommand(CheckAsync,    () => !IsBusy);
 		InstallCommand         = new AsyncRelayCommand(DownloadAsync, () => CanDownload);
@@ -147,7 +140,7 @@ public sealed class UpdateViewModel : ViewModelBase, IDisposable
 	public bool HasStatusDetail => !string.IsNullOrEmpty(StatusDetail);
 
 	/// <summary>Technical error message, shown in a tooltip for diagnostics.</summary>
-	public string? ErrorDetail => HasError ? Result?.Error : null;
+	public string? ErrorDetail => HasError ? _updateService.LastError : null;
 
 	public void Dispose()
 	{
@@ -215,12 +208,12 @@ public sealed class UpdateViewModel : ViewModelBase, IDisposable
 
 	private void OnServiceStateChanged(object? sender, EventArgs e)
 	{
-		_uiDispatch(Refresh);
+		OnUiThread(Refresh);
 	}
 
 	private void OnLanguageChanged(object? sender, EventArgs e)
 	{
-		_uiDispatch(Refresh);
+		OnUiThread(Refresh);
 	}
 
 	private string Text(string key, string fallback)
@@ -241,15 +234,15 @@ public sealed class UpdateViewModel : ViewModelBase, IDisposable
 		}
 	}
 
-	private static void PostToUiThread(Action action)
+	private void OnUiThread(Action action)
 	{
-		if (Avalonia.Threading.Dispatcher.UIThread.CheckAccess())
+		if (_dispatcher.CheckAccess())
 		{
 			action();
 		}
 		else
 		{
-			Avalonia.Threading.Dispatcher.UIThread.Post(action);
+			_dispatcher.Post(action, DispatcherPriority.Normal);
 		}
 	}
 }

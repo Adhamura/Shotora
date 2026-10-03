@@ -40,7 +40,7 @@ public static class VersionComparer
 			return false;
 		}
 
-		var numbers = new int[3];
+		var numbers = new int[4];
 		for (var i = 0; i < parts.Length; i++)
 		{
 			if (!int.TryParse(parts[i], out var number) || number < 0)
@@ -48,13 +48,10 @@ public static class VersionComparer
 				return false;
 			}
 
-			if (i < 3)
-			{
-				numbers[i] = number;
-			}
+			numbers[i] = number;
 		}
 
-		version = new Version(numbers[0], numbers[1], numbers[2]);
+		version = new Version(numbers[0], numbers[1], numbers[2], numbers[3]);
 		return true;
 	}
 
@@ -82,7 +79,33 @@ public static class VersionComparer
 			return currentPre != null;
 		}
 
-		return currentPre != null && string.CompareOrdinal(candidatePre, currentPre) > 0;
+		return currentPre != null && ComparePrerelease(candidatePre, currentPre) > 0;
+	}
+
+	/// <summary>SemVer 2.0 precedence for prerelease labels: numeric identifiers compare numerically ("beta.10" &gt; "beta.9").</summary>
+	private static int ComparePrerelease(string left, string right)
+	{
+		var leftParts  = left.Split('.');
+		var rightParts = right.Split('.');
+		for (var i = 0; i < Math.Min(leftParts.Length, rightParts.Length); i++)
+		{
+			var leftNumeric  = int.TryParse(leftParts[i],  out var leftNumber);
+			var rightNumeric = int.TryParse(rightParts[i], out var rightNumber);
+			var comparison = (leftNumeric, rightNumeric) switch
+			{
+				(true, true)  => leftNumber.CompareTo(rightNumber),
+				(true, false) => -1,
+				(false, true) => 1,
+				_             => string.CompareOrdinal(leftParts[i], rightParts[i])
+			};
+
+			if (comparison != 0)
+			{
+				return comparison;
+			}
+		}
+
+		return leftParts.Length.CompareTo(rightParts.Length);
 	}
 
 	public static string Normalize(string? text)
@@ -92,7 +115,9 @@ public static class VersionComparer
 			return text?.Trim() ?? string.Empty;
 		}
 
-		var core = $"{version.Major}.{version.Minor}.{version.Build}";
+		var core = version.Revision > 0
+			? $"{version.Major}.{version.Minor}.{version.Build}.{version.Revision}"
+			: $"{version.Major}.{version.Minor}.{version.Build}";
 		return prerelease == null ? core : $"{core}-{prerelease}";
 	}
 }

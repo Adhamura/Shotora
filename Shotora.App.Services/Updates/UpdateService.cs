@@ -1,4 +1,6 @@
+using System.Diagnostics;
 using Shotora.App.Interfaces.Providers;
+using Shotora.App.Interfaces.System;
 using Shotora.App.Interfaces.Updates;
 using Shotora.App.Models.Updates;
 
@@ -10,11 +12,14 @@ namespace Shotora.App.Services.Updates;
 ///     fall back to the GitHub releases API and point the user to the release page.
 /// </summary>
 public class UpdateService(
-	IVelopackUpdateAdapter velopackUpdateAdapter,
-	IGitHubReleaseClient   gitHubReleaseClient,
-	IAppVersionProvider    appVersionProvider) : IUpdateService
+	IVelopackUpdateAdapter      velopackUpdateAdapter,
+	IGitHubReleaseClient        gitHubReleaseClient,
+	IAppVersionProvider         appVersionProvider,
+	IApplicationShutdownService applicationShutdownService) : IUpdateService
 {
-	private readonly SemaphoreSlim _gate = new(1, 1);
+	private readonly SemaphoreSlim            _downloadGate = new(1, 1);
+	private readonly Lock                     _sync         = new();
+	private          Task<UpdateCheckResult>? _inflightCheck;
 
 	public string CurrentVersion => appVersionProvider.Version;
 
@@ -24,38 +29,33 @@ public class UpdateService(
 
 	public UpdateCheckResult? LastResult { get; private set; }
 
+	public string? LastError { get; private set; }
+
 	public event EventHandler? StateChanged;
 
-	public async Task<UpdateCheckResult> CheckForUpdatesAsync(CancellationToken cancellationToken = default)
+	public Task<UpdateCheckResult> CheckForUpdatesAsync(CancellationToken cancellationToken = default)
 	{
-		if (!await _gate.WaitAsync(0, cancellationToken).ConfigureAwait(false))
+		TaskCompletionSource<UpdateCheckResult> completion;
+		lock (_sync)
 		{
-			// A check or download is already running; report the state we know about.
-			return LastResult ?? new UpdateCheckResult(Status, CurrentVersion);
-		}
-
-		try
-		{
-			if (Status is UpdateStatus.ReadyToInstall && LastResult != null)
+			// While an update is downloading or ready, a new check would only throw that progress away.
+			if (Status is UpdateStatus.Downloading or UpdateStatus.ReadyToInstall or UpdateStatus.Installing && LastResult != null)
 			{
-				return LastResult;
+				return Task.FromResult(LastResult);
 			}
 
-			SetState(UpdateStatus.Checking);
-			var result = await CheckCoreAsync(cancellationToken).ConfigureAwait(false);
-			LastResult = result;
-			SetState(result.Status);
-			return result;
+			if (_inflightCheck != null)
+			{
+				return _inflightCheck.WaitAsync(cancellationToken);
+			}
+
+			// Publish the shared task before the check starts so its cleanup can never race the assignment.
+			completion     = new TaskCompletionSource<UpdateCheckResult>();
+			_inflightCheck = completion.Task;
 		}
-		catch (OperationCanceledException)
-		{
-			SetState(LastResult?.Status ?? UpdateStatus.Idle);
-			throw;
-		}
-		finally
-		{
-			_gate.Release();
-		}
+
+		_ = RunCheckAsync(completion);
+		return completion.Task.WaitAsync(cancellationToken);
 	}
 
 	public async Task<bool> DownloadUpdateAsync(CancellationToken cancellationToken = default)
@@ -70,15 +70,24 @@ public class UpdateService(
 			return true;
 		}
 
-		if (!await _gate.WaitAsync(0, cancellationToken).ConfigureAwait(false))
+		if (!await _downloadGate.WaitAsync(0, cancellationToken).ConfigureAwait(false))
 		{
 			return false;
 		}
 
 		try
 		{
-			DownloadProgress = 0;
-			SetState(UpdateStatus.Downloading);
+			lock (_sync)
+			{
+				if (_inflightCheck != null)
+				{
+					return false;
+				}
+
+				DownloadProgress = 0;
+				LastError        = null;
+				SetState(UpdateStatus.Downloading);
+			}
 
 			await velopackUpdateAdapter.DownloadUpdatesAsync(ReportProgress, cancellationToken).ConfigureAwait(false);
 
@@ -94,14 +103,15 @@ public class UpdateService(
 		}
 		catch (Exception ex)
 		{
+			Trace.WriteLine($"[Shotora] Update download failed: {ex}");
 			DownloadProgress = 0;
-			LastResult       = LastResult with { Error = ex.Message };
+			LastError        = ex.Message;
 			SetState(UpdateStatus.Failed);
 			return false;
 		}
 		finally
 		{
-			_gate.Release();
+			_downloadGate.Release();
 		}
 	}
 
@@ -115,17 +125,52 @@ public class UpdateService(
 		SetState(UpdateStatus.Installing);
 		try
 		{
-			velopackUpdateAdapter.ApplyUpdatesAndRestart();
+			velopackUpdateAdapter.ApplyUpdatesOnExitAndRestart();
 		}
 		catch (Exception ex)
 		{
-			LastResult = (LastResult ?? new UpdateCheckResult(UpdateStatus.Failed, CurrentVersion)) with { Error = ex.Message };
+			Trace.WriteLine($"[Shotora] Applying update failed: {ex}");
+			LastError = ex.Message;
 			SetState(UpdateStatus.Failed);
 			throw;
 		}
+
+		// The updater waits for this process to exit, so shut down cleanly (tray icon, settings, windows).
+		applicationShutdownService.Shutdown();
 	}
 
-	private async Task<UpdateCheckResult> CheckCoreAsync(CancellationToken cancellationToken)
+	private async Task RunCheckAsync(TaskCompletionSource<UpdateCheckResult> completion)
+	{
+		UpdateCheckResult result;
+		try
+		{
+			SetState(UpdateStatus.Checking);
+			result = await CheckCoreAsync().ConfigureAwait(false);
+		}
+		catch (Exception ex)
+		{
+			// CheckCoreAsync maps failures itself; this only guards against a throwing StateChanged subscriber.
+			result = UpdateCheckResult.Failed(CurrentVersion, ex.Message);
+		}
+
+		LastResult = result;
+		LastError  = result.Error;
+		lock (_sync)
+		{
+			_inflightCheck = null;
+		}
+
+		try
+		{
+			SetState(result.Status);
+		}
+		finally
+		{
+			completion.TrySetResult(result);
+		}
+	}
+
+	private async Task<UpdateCheckResult> CheckCoreAsync()
 	{
 		var current = CurrentVersion;
 
@@ -133,7 +178,7 @@ public class UpdateService(
 		{
 			try
 			{
-				var update = await velopackUpdateAdapter.CheckForUpdatesAsync(cancellationToken).ConfigureAwait(false);
+				var update = await velopackUpdateAdapter.CheckForUpdatesAsync(CancellationToken.None).ConfigureAwait(false);
 				if (update == null)
 				{
 					return UpdateCheckResult.UpToDate(current, current, UpdateConstants.LatestReleaseUrl);
@@ -147,19 +192,16 @@ public class UpdateService(
 					UpdateConstants.LatestReleaseUrl,
 					CanInstallInPlace: true);
 			}
-			catch (OperationCanceledException)
-			{
-				throw;
-			}
-			catch (Exception)
+			catch (Exception ex)
 			{
 				// The Velopack feed may be missing for this platform/channel; fall back to the GitHub API.
+				Trace.WriteLine($"[Shotora] Velopack update check failed, falling back to GitHub API: {ex.Message}");
 			}
 		}
 
 		try
 		{
-			var release = await gitHubReleaseClient.GetLatestReleaseAsync(cancellationToken).ConfigureAwait(false);
+			var release = await gitHubReleaseClient.GetLatestReleaseAsync(CancellationToken.None).ConfigureAwait(false);
 			if (release == null)
 			{
 				return UpdateCheckResult.UpToDate(current, null, UpdateConstants.ReleasesUrl);
@@ -178,12 +220,9 @@ public class UpdateService(
 				release.Body,
 				release.HtmlUrl);
 		}
-		catch (OperationCanceledException) when (cancellationToken.IsCancellationRequested)
-		{
-			throw;
-		}
 		catch (Exception ex)
 		{
+			Trace.WriteLine($"[Shotora] Update check failed: {ex.Message}");
 			return UpdateCheckResult.Failed(current, ex.Message);
 		}
 	}

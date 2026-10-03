@@ -19,6 +19,9 @@ public interface IVelopackUpdateAdapter
 	/// <summary>Downloads the update found by the last successful check.</summary>
 	Task DownloadUpdatesAsync(Action<int> progress, CancellationToken cancellationToken);
 
-	/// <summary>Applies the downloaded update, restarting the application.</summary>
-	void ApplyUpdatesAndRestart();
+	/// <summary>
+	///     Launches the Velopack updater, which waits for this process to exit, applies the downloaded update
+	///     and restarts Shotora. The caller must then shut the app down.
+	/// </summary>
+	void ApplyUpdatesOnExitAndRestart();
 }

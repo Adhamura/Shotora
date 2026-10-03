@@ -44,7 +44,7 @@ public class VelopackUpdateAdapter : IVelopackUpdateAdapter
 		_downloaded = true;
 	}
 
-	public void ApplyUpdatesAndRestart()
+	public void ApplyUpdatesOnExitAndRestart()
 	{
 		var manager = RequireManager();
 		if (_pendingUpdate == null || !_downloaded)
@@ -52,7 +52,7 @@ public class VelopackUpdateAdapter : IVelopackUpdateAdapter
 			throw new InvalidOperationException("The update has not been downloaded.");
 		}
 
-		manager.ApplyUpdatesAndRestart(_pendingUpdate.TargetFullRelease);
+		manager.WaitExitThenApplyUpdates(_pendingUpdate.TargetFullRelease, false, true, []);
 	}
 
 	private UpdateManager RequireManager()

@@ -1,4 +1,5 @@
 using Moq;
+using Shotora.App.Interfaces.Facades;
 using Shotora.App.Interfaces.Providers;
 using Shotora.App.Interfaces.System;
 using Shotora.App.Interfaces.Updates;
@@ -13,6 +14,7 @@ public class UpdateViewModelTests
 	private readonly Mock<ILocalizationProvider> _localization = new();
 	private readonly Mock<IUpdateService>        _service      = new();
 	private readonly Mock<IUrlLauncherService>   _urls         = new();
+	private readonly Mock<IDispatcherFacade>     _dispatcher   = new();
 	private readonly UpdateViewModel             _sut;
 
 	public UpdateViewModelTests()
@@ -20,11 +22,13 @@ public class UpdateViewModelTests
 		_localization.Setup(l => l.GetString(It.IsAny<string>(), It.IsAny<string>()))
 			.Returns<string, string>((_, fallback) => fallback);
 		_service.Setup(s => s.CurrentVersion).Returns("1.0.0");
-		_sut = new UpdateViewModel(_service.Object, _coordinator.Object, _localization.Object, _urls.Object, action => action());
+		_dispatcher.Setup(d => d.CheckAccess()).Returns(true);
+		_sut = new UpdateViewModel(_service.Object, _coordinator.Object, _localization.Object, _urls.Object, _dispatcher.Object);
 	}
 
-	private void Arrange(UpdateStatus status, UpdateCheckResult? result, int progress = 0)
+	private void Arrange(UpdateStatus status, UpdateCheckResult? result, int progress = 0, string? error = null)
 	{
+		_service.Setup(s => s.LastError).Returns(error ?? result?.Error);
 		_service.Setup(s => s.Status).Returns(status);
 		_service.Setup(s => s.LastResult).Returns(result);
 		_service.Setup(s => s.DownloadProgress).Returns(progress);
@@ -132,7 +136,7 @@ public class UpdateViewModelTests
 	[Fact]
 	public void Given_DownloadFailed_When_StateChanges_Then_ShowsDownloadErrorAndOffersRetry()
 	{
-		Arrange(UpdateStatus.Failed, new UpdateCheckResult(UpdateStatus.UpdateAvailable, "1.0.0", "1.2.0", CanInstallInPlace: true, Error: "disk full"));
+		Arrange(UpdateStatus.Failed, new UpdateCheckResult(UpdateStatus.UpdateAvailable, "1.0.0", "1.2.0", CanInstallInPlace: true), error: "disk full");
 
 		Assert.Equal("The update couldn't be installed", _sut.StatusTitle);
 		Assert.True(_sut.CanDownload);

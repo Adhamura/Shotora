@@ -1,3 +1,4 @@
+using System.Net;
 using System.Text.Json;
 using Shared.Interfaces.Adapters;
 using Shotora.App.Interfaces.Updates;
@@ -9,8 +10,16 @@ public class GitHubReleaseClient(IHttpClientAdapter httpClientAdapter) : IGitHub
 {
 	public async Task<GitHubReleaseModel?> GetLatestReleaseAsync(CancellationToken cancellationToken)
 	{
-		var payload = await httpClientAdapter.Get(UpdateConstants.LatestReleaseApiUrl, cancellationToken);
-		return Parse(payload);
+		try
+		{
+			var payload = await httpClientAdapter.Get(UpdateConstants.LatestReleaseApiUrl, cancellationToken);
+			return Parse(payload);
+		}
+		catch (HttpRequestException ex) when (ex.StatusCode == HttpStatusCode.NotFound)
+		{
+			// GitHub answers 404 when the repository has no published release yet.
+			return null;
+		}
 	}
 
 	public static GitHubReleaseModel? Parse(byte[]? payload)
