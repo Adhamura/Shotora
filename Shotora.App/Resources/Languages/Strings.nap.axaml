@@ -233,17 +233,17 @@
 
     <!-- Errors -->
     <sys:String x:Key="LocErrorInvalidHotkey">Tasto rapido non valido</sys:String>
-    <sys:String x:Key="LocErrorHotkeyInUse">Tasto rapido gi? in uso</sys:String>
+    <sys:String x:Key="LocErrorHotkeyInUse">'O tasto rapido è già usato</sys:String>
     <sys:String x:Key="LocErrorHotkeyRegisterFailed">Registrazione tasto rapido fallita</sys:String>
     <sys:String x:Key="LocErrorSaveFailed">Salvataggio fallito</sys:String>
     <sys:String x:Key="LocErrorOcrFailed">OCR fallito</sys:String>
     <sys:String x:Key="LocErrorInvalidSelection">Selezione non valida</sys:String>
     <sys:String x:Key="LocErrorNoSelection">Nessuna selezione</sys:String>
-    <sys:String x:Key="LocErrorTextEmpty">Il testo ? vuoto</sys:String>
+    <sys:String x:Key="LocErrorTextEmpty">'O testo è vacante</sys:String>
 
     <sys:String x:Key="LocMainTitle">Shotora</sys:String>
     <sys:String x:Key="LocMainHint1">Usa l'icona nella tray o i tasti rapidi globali per catturare.</sys:String>
-    <sys:String x:Key="LocMainHint2">Questa finestra ? facoltativa; chiudila per lasciare Shotora attivo nella tray.</sys:String>
+    <sys:String x:Key="LocMainHint2">Chesta fenesta è facoltativa; chiurela pe' lassà Shotora attivo 'int' 'a tray.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Cattura d' 'o schermo e note</sys:String>
     <sys:String x:Key="LocAboutDescription">Screenshot veloce, segni, OCR e 'ncarricamenti cu Shotora.</sys:String>

@@ -9,7 +9,7 @@
     <sys:String x:Key="LocSettingsDefaultFormat">Format per defaut</sys:String>
     <sys:String x:Key="LocSettingsJpegQuality">Qualitat JPEG</sys:String>
     <sys:String x:Key="LocSettingsFilenamePattern">Modèl de nom de fichièr</sys:String>
-    <sys:String x:Key="LocSettingsOcr">Reconnaissen?a optica de caract?rs</sys:String>
+    <sys:String x:Key="LocSettingsOcr">OCR</sys:String>
     <sys:String x:Key="LocSettingsProvider">Provesidor</sys:String>
     <sys:String x:Key="LocSettingsLanguages">Lengas</sys:String>
     <sys:String x:Key="LocSettingsEasyOcrHint">EasyOCR requerís Python + 'pip install easyocr'</sys:String>
@@ -40,7 +40,7 @@
     <sys:String x:Key="LocSettingsDefaultColor">Color per defaut</sys:String>
     <sys:String x:Key="LocSettingsPickColor">Causir</sys:String>
     <sys:String x:Key="LocSettingsDefaultColorHint">Utilizat quand la paleta de colors es amagada.</sys:String>
-    <sys:String x:Key="LocSettingsUsePointer">Utilizar lo pus?nt</sys:String>
+    <sys:String x:Key="LocSettingsUsePointer">Utilizar lo puntador</sys:String>
     <sys:String x:Key="LocSettingsShowUndo">Afichar Annular</sys:String>
     <sys:String x:Key="LocSettingsShowRedo">Afichar Refar</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Afichar Copiar</sys:String>
@@ -51,21 +51,21 @@
     <sys:String x:Key="LocSettingsShowConfirm">Afichar Confirmar</sys:String>
     <sys:String x:Key="LocSettingsShowClose">Afichar Tancar</sys:String>
     <sys:String x:Key="LocSettingsShowSelection">Afichar Seleccion</sys:String>
-    <sys:String x:Key="LocSettingsShowMove">Afichar Despla?ar</sys:String>
+    <sys:String x:Key="LocSettingsShowMove">Afichar Desplaçar</sys:String>
     <sys:String x:Key="LocSettingsShowPen">Afichar Penna</sys:String>
     <sys:String x:Key="LocSettingsShowLine">Afichar Linha</sys:String>
-    <sys:String x:Key="LocSettingsShowArrow">Afichar F?cha</sys:String>
+    <sys:String x:Key="LocSettingsShowArrow">Afichar Flècha</sys:String>
     <sys:String x:Key="LocSettingsShowRectangle">Afichar Retang</sys:String>
     <sys:String x:Key="LocSettingsShowEllipse">Afichar Elipsa</sys:String>
-    <sys:String x:Key="LocSettingsShowText">Afichar t?xte</sys:String>
+    <sys:String x:Key="LocSettingsShowText">Afichar Tèxte</sys:String>
     <sys:String x:Key="LocSettingsShowHighlight">Afichar Marcar</sys:String>
     <sys:String x:Key="LocSettingsShowBlur">Afichar Flou</sys:String>
-    <sys:String x:Key="LocSettingsShowPixelate">Afichar Pix?l</sys:String>
+    <sys:String x:Key="LocSettingsShowPixelate">Afichar Pixelizar</sys:String>
     <sys:String x:Key="LocSettingsShowThickness">Afichar Espessor</sys:String>
     <sys:String x:Key="LocSettingsShowColors">Afichar Colors</sys:String>
-    <sys:String x:Key="LocSettingsShowCrosshair">Afichar croish?r</sys:String>
+    <sys:String x:Key="LocSettingsShowCrosshair">Afichar la crotz de mira</sys:String>
     <sys:String x:Key="LocSettingsShowResizeHandles">Afichar manipuladors de redimension</sys:String>
-    <sys:String x:Key="LocSettingsShowToolbar">Afichar barra d'?bras</sys:String>
+    <sys:String x:Key="LocSettingsShowToolbar">Afichar la barra d'aisinas</sys:String>
     <sys:String x:Key="LocSettingsShowPalette">Afichar paleta</sys:String>
     <sys:String x:Key="LocSettingsShowPreview">Afichar previsualizacion</sys:String>
     <sys:String x:Key="LocSettingsShowMiniMap">Afichar mini-carta</sys:String>
@@ -109,7 +109,7 @@
     <sys:String x:Key="LocSettingsEditorSaveHotkey">Guardar</sys:String>
     <sys:String x:Key="LocSettingsEditorSaveHotkeyPlaceholder">Ctrl+S</sys:String>
 
-    <sys:String x:Key="LocSettingsOcrSettings">Param?tres OCR</sys:String>
+    <sys:String x:Key="LocSettingsOcrSettings">Paramètres OCR</sys:String>
     <sys:String x:Key="LocSettingsOcrEasyOcrInstall">Instalar EasyOCR</sys:String>
     <sys:String x:Key="LocSettingsOcrEasyOcrRemove">Suprimir EasyOCR</sys:String>
     <sys:String x:Key="LocSettingsOcrEasyOcrStatus">Estat</sys:String>
@@ -127,19 +127,19 @@
     <sys:String x:Key="LocSettingsOcrRemoving">Suression...</sys:String>
     <sys:String x:Key="LocSettingsOcrInstallFailed">Instalacion fallida</sys:String>
     <sys:String x:Key="LocSettingsOcrRemoveFailed">Suression fallida</sys:String>
-    <sys:String x:Key="LocSettingsOcrDownloadProgress">Progr?s de telecargament</sys:String>
+    <sys:String x:Key="LocSettingsOcrDownloadProgress">Progrès del telecargament</sys:String>
     <sys:String x:Key="LocSettingsOcrBytes">Octets</sys:String>
-    <sys:String x:Key="LocSettingsOcrLicense">Licen?a</sys:String>
+    <sys:String x:Key="LocSettingsOcrLicense">Licéncia</sys:String>
     <sys:String x:Key="LocSettingsOcrLicenseLink">https://github.com/JaidedAI/EasyOCR/blob/master/LICENSE</sys:String>
     <sys:String x:Key="LocSettingsOcrTesseractLangs">Lengas Tesseract</sys:String>
-    <sys:String x:Key="LocSettingsOcrTesseractHint">Telecargatz o ajustatz de lengas Tesseract complement?rias aic?.</sys:String>
+    <sys:String x:Key="LocSettingsOcrTesseractHint">Telecargatz o apondètz de lengas Tesseract complementàrias aicí.</sys:String>
 
     <sys:String x:Key="LocSettingsExamplesTitle">Exemples</sys:String>
-    <sys:String x:Key="LocSettingsExamplesDescription">Previsualizatz d'ic?nas d'exemple dins lo t?ma actual.</sys:String>
+    <sys:String x:Key="LocSettingsExamplesDescription">Previsualizatz d'icònas d'exemple dins lo tèma actual.</sys:String>
     <sys:String x:Key="LocSettingsExamplesFormat">Format</sys:String>
     <sys:String x:Key="LocSettingsExamplesEffects">Efectes</sys:String>
     <sys:String x:Key="LocSettingsExamplesShape">Forma</sys:String>
-    <sys:String x:Key="LocSettingsExamplesIcon">Ic?na</sys:String>
+    <sys:String x:Key="LocSettingsExamplesIcon">Icòna</sys:String>
 
     <!-- Tray -->
     <sys:String x:Key="LocTrayCaptureRegion">Capturar una region</sys:String>
@@ -152,43 +152,43 @@
     <sys:String x:Key="LocOverlayCopy">Copiar</sys:String>
     <sys:String x:Key="LocOverlaySave">Guardar</sys:String>
     <sys:String x:Key="LocOverlayUpload">Telecargar</sys:String>
-    <sys:String x:Key="LocOverlayOcr">Reconnaissen?a optica de caract?rs</sys:String>
+    <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
     <sys:String x:Key="LocOverlayCancel">Anullar</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Confirmar</sys:String>
     <sys:String x:Key="LocOverlayClose">Tancar</sys:String>
-    <sys:String x:Key="LocOverlaySelection">Selection</sys:String>
-    <sys:String x:Key="LocOverlayMove">Move</sys:String>
-    <sys:String x:Key="LocOverlayPointer">Pointer</sys:String>
+    <sys:String x:Key="LocOverlaySelection">Seleccion</sys:String>
+    <sys:String x:Key="LocOverlayMove">Desplaçar</sys:String>
+    <sys:String x:Key="LocOverlayPointer">Puntador</sys:String>
     <sys:String x:Key="LocOverlayPen">Penna</sys:String>
     <sys:String x:Key="LocOverlayLine">Linha</sys:String>
-    <sys:String x:Key="LocOverlayArrow">F?cha</sys:String>
+    <sys:String x:Key="LocOverlayArrow">Flècha</sys:String>
     <sys:String x:Key="LocOverlayRectangle">Retang</sys:String>
     <sys:String x:Key="LocOverlayEllipse">Elipsa</sys:String>
-    <sys:String x:Key="LocOverlayText">T?xte</sys:String>
+    <sys:String x:Key="LocOverlayText">Tèxte</sys:String>
     <sys:String x:Key="LocOverlayHighlight">Marcar</sys:String>
     <sys:String x:Key="LocOverlayBlur">Flou</sys:String>
-    <sys:String x:Key="LocOverlayPixelate">Pix?l</sys:String>
+    <sys:String x:Key="LocOverlayPixelate">Pixelizar</sys:String>
     <sys:String x:Key="LocOverlayThickness">Espessor</sys:String>
     <sys:String x:Key="LocOverlayColors">Colors</sys:String>
-    <sys:String x:Key="LocOverlayPosition">Position</sys:String>
+    <sys:String x:Key="LocOverlayPosition">Posicion</sys:String>
     <sys:String x:Key="LocOverlaySize">Tamanh</sys:String>
-    <sys:String x:Key="LocOverlayWidth">W</sys:String>
-    <sys:String x:Key="LocOverlayHeight">H</sys:String>
-    <sys:String x:Key="LocOverlayPickColor">Pick color</sys:String>
-    <sys:String x:Key="LocOverlayHintDraw">Clicatz e tiratz per dessinar. Utilizatz la barra d'?bras per lo material.</sys:String>
-    <sys:String x:Key="LocOverlayHintMove">Tiratz dedins la seleccion per despla?ar. Utilizatz los manipuladors per redimensionar.</sys:String>
-    <sys:String x:Key="LocOverlayHintEdit">Seleccionatz d'ut?is per anotar. Utilizatz Annular/Refar se necessari.</sys:String>
+    <sys:String x:Key="LocOverlayWidth">L</sys:String>
+    <sys:String x:Key="LocOverlayHeight">A</sys:String>
+    <sys:String x:Key="LocOverlayPickColor">Causir una color</sys:String>
+    <sys:String x:Key="LocOverlayHintDraw">Clicatz e lisatz per dessenhar. Utilizatz la barra d'aisinas per las aisinas.</sys:String>
+    <sys:String x:Key="LocOverlayHintMove">Lisatz dins la seleccion per la desplaçar. Utilizatz las poadas per redimensionar.</sys:String>
+    <sys:String x:Key="LocOverlayHintEdit">Seleccionatz d'aisinas per anotar. Utilizatz Anullar/Refar se cal.</sys:String>
     <sys:String x:Key="LocOverlayHintKeyboard">Esc: Anullar, Enter: Confirmar, Ctrl+Z: Annular, Ctrl+Y: Refar</sys:String>
 
     <!-- Text Input -->
-    <sys:String x:Key="LocTextInputTitle">Apondre t?xte</sys:String>
-    <sys:String x:Key="LocTextInputHint">Entratz lo t?xte per lo pla?ar sus la captura d'ecran</sys:String>
+    <sys:String x:Key="LocTextInputTitle">Apondre de tèxte</sys:String>
+    <sys:String x:Key="LocTextInputHint">Picatz lo tèxte de plaçar sus la captura d'ecran</sys:String>
     <sys:String x:Key="LocTextInputFont">Tipografic</sys:String>
     <sys:String x:Key="LocTextInputSize">Tamanh</sys:String>
     <sys:String x:Key="LocTextInputBold">Gras</sys:String>
     <sys:String x:Key="LocTextInputItalic">Italica</sys:String>
     <sys:String x:Key="LocTextInputColor">Color</sys:String>
-    <sys:String x:Key="LocTextInputPlace">Pla?ar lo t?xte</sys:String>
+    <sys:String x:Key="LocTextInputPlace">Plaçar lo tèxte</sys:String>
     <sys:String x:Key="LocTextInputCancel">Anullar</sys:String>
 
     <!-- About -->
@@ -198,13 +198,13 @@
     <sys:String x:Key="LocAboutLinks">Ligams</sys:String>
     <sys:String x:Key="LocAboutWebsite">Siti Web</sys:String>
     <sys:String x:Key="LocAboutLinkedIn">LinkedIn</sys:String>
-    <sys:String x:Key="LocAboutEmail">Corri?r electronic</sys:String>
+    <sys:String x:Key="LocAboutEmail">Corrièl</sys:String>
 
     <!-- OCR Result -->
     <sys:String x:Key="LocOcrResultTitle">Resultat OCR</sys:String>
     <sys:String x:Key="LocOcrResultCopy">Copiar</sys:String>
     <sys:String x:Key="LocOcrResultClose">Tancar</sys:String>
-    <sys:String x:Key="LocOcrResultHint">T?xte reconegut</sys:String>
+    <sys:String x:Key="LocOcrResultHint">Tèxte reconegut</sys:String>
 
     <!-- Notifications -->
     <sys:String x:Key="LocNotificationCopySuccess">Copiat al copiau</sys:String>
@@ -219,17 +219,17 @@
     <sys:String x:Key="LocButtonSave">Guardar</sys:String>
     <sys:String x:Key="LocButtonCancel">Anullar</sys:String>
     <sys:String x:Key="LocButtonClose">Tancar</sys:String>
-    <sys:String x:Key="LocButtonOK">D'ac?rdi</sys:String>
+    <sys:String x:Key="LocButtonOK">D'acòrdi</sys:String>
 
     <!-- Dialogs -->
     <sys:String x:Key="LocDialogSaveTitle">Gardatz la captura</sys:String>
-    <sys:String x:Key="LocDialogSaveFilter">Fichi?rs PNG|*.png|Fichi?rs JPEG|*.jpg;*.jpeg|Fichi?rs WebP|*.webp|Tot los fichi?rs|*.*</sys:String>
+    <sys:String x:Key="LocDialogSaveFilter">Fichièrs PNG|*.png|Fichièrs JPEG|*.jpg;*.jpeg|Fichièrs WebP|*.webp|Totes los fichièrs|*.*</sys:String>
     <sys:String x:Key="LocDialogSaveDefaultName">Shotora-captura.png</sys:String>
     <sys:String x:Key="LocDialogSelectFolder">Seleccionatz lo dossier</sys:String>
     <sys:String x:Key="LocDialogConfirm">Confirmar</sys:String>
     <sys:String x:Key="LocDialogDelete">Suprimir</sys:String>
-    <sys:String x:Key="LocDialogRemoveLanguage">Suprimir lo fichi?r de lenga?</sys:String>
-    <sys:String x:Key="LocDialogRemoveLanguageConfirm">S?tz segur de voler suprimir aqueste fichi?r de lenga?</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguage">Suprimir lo fichièr de lenga?</sys:String>
+    <sys:String x:Key="LocDialogRemoveLanguageConfirm">Sètz segur que volètz suprimir aqueste fichièr de lenga?</sys:String>
 
     <!-- Errors -->
     <sys:String x:Key="LocErrorInvalidHotkey">Raccourci invalid</sys:String>
@@ -239,11 +239,11 @@
     <sys:String x:Key="LocErrorOcrFailed">OCR fallit</sys:String>
     <sys:String x:Key="LocErrorInvalidSelection">Seleccion invalida</sys:String>
     <sys:String x:Key="LocErrorNoSelection">Pas de seleccion</sys:String>
-    <sys:String x:Key="LocErrorTextEmpty">Lo t?xte es vid</sys:String>
+    <sys:String x:Key="LocErrorTextEmpty">Lo tèxte es void</sys:String>
 
     <sys:String x:Key="LocMainTitle">Shotora</sys:String>
-    <sys:String x:Key="LocMainHint1">Utilizatz l'ic?na de la barra de sistem o los raccourcis globals per capturar.</sys:String>
-    <sys:String x:Key="LocMainHint2">Aquesta fen?stra es facultativa; tancatz-la per daissar Shotora en funcion dins la barra de sistem.</sys:String>
+    <sys:String x:Key="LocMainHint1">Utilizatz l'icòna de la barra de sistèma o los acorchis globals per capturar.</sys:String>
+    <sys:String x:Key="LocMainHint2">Aquesta fenèstra es facultativa; tampatz-la per daissar Shotora en foncionament dins la barra de sistèma.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Captura d’ecran e anotacions</sys:String>
     <sys:String x:Key="LocAboutDescription">Capturas rapidassas, anotacions, OCR e mandadís amb Shotora.</sys:String>
