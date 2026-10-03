@@ -279,4 +279,6 @@
     <sys:String x:Key="LocUpdateInstalling">Nameščanje posodobitve…</sys:String>
     <sys:String x:Key="LocUpdateIdle">Preverite, ali je na voljo novejša različica programa Shotora.</sys:String>
     <sys:String x:Key="LocUpdateCurrentVersionFormat">Različica {0}</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">The update couldn't be installed</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">The download didn't complete. Check your connection and try again.</sys:String>
 </ResourceDictionary>

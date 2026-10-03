@@ -268,7 +268,7 @@
     <sys:String x:Key="LocUpdateUpToDate">Shotora is up to date</sys:String>
     <sys:String x:Key="LocUpdateUpToDateDetailFormat">Version {0} is the latest version.</sys:String>
     <sys:String x:Key="LocUpdateAvailableFormat">Shotora {0} is available</sys:String>
-    <sys:String x:Key="LocUpdateAvailableDetailFormat">You have version {0}. The update downloads in the background and installs when Shotora restarts.</sys:String>
+    <sys:String x:Key="LocUpdateAvailableDetailFormat">You have version {0}. Download the update now — Shotora restarts to finish installing it.</sys:String>
     <sys:String x:Key="LocUpdateManualDetail">Download the new version from GitHub to update this copy of Shotora.</sys:String>
     <sys:String x:Key="LocUpdateFailed">Couldn't check for updates</sys:String>
     <sys:String x:Key="LocUpdateFailedDetail">Check your internet connection and try again.</sys:String>
@@ -278,4 +278,6 @@
     <sys:String x:Key="LocUpdateInstalling">Installing update…</sys:String>
     <sys:String x:Key="LocUpdateIdle">Check whether a newer version of Shotora is available.</sys:String>
     <sys:String x:Key="LocUpdateCurrentVersionFormat">Version {0}</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">The update couldn't be installed</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">The download didn't complete. Check your connection and try again.</sys:String>
 </ResourceDictionary>

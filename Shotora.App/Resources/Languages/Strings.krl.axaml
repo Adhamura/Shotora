@@ -279,4 +279,6 @@
     <sys:String x:Key="LocUpdateInstalling">Päivitys azennetah…</sys:String>
     <sys:String x:Key="LocUpdateIdle">Kaččo, onko Shotoras suajavil uuvembi versio.</sys:String>
     <sys:String x:Key="LocUpdateCurrentVersionFormat">Versio {0}</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">The update couldn't be installed</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">The download didn't complete. Check your connection and try again.</sys:String>
 </ResourceDictionary>

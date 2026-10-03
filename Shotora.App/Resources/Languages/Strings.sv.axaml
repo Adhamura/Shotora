@@ -279,4 +279,6 @@
     <sys:String x:Key="LocUpdateInstalling">Installerar uppdatering…</sys:String>
     <sys:String x:Key="LocUpdateIdle">Kontrollera om en nyare version av Shotora finns tillgänglig.</sys:String>
     <sys:String x:Key="LocUpdateCurrentVersionFormat">Version {0}</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">The update couldn't be installed</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">The download didn't complete. Check your connection and try again.</sys:String>
 </ResourceDictionary>

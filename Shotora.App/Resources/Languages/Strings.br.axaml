@@ -279,4 +279,6 @@
     <sys:String x:Key="LocUpdateInstalling">O staliañ an hizivadur…</sys:String>
     <sys:String x:Key="LocUpdateIdle">Gwiriañ hag-eñ ez eus ur stumm nevesoc'h eus Shotora.</sys:String>
     <sys:String x:Key="LocUpdateCurrentVersionFormat">Stumm {0}</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailed">The update couldn't be installed</sys:String>
+    <sys:String x:Key="LocUpdateDownloadFailedDetail">The download didn't complete. Check your connection and try again.</sys:String>
 </ResourceDictionary>
