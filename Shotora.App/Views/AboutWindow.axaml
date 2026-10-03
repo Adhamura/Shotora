@@ -1,11 +1,14 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="clr-namespace:Shotora.App.Controls"
         xmlns:viewModels="clr-namespace:Shotora.App.Services.ViewModels;assembly=Shotora.App.Services"
         x:Class="Shotora.App.Views.AboutWindow"
         x:DataType="viewModels:AboutViewModel"
         Title="{DynamicResource LocAboutTitle}"
-        Width="420"
-        Height="650"
+        Width="460"
+        Height="640"
+        MinWidth="380"
+        MinHeight="420"
         CanResize="True"
         WindowStartupLocation="CenterOwner"
         SystemDecorations="None"
@@ -14,121 +17,94 @@
         Background="Transparent"
         TransparencyLevelHint="Transparent"
         Icon="avares://Shotora.App/Assets/Shotora.ico">
-    <Border Background="{DynamicResource PanelBackgroundBrush}"
-            BorderBrush="{DynamicResource PanelBorderBrush}"
-            BorderThickness="1"
-            CornerRadius="10"
-            Padding="16"
-            PointerPressed="ShellBorder_OnPointerPressed"
-            PointerMoved="ShellBorder_OnPointerMoved"
-            PointerExited="ShellBorder_OnPointerLeave">
-        <Grid RowDefinitions="Auto,Auto,*,Auto">
-            <StackPanel Grid.Row="0" Margin="0,0,0,10" Spacing="4">
-                <TextBlock Text="{DynamicResource LocAboutTitle}"
-                           FontSize="16"
-                           FontWeight="SemiBold"
-                           Foreground="{DynamicResource TextPrimaryBrush}" />
-                <TextBlock Text="{DynamicResource LocAboutSubtitle}"
-                           Foreground="{DynamicResource TextSecondaryBrush}" />
-            </StackPanel>
-
-            <Image Grid.Row="1"
-                   Source="avares://Shotora.App/Assets/Shotora.png"
-                   Height="96"
-                   Stretch="Uniform"
-                   HorizontalAlignment="Center"
-                   Margin="0,0,0,12" />
-
-            <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Auto">
-                <StackPanel Spacing="10">
-                    <TextBlock Text="{DynamicResource LocAboutDescription}"
-                               TextWrapping="Wrap"
-                               Foreground="{DynamicResource TextPrimaryBrush}" />
-
-                    <StackPanel Spacing="2">
-                        <TextBlock Text="{DynamicResource LocAboutVersion}"
-                                   FontWeight="SemiBold"
-                                   Foreground="{DynamicResource TextPrimaryBrush}" />
-                        <TextBlock Text="{Binding Version}"
-                                   Foreground="{DynamicResource TextSecondaryBrush}" />
-                    </StackPanel>
-
-                    <StackPanel Spacing="2">
-                        <TextBlock Text="{DynamicResource LocAboutAuthor}"
-                                   FontWeight="SemiBold"
-                                   Foreground="{DynamicResource TextPrimaryBrush}" />
-                        <TextBlock Text="Kazuki Kimura"
-                                   Foreground="{DynamicResource TextPrimaryBrush}" />
-                        <TextBlock Text="{DynamicResource LocAboutRole}"
-                                   Foreground="{DynamicResource TextSecondaryBrush}" />
-                    </StackPanel>
-
-                    <StackPanel Spacing="2">
-                        <TextBlock Text="{DynamicResource LocAboutLicense}"
-                                   FontWeight="SemiBold"
-                                   Foreground="{DynamicResource TextPrimaryBrush}" />
-                        <TextBlock Text="Apache License 2.0"
-                                   Foreground="{DynamicResource TextSecondaryBrush}" />
-                    </StackPanel>
-
-                    <StackPanel Spacing="4">
-                        <TextBlock Text="{DynamicResource LocAboutLinks}"
-                                   FontWeight="SemiBold"
-                                   Foreground="{DynamicResource TextPrimaryBrush}" />
-                        <TextBlock Cursor="Hand"
-                                   Foreground="{DynamicResource AccentPrimaryBrush}"
-                                   TextDecorations="Underline"
-                                   Tag="https://www.kazukikimura.com"
-                                   PointerReleased="Link_OnPointerReleased">
-                            <Run Text="{DynamicResource LocAboutWebsite}" />
-                            <Run Text=": https://www.kazukikimura.com" />
-                        </TextBlock>
-                        <TextBlock Cursor="Hand"
-                                   Foreground="{DynamicResource AccentPrimaryBrush}"
-                                   TextDecorations="Underline"
-                                   Tag="https://www.linkedin.com/in/kazuki-kimura/"
-                                   PointerReleased="Link_OnPointerReleased">
-                            <Run Text="{DynamicResource LocAboutLinkedIn}" />
-                            <Run Text=": https://www.linkedin.com/in/kazuki-kimura/" />
-                        </TextBlock>
-                    </StackPanel>
-
-                    <StackPanel Spacing="4">
-                        <TextBlock Text="{DynamicResource LocAboutContact}"
-                                   FontWeight="SemiBold"
-                                   Foreground="{DynamicResource TextPrimaryBrush}" />
-                        <TextBlock Text="{DynamicResource LocAboutContactIntro}"
-                                   Foreground="{DynamicResource TextSecondaryBrush}" />
-                        <TextBlock Cursor="Hand"
-                                   Foreground="{DynamicResource AccentPrimaryBrush}"
-                                   TextDecorations="Underline"
-                                   Tag="mailto:kazuki.kimura.jp@gmail.com"
-                                   PointerReleased="Link_OnPointerReleased">
-                            <Run Text="kazuki.kimura.jp@gmail.com" />
-                        </TextBlock>
-                        <TextBlock Cursor="Hand"
-                                   Foreground="{DynamicResource AccentPrimaryBrush}"
-                                   TextDecorations="Underline"
-                                   Tag="mailto:admin@kazukikimura.com"
-                                   PointerReleased="Link_OnPointerReleased">
-                            <Run Text="admin@kazukikimura.com" />
-                        </TextBlock>
-                    </StackPanel>
-
-                    <TextBlock Text="{DynamicResource LocAboutCopyright}"
-                               FontSize="12"
-                               Foreground="{DynamicResource TextSecondaryBrush}" />
-                </StackPanel>
-            </ScrollViewer>
-
-            <StackPanel Grid.Row="3"
-                        Orientation="Horizontal"
-                        HorizontalAlignment="Right"
-                        Margin="0,12,0,0">
-                <Button Content="{DynamicResource LocCommonClose}"
-                        Width="90"
+    <controls:DialogShell x:Name="Shell"
+                          Title="{DynamicResource LocAboutTitle}"
+                          Padding="0,12,0,0">
+        <controls:DialogShell.Footer>
+            <StackPanel Classes="dialog-actions">
+                <Button Classes="accent"
+                        Content="{DynamicResource LocCommonClose}"
+                        IsDefault="True"
+                        IsCancel="True"
                         Click="Close_Click" />
             </StackPanel>
-        </Grid>
-    </Border>
+        </controls:DialogShell.Footer>
+
+        <ScrollViewer VerticalScrollBarVisibility="Auto"
+                      HorizontalScrollBarVisibility="Disabled">
+            <StackPanel Margin="16,0" Spacing="16">
+                <!-- Product header -->
+                <Grid ColumnDefinitions="Auto,*" ColumnSpacing="16">
+                    <Image Source="avares://Shotora.App/Assets/Shotora.png"
+                           Width="72"
+                           Height="72"
+                           Stretch="Uniform"
+                           VerticalAlignment="Center" />
+                    <StackPanel Grid.Column="1" VerticalAlignment="Center" Spacing="4">
+                        <TextBlock Classes="display" Text="{DynamicResource LocMainTitle}" />
+                        <TextBlock Classes="secondary" Text="{DynamicResource LocAboutSubtitle}" />
+                    </StackPanel>
+                </Grid>
+
+                <TextBlock Text="{DynamicResource LocAboutDescription}"
+                           TextWrapping="Wrap" />
+
+                <!-- Details: label/value rows. VersionSection is the extension point for update checks. -->
+                <Border Classes="card">
+                    <StackPanel Grid.IsSharedSizeScope="True" Spacing="8">
+                        <Grid x:Name="VersionSection">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" SharedSizeGroup="AboutLabel" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Classes="label" Text="{DynamicResource LocAboutVersion}" Margin="0,0,16,0" />
+                            <TextBlock Grid.Column="1" Classes="secondary" Text="{Binding Version}" />
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" SharedSizeGroup="AboutLabel" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Classes="label" Text="{DynamicResource LocAboutAuthor}" Margin="0,0,16,0" />
+                            <StackPanel Grid.Column="1" Spacing="2">
+                                <TextBlock Text="Kazuki Kimura" TextWrapping="Wrap" />
+                                <TextBlock Classes="secondary" Text="{DynamicResource LocAboutRole}" />
+                            </StackPanel>
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" SharedSizeGroup="AboutLabel" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Classes="label" Text="{DynamicResource LocAboutLicense}" Margin="0,0,16,0" />
+                            <TextBlock Grid.Column="1" Classes="secondary" Text="Apache License 2.0" />
+                        </Grid>
+                    </StackPanel>
+                </Border>
+
+                <StackPanel Spacing="4">
+                    <TextBlock Classes="label" Text="{DynamicResource LocAboutLinks}" />
+                    <HyperlinkButton NavigateUri="https://www.kazukikimura.com"
+                                     ToolTip.Tip="https://www.kazukikimura.com"
+                                     Content="{DynamicResource LocAboutWebsite}" />
+                    <HyperlinkButton NavigateUri="https://www.linkedin.com/in/kazuki-kimura/"
+                                     ToolTip.Tip="https://www.linkedin.com/in/kazuki-kimura/"
+                                     Content="{DynamicResource LocAboutLinkedIn}" />
+                </StackPanel>
+
+                <StackPanel Spacing="4">
+                    <TextBlock Classes="label" Text="{DynamicResource LocAboutContact}" />
+                    <TextBlock Classes="secondary" Text="{DynamicResource LocAboutContactIntro}" />
+                    <HyperlinkButton NavigateUri="mailto:kazuki.kimura.jp@gmail.com"
+                                     Content="kazuki.kimura.jp@gmail.com" />
+                    <HyperlinkButton NavigateUri="mailto:admin@kazukikimura.com"
+                                     Content="admin@kazukikimura.com" />
+                </StackPanel>
+
+                <TextBlock Classes="caption"
+                           Margin="0,0,0,4"
+                           Text="{DynamicResource LocAboutCopyright}" />
+            </StackPanel>
+        </ScrollViewer>
+    </controls:DialogShell>
 </Window>

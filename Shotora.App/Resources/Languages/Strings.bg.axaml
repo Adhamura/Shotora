@@ -194,7 +194,7 @@
     <!-- About -->
     <sys:String x:Key="LocAboutTitle">Относно Shotora</sys:String>
     <sys:String x:Key="LocAboutVersion">Версия</sys:String>
-    <sys:String x:Key="LocAboutCopyright">Â© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
+    <sys:String x:Key="LocAboutCopyright">© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
     <sys:String x:Key="LocAboutLinks">Връзки</sys:String>
     <sys:String x:Key="LocAboutWebsite">Уебсайт</sys:String>
     <sys:String x:Key="LocAboutLinkedIn">LinkedIn</sys:String>

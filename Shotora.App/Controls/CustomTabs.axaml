@@ -4,57 +4,81 @@
              x:Class="Shotora.App.Controls.CustomTabs"
              x:Name="Root">
     <Grid RowDefinitions="Auto,*">
-        <Border Background="{DynamicResource PanelBackgroundBrush}"
-                BorderBrush="{DynamicResource PanelBorderBrush}"
-                BorderThickness="1"
-                CornerRadius="8,8,0,0"
-                Padding="8,6">
+        <!-- Tab strip: underline tabs that wrap onto a second line for long translations -->
+        <Border BorderBrush="{DynamicResource DividerBrush}"
+                BorderThickness="0,0,0,1">
             <ListBox x:Name="TabsList"
                      ItemsSource="{Binding Items, ElementName=Root}"
                      SelectedIndex="{Binding SelectedIndex, ElementName=Root, Mode=TwoWay}"
                      SelectionMode="Single"
                      Background="Transparent"
-                     BorderThickness="0">
+                     BorderThickness="0"
+                     Padding="0"
+                     ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                     ScrollViewer.VerticalScrollBarVisibility="Disabled">
                 <ListBox.ItemsPanel>
                     <ItemsPanelTemplate>
-                        <StackPanel Orientation="Horizontal" />
+                        <WrapPanel Orientation="Horizontal" />
                     </ItemsPanelTemplate>
                 </ListBox.ItemsPanel>
                 <ListBox.Styles>
                     <Style Selector="ListBoxItem">
-                        <Setter Property="Margin" Value="0,0,8,0" />
-                        <Setter Property="Padding" Value="0" />
+                        <Setter Property="Margin" Value="0,0,4,0" />
+                        <Setter Property="Padding" Value="12,8" />
+                        <Setter Property="MinHeight" Value="{StaticResource ControlHeight}" />
+                        <Setter Property="Foreground" Value="{DynamicResource TextSecondaryBrush}" />
+                        <Setter Property="Cursor" Value="Hand" />
+                        <Setter Property="FocusAdorner" Value="{x:Null}" />
                         <Setter Property="Template">
                             <ControlTemplate>
-                                <Border x:Name="TabHost"
-                                        Background="{DynamicResource ButtonBackgroundBrush}"
-                                        BorderBrush="{DynamicResource ButtonBorderBrush}"
-                                        BorderThickness="1"
-                                        CornerRadius="6"
-                                        Padding="16,8">
-                                    <ContentPresenter Content="{TemplateBinding Content}"
-                                                      ContentTemplate="{TemplateBinding ContentTemplate}"
-                                                      HorizontalAlignment="Center"
-                                                      VerticalAlignment="Center" />
-                                </Border>
+                                <Panel>
+                                    <Border x:Name="TabHost"
+                                            Background="Transparent"
+                                            CornerRadius="6,6,0,0"
+                                            Padding="{TemplateBinding Padding}">
+                                        <ContentPresenter Content="{TemplateBinding Content}"
+                                                          ContentTemplate="{TemplateBinding ContentTemplate}"
+                                                          Foreground="{TemplateBinding Foreground}"
+                                                          HorizontalAlignment="Center"
+                                                          VerticalAlignment="Center" />
+                                    </Border>
+                                    <Border x:Name="Indicator"
+                                            Height="3"
+                                            CornerRadius="2"
+                                            VerticalAlignment="Bottom"
+                                            Margin="8,0"
+                                            Background="Transparent" />
+                                    <Border x:Name="FocusRing"
+                                            CornerRadius="6,6,0,0"
+                                            BorderBrush="{DynamicResource FocusRingBrush}"
+                                            BorderThickness="{StaticResource FocusRingThickness}"
+                                            IsHitTestVisible="False"
+                                            IsVisible="False" />
+                                </Panel>
                             </ControlTemplate>
                         </Setter>
                     </Style>
                     <Style Selector="ListBoxItem TextBlock">
-                        <Setter Property="FontFamily" Value="{DynamicResource AppFontFamily}" />
-                        <Setter Property="FontSize" Value="14" />
-                        <Setter Property="FontWeight" Value="Normal" />
-                        <Setter Property="Foreground" Value="{DynamicResource ButtonForegroundBrush}" />
+                        <Setter Property="FontSize" Value="{StaticResource FontSizeBody}" />
+                        <Setter Property="FontWeight" Value="SemiBold" />
                     </Style>
                     <Style Selector="ListBoxItem:pointerover /template/ Border#TabHost">
-                        <Setter Property="Background" Value="{DynamicResource ButtonHoverBrush}" />
+                        <Setter Property="Background" Value="{DynamicResource SubtleHoverBrush}" />
+                    </Style>
+                    <Style Selector="ListBoxItem:pointerover">
+                        <Setter Property="Foreground" Value="{DynamicResource TextPrimaryBrush}" />
                     </Style>
                     <Style Selector="ListBoxItem:pressed /template/ Border#TabHost">
-                        <Setter Property="Background" Value="{DynamicResource ButtonPressedBrush}" />
+                        <Setter Property="Background" Value="{DynamicResource SubtlePressedBrush}" />
                     </Style>
-                    <Style Selector="ListBoxItem:selected /template/ Border#TabHost">
-                        <Setter Property="Background" Value="{DynamicResource ButtonPressedBrush}" />
-                        <Setter Property="BorderBrush" Value="{DynamicResource AccentPrimaryBrush}" />
+                    <Style Selector="ListBoxItem:selected">
+                        <Setter Property="Foreground" Value="{DynamicResource TextPrimaryBrush}" />
+                    </Style>
+                    <Style Selector="ListBoxItem:selected /template/ Border#Indicator">
+                        <Setter Property="Background" Value="{DynamicResource AccentPrimaryBrush}" />
+                    </Style>
+                    <Style Selector="ListBoxItem:focus-visible /template/ Border#FocusRing">
+                        <Setter Property="IsVisible" Value="True" />
                     </Style>
                 </ListBox.Styles>
                 <ListBox.ItemTemplate>
@@ -65,14 +89,9 @@
             </ListBox>
         </Border>
 
-        <Border Grid.Row="1"
-                Background="{DynamicResource PanelBackgroundBrush}"
-                BorderBrush="{DynamicResource PanelBorderBrush}"
-                BorderThickness="1"
-                CornerRadius="0,0,8,8"
-                Padding="10">
-            <ContentPresenter Content="{Binding SelectedContent, ElementName=Root}"
-                              DataContext="{Binding DataContext, ElementName=Root}" />
-        </Border>
+        <ContentPresenter Grid.Row="1"
+                          Margin="0,12,0,0"
+                          Content="{Binding SelectedContent, ElementName=Root}"
+                          DataContext="{Binding DataContext, ElementName=Root}" />
     </Grid>
 </UserControl>

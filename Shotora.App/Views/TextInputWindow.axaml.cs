@@ -30,8 +30,7 @@ public partial class TextInputWindow : Window
 		BoldToggle.IsChecked   = bold;
 		ItalicToggle.IsChecked = italic;
 		TextBox.Text           = initialText ?? string.Empty;
-		TextBox.Focus();
-		TextBox.CaretIndex = TextBox.Text?.Length ?? 0;
+		TextBox.CaretIndex     = TextBox.Text?.Length ?? 0;
 		UpdatePreview();
 
 		TextBox.PropertyChanged        += (_, _) => UpdatePreview();
@@ -39,6 +38,10 @@ public partial class TextInputWindow : Window
 		FontSizeBox.PropertyChanged    += (_, _) => UpdatePreview();
 		BoldToggle.IsCheckedChanged    += (_, _) => UpdatePreview();
 		ItalicToggle.IsCheckedChanged  += (_, _) => UpdatePreview();
+
+		// Enter adds a line break in the multi-line box, so Ctrl+Enter is the keyboard shortcut for the primary action.
+		TextBox.AddHandler(KeyDownEvent, TextBox_OnKeyDown, RoutingStrategies.Tunnel);
+		Opened += (_, _) => TextBox.Focus();
 	}
 
 	public string TextValue => TextBox.Text ?? string.Empty;
@@ -61,6 +64,15 @@ public partial class TextInputWindow : Window
 
 	public bool IsItalic => ItalicToggle.IsChecked == true;
 
+	private void TextBox_OnKeyDown(object? sender, KeyEventArgs e)
+	{
+		if (e.Key == Key.Enter && e.KeyModifiers.HasFlag(KeyModifiers.Control))
+		{
+			e.Handled = true;
+			Close(true);
+		}
+	}
+
 	private void Ok_Click(object? sender, RoutedEventArgs e)
 	{
 		Close(true);
@@ -71,17 +83,10 @@ public partial class TextInputWindow : Window
 		Close(false);
 	}
 
-	private void ShellBorder_OnPointerPressed(object? sender, PointerPressedEventArgs e)
-	{
-		if (e.GetCurrentPoint(this).Properties.IsLeftButtonPressed)
-		{
-			BeginMoveDrag(e);
-		}
-	}
-
 	private void UpdatePreview()
 	{
-		PreviewText.Text       = string.IsNullOrWhiteSpace(TextBox.Text) ? "Sample" : TextBox.Text;
+		// With no text yet, preview the font itself by showing its name.
+		PreviewText.Text       = string.IsNullOrWhiteSpace(TextBox.Text) ? FontFamilyValue : TextBox.Text;
 		PreviewText.FontFamily = new FontFamily(FontFamilyValue);
 		PreviewText.FontSize   = FontSizeValue;
 		PreviewText.FontWeight = IsBold ? FontWeight.Bold : FontWeight.Normal;

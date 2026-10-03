@@ -10,16 +10,17 @@
 
     <UserControl.Styles>
         <Style Selector="TextBox.color-input">
+            <Setter Property="MinHeight" Value="24" />
             <Setter Property="Height" Value="24" />
-            <Setter Property="FontSize" Value="12" />
+            <Setter Property="FontSize" Value="{StaticResource FontSizeCaption}" />
             <Setter Property="Padding" Value="4,2" />
             <Setter Property="VerticalContentAlignment" Value="Center" />
-            <Setter Property="CornerRadius" Value="3" />
+            <Setter Property="CornerRadius" Value="{StaticResource RadiusSm}" />
         </Style>
         <Style Selector="TextBlock.color-label">
-            <Setter Property="FontSize" Value="11" />
+            <Setter Property="FontSize" Value="{StaticResource FontSizeCaption}" />
             <Setter Property="VerticalAlignment" Value="Center" />
-            <Setter Property="Foreground" Value="#999" />
+            <Setter Property="Foreground" Value="{DynamicResource TextSecondaryBrush}" />
             <Setter Property="Margin" Value="0,0,4,0" />
         </Style>
     </UserControl.Styles>
@@ -27,7 +28,7 @@
     <Border Background="{DynamicResource PanelBackgroundBrush}"
             BorderBrush="{DynamicResource PanelBorderBrush}"
             BorderThickness="1"
-            CornerRadius="6"
+            CornerRadius="{StaticResource RadiusLg}"
             Padding="10">
         <StackPanel Spacing="8">
 

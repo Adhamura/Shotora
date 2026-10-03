@@ -194,7 +194,7 @@
     <!-- About -->
     <sys:String x:Key="LocAboutTitle">Davart Shotora</sys:String>
     <sys:String x:Key="LocAboutVersion">Versiun</sys:String>
-    <sys:String x:Key="LocAboutCopyright">Â© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
+    <sys:String x:Key="LocAboutCopyright">© 2025 Kazuki Kimura. Apache 2.0.</sys:String>
     <sys:String x:Key="LocAboutLinks">Liaziuns</sys:String>
     <sys:String x:Key="LocAboutWebsite">Situs web</sys:String>
     <sys:String x:Key="LocAboutLinkedIn">LinkedIn</sys:String>

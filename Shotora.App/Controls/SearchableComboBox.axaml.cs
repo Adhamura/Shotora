@@ -535,7 +535,12 @@ public partial class SearchableComboBox : UserControl
 				}
 				break;
 			case Key.Escape:
-				IsDropDownOpen = false;
+				if (IsDropDownOpen)
+				{
+					// Close only the drop-down; a second Esc reaches the window (dialog cancel button).
+					IsDropDownOpen = false;
+					e.Handled      = true;
+				}
 				break;
 		}
 	}

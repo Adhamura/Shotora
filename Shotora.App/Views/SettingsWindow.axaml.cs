@@ -1,7 +1,6 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Threading.Tasks;
 using Avalonia.Controls;
-using Avalonia.Input;
 using Avalonia.Interactivity;
 using Shotora.App.Controls;
 using Shotora.App.Interfaces.PeripheralServices;
@@ -12,7 +11,7 @@ using Shotora.App.Models.ViewModels;
 namespace Shotora.App.Views;
 
 [ExcludeFromCodeCoverage]
-public partial class SettingsWindow(ISettingsViewModelController settingsViewModelController, IMouseInteractionService settingsSystemService) : Window
+public partial class SettingsWindow(ISettingsViewModelController settingsViewModelController, IMouseInteractionService mouseInteractionService) : Window
 {
 	private bool _allowClose;
 	private bool _closingScheduled;
@@ -20,6 +19,7 @@ public partial class SettingsWindow(ISettingsViewModelController settingsViewMod
 	public void InitializeAsync()
 	{
 		InitializeComponent();
+		Shell.ResizeService = mouseInteractionService;
 		settingsViewModelController.Init();
 		settingsViewModelController.SettingsHandlersAttach(v => DataContext ??= v);
 		AddHandler(SearchableComboBox.SelectionChangedEvent, OnComboBoxSelectionChanged);
@@ -58,33 +58,6 @@ public partial class SettingsWindow(ISettingsViewModelController settingsViewMod
 	private void Close_Click(object? sender, RoutedEventArgs e)
 	{
 		Close();
-	}
-
-	private void ShellBorder_OnPointerPressed(object? sender, PointerPressedEventArgs e)
-	{
-		if (e.GetCurrentPoint(this).Properties.IsLeftButtonPressed)
-		{
-			var edge = settingsSystemService.GetResizeEdge(this, e.GetPosition(this));
-			if (edge.HasValue)
-			{
-				BeginResizeDrag(edge.Value, e);
-				e.Handled = true;
-				return;
-			}
-
-			BeginMoveDrag(e);
-		}
-	}
-
-	private void ShellBorder_OnPointerMoved(object? sender, PointerEventArgs e)
-	{
-		var edge = settingsSystemService.GetResizeEdge(this, e.GetPosition(this));
-		Cursor = edge.HasValue ? new Cursor(settingsSystemService.GetResizeCursor(edge.Value)) : null;
-	}
-
-	private void ShellBorder_OnPointerLeave(object? sender, PointerEventArgs e)
-	{
-		Cursor = null;
 	}
 
 	private void DefaultColorPick_Click(object? sender, RoutedEventArgs e)

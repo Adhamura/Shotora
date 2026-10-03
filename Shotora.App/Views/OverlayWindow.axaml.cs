@@ -183,14 +183,11 @@ public partial class OverlayWindow(
 
 		foreach (var color in colors)
 		{
+			// Size, radius, border and hover/focus visuals come from the shared "swatch" style (Styles/Controls.axaml).
 			var swatch = new Button
 			{
-				Width           = 22,
-				Height          = 22,
-				Margin          = new Thickness(2),
-				Background      = new SolidColorBrush(color),
-				BorderBrush     = Brushes.Transparent,
-				BorderThickness = new Thickness(1)
+				Classes    = { "swatch" },
+				Background = new SolidColorBrush(color)
 			};
 			swatch.Click += (_, _) => SetCurrentColor(color);
 			ColorPalette.Children.Add(swatch);
