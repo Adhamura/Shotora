@@ -7,6 +7,7 @@ namespace Shotora.App.Services.Updates;
 public class UpdateCoordinator(
 	IUpdateService         updateService,
 	ISettingsSystemService settingsSystemService,
+	IUpdateStateStore      updateStateStore,
 	TimeProvider           timeProvider) : IUpdateCoordinator
 {
 	/// <summary>How often the background loop re-evaluates the policy; the policy itself enforces the 24h interval.</summary>
@@ -15,8 +16,8 @@ public class UpdateCoordinator(
 	private readonly CancellationTokenSource _cts = new();
 	private          Task?                   _loop;
 
-	public UpdateCoordinator(IUpdateService updateService, ISettingsSystemService settingsSystemService)
-		: this(updateService, settingsSystemService, TimeProvider.System)
+	public UpdateCoordinator(IUpdateService updateService, ISettingsSystemService settingsSystemService, IUpdateStateStore updateStateStore)
+		: this(updateService, settingsSystemService, updateStateStore, TimeProvider.System)
 	{
 	}
 
@@ -30,8 +31,9 @@ public class UpdateCoordinator(
 	public async Task<UpdateCheckResult?> RunAutomaticCheckAsync(CancellationToken cancellationToken)
 	{
 		var settings = await settingsSystemService.LoadAsync().ConfigureAwait(false);
+		var state    = await updateStateStore.LoadAsync().ConfigureAwait(false);
 		var now      = timeProvider.GetUtcNow();
-		if (!UpdatePolicy.ShouldRunAutomaticCheck(settings, now))
+		if (!UpdatePolicy.ShouldRunAutomaticCheck(settings.AutoCheckForUpdates, state.LastCheckUtc, now))
 		{
 			return null;
 		}
@@ -43,11 +45,11 @@ public class UpdateCoordinator(
 			return result;
 		}
 
-		settings                    = await settingsSystemService.LoadAsync().ConfigureAwait(false);
-		settings.LastUpdateCheckUtc = now;
-		await settingsSystemService.SaveAsync(settings).ConfigureAwait(false);
+		state              = await updateStateStore.LoadAsync().ConfigureAwait(false);
+		state.LastCheckUtc = now;
+		await updateStateStore.SaveAsync(state).ConfigureAwait(false);
 
-		if (UpdatePolicy.ShouldPromptUser(result, settings, false))
+		if (UpdatePolicy.ShouldPromptUser(result, state.SkippedVersion, false))
 		{
 			UpdateAvailable?.Invoke(this, result);
 		}
@@ -57,9 +59,9 @@ public class UpdateCoordinator(
 
 	public async Task SkipVersionAsync(string version)
 	{
-		var settings = await settingsSystemService.LoadAsync().ConfigureAwait(false);
-		settings.SkippedUpdateVersion = VersionComparer.Normalize(version);
-		await settingsSystemService.SaveAsync(settings).ConfigureAwait(false);
+		var state = await updateStateStore.LoadAsync().ConfigureAwait(false);
+		state.SkippedVersion = VersionComparer.Normalize(version);
+		await updateStateStore.SaveAsync(state).ConfigureAwait(false);
 	}
 
 	public void Dispose()

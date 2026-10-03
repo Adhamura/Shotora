@@ -1,4 +1,3 @@
-using Shotora.App.Models;
 using Shotora.App.Models.Updates;
 
 namespace Shotora.App.Tests.Updates;
@@ -10,13 +9,13 @@ public class UpdatePolicyTests
 	[Fact]
 	public void Given_AutoCheckDisabled_When_ShouldRunAutomaticCheck_Then_False()
 	{
-		Assert.False(UpdatePolicy.ShouldRunAutomaticCheck(new AppSettings { AutoCheckForUpdates = false }, Now));
+		Assert.False(UpdatePolicy.ShouldRunAutomaticCheck(false, null, Now));
 	}
 
 	[Fact]
 	public void Given_NeverChecked_When_ShouldRunAutomaticCheck_Then_True()
 	{
-		Assert.True(UpdatePolicy.ShouldRunAutomaticCheck(new AppSettings(), Now));
+		Assert.True(UpdatePolicy.ShouldRunAutomaticCheck(true, null, Now));
 	}
 
 	[Theory]
@@ -27,9 +26,7 @@ public class UpdatePolicyTests
 	[InlineData(-5,  true)]
 	public void Given_LastCheck_When_ShouldRunAutomaticCheck_Then_RespectsInterval(int hoursAgo, bool expected)
 	{
-		var settings = new AppSettings { LastUpdateCheckUtc = Now.AddHours(-hoursAgo) };
-
-		Assert.Equal(expected, UpdatePolicy.ShouldRunAutomaticCheck(settings, Now));
+		Assert.Equal(expected, UpdatePolicy.ShouldRunAutomaticCheck(true, Now.AddHours(-hoursAgo), Now));
 	}
 
 	[Theory]
@@ -40,10 +37,9 @@ public class UpdatePolicyTests
 	[InlineData("1.2.0",  true,  true)]
 	public void Given_AvailableUpdate_When_ShouldPromptUser_Then_HonoursSkippedVersion(string? skipped, bool userInitiated, bool expected)
 	{
-		var result   = new UpdateCheckResult(UpdateStatus.UpdateAvailable, "1.0.0", "1.2.0");
-		var settings = new AppSettings { SkippedUpdateVersion = skipped };
+		var result = new UpdateCheckResult(UpdateStatus.UpdateAvailable, "1.0.0", "1.2.0");
 
-		Assert.Equal(expected, UpdatePolicy.ShouldPromptUser(result, settings, userInitiated));
+		Assert.Equal(expected, UpdatePolicy.ShouldPromptUser(result, skipped, userInitiated));
 	}
 
 	[Theory]
@@ -53,6 +49,6 @@ public class UpdatePolicyTests
 	{
 		var result = UpdateCheckResult.UpToDate("1.0.0", "1.0.0", null);
 
-		Assert.Equal(expected, UpdatePolicy.ShouldPromptUser(result, new AppSettings(), userInitiated));
+		Assert.Equal(expected, UpdatePolicy.ShouldPromptUser(result, null, userInitiated));
 	}
 }

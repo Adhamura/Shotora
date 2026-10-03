@@ -5,20 +5,20 @@ namespace Shotora.App.Models.Updates;
 /// </summary>
 public static class UpdatePolicy
 {
-	public static bool ShouldRunAutomaticCheck(AppSettings settings, DateTimeOffset nowUtc)
+	public static bool ShouldRunAutomaticCheck(bool autoCheckEnabled, DateTimeOffset? lastCheckUtc, DateTimeOffset nowUtc)
 	{
-		if (!settings.AutoCheckForUpdates)
+		if (!autoCheckEnabled)
 		{
 			return false;
 		}
 
-		return settings.LastUpdateCheckUtc is not { } lastCheck ||
+		return lastCheckUtc is not { } lastCheck ||
 		       lastCheck > nowUtc ||
 		       nowUtc - lastCheck >= UpdateConstants.AutomaticCheckInterval;
 	}
 
 	/// <summary>Background checks stay silent for versions the user chose to skip; manual checks always show.</summary>
-	public static bool ShouldPromptUser(UpdateCheckResult result, AppSettings settings, bool userInitiated)
+	public static bool ShouldPromptUser(UpdateCheckResult result, string? skippedVersion, bool userInitiated)
 	{
 		if (!result.IsUpdateAvailable)
 		{
@@ -26,7 +26,7 @@ public static class UpdatePolicy
 		}
 
 		return userInitiated ||
-		       string.IsNullOrWhiteSpace(settings.SkippedUpdateVersion) ||
-		       !string.Equals(VersionComparer.Normalize(settings.SkippedUpdateVersion), result.LatestVersion, StringComparison.OrdinalIgnoreCase);
+		       string.IsNullOrWhiteSpace(skippedVersion) ||
+		       !string.Equals(VersionComparer.Normalize(skippedVersion), result.LatestVersion, StringComparison.OrdinalIgnoreCase);
 	}
 }

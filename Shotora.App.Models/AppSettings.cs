@@ -30,10 +30,6 @@ public class AppSettings
 
 	public bool AutoCheckForUpdates { get; set; } = true;
 
-	public DateTimeOffset? LastUpdateCheckUtc { get; set; }
-
-	public string? SkippedUpdateVersion { get; set; }
-
 	public string FilenamePattern { get; set; } = "Shotora_{0:yyyy-MM-dd_HH-mm-ss}";
 
 	public OcrEngineType OcrEngine { get; set; } = OcrEngineType.Tesseract;

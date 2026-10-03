@@ -13,14 +13,17 @@ public class UpdateCoordinatorTests
 
 	private readonly Mock<ISettingsSystemService> _settings = new(MockBehavior.Strict);
 	private readonly Mock<IUpdateService>         _updates  = new(MockBehavior.Strict);
+	private readonly Mock<IUpdateStateStore>      _store    = new(MockBehavior.Strict);
 	private readonly AppSettings                  _stored   = new();
+	private readonly UpdateState                  _state    = new();
 	private readonly UpdateCoordinator            _sut;
 
 	public UpdateCoordinatorTests()
 	{
 		_settings.Setup(s => s.LoadAsync()).ReturnsAsync(() => _stored);
-		_settings.Setup(s => s.SaveAsync(It.IsAny<AppSettings>())).Returns(Task.CompletedTask);
-		_sut = new UpdateCoordinator(_updates.Object, _settings.Object, new FixedTimeProvider(Now));
+		_store.Setup(s => s.LoadAsync()).ReturnsAsync(() => _state);
+		_store.Setup(s => s.SaveAsync(It.IsAny<UpdateState>())).Returns(Task.CompletedTask);
+		_sut = new UpdateCoordinator(_updates.Object, _settings.Object, _store.Object, new FixedTimeProvider(Now));
 	}
 
 	[Fact]
@@ -37,7 +40,7 @@ public class UpdateCoordinatorTests
 	[Fact]
 	public async Task Given_RecentCheck_When_RunAutomaticCheck_Then_Skips()
 	{
-		_stored.LastUpdateCheckUtc = Now.AddHours(-2);
+		_state.LastCheckUtc = Now.AddHours(-2);
 
 		Assert.Null(await _sut.RunAutomaticCheckAsync(CancellationToken.None));
 		_updates.VerifyNoOtherCalls();
@@ -55,14 +58,15 @@ public class UpdateCoordinatorTests
 
 		Assert.Same(found, result);
 		Assert.Same(found, raised);
-		Assert.Equal(Now, _stored.LastUpdateCheckUtc);
-		_settings.Verify(s => s.SaveAsync(_stored), Times.Once);
+		Assert.Equal(Now, _state.LastCheckUtc);
+		_store.Verify(s => s.SaveAsync(_state), Times.Once);
+		_settings.Verify(s => s.SaveAsync(It.IsAny<AppSettings>()), Times.Never);
 	}
 
 	[Fact]
 	public async Task Given_SkippedVersionFound_When_RunAutomaticCheck_Then_DoesNotRaiseEvent()
 	{
-		_stored.SkippedUpdateVersion = "1.1.0";
+		_state.SkippedVersion = "1.1.0";
 		_updates.Setup(u => u.CheckForUpdatesAsync(It.IsAny<CancellationToken>()))
 			.ReturnsAsync(new UpdateCheckResult(UpdateStatus.UpdateAvailable, "1.0.0", "1.1.0"));
 		var raised = false;
@@ -71,7 +75,7 @@ public class UpdateCoordinatorTests
 		await _sut.RunAutomaticCheckAsync(CancellationToken.None);
 
 		Assert.False(raised);
-		Assert.Equal(Now, _stored.LastUpdateCheckUtc);
+		Assert.Equal(Now, _state.LastCheckUtc);
 	}
 
 	[Fact]
@@ -83,8 +87,8 @@ public class UpdateCoordinatorTests
 		var result = await _sut.RunAutomaticCheckAsync(CancellationToken.None);
 
 		Assert.Equal(UpdateStatus.Failed, result?.Status);
-		Assert.Null(_stored.LastUpdateCheckUtc);
-		_settings.Verify(s => s.SaveAsync(It.IsAny<AppSettings>()), Times.Never);
+		Assert.Null(_state.LastCheckUtc);
+		_store.Verify(s => s.SaveAsync(It.IsAny<UpdateState>()), Times.Never);
 	}
 
 	[Fact]
@@ -92,8 +96,8 @@ public class UpdateCoordinatorTests
 	{
 		await _sut.SkipVersionAsync("v2.0");
 
-		Assert.Equal("2.0.0", _stored.SkippedUpdateVersion);
-		_settings.Verify(s => s.SaveAsync(_stored), Times.Once);
+		Assert.Equal("2.0.0", _state.SkippedVersion);
+		_store.Verify(s => s.SaveAsync(_state), Times.Once);
 	}
 
 	private sealed class FixedTimeProvider(DateTimeOffset now) : TimeProvider
