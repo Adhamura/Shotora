@@ -23,6 +23,7 @@ public class TrayMenuWindowService(ILocalizationProvider localizationProvider, I
 		Action onCaptureFull,
 		Action onSettings,
 		Action onAbout,
+		Action onCheckForUpdates,
 		Action onExit,
 		string themeName)
 	{
@@ -45,6 +46,7 @@ public class TrayMenuWindowService(ILocalizationProvider localizationProvider, I
 		var captureFullButton   = CreateButton(onCaptureFull);
 		var settingsButton      = CreateButton(onSettings);
 		var aboutButton         = CreateButton(onAbout);
+		var updatesButton       = CreateButton(onCheckForUpdates);
 		var exitButton          = CreateButton(onExit);
 
 		var separator = new Border
@@ -63,6 +65,7 @@ public class TrayMenuWindowService(ILocalizationProvider localizationProvider, I
 		stack.Children.Add(captureRegionButton);
 		stack.Children.Add(captureFullButton);
 		stack.Children.Add(settingsButton);
+		stack.Children.Add(updatesButton);
 		stack.Children.Add(aboutButton);
 		stack.Children.Add(separator);
 		stack.Children.Add(exitButton);
@@ -86,7 +89,7 @@ public class TrayMenuWindowService(ILocalizationProvider localizationProvider, I
 		window.Content = root;
 
 		var model = new TrayMenuWindowModel();
-		model.Init(window, captureRegionButton, captureFullButton, settingsButton, aboutButton, exitButton, root, separator);
+		model.Init(window, captureRegionButton, captureFullButton, settingsButton, aboutButton, updatesButton, exitButton, root, separator);
 		model.CurrentOs = processSystemService.GetCurrentOs();
 
 		window.Deactivated += (_, _) =>
@@ -116,6 +119,7 @@ public class TrayMenuWindowService(ILocalizationProvider localizationProvider, I
 		model.CaptureFullButton.Content   = localizationProvider.GetString(LocalizationKeys.TrayCaptureFull,   LocalizationFallbacks.Tray.CaptureFull);
 		model.SettingsButton.Content      = localizationProvider.GetString(LocalizationKeys.TraySettings,      LocalizationFallbacks.Tray.Settings);
 		model.AboutButton.Content         = localizationProvider.GetString(LocalizationKeys.TrayAbout,         LocalizationFallbacks.Tray.About);
+		model.UpdatesButton.Content       = localizationProvider.GetString(LocalizationKeys.TrayCheckForUpdates, LocalizationFallbacks.Tray.CheckForUpdates);
 		model.ExitButton.Content          = localizationProvider.GetString(LocalizationKeys.TrayExit,          LocalizationFallbacks.Tray.Exit);
 	}
 
@@ -188,6 +192,7 @@ public class TrayMenuWindowService(ILocalizationProvider localizationProvider, I
 		SetButtonTheme(model.CaptureFullButton,   textBrush, idleButtonBrush, hoverButtonBrush);
 		SetButtonTheme(model.SettingsButton,      textBrush, idleButtonBrush, hoverButtonBrush);
 		SetButtonTheme(model.AboutButton,         textBrush, idleButtonBrush, hoverButtonBrush);
+		SetButtonTheme(model.UpdatesButton,       textBrush, idleButtonBrush, hoverButtonBrush);
 		SetButtonTheme(model.ExitButton,          textBrush, idleButtonBrush, hoverButtonBrush);
 	}
 

@@ -22,5 +22,6 @@ jobs:
           global-json-file: global.json
       - name: Build
         run: dotnet build Shotora.sln -c Release
-      - name: Update service tests
-        run: dotnet test Shotora.App.Tests -c Release --no-build --filter "FullyQualifiedName~Shotora.App.Tests.Updates"
+      - name: Test
+        # Avalonia UI tests share one dispatcher thread; run test collections serially.
+        run: dotnet test Shotora.App.Tests -c Release --no-build -- xUnit.ParallelizeTestCollections=false

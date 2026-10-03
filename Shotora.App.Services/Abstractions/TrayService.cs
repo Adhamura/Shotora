@@ -42,11 +42,13 @@ public class TrayService(ILocalizationProvider  localizationProvider,
 	};
 	private PixelPoint?          _lastClickPoint;
 	private NativeMenuItem?      _linuxAboutItem;
+	private NativeMenuItem?      _linuxUpdatesItem;
 	private NativeMenuItem?      _linuxCaptureFullItem;
 	private NativeMenuItem?      _linuxCaptureRegionItem;
 	private NativeMenuItem?      _linuxExitItem;
 	private NativeMenuItem?      _linuxSettingsItem;
 	private NativeMenuItem?      _macAboutItem;
+	private NativeMenuItem?      _macUpdatesItem;
 	private NativeMenuItem?      _macCaptureFullItem;
 	private NativeMenuItem?      _macCaptureRegionItem;
 	private NativeMenuItem?      _macExitItem;
@@ -55,20 +57,24 @@ public class TrayService(ILocalizationProvider  localizationProvider,
 	private Action _showAbout = () =>
 	{
 	};
+	private Action _checkForUpdates = () =>
+	{
+	};
 	private Action _showSettings = () =>
 	{
 	};
 	private static bool IsMac     => RuntimeInformation.IsOSPlatform(OSPlatform.OSX);
 	private static bool IsWindows => RuntimeInformation.IsOSPlatform(OSPlatform.Windows);
 
-	public void Initialize(Action captureRegion, Action captureFull, Action showSettings, Action showAbout, Action exitApp)
+	public void Initialize(Action captureRegion, Action captureFull, Action showSettings, Action showAbout, Action checkForUpdates, Action exitApp)
 	{
 		Dispose();
 
 		_captureRegion = captureRegion;
 		_captureFull   = captureFull;
 		_showSettings  = showSettings;
-		_showAbout     = showAbout;
+		_showAbout       = showAbout;
+		_checkForUpdates = checkForUpdates;
 		_exitApp       = exitApp;
 
 		_menuWindow = CreateMenuWindow();
@@ -102,11 +108,13 @@ public class TrayService(ILocalizationProvider  localizationProvider,
 		_macCaptureFullItem?.Header     = localizationProvider.GetString(LocalizationKeys.TrayCaptureFull,   LocalizationFallbacks.Tray.CaptureFull);
 		_macSettingsItem?.Header        = localizationProvider.GetString(LocalizationKeys.TraySettings,      LocalizationFallbacks.Tray.Settings);
 		_macAboutItem?.Header           = localizationProvider.GetString(LocalizationKeys.TrayAbout,         LocalizationFallbacks.Tray.About);
+		_macUpdatesItem?.Header         = localizationProvider.GetString(LocalizationKeys.TrayCheckForUpdates, LocalizationFallbacks.Tray.CheckForUpdates);
 		_macExitItem?.Header            = localizationProvider.GetString(LocalizationKeys.TrayExit,          LocalizationFallbacks.Tray.Exit);
 		_linuxCaptureRegionItem?.Header = localizationProvider.GetString(LocalizationKeys.TrayCaptureRegion, LocalizationFallbacks.Tray.CaptureRegion);
 		_linuxCaptureFullItem?.Header   = localizationProvider.GetString(LocalizationKeys.TrayCaptureFull,   LocalizationFallbacks.Tray.CaptureFull);
 		_linuxSettingsItem?.Header      = localizationProvider.GetString(LocalizationKeys.TraySettings,      LocalizationFallbacks.Tray.Settings);
 		_linuxAboutItem?.Header         = localizationProvider.GetString(LocalizationKeys.TrayAbout,         LocalizationFallbacks.Tray.About);
+		_linuxUpdatesItem?.Header       = localizationProvider.GetString(LocalizationKeys.TrayCheckForUpdates, LocalizationFallbacks.Tray.CheckForUpdates);
 		_linuxExitItem?.Header          = localizationProvider.GetString(LocalizationKeys.TrayExit,          LocalizationFallbacks.Tray.Exit);
 		if (_menuWindow != null)
 		{
@@ -193,8 +201,9 @@ public class TrayService(ILocalizationProvider  localizationProvider,
 
 	private void InitializeMacOsTray()
 	{
-		var (nativeMenu, captureRegionItem, captureFullItem, settingsItem, aboutItem, exitItem) = CreateNativeMenu();
+		var (nativeMenu, captureRegionItem, captureFullItem, settingsItem, aboutItem, updatesItem, exitItem) = CreateNativeMenu();
 
+		_macUpdatesItem       = updatesItem;
 		_macCaptureRegionItem = captureRegionItem;
 		_macCaptureFullItem   = captureFullItem;
 		_macSettingsItem      = settingsItem;
@@ -212,8 +221,9 @@ public class TrayService(ILocalizationProvider  localizationProvider,
 
 	private void InitializeLinuxTray()
 	{
-		var (nativeMenu, captureRegionItem, captureFullItem, settingsItem, aboutItem, exitItem) = CreateNativeMenu();
+		var (nativeMenu, captureRegionItem, captureFullItem, settingsItem, aboutItem, updatesItem, exitItem) = CreateNativeMenu();
 
+		_linuxUpdatesItem       = updatesItem;
 		_linuxCaptureRegionItem = captureRegionItem;
 		_linuxCaptureFullItem   = captureFullItem;
 		_linuxSettingsItem      = settingsItem;
@@ -229,7 +239,7 @@ public class TrayService(ILocalizationProvider  localizationProvider,
 		};
 	}
 
-	private (NativeMenu menu, NativeMenuItem captureRegion, NativeMenuItem captureFull, NativeMenuItem settings, NativeMenuItem about, NativeMenuItem exit) CreateNativeMenu()
+	private (NativeMenu menu, NativeMenuItem captureRegion, NativeMenuItem captureFull, NativeMenuItem settings, NativeMenuItem about, NativeMenuItem updates, NativeMenuItem exit) CreateNativeMenu()
 	{
 		var nativeMenu = new NativeMenu();
 
@@ -269,6 +279,15 @@ public class TrayService(ILocalizationProvider  localizationProvider,
 			trayMenuWindowService.ExecuteOnUiThread(_showAbout);
 		};
 
+		var updatesItem = new NativeMenuItem
+		{
+			Header = localizationProvider.GetString(LocalizationKeys.TrayCheckForUpdates, LocalizationFallbacks.Tray.CheckForUpdates)
+		};
+		updatesItem.Click += (_, _) =>
+		{
+			trayMenuWindowService.ExecuteOnUiThread(_checkForUpdates);
+		};
+
 		var exitItem = new NativeMenuItem
 		{
 			Header = localizationProvider.GetString(LocalizationKeys.TrayExit, LocalizationFallbacks.Tray.Exit)
@@ -282,11 +301,12 @@ public class TrayService(ILocalizationProvider  localizationProvider,
 		nativeMenu.Add(captureFullItem);
 		nativeMenu.Add(new NativeMenuItemSeparator());
 		nativeMenu.Add(settingsItem);
+		nativeMenu.Add(updatesItem);
 		nativeMenu.Add(aboutItem);
 		nativeMenu.Add(new NativeMenuItemSeparator());
 		nativeMenu.Add(exitItem);
 
-		return (nativeMenu, captureRegionItem, captureFullItem, settingsItem, aboutItem, exitItem);
+		return (nativeMenu, captureRegionItem, captureFullItem, settingsItem, aboutItem, updatesItem, exitItem);
 	}
 
 	private void OnAvaloniaTrayClicked(object? sender, EventArgs e)
@@ -410,6 +430,7 @@ public class TrayService(ILocalizationProvider  localizationProvider,
 			_captureFull,
 			_showSettings,
 			_showAbout,
+			_checkForUpdates,
 			_exitApp,
 			_currentTheme);
 		return _menuWindow;

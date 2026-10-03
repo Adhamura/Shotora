@@ -19,6 +19,7 @@ public static class LocalizationFallbacks
 		public const string CaptureFull   = "Capture Full Screen";
 		public const string Settings      = "Settings";
 		public const string About         = "About";
+		public const string CheckForUpdates = "Check for Updates";
 		public const string Exit          = "Exit";
 	}
 

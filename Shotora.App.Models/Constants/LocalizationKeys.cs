@@ -43,6 +43,7 @@ public static class LocalizationKeys
 	public const string TrayCaptureFull   = "LocTrayCaptureFull";
 	public const string TraySettings      = "LocTraySettings";
 	public const string TrayAbout         = "LocTrayAbout";
+	public const string TrayCheckForUpdates = "LocTrayCheckForUpdates";
 	public const string TrayExit          = "LocTrayExit";
 
 	public const string UpdateChecking         = "LocUpdateChecking";

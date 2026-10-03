@@ -88,6 +88,7 @@ public class App(
 				() => ShowCaptureAsync(CaptureMode.Fullscreen),
 				ShowSettings,
 				ShowAbout,
+				() => ShowUpdateWindow(true),
 				() => desktop.Shutdown());
 			RefreshTrayLocalization();
 			RefreshTrayTheme();

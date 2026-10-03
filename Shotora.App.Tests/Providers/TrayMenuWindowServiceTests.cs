@@ -53,6 +53,7 @@ public class TrayMenuWindowServiceTests : IDisposable
 		_localization.Setup(l => l.GetString(LocalizationKeys.TrayCaptureFull,   LocalizationFallbacks.Tray.CaptureFull)).Returns("Full");
 		_localization.Setup(l => l.GetString(LocalizationKeys.TraySettings,      LocalizationFallbacks.Tray.Settings)).Returns("Settings");
 		_localization.Setup(l => l.GetString(LocalizationKeys.TrayAbout,         LocalizationFallbacks.Tray.About)).Returns("About");
+		_localization.Setup(l => l.GetString(LocalizationKeys.TrayCheckForUpdates, LocalizationFallbacks.Tray.CheckForUpdates)).Returns("Updates");
 		_localization.Setup(l => l.GetString(LocalizationKeys.TrayExit,          LocalizationFallbacks.Tray.Exit)).Returns("Exit");
 		_process.Setup(p => p.GetCurrentOs()).Returns(RuntimeOs.Mac);
 
@@ -60,6 +61,7 @@ public class TrayMenuWindowServiceTests : IDisposable
 		var fullClicks    = 0;
 		var settingsCalls = 0;
 		var aboutCalls    = 0;
+		var updatesCalls  = 0;
 		var exitCalls     = 0;
 
 		var model = _sut.CreateWindow(
@@ -67,6 +69,7 @@ public class TrayMenuWindowServiceTests : IDisposable
 			() => fullClicks++,
 			() => settingsCalls++,
 			() => aboutCalls++,
+			() => updatesCalls++,
 			() => exitCalls++,
 			"Dark");
 
@@ -75,12 +78,14 @@ public class TrayMenuWindowServiceTests : IDisposable
 		Assert.Equal("Full",        model.CaptureFullButton.Content);
 		Assert.Equal("Settings",    model.SettingsButton.Content);
 		Assert.Equal("About",       model.AboutButton.Content);
+		Assert.Equal("Updates",     model.UpdatesButton.Content);
 		Assert.Equal("Exit",        model.ExitButton.Content);
 
 		RaiseClick(model.CaptureRegionButton);
 		RaiseClick(model.CaptureFullButton);
 		RaiseClick(model.SettingsButton);
 		RaiseClick(model.AboutButton);
+		RaiseClick(model.UpdatesButton);
 		RaiseClick(model.ExitButton);
 		RunJobs();
 
@@ -88,6 +93,7 @@ public class TrayMenuWindowServiceTests : IDisposable
 		Assert.Equal(1, fullClicks);
 		Assert.Equal(1, settingsCalls);
 		Assert.Equal(1, aboutCalls);
+		Assert.Equal(1, updatesCalls);
 		Assert.Equal(1, exitCalls);
 
 		_localization.VerifyAll();
@@ -136,6 +142,7 @@ public class TrayMenuWindowServiceTests : IDisposable
 		AssertHoverHandlersReplaced(model.CaptureFullButton);
 		AssertHoverHandlersReplaced(model.SettingsButton);
 		AssertHoverHandlersReplaced(model.AboutButton);
+		AssertHoverHandlersReplaced(model.UpdatesButton);
 		AssertHoverHandlersReplaced(model.ExitButton);
 
 		app.Resources.Remove("PanelBackgroundBrush");
@@ -271,6 +278,7 @@ public class TrayMenuWindowServiceTests : IDisposable
 		_localization.Setup(l => l.GetString(LocalizationKeys.TrayCaptureFull,   LocalizationFallbacks.Tray.CaptureFull)).Returns("Capture Full");
 		_localization.Setup(l => l.GetString(LocalizationKeys.TraySettings,      LocalizationFallbacks.Tray.Settings)).Returns("Settings");
 		_localization.Setup(l => l.GetString(LocalizationKeys.TrayAbout,         LocalizationFallbacks.Tray.About)).Returns("About");
+		_localization.Setup(l => l.GetString(LocalizationKeys.TrayCheckForUpdates, LocalizationFallbacks.Tray.CheckForUpdates)).Returns("Updates");
 		_localization.Setup(l => l.GetString(LocalizationKeys.TrayExit,          LocalizationFallbacks.Tray.Exit)).Returns("Exit");
 
 		_sut.UpdateLabels(model);
@@ -279,6 +287,7 @@ public class TrayMenuWindowServiceTests : IDisposable
 		Assert.Equal("Capture Full",   model.CaptureFullButton.Content);
 		Assert.Equal("Settings",       model.SettingsButton.Content);
 		Assert.Equal("About",          model.AboutButton.Content);
+		Assert.Equal("Updates",        model.UpdatesButton.Content);
 		Assert.Equal("Exit",           model.ExitButton.Content);
 		_localization.VerifyAll();
 	}
@@ -291,6 +300,8 @@ public class TrayMenuWindowServiceTests : IDisposable
 		_process.Setup(p => p.GetCurrentOs()).Returns(RuntimeOs.Windows);
 
 		var model = _sut.CreateWindow(() =>
+		{
+		}, () =>
 		{
 		}, () =>
 		{
@@ -323,6 +334,8 @@ public class TrayMenuWindowServiceTests : IDisposable
 		{
 		}, () =>
 		{
+		}, () =>
+		{
 		}, "Dark");
 
 		Assert.Equal(RuntimeOs.Mac, model.CurrentOs);
@@ -336,6 +349,8 @@ public class TrayMenuWindowServiceTests : IDisposable
 		_process.Setup(p => p.GetCurrentOs()).Returns(RuntimeOs.Windows);
 
 		var model = _sut.CreateWindow(() =>
+		{
+		}, () =>
 		{
 		}, () =>
 		{
@@ -665,11 +680,12 @@ public class TrayMenuWindowServiceTests : IDisposable
 		var full      = new Button();
 		var settings  = new Button();
 		var about     = new Button();
+		var updates   = new Button();
 		var exit      = new Button();
 		var root      = new Border();
 		var separator = new Border();
 		var model     = new TrayMenuWindowModel();
-		model.Init(window, capture, full, settings, about, exit, root, separator);
+		model.Init(window, capture, full, settings, about, updates, exit, root, separator);
 		return model;
 	}
 
