@@ -12,10 +12,16 @@ using SkiaSharp;
 
 namespace Shotora.App.Services.System;
 
-public class ScreenshotService(IProcessSystemService processSystemService) : IScreenshotService
+public class ScreenshotService(IProcessSystemService processSystemService, IWaylandCaptureService waylandCaptureService) : IScreenshotService
 {
 	public Task<CaptureResultItemModel?> CaptureAsync(PixelRect bounds)
 	{
+		if (processSystemService.GetCurrentOs() == RuntimeOs.Linux && waylandCaptureService.IsWaylandSession())
+		{
+			// Off the UI thread: the portal round-trip and image scaling must not stall the dispatcher.
+			return Task.Run(() => CaptureWaylandAsync(bounds));
+		}
+
 		return Task.Run(() =>
 		{
 			if (processSystemService.GetCurrentOs() == RuntimeOs.Windows)
@@ -182,21 +188,56 @@ public class ScreenshotService(IProcessSystemService processSystemService) : ISc
 		}
 	}
 
+	/// <summary>
+	///     Scales a full-desktop screenshot to the overlay's coordinate space. The compositor captures in physical
+	///     pixels while the overlay (running through XWayland) uses the desktop's logical size, and the overlay maps
+	///     selections onto the bitmap one-to-one.
+	/// </summary>
+	public static SKBitmap FitDesktopToBounds(SKBitmap desktop, PixelRect bounds)
+	{
+		var info = new SKImageInfo(bounds.Width, bounds.Height, SKColorType.Bgra8888, SKAlphaType.Premul);
+		if (desktop.Width == bounds.Width && desktop.Height == bounds.Height && desktop.ColorType == info.ColorType)
+		{
+			return desktop.Copy();
+		}
+
+		var       fitted = new SKBitmap(info);
+		using var canvas = new SKCanvas(fitted);
+		using var paint = new SKPaint
+		{
+			FilterQuality = SKFilterQuality.High,
+			IsAntialias   = true
+		};
+		canvas.DrawBitmap(desktop, new SKRect(0, 0, bounds.Width, bounds.Height), paint);
+		return fitted;
+	}
+
+	private async Task<CaptureResultItemModel?> CaptureWaylandAsync(PixelRect bounds)
+	{
+		using var desktop = await waylandCaptureService.CaptureDesktopAsync();
+		using var fitted  = FitDesktopToBounds(desktop, bounds);
+		using var image   = SKImage.FromBitmap(fitted);
+		using var encoded = image.Encode(SKEncodedImageFormat.Png, 100);
+		var       bytes   = encoded.ToArray();
+
+		var skBitmap = SKBitmap.Decode(bytes);
+		if (skBitmap == null)
+		{
+			return null;
+		}
+
+		using var displayStream = new MemoryStream(bytes);
+		return new CaptureResultItemModel
+		{
+			Raw     = skBitmap,
+			Display = new Avalonia.Media.Imaging.Bitmap(displayStream),
+			Bounds  = bounds
+		};
+	}
+
 	[SupportedOSPlatform("linux")]
 	private static CaptureResultItemModel? CaptureLinux(PixelRect bounds)
 	{
-		var waylandDisplay = Environment.GetEnvironmentVariable("WAYLAND_DISPLAY");
-		var xdgSessionType = Environment.GetEnvironmentVariable("XDG_SESSION_TYPE");
-		var isWayland      = !string.IsNullOrEmpty(waylandDisplay) || xdgSessionType?.Equals("wayland", StringComparison.OrdinalIgnoreCase) == true;
-
-		if (isWayland)
-		{
-			throw new InvalidOperationException(
-				"Screen capture is not supported under Wayland. Please run the application with X11 backend " +
-				"by setting the environment variable: WAYLAND_DISPLAY= (empty) or XDG_SESSION_TYPE=x11, "     +
-				"or use 'GDK_BACKEND=x11' before launching the application.");
-		}
-
 		var display  = IntPtr.Zero;
 		var imagePtr = IntPtr.Zero;
 		try
@@ -205,8 +246,7 @@ public class ScreenshotService(IProcessSystemService processSystemService) : ISc
 			if (display == IntPtr.Zero)
 			{
 				throw new InvalidOperationException(
-					"Failed to open X11 display. Ensure X11 is running and DISPLAY environment variable is set. " +
-					"If using Wayland, X11 screen capture is not supported.");
+					"Failed to open X11 display. Ensure X11 is running and the DISPLAY environment variable is set.");
 			}
 
 			var root = XDefaultRootWindow(display);
@@ -214,8 +254,7 @@ public class ScreenshotService(IProcessSystemService processSystemService) : ISc
 			if (imagePtr == IntPtr.Zero)
 			{
 				throw new InvalidOperationException(
-					"Failed to capture screen image via X11. This may occur if running under Wayland " +
-					"or if the application lacks permission to capture the screen.");
+					"Failed to capture screen image via X11. The application may lack permission to capture the screen.");
 			}
 
 			var image = Marshal.PtrToStructure<ImageModel>(imagePtr);

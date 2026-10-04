@@ -45,8 +45,7 @@ No .NET installation is needed: every build is self-contained.
 | **Linux** x64 | [Shotora-linux-x64.AppImage](https://github.com/Adhamura/Shotora/releases/latest/download/Shotora-linux-x64.AppImage) | The AppImage runs without installing |
 
 The Windows installer sets Shotora up for the current user, so it needs no administrator rights.
-Before you choose a build, check [Platform support](#platform-support): Linux needs an X11 session, and OCR is not
-yet available in the Apple Silicon build.
+Before you choose a build, check [Platform support](#platform-support): OCR is not yet available in the Apple Silicon build.
 
 > [!WARNING]
 > **The builds are not code-signed yet**, so your OS warns you the first time you open one:
@@ -76,13 +75,16 @@ sha256sum Shotora-linux-x64.AppImage          # Linux
 
 | | Windows | macOS (Intel) | macOS (Apple Silicon) | Linux |
 | :-- | :-: | :-: | :-: | :-: |
-| Capture and annotation | Yes | Yes | Yes | X11 only ¹ |
+| Capture and annotation | Yes | Yes | Yes | X11 and Wayland ¹ |
 | Global capture hotkeys | Yes | Not yet ² | Not yet ² | Not yet ² |
 | OCR (Tesseract and EasyOCR) | Yes | Yes | Not yet ³ | Yes |
 | Run on startup | Yes | Yes | Yes | Yes |
 | In-app updates | Yes | Yes | Yes | Yes |
 
-1. Wayland sessions are not supported for capture yet. Log in to an X11 (Xorg) session to use Shotora on Linux.
+1. On Wayland, Shotora captures through your desktop's screenshot portal (GNOME, KDE Plasma, Sway, Hyprland and other
+   compositors with `xdg-desktop-portal`), falling back to `grim`, `spectacle` or `gnome-screenshot`. The first capture
+   may ask you to allow Shotora to take screenshots. Shotora's own windows run through XWayland, which every major
+   Wayland desktop provides.
 2. Global hotkeys are registered on Windows only for now. On macOS and Linux, start a capture from the tray menu.
 3. The `osx-arm64` build does not bundle the native OCR runtimes yet (Tesseract libraries and the embedded Python used by
    EasyOCR). If you need OCR on an Apple Silicon Mac, install the Intel (`osx-x64`) build, which runs under Rosetta 2.
@@ -213,11 +215,13 @@ Change any of these in **Settings → Hotkeys** and **Settings → Editor**.
 ## Troubleshooting
 
 <details>
-<summary><strong>Linux: "Screen capture is not supported under Wayland"</strong></summary>
+<summary><strong>Linux (Wayland): "Shotora could not capture the screen in this Wayland session"</strong></summary>
 <br />
 
-Shotora captures the screen through X11. Log out, pick an Xorg or X11 session on your login screen (often in a gear menu),
-and log back in. Wayland support is not available yet.
+Wayland only lets apps take screenshots through the desktop portal. Install `xdg-desktop-portal` and the backend for your
+desktop (`xdg-desktop-portal-gnome`, `xdg-desktop-portal-kde`, `xdg-desktop-portal-wlr` or `xdg-desktop-portal-hyprland`),
+or install one of `grim`, `spectacle` or `gnome-screenshot`. If you see "Screen capture was not allowed", you declined
+the permission prompt: capture again and choose **Allow**, or grant it in your desktop's privacy settings.
 
 </details>
 
