@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">Dangos Ailwneud</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Dangos Copi</sys:String>
     <sys:String x:Key="LocSettingsShowSave">Dangos Cadw</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">Dangos Llwytho i fyny</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">Dangos OCR</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">Dangos Canslo</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">Dangos Cadarnhau</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">Picseleiddio</sys:String>
     <sys:String x:Key="LocToolSaveAs">Cadw fel</sys:String>
     <sys:String x:Key="LocToolCopy">Copïo</sys:String>
-    <sys:String x:Key="LocToolUpload">Llwytho i fyny</sys:String>
     <sys:String x:Key="LocToolCancel">Canslo</sys:String>
     <sys:String x:Key="LocToolColors">Lliwiau</sys:String>
     <sys:String x:Key="LocToolThickness">Trwch</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">Copïo</sys:String>
     <sys:String x:Key="LocOverlaySave">Cadw</sys:String>
-    <sys:String x:Key="LocOverlayUpload">Llwytho i fyny</sys:String>
     <sys:String x:Key="LocOverlayOcr">Adnabod testun</sys:String>
     <sys:String x:Key="LocOverlayCancel">Canslo</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Cadarnhau</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">Cliciwch a llusgo i dynnu. Defnyddiwch y bar offer ar gyfer offer.</sys:String>
     <sys:String x:Key="LocOverlayHintMove">Tynwch o fewn y dewis i symud. Defnyddiwch handlenni i newid maint.</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">Dewiswch offer i wneud sylwadau. Defnyddiwch Dadwneud/Ailwneud os oes angen.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Canslo, Enter: Cadarnhau, Ctrl+Z: Dadwneud, Ctrl+Y: Ailwneud</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">Ychwanegu testun</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">Wedi'i gopïo i'r clytydd</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">Wedi'i gadw</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Methiant cadw</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">Wedi'i lwytho i fyny</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">Methiant llwytho i fyny</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR wedi'i gwblhau</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">Methiant OCR</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">Mae'r ffenestr hon yn ddewisol; cau hi i adael Shotora yn rhedeg yn y droriau.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Cipio sgrin ac anotio</sys:String>
-    <sys:String x:Key="LocAboutDescription">Lluniau sgrin cyflym, nodiadau, OCR a llwytho i fyny gyda Shotora.</sys:String>
+    <sys:String x:Key="LocAboutDescription">Mae Shotora yn offeryn cipio sgrin ac anodi pwrpasol ar gyfer timau modern. Mae'n cipio rhanbarthau, ffenestri neu sgriniau cyfan, yn ychwanegu saethau, siapiau, testun, uwcholeuo, niwlio a phicseleiddio ar unwaith, ac yn troi testun ar y sgrin yn destun golygadwy gyda Tesseract neu EasyOCR, yn gyfan gwbl ar eich dyfais. Gydag allweddi poeth, themâu, a chopïo a chadw ag un clic, mae'n cadw dolenni adborth a dogfennaeth yn gyflym, yn breifat ac yn gyson.</sys:String>
     <sys:String x:Key="LocAboutLicense">Trwydded</sys:String>
     <sys:String x:Key="LocAboutAuthor">Awdur</sys:String>
     <sys:String x:Key="LocAboutRole">Rôl</sys:String>

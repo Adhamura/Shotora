@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">Sýna Endurtaka</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Sýna Afrita</sys:String>
     <sys:String x:Key="LocSettingsShowSave">Sýna Vista</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">Sýna Hlaða upp</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">Sýna OCR</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">Sýna Hætta við</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">Sýna Staðfesta</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">Pixlun</sys:String>
     <sys:String x:Key="LocToolSaveAs">Vista sem</sys:String>
     <sys:String x:Key="LocToolCopy">Afrita</sys:String>
-    <sys:String x:Key="LocToolUpload">Hlaða upp</sys:String>
     <sys:String x:Key="LocToolCancel">Hætta við</sys:String>
     <sys:String x:Key="LocToolColors">Litir</sys:String>
     <sys:String x:Key="LocToolThickness">Þykkt</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">Afrita</sys:String>
     <sys:String x:Key="LocOverlaySave">Vista</sys:String>
-    <sys:String x:Key="LocOverlayUpload">Hlaða upp</sys:String>
     <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
     <sys:String x:Key="LocOverlayCancel">Hætta við</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Staðfesta</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">Smelltu og dragðu til að teikna. Notaðu verkfærastikuna fyrir verkfæri.</sys:String>
     <sys:String x:Key="LocOverlayHintMove">Dragðu innan valsins til að færa það. Notaðu handföngin til að breyta stærð.</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">Veldu verkfæri til að skrifa athugasemdir. Notaðu Afturkalla/Endurtaka eftir þörfum.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Hætta við, Enter: Staðfesta, Ctrl+Z: Afturkalla, Ctrl+Y: Endurtaka</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">Bæta við texta</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">Afritað á klippispjald</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">Vistað</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Vistun mistókst</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">Hlaðið upp</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">Upphleðsla mistókst</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR lokið</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">OCR mistókst</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">Þessi gluggi er valkvæður; lokaðu honum og Shotora heldur áfram að keyra á tilkynningasvæðinu.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Fanga – Merkja – OCR – Senda</sys:String>
-    <sys:String x:Key="LocAboutDescription">Shotora er markviss aðstoðarmaður fyrir sjónræna skjáföngun og upplýsingavinnslu fyrir nútímateymi. Hann einfaldar föngun svæða, glugga eða alls skjásins, bætir samstundis við móðu, pixlun og áherslum og breytir texta á skjánum í skipulagt efni með Tesseract eða EasyOCR. Með flýtilyklum, þemum, tessdata án nettengingar og afritun, vistun og upphleðslu með einum smelli heldur hann endurgjöf og skjölun hraðri, öruggri og samræmdri.</sys:String>
+    <sys:String x:Key="LocAboutDescription">Shotora er markvisst tól til skjáföngunar og skýringa fyrir nútímateymi. Það fangar svæði, glugga eða allan skjáinn, bætir samstundis við örvum, formum, texta, áherslum, móðu og pixlun og breytir texta á skjánum í breytanlegan texta með Tesseract eða EasyOCR, alfarið í tækinu þínu. Með flýtilyklum, þemum og afritun og vistun með einum smelli heldur það endurgjöf og skjölun hraðri, persónulegri og samræmdri.</sys:String>
     <sys:String x:Key="LocAboutLicense">Leyfi</sys:String>
     <sys:String x:Key="LocAboutAuthor">Höfundur og umsjónarmaður</sys:String>
     <sys:String x:Key="LocAboutRole">Yfirhugbúnaðarverkfræðingur / tæknilegur leiðtogi</sys:String>

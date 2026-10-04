@@ -128,9 +128,6 @@ public partial class ViewSettingsBaseModel : ViewModelBase
 	private bool _showUndoIcon = true;
 	[ObservableProperty]
 	[SettingsExtension(SettingsTypes.NullOrEmpty, SettingsPropertyTypes.Simple)]
-	private bool _showUploadIcon = true;
-	[ObservableProperty]
-	[SettingsExtension(SettingsTypes.NullOrEmpty, SettingsPropertyTypes.Simple)]
 	private string _theme = "Dark";
 
 	public static IReadOnlyList<string> ThemeOptions       { get; } = ["Dark", "Light", "Sunset"];

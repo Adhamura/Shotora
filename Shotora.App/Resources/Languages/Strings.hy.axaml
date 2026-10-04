@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">Ցույց տալ «Կրկնել»</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Ցույց տալ «Պատճենել»</sys:String>
     <sys:String x:Key="LocSettingsShowSave">Ցույց տալ «Պահել»</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">Ցույց տալ «Վերբեռնել»</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">Ցույց տալ OCR</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">Ցույց տալ «Չեղարկել»</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">Ցույց տալ «Հաստատել»</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">Պիքսելացում</sys:String>
     <sys:String x:Key="LocToolSaveAs">Պահել որպես</sys:String>
     <sys:String x:Key="LocToolCopy">Պատճենել</sys:String>
-    <sys:String x:Key="LocToolUpload">Վերբեռնել</sys:String>
     <sys:String x:Key="LocToolCancel">Չեղարկել</sys:String>
     <sys:String x:Key="LocToolColors">Գույներ</sys:String>
     <sys:String x:Key="LocToolThickness">Հաստություն</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">Պատճենել</sys:String>
     <sys:String x:Key="LocOverlaySave">Պահել</sys:String>
-    <sys:String x:Key="LocOverlayUpload">Վերբեռնել</sys:String>
     <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
     <sys:String x:Key="LocOverlayCancel">Չեղարկել</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Հաստատել</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">Սեղմեք և քաշեք՝ նկարելու համար։ Գործիքների համար օգտագործեք գործիքագոտին։</sys:String>
     <sys:String x:Key="LocOverlayHintMove">Քաշեք ընտրվածի ներսում՝ տեղափոխելու համար։ Չափը փոխելու համար օգտագործեք բռնակները։</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">Ընտրեք գործիքներ նշումների համար։ Անհրաժեշտության դեպքում օգտագործեք Հետարկել/Կրկնել։</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Չեղարկել, Enter: Հաստատել, Ctrl+Z: Հետարկել, Ctrl+Y: Կրկնել</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">Ավելացնել տեքստ</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">Պատճենվեց սեղմատախտակին</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">Պահված է</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Պահումը ձախողվեց</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">Վերբեռնված է</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">Վերբեռնումը ձախողվեց</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR-ն ավարտվեց</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">OCR-ը ձախողվեց</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">Այս պատուհանը պարտադիր չէ․ փակեք այն, և Shotora-ն կշարունակի աշխատել համակարգային սկուտեղում։</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Նկարել – Նշել – OCR – Ուղարկել</sys:String>
-    <sys:String x:Key="LocAboutDescription">Shotora-ն ժամանակակից թիմերի համար նախատեսված տեսողական նկարահանման և տեղեկատվության մշակման օգնական է։ Այն հեշտացնում է տարածքների, պատուհանների կամ ամբողջ էկրանի նկարումը, ակնթարթորեն կիրառում է մշուշում, պիքսելացում և ընդգծում, իսկ Tesseract-ի կամ EasyOCR-ի միջոցով էկրանի տեքստը վերածում կառուցվածքային բովանդակության։ Արագ ստեղների, թեմաների, անցանց tessdata-ի և մեկ սեղմումով պատճենման, պահման ու վերբեռնման շնորհիվ հետադարձ կապը և փաստաթղթավորումը մնում են արագ, անվտանգ և հետևողական։</sys:String>
+    <sys:String x:Key="LocAboutDescription">Shotora-ն ժամանակակից թիմերի համար նախատեսված էկրանի նկարահանման և ծանոթագրման կենտրոնացված գործիք է։ Այն նկարում է տարածքներ, պատուհաններ կամ ամբողջ էկրանը, ակնթարթորեն ավելացնում է սլաքներ, ձևեր, տեքստ, ընդգծում, մշուշում և պիքսելացում, իսկ Tesseract-ի կամ EasyOCR-ի միջոցով էկրանի տեքստը վերածում է խմբագրելի տեքստի՝ ամբողջությամբ ձեր սարքում։ Արագ ստեղների, թեմաների և մեկ սեղմումով պատճենման ու պահման շնորհիվ հետադարձ կապը և փաստաթղթավորումը մնում են արագ, գաղտնի և հետևողական։</sys:String>
     <sys:String x:Key="LocAboutLicense">Լիցենզիա</sys:String>
     <sys:String x:Key="LocAboutAuthor">Հեղինակ և սպասարկող</sys:String>
     <sys:String x:Key="LocAboutRole">Ավագ ծրագրային ինժեներ / տեխնիկական ղեկավար</sys:String>

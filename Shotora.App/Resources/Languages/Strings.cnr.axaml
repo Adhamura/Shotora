@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">Prikaži Ponovi</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Prikaži Kopiraj</sys:String>
     <sys:String x:Key="LocSettingsShowSave">Prikaži Sačuvaj</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">Prikaži Učitaj</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">Prikaži OCR</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">Prikaži Otkaži</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">Prikaži Potvrdi</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">Pikselizacija</sys:String>
     <sys:String x:Key="LocToolSaveAs">Sačuvaj kao</sys:String>
     <sys:String x:Key="LocToolCopy">Kopiraj</sys:String>
-    <sys:String x:Key="LocToolUpload">Otpremi</sys:String>
     <sys:String x:Key="LocToolCancel">Otkaži</sys:String>
     <sys:String x:Key="LocToolColors">Boje</sys:String>
     <sys:String x:Key="LocToolThickness">Debljina</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">Kopiraj</sys:String>
     <sys:String x:Key="LocOverlaySave">Sačuvaj</sys:String>
-    <sys:String x:Key="LocOverlayUpload">Otpremi</sys:String>
     <sys:String x:Key="LocOverlayOcr">Prepoznaj tekst</sys:String>
     <sys:String x:Key="LocOverlayCancel">Otkaži</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Potvrdi</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">Kliknite i povucite da crtate. Koristite alatnu traku za alate.</sys:String>
     <sys:String x:Key="LocOverlayHintMove">Povucite unutar selekcije da pomjerite. Koristite ručke za promjenu veličine.</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">Odaberite alate za anotiranje. Koristite Poništi/Ponovi po potrebi.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Otkaži, Enter: Potvrdi, Ctrl+Z: Poništi, Ctrl+Y: Ponovi</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">Dodaj tekst</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">Kopirano u međuspremnik</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">Sačuvano</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Čuvanje nije uspjelo</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">Otpremeljeno</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">Slanje nije uspjelo</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR završen</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">OCR nije uspio</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">Ovaj prozor je opcion; zatvorite ga da Shotora ostane aktivna u trayu.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Snimanje ekrana i označavanje</sys:String>
-    <sys:String x:Key="LocAboutDescription">Brze snimke ekrana, označavanje, OCR i otpremanje sa Shotorom.</sys:String>
+    <sys:String x:Key="LocAboutDescription">Shotora je fokusiran alat za snimanje ekrana i označavanje za moderne timove. Snima oblasti, prozore ili cio ekran, odmah dodaje strelice, oblike, tekst, isticanje, zamućenje i pikselizaciju i pomoću Tesseract-a ili EasyOCR-a pretvara tekst sa ekrana u tekst koji se može uređivati, u potpunosti na vašem uređaju. Uz prečice, teme i kopiranje i čuvanje jednim klikom, povratne informacije i dokumentaciju održava brzim, privatnim i dosljednim.</sys:String>
     <sys:String x:Key="LocAboutLicense">Licenca</sys:String>
     <sys:String x:Key="LocAboutAuthor">Autor</sys:String>
     <sys:String x:Key="LocAboutRole">Uloga</sys:String>

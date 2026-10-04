@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">Показване на Повторение</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Показване на Копиране</sys:String>
     <sys:String x:Key="LocSettingsShowSave">Показване на Записване</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">Показване на Качване</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">Показване на OCR</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">Показване на Отказ</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">Показване на Потвърждение</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">Пикселизиране</sys:String>
     <sys:String x:Key="LocToolSaveAs">Запазване като</sys:String>
     <sys:String x:Key="LocToolCopy">Копиране</sys:String>
-    <sys:String x:Key="LocToolUpload">Качване</sys:String>
     <sys:String x:Key="LocToolCancel">Отказ</sys:String>
     <sys:String x:Key="LocToolColors">Цветове</sys:String>
     <sys:String x:Key="LocToolThickness">Дебелина</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">Копиране</sys:String>
     <sys:String x:Key="LocOverlaySave">Запазване</sys:String>
-    <sys:String x:Key="LocOverlayUpload">Качване</sys:String>
     <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
     <sys:String x:Key="LocOverlayCancel">Отказ</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Потвърди</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">Кликнете и плъзнете, за да рисувате. Използвайте лентата с инструменти за достъп до останалите инструменти.</sys:String>
     <sys:String x:Key="LocOverlayHintMove">Плъзнете във вътрешността на селекцията, за да я преместите. Използвайте дръжките за преоразмеряване.</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">Изберете инструменти за анотации. Използвайте Отмяна/Повторение при нужда.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Отказ, Enter: Потвърди, Ctrl+Z: Отмяна, Ctrl+Y: Повторение</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">Добавяне на текст</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">Копирано в клипборда</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">Запазено</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Грешка при запис</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">Качено</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">Грешка при качване</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR приключи</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">Грешка при OCR</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">Този прозорец е по избор; затворете го, за да оставите Shotora да работи в трая.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Заснемане и отбелязване на екрана</sys:String>
-    <sys:String x:Key="LocAboutDescription">Бързи снимки на екрана, анотации, OCR и качване със Shotora.</sys:String>
+    <sys:String x:Key="LocAboutDescription">Shotora е фокусиран инструмент за заснемане на екрана и анотиране за съвременни екипи. Заснема области, прозорци или целия екран, мигновено добавя стрелки, фигури, текст, маркиране, замъгляване и пикселизиране и превръща текста от екрана в редактируем текст с Tesseract или EasyOCR – изцяло на вашето устройство. С горещи клавиши, теми и копиране и запазване с едно щракване поддържа обратната връзка и документацията бързи, поверителни и последователни.</sys:String>
     <sys:String x:Key="LocAboutLicense">Лиценз</sys:String>
     <sys:String x:Key="LocAboutAuthor">Автор</sys:String>
     <sys:String x:Key="LocAboutRole">Роля</sys:String>

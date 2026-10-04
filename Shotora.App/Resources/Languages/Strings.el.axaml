@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">Εμφάνιση Επαναφοράς</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Εμφάνιση Αντιγραφής</sys:String>
     <sys:String x:Key="LocSettingsShowSave">Εμφάνιση Αποθήκευσης</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">Εμφάνιση Μεταφόρτωσης</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">Εμφάνιση OCR</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">Εμφάνιση Ακύρωσης</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">Εμφάνιση Επιβεβαίωσης</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">Εικονοστοιχείωση</sys:String>
     <sys:String x:Key="LocToolSaveAs">Αποθήκευση ως</sys:String>
     <sys:String x:Key="LocToolCopy">Αντιγραφή</sys:String>
-    <sys:String x:Key="LocToolUpload">Μεταφόρτωση</sys:String>
     <sys:String x:Key="LocToolCancel">Ακύρωση</sys:String>
     <sys:String x:Key="LocToolColors">Χρώματα</sys:String>
     <sys:String x:Key="LocToolThickness">Πάχος</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">Αντιγραφή</sys:String>
     <sys:String x:Key="LocOverlaySave">Αποθήκευση</sys:String>
-    <sys:String x:Key="LocOverlayUpload">Μεταφόρτωση</sys:String>
     <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
     <sys:String x:Key="LocOverlayCancel">Ακύρωση</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Επιβεβαίωση</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">Κάντε κλικ και σύρετε για να σχεδιάσετε. Χρησιμοποιήστε τη γραμμή εργαλείων για τα εργαλεία.</sys:String>
     <sys:String x:Key="LocOverlayHintMove">Σύρετε μέσα στην επιλογή για να μετακινήσετε. Χρησιμοποιήστε τις λαβές για αλλαγή μεγέθους.</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">Επιλέξτε εργαλεία για σχολιασμό. Χρησιμοποιήστε Αναίρεση/Επανάληψη όπως χρειάζεται.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Ακύρωση, Enter: Επιβεβαίωση, Ctrl+Z: Αναίρεση, Ctrl+Y: Επανάληψη</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">Προσθήκη κειμένου</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">Αντιγράφηκε στο πρόχειρο</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">Αποθηκεύτηκε</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Η αποθήκευση απέτυχε</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">Μεταφορτώθηκε</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">Η μεταφόρτωση απέτυχε</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">Το OCR ολοκληρώθηκε</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">Το OCR απέτυχε</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">Αυτό το παράθυρο είναι προαιρετικό· κλείστε το για να αφήσετε το Shotora να τρέχει στο δίσκο.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Σύλληψη οθόνης και σημειώσεις</sys:String>
-    <sys:String x:Key="LocAboutDescription">Γρήγορα στιγμιότυπα, σημειώσεις, OCR και μεταφορτώσεις με το Shotora.</sys:String>
+    <sys:String x:Key="LocAboutDescription">Το Shotora είναι ένα εστιασμένο εργαλείο λήψης οθόνης και σχολιασμού για σύγχρονες ομάδες. Καταγράφει περιοχές, παράθυρα ή ολόκληρες οθόνες, προσθέτει αμέσως βέλη, σχήματα, κείμενο, επισήμανση, θόλωση και εικονοστοιχείωση και μετατρέπει το κείμενο της οθόνης σε επεξεργάσιμο κείμενο με το Tesseract ή το EasyOCR, εξ ολοκλήρου στη συσκευή σας. Με συντομεύσεις, θέματα και αντιγραφή και αποθήκευση με ένα κλικ, διατηρεί την ανατροφοδότηση και την τεκμηρίωση γρήγορες, ιδιωτικές και συνεπείς.</sys:String>
     <sys:String x:Key="LocAboutLicense">Άδεια</sys:String>
     <sys:String x:Key="LocAboutAuthor">Συντάκτης</sys:String>
     <sys:String x:Key="LocAboutRole">Ρόλος</sys:String>

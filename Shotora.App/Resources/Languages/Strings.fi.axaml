@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">Näytä Tee uudelleen</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Näytä Kopioi</sys:String>
     <sys:String x:Key="LocSettingsShowSave">Näytä Tallenna</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">Näytä Lataa</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">Näytä OCR</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">Näytä Peruuta</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">Näytä Vahvista</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">Pikselöinti</sys:String>
     <sys:String x:Key="LocToolSaveAs">Tallenna nimellä</sys:String>
     <sys:String x:Key="LocToolCopy">Kopioi</sys:String>
-    <sys:String x:Key="LocToolUpload">Lataa palveluun</sys:String>
     <sys:String x:Key="LocToolCancel">Peruuta</sys:String>
     <sys:String x:Key="LocToolColors">Värit</sys:String>
     <sys:String x:Key="LocToolThickness">Paksuus</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">Kopioi</sys:String>
     <sys:String x:Key="LocOverlaySave">Tallenna</sys:String>
-    <sys:String x:Key="LocOverlayUpload">Lataa</sys:String>
     <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
     <sys:String x:Key="LocOverlayCancel">Peruuta</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Vahvista</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">Klikkaa ja vedä piirtääksesi. Käytä työkalupalkkia työkalujen valintaan.</sys:String>
     <sys:String x:Key="LocOverlayHintMove">Vedä valinnan sisällä siirtääksesi. Käytä kahvoja koon muuttamiseen.</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">Valitse työkalut merkintöjen tekemiseen. Käytä Peruuta/Tee uudelleen tarvittaessa.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Peruuta, Enter: Vahvista, Ctrl+Z: Peruuta, Ctrl+Y: Tee uudelleen</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">Lisää tekstiä</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">Kopioitu leikepöydälle</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">Tallennettu</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Tallennus epäonnistui</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">Lähetetty</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">Lähetys epäonnistui</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR valmis</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">OCR epäonnistui</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">Tämä ikkuna on valinnainen; sulje se, jotta Shotora jatkaa toimintaa tehtäväpalkissa.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Kuvakaappaus ja merkinnät</sys:String>
-    <sys:String x:Key="LocAboutDescription">Nopeat kuvakaappaukset, merkinnät, OCR ja lähetykset Shotoralla.</sys:String>
+    <sys:String x:Key="LocAboutDescription">Shotora on nykyaikaisille tiimeille suunniteltu keskittynyt kuvakaappaus- ja merkintätyökalu. Se kaappaa alueita, ikkunoita tai koko näytön, lisää välittömästi nuolia, muotoja, tekstiä, korostuksia, sumennusta ja pikselöintiä sekä muuttaa näytöllä olevan tekstin muokattavaksi tekstiksi Tesseractin tai EasyOCR:n avulla – kokonaan omalla laitteellasi. Pikanäppäinten, teemojen sekä yhden napsautuksen kopioinnin ja tallennuksen ansiosta palaute ja dokumentointi pysyvät nopeina, yksityisinä ja johdonmukaisina.</sys:String>
     <sys:String x:Key="LocAboutLicense">Lisenssi</sys:String>
     <sys:String x:Key="LocAboutAuthor">Tekijä</sys:String>
     <sys:String x:Key="LocAboutRole">Rooli</sys:String>

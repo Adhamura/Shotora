@@ -3,5 +3,6 @@
 public enum CaptureMode
 {
 	Region,
-	Fullscreen
+	Fullscreen,
+	ActiveWindow
 }

@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">Wospjetować pokazać</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Kopěrować pokazać</sys:String>
     <sys:String x:Key="LocSettingsShowSave">Składować pokazać</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">Nahrać pokazać</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">OCR pokazać</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">Přetorhnyć pokazać</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">Wobkrućić pokazać</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">Pikselowanje</sys:String>
     <sys:String x:Key="LocToolSaveAs">Składować jako</sys:String>
     <sys:String x:Key="LocToolCopy">Kopěrować</sys:String>
-    <sys:String x:Key="LocToolUpload">Nahrać</sys:String>
     <sys:String x:Key="LocToolCancel">Přetorhnyć</sys:String>
     <sys:String x:Key="LocToolColors">Barby</sys:String>
     <sys:String x:Key="LocToolThickness">Tołstosć</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">Kopěrować</sys:String>
     <sys:String x:Key="LocOverlaySave">Składować</sys:String>
-    <sys:String x:Key="LocOverlayUpload">Nahrać</sys:String>
     <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
     <sys:String x:Key="LocOverlayCancel">Přetorhnyć</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Wobkrućić</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">Klikńće a ćehńće, zo byšće rysowali. Graty namakaće w gratowej lajsće.</sys:String>
     <sys:String x:Key="LocOverlayHintMove">Ćehńće znutřka wuběra, zo byšće jón přesunyli. Wjedźaki změnja wulkosć.</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">Wubjerće graty za přispomnjenki. Wužiwajće po potrjebje Cofnyć/Wospjetować.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Přetorhnyć, Enter: Wobkrućić, Ctrl+Z: Cofnyć, Ctrl+Y: Wospjetować</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">Tekst přidać</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">Do mjezyskłada kopěrowane</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">Składowane</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Składowanje njeje so poradźiło</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">Nahrate</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">Nahraće njeje so poradźiło</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR dokónčene</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">OCR njeje so poradźiło</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">Tute wokno je opcionalne; začińće jo a Shotora dale w systemowej lajsće běži.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Fotografować – Přispomnić – OCR – Pósłać</sys:String>
-    <sys:String x:Key="LocAboutDescription">Shotora je cilny asistent za wizuelne fotografowanje wobrazowki a wobdźěłanje informacijow za moderne team. Zjednori fotografowanje wobłukow, woknow abo cyłeje wobrazowki, přida hnydom rozmazanje, pikselowanje a wuzběhnjenje a přetworja tekst na wobrazowce z Tesseract abo EasyOCR do strukturowaneho wobsaha. Z tastowymi skrótšenkami, drastami, offline-tessdata a kopěrowanjom, składowanjom a nahrawanjom z jednym klikom wobchowa wotmołwy a dokumentaciju spěšne, wěste a konsistentne.</sys:String>
+    <sys:String x:Key="LocAboutDescription">Shotora je cilny nastroj za fotografowanje wobrazowki a přispomnjenki za moderne team. Fotografuje wobłuki, wokna abo cyłu wobrazowku, přida hnydom šipki, formy, tekst, wuzběhnjenje, rozmazanje a pikselowanje a přetworja tekst na wobrazowce z Tesseract abo EasyOCR do wobdźěłujomneho teksta, cyle na wašim graće. Z tastowymi skrótšenkami, drastami a kopěrowanjom a składowanjom z jednym klikom wobchowa wotmołwy a dokumentaciju spěšne, priwatne a konsistentne.</sys:String>
     <sys:String x:Key="LocAboutLicense">Licenca</sys:String>
     <sys:String x:Key="LocAboutAuthor">Awtor a hladar</sys:String>
     <sys:String x:Key="LocAboutRole">Seniorny softwarowy inženjer / techniski nawoda</sys:String>

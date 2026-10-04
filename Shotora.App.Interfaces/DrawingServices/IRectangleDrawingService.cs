@@ -23,5 +23,6 @@ public interface IRectangleDrawingService
 	void      UpdatePreviewBounds(Rectangle                     preview,    Point                 start,       Point  current);
 	Rectangle CreateProcessingRectangle(AnnotationItem          annotation, IBrush                strokeBrush, double opacity);
 	PixelRect GetVirtualBounds(Screen?                          primary,    IReadOnlyList<Screen> allScreens,  double fallbackWidth, double fallbackHeight);
+	Rect?     MapScreenRectToCapture(PixelRect                  screenRect, PixelRect             captureBounds, Size  displaySize);
 	void      ApplyTranslation(Rectangle                        visual,     AnnotationItem        annotation,  double dx,            double dy);
 }

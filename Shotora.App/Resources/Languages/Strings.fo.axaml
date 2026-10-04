@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">Vís Ger aftur</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Vís Avrita</sys:String>
     <sys:String x:Key="LocSettingsShowSave">Vís Goyma</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">Vís Send upp</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">Vís OCR</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">Vís Avlýsa</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">Vís Vátta</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">Piksla</sys:String>
     <sys:String x:Key="LocToolSaveAs">Vista sum</sys:String>
     <sys:String x:Key="LocToolCopy">Avrita</sys:String>
-    <sys:String x:Key="LocToolUpload">Send upp</sys:String>
     <sys:String x:Key="LocToolCancel">Avlýs</sys:String>
     <sys:String x:Key="LocToolColors">Litir</sys:String>
     <sys:String x:Key="LocToolThickness">Tjúkd</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">Avrita</sys:String>
     <sys:String x:Key="LocOverlaySave">Goyma</sys:String>
-    <sys:String x:Key="LocOverlayUpload">Send upp</sys:String>
     <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
     <sys:String x:Key="LocOverlayCancel">AvlÝsa</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Vátta</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">Klikka og draga fyri at tekna. Brúka tólaliga til at velja tól.</sys:String>
     <sys:String x:Key="LocOverlayHintMove">Draga innan valið fyri at flyta. Brúka handtak til at broyta stødd.</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">Vel tól til at merkja. Brúka Angra/Ger aftur eftir tørvi.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: AvlÝsa, Enter: Vátta, Ctrl+Z: Angra, Ctrl+Y: Ger aftur</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">Legg tekst til</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">Avritað á milliminniskipan</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">Goymt</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Goymsla miseydnaðist</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">Sent upp</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">Yvirførslan miseydnaðist</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR liðugt</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">OCR miseydnaðist</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">Hesi vindeyga er valfrítt; lat tað vera fyri at Shotora heldur fram í arbeiðsreglinum.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Skíggjamynd og viðmerkingar</sys:String>
-    <sys:String x:Key="LocAboutDescription">Skjótar skíggjamyndir, viðmerkingar, OCR og uppílegging við Shotora.</sys:String>
+    <sys:String x:Key="LocAboutDescription">Shotora er eitt málrætt amboð til skíggjamyndir og viðmerkingar fyri nútímans toymi. Tað fangar øki, gluggar ella allan skíggjan, leggur beinan vegin pílar, skap, tekst, háskiljing, ógreiðing og pikslan afturat og ger tekst á skíggjanum um til broytiligan tekst við Tesseract ella EasyOCR, heilt á tínari eind. Við flýtilyklum, evnum og avriting og goymslu við einum klikki heldur tað afturmeldingar og skjalfesting skjótar, privatar og samsvarandi.</sys:String>
     <sys:String x:Key="LocAboutLicense">Loyvi</sys:String>
     <sys:String x:Key="LocAboutAuthor">Høvundur</sys:String>
     <sys:String x:Key="LocAboutRole">Leiklutir</sys:String>

@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">Mostra Repetir</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Mostra Copia</sys:String>
     <sys:String x:Key="LocSettingsShowSave">Mostra Desa</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">Mostra Carrega</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">Mostra OCR</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">Mostra Cancel·la</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">Mostra Confirma</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">Pixelat</sys:String>
     <sys:String x:Key="LocToolSaveAs">Anomena i desa</sys:String>
     <sys:String x:Key="LocToolCopy">Copia</sys:String>
-    <sys:String x:Key="LocToolUpload">Carrega</sys:String>
     <sys:String x:Key="LocToolCancel">Cancel·la</sys:String>
     <sys:String x:Key="LocToolColors">Paleta de colors</sys:String>
     <sys:String x:Key="LocToolThickness">Gruix</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">Copia</sys:String>
     <sys:String x:Key="LocOverlaySave">Desa</sys:String>
-    <sys:String x:Key="LocOverlayUpload">Carrega</sys:String>
     <sys:String x:Key="LocOverlayOcr">Reconèixer text</sys:String>
     <sys:String x:Key="LocOverlayCancel">Cancel·la</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Confirma</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">Fes clic i arrossega per dibuixar. Utilitza la barra d'eines per accedir als altres instruments.</sys:String>
     <sys:String x:Key="LocOverlayHintMove">Arrossega dins la selecció per moure-la. Utilitza les nanses per redimensionar.</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">Selecciona eines per anotar. Utilitza Desfer/Repetir quan calgui.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Cancel·la, Enter: Confirma, Ctrl+Z: Desfer, Ctrl+Y: Repetir</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">Afegeix text</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">Copiat al porta-retalls</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">Desat</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Error en desar</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">Carregat</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">Error en carregar</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR completat</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">OCR fallit</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">Aquesta finestra és opcional; tanca-la per deixar Shotora funcionant a la safata.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Captura de pantalla i anotacions</sys:String>
-    <sys:String x:Key="LocAboutDescription">Captures ràpides, anotacions, OCR i pujades amb Shotora.</sys:String>
+    <sys:String x:Key="LocAboutDescription">Shotora és una eina de captura de pantalla i anotació pensada per a equips moderns. Captura regions, finestres o pantalles completes, aplica a l'instant fletxes, formes, text, ressaltat, difuminat i pixelat, i converteix el text de la pantalla en text editable amb Tesseract o EasyOCR, completament al vostre dispositiu. Amb dreceres de teclat, temes i còpia i desament amb un sol clic, manté els cicles de comentaris i la documentació ràpids, privats i coherents.</sys:String>
     <sys:String x:Key="LocAboutLicense">Llicència</sys:String>
     <sys:String x:Key="LocAboutAuthor">Autor</sys:String>
     <sys:String x:Key="LocAboutRole">Rol</sys:String>

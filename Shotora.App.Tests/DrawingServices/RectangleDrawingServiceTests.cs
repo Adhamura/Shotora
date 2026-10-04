@@ -819,6 +819,50 @@ public class RectangleDrawingServiceTests
 
 	#endregion
 
+	#region MapScreenRectToCapture Tests
+
+	[Fact]
+	public void Given_WindowInsideCapture_When_MapScreenRectToCapture_Then_ReturnsOffsetRect()
+	{
+		var result = _sut.MapScreenRectToCapture(new PixelRect(300, 200, 800, 600), new PixelRect(0, 0, 1920, 1080), new Size(1920, 1080));
+
+		Assert.Equal(new Rect(300, 200, 800, 600), result);
+	}
+
+	[Fact]
+	public void Given_CaptureWithNegativeOrigin_When_MapScreenRectToCapture_Then_OffsetsByCaptureOrigin()
+	{
+		var result = _sut.MapScreenRectToCapture(new PixelRect(-1500, 100, 400, 300), new PixelRect(-1920, 0, 3840, 1080), new Size(3840, 1080));
+
+		Assert.Equal(new Rect(420, 100, 400, 300), result);
+	}
+
+	[Fact]
+	public void Given_WindowPartlyOffScreen_When_MapScreenRectToCapture_Then_ClipsToCapture()
+	{
+		var result = _sut.MapScreenRectToCapture(new PixelRect(-50, -20, 500, 400), new PixelRect(0, 0, 1920, 1080), new Size(1920, 1080));
+
+		Assert.Equal(new Rect(0, 0, 450, 380), result);
+	}
+
+	[Fact]
+	public void Given_DisplayScaledFromPixels_When_MapScreenRectToCapture_Then_ScalesRect()
+	{
+		var result = _sut.MapScreenRectToCapture(new PixelRect(200, 100, 400, 300), new PixelRect(0, 0, 2000, 1000), new Size(1000, 500));
+
+		Assert.Equal(new Rect(100, 50, 200, 150), result);
+	}
+
+	[Fact]
+	public void Given_WindowOutsideCapture_When_MapScreenRectToCapture_Then_ReturnsNull()
+	{
+		var result = _sut.MapScreenRectToCapture(new PixelRect(5000, 5000, 100, 100), new PixelRect(0, 0, 1920, 1080), new Size(1920, 1080));
+
+		Assert.Null(result);
+	}
+
+	#endregion
+
 	#region GetAnnotationRect Tests
 
 	[Fact]

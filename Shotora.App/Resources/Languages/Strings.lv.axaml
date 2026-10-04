@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">Rādīt atkārtošanu</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Rādīt kopēšanu</sys:String>
     <sys:String x:Key="LocSettingsShowSave">Rādīt saglabāšanu</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">Rādīt augšupielādi</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">Rādīt OCR</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">Rādīt atcelšanu</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">Rādīt apstiprināšanu</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">Pikselizēšana</sys:String>
     <sys:String x:Key="LocToolSaveAs">Saglabāt kā</sys:String>
     <sys:String x:Key="LocToolCopy">Kopēt</sys:String>
-    <sys:String x:Key="LocToolUpload">Augšupielādēt</sys:String>
     <sys:String x:Key="LocToolCancel">Atcelt</sys:String>
     <sys:String x:Key="LocToolColors">Krāsas</sys:String>
     <sys:String x:Key="LocToolThickness">Biezums</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">Kopēt</sys:String>
     <sys:String x:Key="LocOverlaySave">Saglabāt</sys:String>
-    <sys:String x:Key="LocOverlayUpload">Augšupielādēt</sys:String>
     <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
     <sys:String x:Key="LocOverlayCancel">Atcelt</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Apstiprināt</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">Noklikšķiniet un velciet, lai zīmētu. Rīki ir rīkjoslā.</sys:String>
     <sys:String x:Key="LocOverlayHintMove">Velciet atlases iekšpusē, lai to pārvietotu. Izmēru mainiet ar rokturiem.</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">Izvēlieties rīkus anotācijām. Pēc vajadzības lietojiet Atsaukt/Atkārtot.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Atcelt, Enter: Apstiprināt, Ctrl+Z: Atsaukt, Ctrl+Y: Atkārtot</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">Pievienot tekstu</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">Nokopēts starpliktuvē</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">Saglabāts</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Saglabāšana neizdevās</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">Augšupielādēts</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">Augšupielāde neizdevās</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR pabeigts</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">OCR neizdevās</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">Šis logs nav obligāts; aizveriet to, un Shotora turpinās darboties paplātē.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Ekrāna tveršana un anotēšana</sys:String>
-    <sys:String x:Key="LocAboutDescription">Ātri ekrānuzņēmumi, atzīmes, OCR un augšupielādes ar Shotora.</sys:String>
+    <sys:String x:Key="LocAboutDescription">Shotora ir mērķtiecīgs ekrāna tveršanas un anotēšanas rīks mūsdienu komandām. Tas tver apgabalus, logus vai visu ekrānu, uzreiz pievieno bultas, formas, tekstu, izcelšanu, aizmiglošanu un pikselizēšanu un ar Tesseract vai EasyOCR pārvērš ekrānā redzamo tekstu rediģējamā tekstā – pilnībā jūsu ierīcē. Ar karstajiem taustiņiem, motīviem un kopēšanu un saglabāšanu ar vienu klikšķi tas uztur atsauksmes un dokumentāciju ātru, privātu un konsekventu.</sys:String>
     <sys:String x:Key="LocAboutLicense">Licence</sys:String>
     <sys:String x:Key="LocAboutAuthor">Autors</sys:String>
     <sys:String x:Key="LocAboutRole">Loma</sys:String>

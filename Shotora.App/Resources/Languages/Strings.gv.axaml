@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">Shooyl Aathoillee</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Shooyl Clow</sys:String>
     <sys:String x:Key="LocSettingsShowSave">Shooyl Sauail</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">Shooyl Lughtey seose</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">Shooyl OCR</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">Shooyl Scuirr</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">Shooyl Cur shickyr</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">Picseleyder</sys:String>
     <sys:String x:Key="LocToolSaveAs">Sauail myr</sys:String>
     <sys:String x:Key="LocToolCopy">Clow</sys:String>
-    <sys:String x:Key="LocToolUpload">Lughtey seose</sys:String>
     <sys:String x:Key="LocToolCancel">Scuirr</sys:String>
     <sys:String x:Key="LocToolColors">Dathyn</sys:String>
     <sys:String x:Key="LocToolThickness">Çhiugheid</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">Clow</sys:String>
     <sys:String x:Key="LocOverlaySave">Sauail</sys:String>
-    <sys:String x:Key="LocOverlayUpload">Lughtey seose</sys:String>
     <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
     <sys:String x:Key="LocOverlayCancel">Scuirr</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Cur shickyr</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">Cliag as tarree dy chur, as uss barree tool son ny toolsh.</sys:String>
     <sys:String x:Key="LocOverlayHintMove">Tarree ersooyl reih dy scugh. Ussee ashey reayr dy cur ayns laue.</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">Reih ny toolsh dy ennagh. Ussee Jarroud/Aathoillee ersooyl dy reayr.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Scuirr, Enter: Cur shickyr, Ctrl+Z: Jarroud, Ctrl+Y: Aathoillee</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">Cur teksh</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">Clow goll er y clappyder</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">Sauail roie</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Cha nel sauail</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">Lughtey seose roie</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">Cha nel lughtey seose</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR croo</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">Cha nel OCR</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">Ta'n uinnag shen gyn arraghee; dooal eh myr shen dy vel Shotora cur er tray.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Goaill-screeyn as coimeentyn</sys:String>
-    <sys:String x:Key="LocAboutDescription">Goaill-screeyn tappee, coimeentyn, OCR as laadey seose lesh Shotora.</sys:String>
+    <sys:String x:Key="LocAboutDescription">Ta Shotora ny greie tastagh son goaill screeyn as coimeentyn son skimmyn y traa t'ayn. T'eh goaill ardjyn, uinnagyn ny screeyn slane, t'eh cur sideyn, cummaghyn, teks, soilshaghey, dorchaghey as picseleyder er ayns tullagh, as t'eh caghlaa teks er y screeyn gys teks oddys oo reaghey lesh Tesseract ny EasyOCR, ooilley er dty ghreie hene. Lesh ogheryn aiceyr, ard-chooishyn, as clow as sauail lesh un chlick, t'eh freayll aaveaghey as screeuyn tappee, preevaadjagh as cordit.</sys:String>
     <sys:String x:Key="LocAboutLicense">Kiangley</sys:String>
     <sys:String x:Key="LocAboutAuthor">Ughtar</sys:String>
     <sys:String x:Key="LocAboutRole">Paitçhey-obbragh</sys:String>

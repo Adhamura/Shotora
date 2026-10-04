@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">Opnieuw tonen</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Kopiëren tonen</sys:String>
     <sys:String x:Key="LocSettingsShowSave">Opslaan tonen</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">Uploaden tonen</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">OCR tonen</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">Annuleer tonen</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">Bevestigen tonen</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">Pixelvorming</sys:String>
     <sys:String x:Key="LocToolSaveAs">Opslaan als</sys:String>
     <sys:String x:Key="LocToolCopy">Kopiëren</sys:String>
-    <sys:String x:Key="LocToolUpload">Uploaden</sys:String>
     <sys:String x:Key="LocToolCancel">Annuleren</sys:String>
     <sys:String x:Key="LocToolColors">Kleuren</sys:String>
     <sys:String x:Key="LocToolThickness">Dikte</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">Kopiëren</sys:String>
     <sys:String x:Key="LocOverlaySave">Opslaan</sys:String>
-    <sys:String x:Key="LocOverlayUpload">Uploaden</sys:String>
     <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
     <sys:String x:Key="LocOverlayCancel">Annuleren</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Bevestigen</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">Klik en sleep om te tekenen. Gebruik de werkbalk voor gereedschap.</sys:String>
     <sys:String x:Key="LocOverlayHintMove">Sleep binnen de selectie om te verplaatsen. Gebruik grepen om te schalen.</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">Kies gereedschap om te annoteren. Gebruik Ongedaan maken/Opnieuw indien nodig.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Annuleren, Enter: Bevestigen, Ctrl+Z: Ongedaan maken, Ctrl+Y: Opnieuw</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">Tekst toevoegen</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">Gekopieerd naar klembord</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">Opgeslagen</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Opslaan mislukt</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">Geüpload</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">Upload mislukt</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR voltooid</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">OCR mislukt</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">Dit venster is optioneel; sluit het om Shotora actief in de tray te laten.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Schermafdruk en annotatie</sys:String>
-    <sys:String x:Key="LocAboutDescription">Snelle screenshots, markeringen, OCR en uploads met Shotora.</sys:String>
+    <sys:String x:Key="LocAboutDescription">Shotora is een gerichte tool voor schermopnamen en aantekeningen voor moderne teams. Het legt gebieden, vensters of volledige schermen vast, voegt direct pijlen, vormen, tekst, markeringen, vervaging en pixelvorming toe en zet tekst op het scherm met Tesseract of EasyOCR om in bewerkbare tekst, volledig op je apparaat. Met sneltoetsen, thema's en kopiëren en opslaan met één klik houdt het feedbackrondes en documentatie snel, privé en consistent.</sys:String>
     <sys:String x:Key="LocAboutLicense">Licentie</sys:String>
     <sys:String x:Key="LocAboutAuthor">Auteur</sys:String>
     <sys:String x:Key="LocAboutRole">Rol</sys:String>

@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">Mustrar refar</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Mustrar copiar</sys:String>
     <sys:String x:Key="LocSettingsShowSave">Mustrar salvar</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">Mustrar chargiar si</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">Mustrar reconuschiment optic</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">Mustrar annullar</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">Mustrar confirmar</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">Pixelar</sys:String>
     <sys:String x:Key="LocToolSaveAs">Salvar sco</sys:String>
     <sys:String x:Key="LocToolCopy">Copiar</sys:String>
-    <sys:String x:Key="LocToolUpload">Chargiar si</sys:String>
     <sys:String x:Key="LocToolCancel">Interrumper</sys:String>
     <sys:String x:Key="LocToolColors">Colurs</sys:String>
     <sys:String x:Key="LocToolThickness">Grossezza</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">Copiar</sys:String>
     <sys:String x:Key="LocOverlaySave">Salvar</sys:String>
-    <sys:String x:Key="LocOverlayUpload">Chargiar si</sys:String>
     <sys:String x:Key="LocOverlayOcr">Reconuschiment optic da caracters</sys:String>
     <sys:String x:Key="LocOverlayCancel">Annullar</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Confirmer</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">Clicas e trais per dessar. Dovra la barrita d'instruments per ils utensils.</sys:String>
     <sys:String x:Key="LocOverlayHintMove">Traina entras la selecziun per mover. Dovra ils manaschaments per midar la dimensiun.</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">Tscherna instruments per annotar. Dovra Annullar/Refar tenor basegn.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Annullar, Enter: Confirmer, Ctrl+Z: Annullar, Ctrl+Y: Refar</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">Agiuntar text</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">Copià en la clipboard</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">Salvà</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Salvar na reussischa betg.</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">Chargià si</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">Chargiament na reussischa betg.</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR cumplet</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">OCR na reussischa betg</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">Questa fenestra è facultativa; serra per laschar Shotora en la barra da system.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Cots da visur e annotaziuns</sys:String>
-    <sys:String x:Key="LocAboutDescription">Cots da visur svelts, annotaziuns, OCR e chargiar si cun Shotora.</sys:String>
+    <sys:String x:Key="LocAboutDescription">Shotora è in instrument concentrà per fotografar il visur ed annotar per teams moderns. El fotografescha secziuns, fanestras u visurs entirs, agiunta immediatamain frizzas, furmas, text, suttastritgadas, sfuschadas e pixelaziun e transfurma il text sin il visur en text modifitgabel cun Tesseract u EasyOCR, cumplettamain sin tes apparat. Cun tastas da scursanida, designs e copiar e memorisar cun in clic, tegna el ils cicluns da resposta e la documentaziun svelts, privats e consistents.</sys:String>
     <sys:String x:Key="LocAboutLicense">Licenza</sys:String>
     <sys:String x:Key="LocAboutAuthor">Autur</sys:String>
     <sys:String x:Key="LocAboutRole">Rol</sys:String>

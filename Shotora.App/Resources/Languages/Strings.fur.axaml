@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">Mostre Rifâs</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Mostre Copie</sys:String>
     <sys:String x:Key="LocSettingsShowSave">Mostre Salve</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">Mostre Cjarghe</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">Mostre OCR</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">Mostre Cancel</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">Mostre Conferme</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">Pixelizazion</sys:String>
     <sys:String x:Key="LocToolSaveAs">Salve cul non</sys:String>
     <sys:String x:Key="LocToolCopy">Copie</sys:String>
-    <sys:String x:Key="LocToolUpload">Cjame</sys:String>
     <sys:String x:Key="LocToolCancel">Anule</sys:String>
     <sys:String x:Key="LocToolColors">Colôrs</sys:String>
     <sys:String x:Key="LocToolThickness">Spessôr</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">Copie</sys:String>
     <sys:String x:Key="LocOverlaySave">Salve</sys:String>
-    <sys:String x:Key="LocOverlayUpload">Cjarge</sys:String>
     <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
     <sys:String x:Key="LocOverlayCancel">Cancel</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Conferme</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">Clicc e tira par disegnâ. Dopre la barade di struments par i cjârs.</sys:String>
     <sys:String x:Key="LocOverlayHintMove">Tira dentri de sezione par muovi. Dopre i manculis par cambiai la dimension.</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">Scegli i struments par anotâ. Dopre Disdî/Rifâs se al è necessari.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Cancel, Enter: Conferme, Ctrl+Z: Disdî, Ctrl+Y: Rifâs</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">Agiuntâ test</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">Copiât te cjapadôr</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">Salvât</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Fâl pous salvâ</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">Cjargât</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">Fâl cjargjâ</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR finît</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">OCR falît</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">Chest viert lunìes je opzional; serelu par lassar Shotora chel falsie in tray.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Cature di schermi e notis</sys:String>
-    <sys:String x:Key="LocAboutDescription">Cature svelte, notis, OCR e inviaments cun Shotora.</sys:String>
+    <sys:String x:Key="LocAboutDescription">Shotora al è un strument concentrât par cature dal schermi e notis pensât pes scuadris modernis. Al cature zonis, barcons o schermis interis, al zonte daurman frecis, formis, test, evidenziazion, sfocature e pixelizazion e al trasforme il test sul schermi in test modificabil cun Tesseract o EasyOCR, dut sul to dispositîf. Cun tascj svelts, temis e copie e salvament cuntun sôl clic, al ten svelts, privâts e coerents i cicli di rispueste e la documentazion.</sys:String>
     <sys:String x:Key="LocAboutLicense">Licence</sys:String>
     <sys:String x:Key="LocAboutAuthor">Autôr</sys:String>
     <sys:String x:Key="LocAboutRole">Rûl</sys:String>

@@ -57,7 +57,7 @@ public partial class OverlayWindow(
 
 	private readonly OverlayInteractionState _state = new();
 
-	public async Task InitializeAsync(CaptureMode mode)
+	public async Task InitializeAsync(CaptureMode mode, PixelRect? activeWindowBounds = null)
 	{
 		EnsureLoaded();
 		_state.Settings    = await settingsSystemService.LoadAsync();
@@ -99,9 +99,18 @@ public partial class OverlayWindow(
 
 		Position = bounds.Position;
 
+		var windowSelection = mode == CaptureMode.ActiveWindow && activeWindowBounds is { } windowBounds
+			? rectangles.MapScreenRectToCapture(windowBounds, bounds, _state.Capture.Display.Size)
+			: null;
+
 		if (mode == CaptureMode.Fullscreen)
 		{
 			_state.SelectionRect = new Rect(0, 0, _state.Capture.Display.Size.Width, _state.Capture.Display.Size.Height);
+			UpdateSelectionVisuals();
+		}
+		else if (windowSelection is { } selection)
+		{
+			_state.SelectionRect = selection;
 			UpdateSelectionVisuals();
 		}
 		else

@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">Zobrazit Znovu</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Zobrazit Kopírovat</sys:String>
     <sys:String x:Key="LocSettingsShowSave">Zobrazit Uložit</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">Zobrazit Nahrát</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">Zobrazit OCR</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">Zobrazit Zrušit</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">Zobrazit Potvrdit</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">Pixelace</sys:String>
     <sys:String x:Key="LocToolSaveAs">Uložit jako</sys:String>
     <sys:String x:Key="LocToolCopy">Kopírovat</sys:String>
-    <sys:String x:Key="LocToolUpload">Nahrát</sys:String>
     <sys:String x:Key="LocToolCancel">Zrušit</sys:String>
     <sys:String x:Key="LocToolColors">Barvy</sys:String>
     <sys:String x:Key="LocToolThickness">Tloušťka</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">Kopírovat</sys:String>
     <sys:String x:Key="LocOverlaySave">Uložit</sys:String>
-    <sys:String x:Key="LocOverlayUpload">Nahrát</sys:String>
     <sys:String x:Key="LocOverlayOcr">Rozpoznat text</sys:String>
     <sys:String x:Key="LocOverlayCancel">Zrušit</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Potvrdit</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">Klikněte a táhněte pro kreslení. Použijte panel nástrojů pro další funkce.</sys:String>
     <sys:String x:Key="LocOverlayHintMove">Táhněte uvnitř výběru pro přesun. Použijte úchyty pro změnu velikosti.</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">Vyberte nástroje pro anotaci. V případě potřeby použijte Zpět/Znovu.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Zrušit, Enter: Potvrdit, Ctrl+Z: Zpět, Ctrl+Y: Znovu</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">Přidat text</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">Zkopírováno do schránky</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">Uloženo</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Uložení se nezdařilo</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">Nahráno</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">Nahrání se nezdařilo</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR dokončeno</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">OCR selhalo</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">Toto okno je volitelné; zavřením necháte Shotora běžet v oznamovací oblasti.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Snímání obrazovky a anotace</sys:String>
-    <sys:String x:Key="LocAboutDescription">Rychlé snímky obrazovky, poznámky, OCR a nahrávání se Shotorou.</sys:String>
+    <sys:String x:Key="LocAboutDescription">Shotora je cílený nástroj pro snímání obrazovky a poznámky pro moderní týmy. Zachytí oblasti, okna nebo celou obrazovku, okamžitě přidá šipky, tvary, text, zvýraznění, rozostření a pixelaci a pomocí Tesseractu nebo EasyOCR převede text na obrazovce na upravitelný text, a to zcela ve vašem zařízení. Díky klávesovým zkratkám, motivům a kopírování a ukládání jedním kliknutím udržuje zpětnou vazbu i dokumentaci rychlou, soukromou a konzistentní.</sys:String>
     <sys:String x:Key="LocAboutLicense">Licence</sys:String>
     <sys:String x:Key="LocAboutAuthor">Autor</sys:String>
     <sys:String x:Key="LocAboutRole">Role</sys:String>

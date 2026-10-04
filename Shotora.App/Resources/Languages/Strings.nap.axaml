@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">Mostra Ripristina</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Mostra Copia</sys:String>
     <sys:String x:Key="LocSettingsShowSave">Mostra Salva</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">Mostra Carica</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">Mostra OCR</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">Mostra Annulla</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">Mostra Conferma</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">Pixelizzazione</sys:String>
     <sys:String x:Key="LocToolSaveAs">Sarva cu nomme</sys:String>
     <sys:String x:Key="LocToolCopy">Copia</sys:String>
-    <sys:String x:Key="LocToolUpload">Carica</sys:String>
     <sys:String x:Key="LocToolCancel">Annulla</sys:String>
     <sys:String x:Key="LocToolColors">Culure</sys:String>
     <sys:String x:Key="LocToolThickness">Spessore</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">Copia</sys:String>
     <sys:String x:Key="LocOverlaySave">Salva</sys:String>
-    <sys:String x:Key="LocOverlayUpload">Carica</sys:String>
     <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
     <sys:String x:Key="LocOverlayCancel">Annulla</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Conferma</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">Clicca e trascina per disegnare. Usa la barra degli strumenti.</sys:String>
     <sys:String x:Key="LocOverlayHintMove">Trascina nella selezione per muovere. Usa le maniglie per ridimensionare.</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">Seleziona gli strumenti per annotare. Usa Annulla/Ripristina se serve.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Annulla, Enter: Conferma, Ctrl+Z: Annulla, Ctrl+Y: Ripristina</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">Aggiungi testo</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">Copiato negli appunti</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">Salvato</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Salvataggio fallito</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">Caricato</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">Upload fallito</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR completato</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">OCR fallito</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">Chesta fenesta è facoltativa; chiurela pe' lassà Shotora attivo 'int' 'a tray.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Cattura d' 'o schermo e note</sys:String>
-    <sys:String x:Key="LocAboutDescription">Screenshot veloce, segni, OCR e 'ncarricamenti cu Shotora.</sys:String>
+    <sys:String x:Key="LocAboutDescription">Shotora è nu strumento apposta pe' catturà 'o schermo e fà annotaziune, pensato pe' 'e squadre muderne. Afferra zone, fenestre o schermi sane, mette subbeto frecce, forme, testo, evidenziature, sfucatura e pixelizzazione, e trasforma 'o testo 'ncopp' 'o schermo 'n testo ca se pò cagnà cu Tesseract o EasyOCR, tutto 'ncopp' 'o dispositivo tujo. Cu tasti lesti, teme e copia e sarvataggio cu nu clic, mantene 'e risposte e 'a documentazione veloce, private e coerente.</sys:String>
     <sys:String x:Key="LocAboutLicense">Licenza</sys:String>
     <sys:String x:Key="LocAboutAuthor">Autore</sys:String>
     <sys:String x:Key="LocAboutRole">Ruolo</sys:String>

@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">Yeniden yap göster</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Kopyala göster</sys:String>
     <sys:String x:Key="LocSettingsShowSave">Kaydet göster</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">Yükle göster</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">OCR göster</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">İptal göster</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">Onay göster</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">Pikselleşmäk</sys:String>
     <sys:String x:Key="LocToolSaveAs">Farklı kaydetmää</sys:String>
     <sys:String x:Key="LocToolCopy">Kopiya</sys:String>
-    <sys:String x:Key="LocToolUpload">Yüklemää</sys:String>
     <sys:String x:Key="LocToolCancel">Vazgeçmää</sys:String>
     <sys:String x:Key="LocToolColors">Renkler</sys:String>
     <sys:String x:Key="LocToolThickness">Kalınlık</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">Kopyala</sys:String>
     <sys:String x:Key="LocOverlaySave">Kaydet</sys:String>
-    <sys:String x:Key="LocOverlayUpload">Yükle</sys:String>
     <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
     <sys:String x:Key="LocOverlayCancel">İptal</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Onayla</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">Çizmek için tıkla ve sürükle. Araçlar için araç çubuğunu kullan.</sys:String>
     <sys:String x:Key="LocOverlayHintMove">Hareket ettirmek için seçimin içine sürükle. Boyutlandırmak için tutacakları kullan.</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">Ek açıklama yapmak için araçları seç. Gerekirse Geri Al/Yeniden Yap kullan.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: İptal, Enter: Onayla, Ctrl+Z: Geri Al, Ctrl+Y: Yeniden Yap</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">Metin ekle</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">Panoya kopyalandı</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">Kaydedildi</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Kaydetme başarısız</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">Yüklendi</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">Yükleme başarısız</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR tamamlandı</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">OCR başarısız</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">Bu pencere isteğe bağlıdır; Shotora'nın bildirim çubuğunda çalışmaya devam etmesi için kapat.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Ekran alı̌p yazma ve not tutma</sys:String>
-    <sys:String x:Key="LocAboutDescription">Tez ekran görüntüleri, notlar, OCR ve Shotora ile yükləmə.</sys:String>
+    <sys:String x:Key="LocAboutDescription">Shotora – modern takımlar için ekran görüntüsü almaa hem işaretlemää bir odaklı alet. O, bölgeleri, pencereleri osaydı bütün ekranı çeker, okları, figuraları, teksti, markalamayı, bulanıklıı hem pikselleşmäyi birdän koyêr hem ekrandakı teksti Tesseract osaydı EasyOCR yardımınnan diiştirilebilir tekstä çevirer – hepsi sizin cihazınızda. Kısayol tuşlarınnan, temalarnan hem bir tıklamaklan kopiya hem kaydetmäklän, geeri bildirmeleri hem dokumentaţiyayı tez, özel hem uygun tutêr.</sys:String>
     <sys:String x:Key="LocAboutLicense">Lisans</sys:String>
     <sys:String x:Key="LocAboutAuthor">Yazarı</sys:String>
     <sys:String x:Key="LocAboutRole">Rol</sys:String>

@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">Taispeáin Athdhéanamh</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Taispeáin Cóipeáil</sys:String>
     <sys:String x:Key="LocSettingsShowSave">Taispeáin Sábháil</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">Taispeáin Uaslódáil</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">Taispeáin OCR</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">Taispeáin Cealaigh</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">Taispeáin Deimhniú</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">Picteilínigh</sys:String>
     <sys:String x:Key="LocToolSaveAs">Sábháil mar</sys:String>
     <sys:String x:Key="LocToolCopy">Cóipeáil</sys:String>
-    <sys:String x:Key="LocToolUpload">Uaslódáil</sys:String>
     <sys:String x:Key="LocToolCancel">Cealaigh</sys:String>
     <sys:String x:Key="LocToolColors">Dathanna</sys:String>
     <sys:String x:Key="LocToolThickness">Tiús</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">Cóipeáil</sys:String>
     <sys:String x:Key="LocOverlaySave">Sábháil</sys:String>
-    <sys:String x:Key="LocOverlayUpload">Uaslódáil</sys:String>
     <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
     <sys:String x:Key="LocOverlayCancel">Cealaigh</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Dearbhaigh</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">Cliceáil agus tarraing chun a tharraingt. Úsáid an barra uirlisí do na huirlisí.</sys:String>
     <sys:String x:Key="LocOverlayHintMove">Tarraing taobh istigh den roghnú chun bogadh. Úsáid láimhseálacha chun athmhéid a dhéanamh.</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">Roghnaigh uirlisí le haghaidh míniúcháin. Úsáid Cealaigh/Athdhéanamh de réir mar is gá.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Cealaigh, Iontráil: Dearbhaigh, Ctrl+Z: Cealaigh, Ctrl+Y: Athdhéanamh</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">Cuir téacs leis</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">Cóipte chuig an ngearrthaisce</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">Sábháladh</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Theip ar shábháil</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">Uaslódáilte</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">Theip ar uaslódáil</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">Críochnaíodh OCR</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">Theip ar OCR</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">Tá an fhuinneog seo roghnach; dún í má tá tú ag iarraidh Shotora a fhágáil sa bharra chórais.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Gabháil scáileáin agus anótáil</sys:String>
-    <sys:String x:Key="LocAboutDescription">Seatanna scáileáin gasta, marcáil, OCR agus uaslódálacha le Shotora.</sys:String>
+    <sys:String x:Key="LocAboutDescription">Is uirlis dhírithe é Shotora chun an scáileán a ghabháil agus nótaí a chur leis, d'fhoirne nua-aimseartha. Gabhann sé réigiúin, fuinneoga nó scáileáin iomlána, cuireann sé saighde, cruthanna, téacs, aibhsiú, doiléiriú agus picteilíniú i bhfeidhm láithreach, agus iompaíonn sé téacs ar an scáileán ina théacs ineagarthóireachta le Tesseract nó EasyOCR, go hiomlán ar do ghléas. Le heochracha aicearra, téamaí, agus cóipeáil agus sábháil le cliceáil amháin, coinníonn sé lúba aiseolais agus doiciméadú tapa, príobháideach agus comhsheasmhach.</sys:String>
     <sys:String x:Key="LocAboutLicense">Ceadúnas</sys:String>
     <sys:String x:Key="LocAboutAuthor">Údar</sys:String>
     <sys:String x:Key="LocAboutRole">Ról</sys:String>

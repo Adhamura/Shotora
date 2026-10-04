@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">Näita Tee uuesti</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Näita Kopeeri</sys:String>
     <sys:String x:Key="LocSettingsShowSave">Näita Salvesta</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">Näita Üleslaadimist</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">Näita OCR</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">Näita Tühista</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">Näita Kinnitus</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">Pikselizatsī</sys:String>
     <sys:String x:Key="LocToolSaveAs">Izglōb ku</sys:String>
     <sys:String x:Key="LocToolCopy">Kopīrõ</sys:String>
-    <sys:String x:Key="LocToolUpload">Vieratõ üles</sys:String>
     <sys:String x:Key="LocToolCancel">Katkõst</sys:String>
     <sys:String x:Key="LocToolColors">Mujud</sys:String>
     <sys:String x:Key="LocToolThickness">Sanktõks</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">Kopeeri</sys:String>
     <sys:String x:Key="LocOverlaySave">Salvesta</sys:String>
-    <sys:String x:Key="LocOverlayUpload">Laadi üles</sys:String>
     <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
     <sys:String x:Key="LocOverlayCancel">Tühista</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Kinnita</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">Klõpsa ja lohista, et joonistada. Kasuta tööriistariba.</sys:String>
     <sys:String x:Key="LocOverlayHintMove">Lohista valiku sees, et liikuda. Kasuta käepidemeid suuruse muutmiseks.</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">Vali tööriistad märkuste tegemiseks. Kasuta undo/redo vajadusel.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Tühista, Enter: Kinnita, Ctrl+Z: Võta tagasi, Ctrl+Y: Tee uuesti</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">Lisa tekst</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">Kopeeritud lõikelauale</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">Salvestatud</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Salvestamine ebaõnnestus</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">Üles laaditud</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">Üleslaadimine ebaõnnestus</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR lõpetatud</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">OCR ebaõnnestus</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">See aken on vabatahtlik; sulge see, et jätta Shotora süsteemsalve tööle.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Ekrānõptõz ja märkõz</sys:String>
-    <sys:String x:Key="LocAboutDescription">Kierāb ekrānõt, märkõt, OCR ja äigiztõbõd Shotora piertõ.</sys:String>
+    <sys:String x:Key="LocAboutDescription">Shotora um tämpiz rištīngõd pierāst ekrān pilt võtmiz ja märkõd kēratõks rīk. Ta võtāb pindõd, ikkõnd agā kōgõ ekrānõ, pānab ikškõrdõ nūolõd, kujõd, tekstõ, valižmiz, sumēgõks ja pikselizatsijõ ja mōtāb ekrān tekstõ Tesseract agā EasyOCR abkõks pǟlõ kēratõb tekstõks, amā sinā rīkõs. Palatõd klavišõd, tēmad ja ikš klikšõks kopīrõmiz ja izglōbimiz abkõks ta pidāb vastõd ja dokumentatsijõ kierābõd, eņtšõd ja ītlizõd.</sys:String>
     <sys:String x:Key="LocAboutLicense">Litsents</sys:String>
     <sys:String x:Key="LocAboutAuthor">Autor</sys:String>
     <sys:String x:Key="LocAboutRole">Rõļ</sys:String>

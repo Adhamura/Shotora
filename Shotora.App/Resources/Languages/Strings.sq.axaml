@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">Shfaq Ribëj</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Shfaq Kopjo</sys:String>
     <sys:String x:Key="LocSettingsShowSave">Shfaq Ruaj</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">Shfaq Ngarko</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">Shfaq OCR</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">Shfaq Anulo</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">Shfaq Konfirmo</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">Pikselizim</sys:String>
     <sys:String x:Key="LocToolSaveAs">Ruaj si</sys:String>
     <sys:String x:Key="LocToolCopy">Kopjo</sys:String>
-    <sys:String x:Key="LocToolUpload">Ngarko</sys:String>
     <sys:String x:Key="LocToolCancel">Anulo</sys:String>
     <sys:String x:Key="LocToolColors">Ngjyrat</sys:String>
     <sys:String x:Key="LocToolThickness">Trashësia</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">Kopjo</sys:String>
     <sys:String x:Key="LocOverlaySave">Ruaj</sys:String>
-    <sys:String x:Key="LocOverlayUpload">Ngarko</sys:String>
     <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
     <sys:String x:Key="LocOverlayCancel">Anulo</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Konfirmo</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">Kliko dhe tërhiq për të vizatuar. Përdor shiritin e veglave për veglat.</sys:String>
     <sys:String x:Key="LocOverlayHintMove">Tërhiq brenda përzgjedhjes për ta zhvendosur. Përdor dorezat për ta ripërmasuar.</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">Zgjidh veglat për shënime. Përdor Zhbëj/Ribëj sipas nevojës.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Anulo, Enter: Konfirmo, Ctrl+Z: Zhbëj, Ctrl+Y: Ribëj</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">Shto tekst</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">U kopjua në kujtesën e fragmenteve</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">U ruajt</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Ruajtja dështoi</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">U ngarkua</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">Ngarkimi dështoi</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR përfundoi</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">OCR dështoi</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">Kjo dritare është opsionale; mbylle dhe Shotora do të vazhdojë të punojë në hapësirën e njoftimeve.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Kap – Shëno – OCR – Dërgo</sys:String>
-    <sys:String x:Key="LocAboutDescription">Shotora është një asistent i përqendruar për kapjen vizuale dhe nxjerrjen e informacionit për ekipet moderne. Ai thjeshton kapjen e zonave, dritareve ose ekranit të plotë, shton menjëherë turbullim, pikselizim dhe theksime dhe e kthen tekstin në ekran në përmbajtje të strukturuar me Tesseract ose EasyOCR. Me shkurtore, tema, tessdata jashtë linje dhe kopjim, ruajtje e ngarkim me një klik, i mban ciklet e reagimeve dhe dokumentacionin të shpejta, të sigurta dhe të qëndrueshme.</sys:String>
+    <sys:String x:Key="LocAboutDescription">Shotora është një mjet i përqendruar për kapjen e ekranit dhe shënimet, për ekipet moderne. Ai kap zona, dritare ose ekranin e plotë, shton menjëherë shigjeta, forma, tekst, theksime, turbullim dhe pikselizim dhe e kthen tekstin në ekran në tekst të redaktueshëm me Tesseract ose EasyOCR, tërësisht në pajisjen tuaj. Me shkurtore, tema dhe kopjim e ruajtje me një klik, i mban ciklet e reagimeve dhe dokumentacionin të shpejta, private dhe të qëndrueshme.</sys:String>
     <sys:String x:Key="LocAboutLicense">Licenca</sys:String>
     <sys:String x:Key="LocAboutAuthor">Autori dhe mirëmbajtësi</sys:String>
     <sys:String x:Key="LocAboutRole">Inxhinier i lartë softueri / drejtues teknik</sys:String>

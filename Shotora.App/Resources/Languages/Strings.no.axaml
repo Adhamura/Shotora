@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">Vis Gjør om</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Vis Kopier</sys:String>
     <sys:String x:Key="LocSettingsShowSave">Vis Lagre</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">Vis Last opp</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">Vis OCR</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">Vis Avbryt</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">Vis Bekreft</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">Pikslering</sys:String>
     <sys:String x:Key="LocToolSaveAs">Lagre som</sys:String>
     <sys:String x:Key="LocToolCopy">Kopier</sys:String>
-    <sys:String x:Key="LocToolUpload">Last opp</sys:String>
     <sys:String x:Key="LocToolCancel">Avbryt</sys:String>
     <sys:String x:Key="LocToolColors">Farger</sys:String>
     <sys:String x:Key="LocToolThickness">Tykkelse</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">Kopier</sys:String>
     <sys:String x:Key="LocOverlaySave">Lagre</sys:String>
-    <sys:String x:Key="LocOverlayUpload">Last opp</sys:String>
     <sys:String x:Key="LocOverlayOcr">Optisk tegngjenkjenning</sys:String>
     <sys:String x:Key="LocOverlayCancel">Avbryt</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Bekreft</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">Klikk og dra for å tegne. Bruk verktøylinjen for verktøy.</sys:String>
     <sys:String x:Key="LocOverlayHintMove">Dra innenfor utvalget for å flytte. Bruk håndtakene for å endre størrelse.</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">Velg verktøy for å kommentere. Bruk Angre/Gjør om ved behov.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Avbryt, Enter: Bekreft, Ctrl+Z: Angre, Ctrl+Y: Gjør om</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">Legg til tekst</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">Kopiert til utklippstavlen</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">Lagret</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Lagring mislyktes</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">Lastet opp</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">Opplasting mislyktes</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR fullført</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">OCR mislyktes</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">Dette vinduet er valgfritt; lukk det for å la Shotora kjøre i systemfeltet.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Skjermfangst og merknader</sys:String>
-    <sys:String x:Key="LocAboutDescription">Raske skjermbilder, merking, OCR og opplastinger med Shotora.</sys:String>
+    <sys:String x:Key="LocAboutDescription">Shotora er et fokusert verktøy for skjermbilder og merking for moderne team. Det fanger områder, vinduer eller hele skjermer, legger umiddelbart til piler, former, tekst, utheving, sløring og pikslering, og gjør tekst på skjermen om til redigerbar tekst med Tesseract eller EasyOCR – helt på enheten din. Med hurtigtaster, temaer og kopiering og lagring med ett klikk holder det tilbakemeldingssløyfer og dokumentasjon raske, private og konsekvente.</sys:String>
     <sys:String x:Key="LocAboutLicense">Lisens</sys:String>
     <sys:String x:Key="LocAboutAuthor">Forfatter</sys:String>
     <sys:String x:Key="LocAboutRole">Rolle</sys:String>
