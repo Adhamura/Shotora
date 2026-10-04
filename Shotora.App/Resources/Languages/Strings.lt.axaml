@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">Rodyti atkūrimą</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Rodyti kopijavimą</sys:String>
     <sys:String x:Key="LocSettingsShowSave">Rodyti įrašymą</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">Rodyti įkėlimą</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">Rodyti OCR</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">Rodyti atsisakymą</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">Rodyti patvirtinimą</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">Pikseliavimas</sys:String>
     <sys:String x:Key="LocToolSaveAs">Išsaugoti kaip</sys:String>
     <sys:String x:Key="LocToolCopy">Kopijuoti</sys:String>
-    <sys:String x:Key="LocToolUpload">Įkelti</sys:String>
     <sys:String x:Key="LocToolCancel">Atšaukti</sys:String>
     <sys:String x:Key="LocToolColors">Spalvos</sys:String>
     <sys:String x:Key="LocToolThickness">Storis</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">Kopijuoti</sys:String>
     <sys:String x:Key="LocOverlaySave">Įrašyti</sys:String>
-    <sys:String x:Key="LocOverlayUpload">Įkelti</sys:String>
     <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
     <sys:String x:Key="LocOverlayCancel">Atšaukti</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Patvirtinti</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">Spustelėkite ir vilkite, kad pieštumėte. Įrankiai yra įrankių juostoje.</sys:String>
     <sys:String x:Key="LocOverlayHintMove">Vilkite pasirinkimo viduje, kad perkeltumėte. Dydį keiskite rankenėlėmis.</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">Pasirinkite įrankius anotacijoms. Prireikus naudokite Atšaukti/Atkurti.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Atšaukti, Enter: Patvirtinti, Ctrl+Z: Atšaukti, Ctrl+Y: Atkurti</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">Pridėti tekstą</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">Nukopijuota į mainų sritį</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">Įrašyta</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Įrašyti nepavyko</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">Įkelta</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">Įkelti nepavyko</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR atliktas</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">OCR nepavyko</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">Šis langas neprivalomas; uždarykite jį, ir Shotora toliau veiks dėkle.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Ekrano fiksavimas ir žymėjimas</sys:String>
-    <sys:String x:Key="LocAboutDescription">Greiti ekrano vaizdai, žymėjimai, OCR ir įkėlimas su Shotorą.</sys:String>
+    <sys:String x:Key="LocAboutDescription">Shotora – tikslingas ekrano fiksavimo ir žymėjimo įrankis šiuolaikinėms komandoms. Jis užfiksuoja sritis, langus ar visą ekraną, akimirksniu prideda rodykles, figūras, tekstą, paryškinimą, suliejimą ir pikseliavimą, o ekrane esantį tekstą su Tesseract arba EasyOCR paverčia redaguojamu tekstu – visiškai jūsų įrenginyje. Dėl greitųjų klavišų, temų ir kopijavimo bei išsaugojimo vienu spustelėjimu grįžtamasis ryšys ir dokumentacija išlieka greiti, privatūs ir nuoseklūs.</sys:String>
     <sys:String x:Key="LocAboutLicense">Licencija</sys:String>
     <sys:String x:Key="LocAboutAuthor">Autorius</sys:String>
     <sys:String x:Key="LocAboutRole">Vaidmuo</sys:String>

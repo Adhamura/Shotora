@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">Seall Ath-dhèan</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Seall Lethbhreac</sys:String>
     <sys:String x:Key="LocSettingsShowSave">Seall Sàbhail</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">Seall Luchdaich suas</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">Seall OCR</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">Seall Sguir dheth</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">Seall Dearbhaich</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">Piogsailich</sys:String>
     <sys:String x:Key="LocToolSaveAs">Sàbhail mar</sys:String>
     <sys:String x:Key="LocToolCopy">Lethbhreac</sys:String>
-    <sys:String x:Key="LocToolUpload">Luchdaich suas</sys:String>
     <sys:String x:Key="LocToolCancel">Sguir dheth</sys:String>
     <sys:String x:Key="LocToolColors">Dathan</sys:String>
     <sys:String x:Key="LocToolThickness">Tiughad</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">Lethbhreac</sys:String>
     <sys:String x:Key="LocOverlaySave">Sàbhail</sys:String>
-    <sys:String x:Key="LocOverlayUpload">Luchdaich suas</sys:String>
     <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
     <sys:String x:Key="LocOverlayCancel">Sguir dheth</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Dearbhaich</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">Cliog agus tarraing gus tarraing. Cleachd bàr innealan airson na h-innealan.</sys:String>
     <sys:String x:Key="LocOverlayHintMove">Tarraing taobh a-staigh an taghaidh gus gluasad. Cleachd grabhagan airson ath-thomhas.</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">Tagh innealan airson comharrachadh. Cleachd Neo-dhèan/Ath-dhèan ma tha feum air.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Sguir dheth, Enter: Dearbhaich, Ctrl+Z: Neo-dhèan, Ctrl+Y: Ath-dhèan</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">Cuir teacsa ris</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">Air lethbhreac a ghabhail don bhùird-chlò</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">Air a shàbhaladh</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Cha robh e comasach a shàbhaladh</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">Air a luchdachadh suas</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">Cha robh e comasach a luchdachadh suas</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR deiseil</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">OCR air fàiligeadh</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">Tha an uinneag seo roghainneil; dùin e gus gun lean Shotora ag obair sa bhàr truinnsear.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Glacadh sgrìn agus nòtaichean</sys:String>
-    <sys:String x:Key="LocAboutDescription">Glacaidhean-sgrìn luath, nòtaichean, OCR agus luchdadh suas le Shotora.</sys:String>
+    <sys:String x:Key="LocAboutDescription">'S e inneal cuimsichte airson glacadh-sgrìn agus nòtachadh do sgiobaidhean an latha an-diugh a th' ann an Shotora. Glacaidh e roinnean, uinneagan no sgrìn shlàn, cuiridh e saighdean, cumaidhean, teacsa, soilleireachadh, sgleò agus piogsaileachadh ris sa bhad, agus tionndaidhidh e teacsa air an sgrìn gu teacsa a ghabhas deasachadh le Tesseract no EasyOCR, gu tur air an uidheam agad. Le iuchraichean ath-ghoirid, cuspairean, agus lethbhreacadh is sàbhaladh le aon bhriogadh, cumaidh e lùban fios-air-ais agus docamaideadh luath, prìobhaideach agus cunbhalach.</sys:String>
     <sys:String x:Key="LocAboutLicense">Ceadachas</sys:String>
     <sys:String x:Key="LocAboutAuthor">Ùghdar</sys:String>
     <sys:String x:Key="LocAboutRole">Dreuchd</sys:String>

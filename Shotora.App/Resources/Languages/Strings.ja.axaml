@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">やり直しを表示</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">コピーを表示</sys:String>
     <sys:String x:Key="LocSettingsShowSave">保存を表示</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">アップロードを表示</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">OCRを表示</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">キャンセルを表示</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">確認を表示</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">ピクセル化</sys:String>
     <sys:String x:Key="LocToolSaveAs">名前を付けて保存</sys:String>
     <sys:String x:Key="LocToolCopy">コピー</sys:String>
-    <sys:String x:Key="LocToolUpload">アップロード</sys:String>
     <sys:String x:Key="LocToolCancel">キャンセル</sys:String>
     <sys:String x:Key="LocToolColors">色</sys:String>
     <sys:String x:Key="LocToolThickness">太さ</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">コピー</sys:String>
     <sys:String x:Key="LocOverlaySave">保存</sys:String>
-    <sys:String x:Key="LocOverlayUpload">アップロード</sys:String>
     <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
     <sys:String x:Key="LocOverlayCancel">キャンセル</sys:String>
     <sys:String x:Key="LocOverlayConfirm">確認</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">クリック&amp;ドラッグで描画。ツールバーでツールを選択。</sys:String>
     <sys:String x:Key="LocOverlayHintMove">選択範囲内でドラッグして移動。ハンドルでリサイズ。</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">ツールを選択して注釈。必要に応じて元に戻す/やり直し。</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: キャンセル、Enter: 確認、Ctrl+Z: 元に戻す、Ctrl+Y: やり直し</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">テキストを追加</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">クリップボードにコピーしました</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">保存しました</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">保存に失敗しました</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">アップロードしました</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">アップロードに失敗しました</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR完了</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">OCRに失敗しました</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">このウィンドウはオプションです。閉じるとShotoraはトレイで実行されます。</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">画面キャプチャと注釈</sys:String>
-    <sys:String x:Key="LocAboutDescription">Shotora で高速スクリーンショット、注釈、OCR、アップロード。</sys:String>
+    <sys:String x:Key="LocAboutDescription">Shotora は、現代のチームのための、画面キャプチャと注釈に特化したツールです。範囲、ウィンドウ、または全画面をキャプチャし、矢印、図形、テキスト、ハイライト、ぼかし、ピクセル化の注釈をすぐに追加できます。さらに、Tesseract または EasyOCR で画面上の文字を編集可能なテキストに変換し、すべての処理をデバイス上で完結させます。ホットキー、テーマ、ワンクリックのコピーと保存により、フィードバックとドキュメント作成を迅速、プライベート、かつ一貫したものに保ちます。</sys:String>
     <sys:String x:Key="LocAboutLicense">ライセンス</sys:String>
     <sys:String x:Key="LocAboutAuthor">作者</sys:String>
     <sys:String x:Key="LocAboutRole">役割</sys:String>

@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">Visa Gör om</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Visa Kopiera</sys:String>
     <sys:String x:Key="LocSettingsShowSave">Visa Spara</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">Visa Ladda upp</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">Visa OCR</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">Visa Avbryt</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">Visa Bekräfta</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">Pixlera</sys:String>
     <sys:String x:Key="LocToolSaveAs">Spara som</sys:String>
     <sys:String x:Key="LocToolCopy">Kopiera</sys:String>
-    <sys:String x:Key="LocToolUpload">Ladda upp</sys:String>
     <sys:String x:Key="LocToolCancel">Avbryt</sys:String>
     <sys:String x:Key="LocToolColors">Färger</sys:String>
     <sys:String x:Key="LocToolThickness">Tjocklek</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">Kopiera</sys:String>
     <sys:String x:Key="LocOverlaySave">Spara</sys:String>
-    <sys:String x:Key="LocOverlayUpload">Ladda upp</sys:String>
     <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
     <sys:String x:Key="LocOverlayCancel">Avbryt</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Bekräfta</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">Klicka och dra för att rita. Använd verktygsfältet för verktyg.</sys:String>
     <sys:String x:Key="LocOverlayHintMove">Dra inuti markeringen för att flytta. Använd handtagen för att ändra storlek.</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">Välj verktyg för att kommentera. Använd Ångra/Gör om vid behov.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Avbryt, Enter: Bekräfta, Ctrl+Z: Ångra, Ctrl+Y: Gör om</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">Lägg till text</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">Kopierat till urklipp</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">Sparat</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Det gick inte att spara</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">Uppladdat</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">Uppladdningen misslyckades</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR klar</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">OCR misslyckades</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">Det här fönstret är valfritt. Stäng det så fortsätter Shotora att köras i meddelandefältet.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Fånga – Kommentera – OCR – Leverera</sys:String>
-    <sys:String x:Key="LocAboutDescription">Shotora är en fokuserad assistent för visuell skärmfångst och informationsutvinning för moderna team. Den förenklar fångst av områden, fönster eller hela skärmar, lägger till oskärpa, pixlering och markeringar direkt och omvandlar text på skärmen till strukturerat innehåll med Tesseract eller EasyOCR. Med kortkommandon, teman, offline-tessdata och kopiering, sparande och uppladdning med ett klick håller den återkopplingsloopar och dokumentation snabba, säkra och konsekventa.</sys:String>
+    <sys:String x:Key="LocAboutDescription">Shotora är ett fokuserat verktyg för skärmdumpar och anteckningar för moderna team. Det fångar områden, fönster eller hela skärmar, lägger direkt till pilar, former, text, markeringar, oskärpa och pixlering och omvandlar text på skärmen till redigerbar text med Tesseract eller EasyOCR – helt på din enhet. Med kortkommandon, teman och kopiering och sparande med ett klick håller det återkopplingsloopar och dokumentation snabba, privata och konsekventa.</sys:String>
     <sys:String x:Key="LocAboutLicense">Licens</sys:String>
     <sys:String x:Key="LocAboutAuthor">Upphovsperson och underhållare</sys:String>
     <sys:String x:Key="LocAboutRole">Senior mjukvaruingenjör / teknisk ledare</sys:String>

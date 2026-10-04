@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">Показувати «Повторити»</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Показувати «Копіювати»</sys:String>
     <sys:String x:Key="LocSettingsShowSave">Показувати «Зберегти»</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">Показувати «Вивантажити»</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">Показувати OCR</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">Показувати «Скасувати»</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">Показувати «Підтвердити»</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">Пікселізація</sys:String>
     <sys:String x:Key="LocToolSaveAs">Зберегти як</sys:String>
     <sys:String x:Key="LocToolCopy">Копіювати</sys:String>
-    <sys:String x:Key="LocToolUpload">Вивантажити</sys:String>
     <sys:String x:Key="LocToolCancel">Скасувати</sys:String>
     <sys:String x:Key="LocToolColors">Кольори</sys:String>
     <sys:String x:Key="LocToolThickness">Товщина</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">Копіювати</sys:String>
     <sys:String x:Key="LocOverlaySave">Зберегти</sys:String>
-    <sys:String x:Key="LocOverlayUpload">Вивантажити</sys:String>
     <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
     <sys:String x:Key="LocOverlayCancel">Скасувати</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Підтвердити</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">Клацніть і перетягніть, щоб малювати. Інструменти — на панелі інструментів.</sys:String>
     <sys:String x:Key="LocOverlayHintMove">Перетягніть усередині виділення, щоб перемістити його. Розмір змінюйте маркерами.</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">Виберіть інструменти для анотацій. За потреби використовуйте «Скасувати»/«Повторити».</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Скасувати, Enter: Підтвердити, Ctrl+Z: Скасувати, Ctrl+Y: Повторити</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">Додати текст</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">Скопійовано в буфер обміну</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">Збережено</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Не вдалося зберегти</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">Вивантажено</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">Не вдалося вивантажити</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR завершено</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">Помилка OCR</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">Це вікно необов'язкове: закрийте його, і Shotora продовжить працювати в системному треї.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Знімок – Анотація – OCR – Готово</sys:String>
-    <sys:String x:Key="LocAboutDescription">Shotora — зосереджений помічник для візуального захоплення екрана й роботи з інформацією для сучасних команд. Він спрощує захоплення областей, вікон або всього екрана, миттєво додає розмиття, пікселізацію та виділення, а також перетворює текст на екрані на структурований вміст за допомогою Tesseract або EasyOCR. Завдяки гарячим клавішам, темам, офлайн-даним tessdata та копіюванню, збереженню й вивантаженню одним клацанням він робить зворотний зв'язок і документацію швидкими, безпечними та послідовними.</sys:String>
+    <sys:String x:Key="LocAboutDescription">Shotora — зосереджений інструмент для знімків екрана й анотацій для сучасних команд. Він захоплює області, вікна або весь екран, миттєво додає стрілки, фігури, текст, виділення, розмиття та пікселізацію, а також перетворює текст на екрані на редагований текст за допомогою Tesseract або EasyOCR — повністю на вашому пристрої. Завдяки гарячим клавішам, темам, а також копіюванню й збереженню одним клацанням він робить зворотний зв'язок і документацію швидкими, приватними та послідовними.</sys:String>
     <sys:String x:Key="LocAboutLicense">Ліцензія</sys:String>
     <sys:String x:Key="LocAboutAuthor">Автор і супровідник</sys:String>
     <sys:String x:Key="LocAboutRole">Старший інженер-програміст / технічний керівник</sys:String>

@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">Prikaži Ponovi</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Prikaži Kopiraj</sys:String>
     <sys:String x:Key="LocSettingsShowSave">Prikaži Spremi</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">Prikaži Prenesi</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">Prikaži OCR</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">Prikaži Odustani</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">Prikaži Potvrdi</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">Pikselizacija</sys:String>
     <sys:String x:Key="LocToolSaveAs">Spremi kao</sys:String>
     <sys:String x:Key="LocToolCopy">Kopiraj</sys:String>
-    <sys:String x:Key="LocToolUpload">Prenesi</sys:String>
     <sys:String x:Key="LocToolCancel">Odustani</sys:String>
     <sys:String x:Key="LocToolColors">Boje</sys:String>
     <sys:String x:Key="LocToolThickness">Debljina</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">Kopiraj</sys:String>
     <sys:String x:Key="LocOverlaySave">Spremi</sys:String>
-    <sys:String x:Key="LocOverlayUpload">Prenesi</sys:String>
     <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
     <sys:String x:Key="LocOverlayCancel">Odustani</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Potvrdi</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">Klikni i povuci za crtanje. Koristi alatnu traku za alate.</sys:String>
     <sys:String x:Key="LocOverlayHintMove">Povuci unutar odabira da ga pomakneš. Koristi ručke za promjenu veličine.</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">Odaberi alate za bilješke. Koristi Poništi/Ponovi po potrebi.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Odustani, Enter: Potvrdi, Ctrl+Z: Poništi, Ctrl+Y: Ponovi</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">Dodaj tekst</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">Kopirano u međuspremnik</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">Spremljeno</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Spremanje nije uspjelo</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">Preneseno</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">Prijenos nije uspio</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR dovršen</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">OCR nije uspio</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">Ovaj prozor nije obavezan; zatvori ga i Shotora će nastaviti raditi u traci sustava.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Snimi – Označi – OCR – Pošalji</sys:String>
-    <sys:String x:Key="LocAboutDescription">Shotora je usredotočen pomoćnik za vizualno snimanje i obradu informacija za moderne timove. Pojednostavljuje snimanje regija, prozora ili cijelog zaslona, odmah primjenjuje zamućenje, pikselizaciju i isticanje te pomoću Tesseracta ili EasyOCR-a pretvara tekst sa zaslona u strukturirani sadržaj. Uz prečace, teme, izvanmrežne tessdata podatke i kopiranje, spremanje i prijenos jednim klikom, povratne informacije i dokumentaciju održava brzima, sigurnima i dosljednima.</sys:String>
+    <sys:String x:Key="LocAboutDescription">Shotora je usredotočen alat za snimanje zaslona i označavanje za moderne timove. Snima regije, prozore ili cijeli zaslon, odmah dodaje strelice, oblike, tekst, isticanje, zamućenje i pikselizaciju te pomoću Tesseracta ili EasyOCR-a pretvara tekst sa zaslona u tekst koji se može uređivati, u potpunosti na vašem uređaju. Uz prečace, teme te kopiranje i spremanje jednim klikom, povratne informacije i dokumentaciju održava brzima, privatnima i dosljednima.</sys:String>
     <sys:String x:Key="LocAboutLicense">Licenca</sys:String>
     <sys:String x:Key="LocAboutAuthor">Autor i održavatelj</sys:String>
     <sys:String x:Key="LocAboutRole">Viši softverski inženjer / tehnički voditelj</sys:String>

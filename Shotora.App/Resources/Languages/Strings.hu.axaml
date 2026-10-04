@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">Mégis megjelenítése</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Másolás megjelenítése</sys:String>
     <sys:String x:Key="LocSettingsShowSave">Mentés megjelenítése</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">Feltöltés megjelenítése</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">OCR megjelenítése</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">Mégse megjelenítése</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">Megerősítés megjelenítése</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">Pixelesítés</sys:String>
     <sys:String x:Key="LocToolSaveAs">Mentés másként</sys:String>
     <sys:String x:Key="LocToolCopy">Másolás</sys:String>
-    <sys:String x:Key="LocToolUpload">Feltöltés</sys:String>
     <sys:String x:Key="LocToolCancel">Mégse</sys:String>
     <sys:String x:Key="LocToolColors">Színek</sys:String>
     <sys:String x:Key="LocToolThickness">Vastagság</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">Másolás</sys:String>
     <sys:String x:Key="LocOverlaySave">Mentés</sys:String>
-    <sys:String x:Key="LocOverlayUpload">Feltöltés</sys:String>
     <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
     <sys:String x:Key="LocOverlayCancel">Mégse</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Megerősítés</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">Kattints és húzd a rajzoláshoz. Az eszközöket az eszköztáron találod.</sys:String>
     <sys:String x:Key="LocOverlayHintMove">A kijelölésen belül húzva mozgathatod. A fogantyúkkal átméretezheted.</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">Válassz eszközt a jegyzeteléshez. Szükség szerint használd a Visszavonás/Mégis funkciót.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Mégse, Enter: Megerősítés, Ctrl+Z: Visszavonás, Ctrl+Y: Mégis</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">Szöveg hozzáadása</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">Vágólapra másolva</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">Mentve</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Sikertelen mentés</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">Feltöltve</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">Sikertelen feltöltés</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR kész</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">Sikertelen OCR</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">Ez az ablak opcionális; zárd be, és a Shotora tovább fut a tálcán.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Rögzítés – Jegyzetelés – OCR – Megosztás</sys:String>
-    <sys:String x:Key="LocAboutDescription">A Shotora célzott vizuális rögzítő és információkinyerő asszisztens modern csapatok számára. Egyszerűvé teszi területek, ablakok vagy a teljes képernyő rögzítését, azonnal alkalmaz elmosást, pixelesítést és kiemelést, a képernyőn lévő szöveget pedig Tesseract vagy EasyOCR segítségével strukturált tartalommá alakítja. Gyorsbillentyűkkel, témákkal, offline tessdata-val és egykattintásos másolással, mentéssel és feltöltéssel gyorsan, biztonságosan és következetesen tartja a visszajelzési folyamatokat és a dokumentációt.</sys:String>
+    <sys:String x:Key="LocAboutDescription">A Shotora célzott képernyőrögzítő és jegyzetelő eszköz modern csapatok számára. Rögzít területeket, ablakokat vagy a teljes képernyőt, azonnal hozzáad nyilakat, alakzatokat, szöveget, kiemelést, elmosást és pixelesítést, a képernyőn lévő szöveget pedig Tesseract vagy EasyOCR segítségével szerkeszthető szöveggé alakítja – mindezt teljes egészében a saját eszközén. Gyorsbillentyűkkel, témákkal, valamint egykattintásos másolással és mentéssel gyorsan, bizalmasan és következetesen tartja a visszajelzési folyamatokat és a dokumentációt.</sys:String>
     <sys:String x:Key="LocAboutLicense">Licenc</sys:String>
     <sys:String x:Key="LocAboutAuthor">Szerző és karbantartó</sys:String>
     <sys:String x:Key="LocAboutRole">Vezető szoftvermérnök / műszaki vezető</sys:String>

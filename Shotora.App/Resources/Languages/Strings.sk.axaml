@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">Zobraziť Znova</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Zobraziť Kopírovať</sys:String>
     <sys:String x:Key="LocSettingsShowSave">Zobraziť Uložiť</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">Zobraziť Nahrať</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">Zobraziť OCR</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">Zobraziť Zrušiť</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">Zobraziť Potvrdiť</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">Pixelizácia</sys:String>
     <sys:String x:Key="LocToolSaveAs">Uložiť ako</sys:String>
     <sys:String x:Key="LocToolCopy">Kopírovať</sys:String>
-    <sys:String x:Key="LocToolUpload">Nahrať</sys:String>
     <sys:String x:Key="LocToolCancel">Zrušiť</sys:String>
     <sys:String x:Key="LocToolColors">Farby</sys:String>
     <sys:String x:Key="LocToolThickness">Hrúbka</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">Kopírovať</sys:String>
     <sys:String x:Key="LocOverlaySave">Uložiť</sys:String>
-    <sys:String x:Key="LocOverlayUpload">Nahrať</sys:String>
     <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
     <sys:String x:Key="LocOverlayCancel">Zrušiť</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Potvrdiť</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">Kliknutím a ťahaním kreslíte. Nástroje nájdete na paneli nástrojov.</sys:String>
     <sys:String x:Key="LocOverlayHintMove">Ťahaním vnútri výberu ho presuniete. Veľkosť zmeníte úchytmi.</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">Vyberte nástroje na anotáciu. Podľa potreby použite Späť/Znova.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Zrušiť, Enter: Potvrdiť, Ctrl+Z: Späť, Ctrl+Y: Znova</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">Pridať text</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">Skopírované do schránky</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">Uložené</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Uloženie zlyhalo</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">Nahrané</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">Nahrávanie zlyhalo</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR dokončené</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">OCR zlyhalo</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">Toto okno je voliteľné. Po zatvorení zostane Shotora spustená v oblasti oznámení.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Zachytiť – Anotovať – OCR – Odoslať</sys:String>
-    <sys:String x:Key="LocAboutDescription">Shotora je cielený asistent na vizuálne zachytávanie a spracovanie informácií pre moderné tímy. Zjednodušuje zachytávanie oblastí, okien či celej obrazovky, okamžite pridáva rozmazanie, pixelizáciu a zvýraznenie a pomocou Tesseract alebo EasyOCR prevádza text na obrazovke na štruktúrovaný obsah. Vďaka klávesovým skratkám, motívom, offline tessdata a kopírovaniu, ukladaniu a nahrávaniu jedným kliknutím udržiava spätnú väzbu a dokumentáciu rýchlu, bezpečnú a konzistentnú.</sys:String>
+    <sys:String x:Key="LocAboutDescription">Shotora je cielený nástroj na snímanie obrazovky a anotácie pre moderné tímy. Zachytáva oblasti, okná či celú obrazovku, okamžite pridáva šípky, tvary, text, zvýraznenie, rozmazanie a pixelizáciu a pomocou Tesseract alebo EasyOCR prevádza text na obrazovke na upraviteľný text, a to úplne vo vašom zariadení. Vďaka klávesovým skratkám, motívom a kopírovaniu a ukladaniu jedným kliknutím udržiava spätnú väzbu a dokumentáciu rýchlu, súkromnú a konzistentnú.</sys:String>
     <sys:String x:Key="LocAboutLicense">Licencia</sys:String>
     <sys:String x:Key="LocAboutAuthor">Autor a správca</sys:String>
     <sys:String x:Key="LocAboutRole">Senior softvérový inžinier / technický vedúci</sys:String>

@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">Dhe wel Redo</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Dhe wel Kopia</sys:String>
     <sys:String x:Key="LocSettingsShowSave">Dhe wel Gwir</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">Dhe wel Uskargya</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">Dhe wel OCR</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">Dhe wel Ganslow</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">Dhe wel Gwirya</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">Picseledra</sys:String>
     <sys:String x:Key="LocToolSaveAs">Gwitha avel</sys:String>
     <sys:String x:Key="LocToolCopy">Kopia</sys:String>
-    <sys:String x:Key="LocToolUpload">Uskarga</sys:String>
     <sys:String x:Key="LocToolCancel">Hedhi</sys:String>
     <sys:String x:Key="LocToolColors">Liwow</sys:String>
     <sys:String x:Key="LocToolThickness">Tewder</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">Kopia</sys:String>
     <sys:String x:Key="LocOverlaySave">Gwir</sys:String>
-    <sys:String x:Key="LocOverlayUpload">Uskargya</sys:String>
     <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
     <sys:String x:Key="LocOverlayCancel">Ganslow</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Gwirya</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">Clysk ha dewra dhe zrel. Usya barwer dhyworth dyhwelyow.</sys:String>
     <sys:String x:Key="LocOverlayHintMove">Degas gwrys orth agas dewisyans avel gwedhe. Usya horrow dhe donna mos.</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">Dewis dyhwelyow rag annota. Usya Undo/Redo rag re proper.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Ganslow, Enter: Gwirya, Ctrl+Z: Undo, Ctrl+Y: Redo</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">Dhe wel testun</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">Kopia war an gliffy</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">Gwirys</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Gwir ny wra</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">Uskargya</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">Uskargya ny wra</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR ow gwra</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">OCR ny wra</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">An fenn ma yw dilev; stow dha kowena, re ow kelwel Shotora ow kavoes war an tavern.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Dalgh skrin ha notennow</sys:String>
-    <sys:String x:Key="LocAboutDescription">Dalghow skrin uskis, notennow, OCR ha lwythyow yn mes gans Shotora.</sys:String>
+    <sys:String x:Key="LocAboutDescription">Shotora yw toul ffokys rag kachya skrin ha notenna rag parys arnowydh. Ev a gach ranndiryow, fenestri po skrinyow leun, a worr sethow, furvow, tekst, uskelwel, dorchya ha picseledra dhesempis, hag a dreyl tekst war an skrin dhe dekst a yllir y janjya gans Tesseract po EasyOCR, yn tien war agas devis. Gans alwedhow berr, themow, ha kopia ha gwitha gans unn klyck, ev a with kylghyow gorthyp ha dokumentyans skav, privedh ha kesson.</sys:String>
     <sys:String x:Key="LocAboutLicense">Lavur-dhybry</sys:String>
     <sys:String x:Key="LocAboutAuthor">Awtour</sys:String>
     <sys:String x:Key="LocAboutRole">Rol</sys:String>

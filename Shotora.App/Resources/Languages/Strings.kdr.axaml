@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">«Kajtarła»ny kiorsiet</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">«Kopijała»ny kiorsiet</sys:String>
     <sys:String x:Key="LocSettingsShowSave">«Sakła»ny kiorsiet</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">«Jukle»ni kiorsiet</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">OCR-ny kiorsiet</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">«Bołdurma»ny kiorsiet</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">«Kiertiłie»ni kiorsiet</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">Pikselle</sys:String>
     <sys:String x:Key="LocToolSaveAs">Bašha türlü sakła</sys:String>
     <sys:String x:Key="LocToolCopy">Kopijała</sys:String>
-    <sys:String x:Key="LocToolUpload">Jukle</sys:String>
     <sys:String x:Key="LocToolCancel">Bołdurma</sys:String>
     <sys:String x:Key="LocToolColors">Tüsler</sys:String>
     <sys:String x:Key="LocToolThickness">Kalynłyk</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">Kopijała</sys:String>
     <sys:String x:Key="LocOverlaySave">Sakła</sys:String>
-    <sys:String x:Key="LocOverlayUpload">Jukle</sys:String>
     <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
     <sys:String x:Key="LocOverlayCancel">Bołdurma</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Kiertiłie</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">Syzmach üčün basyjyz da tartyjyz. Kuralłar üčün panelni kułłanyjyz.</sys:String>
     <sys:String x:Key="LocOverlayHintMove">Küčiurmiek üčün sajłavnyn ičinde tartyjyz. Ölčiavni tutkačłar bła tiuziejiz.</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">Belgilemiek üčün kuralłarny sajłajyz. Kieriek bołsa Kajtar/Kajtarła kułłanyjyz.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Bołdurma, Enter: Kiertiłie, Ctrl+Z: Kajtar, Ctrl+Y: Kajtarła</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">Tekst kuš</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">Buferge kopijałandy</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">Saklandy</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Saklav bołmady</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">Juklendi</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">Jukliemiek bołmady</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR bitti</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">OCR bołmady</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">Bu tieriezie mažburij tiwiłdir; japsanyz, Shotora sistema panelinde išlemiekte kałyr.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Tüšür – Belgile – OCR – Jiber</sys:String>
-    <sys:String x:Key="LocAboutDescription">Shotora – ašyhyš komandałar üčün ekranny tüšürmiek da bilgini išlemiek kömekčisi. Ol jerlerni, tieriezielerni da tołu ekranny tüšürmiekni jeńił etedir, bułanytmany, piksellemiekni da belgilemiekni tiz kojadyr, ekrandahy tekstni Tesseract jemesie EasyOCR bła tüziułgien ičindiekke ajłandyradyr. Tiz klavišlar, temałar, offline tessdata da bir basmach bła kopijałav, saklav, jukliemiek bła ol kajtarma bilgini da dokumentacijany tiz, kieri da kiełišimli tutadyr.</sys:String>
+    <sys:String x:Key="LocAboutDescription">Shotora – ašyhyš komandałar üčün ekranny tüšürmiek da belgiler kojmak kuraly. Ol jerlerni, tieriezielerni jemesie tołu ekranny tüšüriedir, oklarny, formałarny, tekstni, belgilemiekni, bułanytmany da piksellemiekni tiz kojadyr, ekrandahy tekstni Tesseract jemesie EasyOCR bła tüzietmie bołhan tekstke ajłandyradyr – barysy siziń kurałyjyzda. Tiz klavišlar, temałar da bir basmach bła kopijałav da saklav bła ol kajtarma bilgini da dokumentacijany tiz, jašyryn da kiełišimli tutadyr.</sys:String>
     <sys:String x:Key="LocAboutLicense">Licenzija</sys:String>
     <sys:String x:Key="LocAboutAuthor">Avtor da karavčiu</sys:String>
     <sys:String x:Key="LocAboutRole">Ułu programa inženeri / technika bašłyhy</sys:String>

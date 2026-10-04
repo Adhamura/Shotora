@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">Ruodeit atkuortuošonu</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Ruodeit kopiešonu</sys:String>
     <sys:String x:Key="LocSettingsShowSave">Ruodeit izgluobšonu</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">Ruodeit augšupīluodi</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">Ruodeit OCR</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">Ruodeit atceļšonu</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">Ruodeit apstyprynuošonu</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">Pikselizeišona</sys:String>
     <sys:String x:Key="LocToolSaveAs">Izgluobt kai</sys:String>
     <sys:String x:Key="LocToolCopy">Kopēt</sys:String>
-    <sys:String x:Key="LocToolUpload">Augšupīluodeit</sys:String>
     <sys:String x:Key="LocToolCancel">Atceļt</sys:String>
     <sys:String x:Key="LocToolColors">Kruosas</sys:String>
     <sys:String x:Key="LocToolThickness">Bīzums</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">Kopēt</sys:String>
     <sys:String x:Key="LocOverlaySave">Izgluobt</sys:String>
-    <sys:String x:Key="LocOverlayUpload">Augšupīluodeit</sys:String>
     <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
     <sys:String x:Key="LocOverlayCancel">Atcelt</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Apstyprynuot</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">Nūklikškinit i vylkit, kab zeimātu. Izmontojit reiku jūslu.</sys:String>
     <sys:String x:Key="LocOverlayHintMove">Vylkit lasejuma vydā, kab puorvītuotu. Izmontojit rūkturus, kab mainātu izmāru.</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">Izavielejit reikus pīzeimem. Piec vajadzeibys izmontojit Atsaukt/Atkuortuot.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Atceļt, Enter: Apstyprynuot, Ctrl+Z: Atsaukt, Ctrl+Y: Atkuortuot</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">Pievienot tekstu</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">Kopēts storpleikvā</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">Izgluobts</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Izgluobšona naizadeve</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">Augšupīluodeits</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">Augšupīluode naizadeve</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR pabeigts</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">OCR naizadeve</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">Itys lūgs nav obligats; aizverit jū, i Shotora turpynuos struoduot sistemys jūslā.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Ekrana iemūksana i pīmārķiešona</sys:String>
-    <sys:String x:Key="LocAboutDescription">Ātri ekrāna tvērīni, pīmārķiešona, OCR i augšuplōde ar Shotora.</sys:String>
+    <sys:String x:Key="LocAboutDescription">Shotora ir mārktīceigs ekrāna tvieršonys i pīzeimu reiks myusdīnu komandom. Jis tver apgabalus, lūgus voi vysu ekranu, unakart pīlik bultys, formys, tekstu, izceļšonu, aizmigluošonu i pikselizeišonu i ekrana tekstu ar Tesseract voi EasyOCR puorvierš rediģejamā tekstā – pylneibā īrīcē. Ar karstajim taustinim, motivim i kopēšonu i saglobuošonu ar vīnu klikšķi jis atsauksmis i dokumentaceju tur ātrys, privatys i saskaneigys.</sys:String>
     <sys:String x:Key="LocAboutLicense">Licence</sys:String>
     <sys:String x:Key="LocAboutAuthor">Auteŗs</sys:String>
     <sys:String x:Key="LocAboutRole">Lūoma</sys:String>

@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">Weise Wiederhuelen</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Weise Kopie</sys:String>
     <sys:String x:Key="LocSettingsShowSave">Weise Späicheren</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">Weise eroplueden</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">Weise OCR</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">Weise Ofbriechen</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">Weise Bestätegen</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">Verpixelen</sys:String>
     <sys:String x:Key="LocToolSaveAs">Späicheren ënner</sys:String>
     <sys:String x:Key="LocToolCopy">Kopéieren</sys:String>
-    <sys:String x:Key="LocToolUpload">Eropueden</sys:String>
     <sys:String x:Key="LocToolCancel">Ofbriechen</sys:String>
     <sys:String x:Key="LocToolColors">Faarwen</sys:String>
     <sys:String x:Key="LocToolThickness">Déckt</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">Kopie</sys:String>
     <sys:String x:Key="LocOverlaySave">Späicheren</sys:String>
-    <sys:String x:Key="LocOverlayUpload">Héichlueden</sys:String>
     <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
     <sys:String x:Key="LocOverlayCancel">Ofbriechen</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Bestätegen</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">Klickt a zitt fir ze zeichnen. Benotzt d'Toolbar fir Tools.</sys:String>
     <sys:String x:Key="LocOverlayHintMove">Zitt bannent der Auswiel fir ze beweegen. Benotzt Grëfter fir d'Gréisst ze änneren.</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">Wielt Tools fir ze annotéieren. Benotzt Rückgängeg/Wiederhuelen wéi gebraucht.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Ofbriechen, Enter: Bestätegen, Ctrl+Z: Rückgängeg, Ctrl+Y: Wiederhuelen</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">Text derbäisetzen</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">Op d'Zwëschenablage kopéiert</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">Gespaichert</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Späicheren gescheitert</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">Hochgeluede</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">Hochluede gescheitert</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR fäerdeg</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">OCR gescheitert</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">Dës Fënster ass optional; zoumaachen, fir Shotora am Tray weider lafen ze loossen.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Ecran ophuelen a markéieren</sys:String>
-    <sys:String x:Key="LocAboutDescription">Séier Screenshoten, Markéierungen, OCR an Eroplueden mat Shotora.</sys:String>
+    <sys:String x:Key="LocAboutDescription">Shotora ass e fokusséiert Tool fir Screenshoten an Annotatiounen fir modern Teams. Et hält Beräicher, Fënsteren oder ganz Schiermer fest, setzt direkt Feiler, Formen, Text, Markéierungen, Onschäerft a Verpixelung derbäi a mécht aus Text um Schierm mat Tesseract oder EasyOCR beaarbechtbaren Text – komplett op Ärem Apparat. Mat Tastekombinatiounen, Themen a Kopéieren a Späicheren mat engem Klick hält et Feedback-Schleifen an Dokumentatioun séier, privat a konsequent.</sys:String>
     <sys:String x:Key="LocAboutLicense">Lizenz</sys:String>
     <sys:String x:Key="LocAboutAuthor">Auteur</sys:String>
     <sys:String x:Key="LocAboutRole">Roll</sys:String>

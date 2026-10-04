@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">Afișează Refacere</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Afișează Copiere</sys:String>
     <sys:String x:Key="LocSettingsShowSave">Afișează Salvare</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">Afișează Încărcare</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">Afișează OCR</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">Afișează Anulare</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">Afișează Confirmare</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">Pixelari</sys:String>
     <sys:String x:Key="LocToolSaveAs">Salvari ca</sys:String>
     <sys:String x:Key="LocToolCopy">Copieri</sys:String>
-    <sys:String x:Key="LocToolUpload">Încărcari</sys:String>
     <sys:String x:Key="LocToolCancel">Anulari</sys:String>
     <sys:String x:Key="LocToolColors">Culori</sys:String>
     <sys:String x:Key="LocToolThickness">Grosimi</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">Copiază</sys:String>
     <sys:String x:Key="LocOverlaySave">Salvează</sys:String>
-    <sys:String x:Key="LocOverlayUpload">Încărcare</sys:String>
     <sys:String x:Key="LocOverlayOcr">Recunoaștere optică</sys:String>
     <sys:String x:Key="LocOverlayCancel">Anulează</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Confirmă</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">Faceți clic și trageți pentru a desena. Folosiți bara de instrumente pentru unelte.</sys:String>
     <sys:String x:Key="LocOverlayHintMove">Trageți în interiorul selecției pentru a muta. Folosiți mânerele pentru redimensionare.</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">Selectați unelte pentru a adnota. Folosiți Anulează/Refă după nevoie.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Anulează, Enter: Confirmă, Ctrl+Z: Anulează, Ctrl+Y: Refă</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">Adaugă text</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">Copiat în clipboard</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">Salvat</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Salvarea a eșuat</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">Încărcat</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">Încărcarea a eșuat</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR finalizat</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">OCR a eșuat</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">Această fereastră este opțională; închideți-o pentru a lăsa Shotora să ruleze în bara de sistem.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Ținerea ecrãnului și anotaț</sys:String>
-    <sys:String x:Key="LocAboutDescription">Țâvituri iute de ecrãn, anotaț, OCR și încărcări cu Shotora.</sys:String>
+    <sys:String x:Key="LocAboutDescription">Shotora easti un instrumentu concentrat trã țâvituri di ecrãn și anotaț, trã echipili di azã. Acață zoni, firești i tut ecranlu, bagã dinãoarã săgeț, formi, text, evidențiari, estompari și pixelari și u fatsi textul di pi ecrãn text tsi poati s-hibã alãxit, cu Tesseract i EasyOCR, tut pi dispozitivlu a tău. Cu tasti rapide, temi și copieri și salvari cu un clic, tsãni răspunsurli și documentația iuți, private și consecventi.</sys:String>
     <sys:String x:Key="LocAboutLicense">Licenț</sys:String>
     <sys:String x:Key="LocAboutAuthor">Autur</sys:String>
     <sys:String x:Key="LocAboutRole">Rul</sys:String>

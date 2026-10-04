@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">顯示重做</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">顯示複製</sys:String>
     <sys:String x:Key="LocSettingsShowSave">顯示儲存</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">顯示上傳</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">顯示OCR</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">顯示取消</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">顯示確認</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">馬賽克</sys:String>
     <sys:String x:Key="LocToolSaveAs">另存新檔</sys:String>
     <sys:String x:Key="LocToolCopy">複製</sys:String>
-    <sys:String x:Key="LocToolUpload">上傳</sys:String>
     <sys:String x:Key="LocToolCancel">取消</sys:String>
     <sys:String x:Key="LocToolColors">顏色</sys:String>
     <sys:String x:Key="LocToolThickness">粗細</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">複製</sys:String>
     <sys:String x:Key="LocOverlaySave">儲存</sys:String>
-    <sys:String x:Key="LocOverlayUpload">上傳</sys:String>
     <sys:String x:Key="LocOverlayOcr">文字辨識</sys:String>
     <sys:String x:Key="LocOverlayCancel">取消</sys:String>
     <sys:String x:Key="LocOverlayConfirm">確認</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">點擊並拖曳繪製。使用工具列選取工具。</sys:String>
     <sys:String x:Key="LocOverlayHintMove">在選取範圍內拖曳移動。使用控點調整大小。</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">選取工具新增註解。視需要使用復原/重做。</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: 取消、Enter: 確認、Ctrl+Z: 復原、Ctrl+Y: 重做</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">新增文字</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">已複製到剪貼簿</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">已儲存</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">儲存失敗</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">已上傳</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">上傳失敗</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR完成</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">OCR失敗</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">此視窗為選用；關閉後Shotora將在系統匣中執行。</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">螢幕擷取與標註</sys:String>
-    <sys:String x:Key="LocAboutDescription">使用 Shotora 快速擷取螢幕、標註、OCR 與上傳。</sys:String>
+    <sys:String x:Key="LocAboutDescription">Shotora 是一款專為現代團隊打造的螢幕擷取與標註工具。它能擷取區域、視窗或全螢幕，即時加入箭頭、形狀、文字、螢光筆、模糊和馬賽克標註，並透過 Tesseract 或 EasyOCR 將螢幕上的文字轉換為可編輯的文字，全程在您的裝置上完成。憑藉快捷鍵、主題以及一鍵複製與儲存，讓意見回饋與文件工作保持快速、私密且一致。</sys:String>
     <sys:String x:Key="LocAboutLicense">授權</sys:String>
     <sys:String x:Key="LocAboutAuthor">作者</sys:String>
     <sys:String x:Key="LocAboutRole">角色</sys:String>

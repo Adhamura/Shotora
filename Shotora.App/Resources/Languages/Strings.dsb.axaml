@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">Wóspiětowaś pokazaś</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Kopěrowaś pokazaś</sys:String>
     <sys:String x:Key="LocSettingsShowSave">Składowaś pokazaś</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">Nahraśe pokazaś</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">OCR pokazaś</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">Pśestaś pokazaś</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">Potwĕrdziś pokazaś</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">Pixelizowaś</sys:String>
     <sys:String x:Key="LocToolSaveAs">Składowaś ako</sys:String>
     <sys:String x:Key="LocToolCopy">Kopěrowaś</sys:String>
-    <sys:String x:Key="LocToolUpload">Nahraśe</sys:String>
     <sys:String x:Key="LocToolCancel">Pśestaś</sys:String>
     <sys:String x:Key="LocToolColors">Barwy</sys:String>
     <sys:String x:Key="LocToolThickness">Tustota</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">Kopěrowaś</sys:String>
     <sys:String x:Key="LocOverlaySave">Składowaś</sys:String>
-    <sys:String x:Key="LocOverlayUpload">Nagraśe</sys:String>
     <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
     <sys:String x:Key="LocOverlayCancel">Pśestaś</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Potwĕrdziś</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">Klikaś a pśesunuś za rysanjeś. Nastrojowu lejtku za nastoje wužywaś.</sys:String>
     <sys:String x:Key="LocOverlayHintMove">Wobcerk pśesunuś. Rucki za zmjenjowanje wjelikosći wužywaś.</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">Nastoje za anotěrowanje wubraś. Cofnuś/Wóspiětowaś ako trjeba wužywaś.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Pśestaś, Enter: Potwĕrdziś, Ctrl+Z: Cofnuś, Ctrl+Y: Wóspiětowaś</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">Tekst pśidaś</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">Kopěrowanu do mejnika</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">Składowane</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Składowanje njepwešło</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">Nahraśe</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">Nahraśe njepwešło</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR dokóńcone</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">OCR njepwešło</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">Tóte wokno jo nadbytna; zacyńśo jo, aby Shotora w zawěšowaku běžała.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Zachytowanje wobrazowki a markěrowanje</sys:String>
-    <sys:String x:Key="LocAboutDescription">Malsne fota wobrazowki, markěrowanja, OCR a nahraśa ze Shotoru.</sys:String>
+    <sys:String x:Key="LocAboutDescription">Shotora jo cilny rěd za fotografěrowanje wobrazowki a markěrowanja za moderne teamy. Fotografěrujo wobceŕki, wokna abo cełe wobrazowki, hnydom pśidawa šypy, formy, tekst, wuzwignjenja, rozmazanje a pixelizowanje a pśetwórjujo tekst na wobrazowce z pomocu Tesseract abo EasyOCR do wobźěłujobnego teksta, dopołnje na wašom rěźe. Z tastowymi skrotconkami, designami a kopěrowanim a składowanim z jadnym kliknjenim źaržy wótegrona a dokumentaciju malsne, priwatne a konsistentne.</sys:String>
     <sys:String x:Key="LocAboutLicense">Licenca</sys:String>
     <sys:String x:Key="LocAboutAuthor">Awtor</sys:String>
     <sys:String x:Key="LocAboutRole">Rola</sys:String>

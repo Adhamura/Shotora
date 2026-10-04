@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">Show Redo</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Show Copy</sys:String>
     <sys:String x:Key="LocSettingsShowSave">Show Save</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">Show Upload</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">Show OCR</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">Show Cancel</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">Show Confirm</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">Pixelate</sys:String>
     <sys:String x:Key="LocToolSaveAs">Save as</sys:String>
     <sys:String x:Key="LocToolCopy">Copy</sys:String>
-    <sys:String x:Key="LocToolUpload">Upload</sys:String>
     <sys:String x:Key="LocToolCancel">Cancel</sys:String>
     <sys:String x:Key="LocToolColors">Colors</sys:String>
     <sys:String x:Key="LocToolThickness">Thickness</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">Copy</sys:String>
     <sys:String x:Key="LocOverlaySave">Save</sys:String>
-    <sys:String x:Key="LocOverlayUpload">Upload</sys:String>
     <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
     <sys:String x:Key="LocOverlayCancel">Cancel</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Confirm</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">Click and drag to draw. Use toolbar for tools.</sys:String>
     <sys:String x:Key="LocOverlayHintMove">Drag inside selection to move. Use handles to resize.</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">Select tools to annotate. Use Undo/Redo as needed.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Cancel, Enter: Confirm, Ctrl+Z: Undo, Ctrl+Y: Redo</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">Add text</sys:String>
@@ -194,7 +190,7 @@
     <!-- About -->
     <sys:String x:Key="LocAboutTitle">About Shotora</sys:String>
     <sys:String x:Key="LocAboutSubtitle">Capture - Annotate - OCR - Ship</sys:String>
-    <sys:String x:Key="LocAboutDescription">Shotora is a focused visual capture and intelligence assistant for modern teams. It streamlines grabbing regions, windows, or full screens, applies blur/pixelate/highlight annotations instantly, and converts on-screen text to structured content via Tesseract or EasyOCR. With hotkeys, theming, offline tessdata, and one-click copy/save/upload, it keeps feedback loops and documentation fast, secure, and consistent.</sys:String>
+    <sys:String x:Key="LocAboutDescription">Shotora is a focused screen capture and annotation tool for modern teams. It grabs regions, windows, or full screens, applies arrows, shapes, text, highlight, blur and pixelate annotations instantly, and turns on-screen text into editable text with Tesseract or EasyOCR, entirely on your device. With hotkeys, themes, and one-click copy and save, it keeps feedback loops and documentation fast, private, and consistent.</sys:String>
     <sys:String x:Key="LocAboutVersion">Version</sys:String>
     <sys:String x:Key="LocAboutLicense">License</sys:String>
     <sys:String x:Key="LocAboutAuthor">Author &amp; Maintainer</sys:String>
@@ -217,8 +213,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">Copied to clipboard</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">Saved</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Save failed</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">Uploaded</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">Upload failed</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR complete</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">OCR failed</sys:String>
 

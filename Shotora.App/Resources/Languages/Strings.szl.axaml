@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">Pokŏż Zrōb zaś</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Pokŏż Kopiyruj</sys:String>
     <sys:String x:Key="LocSettingsShowSave">Pokŏż Zapisz</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">Pokŏż Wyślij</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">Pokŏż OCR</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">Pokŏż Anuluj</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">Pokŏż Potwiyrdź</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">Pikselizacëjô</sys:String>
     <sys:String x:Key="LocToolSaveAs">Zapisz jako</sys:String>
     <sys:String x:Key="LocToolCopy">Kopiyruj</sys:String>
-    <sys:String x:Key="LocToolUpload">Wëslij</sys:String>
     <sys:String x:Key="LocToolCancel">Anuluj</sys:String>
     <sys:String x:Key="LocToolColors">Farby</sys:String>
     <sys:String x:Key="LocToolThickness">Grubość</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">Kopiuj</sys:String>
     <sys:String x:Key="LocOverlaySave">Zapisz</sys:String>
-    <sys:String x:Key="LocOverlayUpload">Wyślij</sys:String>
     <sys:String x:Key="LocOverlayOcr">Rozpoznawanie tekstu</sys:String>
     <sys:String x:Key="LocOverlayCancel">Anuluj</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Potwiyrdź</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">Kliknij i cióng, coby rysować. Używej paska nŏczyń.</sys:String>
     <sys:String x:Key="LocOverlayHintMove">Cióng we postrzodku zaznaczynio, coby go przesunōńć. Używej uchwytōw do zmiany srogości.</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">Wybier nŏczynia do adnotacyji. Używej Cofnij/Zrōb zaś wedle potrzeby.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Anuluj, Enter: Potwiyrdź, Ctrl+Z: Cofnij, Ctrl+Y: Zrōb zaś</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">Dodaj tekst</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">Skopiowano do schowka</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">Zapisano</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Zapisowanie sie niy podarziło</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">Wysłane</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">Wysyłanie sie niy podarziło</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR skōńczōne</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">OCR sie niy podarziło</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">To ôkno niy ma nōntne; zawrzij je, a Shotora bydzie dalij robić we zasobniku.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Chytanie ekranu i notki</sys:String>
-    <sys:String x:Key="LocAboutDescription">Rychtkie szotynki ekranu, notowaniе, OCR i wysyłanie ze Shotorą.</sys:String>
+    <sys:String x:Key="LocAboutDescription">Shotora to wyspecjalizowane nôrzyndzie do szotynek ekranu i notowaniô dlô terŏźnych zespołōw. Chyto kawałki ekranu, ôkna abo cołki ekran, wartko przidŏwŏ strzałki, kształty, tekst, wybiyranie, rozmazanie i pikselizacyjŏ, a tekst na ekranie z pōmocōm Tesseract abo EasyOCR przemiyniŏ we tekst, kery idzie edytować – cołkiym na twojij maszinie. Bez skróty klawiszowe, motywy i kopiowanie i spamiyntowanie jednym klikniyńciym trzimie ôdpowiedzi i dokumyntacyjŏ wartke, prywatne i spōjne.</sys:String>
     <sys:String x:Key="LocAboutLicense">Licyncjo</sys:String>
     <sys:String x:Key="LocAboutAuthor">Autōr</sys:String>
     <sys:String x:Key="LocAboutRole">Rola</sys:String>

@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">Diskouez adober</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Diskouez kopiañ</sys:String>
     <sys:String x:Key="LocSettingsShowSave">Diskouez enrollañ</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">Diskouez kargañ</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">Diskouez OCR</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">Diskouez nullañ</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">Diskouez kadarnaat</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">Pikselañ</sys:String>
     <sys:String x:Key="LocToolSaveAs">Enrollañ evel</sys:String>
     <sys:String x:Key="LocToolCopy">Kopiañ</sys:String>
-    <sys:String x:Key="LocToolUpload">Kargañ</sys:String>
     <sys:String x:Key="LocToolCancel">Nullañ</sys:String>
     <sys:String x:Key="LocToolColors">Livoù</sys:String>
     <sys:String x:Key="LocToolThickness">Tevder</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">Kopiañ</sys:String>
     <sys:String x:Key="LocOverlaySave">Enrollañ</sys:String>
-    <sys:String x:Key="LocOverlayUpload">Kargañ</sys:String>
     <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
     <sys:String x:Key="LocOverlayCancel">Nullañ</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Kadarnaat</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">Klikañ ha plijañ evit sevel. Implij barrez ostilhoù evit ar modioù.</sys:String>
     <sys:String x:Key="LocOverlayHintMove">Taol da gerc'hat ar dibab. Implij tielladennoù evit adalleviñ.</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">Dibabiñ ostilhoù evit annozañ. Implij Dizober/Adober ma vez ezhomm.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Nullañ, Enter: Kadarnaat, Ctrl+Z: Dizober, Ctrl+Y: Adober</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">Ouzhpennañ testenn</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">Kopiaet d'an daskom</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">Enrollaet</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Enrollañ faill</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">Kargañet</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">Kargañ faill</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR echu</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">OCR faill</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">Kuzhet eo ar prenestr-mañ ma fell deoc'h en em goll en trell.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Tapadenn skramm ha notennoù</sys:String>
-    <sys:String x:Key="LocAboutDescription">Skeudennoù-skramm prim, notennoù, OCR ha kas war ar genrouedad gant Shotora.</sys:String>
+    <sys:String x:Key="LocAboutDescription">Shotora a zo ur benveg pal evit tapout ar skramm hag ouzhpennañ notennoù, evit ar skipailhoù a-vremañ. Tapout a ra takadoù, prenestroù pe ar skramm a-bezh, lakaat a ra raktal saezhioù, stummoù, testenn, uskelaouiñ, ruzer ha pikselañ, ha treiñ a ra an destenn war ar skramm e testenn a c'haller kemmañ gant Tesseract pe EasyOCR, en holl war ho trevnad. Gant berradennoù, gwiskadurioù hag eilañ hag enrollañ en ur klik, e chom ar c'hendivizoù hag an teuliadur buan, prevez ha kempoell.</sys:String>
     <sys:String x:Key="LocAboutLicense">Aotre-implijout</sys:String>
     <sys:String x:Key="LocAboutAuthor">Aozer</sys:String>
     <sys:String x:Key="LocAboutRole">Perzh</sys:String>

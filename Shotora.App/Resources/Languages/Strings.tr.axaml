@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">Yinele'yi göster</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Kopyala'yı göster</sys:String>
     <sys:String x:Key="LocSettingsShowSave">Kaydet'i göster</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">Yükle'yi göster</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">OCR'yi göster</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">İptal'i göster</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">Onayla'yı göster</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">Pikselleştir</sys:String>
     <sys:String x:Key="LocToolSaveAs">Farklı kaydet</sys:String>
     <sys:String x:Key="LocToolCopy">Kopyala</sys:String>
-    <sys:String x:Key="LocToolUpload">Yükle</sys:String>
     <sys:String x:Key="LocToolCancel">İptal</sys:String>
     <sys:String x:Key="LocToolColors">Renkler</sys:String>
     <sys:String x:Key="LocToolThickness">Kalınlık</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">Kopyala</sys:String>
     <sys:String x:Key="LocOverlaySave">Kaydet</sys:String>
-    <sys:String x:Key="LocOverlayUpload">Yükle</sys:String>
     <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
     <sys:String x:Key="LocOverlayCancel">İptal</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Onayla</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">Çizmek için tıklayıp sürükleyin. Araçlar için araç çubuğunu kullanın.</sys:String>
     <sys:String x:Key="LocOverlayHintMove">Taşımak için seçimin içinde sürükleyin. Boyutlandırmak için tutamaçları kullanın.</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">Not eklemek için araç seçin. Gerektiğinde Geri al/Yinele'yi kullanın.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: İptal, Enter: Onayla, Ctrl+Z: Geri al, Ctrl+Y: Yinele</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">Metin ekle</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">Panoya kopyalandı</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">Kaydedildi</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Kaydetme başarısız</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">Yüklendi</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">Yükleme başarısız</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR tamamlandı</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">OCR başarısız</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">Bu pencere isteğe bağlıdır; kapatırsanız Shotora bildirim alanında çalışmaya devam eder.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Yakala – Not Ekle – OCR – Paylaş</sys:String>
-    <sys:String x:Key="LocAboutDescription">Shotora, modern ekipler için odaklanmış bir görsel yakalama ve bilgi asistanıdır. Bölgeleri, pencereleri veya tam ekranı yakalamayı kolaylaştırır, bulanıklaştırma/pikselleştirme/vurgulama notlarını anında uygular ve ekrandaki metni Tesseract veya EasyOCR ile yapılandırılmış içeriğe dönüştürür. Kısayol tuşları, temalar, çevrimdışı tessdata ve tek tıkla kopyalama/kaydetme/yükleme sayesinde geri bildirim döngülerini ve belgeleri hızlı, güvenli ve tutarlı tutar.</sys:String>
+    <sys:String x:Key="LocAboutDescription">Shotora, modern ekipler için odaklanmış bir ekran yakalama ve açıklama aracıdır. Bölgeleri, pencereleri veya tam ekranı yakalar; okları, şekilleri, metni, vurgulamayı, bulanıklaştırmayı ve pikselleştirmeyi anında uygular ve ekrandaki metni Tesseract veya EasyOCR ile düzenlenebilir metne dönüştürür; üstelik tamamen kendi cihazınızda. Kısayol tuşları, temalar ve tek tıkla kopyalama ve kaydetme sayesinde geri bildirim döngülerini ve belgeleri hızlı, özel ve tutarlı tutar.</sys:String>
     <sys:String x:Key="LocAboutLicense">Lisans</sys:String>
     <sys:String x:Key="LocAboutAuthor">Geliştirici ve Bakımcı</sys:String>
     <sys:String x:Key="LocAboutRole">Kıdemli Yazılım Mühendisi / Teknik Lider</sys:String>

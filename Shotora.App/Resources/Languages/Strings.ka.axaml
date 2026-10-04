@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">„გამეორების“ ჩვენება</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">„კოპირების“ ჩვენება</sys:String>
     <sys:String x:Key="LocSettingsShowSave">„შენახვის“ ჩვენება</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">„ატვირთვის“ ჩვენება</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">OCR-ის ჩვენება</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">„გაუქმების“ ჩვენება</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">„დადასტურების“ ჩვენება</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">პიქსელიზაცია</sys:String>
     <sys:String x:Key="LocToolSaveAs">შენახვა როგორც</sys:String>
     <sys:String x:Key="LocToolCopy">კოპირება</sys:String>
-    <sys:String x:Key="LocToolUpload">ატვირთვა</sys:String>
     <sys:String x:Key="LocToolCancel">გაუქმება</sys:String>
     <sys:String x:Key="LocToolColors">ფერები</sys:String>
     <sys:String x:Key="LocToolThickness">სისქე</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">კოპირება</sys:String>
     <sys:String x:Key="LocOverlaySave">შენახვა</sys:String>
-    <sys:String x:Key="LocOverlayUpload">ატვირთვა</sys:String>
     <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
     <sys:String x:Key="LocOverlayCancel">გაუქმება</sys:String>
     <sys:String x:Key="LocOverlayConfirm">დადასტურება</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">დააწკაპუნეთ და გადაათრიეთ სახატავად. ხელსაწყოებისთვის გამოიყენეთ ხელსაწყოთა ზოლი.</sys:String>
     <sys:String x:Key="LocOverlayHintMove">გადასატანად გადაათრიეთ მონიშვნის შიგნით. ზომის შესაცვლელად გამოიყენეთ სახელურები.</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">ანოტაციისთვის აირჩიეთ ხელსაწყოები. საჭიროებისამებრ გამოიყენეთ დაბრუნება/გამეორება.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: გაუქმება, Enter: დადასტურება, Ctrl+Z: დაბრუნება, Ctrl+Y: გამეორება</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">ტექსტის დამატება</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">დაკოპირდა ბუფერში</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">შენახულია</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">შენახვა ვერ მოხერხდა</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">ატვირთულია</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">ატვირთვა ვერ მოხერხდა</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR დასრულდა</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">OCR ვერ შესრულდა</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">ეს ფანჯარა არასავალდებულოა; დახურეთ და Shotora სისტემურ უჯრაში გააგრძელებს მუშაობას.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">გადაღება – ანოტაცია – OCR – გაზიარება</sys:String>
-    <sys:String x:Key="LocAboutDescription">Shotora არის თანამედროვე გუნდებისთვის შექმნილი ვიზუალური გადაღებისა და ინფორმაციის დამუშავების ასისტენტი. ის ამარტივებს არეების, ფანჯრების ან სრული ეკრანის გადაღებას, მყისიერად ამატებს გაბუნდოვნებას, პიქსელიზაციასა და მონიშვნას და Tesseract-ის ან EasyOCR-ის საშუალებით ეკრანზე არსებულ ტექსტს სტრუქტურირებულ კონტენტად გარდაქმნის. ცხელი კლავიშების, თემების, ოფლაინ tessdata-სა და ერთი დაწკაპუნებით კოპირების, შენახვისა და ატვირთვის წყალობით უკუკავშირი და დოკუმენტაცია სწრაფი, უსაფრთხო და თანმიმდევრული რჩება.</sys:String>
+    <sys:String x:Key="LocAboutDescription">Shotora არის თანამედროვე გუნდებისთვის შექმნილი ეკრანის გადაღებისა და ანოტაციის ფოკუსირებული ინსტრუმენტი. ის იღებს არეებს, ფანჯრებს ან სრულ ეკრანს, მყისიერად ამატებს ისრებს, ფიგურებს, ტექსტს, მონიშვნას, გაბუნდოვნებასა და პიქსელიზაციას და Tesseract-ის ან EasyOCR-ის საშუალებით ეკრანზე არსებულ ტექსტს რედაქტირებად ტექსტად გარდაქმნის — მთლიანად თქვენს მოწყობილობაზე. ცხელი კლავიშების, თემებისა და ერთი დაწკაპუნებით კოპირებისა და შენახვის წყალობით უკუკავშირი და დოკუმენტაცია სწრაფი, კონფიდენციალური და თანმიმდევრული რჩება.</sys:String>
     <sys:String x:Key="LocAboutLicense">ლიცენზია</sys:String>
     <sys:String x:Key="LocAboutAuthor">ავტორი და მხარდამჭერი</sys:String>
     <sys:String x:Key="LocAboutRole">უფროსი პროგრამული ინჟინერი / ტექნიკური ლიდერი</sys:String>

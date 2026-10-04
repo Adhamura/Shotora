@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">Uri Erġa' agħmel</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Uri Kopja</sys:String>
     <sys:String x:Key="LocSettingsShowSave">Uri Issejvja</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">Uri Tella'</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">Uri OCR</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">Uri Ikkanċella</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">Uri Kkonferma</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">Pixellazzjoni</sys:String>
     <sys:String x:Key="LocToolSaveAs">Issejvja bħala</sys:String>
     <sys:String x:Key="LocToolCopy">Ikkopja</sys:String>
-    <sys:String x:Key="LocToolUpload">Tella'</sys:String>
     <sys:String x:Key="LocToolCancel">Ikkanċella</sys:String>
     <sys:String x:Key="LocToolColors">Kuluri</sys:String>
     <sys:String x:Key="LocToolThickness">Ħxuna</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">Kopja</sys:String>
     <sys:String x:Key="LocOverlaySave">Salva</sys:String>
-    <sys:String x:Key="LocOverlayUpload">Tella'</sys:String>
     <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
     <sys:String x:Key="LocOverlayCancel">Ikkanċella</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Kkonferma</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">Ikklikkja u kaxkar biex tpinġi. Uża l-barra tal-għodod.</sys:String>
     <sys:String x:Key="LocOverlayHintMove">Kaxkar ġewwa l-għażla biex iċċaqlaqha. Uża l-manki biex tibdel id-daqs.</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">Agħżel l-għodod għall-annotazzjoni. Uża Annulla/Erġa' agħmel skont il-bżonn.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Ikkanċella, Enter: Ikkonferma, Ctrl+Z: Annulla, Ctrl+Y: Erġa' agħmel</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">Żid test</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">Kopjat fil-clipboard</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">Salvat</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Is-salvjar ma rnexxiex</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">Itelljajt</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">It-tlugħ ma rnexxiex</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR lest</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">OCR ma rnexxiex</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">Din it-tieqa hija fakultattiva; agħlaqha biex tħalli lil Shotora għaddej fit-tray.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Qbid tal-iskrin u annotazzjonijiet</sys:String>
-    <sys:String x:Key="LocAboutDescription">Screenshots mgħaġġla, annotazzjonijiet, OCR u uploads b’Shotora.</sys:String>
+    <sys:String x:Key="LocAboutDescription">Shotora hija għodda ffukata għall-qbid tal-iskrin u l-annotazzjoni għal timijiet moderni. Taqbad reġjuni, twieqi jew skrins sħaħ, iżżid minnufih vleġeġ, forom, test, enfasi, ċajpir u pixellazzjoni, u tbiddel it-test fuq l-iskrin f'test li jista' jiġi editjat b'Tesseract jew EasyOCR, kompletament fuq l-apparat tiegħek. B'shortcuts, temi, u kkupjar u ssejvjar bi klikk wieħed, iżżomm iċ-ċikli ta' feedback u d-dokumentazzjoni mgħaġġla, privati u konsistenti.</sys:String>
     <sys:String x:Key="LocAboutLicense">Liċenzja</sys:String>
     <sys:String x:Key="LocAboutAuthor">Awtur</sys:String>
     <sys:String x:Key="LocAboutRole">Rwol</sys:String>

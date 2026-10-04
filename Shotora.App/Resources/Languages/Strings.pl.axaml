@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">Pokaż Ponów</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Pokaż Kopiuj</sys:String>
     <sys:String x:Key="LocSettingsShowSave">Pokaż Zapisz</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">Pokaż Prześlij</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">Pokaż OCR</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">Pokaż Anuluj</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">Pokaż Potwierdź</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">Pikselizacja</sys:String>
     <sys:String x:Key="LocToolSaveAs">Zapisz jako</sys:String>
     <sys:String x:Key="LocToolCopy">Kopiuj</sys:String>
-    <sys:String x:Key="LocToolUpload">Prześlij</sys:String>
     <sys:String x:Key="LocToolCancel">Anuluj</sys:String>
     <sys:String x:Key="LocToolColors">Kolory</sys:String>
     <sys:String x:Key="LocToolThickness">Grubość</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">Kopiuj</sys:String>
     <sys:String x:Key="LocOverlaySave">Zapisz</sys:String>
-    <sys:String x:Key="LocOverlayUpload">Prześlij</sys:String>
     <sys:String x:Key="LocOverlayOcr">Rozpoznawanie tekstu</sys:String>
     <sys:String x:Key="LocOverlayCancel">Anuluj</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Potwierdź</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">Kliknij i przeciągnij, aby rysować. Narzędzia znajdziesz na pasku narzędzi.</sys:String>
     <sys:String x:Key="LocOverlayHintMove">Przeciągnij wewnątrz zaznaczenia, aby je przesunąć. Użyj uchwytów, aby zmienić rozmiar.</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">Wybierz narzędzia do adnotacji. W razie potrzeby użyj Cofnij/Ponów.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Anuluj, Enter: Potwierdź, Ctrl+Z: Cofnij, Ctrl+Y: Ponów</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">Dodaj tekst</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">Skopiowano do schowka</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">Zapisano</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Zapisywanie nie powiodło się</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">Przesłano</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">Przesyłanie nie powiodło się</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR zakończone</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">OCR nie powiodło się</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">To okno jest opcjonalne; zamknij je, a Shotora będzie nadal działać w zasobniku.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Zrzuty ekranu i adnotacje</sys:String>
-    <sys:String x:Key="LocAboutDescription">Szybkie zrzuty ekranu, oznaczanie, OCR i wysyłanie z Shotorą.</sys:String>
+    <sys:String x:Key="LocAboutDescription">Shotora to wyspecjalizowane narzędzie do zrzutów ekranu i adnotacji dla nowoczesnych zespołów. Przechwytuje obszary, okna lub cały ekran, natychmiast dodaje strzałki, kształty, tekst, zakreślenia, rozmycie i pikselizację, a tekst na ekranie zamienia w edytowalny tekst za pomocą Tesseract lub EasyOCR – w całości na Twoim urządzeniu. Dzięki skrótom klawiszowym, motywom oraz kopiowaniu i zapisywaniu jednym kliknięciem utrzymuje wymianę opinii i dokumentację szybkie, prywatne i spójne.</sys:String>
     <sys:String x:Key="LocAboutLicense">Licencja</sys:String>
     <sys:String x:Key="LocAboutAuthor">Autor</sys:String>
     <sys:String x:Key="LocAboutRole">Rola</sys:String>

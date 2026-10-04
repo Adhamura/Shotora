@@ -45,7 +45,6 @@
     <sys:String x:Key="LocSettingsShowRedo">Erakutsi Berriro egin</sys:String>
     <sys:String x:Key="LocSettingsShowCopy">Erakutsi Kopiatu</sys:String>
     <sys:String x:Key="LocSettingsShowSave">Erakutsi Gorde</sys:String>
-    <sys:String x:Key="LocSettingsShowUpload">Erakutsi Kargatu</sys:String>
     <sys:String x:Key="LocSettingsShowOcr">Erakutsi OCR</sys:String>
     <sys:String x:Key="LocSettingsShowCancel">Erakutsi Utzi</sys:String>
     <sys:String x:Key="LocSettingsShowConfirm">Erakutsi Baieztatu</sys:String>
@@ -90,7 +89,6 @@
     <sys:String x:Key="LocToolPixelate">Pixelatu</sys:String>
     <sys:String x:Key="LocToolSaveAs">Gorde honela</sys:String>
     <sys:String x:Key="LocToolCopy">Kopiatu</sys:String>
-    <sys:String x:Key="LocToolUpload">Igo</sys:String>
     <sys:String x:Key="LocToolCancel">Utzi</sys:String>
     <sys:String x:Key="LocToolColors">Koloreak</sys:String>
     <sys:String x:Key="LocToolThickness">Lodiera</sys:String>
@@ -151,7 +149,6 @@
     <!-- Overlay -->
     <sys:String x:Key="LocOverlayCopy">Kopiatu</sys:String>
     <sys:String x:Key="LocOverlaySave">Gorde</sys:String>
-    <sys:String x:Key="LocOverlayUpload">Kargatu</sys:String>
     <sys:String x:Key="LocOverlayOcr">OCR</sys:String>
     <sys:String x:Key="LocOverlayCancel">Utzi</sys:String>
     <sys:String x:Key="LocOverlayConfirm">Baieztatu</sys:String>
@@ -178,7 +175,6 @@
     <sys:String x:Key="LocOverlayHintDraw">Klikatu eta arrastatu marrazteko. Erabili tresna-barra tresnak aukeratzeko.</sys:String>
     <sys:String x:Key="LocOverlayHintMove">Arrastatu hautapen barruan mugitzeko. Erabili heldulekuak tamaina aldatzeko.</sys:String>
     <sys:String x:Key="LocOverlayHintEdit">Hautatu tresnak oharak egiteko. Erabili Desegin/Berriro egin behar denean.</sys:String>
-    <sys:String x:Key="LocOverlayHintKeyboard">Esc: Utzi, Enter: Baieztatu, Ctrl+Z: Desegin, Ctrl+Y: Berriro egin</sys:String>
 
     <!-- Text Input -->
     <sys:String x:Key="LocTextInputTitle">Testua gehitu</sys:String>
@@ -210,8 +206,6 @@
     <sys:String x:Key="LocNotificationCopySuccess">Kopiatu da pantaila-gordailura</sys:String>
     <sys:String x:Key="LocNotificationSaveSuccess">Gorde da</sys:String>
     <sys:String x:Key="LocNotificationSaveFailed">Gorde ezin izan da</sys:String>
-    <sys:String x:Key="LocNotificationUploadSuccess">Kargatu da</sys:String>
-    <sys:String x:Key="LocNotificationUploadFailed">Kargatzeak huts egin du</sys:String>
     <sys:String x:Key="LocNotificationOcrSuccess">OCR amaitu da</sys:String>
     <sys:String x:Key="LocNotificationOcrFailed">OCR huts egin du</sys:String>
 
@@ -246,7 +240,7 @@
     <sys:String x:Key="LocMainHint2">Leiho hau aukerakoa da; itxi Shotora errenkadan exekutatzen uzteko.</sys:String>
 
     <sys:String x:Key="LocAboutSubtitle">Pantaila kapturak eta anotazioak</sys:String>
-    <sys:String x:Key="LocAboutDescription">Pantaila-argazki azkarrak, oharrak, OCR eta igoerak Shotorarekin.</sys:String>
+    <sys:String x:Key="LocAboutDescription">Shotora talde modernoentzako pantaila-argazkiak egiteko eta oharrak gehitzeko tresna zehatza da. Eremuak, leihoak edo pantaila osoak hartzen ditu, geziak, formak, testua, nabarmentzea, lausotzea eta pixelatzea berehala aplikatzen ditu, eta pantailako testua testu editagarri bihurtzen du Tesseract edo EasyOCR erabiliz, zure gailuan bertan osorik. Laster-teklei, gaiei eta klik bakarrarekin kopiatu eta gordetzeari esker, iritzi-zikloak eta dokumentazioa azkar, pribatu eta koherente mantentzen ditu.</sys:String>
     <sys:String x:Key="LocAboutLicense">Lizentzia</sys:String>
     <sys:String x:Key="LocAboutAuthor">Egilea</sys:String>
     <sys:String x:Key="LocAboutRole">Funtzioa</sys:String>
