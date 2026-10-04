@@ -95,6 +95,7 @@ Windows builds target 64-bit Windows 10 and later. On Linux you also need a desk
 
 - **Region capture.** Drag a rectangle anywhere on screen, then resize it with the handles or move it. Shotora remembers the last selection.
 - **Full-screen capture.** Opens with the whole screen already selected.
+- **Active-window capture (Windows).** Press the hotkey and the window you were working in is selected for you, ready to annotate.
 - **Multi-monitor.** The capture overlay spans all connected displays.
 - **Copy or save.** Copy to the clipboard (`Ctrl + C`, or right-click inside the selection), or save as PNG or JPEG (`Ctrl + S`).
 
@@ -171,6 +172,7 @@ you built from source, links you to the release page instead.
 | :-- | :-- |
 | `Ctrl + Shift + Print Screen` | Region capture (global, Windows) |
 | `Alt + Print Screen` | Full-screen capture (global, Windows) |
+| `Ctrl + Alt + Print Screen` | Active-window capture (global, Windows) |
 | `Ctrl + Z` / `Ctrl + Y` | Undo / redo |
 | `Ctrl + C` | Copy the selection to the clipboard and close |
 | `Ctrl + S` | Save the selection to a file |

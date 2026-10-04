@@ -32,8 +32,8 @@ public class HotkeySetting
 	{
 		return new HotkeySetting
 		{
-			Modifiers = KeyModifiers.Shift | KeyModifiers.Win,
-			Key       = 0x53
+			Modifiers = KeyModifiers.Control | KeyModifiers.Alt,
+			Key       = 0x2C
 		};
 	}
 }

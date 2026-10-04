@@ -32,8 +32,6 @@ public enum EditorIcon
 	Save,
 	[Description("Copy")]
 	Copy,
-	[Description("Upload")]
-	Upload,
 	[Description("Cancel")]
 	Cancel
 }

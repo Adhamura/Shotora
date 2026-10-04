@@ -171,6 +171,35 @@ public class SettingsViewModelControllerTests
 	}
 
 	[Fact]
+	public async Task LoadAsync_WhenSettingsHaveTrackedValues_AppliesThemToView()
+	{
+		var settings = new AppSettings
+		{
+			DefaultSaveFolder = "/home/user/Pictures/Captures",
+			JpegQuality       = 70
+		};
+		SetupLoadAsyncMocks();
+		_propertyAdapterMock
+			.Setup(p => p.GetPropertyNames<SettingsViewModel>(SettingsPropertyTypes.Tracked, false))
+			.Returns(["DefaultSaveFolder", "JpegQuality"]);
+		_propertyAdapterMock
+			.Setup(p => p.GetValue<AppSettings, object?>(settings, "DefaultSaveFolder"))
+			.Returns(settings.DefaultSaveFolder);
+		_propertyAdapterMock
+			.Setup(p => p.GetValue<AppSettings, object?>(settings, "JpegQuality"))
+			.Returns(settings.JpegQuality);
+		_propertyAdapterMock
+			.Setup(p => p.SetValue(It.IsAny<SettingsViewModel>(), It.IsAny<string>(), It.IsAny<object?>()));
+
+		var sut = CreateSut();
+
+		await sut.LoadAsync(settings);
+
+		_propertyAdapterMock.Verify(p => p.SetValue(It.IsAny<SettingsViewModel>(), "DefaultSaveFolder", "/home/user/Pictures/Captures"), Times.Once);
+		_propertyAdapterMock.Verify(p => p.SetValue(It.IsAny<SettingsViewModel>(), "JpegQuality", 70), Times.Once);
+	}
+
+	[Fact]
 	public async Task LoadAsync_WhenSettingsProvided_UsesProvidedSettings()
 	{
 		var settings = new AppSettings
@@ -784,6 +813,9 @@ public class SettingsViewModelControllerTests
 		SetupBasicMocks();
 		_propertyAdapterMock
 			.Setup(p => p.GetPropertyNames<SettingsViewModel>(SettingsPropertyTypes.Simple))
+			.Returns([]);
+		_propertyAdapterMock
+			.Setup(p => p.GetPropertyNames<SettingsViewModel>(SettingsPropertyTypes.Tracked, false))
 			.Returns([]);
 		_settingsProviderMock
 			.Setup(s => s.HotkeyToString(It.IsAny<HotkeySetting>()))

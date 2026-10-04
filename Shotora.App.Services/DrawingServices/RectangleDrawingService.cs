@@ -183,6 +183,23 @@ public class RectangleDrawingService : IRectangleDrawingService
 		return primary?.Bounds ?? fallback;
 	}
 
+	public Rect? MapScreenRectToCapture(PixelRect screenRect, PixelRect captureBounds, Size displaySize)
+	{
+		var visible = screenRect.Intersect(captureBounds);
+		if (visible.Width <= 0 || visible.Height <= 0 || captureBounds.Width <= 0 || captureBounds.Height <= 0)
+		{
+			return null;
+		}
+
+		var scaleX = displaySize.Width  / captureBounds.Width;
+		var scaleY = displaySize.Height / captureBounds.Height;
+		return new Rect(
+			(visible.X - captureBounds.X) * scaleX,
+			(visible.Y - captureBounds.Y) * scaleY,
+			visible.Width                 * scaleX,
+			visible.Height                * scaleY);
+	}
+
 	public Rect GetAnnotationRect(AnnotationItem annotation)
 	{
 		if (annotation.Points.Count > 0)

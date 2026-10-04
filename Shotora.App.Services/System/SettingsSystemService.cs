@@ -8,7 +8,7 @@ namespace Shotora.App.Services.System;
 
 public class SettingsSystemService : ISettingsSystemService
 {
-	private const int CurrentSchemaVersion = 3;
+	private const int CurrentSchemaVersion = 4;
 
 	private readonly string             _configPath;
 	private readonly IEnvironmentFacade _environment;
@@ -49,7 +49,7 @@ public class SettingsSystemService : ISettingsSystemService
 		{
 			var needsSave = false;
 
-			if (settings.SettingsSchemaVersion is null or < CurrentSchemaVersion)
+			if (settings.SettingsSchemaVersion is null or < 3)
 			{
 				const int printScreenKey = 0x2C;
 
@@ -71,6 +71,18 @@ public class SettingsSystemService : ISettingsSystemService
 				}
 
 				if (currentActive == legacyActive)
+				{
+					settings.ActiveWindowHotkey = HotkeySetting.ActiveWindowDefault();
+				}
+
+				needsSave = true;
+			}
+
+			if (settings.SettingsSchemaVersion is null or < 4)
+			{
+				// Version 3 defaulted the active window hotkey to Shift+Win+S, which Windows reserves for Snipping Tool.
+				var previousActive = (Modifiers: KeyModifiers.Shift | KeyModifiers.Win, Key: 0x53);
+				if ((settings.ActiveWindowHotkey.Modifiers, settings.ActiveWindowHotkey.Key) == previousActive)
 				{
 					settings.ActiveWindowHotkey = HotkeySetting.ActiveWindowDefault();
 				}

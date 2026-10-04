@@ -29,10 +29,10 @@ public class IconVisibilityProviderTests
 	})]
 	[InlineData(new[]
 	{
-		"NonExisting", "Upload"
+		"NonExisting", "Cancel"
 	}, new[]
 	{
-		EditorIcon.Upload
+		EditorIcon.Cancel
 	})]
 	public void Given_HiddenIds_When_BuildVisibilityMap_Then_ReturnsVisibilityForEachIcon(IEnumerable<string?>? hiddenIds, EditorIcon[] expectedHidden)
 	{
@@ -55,13 +55,13 @@ public class IconVisibilityProviderTests
 		var mutableVisibility = _sut.BuildVisibilityMap(null).ToDictionary(kvp => kvp.Key, kvp => kvp.Value);
 		mutableVisibility[EditorIcon.Text]   = false;
 		mutableVisibility[EditorIcon.Blur]   = false;
-		mutableVisibility[EditorIcon.Upload] = false;
+		mutableVisibility[EditorIcon.Cancel] = false;
 
 		var hiddenIds = _sut.BuildHiddenIconIds(mutableVisibility).ToArray();
 
 		Assert.Equal(new[]
 		{
-			"Text", "Blur", "Upload"
+			"Text", "Blur", "Cancel"
 		}, hiddenIds);
 	}
 }

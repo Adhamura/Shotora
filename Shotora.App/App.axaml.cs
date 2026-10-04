@@ -46,7 +46,8 @@ public class App(
 	ILocalizationProvider        localizationProvider,
 	IStartupService              startupService,
 	IUpdateCoordinator           updateCoordinator,
-	Func<UpdateWindow>           updateWindowFactory) : Application
+	Func<UpdateWindow>           updateWindowFactory,
+	IActiveWindowService         activeWindowService) : Application
 {
 	private OverlayWindow? _activeOverlay;
 	private string?        _currentLanguage;
@@ -360,7 +361,7 @@ public class App(
 		});
 	}
 
-	private async void ShowCaptureAsync(CaptureMode mode)
+	private async void ShowCaptureAsync(CaptureMode mode, PixelRect? activeWindowBounds = null)
 	{
 		if (ApplicationLifetime is not IClassicDesktopStyleApplicationLifetime desktop)
 		{
@@ -372,7 +373,7 @@ public class App(
 
 		try
 		{
-			await overlay.InitializeAsync(mode);
+			await overlay.InitializeAsync(mode, activeWindowBounds);
 		}
 		catch (InvalidOperationException ex)
 		{
@@ -481,8 +482,12 @@ public class App(
 		hotkeyService.Reset();
 		hotkeyService.Register(settings.RegionHotkey,     () => Dispatcher.UIThread.Post(() => ShowCaptureAsync(CaptureMode.Region)));
 		hotkeyService.Register(settings.FullscreenHotkey, () => Dispatcher.UIThread.Post(() => ShowCaptureAsync(CaptureMode.Fullscreen)));
-
-		hotkeyService.Register(settings.ActiveWindowHotkey, () => Dispatcher.UIThread.Post(() => ShowCaptureAsync(CaptureMode.Region)));
+		hotkeyService.Register(settings.ActiveWindowHotkey, () =>
+		{
+			// Read the foreground window now, before the overlay opens and takes focus.
+			var windowBounds = activeWindowService.GetForegroundWindowBounds();
+			Dispatcher.UIThread.Post(() => ShowCaptureAsync(CaptureMode.ActiveWindow, windowBounds));
+		});
 	}
 
 	private void RefreshTrayLocalization()

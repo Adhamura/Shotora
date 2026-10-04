@@ -114,7 +114,9 @@ public class SettingsViewModelController(
 			.GetPropertyNames<SettingsViewModel>(SettingsPropertyTypes.Simple)
 			.Where(n => !(n.StartsWith("Show", StringComparison.OrdinalIgnoreCase) && n.EndsWith("Icon", StringComparison.OrdinalIgnoreCase)));
 
-		foreach (var name in simpleNames)
+		var trackedNames = propertyAdapter.GetPropertyNames<SettingsViewModel>(SettingsPropertyTypes.Tracked);
+
+		foreach (var name in simpleNames.Concat(trackedNames))
 		{
 			var value = propertyAdapter.GetValue<AppSettings, object?>(settings, name);
 			propertyAdapter.SetValue(_model, name, value);
@@ -352,7 +354,7 @@ public class SettingsViewModelController(
 
 	private void ApplyModelToSettings(string? propertyName)
 	{
-		_settings.SettingsSchemaVersion ??= 3;
+		_settings.SettingsSchemaVersion ??= 4;
 
 		var filter = propertyName is null
 			? null
