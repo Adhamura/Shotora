@@ -1,0 +1,53 @@
+{
+  "SettingsSchemaVersion": null,
+  "DefaultSaveFolder": "Shotora",
+  "DefaultFormat": "png",
+  "JpegQuality": 90,
+  "DefaultTool": "Arrow",
+  "Theme": "Dark",
+  "RegionHotkey": {
+    "Modifiers": 6,
+    "Key": 44
+  },
+  "FullscreenHotkey": {
+    "Modifiers": 1,
+    "Key": 44
+  },
+  "ActiveWindowHotkey": {
+    "Modifiers": 3,
+    "Key": 44
+  },
+  "RunOnStartup": false,
+  "AutoCheckForUpdates": true,
+  "FilenamePattern": "Shotora_{0:yyyy-MM-dd_HH-mm-ss}",
+  "OcrEngine": 1,
+  "OcrLanguages": "eng",
+  "DisplayLanguage": "en",
+  "EditorShowThicknessSlider": true,
+  "EditorDefaultThickness": 6,
+  "EditorShowColorPalette": true,
+  "LastSelectionX": 70,
+  "LastSelectionY": 95,
+  "LastSelectionWidth": 1230,
+  "LastSelectionHeight": 545,
+  "EditorDefaultColor": "#FF00FF00",
+  "EditorHiddenIcons": [],
+  "EditorUndoHotkey": {
+    "Modifiers": 2,
+    "Key": 90
+  },
+  "EditorRedoHotkey": {
+    "Modifiers": 2,
+    "Key": 89
+  },
+  "EditorCopyHotkey": {
+    "Modifiers": 2,
+    "Key": 67
+  },
+  "EditorSaveHotkey": {
+    "Modifiers": 2,
+    "Key": 83
+  },
+  "EditorCopyCloseMouseButton": "Right",
+  "EditorMoveSelectionMouseButton": "Right"
+}

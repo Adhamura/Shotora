@@ -18,7 +18,7 @@ A free, open-source screenshot tool that lives in your system tray. For Windows,
 
 <br />
 
-<img src="docs/images/hero.png" width="860" alt="Shotora capture overlay: a selected region annotated with a highlight, rectangles, an arrow and a text label, with the editor toolbar below" />
+<img src="docs/images/demo.gif" width="800" alt="Shotora demo: start a region capture from the tray, select an area and get its text by OCR, then add an arrow, a box, a blur over an e-mail address and a text label, and copy the result" />
 
 </div>
 
@@ -185,6 +185,10 @@ you built from source, links you to the release page instead.
 Change any of these in **Settings → Hotkeys** and **Settings → Editor**.
 
 ## Screenshots
+
+<p align="center">
+  <img src="docs/images/hero.png" width="860" alt="Shotora capture overlay: a selected region annotated with a highlight, rectangles, an arrow and a text label, with the editor toolbar below" />
+</p>
 
 <table>
   <tr>
