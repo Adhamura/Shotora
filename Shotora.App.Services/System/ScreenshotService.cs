@@ -284,8 +284,15 @@ public class ScreenshotService(IProcessSystemService processSystemService, IWayl
 				var destRowPtr  = IntPtr.Add(destPtr, info.RowBytes * y);
 				var srcRowIndex = image.bytes_per_line * y;
 
-				if (image.bits_per_pixel == 32 && image.bytes_per_line >= info.RowBytes)
+				if (image.bits_per_pixel == 32 && image.bytes_per_line >= info.RowBytes && !byteOrderMsb)
 				{
+					// The root window has no alpha: the fourth byte is padding (0 on Xvfb and some drivers),
+					// which would make the whole capture transparent. Make every pixel opaque.
+					for (var i = srcRowIndex + 3; i < srcRowIndex + info.RowBytes; i += 4)
+					{
+						sourceBuffer[i] = 255;
+					}
+
 					Marshal.Copy(sourceBuffer, srcRowIndex, destRowPtr, info.RowBytes);
 				}
 				else
