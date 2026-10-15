@@ -24,7 +24,7 @@ public sealed class ScreenshotPortal : IScreenshotPortal
 
 	public async Task<ScreenshotPortalResult> CaptureToFileAsync(CancellationToken cancellationToken = default)
 	{
-		var address = Address.Session;
+		var address = GetSessionBusAddress();
 		if (string.IsNullOrEmpty(address))
 		{
 			return ScreenshotPortalResult.Unavailable;
@@ -97,6 +97,28 @@ public sealed class ScreenshotPortal : IScreenshotPortal
 			// No portal service, no Screenshot backend, or the bus is unreachable.
 			return ScreenshotPortalResult.Unavailable;
 		}
+	}
+
+	/// <summary>
+	///     Tmds.DBus finds the session bus only through DBUS_SESSION_BUS_ADDRESS or an X11 property, and a Wayland
+	///     session started by some launchers sets neither. systemd and dbus-broker put the bus at $XDG_RUNTIME_DIR/bus.
+	/// </summary>
+	private static string? GetSessionBusAddress()
+	{
+		var address = Address.Session;
+		if (!string.IsNullOrEmpty(address))
+		{
+			return address;
+		}
+
+		var runtimeDir = Environment.GetEnvironmentVariable("XDG_RUNTIME_DIR");
+		if (string.IsNullOrEmpty(runtimeDir))
+		{
+			return null;
+		}
+
+		var socket = Path.Combine(runtimeDir, "bus");
+		return File.Exists(socket) ? $"unix:path={socket}" : null;
 	}
 
 	private static MessageBuffer CreateScreenshotCall(Connection connection, string token)
